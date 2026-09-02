@@ -1,69 +1,53 @@
 # Job Description Extractor
 
-A robust, asynchronous Python pipeline to extract full job descriptions from URLs found in SimplifyJobs GitHub repositories.
+This companion tool collects full job descriptions from URLs listed in SimplifyJobs GitHub repositories. It is separate from the SkillLLM extraction and matching pipeline: its output is source material for later experiments, not a benchmark result by itself.
 
 ## Overview
 
-This tool reads Markdown tables directly from GitHub, follows the application URLs, and uses Playwright to render JavaScript-heavy pages. It employs smart heuristics to click through "Show More" buttons or specific tabs (like "Job Description" or "Qualifications") if the initial page text does not resemble a full job description.
+The asynchronous Python pipeline reads Markdown tables from GitHub, follows application URLs, and uses Playwright to render JavaScript-heavy pages. It scores likely “Show More”, “Description”, and “Qualifications” controls, then re-checks the visible page text after each interaction.
 
-Optionally, it integrates with NVIDIA Nemotron to provide:
-1. Fallback reasoning when navigating ambiguous tab structures.
-2. Cleaning up noisy, scraped text.
-3. Extracting structured sections (salary, qualifications, etc.) as JSON.
+Optionally, NVIDIA Nemotron can provide fallback navigation reasoning, clean noisy scraped text, and extract structured sections such as salary and qualifications. The deterministic heuristics remain usable without an LLM.
 
 ## Features
 
-- **Async Playwright**: Fast and handles SPAs / ATS platforms well.
-- **Resilience**: Checkpoints progress to `data/raw_jobs.csv`. Pass `--force` to re-process.
-- **Fallback Heuristics**: Deterministic scoring identifies the best buttons to click to reveal hidden job details.
-- **Pluggable LLM**: Works fine offline using regex/heuristics, but gets smarter with an LLM.
+- Async Playwright support for SPAs and common ATS platforms.
+- Checkpointing to `data/raw_jobs.csv`; use `--force` to reprocess attempted URLs.
+- Deterministic candidate scoring and bounded interaction attempts.
+- Optional LLM integration behind explicit configuration and the `--use-llm` flag.
 
 ## Setup
 
-1. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   playwright install chromium
-   ```
-3. Configure environment variables (optional, for LLM):
-   ```bash
-   cp .env.example .env
-   # Edit .env with your LLM_BASE_URL and LLM_API_KEY
-   ```
+Run these commands from this directory:
+
+```bash
+cd SkillLLM_v2/Extract_jobDesc
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+playwright install chromium
+```
+
+For optional LLM features, copy `.env.example` to a local `.env` and set `LLM_BASE_URL` and `LLM_API_KEY`. The `.env` file is ignored; never commit a real key or paste one into a command, issue, or log.
 
 ## Usage
 
-Run the main pipeline:
 ```bash
 # Scrape New Grad positions
 python main.py --source newgrad
 
-# Scrape Internships with concurrency of 5 and limit to 10 for testing
+# Scrape internships with bounded concurrency for a trial run
 python main.py --source internships --limit 10 --concurrency 5
 
-# Enable LLM reasoning
+# Enable optional LLM reasoning/cleanup
 python main.py --source all --use-llm
 ```
 
-## Architecture Notes
+Raw job descriptions, browser downloads, checkpoints, and generated structured output can contain private or licensed material. Keep them local and review the root `.gitignore` before sharing an artifact.
 
-### Tab Discovery & Interaction
-Pages often hide job descriptions behind "Read More" accordions or separate tabs. The `discover_description` function:
-1. Validates visible text against a length & keyword threshold (`is_valid_job_description`).
-2. If invalid, it queries the DOM for clickable elements (`button`, `div[role='tab']`, etc.).
-3. It scores these elements based on text content (e.g., "Description" = +10 pts).
-4. Clicks the highest scored candidates one by one, pausing and re-evaluating the visible text each time.
+## Architecture notes
 
-### Nemotron LLM Usage
-When `--use-llm` is enabled and multiple ambiguous tabs exist, the `LLMHelper` sends a snippet of the page context and the available buttons to the model. The model replies with the integer index of the best button to click. It also post-processes the scraped text for cleanliness and structure.
+`discover_description` first validates visible text using length and keyword thresholds. If the page is incomplete, it scores DOM candidates such as buttons and tab elements, clicks the best candidates one at a time, and stops when the text resembles a full description. Greenhouse, Lever, and similar ATS pages generally work through Playwright; domain-specific shadow-DOM or iframe handling belongs in the extractor implementation.
 
-### Resuming & Checkpoints
-Every processed URL is immediately appended to `data/raw_jobs.csv`. Upon subsequent runs, `load_checkpoints` reads this file and skips any previously attempted URL (regardless of success/failure) unless `--force` is supplied.
+When `--use-llm` is enabled and several tabs are ambiguous, `LLMHelper` receives a small page-context snippet and candidate list, then returns the best candidate index. It can also post-process text, but the raw scrape remains the provenance record.
 
-### Extending Job Boards
-Currently, ATS platforms like Greenhouse and Lever are handled naturally because Playwright renders their SPAs. If a specific ATS uses shadow DOM or complex iFrames, you can extend the `candidate_selectors` in `extractor.py` to pierce the shadow DOM, or add domain-specific logic inside `process_job`.
+Every attempted URL is appended to `data/raw_jobs.csv`. Subsequent runs skip attempted URLs unless `--force` is supplied, so preserve the checkpoint when resuming a collection job.

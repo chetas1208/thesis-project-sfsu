@@ -1,85 +1,56 @@
-# Skill Extraction Benchmark
+# Experiments and Benchmark Lab
 
-This workspace is a dataset-ready benchmark scaffold for the skill-extraction part of the thesis. It does not train anything by default. Once a dataset is dropped into `data/raw/`, the benchmark can normalize it into one canonical schema, export model-specific inputs, run the selected models, and aggregate exact span metrics into one summary table.
+This directory contains the independent benchmark and data-preparation work that supports the thesis. It is a research harness, not the production-facing Stage-2 pipeline: it normalizes an incoming corpus, exports model-specific inputs, runs selected baselines, and aggregates comparable span metrics.
 
-## Models Included
+## Scope
 
-- `NNOSE` via the upstream [jjzha/nnose](https://github.com/jjzha/nnose) repo
-- `Skill-LLM` via the upstream [herandy/Skill-LLM](https://github.com/herandy/Skill-LLM) repo
-- `GLiNER` via the upstream [urchade/GLiNER](https://github.com/urchade/GLiNER) repo
-- `JobBERT` Hugging Face token-classification baseline using `jjzha/jobbert_skill_extraction`
-- `GPT-5.4` OpenAI prompt baseline using structured outputs
-- `ConTeXT` runnable auxiliary retrieval baseline using `TechWolf/ConTeXT-Skill-Extraction-base`
+The benchmark can compare:
+
+- NNOSE, Skill-LLM, GLiNER, and JobBERT extraction baselines.
+- ConTeXT as a retrieval-oriented auxiliary baseline.
+- An OpenAI structured-output prompt baseline when credentials and access are available.
+
+The exact model set and protocol are defined by the scripts and configuration under [`skill_extraction_benchmark/`](skill_extraction_benchmark/). Do not interpret a benchmark result as a Stage-2 promotion result without checking the thesis audit and the metric definition.
 
 ## Layout
 
-- `vendor/`: upstream repos cloned locally
-- `data/raw/`: place the incoming dataset here
-- `data/annotation/`: annotation queue + prompt templates for raw resume sources
-- `data/canonical/`: normalized benchmark splits (`train/dev/test.jsonl`)
-- `data/model_inputs/`: per-model exported datasets
-- `results/`: predictions, metrics, checkpoints, benchmark summaries, and analysis outputs
-- `scripts/`: shell entrypoints for setup, training/inference, evaluation, and smoke tests
-- `src/`: dataset normalization, model wrappers, adapters, and evaluator
-- `analysis/`: script-first dataset EDA and benchmark analysis
-- `.cache/`: centralized Hugging Face, pip, WandB, and OpenAI caches
-
-## Canonical Dataset Schema
-
-Each canonical record is JSON with:
-
-```json
-{
-  "id": "train-000001",
-  "text": "Built APIs in Python and FastAPI.",
-  "tokens": [
-    {"text": "Built", "start": 0, "end": 4, "ws": true},
-    {"text": "APIs", "start": 6, "end": 9, "ws": true}
-  ],
-  "spans": [
-    {"start": 14, "end": 19, "label": "SKILL", "text": "Python"}
-  ]
-}
+```text
+skill_extraction_benchmark/
+├── data/raw/          downloaded source data (review before sharing)
+├── data/exports/      canonical and model-specific JSON/JSONL exports
+├── configs/           model and global training settings
+├── scripts/            numbered setup, training, inference, and evaluation stages
+├── src/                schema, normalization, wrappers, and metrics
+├── outputs/            local models, predictions, metrics, and reports (ignored)
+└── .cache/             local dependency and service caches (ignored)
 ```
 
-Offsets are inclusive. By default all labels are collapsed to `SKILL` for apples-to-apples benchmarking.
+Canonical records use character offsets with `start` inclusive and `end` exclusive. Labels are normally collapsed to `SKILL` for apples-to-apples span evaluation; preserve the original annotation when the experiment needs it.
 
-## Secrets
+## Typical flow
 
-Create local secrets in `.env`. This scaffold loads secrets from environment variables only and does not embed keys in scripts or configs.
+Run commands from `Experiments/skill_extraction_benchmark/` in an isolated environment:
 
-Relevant variables:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+cp .env.example .env  # fill locally; do not commit .env
 
-- `HF_TOKEN`
-- `OPENAI_API_KEY`
-- `WANDB_API_KEY`
-- `KAGGLE_USERNAME`
-- `KAGGLE_KEY`
+python scripts/00_download_skillspan.py
+python scripts/01_prepare_canonical.py
+python scripts/02_export_nnose.py
+python scripts/03_export_gliner.py
+python scripts/04_export_skillllm.py
+python scripts/05_export_context.py
+python scripts/06_export_jobbert.py
+python scripts/07_export_gemma4.py
+```
 
-An example file is provided at `.env.example`.
+The full orchestration entry point is `bash scripts/40_run_all.sh`. It also runs training, inference, and evaluation, and requires `HF_TOKEN` in the environment. Use a durable session and verify the resulting report before making claims. The numbered scripts can be run individually when debugging a single stage or model.
 
-## Typical Flow
+## Credentials and artifacts
 
-1. `bash scripts/setup_all.sh`
-2. `bash scripts/download_kaggle_sources.sh`
-3. `bash scripts/clean_resume_sources.sh`
-4. `bash scripts/build_annotation_queue.sh`
-5. Annotate into the canonical resume schema and save into `data/raw/annotated/`
-6. `bash scripts/prepare_data.sh`
-7. Run model wrappers as needed:
-   - `bash scripts/train_jobbert.sh --mode full`
-   - `bash scripts/train_nnose.sh --mode full`
-   - `bash scripts/train_gliner.sh --mode full`
-   - `bash scripts/train_skill_llm.sh --mode full`
-   - `bash scripts/train_context.sh --mode full`
-   - `bash scripts/train_gpt5.sh --split test`
-8. `bash scripts/evaluate_all.sh`
-9. Analysis:
-   - `bash scripts/run_dataset_eda.sh`
-   - `bash scripts/run_benchmark_analysis.sh`
+Credentials are read from environment variables such as `HF_TOKEN`, `OPENAI_API_KEY`, `WANDB_API_KEY`, `KAGGLE_USERNAME`, and `KAGGLE_KEY`. The checked-in `.env.example` contains placeholders only. Keep raw resumes, scraped job records, model weights, checkpoints, logs, caches, and generated results local; the root `.gitignore` excludes these classes of artifacts.
 
-## Notes
-
-- `ConTeXT` is evaluated separately as a retrieval model and written to `results/retrieval_summary.csv`; it is intentionally kept out of the exact-span leaderboard in `results/summary.csv`.
-- `Skill-LLM` assumes your Hugging Face account can access `meta-llama/Meta-Llama-3-8B-Instruct`.
-- `GPT-5.4` is configured as a prompt baseline only.
+See the benchmark-specific [README](skill_extraction_benchmark/README.md), the [repository guide](../README.md), and [`docs/thesis/codebase_audit.md`](../docs/thesis/codebase_audit.md) for the supported boundaries and evidence rules.

@@ -31,6 +31,9 @@ __pycache__/
 **/checkpoints
 **/artifacts
 
+# Runtime demo reports; checked-in research snapshots remain trackable.
+**/reports/**/end_to_end_demo.json
+
 # Local/private resume corpus and derived files.
 Experiments/data/
 SkillLLM_v2/Extract_jobDesc/data/

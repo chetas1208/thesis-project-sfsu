@@ -1,47 +1,73 @@
-# 5-Model Skill Extraction Benchmark
+# Skill Extraction Benchmark
 
-A fully reproducible, research-grade pipeline to benchmark 5 skill extraction models on the `jjzha/skillspan` dataset.
+This is the runnable benchmark harness for comparing skill-extraction approaches on one canonical corpus. It supports token-classification, span, retrieval, and generative baselines while keeping data preparation, inference, and evaluation in separate stages.
 
-## Models Compared
-1. **NNOSE** (kNN-augmented token classification)
-2. **GLiNER** (Zero-shot/few-shot spans)
-3. **Skill-LLM** (QLoRA instruction tuning on Llama 3 8B)
-4. **ConTeXT** (Sentence-transformer dense retrieval)
-5. **JobBERT** (Standard token classification baseline)
-6. **Gemma 4** (QLoRA instruction tuning producing exact JSON arrays, mapping string generation text back to token matching)
+## Models compared
 
-## Generative Baselines
-### Gemma 4
-Gemma 4 is included as a strong, open-weight generative baseline (`google/gemma-4-e4b-it`). Unlike token classification, it generates skills strictly in JSON format via fine-tuning. We implement robust text-to-token span recovery mapping the generated exact string matches back to their original token alignment in the source sentence when evaluating.
+The repository includes adapters or launchers for:
 
-## Features
-- **Canonical data pipeline**: Unifies data into a single JSONL schema.
-- **Unified evaluation**: Span-level P/R/F1, text-match F1, document-level set F1, Jaccard similarity.
-- **Efficiency tracking**: Measures inference latency and peak GPU memory per model.
-- **End-to-End Orchestration**: A single script handles everything from download to the final markdown comparison table.
+1. **NNOSE** — kNN-augmented token classification.
+2. **GLiNER** — zero-shot/few-shot span extraction.
+3. **Skill-LLM** — instruction-tuned LLM extraction.
+4. **ConTeXT** — dense retrieval, reported separately from exact-span extraction.
+5. **JobBERT** — token-classification baseline.
+6. **Gemma 4** — generative JSON extraction with exact string-to-source-span recovery.
+
+An OpenAI structured-output prompt baseline is also available where the local configuration and account access permit it. Check the active script/config before comparing a run; availability is not the same as a completed result.
+
+## What the pipeline does
+
+- Normalizes source annotations into a canonical JSONL schema.
+- Exports model-specific inputs without changing the source offsets.
+- Runs selected model wrappers and records latency/resource metadata.
+- Computes span-level precision, recall, and F1 plus text/document summaries.
+- Produces machine-readable metrics and a comparison report under `outputs/`.
+
+Generative systems must return JSON skill strings that are mapped back to exact source spans. A generated skill that cannot be aligned to the source is not counted as a valid exact-span prediction.
 
 ## Setup
+
 ```bash
-# 1. Create virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Setup Environment Variables
-cp .env.example .env
-# Edit .env and supply your HF_TOKEN (needed for Llama 3)
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+cp .env.example .env  # edit locally; .env is ignored
 ```
 
-## Running
-To run the entire pipeline end-to-end:
+Use environment variables for credentials. For example, export `HF_TOKEN` in the shell before running a Hugging Face-backed model; do not place a real token in `.env` committed to Git, source files, or notebooks.
+
+## Run
+
+The complete orchestrator is:
+
 ```bash
+export HF_TOKEN='your-token-in-the-environment'
 bash scripts/40_run_all.sh
 ```
 
-## Outputs
-- **Models**: Saved in `outputs/models/`
-- **Predictions**: Sentence-level in `outputs/predictions/` and document-level in `outputs/predictions/document_level/`
-- **Metrics**: Detailed metrics in `outputs/metrics/`
-- **Report**: Final markdown and CSV tables in `outputs/reports/`
+It downloads the SkillSpan source, creates canonical data, exports six model formats, trains the configured models, runs inference, and builds the comparison tables. For stage-by-stage work, use the numbered scripts:
+
+```bash
+python scripts/00_download_skillspan.py
+python scripts/01_prepare_canonical.py
+python scripts/02_export_nnose.py
+python scripts/03_export_gliner.py
+python scripts/04_export_skillllm.py
+python scripts/05_export_context.py
+python scripts/06_export_jobbert.py
+python scripts/07_export_gemma4.py
+
+# Optional model download, training, inference, and evaluation stages
+python scripts/08_download_models.py
+python scripts/30_evaluate_span_metrics.py
+python scripts/31_evaluate_document_metrics.py
+python scripts/32_build_comparison_table.py
+```
+
+Model-specific training and prediction launchers are numbered `10`–`15` and `20`–`25`. Inspect their configuration and required local checkpoints before starting a long run. Keep GPU jobs in a durable session and retain the command/config alongside the result for reproducibility.
+
+## Outputs and evidence
+
+Generated models, predictions, metrics, reports, caches, and checkpoints live under `outputs/` or `.cache/` and are ignored by Git. The benchmark’s comparison table is an exact-span leaderboard, while ConTeXT retrieval metrics belong in its separate retrieval summary. Do not combine those values or present a smoke run as a quality/promotion result.
+
+See [`../../README.md`](../../README.md) for the project map, [`BENCHMARK_GUIDE.md`](BENCHMARK_GUIDE.md) for operational details, and [`../../docs/thesis/codebase_audit.md`](../../docs/thesis/codebase_audit.md) for the thesis evidence boundary.

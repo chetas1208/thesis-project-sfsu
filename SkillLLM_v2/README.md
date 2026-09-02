@@ -1,43 +1,45 @@
-Here we present the accompanying code for the following paper
+# SkillLLM v2 — Earlier Implementation
 
-# Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction
+This directory preserves the earlier SkillLLM implementation that accompanies the original skill-extraction work. It is useful for provenance, comparison, and reproducing the upstream-style experiments; new end-to-end development should generally use [`SkillLLM_v2_stage2/`](../SkillLLM_v2_stage2/).
 
-Make sure to install all the requirements first
+## What is here
 
-``` bash
-pip install -r requirements.txt
-```
+- `src/`: model training, validation, generation, and GLiNER experiment code.
+- `configs/`: experiment configuration files.
+- `tests/`: tests for the legacy implementation.
+- `Extract_jobDesc/`: the companion asynchronous job-description collection tool.
+- `data/`, `models/`, and run outputs: local runtime state; large/private artifacts are intentionally excluded from Git.
 
-If your account is able to download LLaMA 3 models, log into huggingface first
+The implementation targets the original SkillSpan/Skill-LLM workflow and may require the exact model access and dependency versions used by the associated experiment. It is not the source of the audited Stage-2 metrics in the root README.
+
+## Setup
+
+Create an isolated environment and install the pinned requirements:
 
 ```bash
-huggingface-cli login
+cd SkillLLM_v2
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-For better loss logging, especially for GLiNER log into WandB
+Model downloads may require an authenticated Hugging Face account. Keep credentials in environment variables or a local, ignored `.env` file; never paste tokens into scripts, configs, notebooks, commits, or issues.
 
-```bash
-wandb login
+## Experiment entry points
+
+Inspect the scripts and configuration selected for a particular reproduction before running it. Typical components are:
+
+```text
+src/
+├── data/          dataset preparation helpers
+├── gliner/        GLiNER experiments and notebooks
+└── ...            training, generation, and evaluation modules
 ```
 
-## Large Language Model fine tuning
+Because this is a preserved earlier implementation, paths and checkpoints are intentionally not hard-coded in this README. Prefer the reproducible Stage-2 commands documented in the repository root when you need a supported smoke test or full pipeline.
 
-To download the data and preprocess it from the root directory run
+## Related documentation
 
-``` bash
-bash src/data_preparation.sh
-```
-
-To run training, validation generation and then get metrics from the root directory run
-
-``` bash
-bash src/training.sh
-```
-
-## GLiNER
-
-For finetuning GLiNER you can find the relevant code under
-
-```
-src/gliner/gliner_raytune.ipynb
-```
+- [Repository README](../README.md) — project map, current evidence, and supported workflows.
+- [Stage-2 README](../SkillLLM_v2_stage2/README.md) — primary audited implementation.
+- [Thesis artifacts](../docs/thesis/README.md) — build and quality-assurance instructions.
