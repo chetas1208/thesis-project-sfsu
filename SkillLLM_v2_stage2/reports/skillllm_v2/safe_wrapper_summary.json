@@ -1,0 +1,162 @@
+{
+  "doc_count": 974,
+  "anchor_predictions_path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+  "anchor_metrics": {
+    "exact_span_precision": 0.6735057983942908,
+    "exact_span_recall": 0.6666666666666666,
+    "exact_span_f1": 0.6700687818948303,
+    "partial_span_precision": 0.8180196253345228,
+    "partial_span_recall": 0.8097130242825608,
+    "partial_span_f1": 0.8138451297980919,
+    "token_precision": 0.7747865517382246,
+    "token_recall": 0.8014367208958377,
+    "token_f1": 0.7878863409770688,
+    "hard_skill_f1": 0.7264500205676676,
+    "soft_skill_f1": 0.6040462427745664,
+    "macro_f1": 0.665248131671117,
+    "micro_f1": 0.6700687818948303
+  },
+  "anchor_metrics_cached": {
+    "exact_span_precision": 0.6735057983942908,
+    "exact_span_recall": 0.6666666666666666,
+    "exact_span_f1": 0.6700687818948303,
+    "partial_span_precision": 0.8180196253345228,
+    "partial_span_recall": 0.8097130242825608,
+    "partial_span_f1": 0.8138451297980919,
+    "token_precision": 0.7747865517382246,
+    "token_recall": 0.8014367208958377,
+    "token_f1": 0.7878863409770688,
+    "hard_skill_f1": 0.7264500205676676,
+    "soft_skill_f1": 0.6040462427745664,
+    "macro_f1": 0.665248131671117,
+    "micro_f1": 0.6700687818948303,
+    "notes": "Raw Mistral LoRA path. Model load fallback used: False."
+  },
+  "use_gliner": true,
+  "variants": {
+    "boundary_refiner": {
+      "decision": "accept",
+      "improved_over_anchor": false,
+      "candidate_exact_span_f1": 0.6711111111111112,
+      "candidate_soft_skill_f1": 0.6055045871559633,
+      "selected_exact_span_f1": 0.6711111111111112,
+      "selected_soft_skill_f1": 0.6055045871559633,
+      "linking_coverage": null
+    },
+    "mistral_gliner_taxonomy": {
+      "decision": "accept",
+      "improved_over_anchor": false,
+      "candidate_exact_span_f1": 0.6700620017714791,
+      "candidate_soft_skill_f1": 0.6023054755043228,
+      "selected_exact_span_f1": 0.6700620017714791,
+      "selected_soft_skill_f1": 0.6023054755043228,
+      "linking_coverage": 0.890270990670813
+    },
+    "full_cag_graph": {
+      "decision": "accept",
+      "improved_over_anchor": false,
+      "candidate_exact_span_f1": 0.6711022399645153,
+      "candidate_soft_skill_f1": 0.6037554164660568,
+      "selected_exact_span_f1": 0.6711022399645153,
+      "selected_soft_skill_f1": 0.6037554164660568,
+      "linking_coverage": 0.8903743315508021
+    }
+  },
+  "output_dir": "artifacts/skillllm_v2/safe_wrapper",
+  "gate_report_path": "reports/skillllm_v2/safe_wrapper_gate.md",
+  "non_regression_status": {
+    "anchor_metrics": {
+      "exact_span_precision": 0.6735057983942908,
+      "exact_span_recall": 0.6666666666666666,
+      "exact_span_f1": 0.6700687818948303,
+      "partial_span_precision": 0.8180196253345228,
+      "partial_span_recall": 0.8097130242825608,
+      "partial_span_f1": 0.8138451297980919,
+      "token_precision": 0.7747865517382246,
+      "token_recall": 0.8014367208958377,
+      "token_f1": 0.7878863409770688,
+      "hard_skill_f1": 0.7264500205676676,
+      "soft_skill_f1": 0.6040462427745664,
+      "macro_f1": 0.665248131671117,
+      "micro_f1": 0.6700687818948303
+    },
+    "final_variant": "full_cag_graph",
+    "final_decision": "accept",
+    "non_regression_passed": true,
+    "extraction_output_policy": "candidate_wrapper_predictions",
+    "gate_results": [
+      {
+        "variant": "boundary_refiner",
+        "decision": "accept",
+        "improved_over_anchor": false,
+        "reason": "boundary_refiner: exact_span_f1 0.671111 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.605505 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
+        "checks": [
+          {
+            "metric": "exact_span_f1",
+            "anchor": 0.6700687818948303,
+            "candidate": 0.6711111111111112,
+            "floor": 0.6600347818948303,
+            "delta": 0.0010423292162808906,
+            "passed": true
+          },
+          {
+            "metric": "soft_skill_f1",
+            "anchor": 0.6040462427745664,
+            "candidate": 0.6055045871559633,
+            "floor": 0.5740462427745664,
+            "delta": 0.0014583443813969144,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "variant": "mistral_gliner_taxonomy",
+        "decision": "accept",
+        "improved_over_anchor": false,
+        "reason": "mistral_gliner_taxonomy: exact_span_f1 0.670062 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.602305 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
+        "checks": [
+          {
+            "metric": "exact_span_f1",
+            "anchor": 0.6700687818948303,
+            "candidate": 0.6700620017714791,
+            "floor": 0.6600347818948303,
+            "delta": -6.78012335120215e-06,
+            "passed": true
+          },
+          {
+            "metric": "soft_skill_f1",
+            "anchor": 0.6040462427745664,
+            "candidate": 0.6023054755043228,
+            "floor": 0.5740462427745664,
+            "delta": -0.0017407672702436372,
+            "passed": true
+          }
+        ]
+      },
+      {
+        "variant": "full_cag_graph",
+        "decision": "accept",
+        "improved_over_anchor": false,
+        "reason": "full_cag_graph: exact_span_f1 0.671102 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.603755 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
+        "checks": [
+          {
+            "metric": "exact_span_f1",
+            "anchor": 0.6700687818948303,
+            "candidate": 0.6711022399645153,
+            "floor": 0.6600347818948303,
+            "delta": 0.0010334580696850226,
+            "passed": true
+          },
+          {
+            "metric": "soft_skill_f1",
+            "anchor": 0.6040462427745664,
+            "candidate": 0.6037554164660568,
+            "floor": 0.5740462427745664,
+            "delta": -0.00029082630850962854,
+            "passed": true
+          }
+        ]
+      }
+    ]
+  }
+}

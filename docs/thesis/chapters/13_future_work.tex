@@ -1,0 +1,17 @@
+\chapter{Future Work}
+\label{ch:future}
+
+Future directions follow logically from verified limitations:
+
+\begin{enumerate}
+  \item \textbf{Labeled downstream evaluation}: construct gold job--candidate match and course--gap relevance labels to compute nDCG, MRR, and precision@k for matching and recommendation modules.
+  \item \textbf{Gemma 4 26B replication}: rerun failed benchmark on higher-memory GPUs if cross-capacity comparison remains scientifically necessary.
+  \item \textbf{Multi-seed training}: estimate variance for Mistral and wrapper metrics.
+  \item \textbf{Verifier and reranker training}: complete cross-encoder span verifier and taxonomy reranker training beyond rule-based smoke paths when ablations justify the added complexity.
+  \item \textbf{Neo4j migration}: port NetworkX graph interfaces to a production graph database while preserving edge schema.
+  \item \textbf{Live job ingestion}: integrate Extract\_jobDesc scraping outputs with SkillLLM\_v2 normalization under privacy and terms-of-use constraints.
+  \item \textbf{Multilingual and resume domains}: evaluate SkillSpan-trained models on resume corpora and non-English postings.
+  \item \textbf{Inference optimization}: quantize inference, batch decoding, and cache compiled prompts for deployment latency targets.
+\end{enumerate}
+
+Planned Stage-2 components documented in architecture files but lacking verified metric gains remain future work until labeled evaluations exist.

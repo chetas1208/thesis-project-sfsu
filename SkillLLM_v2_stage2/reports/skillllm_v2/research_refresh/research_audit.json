@@ -1,0 +1,85 @@
+{
+  "sources": [
+    {
+      "key": "herandi2024skillllm",
+      "title": "Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction",
+      "authors": "Amirhossein Herandi, Yitao Li, Zhanlin Liu, Ximin Hu, Xiao Cai",
+      "year": "2024",
+      "url": "https://arxiv.org/abs/2410.12052",
+      "contribution": "Shows that supervised LLM adaptation can improve skill extraction quality.",
+      "application": "Supports using a fine-tuned Mistral LoRA as the main extraction anchor.",
+      "implementation_effect": "Current: keep the LLM extractor as the anchor and evaluate wrappers separately."
+    },
+    {
+      "key": "zhang2022skillspan",
+      "title": "SkillSpan: Hard and Soft Skill Extraction from English Job Postings",
+      "authors": "Mike Zhang, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank",
+      "year": "2022",
+      "url": "https://aclanthology.org/2022.naacl-main.366/",
+      "contribution": "Introduces expert span annotations for hard and soft skills in job postings.",
+      "application": "Defines the benchmark, labels, and exact boundary pressure used here.",
+      "implementation_effect": "Current: use test split for extraction metrics; preserve hard/soft labels."
+    },
+    {
+      "key": "zaratiana2024gliner",
+      "title": "GLiNER: Generalist Model for Named Entity Recognition using Bidirectional Transformer",
+      "authors": "Urchade Zaratiana, Nadi Tomeh, Pierre Holat, Thierry Charnois",
+      "year": "2024",
+      "url": "https://aclanthology.org/2024.naacl-long.300/",
+      "contribution": "Generalist NER with arbitrary labels using a compact bidirectional encoder.",
+      "application": "Useful as a recall booster and baseline, not a replacement for the tuned LLM.",
+      "implementation_effect": "Current: add-only auxiliary candidates behind non-regression gates."
+    },
+    {
+      "key": "dettmers2023qlora",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "authors": "Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, Luke Zettlemoyer",
+      "year": "2023",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "contribution": "Memory-efficient LoRA fine-tuning through frozen 4-bit quantized backbones.",
+      "application": "Justifies local Mistral adapter training on constrained GPUs.",
+      "implementation_effect": "Current: reuse trained adapter; do not retrain during refresh."
+    },
+    {
+      "key": "edge2024graphrag",
+      "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+      "authors": "Darren Edge, Ha Trinh, Newman Cheng, Joshua Bradley, Alex Chao, Apurva Mody, Steven Truitt, Jonathan Larson",
+      "year": "2024",
+      "url": "https://arxiv.org/abs/2404.16130",
+      "contribution": "Uses graph-based structure for corpus-level reasoning beyond naive chunk retrieval.",
+      "application": "Supports downstream graph reasoning after extraction and normalization.",
+      "implementation_effect": "Current: keep graph reasoning out of the extraction gate."
+    },
+    {
+      "key": "anthropic2024contextualretrieval",
+      "title": "Contextual Retrieval in AI Systems",
+      "authors": "Anthropic",
+      "year": "2024",
+      "url": "https://www.anthropic.com/engineering/contextual-retrieval",
+      "contribution": "Adds document context to chunks to improve retrieval reliability.",
+      "application": "Supports contextualized job/course retrieval with evidence.",
+      "implementation_effect": "Current: add deterministic contextual retrieval helper; dense/reranker later."
+    },
+    {
+      "key": "huang2025cag",
+      "title": "Don't Do RAG: When Cache-Augmented Generation is All You Need for Knowledge Tasks",
+      "authors": "Chan H. Huang et al.",
+      "year": "2025",
+      "url": "https://dl.acm.org/doi/10.1145/3701716.3715490",
+      "contribution": "Frames cache-augmented generation as useful when stable knowledge fits in context.",
+      "application": "Use CAG for stable profile/taxonomy/course summaries, not for changing job feeds.",
+      "implementation_effect": "Current: add cached context packet; keep job postings in RAG.",
+      "note": "Author metadata should be verified before final submission."
+    },
+    {
+      "key": "dvcDocs",
+      "title": "Versioning Data and Models",
+      "authors": "DVC Documentation",
+      "year": "2026",
+      "url": "https://doc.dvc.org/example-scenarios/versioning-data-and-models",
+      "contribution": "Documents Git-compatible practices for data/model artifact versioning.",
+      "application": "Motivates artifact manifests, stale checks, and metrics provenance.",
+      "implementation_effect": "Current: refresh manifest, provenance report, and artifact path tables."
+    }
+  ]
+}

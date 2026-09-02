@@ -1,0 +1,10 @@
+.env
+.cache/
+results/*/checkpoints/
+results/*/models/
+results/*/raw/
+results/*/runtime/
+results/summary.csv
+__pycache__/
+*.pyc
+

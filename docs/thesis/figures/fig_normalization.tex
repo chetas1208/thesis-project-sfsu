@@ -1,0 +1,8 @@
+\begin{tikzpicture}[node distance=5mm]
+\node[data] (surface) {Surface span with offsets};
+\node[impl,below=of surface] (alias) {Normalized text and\\alias lookup};
+\node[impl,below=of alias] (retrieve) {Lexical candidate retrieval\\alias, fuzzy, BM25-like methods};
+\node[impl,below=of retrieve] (attach) {Attach canonical ID/name\\without changing extraction fields};
+\node[impl,below=of attach] (record) {Linked candidate + provenance};
+\draw[flow] (surface)--(alias); \draw[flow] (alias)--(retrieve); \draw[flow] (retrieve)--(attach); \draw[flow] (attach)--(record);
+\end{tikzpicture}

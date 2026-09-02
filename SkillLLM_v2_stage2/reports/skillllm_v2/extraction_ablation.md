@@ -1,0 +1,9 @@
+| variant | exact_span_f1 | partial_span_f1 | token_f1 | hard_skill_f1 | soft_skill_f1 | linking_coverage | gate_decision |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| A_mistral_only | 0.0571 | 0.1143 | 0.0292 | 0.0755 | 0.0 | NA | NA |
+| B_mistral_boundary | 0.0571 | 0.1143 | 0.0292 | 0.0755 | 0.0 | NA | NA |
+| C_mistral_gliner | 0.0563 | 0.1408 | 0.0388 | 0.0741 | 0.0 | NA | NA |
+| D_mistral_gliner_dictionary | 0.2025 | 0.2785 | 0.1595 | 0.2581 | 0.0 | NA | NA |
+| E_full_wrapper | 0.2025 | 0.2785 | 0.1595 | 0.2581 | 0.0 | NA | NA |
+| F_full_wrapper_taxonomy | 0.2025 | 0.2785 | 0.1595 | 0.2581 | 0.0 | 1.0 | NA |
+| G_safe_wrapper | 0.2025 | 0.2785 | 0.1595 | 0.2581 | 0.0 | 1.0 | accept |

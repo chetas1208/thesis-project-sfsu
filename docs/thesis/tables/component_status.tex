@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Evidence status by subsystem. ``Implemented'' describes local source and artifacts, not a blanket production-readiness claim.}
+\label{tab:component-status}
+\begin{tabularx}{\textwidth}{p{0.22\textwidth}p{0.20\textwidth}X}
+\toprule
+Subsystem & Status & Thesis-safe statement \\
+\midrule
+Mistral extraction & Implemented, full-test metrics & Model-backed anchor; persisted predictions and metrics \\
+BERT / GLiNER & Implemented baselines & BERT artifact is CPU-fast; GLiNER result is zero-shot \\
+Candidate policy / gate & Implemented, full-test artifacts & Anchor-protection and tolerance gate evaluated on cached predictions \\
+Taxonomy linking & Implemented, coverage measured & Attach-only local alias linking; no supervised linking-accuracy claim \\
+Profile/context & Implemented, smoke-tested & Evidence-preserving structured packet and stable hash \\
+Graph/matching/course & Implemented, smoke/demo-tested & Deterministic data flow; ranking quality not evaluated \\
+\bottomrule
+\end{tabularx}
+\end{table}

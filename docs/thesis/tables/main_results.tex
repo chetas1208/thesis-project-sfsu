@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Primary full-test extraction artifacts. Values are copied from persisted \codepath{metrics.json} files, not inferred from prose reports.}
+\label{tab:main-results}
+\begin{tabular}{lrrrr}
+\toprule
+System & Exact F1 & Token F1 & Hard F1 & Soft F1 \\
+\midrule
+BERT baseline & 0.059150 & 0.274922 & 0.129799 & 0.018796 \\
+GLiNER baseline (zero-shot) & 0.075833 & 0.114409 & 0.054559 & 0.096571 \\
+Raw Mistral LoRA anchor & 0.670069 & 0.787886 & 0.726450 & 0.604046 \\
+Mistral + GLiNER + taxonomy & 0.670062 & 0.787575 & 0.728020 & 0.602305 \\
+Full CAG/graph wrapper & 0.671102 & 0.787575 & 0.728618 & 0.603755 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,114 @@
+{
+  "seed": 113412,
+  "labels": ["SKILL"],
+  "collapse_labels_to_skill": true,
+  "split_ratios": {
+    "train": 0.8,
+    "dev": 0.1,
+    "test": 0.1
+  },
+  "paths": {
+    "raw_data_dir": "data/raw",
+    "canonical_dir": "data/canonical",
+    "model_inputs_dir": "data/model_inputs",
+    "results_dir": "results",
+    "vendor_dir": "vendor",
+    "cache_root": ".cache",
+    "prompt_template": "configs/gpt5_prompt.txt"
+  },
+  "training_defaults": {
+    "token_classification": {
+      "max_length": 128,
+      "train_batch_size": 16,
+      "eval_batch_size": 16,
+      "learning_rate": 5e-5,
+      "num_train_epochs": 20,
+      "patience": 5
+    },
+    "nnose": {
+      "k": 32,
+      "lambda_value": 0.9,
+      "temperature": 0.1,
+      "projection": true
+    },
+    "gliner": {
+      "threshold": 0.5
+    },
+    "context": {
+      "train_batch_size": 32,
+      "num_train_epochs": 2,
+      "learning_rate": 2e-5,
+      "warmup_ratio": 0.1,
+      "encode_batch_size": 64
+    },
+    "nvidia_build": {
+      "temperature": 0.1,
+      "top_p": 0.9,
+      "max_tokens": 450,
+      "reasoning_effort": "low"
+    }
+  },
+  "models": {
+    "nnose": {
+      "name": "NNOSE",
+      "task_type": "span_extraction",
+      "env_name": "skill-bench-nnose",
+      "repo_dir": "vendor/nnose",
+      "base_encoder": "jjzha/jobbert-base-cased",
+      "input_dir": "data/model_inputs/nnose",
+      "results_dir": "results/nnose"
+    },
+    "jobbert": {
+      "name": "JobBERT",
+      "task_type": "span_extraction",
+      "env_name": "skill-bench-jobbert",
+      "base_model": "jjzha/jobbert_skill_extraction",
+      "input_dir": "data/model_inputs/jobbert",
+      "results_dir": "results/jobbert"
+    },
+    "gliner": {
+      "name": "GLiNER",
+      "task_type": "span_extraction",
+      "env_name": "skill-bench-gliner",
+      "repo_dir": "vendor/GLiNER",
+      "base_model": "urchade/gliner_medium-v2.1",
+      "input_dir": "data/model_inputs/gliner",
+      "results_dir": "results/gliner"
+    },
+    "skill_llm": {
+      "name": "Skill-LLM",
+      "task_type": "span_extraction",
+      "env_name": "skill-bench-skill-llm",
+      "repo_dir": "vendor/Skill-LLM",
+      "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "input_dir": "data/model_inputs/skill_llm",
+      "results_dir": "results/skill_llm"
+    },
+    "context": {
+      "name": "ConTeXT",
+      "task_type": "retrieval",
+      "env_name": "skill-bench-context",
+      "base_model": "TechWolf/ConTeXT-Skill-Extraction-base",
+      "input_dir": "data/model_inputs/context",
+      "results_dir": "results/context"
+    },
+    "nim_gemma_31b": {
+      "name": "Gemma 4 31B IT",
+      "task_type": "span_extraction",
+      "env_name": "skill-bench-openai",
+      "provider": "nvidia_build",
+      "base_model": "google/gemma-4-31b-it",
+      "input_dir": "data/model_inputs/gpt5",
+      "results_dir": "results/nim_gemma_31b"
+    },
+    "nim_gpt_oss_20b": {
+      "name": "GPT OSS 20B",
+      "task_type": "span_extraction",
+      "env_name": "skill-bench-openai",
+      "provider": "nvidia_build",
+      "base_model": "openai/gpt-oss-20b",
+      "input_dir": "data/model_inputs/gpt5",
+      "results_dir": "results/nim_gpt_oss_20b"
+    }
+  }
+}

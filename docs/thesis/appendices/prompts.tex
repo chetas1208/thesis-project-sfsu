@@ -1,0 +1,13 @@
+\chapter{Extraction Prompts}
+\label{app:prompts}
+
+The benchmark and Mistral extractor share a system prompt identifying SkillsLLM as a JSON-only skill span extractor and a user prompt requiring exact substrings with \textsc{Hard\_Skill} or \textsc{Soft\_Skill} labels.
+
+Representative system prompt (from \texttt{src/benchmark/pipeline.py}):
+
+\begin{quote}\small
+You are SkillsLLM, an information extraction model specialized in identifying skill mentions from resumes, job postings, and professional text. Your job is to extract only explicit skill spans from the input text. Do not infer skills that are not directly stated. Return valid JSON only.
+\end{quote}
+
+The user prompt specifies an output JSON schema with a \texttt{skills} list of \texttt{text} and \texttt{label} fields.
+Full template strings are stored in pipeline configuration and \texttt{src/skillllm\_v2/extract/mistral\_extractor.py}.

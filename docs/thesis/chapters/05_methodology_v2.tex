@@ -1,0 +1,66 @@
+\chapter{Dataset and Experimental Methodology}
+\label{ch:methodology}
+
+\section{Evidence-first methodology}
+
+The methodology follows a strict evidence hierarchy. A quantitative statement in this report must come from a persisted metric artifact, a generated report derived from such an artifact, a configuration file, a training summary, or a local data file. A source module establishes that an interface or algorithm is implemented, but it does not establish its performance. A status marker establishes that an automated stage finished, but it does not establish that the result is a full-scale experiment. This hierarchy is necessary because the repository contains full-test outputs, smoke tests, demo records, historical analyses, and an initially uncommitted working tree.
+
+The audit written before this report is the operational version of this method. It reconciles the later safe-wrapper artifacts with an earlier wrapper-error report, identifies the primary result files, and records unavailable downstream metrics as `NA`. The result is more conservative than treating every number found in the directory as interchangeable, but it makes the final argument reproducible and falsifiable.
+
+\section{Dataset and local representation}
+
+The primary corpus is the local export at \codepath{data/source/skillspan\_hf}. Its README attributes SkillSpan to Zhang et al.~\cite{zhang2022skillspan}, specifies CC BY 4.0 licensing, and identifies the English job-posting sources as StackOverflow/technical and STAR/house. Each JSON line has an \inlinecode{idx} document delimiter, token list, \inlinecode{tags_skill}, \inlinecode{tags_knowledge}, and source. The tag names should not be equated mechanically with the report's hard/soft labels without inspecting the data-preparation path; the project creates its internal typed span representation from the local export.
+
+\input{tables/dataset_splits}
+
+The total local row count is 11,543. This is smaller than a naive reading of the paper's 14.5K sentence description only if one mistakes rows or pre-processing states for the original corpus. The thesis reports both facts as separate: the original paper's corpus description and the actual local split counts consumed by this pipeline. It does not invent a reconciliation that is absent from repository artifacts.
+
+\section{SFT data preparation and prompt contract}
+
+\inlinecode{build_mistral_sft_data.py} iterates over train, development, and test splits and writes a JSONL record with four elements: an identifier, an instruction, original input text, and an output object holding gold skills. The training renderer then produces a Mistral chat sequence consisting of a system instruction, a user request containing the source text, and an assistant JSON target. The target strips offsets and retains text plus label. At evaluation time, offsets are re-established by source-string alignment. This choice is significant: training teaches structured string production, whereas evaluation insists that the predicted string maps back to an observed substring.
+
+The prompt requests only explicit mentions and asks for JSON with a \inlinecode{skills} array containing \inlinecode{text} and \inlinecode{label} values. It permits hard, soft, and generic \inlinecode{SKILL} labels at the interface, with generic values mapped to hard skill in the extractor. No free-form explanation is requested from the model, which narrows the decoding surface and makes parse errors observable. The prompt can reduce certain formatting failures; it does not guarantee schema adherence or semantic correctness. The parser and validator remain necessary.
+
+\section{Training procedure}
+
+The full configuration is \codepath{configs/skillllm\_v2\_training\_80ep\_2gpu.yaml}. It specifies seed 42 and an 80-epoch full run. \inlinecode{mistral_lora_trainer.py} loads the model locally, selects bfloat16 when supported and float16 otherwise, configures 4-bit NF4 loading when enabled, prepares the model for k-bit training, enables gradient checkpointing, and injects LoRA adapters into the listed projection modules. The trainer uses a causal language-model objective over rendered chat text, a cosine scheduler, 5\% warmup by default, an 8-bit paged AdamW optimizer in the 4-bit path, and no external reporting backend.
+
+\input{tables/training_config}
+
+The persisted training summary records a two-process world size, 4,800 training samples, 3,174 development samples, epoch 80, a training loss of 0.143082, a development loss of 0.397449, and 324,217.825 seconds of training runtime. The research-refresh manifest records two RTX 3090 GPUs, PyTorch 2.6.0+cu124, and Python 3.12.3. These records make the compute account concrete. They do not make loss directly comparable with other projects, prove that the final epoch is globally optimal, or quantify seed sensitivity.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_training}
+\caption{Training and evaluation pipeline traced to the local data-preparation and trainer modules. The persisted evaluation artifact is distinct from smoke-mode fallback.}
+\label{fig:training}
+\end{figure}
+
+\section{Baselines and comparison discipline}
+
+The project contains a BERT baseline and a GLiNER baseline. The BERT metric file identifies itself as a CPU-fast token-classification baseline. The GLiNER metric file states that fine-tuning was skipped and that the run is zero-shot/few-shot. Both are useful reference points because they use the same local evaluation tooling and show the magnitude of the Mistral result in the repository. They are not intended as exhaustive tuned baselines. In particular, their lower results cannot support a general conclusion that all encoder models or all generalist NER systems are ineffective for skill extraction.
+
+The report also distinguishes legacy Phase-A and Stage-2 evidence. A root-level thesis evidence report references earlier multi-LLM benchmarks with different epoch counts and configurations. They have research value, but the present numeric comparison table is restricted to Stage-2 persisted artifacts. This avoids combining a three-epoch result, a 80-epoch result, a smoke test, and a demo under one apparent benchmark protocol.
+
+\section{Extraction evaluation}
+
+The extraction evaluator compares gold and predicted spans and reports exact span, partial span, token, hard-skill, soft-skill, macro, and micro metrics. Exact matching uses label and boundary agreement. Partial matching and token F1 provide diagnostic context when a system locates a relevant phrase but selects a different boundary. The primary metric is exact-span F1 because downstream canonicalization is only meaningful when it can be traced to a source span. Parse failure and alignment information further distinguish a model that has no candidate from one that emits ungrounded text.
+
+For wrapper experiments, the methodology is paired: cached anchor predictions and candidate wrapper predictions are evaluated on the same 974-document path. The safe-wrapper script records candidate and selected metrics, guardrail floors, deltas, a decision, and an explanation. This is stronger than comparing unrelated aggregate runs, yet still not a multi-seed statistical study. It identifies whether a particular wrapper snapshot is compatible with the anchor; it does not estimate a population-level treatment effect.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_evaluation}
+\caption{Evaluation path for extraction and wrapper selection. Downstream ranking metrics use a separate, currently unavailable labelled protocol.}
+\label{fig:evaluation}
+\end{figure}
+
+\section{Normalization and downstream methodology}
+
+Linking evaluation is deliberately separated from extraction. The taxonomy error-analysis report evaluates how often candidate records obtain canonical attachments from a 696-entry local alias table and breaks methods down into BM25, alias, fuzzy, and none. Because no gold canonical IDs are supplied for a supervised reranker, the reported 0.890 values are coverage measures. The \inlinecode{linking_eval.csv} file has \inlinecode{taxonomy_linking_accuracy,0.0}; it must not be overwritten with coverage in a final table.
+
+The graph, job matching, gap detection, and course recommendation modules are exercised through unit tests and demo artifacts. Their output formats include matched skills, missing skills, evidence strings, recommendation reasons, and courses that cover gaps. Neither \inlinecode{matching_eval.csv} nor \inlinecode{course_recommendation_eval.csv} has a usable label-derived score: nDCG@10 and P@5 are both `NA`. Accordingly, this report analyses their data flow and formulas, not their real-world efficacy.
+
+\section{Reproducibility procedure}
+
+The implementation produces a layered trail: configuration leads to adapter/checkpoint and training-summary artifacts; generation leads to predictions, raw outputs, and metrics; wrapper processing leads to candidate and linked records; reports summarise the results. \inlinecode{prediction_provenance_check.py} verifies that selected downstream files are newer than the upstream Mistral predictions and rejects a metric note indicating fallback use. The report states that no stale or missing downstream artifacts were detected. Timestamps are useful safeguards but are not a replacement for versioned Git history, immutable artifact storage, checksums of every input, or environment lock files. Those items are future reproducibility work.

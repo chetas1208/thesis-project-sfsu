@@ -1,0 +1,8 @@
+\begin{tikzpicture}[node distance=5mm and 8mm]
+\node[data] (profile) {Canonical user skills\\and optional fit fields};
+\node[data,right=of profile] (job) {Required / preferred\\job skills};
+\node[impl,below left=of profile] (match) {Deterministic JobMatcher\\coverage and penalty score};
+\node[impl,below right=of job] (gap) {GapDetector\\missing, weak, outdated,\\uncertain, transferable};
+\node[impl,below=12mm of $(match)!0.5!(gap)$] (out) {Explainable match, gap list,\\and evidence strings};
+\draw[flow] (profile)--(match); \draw[flow] (job)--(match); \draw[flow] (profile)--(gap); \draw[flow] (job)--(gap); \draw[flow] (match)--(out); \draw[flow] (gap)--(out);
+\end{tikzpicture}

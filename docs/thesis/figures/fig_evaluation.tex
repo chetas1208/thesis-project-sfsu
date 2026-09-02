@@ -1,0 +1,8 @@
+\begin{tikzpicture}[node distance=5mm]
+\node[data] (gold) {Gold spans and persisted\\predictions};
+\node[impl,below=of gold] (align) {Exact, partial, token,\\and per-label matching};
+\node[impl,below=of align] (metrics) {Precision, recall, F1,\\parse and alignment diagnostics};
+\node[impl,below=of metrics] (wrapper) {Wrapper candidate versus\\anchor comparison};
+\node[impl,below=of wrapper] (report) {Metrics JSON, money table,\\sanity report, error analysis};
+\draw[flow] (gold)--(align); \draw[flow] (align)--(metrics); \draw[flow] (metrics)--(wrapper); \draw[flow] (wrapper)--(report);
+\end{tikzpicture}

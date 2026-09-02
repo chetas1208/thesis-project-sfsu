@@ -1,0 +1,37 @@
+\chapter{Results}
+\label{ch:results}
+
+\section{Primary extraction results}
+
+\Cref{tab:main-results} presents the thesis's primary numerical result table. It is generated from the persisted Stage-2 metric artifacts and agrees with the metric-sanity and money-table reports. The Raw Mistral LoRA path is the clear anchor within this collection: exact-span F1 is 0.670069, token F1 0.787886, hard-skill F1 0.726450, and soft-skill F1 0.604046. The result is substantially larger than the stored BERT and zero-shot GLiNER scores. The appropriate conclusion is local and bounded: under this repository's stored evaluator, training path, and artifact set, the adapted Mistral extractor is the best available extraction component.
+
+\input{tables/main_results}
+
+The contrast between exact and token F1 is informative. For the Mistral anchor, token F1 exceeds exact F1 by about 0.118. This pattern is expected when some predicted regions overlap gold spans but have non-identical boundaries. It reinforces why a report on a downstream career system must not use a token-only measure: the original surface span is later used for evidence display and canonicalization. The hard/soft difference is also material. Soft-skill F1 is about 0.122 lower than hard-skill F1 for the anchor, leaving a clear target for future annotation analysis and model improvement.
+
+The BERT and GLiNER measurements should not be misread as a literature leaderboard. BERT is identified as a CPU-fast baseline, and GLiNER is zero-shot/few-shot. Nonetheless, they are useful controls because they reveal that the result is not a minor score variation around a shared baseline. They also illustrate a methodological lesson: merely inserting a general NER component does not establish suitability for typed skill spans under an exact evaluation interface.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_results}
+\caption{Exact-span and token F1 from primary persisted artifacts. The full wrapper's exact-span difference from Raw Mistral is 0.001033 and should not be interpreted as a robust gain.}
+\label{fig:results-chart}
+\end{figure}
+
+\section{Wrapper results and selection semantics}
+
+The wrapper variants preserve the headline result rather than transform it. The boundary-safe variant records 0.671111 exact F1 and 0.605505 soft F1. The Mistral+GLiNER+taxonomy variant records 0.670062 and 0.602305. The full CAG/graph variant records 0.671102 and 0.603755. Each selected result passes the gate's configured floors, and each is marked `accept`. The full wrapper has the largest exact F1 observed among these files, but its advantage over the Mistral anchor is only 0.001033. Its soft-skill F1 is slightly lower than the anchor's. The evidence supports the wording ``accepted as non-regressive under configured tolerances''; it does not support ``wrapper improves extraction.''
+
+This result is scientifically useful rather than disappointing. It means that a modular pipeline can enrich extraction with source, canonicalization, context, and graph metadata without a large measured loss in the stored evaluation. It also warns against using wrapper complexity as a substitute for a strong primary model. A consumer of the output can treat Mistral as the provenance source for extraction and treat the wrapper as a guarded enrichment layer. The architecture remains valuable even in the absence of a large F1 increase because downstream systems need IDs, evidence, and explanations, but their value must be evaluated on their own metrics.
+
+\section{Linking and downstream results}
+
+The full CAG/graph metrics file records \inlinecode{linking_accuracy} 0.890374, while the detailed linking report calls the same kind of quantity coverage and states that supervised reranker labels are unavailable. The safer term is therefore \emph{linking coverage}: a large share of candidate records obtained a canonical attachment from the local alias system. It cannot be called canonical-link accuracy without a gold target. The code's attach-only property protects extraction F1 from the addition of a canonical field, but it does not establish the correctness of all attached IDs.
+
+The downstream result status is even more constrained. The full wrapper's metric file contains null values for job nDCG@10 and course precision@5, and their report CSV files write `NA`. The code produces job-match scores, gap types, recommended courses, and explanations. The integration slice is therefore available for qualitative inspection and future annotation, but no quantitative claim is made about relevance, fairness, usefulness, or hiring outcomes.
+
+\section{Answer to the research questions}
+
+RQ1 is answered by the Mistral artifact: the primary model obtains 0.670069 exact-span F1 and 0.604046 soft-skill F1 in the stored Stage-2 evaluation. RQ2 is answered descriptively: the stored BERT and GLiNER baselines are much lower, and the wrapper variants remain near the anchor rather than delivering a large improvement. RQ3 is answered by the code and gate artifacts: candidate source protection, add-only admission, attach-only linking, and fallback are concrete mechanisms that prevent uncontrolled post-processing.
+
+RQ4 is answered at implementation level. The profile/context path preserves extraction evidence and offsets, handles duplicate keys, writes conflicts, separates stable and dynamic context, and hashes a cached packet. RQ5 is answered by an explicit boundary: typed graph, matching, gap, and course modules exist and are smoke-tested, but no labelled nDCG or P@5 evaluation is available. The most important result is therefore a systems result: extraction quality is an invariant that the rest of the architecture must preserve, rather than a quantity downstream components can freely trade away for apparent sophistication.

@@ -1,0 +1,8 @@
+\begin{tikzpicture}[node distance=5mm]
+\node[data] (config) {Configuration + dataset + seed};
+\node[impl,below=of config] (train) {Training summary, checkpoints,\\adapter and tokenizer};
+\node[impl,below=of train] (pred) {Predictions, raw outputs,\\and metrics JSON};
+\node[impl,below=of pred] (down) {Wrapper artifacts and linked\\candidate records};
+\node[impl,below=of down] (check) {Timestamp-based provenance check\\and human-readable reports};
+\draw[flow] (config)--(train); \draw[flow] (train)--(pred); \draw[flow] (pred)--(down); \draw[flow] (down)--(check);
+\end{tikzpicture}

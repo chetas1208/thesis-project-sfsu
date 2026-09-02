@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────────────
+# Global experiment configuration
+# ─────────────────────────────────────────────────────────────────────
+
+seed: 42
+
+labels:
+  - "SKILL"
+
+dataset:
+  name: "jjzha/skillspan"
+  target_tags: "tags_skill"
+  doc_id_field: "idx"
+  source_field: "source"
+
+paths:
+  raw_data: "data/raw/skillspan"
+  canonical: "data/exports/canonical"
+  exports: "data/exports"
+  models: "outputs/models"
+  predictions: "outputs/predictions"
+  document_predictions: "outputs/predictions/document_level"
+  metrics: "outputs/metrics"
+  reports: "outputs/reports"
+
+training:
+  mixed_precision: "fp16"
+  num_workers: 4
+  gradient_checkpointing: true
+  save_best_on: "f1"

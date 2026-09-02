@@ -1,0 +1,47 @@
+Extract every hard skill and soft skill mention from the source text.
+
+Return valid JSON only with this exact schema:
+{"skills":[{"text":"exact substring from source","label":"hard_skill|soft_skill","start":0,"end":0}]}
+
+Rules:
+1. Copy each predicted `text` exactly from the source text.
+2. Do not paraphrase, normalize, expand, or rewrite any skill mention.
+3. `start` and `end` use zero-based character offsets and `end` is exclusive.
+4. Every `label` must be either `hard_skill` or `soft_skill`.
+5. If no skills exist, return `{"skills":[]}`.
+6. Return JSON only. No markdown fences, no explanations, no extra keys.
+
+Example 1
+Source text:
+Python programming and stakeholder communication are required.
+JSON:
+{"skills":[{"text":"Python programming","label":"hard_skill","start":0,"end":18},{"text":"stakeholder communication","label":"soft_skill","start":23,"end":48}]}
+
+Example 2
+Source text:
+Empathy and SQL matter.
+JSON:
+{"skills":[{"text":"Empathy","label":"soft_skill","start":0,"end":7},{"text":"SQL","label":"hard_skill","start":12,"end":15}]}
+
+Example 3
+Source text:
+The office is located downtown.
+JSON:
+{"skills":[]}
+
+Example 4
+Source text:
+Leadership, leadership, and data analysis help.
+JSON:
+{"skills":[{"text":"Leadership","label":"soft_skill","start":0,"end":10},{"text":"leadership","label":"soft_skill","start":12,"end":22},{"text":"data analysis","label":"hard_skill","start":28,"end":41}]}
+
+Example 5
+Source text:
+Building distributed machine learning pipelines improves delivery.
+JSON:
+{"skills":[{"text":"Building distributed machine learning pipelines","label":"hard_skill","start":0,"end":47}]}
+
+Source text:
+{{ text }}
+
+JSON:

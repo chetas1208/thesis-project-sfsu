@@ -1,0 +1,10 @@
+extends: configs/skillllm_v2_training.yaml
+ablation:
+  systems:
+    - BERT baseline
+    - GLiNER
+    - Raw Mistral LoRA
+    - Mistral + Boundary Refiner
+    - Mistral + GLiNER + Taxonomy
+    - SkillLLM_v2 Full CAG/Graph
+  limit: null

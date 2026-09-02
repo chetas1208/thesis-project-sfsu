@@ -1,0 +1,16 @@
+{
+  "exact_span_precision": 0.6735057983942908,
+  "exact_span_recall": 0.6666666666666666,
+  "exact_span_f1": 0.6700687818948303,
+  "partial_span_precision": 0.8180196253345228,
+  "partial_span_recall": 0.8097130242825608,
+  "partial_span_f1": 0.8138451297980919,
+  "token_precision": 0.7747865517382246,
+  "token_recall": 0.8014367208958377,
+  "token_f1": 0.7878863409770688,
+  "hard_skill_f1": 0.7264500205676676,
+  "soft_skill_f1": 0.6040462427745664,
+  "macro_f1": 0.665248131671117,
+  "micro_f1": 0.6700687818948303,
+  "notes": "Raw Mistral LoRA path. Model load fallback used: False."
+}

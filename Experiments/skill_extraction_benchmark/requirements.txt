@@ -1,0 +1,36 @@
+# ── Core ──────────────────────────────────────────────────────────────
+torch>=2.2
+transformers>=4.40
+datasets>=2.19
+accelerate>=0.30
+tokenizers>=0.19
+safetensors>=0.4
+
+# ── Model-specific ───────────────────────────────────────────────────
+# GLiNER
+gliner>=0.2.9
+
+# Skill-LLM (QLoRA / LoRA fine-tuning)
+peft>=0.11
+bitsandbytes>=0.43
+trl>=0.9
+git+https://github.com/hiyouga/LLaMA-Factory.git@v0.8.3
+
+# ConTeXT (sentence-transformers)
+sentence-transformers>=3.0
+
+# NNOSE datastore
+faiss-cpu>=1.7       # use faiss-gpu if CUDA wheels available
+
+# ── Evaluation ───────────────────────────────────────────────────────
+seqeval>=1.2
+scikit-learn>=1.4
+nervaluate>=0.2
+
+# ── Utilities ────────────────────────────────────────────────────────
+pyyaml>=6.0
+tqdm>=4.66
+numpy>=1.26
+pandas>=2.1
+psutil>=5.9
+python-dotenv>=1.0

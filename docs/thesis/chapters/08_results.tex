@@ -1,0 +1,62 @@
+\chapter{Results}
+\label{ch:results}
+
+\section{Legacy Multi-Model Benchmark}
+
+Table~\ref{tab:legacy-llm} (Chapter~\ref{ch:baselines}) establishes RQ1--RQ2: among four completed open-weight models trained for three epochs under identical pipeline code, Mistral Small 3.1 24B achieved the highest exact span F1 (0.665), token F1 (0.730), and partial span F1 (0.798).
+Parse failure rate was 0.028\% (1 of 3{,}569) for each completed model.
+Unaligned prediction rates ranged from 0.30\% to 0.68\%.
+
+Per-label legacy Mistral metrics: hard-skill F1 0.730, soft-skill F1 0.587 (\texttt{metrics.json}).
+
+\section{Stage-2 Primary Extraction Results}
+
+Table~\ref{tab:stage2-money} reports verified Stage-2 SkillSpan test metrics from artifact JSON files referenced in \texttt{reports/skillllm\_v2/money\_table.md}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Stage-2 SkillSpan test metrics (verified artifacts). Wrapper rows use gate-selected predictions.}
+  \label{tab:stage2-money}
+  \small
+  \begin{tabular}{lrrrrr}
+    \toprule
+    System & Exact F1 & Token F1 & Partial F1 & Hard F1 & Soft F1 \\
+    \midrule
+    BERT baseline & 0.059 & 0.275 & 0.176 & 0.130 & 0.019 \\
+    GLiNER (zero-shot) & 0.076 & 0.114 & 0.135 & 0.055 & 0.097 \\
+    Raw Mistral LoRA (80 ep.) & 0.670 & 0.788 & 0.814 & 0.726 & 0.604 \\
+    Full CAG/graph (safe wrapper) & 0.671 & 0.788 & 0.816 & 0.729 & 0.604 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Raw Mistral at 80 epochs improves exact span F1 by 0.005 absolute over the three-epoch legacy run (0.670 vs.\ 0.665), answering RQ3 in favor of generative fine-tuned Mistral over encoder baselines by a wide margin.
+
+\section{Wrapper and Linking Results}
+
+The full CAG/graph safe wrapper candidate achieved exact span F1 0.671 with gate decision \texttt{accept} (\texttt{artifacts/skillllm\_v2/safe\_wrapper/full\_cag\_graph/metrics.json}).
+Taxonomy linking coverage for that variant is 0.890.
+The gate accepted the candidate because metrics remained above non-regression floors despite not meeting the configured improvement target for exact span F1 (gate reason string in metrics JSON).
+
+Boundary-only and Mistral+GLiNER+taxonomy variants showed negligible or zero delta on exact span F1 relative to the anchor in wrapper error analysis.
+
+\section{Smoke Ablation (Limited Sample)}
+
+Smoke ablation on approximately twenty examples (\texttt{reports/skillllm\_v2/extraction\_ablation.md}) shows lower absolute F1 values (for example, 0.057 for Mistral-only variant A).
+These numbers reflect the smoke sample and missing full model inference in some variants; they are \textbf{not} used for primary thesis conclusions.
+
+\section{Downstream Matching and Recommendation}
+
+\texttt{reports/skillllm\_v2/matching\_eval.csv} and \texttt{course\_recommendation\_eval.csv} record \texttt{NA} for nDCG@10 and P@5 because labeled evaluation sets were unavailable.
+Demo outputs in \texttt{reports/skillllm\_v2/demo/} illustrate job match scores and gap lists on synthetic inputs only.
+
+\section{Efficiency Observations}
+
+Legacy benchmark logs report Mistral average latency 2.03\,s per example and total runtime 784.9 minutes for the three-epoch test inference pass.
+Llama 3.1 8B averaged 0.91\,s per example with lower F1.
+Stage-2 training required approximately 90 hours for 80 Mistral epochs on two GPUs.
+
+\section{Supplementary Extract\_jobDesc Results}
+
+BERT entity F1 on the Extract\_jobDesc gold test split reached 0.462; silver-trained BERT reached 0.710 entity F1 on gold evaluation.
+These results are task-specific and not directly comparable to SkillSpan span F1.

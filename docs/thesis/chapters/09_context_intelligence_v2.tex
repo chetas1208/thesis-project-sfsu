@@ -1,0 +1,81 @@
+\chapter{Context Intelligence: Profiles, Graphs, Matching, and Recommendations}
+\label{ch:context}
+
+\section{From a span list to a durable profile}
+
+Span extraction is intentionally local: given a sentence or document, it returns the capability mentions supported by that text. A career-facing system needs an additional representation that can accumulate evidence across a resume, user-confirmed entries, target roles, completed courses, and interactions. Passing every raw input to a model on every request is inefficient and makes contradictions difficult to inspect. Conversely, replacing the history with an opaque summary risks erasing the source of a claim. SkillLLM\_v2 implements a narrow middle ground: a structured, evidence-preserving profile summary.
+
+\inlinecode{ProfileSkillFact} contains a surface form, a hard/soft label, optional canonical identifier and name, a confidence, a list of evidence records, and metadata. Each evidence record contains a source, text, confidence, and timestamp. \inlinecode{summarize_profile} receives a raw profile text and explicitly supplied extraction results; it does not infer a hidden skill. It groups records by canonical identifier if available, otherwise by normalised surface form. When duplicate evidence arrives, it keeps evidence items and takes the maximum confidence rather than silently averaging away conflicting support. Source offsets are preserved in metadata.
+
+This design gives a later UI or LLM concrete answers to questions such as ``Why does the profile contain Python?'' and ``Which input mentioned this skill?'' It also has a modest conflict mechanism. If the same normalised name arrives under different labels, a conflict note is recorded. It does not yet model temporal recency, evidence reliability by source, proficiency levels, or semantic contradiction. For example, it has no first-class representation of a claim that a user stopped using a tool or has only introductory experience. Those are intended future extensions, not current implicit behaviour.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_profile}
+\caption{Implemented evidence-preserving profile summarization. It aggregates explicit candidates and records conflicts instead of inferring or silently resolving them.}
+\label{fig:profile}
+\end{figure}
+
+\section[Context compaction policy]{\hspace{0.35em}Context compaction policy}
+
+The context-compaction function returns three intentionally separate sections. Its stable cache contains a profile summary, skill memory, taxonomy aliases, and optional course-catalog summaries. Its dynamic-retrieval policy identifies job postings and scraped descriptions as sources to retrieve rather than cache. Its graph policy describes user-to-skill-to-job-to-course paths that belong in a relational layer. The cached packet carries the three policies, a packet type, and a SHA-256 hash of the serialised payload.
+
+The terms CAG and RAG are used in this report to describe local context-management roles, not to claim a benchmarked implementation of a particular published CAG/GraphRAG algorithm. The cached portion is stable in the sense of input role, not permanently true; an application must invalidate or recreate it when a user updates their profile. The dynamic policy is a declaration that job records change frequently, not a production web-crawling system. The retrieval class currently performs deterministic lexical overlap over contextualised records. It creates a testable interface but does not claim dense semantic retrieval.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_context}
+\caption{Implemented context-compaction policy. Stable profile structures are cached; dynamic job information and graph explanations remain separate responsibilities.}
+\label{fig:context-policy}
+\end{figure}
+
+\section{Why evidence preservation matters for compaction}
+
+An evidence-preserving compact profile has three system benefits. First, it makes source attribution available after deduplication. A canonical \inlinecode{amazon_web_services} fact can retain both an ``AWS'' resume mention and an ``Amazon Web Services'' job-history mention rather than forcing one surface form to win. Second, it supports constrained updates. A future skill-confidence model can append a new evidence event or revise an aggregation function without rewriting the original extraction. Third, it makes a contextual packet inspectable: the hash detects changes to serialised content, and the separated policy fields reveal why a fact was cached or retrieved.
+
+This approach also reduces a common overclaim in career systems. A user profile is not a ground-truth competency graph merely because it is structured. It is a set of claims with source and confidence. The current profile data type does not determine mastery, duration, recency, or employer validation. A recommendation generated from it should expose that it is based on extracted textual evidence and should invite correction. The existing code's refusal to infer hidden skills is therefore a useful privacy and reliability property.
+
+\section{Knowledge graph representation}
+
+The graph subsystem uses NetworkX to create an in-memory \inlinecode{MultiDiGraph}. It supports User, Profile, Job, Course, Skill, SkillCluster, and Occupation nodes. Its edge vocabulary includes \inlinecode{HAS_SKILL}, \inlinecode{MISSING_SKILL}, \inlinecode{REQUIRES}, \inlinecode{PREFERS}, \inlinecode{TEACHES}, \inlinecode{REQUIRES_PREREQUISITE}, \inlinecode{SIMILAR_TO}, and \inlinecode{BELONGS_TO}. The public builder methods create user-skill, job-requirement, and course-skill relationships. The retriever lists direct neighbours, while the explainer computes a shortest path if one exists and returns a textual arrow-separated explanation.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_graph}
+\caption{Skill graph relation types used by the current vertical slice. Direct edges are constructed from supplied records; a missing skill is derived.}
+\label{fig:graph-schema}
+\end{figure}
+
+The graph is useful even before learned graph reasoning. A deterministic graph prevents a downstream explanation from being detached from the skills and course records it used. It allows a path such as user $\rightarrow$ known skill $\rightarrow$ job requirement $\rightarrow$ course to be surfaced for inspection. Still, the present graph does not persist to a database, resolve real-world duplicate entities beyond the linker, learn node embeddings, or evaluate graph retrieval against relevance labels. It should be described as a lightweight graph representation and explanation mechanism.
+
+\section{Job matching and skill-gap detection}
+
+\inlinecode{JobMatcher} consumes a profile with a \inlinecode{skills} list and a job with \inlinecode{required_skills} and \inlinecode{preferred_skills}. It computes overlap, missing required skills, optional supplied semantic-role fit, experience-level fit, user-preference fit, and a penalty proportional to missing required skills. The fixed equation in \Cref{eq:match} is implemented directly in source. The returned record includes a clipped score, matched skills, missing skills, critical missing skills, evidence strings showing coverage, and a short recommendation reason.
+
+\inlinecode{GapDetector} expands the missing-skill view. For a job requirement, a skill can be missing-critical, weak, outdated, uncertain, or covered by an explicitly supplied transferable mapping. Preferred but absent skills form a separate missing-preferred category. This vocabulary is useful for transparency because an absent string and a low-confidence/obsolete skill are not the same intervention. Yet the classification depends on supplied profile fields; the system does not currently estimate proficiency or obsolescence from raw text.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_matching}
+\caption{Implemented deterministic matching and gap-detection flow. Optional semantic, experience, and preference fit fields are caller-supplied rather than learned by the repository.}
+\label{fig:matching}
+\end{figure}
+
+The score must not be treated as a hiring prediction. Its weights are transparent implementation choices, not fitted parameters. The lack of labelled relevance data is especially important here: a high coverage score could still recommend a role that mismatches seniority, location, compensation, accessibility needs, or nuanced work experience. A responsible system would use this output as evidence-backed decision support and make the components visible, not as automatic eligibility screening.
+
+\section{Course recommendation}
+
+\inlinecode{CourseRecommender} accepts gap objects, a course catalogue, and an optional profile. It considers only courses that cover at least one gap. For each it calculates gap coverage, prerequisite fit, supplied level fit, supplied goal alignment, and workload penalty, then clips a weighted sum to $[0,1]$. The output includes course identifier/name, covered skills, gap-coverage fraction, a score, and a sentence explaining the covered gaps. This is a readable implementation of a rule-based baseline, and its unit test verifies a simple expected course.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_course}
+\caption{Implemented course-recommendation flow and its explicit evaluation boundary. P@5 is unavailable because no labelled course relevance data are persisted.}
+\label{fig:course}
+\end{figure}
+
+The current catalogue inputs are demo data. No thesis claim is made about course quality, learner success, fairness, or P@5. A meaningful next evaluation would assemble user/job/course triples with independently judged relevant courses, ensure train/test separation where learned components are added, compare simple coverage ranking with stronger retrieval baselines, and analyse whether recommendations differ systematically across user groups. Until then, the recommender is an inspectable vertical-slice component rather than a validated intervention.
+
+\section{A staged deployment interpretation}
+
+The context and graph architecture suggests a safe future rollout. Stage one can expose extraction and canonicalization with evidence and correction affordances. Stage two can offer profile compaction, showing exactly what will be cached and allowing the user to add, remove, or dispute facts. Stage three can show deterministic gap and course suggestions as explanations, clearly labelled as unvalidated. Only after a labelled offline evaluation and a fairness/privacy review should the system use learned rankers or consequential matching decisions. This staged interpretation aligns the strength of a feature's claims with the strength of its evidence.

@@ -1,0 +1,8 @@
+\begin{tikzpicture}[node distance=5mm]
+\node[data] (gaps) {Detected skill gaps};
+\node[data,below=of gaps] (catalog) {Course catalogue:\\teaches and prerequisite skills};
+\node[impl,below=of catalog] (score) {Deterministic recommendation score:\\coverage, prerequisites, level, goal, workload};
+\node[impl,below=of score] (rank) {Ranked course recommendations\\with covered skills};
+\node[plan,below=of rank] (eval) {Future: evaluate P@5 / nDCG\\on labelled relevance data};
+\draw[flow] (gaps)--(catalog); \draw[flow] (catalog)--(score); \draw[flow] (score)--(rank); \draw[dashedflow] (rank)--(eval);
+\end{tikzpicture}

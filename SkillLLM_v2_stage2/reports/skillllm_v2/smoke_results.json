@@ -1,0 +1,56 @@
+{
+  "limit": 5,
+  "documents": 5,
+  "metrics": {
+    "exact_span_precision": 1.0,
+    "exact_span_recall": 0.1875,
+    "exact_span_f1": 0.3157894736842105,
+    "partial_span_precision": 1.0,
+    "partial_span_recall": 0.1875,
+    "partial_span_f1": 0.3157894736842105,
+    "token_precision": 1.0,
+    "token_recall": 0.20179372197309417,
+    "token_f1": 0.3358208955223881,
+    "hard_skill_f1": 0.5,
+    "soft_skill_f1": 0.0,
+    "macro_f1": 0.25,
+    "micro_f1": 0.3157894736842105
+  },
+  "job_match": {
+    "job_id": "job-smoke",
+    "match_score": 0.555,
+    "matched_skills": [
+      "Python",
+      "SQL"
+    ],
+    "missing_skills": [
+      "AWS"
+    ],
+    "critical_missing_skills": [
+      "AWS"
+    ],
+    "evidence": [
+      "required coverage=0.50",
+      "preferred coverage=1.00"
+    ],
+    "recommendation_reason": "Fit depends on closing missing skill gaps"
+  },
+  "gaps": [
+    {
+      "skill": "AWS",
+      "gap_type": "missing_critical"
+    }
+  ],
+  "courses": [
+    {
+      "course_id": "c-aws",
+      "course_name": "AWS Foundations",
+      "covers_skills": [
+        "AWS"
+      ],
+      "gap_coverage": 1.0,
+      "match_score": 0.97,
+      "why_recommended": "Covers 1 missing skill(s): AWS"
+    }
+  ]
+}

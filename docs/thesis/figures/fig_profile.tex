@@ -1,0 +1,8 @@
+\begin{tikzpicture}[node distance=5mm]
+\node[data] (history) {Profile text and extracted\\skill evidence};
+\node[impl,below=of history] (facts) {Atomic skill facts:\\surface, label, confidence, evidence, offsets};
+\node[impl,below=of facts] (dedupe) {Deduplicate by canonical ID\\or normalized surface form};
+\node[impl,below=of dedupe] (conflict) {Preserve label conflicts\\as explicit notes};
+\node[impl,below=of conflict] (summary) {Structured ProfileSummary\\and SkillMemory};
+\draw[flow] (history)--(facts); \draw[flow] (facts)--(dedupe); \draw[flow] (dedupe)--(conflict); \draw[flow] (conflict)--(summary);
+\end{tikzpicture}

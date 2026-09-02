@@ -1,0 +1,121 @@
+seed: 42
+mode: full
+limits:
+  smoke_limit: 20
+  training_limit: null
+data:
+  skillspan_root: data/source/skillspan_hf
+  job_data_path: inputs/demo/jobs.jsonl
+  course_catalog_path: inputs/demo/course_catalog.jsonl
+model:
+  name: mistral-small-3.1-24b-instruct-2503
+  model_path: models/mistral-small-3.1-24b-instruct-2503
+  adapter_path: artifacts/mistral-small-3.1-24b-skillspan-lora
+  train_mistral_lora: false
+  use_4bit: true
+  allow_smoke_fallback: true
+bert:
+  model_name_or_path: bert-base-uncased
+  output_dir: artifacts/skillllm_v2/bert_baseline/model
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+gliner:
+  model_name_or_path: urchade/gliner_medium-v2.1
+  optional: true
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+taxonomy:
+  paths:
+  - data/taxonomies/custom_skill_aliases.jsonl
+outputs:
+  artifacts_dir: artifacts/skillllm_v2
+  reports_dir: reports/skillllm_v2
+device:
+  prefer_gpu: true
+logging:
+  dir: logs
+training:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+  full_run: true
+  force_training: true
+bert_baseline:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+gliner_baseline:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+mistral:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+  train_mistral_lora: true
+mistral_lora:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+  train_mistral_lora: true
+span_verifier:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+verifier:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+taxonomy_reranker:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+linker:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+reranker:
+  epochs: 80
+  num_epochs: 80
+  num_train_epochs: 80
+  max_epochs: 80
+stages:
+  train_bert_baseline:
+    epochs: 80
+    num_epochs: 80
+    num_train_epochs: 80
+    max_epochs: 80
+  train_or_run_gliner_baseline:
+    epochs: 80
+    num_epochs: 80
+    num_train_epochs: 80
+    max_epochs: 80
+  train_or_verify_mistral_lora:
+    epochs: 80
+    num_epochs: 80
+    num_train_epochs: 80
+    max_epochs: 80
+  train_span_verifier:
+    epochs: 80
+    num_epochs: 80
+    num_train_epochs: 80
+    max_epochs: 80
+  train_taxonomy_reranker:
+    epochs: 80
+    num_epochs: 80
+    num_train_epochs: 80
+    max_epochs: 80
+run_id: stage2_80epoch

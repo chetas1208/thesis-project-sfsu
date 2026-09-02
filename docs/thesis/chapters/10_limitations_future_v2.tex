@@ -1,0 +1,47 @@
+\chapter{Limitations, Threats to Validity, and Future Work}
+\label{ch:limitations}
+
+\section{Claim boundary}
+
+This report is intentionally narrower than the codebase's conceptual scope. Its strongest quantitative evidence concerns span extraction and three wrapper variants. Its strongest engineering evidence concerns explicit schemas, source-preserving operations, unit tests, configuration, and persisted artifacts. The graph, profile, matching, and recommendation modules are implemented but do not have labelled effectiveness measures. \Cref{fig:status} summarises this boundary. A reader should treat it as part of the result, not as a caveat to skip.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_status}
+\caption{Evidence status across SkillLLM\_v2. A complete vertical slice is not the same as a complete outcome evaluation.}
+\label{fig:status}
+\end{figure}
+
+\section{Dataset and evaluation limitations}
+
+SkillSpan is an English job-posting benchmark with expert hard/soft span annotation~\cite{zhang2022skillspan}. It is an appropriate starting point, but a strong score on this export does not establish transfer to resumes, course catalogues, conversational profile updates, or multilingual labour markets. The local data contain technical and house sources, and the selected training/evaluation transformation may differ from other published SkillSpan protocols. The full Mistral artifact reports a 974-document cached evaluation path although the local test JSON has 3,569 rows. The repository does not provide a sufficiently explicit manifest explaining that subset in this audit. That ambiguity is a reproducibility limitation and should be resolved before a final defence claim.
+
+Exact span F1 is rigorous but incomplete. It penalises a boundary difference even when a human would consider the prediction useful, while partial and token metrics may make a boundary failure look less serious than it is for evidence display. No qualitative, blinded annotation study is stored to determine whether errors are concentrated in rare technologies, compositional skills, soft skills, source domains, or annotation ambiguities. The report also lacks confidence intervals and multi-seed runs. The observed 0.001-level wrapper differences could change under another seed or subset.
+
+\section{Model and training limitations}
+
+The persisted Mistral run is substantial: it uses an 80-epoch 4-bit LoRA configuration and two RTX 3090 GPUs. Nevertheless, it is a single run with stored losses and artifacts, not a hyperparameter or checkpoint-selection study. The reports do not establish a validation-selected epoch, compare LoRA ranks, test prompt variants, or provide a full ablation of quantization and distributed settings. The extractor has a deterministic smoke fallback; although the primary metric says fallback was false, every future run must preserve that check. A model-loading issue could otherwise turn a seemingly valid model result into a keyword baseline.
+
+The Mistral adapter assigns a fixed candidate confidence in its extraction adapter. The confidence calibrator uses rules and thresholds, but no calibration curve, expected calibration error, or probability-quality assessment is persisted. Confidence should therefore be read as a gating/control signal, not as a statistically calibrated belief. The same caveat applies to verifier outputs and matcher scores.
+
+\section{Normalization and ontology limitations}
+
+The local alias table has 696 canonical entries and produces high attachment coverage in the stored wrapper reports. Coverage is not correctness. Gold canonical labels, a validated taxonomy version, hierarchy-aware scoring, and error analysis by taxonomy source are required before making a canonical-link accuracy claim. The code has loaders for ESCO, O*NET, Lightcast, and custom data, but the reported setup uses custom aliases. External taxonomy licenses, versions, semantic drift, and alias collisions would need governance in a production setting.
+
+Attach-only normalization is deliberately conservative, but it creates a trade-off. It protects extraction metrics from a bad link, while an incorrect canonical field can still mislead matching, aggregation, or graph paths. A future linker should keep candidate alternatives, calibration/evidence scores, taxonomy provenance, and user correction history rather than pretending that one alias match is definitive.
+
+\section{Context, graph, and recommendation limitations}
+
+The profile summary preserves supplied evidence but does not model recency, proficiency, evidence reliability, temporal contradiction, or user consent beyond the input interface. It must not be populated from sensitive personal attributes or used to infer protected characteristics. The cache hash detects a payload change but does not solve cache invalidation, retention policy, access control, encryption, deletion requests, or cross-device synchronisation. The current CAG/RAG separation is a software policy rather than a measured reduction in token use, latency, hallucination, or retrieval error.
+
+The graph is in memory and its relation vocabulary is manually constructed. It does not provide transactional updates, scalable storage, graph embeddings, learned edge confidence, or a formal provenance model for derived edges. The matcher and course recommender use hand-specified weights. They have no nDCG, P@5, calibration, fairness, or user-satisfaction result. A job match score must never be used as an automated hiring, admission, or eligibility decision. Any serious deployment would require human oversight, an appeal/correction route, data minimisation, and a fairness evaluation that is appropriate to the intended population.
+
+\section{Reproducibility and report-format limitations}
+
+The Stage-2 branch has no commits. The artifact directory preserves useful evidence but cannot by itself establish exactly which source revision created every output. Timestamp-based provenance checking is helpful but vulnerable to copied files and does not hash all dependencies. The environment description is partial: Python, PyTorch/CUDA, hardware, and YAML values are available, while a complete lock file, container, dataset fingerprint, and immutable experiment registry are not. The report's new figures are reproducible TikZ source, but the final institutional format still needs the author, official course designation, committee, and template confirmation. It is not a substitute for SFSU Graduate Studies approval.
+
+\section{Future work}
+
+The most valuable next step is a versioned, labelled evaluation program rather than another unmeasured architectural module. First, commit the Stage-2 source, record dataset hashes and the exact 974-document evaluation manifest, and rerun the primary experiment across multiple seeds. Report mean, dispersion, and paired wrapper tests. Second, create a canonical-link dataset with gold IDs and evaluate both coverage and accuracy; preserve alternate candidates and test long-tail aliases. Third, collect job/profile and course/gap relevance labels, define privacy and consent rules, and evaluate matching and recommendation with nDCG, P@5, coverage, calibration, and subgroup error analysis.
+
+On the modelling side, investigate soft-skill errors by span length, annotation source, and semantic category. Compare the fixed prompt with controlled variants, examine calibration, and conduct a proper boundary-refiner ablation that logs every edit. On the systems side, extend profile facts with temporal evidence and user-confirmed proficiency while preserving the original sources; introduce a versioned graph store and explicit derived-edge provenance; and replace the lexical retrieval demo with evaluated sparse, dense, and hybrid baselines. Each addition should remain behind the same anchor-preserving and artifact-provenance controls that produced the central finding of this report.

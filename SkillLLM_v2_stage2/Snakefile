@@ -1,0 +1,175 @@
+CONFIG = "configs/skillllm_v2_training.yaml"
+
+
+rule all:
+    input:
+        "reports/skillllm_v2/money_table.csv",
+        "reports/skillllm_v2/thesis_results_summary.md",
+
+
+rule setup:
+    output:
+        "artifacts/skillllm_v2/status/setup_stage2_repo.success.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage setup_stage2_repo --config {CONFIG} --mode smoke --force"
+
+
+rule all_smokes:
+    output:
+        "artifacts/skillllm_v2/status/master_merge_readiness_check.success.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --config configs/skillllm_v2_smoke.yaml --mode smoke --force"
+
+
+rule build_bio_dataset:
+    output:
+        "data/skillllm_v2/bio/train.jsonl"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage build_skillspan_bio_dataset --config {CONFIG} --mode full --force"
+
+
+rule train_bert:
+    input:
+        "data/skillllm_v2/bio/train.jsonl"
+    output:
+        "artifacts/skillllm_v2/bert_baseline/model/model.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage train_bert_baseline --config {CONFIG} --mode full --force"
+
+
+rule eval_bert:
+    input:
+        "artifacts/skillllm_v2/bert_baseline/model/model.json"
+    output:
+        "artifacts/skillllm_v2/bert_baseline/metrics.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage eval_bert_baseline --config {CONFIG} --mode full --force"
+
+
+rule train_gliner:
+    output:
+        "artifacts/skillllm_v2/gliner_baseline/model/config.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage train_or_run_gliner_baseline --config {CONFIG} --mode full --force"
+
+
+rule eval_gliner:
+    input:
+        "artifacts/skillllm_v2/gliner_baseline/model/config.json"
+    output:
+        "artifacts/skillllm_v2/gliner_baseline/metrics.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage eval_gliner_baseline --config {CONFIG} --mode full --force"
+
+
+rule build_mistral_sft:
+    output:
+        "data/skillllm_v2/mistral_sft/train.jsonl"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage build_mistral_sft_data --config {CONFIG} --mode full --force"
+
+
+rule train_or_verify_mistral_lora:
+    input:
+        "data/skillllm_v2/mistral_sft/train.jsonl"
+    output:
+        "artifacts/skillllm_v2/mistral_lora/model/adapter_status.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage train_or_verify_mistral_lora --config {CONFIG} --mode full --force"
+
+
+rule eval_raw_mistral:
+    output:
+        "artifacts/skillllm_v2/mistral_lora/metrics.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage eval_raw_mistral_lora --config {CONFIG} --mode full --force"
+
+
+rule eval_mistral_boundary:
+    input:
+        "artifacts/skillllm_v2/mistral_lora/metrics.json"
+    output:
+        "artifacts/skillllm_v2/mistral_boundary/metrics.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage eval_mistral_boundary_refiner --config {CONFIG} --mode full --force"
+
+
+rule eval_mistral_gliner_taxonomy:
+    output:
+        "artifacts/skillllm_v2/mistral_gliner_taxonomy/metrics.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage eval_mistral_gliner_taxonomy --config {CONFIG} --mode full --force"
+
+
+rule verifier_dataset:
+    output:
+        "data/skillllm_v2/verifier_train.jsonl"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage build_verifier_dataset --config {CONFIG} --mode full --force"
+
+
+rule train_verifier:
+    input:
+        "data/skillllm_v2/verifier_train.jsonl"
+    output:
+        "artifacts/skillllm_v2/span_verifier/verifier_config.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage train_span_verifier --config {CONFIG} --mode full --force"
+
+
+rule linker_dataset:
+    output:
+        "data/skillllm_v2/linker_dev.jsonl"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage build_linker_dataset --config {CONFIG} --mode full --force"
+
+
+rule train_linker:
+    input:
+        "data/skillllm_v2/linker_dev.jsonl"
+    output:
+        "artifacts/skillllm_v2/taxonomy_reranker/README.md"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage train_taxonomy_reranker --config {CONFIG} --mode full --force"
+
+
+rule full_cag_graph_eval:
+    output:
+        "artifacts/skillllm_v2/full_cag_graph/metrics.json"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage eval_full_cag_graph --config {CONFIG} --mode full --force"
+
+
+rule extraction_ablation:
+    output:
+        "reports/skillllm_v2/extraction_ablation.csv"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage extraction_ablation_full --config {CONFIG} --mode full --force"
+
+
+rule graph_matching_eval:
+    output:
+        "reports/skillllm_v2/matching_eval.csv"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage graph_matching_eval_full --config {CONFIG} --mode full --force"
+
+
+rule money_table:
+    output:
+        "reports/skillllm_v2/money_table.csv"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage money_table_generation --config {CONFIG} --mode full --force"
+
+
+rule end_to_end_demo:
+    output:
+        "reports/skillllm_v2/demo/explanation.md"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage end_to_end_demo_smoke --config {CONFIG} --mode full --force"
+
+
+rule final_reports:
+    output:
+        "reports/skillllm_v2/thesis_results_summary.md"
+    shell:
+        "PYTHONPATH=src python -m skillllm_v2.pipeline.pipeline_runner --stage final_report_generation --config {CONFIG} --mode full --force"

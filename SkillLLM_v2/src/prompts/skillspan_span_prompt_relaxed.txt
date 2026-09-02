@@ -1,0 +1,12 @@
+Extract hard skill and soft skill mentions from the source text.
+
+Return valid JSON only with this schema:
+{"skills":[{"text":"skill mention","label":"hard_skill|soft_skill","start":0,"end":0}]}
+
+Use zero-based character offsets where `end` is exclusive.
+If no skills exist, return `{"skills":[]}`.
+
+Source text:
+{{ text }}
+
+JSON:

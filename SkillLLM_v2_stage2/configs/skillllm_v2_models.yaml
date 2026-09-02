@@ -1,0 +1,15 @@
+active_stage2_systems:
+  bert_baseline:
+    model_name_or_path: bert-base-uncased
+    artifact_dir: artifacts/skillllm_v2/bert_baseline
+  gliner:
+    model_name_or_path: urchade/gliner_medium-v2.1
+    artifact_dir: artifacts/skillllm_v2/gliner_baseline
+  raw_mistral_lora:
+    base_model_path: models/mistral-small-3.1-24b-instruct-2503
+    adapter_path: artifacts/mistral-small-3.1-24b-skillspan-lora
+legacy_only_not_active:
+  - qwen3-14b
+  - gemma-4-e4b-it
+  - gemma-4-26b-a4b-it
+  - llama-3.1-8b-instruct

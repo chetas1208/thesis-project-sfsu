@@ -1,0 +1,49 @@
+\chapter{Introduction}
+\label{ch:introduction}
+
+\section{Motivation}
+
+Job advertisements, resumes, course descriptions, and career histories all describe capabilities in natural language. A person may write ``built data pipelines in Python and SQL,'' a vacancy may request ``cloud deployment and stakeholder communication,'' and a course description may state that it teaches distributed systems. A career-support system cannot reliably compare these texts by string overlap alone. The terms may be abbreviated, may refer to the same canonical capability through aliases, and may encode different evidence strengths. At the same time, a system that invents a capability, loses the text span that justified it, or modifies a correct prediction while attempting to normalize it creates an error that propagates to matching and recommendation.
+
+Skill extraction is therefore a useful intermediate representation for computational labour-market analysis. SkillSpan formalizes the task as span-level identification of hard and soft skills in English job postings and supplies expert annotation guidelines rather than a fixed inventory-only label space~\cite{zhang2022skillspan}. Recent surveys position this task at the intersection of information extraction, taxonomy alignment, and labour-market analysis~\cite{senger2024survey}. The local SkillSpan export is particularly suitable for a research system because it retains tokens, two skill-related BIO tag sequences, document delimiters, and a source field. It permits a span-focused comparison in which surface form, boundaries, and label must all be handled explicitly.
+
+Large language models make structured extraction attractive because one model can produce a variable number of typed spans in a JSON schema. However, a generative output is not automatically an auditable record. It can include paraphrases instead of substrings, fail to parse, produce ambiguous labels, or make a broadly reasonable but unsupported inference. Classical and neural sequence labellers have complementary properties: they are often tied to a fixed labelling interface and can be evaluated directly at token or span level, but they do not by themselves solve canonicalization, evidence preservation, or downstream context construction. The design challenge is thus not simply to add components around an LLM. It is to make every component safe with respect to the strongest available extraction evidence.
+
+This report documents SkillLLM\_v2, a codebase that implements a Mistral LoRA extraction path, auxiliary GLiNER and dictionary candidates, provenance-aware merging, rule-based verification and calibration interfaces, attach-only taxonomy linking, structured profile compaction, in-memory graph construction, deterministic matching, course recommendation, and artifact gates. The report treats these as distinct claims. Some are evaluated with persisted full-test extraction metrics; some are exercised by unit tests and demo artifacts; and some remain future evaluation work. This separation matters in an advisor-facing report because a runnable architectural path is valuable, but it is not equivalent to a validated product outcome.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_overall}
+\caption{Overall SkillLLM\_v2 structure. The architecture distinguishes implemented local modules from unevaluated claims about recommendation effectiveness.}
+\label{fig:overall}
+\end{figure}
+
+\section{Research problem}
+
+The main problem addressed in this work is: \emph{How can a domain-adapted language model be combined with provenance-aware normalization and contextual structure without allowing downstream processing to silently degrade reliable span extraction?} This formulation intentionally places reliability before architectural breadth. It does not assume that a graph, retriever, verifier, or taxonomy linker improves F1 merely because it is present. Instead, it asks whether a high-quality anchor can remain the source of truth for extraction while other modules add canonical identifiers, evidence-bearing user memory, gap explanations, and bounded decision support.
+
+The code and artifacts give a concrete reason for this framing. The persisted full-test Mistral LoRA artifact has exact-span F1 of 0.670069 and token F1 of 0.787886. The corresponding BERT and GLiNER artifacts score 0.059150 and 0.075833 exact-span F1. The full CAG/graph wrapper records 0.671102 exact-span F1, a difference of 0.001033 over the anchor. That small difference is inside the configured gate tolerance and is sufficient to support a non-regression decision in this snapshot; it is not sufficient evidence for a general claim that a complex wrapper improves extraction. A separate historical error-analysis report records substantial destructive boundary edits in an earlier path. The system design responds to that observation by preserving anchor candidates and by making fallback explicit.
+
+\section{Research questions}
+
+The report answers the following questions to the extent supported by local evidence.
+
+\begin{enumerate}
+  \item \textbf{RQ1:} How effectively does the persisted Mistral LoRA extraction path identify hard and soft skill spans in the local SkillSpan evaluation path?
+  \item \textbf{RQ2:} How do the BERT baseline, zero-shot GLiNER baseline, and wrapper variants compare with the Mistral anchor under the stored metrics?
+  \item \textbf{RQ3:} What implementation rules make auxiliary candidate generation, boundary refinement, verification, and normalization non-destructive with respect to anchor extraction?
+  \item \textbf{RQ4:} What evidence-preserving representation can transform extracted skills into a compact profile and contextual packet suitable for later retrieval and explanation?
+  \item \textbf{RQ5:} Which downstream graph, matching, and recommendation capabilities are implemented, and which still lack labelled outcome evaluation?
+\end{enumerate}
+
+These questions deliberately do not ask whether the system achieves better job matching or recommendation quality. The repository contains no relevance labels for such a claim: job nDCG@10 and course precision@5 are both recorded as unavailable. The design and implementation can be assessed now; ranking effectiveness must be assessed later with a labelled protocol.
+
+\section{Contributions}
+
+The first contribution is an evidence-led account of a two-GPU 80-epoch Mistral LoRA run over the local SkillSpan export. Its configuration, checkpoints, training summary, generated predictions, and metrics are persisted. The second is a provenance-aware candidate policy. Each valid skill record carries a surface form, label, offsets, source, confidence, evidence, canonical fields, and metadata. Mistral-originated candidates are protected; unanchored additions must clear configured confidence and alias-evidence conditions; and the wrapper gate compares candidate metrics with the anchor before choosing output predictions.
+
+The third contribution is an implementation-level design for enriching extraction without conflating enrichment with accuracy. Taxonomy linking attaches information instead of rewriting offsets or labels. Profile summarization aggregates supplied extraction evidence rather than inferring hidden skills. Context compaction distinguishes stable cached information from dynamic job text and graph paths. The graph, matcher, gap detector, and recommender produce inspectable, deterministic records. Finally, the report contributes the audit in \codepath{docs/thesis/codebase\_audit.md}, system figures, a result table backed by JSON artifacts, and explicit limitations that prevent the thesis from overstating the current system.
+
+\section{Thesis organization}
+
+\Cref{ch:related-work} situates the project in skill extraction, span modelling, parameter-efficient adaptation, normalization, retrieval, and graph-based career systems. \Cref{ch:problem} defines the representations and metrics. \Cref{ch:architecture} maps the actual source tree to the system architecture. \Cref{ch:methodology} and \Cref{ch:experiments} describe data preparation, training, evaluation, and artifact handling. \Cref{ch:results} reports the verified metrics. \Cref{ch:error-analysis} discusses wrapper regression and the non-regression response. \Cref{ch:context} documents the profile, context, graph, and matching layers. The final chapters state limitations, future work, and conclusions.

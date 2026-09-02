@@ -1,0 +1,82 @@
+\chapter{SkillLLM\_v2 Architecture}
+\label{ch:architecture}
+
+\section{Overview}
+
+SkillLLM\_v2 Stage-2 implements a modular pipeline under \texttt{src/skillllm\_v2/}.
+Extraction, verification, normalization, graph reasoning, and matching are separate stages connected through a shared skill object schema with mandatory provenance fields.
+
+Figure~\ref{fig:architecture} summarizes the implemented data flow.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    node distance=0.55cm and 0.45cm,
+    box/.style={draw, rounded corners, align=center, minimum width=2.6cm, minimum height=0.75cm, font=\small},
+    arrow/.style={-{Stealth[length=2mm]}, thick}
+  ]
+    \node[box] (input) {Raw text};
+    \node[box, below=of input] (mistral) {Mistral LoRA\\extractor};
+    \node[box, left=1.6cm of mistral] (gliner) {GLiNER\\candidates};
+    \node[box, right=1.6cm of mistral] (dict) {Dictionary\\matcher};
+    \node[box, below=of mistral] (merge) {Candidate\\merger};
+    \node[box, below=of merge] (bound) {Boundary\\refiner};
+    \node[box, below=of bound] (verify) {Span verifier\\+ calibration};
+    \node[box, below=of verify] (link) {Taxonomy\\linker};
+    \node[box, below=of link] (graph) {Graph builder\\+ retriever};
+    \node[box, below=of graph] (match) {Job matcher,\\gap detector,\\course recommender};
+
+    \draw[arrow] (input) -- (mistral);
+    \draw[arrow] (input) -- (gliner);
+    \draw[arrow] (input) -- (dict);
+    \draw[arrow] (mistral) -- (merge);
+    \draw[arrow] (gliner) -- (merge);
+    \draw[arrow] (dict) -- (merge);
+    \draw[arrow] (merge) -- (bound);
+    \draw[arrow] (bound) -- (verify);
+    \draw[arrow] (verify) -- (link);
+    \draw[arrow] (link) -- (graph);
+    \draw[arrow] (graph) -- (match);
+  \end{tikzpicture}
+  \caption{Implemented SkillLLM\_v2 Stage-2 pipeline. Downstream matching modules were demonstrated on demo inputs; labeled evaluation was unavailable.}
+  \label{fig:architecture}
+\end{figure}
+
+\section{Skill Object Schema}
+
+Each skill record includes: \texttt{surface\_form}, \texttt{label}, \texttt{start}, \texttt{end}, \texttt{source} $\in \{\texttt{mistral}, \texttt{gliner}, \texttt{dictionary}\}$, \texttt{confidence}, \texttt{evidence}, optional canonical identifiers, and \texttt{metadata}.
+Offsets are computed against the original input text; skills without traceable evidence are rejected by schema validation in tests.
+
+\section{Mistral Extractor}
+
+\texttt{MistralExtractor} loads Mistral Small 3.1 24B with optional 4-bit quantization and a LoRA adapter path.
+It formats prompts with a fixed JSON schema, decodes model output, repairs malformed JSON when possible, and aligns spans to source text (\texttt{src/skillllm\_v2/extract/mistral\_extractor.py}).
+The class contains no branches for Qwen, Gemma, or Llama.
+
+\section{Auxiliary Candidate Sources}
+
+GLiNER produces additional \textsc{Hard\_Skill} and \textsc{Soft\_Skill} candidates in zero-shot mode when fine-tuning is skipped (\texttt{training\_mode: zero\_shot} in GLiNER metrics metadata).
+The dictionary extractor performs exact and fuzzy alias matching against taxonomy files.
+
+\section{Verification and Gating}
+
+The boundary refiner applies deterministic rules to trim filler phrases (for example, ``experience with'') and split compound soft-skill phrases where configured.
+The span verifier supports rule-based validation with hooks for a trained cross-encoder.
+Confidence calibration applies label- and source-specific thresholds.
+The non-regression gate compares wrapper output metrics to the Mistral anchor before accepting a variant for reported extraction scores.
+
+\section{Normalization and Graph Layer}
+
+\texttt{taxonomy\_linker.py} maps surface forms to canonical identifiers via exact alias match, normalized string match, and fuzzy match.
+The graph layer uses NetworkX with node types \texttt{User}, \texttt{Profile}, \texttt{Job}, \texttt{Course}, \texttt{Skill}, \texttt{SkillCluster}, and \texttt{Occupation}, and typed edges for skill ownership, job requirements, course coverage, and similarity.
+
+\section{CAG, RAG, and Graph Retrieval}
+
+Stable context---user profile summaries, course catalogue snippets, taxonomy aliases---is cached in context packets (\texttt{artifacts/skillllm\_v2/context/}).
+Job postings are treated as retrieval targets suitable for RAG-style lookup.
+Graph retrieval exposes relational paths such as user skill $\rightarrow$ missing skill $\rightarrow$ course for explainable recommendations.
+
+\section{What the Architecture Is Not}
+
+The primary Mistral extractor is \emph{generative structured extraction} with LoRA fine-tuning, not token-level fusion, cross-attention over multiple encoders, or a joint multi-task classifier head.
+Earlier repository experiments under \texttt{Experiments/} used different model stacks; they are not assumed to describe the Stage-2 forward pass.

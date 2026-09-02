@@ -1,0 +1,31 @@
+\chapter{Hyperparameter Reference}
+\label{app:hyperparams}
+
+\section{Stage-2 Mistral LoRA (80 epochs)}
+
+Source: \texttt{SkillLLM\_v2\_stage2/configs/skillllm\_v2\_training\_80ep\_2gpu.yaml} and \texttt{training\_summary.json}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Verified Stage-2 Mistral training settings.}
+  \begin{tabular}{ll}
+    \toprule
+    Setting & Value \\
+    \midrule
+    Epochs & 80 \\
+    LoRA $r$ / $\alpha$ & 16 / 32 \\
+    Learning rate & $1.2 \times 10^{-4}$ \\
+    Batch size & 1 \\
+    Gradient accumulation & 32 \\
+    Max sequence length & 512 \\
+    GPUs & 2 (DDP) \\
+    Quantization & 4-bit \\
+    Train samples & 4{,}800 \\
+    Dev samples & 3{,}174 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Legacy Benchmark Shared Settings}
+
+Seed 42; evaluation temperature 0; max new tokens 1024 for generative inference; SkillSpan test split 3{,}569 examples.

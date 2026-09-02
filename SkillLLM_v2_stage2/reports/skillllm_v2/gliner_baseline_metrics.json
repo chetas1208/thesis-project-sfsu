@@ -1,0 +1,17 @@
+{
+  "exact_span_precision": 0.19210053859964094,
+  "exact_span_recall": 0.047240618101545256,
+  "exact_span_f1": 0.07583274273564848,
+  "partial_span_precision": 0.34290843806104127,
+  "partial_span_recall": 0.08432671081677705,
+  "partial_span_f1": 0.13536498936924168,
+  "token_precision": 0.3502543565320922,
+  "token_recall": 0.06837101204310163,
+  "token_f1": 0.11440895189945023,
+  "hard_skill_f1": 0.05455850681981335,
+  "soft_skill_f1": 0.09657102869139259,
+  "macro_f1": 0.07556476775560297,
+  "micro_f1": 0.07583274273564848,
+  "notes": "GLiNER fine-tuning skipped; zero-shot/few-shot baseline used",
+  "training_mode": "zero_shot"
+}

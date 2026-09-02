@@ -1,0 +1,6 @@
+\begin{tikzpicture}[node distance=6mm and 12mm]
+\node[impl] (implemented) {Implemented and persisted:\\extraction, linking, context, graph,\\matching, recommendation, gates};
+\node[exp,right=of implemented] (experimental) {Experimental / bounded evidence:\\full-test wrapper variants,\\smoke and demo paths};
+\node[plan,below=of $(implemented)!0.5!(experimental)$] (future) {Not established:\\supervised linking accuracy, labelled job/course ranking,\\multi-seed variance, production deployment};
+\draw[dashedflow] (implemented)--(future); \draw[dashedflow] (experimental)--(future);
+\end{tikzpicture}

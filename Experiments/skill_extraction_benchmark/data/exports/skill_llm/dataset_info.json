@@ -1,0 +1,26 @@
+{
+  "skillspan_train": {
+    "file_name": "/home/923873155/Sem 4 Research/Experiments/skill_extraction_benchmark/data/exports/skill_llm/train.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "skillspan_dev": {
+    "file_name": "/home/923873155/Sem 4 Research/Experiments/skill_extraction_benchmark/data/exports/skill_llm/dev.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "skillspan_test": {
+    "file_name": "/home/923873155/Sem 4 Research/Experiments/skill_extraction_benchmark/data/exports/skill_llm/test.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

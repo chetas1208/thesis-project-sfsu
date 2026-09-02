@@ -1,0 +1,42 @@
+\chapter{Limitations and Threats to Validity}
+\label{ch:limitations}
+
+\section{Dataset Limitations}
+
+SkillSpan sentences come from job posting domains (technical and house listings) and may not represent all resume or global labor-market language.
+Train/dev/test splits are standard SkillSpan partitions; no additional cross-domain evaluation was verified in artifacts.
+
+\section{Hardware and Model Coverage}
+
+Gemma 4 26B experiments failed on 2$\times$24\,GB GPUs; conclusions about that model are limited to failure documentation, not performance ranking.
+All LLM experiments are local open-weight runs; API-based closed models were not benchmarked.
+
+\section{Training Protocol Differences}
+
+Legacy five-model comparisons used three epochs; Stage-2 Mistral uses eighty epochs with different LoRA rank.
+Direct numeric comparison between phases requires explicit labeling, as done in this thesis.
+
+\section{Single-Seed Evaluation}
+
+Saved artifacts reflect single training and inference runs without multi-seed variance estimates.
+Reported differences smaller than 0.002 F1 between wrapper and anchor should be interpreted cautiously.
+
+\section{Downstream Evaluation Gap}
+
+Job matching nDCG@10 and course recommendation P@5 are not computed on labeled data.
+Demo JSON outputs demonstrate interface behavior only.
+
+\section{Metric Scope}
+
+Earlier \texttt{Experiments/} benchmarks use text-level and document-set metrics incompatible with SkillSpan exact span F1.
+Extract\_jobDesc uses entity F1 on a different annotation task.
+
+\section{Formatting and Submission}
+
+This \LaTeX{} source has not undergone SFSU Graduate Studies preliminary or final format check.
+Department-approved template compliance remains the author's responsibility~\cite{sfsugrad2026thesis}.
+
+\section{External Validity}
+
+Results apply to English SkillSpan-style sentences and configured taxonomy aliases.
+Generalization to live hiring pipelines requires additional validation not present in the repository.

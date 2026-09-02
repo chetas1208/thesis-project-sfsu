@@ -1,0 +1,70 @@
+{
+  "config": "configs/skillllm_v2_training_80ep_2gpu.yaml",
+  "cuda": {
+    "torch_importable": true,
+    "torch_cuda_available": true,
+    "torch_cuda_device_count": 2,
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 3090"
+      },
+      {
+        "index": 1,
+        "name": "NVIDIA GeForce RTX 3090"
+      }
+    ]
+  },
+  "components": {
+    "bert_baseline": {
+      "gpu_required": false,
+      "gpu_capable": true,
+      "gpu_training_implemented": false,
+      "training_mode": "current implementation is CPU-fast token baseline; GPU BERT Trainer is not the active implementation",
+      "missing_dependencies": []
+    },
+    "gliner": {
+      "gpu_required": false,
+      "gpu_capable": true,
+      "gpu_training_implemented": false,
+      "training_mode": "zero-shot/fallback unless GLiNER fine-tuning support is added",
+      "missing_dependencies": []
+    },
+    "mistral_lora": {
+      "gpu_required": true,
+      "gpu_capable": true,
+      "gpu_training_implemented": true,
+      "training_mode": "2-GPU torchrun QLoRA/LoRA",
+      "missing_dependencies": [],
+      "missing_paths": [],
+      "has_mistral3_loader_class": true
+    },
+    "span_verifier": {
+      "gpu_required": false,
+      "gpu_capable": false,
+      "gpu_training_implemented": false,
+      "training_mode": "CPU scikit-learn TF-IDF/logistic verifier by design",
+      "missing_dependencies": []
+    },
+    "taxonomy_reranker": {
+      "gpu_required": false,
+      "gpu_capable": false,
+      "gpu_training_implemented": false,
+      "training_mode": "retrieval-only unless supervised labels and embedding/reranker deps are provided",
+      "missing_dependencies": [
+        "sentence_transformers"
+      ]
+    },
+    "graph_match_course": {
+      "gpu_required": false,
+      "gpu_capable": false,
+      "gpu_training_implemented": false,
+      "training_mode": "CPU NetworkX/scoring logic by design",
+      "missing_dependencies": []
+    }
+  },
+  "blocking_errors": [],
+  "warnings": [
+    "BERT baseline currently uses the deterministic CPU-fast token classifier, not a GPU Hugging Face Trainer."
+  ]
+}

@@ -1,0 +1,38 @@
+\chapter{Background and Related Work}
+\label{ch:related}
+
+\section{Skill Extraction and SkillSpan}
+
+Skill extraction from employment text has been studied as a specialized information extraction problem distinct from generic named entity recognition because skill mentions combine technical terminology with soft competencies~\cite{zhang2022skillspan}.
+SkillSpan provides expert-annotated hard and soft skill spans on English job posting sentences with 4{,}800 training, 3{,}174 development, and 3{,}569 test examples under CC BY 4.0 licensing, sourced from StackOverflow-style technical text and house-listing domain text~\cite{zhang2022skillspan}.
+
+\section{LLM-Based Skill Extraction}
+
+Herandi et al.\ introduce Skill-LLM, demonstrating that repurposing general-purpose LLMs through supervised adaptation improves skill extraction relative to earlier pipelines~\cite{herandi2024skillllm}.
+This thesis extends that line of work with an open-weight, locally executed benchmark and a Stage-2 system wrapper rather than reproducing the original Skill-LLM codebase verbatim.
+
+\section{Parameter-Efficient Fine-Tuning}
+
+Training multi-billion-parameter models on consumer and workstation GPUs relies on parameter-efficient fine-tuning.
+Low-Rank Adaptation (LoRA) injects trainable low-rank matrices into selected linear layers~\cite{hu2022lora}.
+QLoRA combines LoRA with 4-bit quantized base weights to reduce memory footprint~\cite{dettmers2023qlora}.
+The SkillLLM\_v2 training stack uses 4-bit loading and LoRA adapters for all completed LLM benchmark runs verified in configuration files.
+
+\section{Generalist and Encoder Baselines}
+
+GLiNER provides a compact bidirectional transformer approach to open-label entity recognition and serves here as a lightweight recall-oriented candidate source rather than the primary extractor~\cite{zaratiana2024gliner}.
+BERT-style token classification remains a standard encoder baseline for sequence labeling~\cite{devlin2019bert}.
+Repository metrics show these baselines underperform the fine-tuned Mistral extractor on exact span F1 under the shared SkillSpan evaluation scripts used in Stage-2.
+
+\section{Context, Graph, and Cache-Augmented Retrieval}
+
+Downstream career intelligence requires reasoning over profiles, jobs, skills, and courses.
+Graph-based retrieval augments language models with relational structure for query-focused tasks~\cite{edge2024graphrag}.
+Contextual retrieval enriches chunks with document-level context to reduce retrieval ambiguity~\cite{anthropic2024contextualretrieval}.
+Cache-augmented generation (CAG) has been proposed for settings where stable knowledge fits in context without dynamic retrieval~\cite{chan2025cag}.
+SkillLLM\_v2 applies CAG to stable profile and taxonomy summaries while reserving retrieval for changing job text, as implemented in the Stage-2 context and graph modules.
+
+\section{Position Relative to Prior Work}
+
+Existing approaches span classical sequence labeling, generalist NER, and generative LLM extraction.
+This thesis contributes (1) a controlled comparison of open-weight LLM backbones on SkillSpan under one pipeline, (2) selection and extended training of Mistral Small 3.1 24B, and (3) an engineering architecture that separates span extraction from taxonomy linking and graph-based recommendation with explicit non-regression guards.

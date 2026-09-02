@@ -1,0 +1,10 @@
+\begin{tikzpicture}[node distance=5mm and 9mm]
+\node[anchorbox] (anchor) {Cached Raw Mistral\\anchor predictions};
+\node[impl,below left=of anchor] (protect) {Anchor candidate\\must be retained};
+\node[impl,below right=of anchor] (add) {New candidates require\\confidence and alias evidence};
+\node[impl,below=12mm of anchor] (candidate) {Wrapper candidate predictions};
+\node[impl,below=of candidate] (gate) {Exact-span and soft-skill\\non-regression gate};
+\node[impl,below left=of gate] (accept) {Accept candidate\\predictions};
+\node[impl,below right=of gate] (fallback) {Fallback to untouched\\anchor predictions};
+\draw[flow] (anchor)--(protect); \draw[flow] (anchor)--(add); \draw[flow] (protect)--(candidate); \draw[flow] (add)--(candidate); \draw[flow] (candidate)--(gate); \draw[flow] (gate)--(accept); \draw[flow] (gate)--(fallback);
+\end{tikzpicture}

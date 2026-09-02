@@ -1,0 +1,48 @@
+model:
+  name: mistral-small-3.1-24b-instruct-2503
+  provider: local
+  model_path: models/mistral-small-3.1-24b-instruct-2503
+  adapter_path: artifacts/mistral-small-3.1-24b-skillspan-lora
+  train_mistral_lora: false
+  use_4bit: true
+  max_new_tokens: 512
+  allow_smoke_fallback: true
+
+extractors:
+  gliner:
+    enabled: true
+    model_name: urchade/gliner_medium-v2.1
+  dictionary:
+    enabled: true
+    alias_paths:
+      - data/taxonomies/custom_skill_aliases.jsonl
+    fuzzy_threshold: 0.92
+
+taxonomy:
+  paths:
+    - data/taxonomies/custom_skill_aliases.jsonl
+  fuzzy_threshold: 0.88
+
+calibration:
+  hard_skill_threshold: 0.45
+  soft_skill_threshold: 0.42
+  dictionary_only_threshold: 0.70
+  multi_source_threshold: 0.40
+
+data:
+  skillspan_root: data/source/skillspan_hf
+
+outputs:
+  reports_dir: reports/skillllm_v2
+  artifacts_dir: artifacts/skillllm_v2
+
+limits:
+  smoke_limit: 5
+  training_limit: null
+
+bert:
+  model_name_or_path: bert-base-uncased
+
+gliner:
+  model_name_or_path: urchade/gliner_medium-v2.1
+  optional: true

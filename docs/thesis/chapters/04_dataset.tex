@@ -1,0 +1,60 @@
+\chapter{Dataset Construction and Processing}
+\label{ch:dataset}
+
+\section{SkillSpan}
+
+The primary evaluation dataset is SkillSpan~\cite{zhang2022skillspan}.
+The repository stores a Hugging Face-style export at \texttt{data/source/skillspan\_hf/} with sentence-level JSON records containing token lists and BIO tags for skills and knowledge.
+
+Table~\ref{tab:skillspan-splits} summarizes verified split sizes from \texttt{results/skillspan\_baselines/summary\_report.json} and the dataset README.
+
+\begin{table}[htbp]
+  \centering
+  \caption{SkillSpan split sizes used in benchmark and Stage-2 experiments.}
+  \label{tab:skillspan-splits}
+  \begin{tabular}{lrr}
+    \toprule
+    Split & Examples & Verified source \\
+    \midrule
+    Train & 4{,}800 & summary\_report.json \\
+    Dev   & 3{,}174 & summary\_report.json \\
+    Test  & 3{,}569 & summary\_report.json \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Preprocessing Pipeline}
+
+The benchmark dataset module converts SkillSpan JSON into JSONL records with fields \texttt{id}, \texttt{text}, and \texttt{skills} (each skill containing \texttt{text}, \texttt{label}, \texttt{start}, \texttt{end}).
+Prepared files are written to \texttt{results/skillspan\_baselines/\_prepared\_data/} in the master repo and reused in Stage-2 through \texttt{data/source/skillspan\_hf}.
+
+Generative training examples are constructed by pairing a fixed system prompt and user prompt template with a JSON target listing skill spans without offset fields during training (\texttt{training\_target\_include\_offsets: false} in the benchmark pipeline).
+
+\section{Taxonomy and Alias Resources}
+
+Stage-2 normalization reads custom alias entries from \texttt{data/taxonomies/custom\_skill\_aliases.jsonl}.
+ESCO, O*NET, and Lightcast loaders are implemented as extension points; linking coverage reported in results used the configured custom alias file when present.
+
+\section{Supplementary Data Tracks}
+
+\subsection{Extract\_jobDesc BERT Experiments}
+
+The \texttt{Extract\_jobDesc/} subdirectory contains a separate job-description scraping and BERT NER pipeline.
+Verified test metrics on a small gold evaluation set report entity F1 of 0.462 for gold-only BERT training and 0.710 entity F1 for silver-train/gold-eval BERT (\texttt{Extract\_jobDesc/outputs/*/test\_metrics.json}).
+These experiments use a different task formulation and dataset than SkillSpan and are not merged into the primary SkillSpan results tables.
+
+\subsection{Earlier Resume Benchmark}
+
+The \texttt{Experiments/skill\_extraction\_benchmark/} directory contains an earlier comparison on resume sentences with different metrics (including text-level F1).
+That benchmark reported span F1 of 0.535 for nnose and 0.491 for Gemma4 among others (\texttt{outputs/reports/comparison.md}).
+Metric definitions differ from SkillSpan exact span F1; cross-benchmark numeric comparison is not made in Chapter~\ref{ch:results}.
+
+\section{Demo Inputs for Downstream Modules}
+
+Stage-2 job matching and course recommendation smoke demos use \texttt{inputs/demo/jobs.jsonl} and \texttt{inputs/demo/course\_catalog.jsonl}.
+These are illustrative configuration inputs, not labeled evaluation sets.
+
+\section{Ethical Considerations}
+
+SkillSpan derives from public job-related text with research licensing.
+Live job-description scraping in Extract\_jobDesc should respect site terms and avoid storing credentials; no secrets from repository files appear in this thesis.

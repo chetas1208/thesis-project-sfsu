@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{tikz}
+\title{SkillLLM\_v2 Research Refresh: Non-Regressive Skill Extraction, Context Compaction, and Graph-Augmented Recommendation}
+\author{Generated from local SkillLLM\_v2 artifacts}
+\date{2026-07-13T21:37:00+00:00}
+\begin{document}
+\maketitle
+
+\section{Executive Summary}
+This refresh inspected the current Stage-2 codebase and artifacts without retraining expensive models. The verified local artifacts show that Raw Mistral LoRA remains the extraction anchor. Old wrapper variants improve downstream structure only if guarded, because their candidate extraction metrics regress against the anchor.
+
+\section{Four-Week Update Context}
+The copied Stage-2 repository currently has no Git commits in this worktree, so repository changes were audited from source files, status markers, artifact timestamps, and metric files rather than a commit diff.
+
+\section{Codebase Audit}
+The audit found 87 Python modules under \texttt{src/skillllm\_v2}, 38 shell scripts, and 31 status marker files. Full details are in \texttt{reports/skillllm\_v2/research\_refresh/codebase\_audit.md}.
+
+\section{Research Grounding}
+Skill-LLM supports supervised LLM adaptation for skill extraction~\cite{herandi2024skillllm}. SkillSpan defines the boundary-sensitive hard/soft skill benchmark~\cite{zhang2022skillspan}. GLiNER supports lightweight open-label NER~\cite{zaratiana2024gliner}, while QLoRA supports efficient local adapter training~\cite{dettmers2023qlora}. GraphRAG, Contextual Retrieval, and CAG motivate downstream context and graph reasoning rather than destructive span rewriting~\cite{edge2024graphrag,anthropic2024contextualretrieval,huang2025cag}.
+
+\section{SkillLLM v1 Architecture Lessons}
+The main lesson carried forward is to keep extraction, normalization, and recommendation as separable stages. Extraction quality must be measured against span boundaries; normalization and graph reasoning should attach evidence and explanations without silently changing the extraction target.
+
+\section{Current SkillLLM\_v2 Architecture}
+The current architecture includes BERT and GLiNER baselines, a Raw Mistral LoRA extractor, boundary refinement, candidate merging, taxonomy linking, verifier/calibration components, graph matching, and course recommendation. The safe wrapper now treats Raw Mistral as the anchor and gates wrapper outputs against it.
+
+\section{Current Metrics and Problem Diagnosis}
+\begin{longtable}{lrrrrr}
+\toprule
+System & Exact F1 & Token F1 & Partial F1 & HARD F1 & SOFT F1 \\
+\hline
+BERT baseline & 0.059150 & 0.274922 & 0.176406 & 0.129799 & 0.018796 \\
+GLiNER & 0.075833 & 0.114409 & 0.135365 & 0.054559 & 0.096571 \\
+Raw Mistral LoRA & 0.670069 & 0.787886 & 0.813845 & 0.726450 & 0.604046 \\
+Old Boundary Refiner & 0.670069 & 0.787886 & 0.813845 & 0.726450 & 0.604046 \\
+Old Mistral + GLiNER + Taxonomy & 0.670062 & 0.787575 & 0.814438 & 0.728020 & 0.602305 \\
+Old Full CAG/Graph & 0.671102 & 0.787575 & 0.815702 & 0.728618 & 0.603755 \\
+SkillLLM\_v2 Safe Wrapper & 0.671102 & 0.787886 & 0.813845 & 0.726450 & 0.603755 \\
+\bottomrule
+\end{longtable}
+
+\section{Wrapper Regression Analysis}
+Old wrapper candidates underperformed Raw Mistral on exact span F1 and soft-skill F1. Therefore, wrapper components must be source-aware and non-destructive.
+
+\section{Safe Wrapper Design}
+Raw Mistral spans are anchor predictions. Boundary refinement proposes candidate edits but does not destructively replace anchor spans. GLiNER and dictionary candidates are add-only. Taxonomy linking attaches canonical metadata but does not filter extraction. The non-regression gate selects wrapper output only when exact and soft-skill guardrails pass; otherwise it falls back to Raw Mistral extraction.
+
+\section{Context Compaction and User Profile Summarization}
+The new context path builds evidence-backed user profile summaries and cached context packets. CAG is used for stable profile summaries, taxonomy aliases, and course catalogue summaries. Dynamic job postings remain retrieval targets.
+
+\section{CAG/RAG/GraphRAG Design}
+CAG caches stable small context, RAG retrieves large and changing job/course text, and graph retrieval explains relational paths from user skills to missing skills, jobs, and courses.
+
+\section{Experiments and Ablations}
+The current money table is generated from local metrics artifacts. Rows are not invented; missing downstream labels remain NA.
+
+\section{Results}
+See \texttt{reports/skillllm\_v2/money\_table.md} and \texttt{reports/skillllm\_v2/research\_refresh/codebase\_audit.md}.
+
+\section{Error Analysis}
+See \texttt{reports/skillllm\_v2/research\_refresh/wrapper\_error\_analysis.md} and \texttt{wrapper\_regression\_cases.jsonl}.
+
+\section{Limitations}
+Graph matching and course recommendation labels are currently unavailable in the inspected artifacts, so nDCG@10 and P@5 remain NA. CAG context helpers are deterministic smoke-ready modules; they do not claim downstream metric gains without labels.
+
+\section{Next Steps}
+\begin{enumerate}
+\item Keep Raw Mistral as the extraction anchor.
+\item Tune wrapper candidate thresholds on dev data only.
+\item Add labeled job/course recommendation evaluation before claiming recommendation gains.
+\item Add DVC or equivalent artifact hashing for large model and prediction files.
+\end{enumerate}
+
+\section{Reproducibility Checklist}
+Run manifest: \texttt{reports/skillllm\_v2/research\_refresh/run\_manifest.json}. Metrics provenance: \texttt{reports/skillllm\_v2/prediction\_provenance\_check.md}. Artifact paths are included in the audit and money table.
+
+\section{Appendix: Commands and Artifacts}
+\begin{verbatim}
+PYTHONPATH=src pytest tests/skillllm_v2/ -q
+bash scripts/run_skillllm_v2_safe_wrapper.sh
+python -m skillllm_v2.research_refresh
+\end{verbatim}
+
+\bibliographystyle{plain}
+\bibliography{skillllm_v2_research_refresh}
+\end{document}

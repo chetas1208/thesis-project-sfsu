@@ -1,0 +1,147 @@
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{fancyhdr}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue,
+  pdftitle={SkillLLM_v2: Provenance-Aware Skill Extraction and Contextual Career Intelligence},
+  pdfauthor={Author name to be supplied for formal submission}
+}
+\setstretch{1.22}
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{1.5em}
+\setlist[itemize]{leftmargin=2em,itemsep=0.18em,topsep=0.3em}
+\setlist[enumerate]{leftmargin=2em,itemsep=0.18em,topsep=0.3em}
+\captionsetup{font=small,labelfont=bf}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\renewcommand{\headrulewidth}{0.3pt}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+
+\definecolor{implemented}{HTML}{DCEFE2}
+\definecolor{experimental}{HTML}{FFF1C2}
+\definecolor{future}{HTML}{E7E7E7}
+\definecolor{anchor}{HTML}{DCE8F5}
+\definecolor{ink}{HTML}{263238}
+\tikzset{
+  node/.style={draw=ink,rounded corners=2pt,align=center,font=\footnotesize,minimum height=7mm,inner sep=3.2pt},
+  impl/.style={node,fill=implemented},
+  exp/.style={node,fill=experimental},
+  plan/.style={node,fill=future,dashed},
+  anchorbox/.style={node,fill=anchor,very thick},
+  data/.style={node,fill=white},
+  flow/.style={-{Stealth[length=2.1mm]},thick,draw=ink},
+  dashedflow/.style={-{Stealth[length=2.1mm]},thick,dashed,draw=ink}
+}
+\newcommand{\implementedlabel}{\textcolor{black}{\fcolorbox{ink}{implemented}{\strut implemented}}}
+\newcommand{\experimentallabel}{\textcolor{black}{\fcolorbox{ink}{experimental}{\strut experimental}}}
+\newcommand{\plannedlabel}{\textcolor{black}{\fcolorbox{ink}{future}{\strut planned / unevaluated}}}
+\newcommand{\codepath}[1]{\nolinkurl{#1}}
+\newcommand{\inlinecode}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\metric}[1]{\ensuremath{#1}}
+
+\begin{document}
+\pagenumbering{roman}
+\begin{titlepage}
+  \centering
+  \vspace*{1.1in}
+  {\Large\bfseries SkillLLM\_v2: Provenance-Aware Skill Extraction,\par}
+  \vspace{0.12in}
+  {\Large\bfseries Normalization, and Contextual Career Intelligence\par}
+  \vspace{0.65in}
+  {\large Technical Research Report\par}
+  \vspace{0.24in}
+  {\large Prepared for CSC 895 / CSC 898 and Professor Chen\par}
+  \vfill
+  {\large San Francisco State University\par}
+  {\large Department of Computer Science\par}
+  \vspace{0.35in}
+  {\large September 2026\par}
+  \vspace{0.35in}
+  \begin{minipage}{0.84\textwidth}\small
+  \textbf{Administrative note.} This research report is thesis-quality but is not a signed submission copy. The author name, final course designation, committee information, and approval-page format must be confirmed with the department before formal submission.
+  \end{minipage}
+\end{titlepage}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{frontmatter/abstract_v2}
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+This report was prepared for the SkillLLM\_v2 research update. The author thanks Professor Chen for guidance on the scope of the culminating research deliverable and the contributors of the SkillSpan benchmark for making span-level hard- and soft-skill evaluation possible.
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter*{Abbreviations}
+\addcontentsline{toc}{chapter}{Abbreviations}
+\begin{longtable}{p{0.18\textwidth}p{0.72\textwidth}}
+\toprule
+Term & Meaning \\
+\midrule
+\endhead
+CAG & Cache-augmented context in the SkillLLM\_v2 implementation \\
+DDP & Distributed data parallel training \\
+F1 & Harmonic mean of precision and recall \\
+GLiNER & Generalist model for open-label named-entity recognition \\
+LoRA & Low-rank adaptation \\
+NER & Named-entity recognition \\
+PEFT & Parameter-efficient fine-tuning \\
+RAG & Retrieval-augmented generation \\
+SFT & Supervised fine-tuning \\
+\bottomrule
+\end{longtable}
+
+\clearpage
+\pagenumbering{arabic}
+\input{chapters/01_introduction_v2}
+\input{chapters/02_related_work_v2}
+\input{chapters/03_problem_formulation_v2}
+\input{chapters/04_architecture_v2}
+\input{chapters/05_methodology_v2}
+\input{chapters/06_experiments_v2}
+\input{chapters/07_results_v2}
+\input{chapters/08_error_analysis_v2}
+\input{chapters/09_context_intelligence_v2}
+\input{chapters/10_limitations_future_v2}
+\input{chapters/11_conclusion_v2}
+\appendix
+\input{appendices/a_reproducibility_v2}
+\input{appendices/b_prompts_and_schema_v2}
+\input{appendices/c_audit_and_artifacts_v2}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,40 @@
+seed: 42
+mode: smoke
+limits:
+  smoke_limit: 5
+  training_limit: 20
+data:
+  skillspan_root: data/source/skillspan_hf
+  job_data_path: inputs/demo/jobs.jsonl
+  course_catalog_path: inputs/demo/course_catalog.jsonl
+model:
+  name: mistral-small-3.1-24b-instruct-2503
+  model_path: models/mistral-small-3.1-24b-instruct-2503
+  adapter_path: artifacts/mistral-small-3.1-24b-skillspan-lora
+  train_mistral_lora: false
+  use_4bit: true
+  allow_smoke_fallback: true
+  allow_real_model_in_smoke: false
+bert:
+  model_name_or_path: bert-base-uncased
+gliner:
+  model_name_or_path: urchade/gliner_medium-v2.1
+  optional: true
+taxonomy:
+  paths:
+    - data/taxonomies/custom_skill_aliases.jsonl
+outputs:
+  artifacts_dir: artifacts/skillllm_v2
+  reports_dir: reports/skillllm_v2
+device:
+  prefer_gpu: false
+  cuda_visible_devices: "0,1"
+distributed:
+  launcher: torchrun
+  num_processes: 2
+  cuda_visible_devices: "0,1"
+logging:
+  dir: logs
+mistral_lora:
+  train_mistral_lora: false
+  num_train_epochs: 1

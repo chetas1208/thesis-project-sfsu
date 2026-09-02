@@ -1,0 +1,29 @@
+# Non-regression guardrails for the SkillLLM_v2_stage2 wrapper, anchored to
+# the 80-epoch Raw Mistral LoRA extractor (test split, 974 docs). See
+# reports/skillllm_v2/wrapper_error_analysis*.md for the source of these
+# numbers.
+#
+# A wrapper variant's extraction output is "accept"-ed (used downstream) only
+# if it clears both floors below. Otherwise
+# skillllm_v2.eval.non_regression_gate falls back to the unmodified Raw
+# Mistral predictions for *extraction*, while taxonomy/job/course
+# recommendation outputs are still produced from the wrapper's enriched
+# candidates regardless of this decision.
+anchor_metrics:
+  exact_span_f1: 0.675034
+  token_f1: 0.797798
+  soft_skill_f1: 0.609792
+  hard_skill_f1: 0.731138
+
+exact_span_f1:
+  # Improvement target: a variant clearing this is reported as improving on
+  # the anchor (informational only -- not itself a pass/fail criterion).
+  target: 0.675034
+  # Non-regression floor = anchor - max_drop = 0.675034 - 0.010034 = 0.665000.
+  # A variant scoring below this floor automatically falls back to the Raw
+  # Mistral anchor for extraction ("no worse than 0.665").
+  max_drop: 0.010034
+
+soft_skill_f1:
+  # Non-regression floor = anchor - max_drop = 0.609792 - 0.03 = 0.579792.
+  max_drop: 0.03

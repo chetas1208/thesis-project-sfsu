@@ -1,0 +1,17 @@
+{
+  "exact_span_precision": 0.6721457130164371,
+  "exact_span_recall": 0.667991169977925,
+  "exact_span_f1": 0.6700620017714791,
+  "partial_span_precision": 0.8169702354509107,
+  "partial_span_recall": 0.8119205298013245,
+  "partial_span_f1": 0.8144375553587245,
+  "token_precision": 0.773494957726393,
+  "token_recall": 0.8021762095922248,
+  "token_f1": 0.7875745475289114,
+  "hard_skill_f1": 0.7280197206244866,
+  "soft_skill_f1": 0.6023054755043228,
+  "macro_f1": 0.6651625980644047,
+  "micro_f1": 0.6700620017714791,
+  "linking_accuracy": 0.890270990670813,
+  "notes": "Mistral + GLiNER + Taxonomy. Mistral may use configured smoke fallback when local model loading is unavailable."
+}

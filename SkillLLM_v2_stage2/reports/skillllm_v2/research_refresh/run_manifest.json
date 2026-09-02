@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-07-13T21:36:59+00:00",
+  "branch": "feature/skillllm-v2-research-refresh-20260709",
+  "commit_hash": null,
+  "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "cuda": {
+    "torch_version": "2.6.0+cu124",
+    "cuda_available": true,
+    "cuda_device_count": 2,
+    "cuda_devices": [
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090"
+    ]
+  },
+  "gpu_info": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 3 MiB, 0 %\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 3 MiB, 0 %",
+  "active_config_files": [
+    "configs/skillllm_v2_ablation.yaml",
+    "configs/skillllm_v2_models.yaml",
+    "configs/skillllm_v2_smoke.yaml",
+    "configs/skillllm_v2_stage2.yaml",
+    "configs/skillllm_v2_training.yaml",
+    "configs/skillllm_v2_training_80ep.yaml",
+    "configs/skillllm_v2_training_80ep_2gpu.yaml",
+    "configs/skillllm_v2_wrapper_guardrails.yaml"
+  ],
+  "artifact_paths_inspected": [
+    "artifacts/skillllm_v2/mistral_lora/metrics.json",
+    "artifacts/skillllm_v2/mistral_boundary/metrics.json",
+    "artifacts/skillllm_v2/mistral_gliner_taxonomy/metrics.json",
+    "artifacts/skillllm_v2/full_cag_graph/metrics.json",
+    "reports/skillllm_v2/money_table.md",
+    "reports/skillllm_v2/thesis_results_summary.md",
+    "reports/skillllm_v2/metric_sanity_report.md",
+    "reports/skillllm_v2/prediction_provenance_check.md"
+  ]
+}

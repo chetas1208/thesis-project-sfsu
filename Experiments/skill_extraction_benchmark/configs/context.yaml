@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────────────────────────
+# ConTeXT: Contextual Skill Extraction via Sentence Similarity
+# ─────────────────────────────────────────────────────────────────────
+
+base_model: "TechWolf/ConTeXT-Skill-Extraction-base"
+
+export:
+  negatives_per_positive: 5
+
+training:
+  train_batch_size: 32
+  num_train_epochs: 4
+  learning_rate: 2.0e-5
+  warmup_ratio: 0.1
+  loss: "CosineSimilarityLoss"
+
+inference:
+  encode_batch_size: 64
+  top_k: 5
+  threshold_sweep: true    # sweep on dev to find optimal threshold
+  default_threshold: 0.5

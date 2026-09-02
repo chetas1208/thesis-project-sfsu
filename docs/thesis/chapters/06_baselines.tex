@@ -1,0 +1,68 @@
+\chapter{Baselines and Comparative Models}
+\label{ch:baselines}
+
+\section{Legacy Multi-LLM Benchmark (Model Selection Phase)}
+
+The \texttt{SkillLLM\_v2} benchmark trained and evaluated five open-weight models on SkillSpan with shared prompts, splits, and evaluation code (\texttt{configs/skillspan\_baselines.yaml}).
+Table~\ref{tab:legacy-llm} lists completed test metrics from \texttt{results/skillspan\_baselines/summary\_report.json}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Legacy three-epoch SkillSpan benchmark (3{,}569 test examples). Gemma 4 26B did not complete.}
+  \label{tab:legacy-llm}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Model & Exact F1 & Token F1 & Partial F1 & Status \\
+    \midrule
+    Mistral Small 3.1 24B & 0.665 & 0.730 & 0.798 & Completed \\
+    Qwen3 14B            & 0.649 & 0.714 & 0.789 & Completed \\
+    Gemma 4 E4B           & 0.636 & 0.705 & 0.781 & Completed \\
+    Llama 3.1 8B Instruct & 0.632 & 0.704 & 0.764 & Completed \\
+    Gemma 4 26B A4B       & ---   & ---   & ---   & Failed \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+All completed LLM runs used 4-bit quantization and LoRA with three epochs; Mistral used \texttt{max\_seq\_length} 512 in pipeline-resolved configuration while Gemma/Mistral multimodal wrappers targeted language-model projection modules.
+
+Gemma 4 26B failed with repeated load and memory errors documented in \texttt{errors.jsonl}, including CUDA out-of-memory and meta-tensor loading failures on 2$\times$24\,GB GPUs.
+
+\section{Stage-2 Encoder Baselines}
+
+\subsection{BERT Token Classification}
+
+Stage-2 trains a BERT-base-uncased token classifier as a CPU-friendly baseline (\texttt{artifacts/skillllm\_v2/bert\_baseline/metrics.json}).
+Exact span F1 is 0.059 with soft-skill F1 0.019 on the SkillSpan test evaluation used for Stage-2 artifacts.
+
+\subsection{GLiNER}
+
+GLiNER (\texttt{urchade/gliner\_medium-v2.1}) ran in zero-shot mode because fine-tuning was skipped (\texttt{training\_mode: zero\_shot} in metrics metadata).
+Exact span F1 is 0.076.
+
+\section{Primary Generative Extractor}
+
+The Stage-2 Mistral LoRA model was trained for 80 epochs on 4{,}800 training examples with 2$\times$ GPU distributed data parallel training (\texttt{training\_summary.json}).
+Configuration specifies LoRA rank 16, alpha 32, learning rate $1.2 \times 10^{-4}$, batch size 1, gradient accumulation 32, and \texttt{max\_seq\_length} 512.
+
+Test metrics in \texttt{artifacts/skillllm\_v2/mistral\_lora/metrics.json}:
+
+\begin{itemize}
+  \item Exact span F1: 0.670
+  \item Token F1: 0.788
+  \item Partial span F1: 0.814
+  \item Hard-skill F1: 0.726
+  \item Soft-skill F1: 0.604
+\end{itemize}
+
+These supersede the three-epoch legacy Mistral numbers for Stage-2 system claims but do not invalidate the legacy benchmark as a controlled multi-model comparison at equal epoch budget.
+
+\section{Wrapper Variants}
+
+Wrapper systems evaluated in Stage-2 include boundary refinement only, Mistral+GLiNER+taxonomy, and full CAG/graph pipelines.
+Reported extraction metrics pass through the non-regression gate described in Chapter~\ref{ch:methodology}.
+
+\section{Comparison Fairness}
+
+Legacy LLM comparisons share dataset splits and evaluation scripts but differ in backbone capacity and training duration from Stage-2 80-epoch Mistral.
+Encoder baselines share Stage-2 evaluation code but use different model families and task heads.
+The earlier \texttt{Experiments/} resume benchmark uses different metrics and is not included in the same leaderboard.

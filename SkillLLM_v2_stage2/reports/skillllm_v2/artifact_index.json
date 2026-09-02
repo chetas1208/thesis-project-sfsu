@@ -1,0 +1,216 @@
+{
+  "Status and logs": [
+    {
+      "path": "artifacts/skillllm_v2/status/*.success.json",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/status/*.failed.json",
+      "exists": false
+    },
+    {
+      "path": "logs/latest_stage2_80epoch_2gpu.log",
+      "exists": true
+    },
+    {
+      "path": "logs/latest_stage2_80epoch_2gpu.pid",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/gpu_component_availability.json",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/gpu_component_availability.md",
+      "exists": true
+    }
+  ],
+  "BERT baseline": [
+    {
+      "path": "artifacts/skillllm_v2/bert_baseline/model/model.json",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/bert_baseline/predictions.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/bert_baseline/metrics.json",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/bert_baseline_metrics.json",
+      "exists": true
+    }
+  ],
+  "GLiNER": [
+    {
+      "path": "artifacts/skillllm_v2/gliner_baseline/model/config.json",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/gliner_baseline/predictions.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/gliner_baseline/metrics.json",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/gliner_baseline_metrics.json",
+      "exists": true
+    }
+  ],
+  "Raw Mistral LoRA": [
+    {
+      "path": "artifacts/skillllm_v2/mistral_lora/model/",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/mistral_lora/model/training_summary.json",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/mistral_lora/model/adapter_status.json",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/mistral_lora/raw_outputs.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/mistral_lora/metrics.json",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/raw_mistral_lora_metrics.json",
+      "exists": true
+    }
+  ],
+  "Mistral + Boundary Refiner": [
+    {
+      "path": "artifacts/skillllm_v2/mistral_boundary/predictions.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/mistral_boundary/metrics.json",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/mistral_boundary_metrics.json",
+      "exists": true
+    }
+  ],
+  "Mistral + GLiNER + Taxonomy": [
+    {
+      "path": "artifacts/skillllm_v2/mistral_gliner_taxonomy/predictions.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/mistral_gliner_taxonomy/linked_skills.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/mistral_gliner_taxonomy/metrics.json",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/mistral_gliner_taxonomy_metrics.json",
+      "exists": true
+    }
+  ],
+  "SkillLLM_v2 Full CAG/Graph": [
+    {
+      "path": "artifacts/skillllm_v2/full_cag_graph/predictions.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/full_cag_graph/linked_skills.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/full_cag_graph/job_matches.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/full_cag_graph/course_recommendations.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/full_cag_graph/metrics.json",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/full_cag_graph_metrics.json",
+      "exists": true
+    }
+  ],
+  "Verifier and linker": [
+    {
+      "path": "data/skillllm_v2/verifier_train.jsonl",
+      "exists": true
+    },
+    {
+      "path": "data/skillllm_v2/verifier_dev.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/span_verifier/model/",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/span_verifier/metrics.json",
+      "exists": true
+    },
+    {
+      "path": "data/skillllm_v2/linker_train.jsonl",
+      "exists": true
+    },
+    {
+      "path": "data/skillllm_v2/linker_dev.jsonl",
+      "exists": true
+    },
+    {
+      "path": "artifacts/skillllm_v2/taxonomy_reranker/metrics.json",
+      "exists": true
+    }
+  ],
+  "Final reports": [
+    {
+      "path": "reports/skillllm_v2/money_table.csv",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/money_table.md",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/extraction_ablation.csv",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/extraction_ablation.md",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/matching_eval.csv",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/course_recommendation_eval.csv",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/thesis_results_summary.md",
+      "exists": true
+    },
+    {
+      "path": "reports/skillllm_v2/error_analysis.md",
+      "exists": true
+    }
+  ]
+}

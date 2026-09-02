@@ -1,0 +1,175 @@
+{
+  "num_jobs": 1245,
+  "num_sentences": 56767,
+  "num_labeled_sentences": 6217,
+  "total_hard_skill_spans": 9878,
+  "total_soft_skill_spans": 2176,
+  "avg_spans_per_sentence": 0.2123,
+  "avg_spans_per_labeled_sentence": 1.9389,
+  "avg_sentence_length_tokens": 25.2719,
+  "most_common_hard_skills": [
+    [
+      "machine learning",
+      1408
+    ],
+    [
+      "python",
+      854
+    ],
+    [
+      "data science",
+      655
+    ],
+    [
+      "automation",
+      574
+    ],
+    [
+      "data analysis",
+      565
+    ],
+    [
+      "llms",
+      505
+    ],
+    [
+      "sql",
+      417
+    ],
+    [
+      "statistics",
+      298
+    ],
+    [
+      "c++",
+      293
+    ],
+    [
+      "excel",
+      251
+    ],
+    [
+      "go",
+      245
+    ],
+    [
+      "git",
+      244
+    ],
+    [
+      "java",
+      234
+    ],
+    [
+      "aws",
+      230
+    ],
+    [
+      "azure",
+      217
+    ],
+    [
+      "deep learning",
+      210
+    ],
+    [
+      "javascript",
+      188
+    ],
+    [
+      "power bi",
+      149
+    ],
+    [
+      "data engineering",
+      149
+    ],
+    [
+      "computer vision",
+      140
+    ]
+  ],
+  "most_common_soft_skills": [
+    [
+      "communication",
+      631
+    ],
+    [
+      "problem solving",
+      295
+    ],
+    [
+      "attention to detail",
+      241
+    ],
+    [
+      "initiative",
+      227
+    ],
+    [
+      "collaboration",
+      139
+    ],
+    [
+      "analytical skills",
+      109
+    ],
+    [
+      "mentoring",
+      85
+    ],
+    [
+      "teamwork",
+      72
+    ],
+    [
+      "interpersonal skills",
+      66
+    ],
+    [
+      "organization",
+      59
+    ],
+    [
+      "presentation skills",
+      53
+    ],
+    [
+      "adaptability",
+      44
+    ],
+    [
+      "leadership",
+      39
+    ],
+    [
+      "critical thinking",
+      30
+    ],
+    [
+      "project management",
+      24
+    ],
+    [
+      "time management",
+      20
+    ],
+    [
+      "prioritization",
+      19
+    ],
+    [
+      "creativity",
+      15
+    ],
+    [
+      "stakeholder management",
+      8
+    ]
+  ],
+  "confidence_distribution": {
+    "0.90-0.949": 4169,
+    "0.95-1.00": 7448,
+    "<0.85": 437
+  }
+}

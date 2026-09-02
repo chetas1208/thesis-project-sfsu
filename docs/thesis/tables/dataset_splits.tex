@@ -1,0 +1,14 @@
+\begin{table}[H]
+\centering
+\caption{Local SkillSpan export used by the Stage-2 pipeline. The local JSON line counts match the dataset README.}
+\label{tab:dataset-splits}
+\begin{tabular}{lrp{0.50\textwidth}}
+\toprule
+Split & Sentences & Use in this report \\
+\midrule
+Train & 4,800 & Supervised fine-tuning examples \\
+Development & 3,174 & Persisted training evaluation and development split \\
+Test & 3,569 & Local corpus test partition; the reported cached Mistral evaluation path contains 974 documents \\
+\bottomrule
+\end{tabular}
+\end{table}

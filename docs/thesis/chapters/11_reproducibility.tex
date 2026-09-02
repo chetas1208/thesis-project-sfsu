@@ -1,0 +1,67 @@
+\chapter{Reproducibility}
+\label{ch:reproducibility}
+
+\section{Repository Organization}
+
+\begin{itemize}
+  \item \texttt{SkillLLM\_v2/}: legacy multi-model benchmark, training scripts, SkillSpan data preparation
+  \item \texttt{SkillLLM\_v2\_stage2/}: Stage-2 CAG/graph system (\texttt{src/skillllm\_v2/})
+  \item \texttt{docs/thesis/}: this thesis source
+\end{itemize}
+
+\section{Legacy Benchmark Commands}
+
+From \texttt{SkillLLM\_v2/} with virtual environment activated:
+
+\begin{verbatim}
+bash scripts/run_skillspan_benchmark.sh \
+  configs/skillspan_baselines.yaml \
+  data/skillspan \
+  results/skillspan_baselines
+\end{verbatim}
+
+Single-model rerun:
+
+\begin{verbatim}
+python scripts/run_skillspan_benchmark.py \
+  --config configs/skillspan_baselines.yaml \
+  --dataset-path data/skillspan \
+  --output-dir results/skillspan_baselines \
+  --model mistral-small-3.1-24b-instruct-2503
+\end{verbatim}
+
+\section{Stage-2 Commands}
+
+Stage-2 scripts referenced in verified documentation:
+
+\begin{verbatim}
+bash scripts/setup_skillllm_v2_stage2.sh
+bash scripts/run_skillllm_v2_smoke.sh
+bash scripts/run_skillllm_v2_extraction_ablation.sh
+PYTHONPATH=src pytest tests/skillllm_v2/ -q
+\end{verbatim}
+
+\section{Artifact Paths}
+
+Primary metric files:
+
+\begin{itemize}
+  \item Legacy: \texttt{SkillLLM\_v2/results/skillspan\_baselines/summary\_report.json}
+  \item Stage-2 Mistral: \texttt{SkillLLM\_v2\_stage2/artifacts/skillllm\_v2/mistral\_lora/metrics.json}
+  \item Stage-2 wrapper: \texttt{SkillLLM\_v2\_stage2/artifacts/skillllm\_v2/safe\_wrapper/}
+\end{itemize}
+
+\section{Environment Notes}
+
+Transformers $\geq$4.51.0 and tokenizers $\geq$0.21.0 are enforced by \texttt{validate\_environment()} in the benchmark pipeline.
+CUDA allocation uses \texttt{PYTORCH\_CUDA\_ALLOC\_CONF=expandable\_segments:True}.
+
+\section{Thesis Build}
+
+From \texttt{docs/thesis/}:
+
+\begin{verbatim}
+latexmk -pdf -interaction=nonstopmode main.tex
+\end{verbatim}
+
+Evidence audit companion file: \texttt{docs/thesis\_evidence\_report.md}.

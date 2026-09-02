@@ -1,0 +1,9 @@
+\begin{tikzpicture}[node distance=6mm and 10mm]
+\node[data] (raw) {Raw profile evidence};
+\node[impl,below=of raw] (compact) {Context compactor};
+\node[impl,below left=of compact] (cag) {Stable cached context:\\profile, memory, aliases,\\course summaries};
+\node[impl,below=of compact] (rag) {Dynamic retrieval policy:\\job postings, scraped descriptions};
+\node[impl,below right=of compact] (graph) {Graph policy:\\user--skill--job--course paths};
+\node[impl,below=12mm of rag] (packet) {Hashed cached context packet\\plus query-specific retrieval};
+\draw[flow] (raw)--(compact); \draw[flow] (compact)--(cag); \draw[flow] (compact)--(rag); \draw[flow] (compact)--(graph); \draw[flow] (cag)--(packet); \draw[flow] (rag)--(packet); \draw[flow] (graph)--(packet);
+\end{tikzpicture}

@@ -1,0 +1,10 @@
+\begin{abstract}
+Employment-related text such as resumes and job postings encodes skills in unstructured language, yet downstream career services require structured, traceable skill representations for matching, gap analysis, and training recommendations.
+This thesis presents SkillLLM\_v2, a context-aware graph-augmented skill intelligence system built on supervised span extraction from open-weight language models.
+The work proceeds in two verified stages.
+First, a controlled SkillSpan benchmark compared five locally fine-tuned open-weight models under identical data splits and evaluation code; Mistral Small 3.1 24B achieved the strongest completed exact span F1 (0.665) among feasible models on 3{,}569 test examples, while Gemma 4 26B failed repeatedly on available 2$\times$24\,GB GPU hardware.
+Second, a Stage-2 system centers on an 80-epoch Mistral LoRA extractor (exact span F1 0.670 on the same benchmark), augmented by GLiNER and dictionary candidates, boundary refinement, taxonomy linking, and a non-regression wrapper gate before graph-based job matching and course recommendation.
+Encoder baselines under the same evaluation protocol reached exact span F1 of 0.059 (BERT) and 0.076 (zero-shot GLiNER).
+The full CAG/graph wrapper preserved anchor extraction quality while achieving taxonomy linking coverage of 0.890 on verified artifacts.
+Labeled evaluation of job matching and course recommendation was not available in the repository at thesis preparation time; those components are demonstrated on synthetic demo inputs only.
+\end{abstract}

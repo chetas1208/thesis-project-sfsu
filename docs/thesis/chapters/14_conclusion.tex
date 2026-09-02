@@ -1,0 +1,16 @@
+\chapter{Conclusion}
+\label{ch:conclusion}
+
+This thesis documented SkillLLM\_v2, a research and engineering effort to extract structured skills from employment-related text and support downstream career intelligence.
+
+A controlled SkillSpan benchmark of five open-weight LLMs established Mistral Small 3.1 24B as the strongest feasible generative extractor among completed runs, with exact span F1 0.665 at three epochs and 0.670 after eighty-epoch Stage-2 training.
+Gemma 4 26B did not complete on available hardware.
+Encoder baselines remained far behind on exact span metrics.
+
+Stage-2 introduced a context-aware graph-augmented wrapper that preserves Mistral anchor quality through non-regression gating while adding taxonomy linking at 0.890 coverage and modular job and course reasoning components.
+Extraction gains from the wrapper are incremental; the primary verified advance is integrated, traceable skill intelligence rather than a large F1 breakthrough.
+
+Soft-skill extraction and boundary precision remain open challenges.
+Downstream recommendation requires labeled evaluation before performance claims can be made.
+
+The repository artifacts, evaluation scripts, and this thesis provide a reproducible foundation for CSC 898 submission pending administrative formatting approval and completion of author-specific front matter.

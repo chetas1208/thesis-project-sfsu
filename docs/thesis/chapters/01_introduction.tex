@@ -1,0 +1,66 @@
+\chapter{Introduction}
+\label{ch:introduction}
+
+\section{Domain Context}
+
+Organizations and career platforms increasingly rely on natural language processing to interpret resumes, job postings, and professional profiles.
+Skill mentions in these documents are rarely presented as normalized database entries; they appear as spans within sentences, often with ambiguous boundaries and mixed hard and soft skill types~\cite{zhang2022skillspan}.
+Accurate extraction of such spans is a prerequisite for skill-based job matching, labor-market analytics, and personalized learning recommendations.
+
+\section{Problem Definition}
+
+This thesis addresses \emph{skill span extraction} from English employment-related text: given an input text segment, the system must identify contiguous substrings that denote explicit hard or soft skills and assign each span a label from a fixed schema.
+The task follows the SkillSpan formulation, which distinguishes \textsc{Hard\_Skill} and \textsc{Soft\_Skill} annotations on sentence-level examples drawn from job postings~\cite{zhang2022skillspan}.
+
+Beyond extraction, the Stage-2 SkillLLM\_v2 system targets a broader \emph{skill intelligence loop}: user profile construction, taxonomy normalization, job matching, skill-gap detection, and course recommendation.
+Only extraction and wrapper components were evaluated on SkillSpan gold labels; downstream matching metrics lacked labeled evaluation data in the repository artifacts inspected for this thesis.
+
+\section{Motivation}
+
+Prior work shows that repurposing general-purpose large language models (LLMs) through supervised adaptation can improve skill extraction relative to lighter baselines~\cite{herandi2024skillllm}.
+Open-weight models introduce practical trade-offs among model capacity, inference cost, and hardware feasibility.
+The repository records both a multi-model benchmark for model selection and a subsequent system integration effort that treats a single selected extractor as the non-regression anchor for wrapper components.
+
+\section{Research Questions}
+
+The experiments completed in the repository support the following research questions:
+
+\begin{description}
+  \item[RQ1] How do contemporary open-weight instruction-tuned LLMs compare when fine-tuned under a shared SkillSpan protocol with identical splits and metrics?
+  \item[RQ2] Among models feasible on 2$\times$ NVIDIA RTX 3090 (24\,GB) GPUs, which backbone yields the strongest span extraction quality?
+  \item[RQ3] How do lightweight encoder baselines (BERT token classification, zero-shot GLiNER) compare with a fine-tuned generative Mistral extractor on SkillSpan?
+  \item[RQ4] Can a guarded hybrid wrapper---combining Mistral extraction with auxiliary candidates, boundary refinement, and taxonomy linking---improve or preserve span metrics while enabling downstream normalization?
+  \item[RQ5] What systematic error modes remain after fine-tuning and wrapper processing?
+\end{description}
+
+RQ4's downstream matching and recommendation claims are limited to implemented pipeline behavior and linking coverage; nDCG and precision@k were not computed because labeled job/course evaluation sets were absent from verified artifacts.
+
+\section{Contributions}
+
+This thesis documents the following evidence-backed contributions:
+
+\begin{enumerate}
+  \item A reproducible multi-model SkillSpan benchmark pipeline (\texttt{SkillLLM\_v2}) comparing five open-weight LLMs with shared preprocessing, LoRA/QLoRA training, JSON generative decoding, span alignment, and multi-metric evaluation.
+  \item Empirical model selection showing Mistral Small 3.1 24B as the strongest completed benchmark model among feasible configurations, with documented failure of Gemma 4 26B on available hardware.
+  \item SkillLLM\_v2 Stage-2: a context-aware graph-augmented architecture with hybrid candidate extraction, non-regression gating, taxonomy linking, and NetworkX-based relational reasoning for job and course recommendation.
+  \item Verified comparative metrics on SkillSpan test data for BERT, GLiNER, raw Mistral LoRA, and wrapper variants, including wrapper regression analysis against the Mistral anchor.
+\end{enumerate}
+
+\section{Thesis Organization}
+
+Chapter~\ref{ch:related} reviews related work.
+Chapter~\ref{ch:methodology} formalizes the task and evaluation methodology.
+Chapter~\ref{ch:dataset} documents datasets and preprocessing.
+Chapter~\ref{ch:architecture} describes the SkillLLM\_v2 architecture.
+Chapter~\ref{ch:baselines} presents baseline systems.
+Chapter~\ref{ch:experiments} details experimental setup.
+Chapter~\ref{ch:results} reports results.
+Chapters~\ref{ch:discussion}--\ref{ch:error} analyze findings and errors.
+Chapter~\ref{ch:reproducibility} summarizes reproducibility.
+Chapters~\ref{ch:limitations}--\ref{ch:conclusion} discuss limitations, future work, and conclusions.
+
+\section{Formatting Note}
+
+This document was prepared for CSC 898 (Master's Thesis) at San Francisco State University.
+Graduate Studies requires department-approved formatting, 1-inch margins, accessible headings, and figure/table captions~\cite{sfsugrad2026thesis,sfcs2026thesis}.
+No department-provided \LaTeX{} template was present in the repository; final format approval by the Graduate Program Specialist remains required.

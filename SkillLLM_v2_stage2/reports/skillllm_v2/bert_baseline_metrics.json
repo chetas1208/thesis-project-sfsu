@@ -1,0 +1,16 @@
+{
+  "exact_span_precision": 0.033138297872340426,
+  "exact_span_recall": 0.2750551876379691,
+  "exact_span_f1": 0.059150249228578214,
+  "partial_span_precision": 0.09882978723404255,
+  "partial_span_recall": 0.820309050772627,
+  "partial_span_f1": 0.17640636126275813,
+  "token_precision": 0.17349023951266787,
+  "token_recall": 0.6619057680118319,
+  "token_f1": 0.2749215681972752,
+  "hard_skill_f1": 0.12979890310786107,
+  "soft_skill_f1": 0.018796151264264937,
+  "macro_f1": 0.074297527186063,
+  "micro_f1": 0.059150249228578214,
+  "notes": "CPU-fast token classification baseline artifact."
+}

@@ -1,0 +1,53 @@
+\chapter{Error Analysis and Non-Regressive Design}
+\label{ch:error-analysis}
+
+\section{Why an error analysis is necessary}
+
+Aggregate F1 can conceal the mechanism of a regression. A wrapper may improve the appearance of one candidate while removing many correct anchor spans; a taxonomy linker may attach a plausible identifier to a wrong surface form; a verifier may reject uncommon technical terms as generic language. Because SkillLLM\_v2 is meant to support later explanation, the source of a failure matters as much as its score. The repository contains an unusually informative historical wrapper report and a later safe-wrapper evaluation. Read together, they show why the architecture protects anchor spans and records a selection decision.
+
+\section{Historical destructive post-processing}
+
+The historical \inlinecode{wrapper_error_analysis.md} is not merged into the primary metric table, but it is a strong diagnostic. It reports an anchor exact-span F1 of 0.675034, token F1 of 0.797798, hard-skill F1 of 0.731138, and soft-skill F1 of 0.609792. Its older boundary-refiner path reports approximately 0.5704 exact F1 and 0.4258 soft F1; the older full CAG/graph path reports approximately 0.5616 exact F1 and 0.4080 soft F1. The direction is unambiguous in that historical snapshot: the post-processors reduced extraction quality sharply.
+
+The report attributes 194 full-wrapper regressions to bad boundary edits, two to bad label changes, and 29 to verifier false rejection. It records 225 total full-wrapper regressions. The boundary refiner alone had 194 regressions. These counts identify a root cause more useful than a generic statement that ``the wrapper underperformed.'' A high-quality extractor had already produced a boundary that the downstream rule changed incorrectly. The fix is not a more aggressive rule; it is to retain the anchor unless a correction can be justified and to make the correction observable in metadata.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Historical error diagnosis from \codepath{wrapper\_error\_analysis.md}. These values describe a prior wrapper analysis and are not pooled with the newer primary table.}
+\label{tab:historical-errors}
+\begin{tabular}{lrrrr}
+\toprule
+Stage & Exact F1 & Soft F1 & Exact gains & Exact losses \\
+\midrule
+Raw Mistral anchor & 0.675034 & 0.609792 & -- & -- \\
+Boundary refiner & 0.5704 & 0.4258 & 53 & 194 \\
+Mistral + GLiNER + taxonomy & 0.6515 & 0.5777 & 36 & 0 \\
+Full CAG/graph & 0.5616 & 0.4080 & 78 & 225 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The apparent zero regressions in the historical Mistral+GLiNER+taxonomy row do not make it a universal winner; its exact and soft values remain below that historical anchor. They instead suggest that additions and edits have distinct risk profiles. Add-only candidate generation can increase recall without deleting a base prediction, while boundary modification and generic rejection can damage previously correct spans. This observation is implementation-specific and requires renewed testing on every code/configuration change.
+
+\section{From diagnosis to control points}
+
+The current code introduces four control points. First, a candidate with Mistral provenance is anchor-protected in `CandidateMerger`. Second, non-anchor candidates must satisfy confidence and optional alias-evidence requirements before they can be added. Third, the boundary-refiner tests explicitly require preservation when taxonomy evidence is absent and prohibit candidate disappearance. Fourth, the non-regression gate evaluates a candidate wrapper output against exact and soft floors and can select cached anchor predictions instead.
+
+These controls address different failure modes. Source protection stops a merger from deleting an anchor candidate before evaluation. Add-only filtering limits false-positive additions. Boundary preservation stops a local rule from turning uncertainty into an edit. The gate protects the final output even when an earlier module changes behaviour. None of these mechanisms proves semantic correctness. They are layered safeguards with traceable failure modes, which is more appropriate than trusting a complex wrapper as a monolith.
+
+\section{Current safe-wrapper interpretation}
+
+The later safe-wrapper run yields a materially different outcome: all three variants clear the chosen non-regression floors. This shows that the corrected path is at least compatible with the persisted anchor under the recorded evaluation. It does not invalidate the historical diagnosis. Rather, the diagnosis motivated a redesign, and the new run is evidence that the redesign avoided the large measured collapses observed earlier. The experiment is still a single stored snapshot. A new model checkpoint, alias table, or boundary rule could cause another regression and should trigger the same paired evaluation.
+
+The report's honest language matters here. Calling the safe wrapper ``non-regressive'' is correct only relative to its configured floors and artifact path. Calling it ``better'' because one exact F1 value is 0.001033 higher would overstate a difference with no repeated runs or uncertainty estimates. Similarly, a wrapper that falls back to the anchor would not be a failed system: it would have exercised the intended safety mechanism and preserved the primary extraction output.
+
+\section{Likely remaining error categories}
+
+Several error categories remain relevant even where a count is not available. First, the model can produce a correct concept with a string that does not occur verbatim, causing an alignment failure. Second, the same surface string can occur more than once; deterministic occurrence selection may attach a prediction to the wrong mention. Third, hard/soft labels can be ambiguous for terms such as collaboration, communication, project management, or domain-specific practices. Fourth, the local alias table can leave emerging technologies, abbreviations, or malformed source text unlinked. The linking report's unlinked examples include technical names and compressed forms such as `k8s`, `yaml`, and `sonarqube`, showing the practical value of coverage analysis.
+
+Finally, downstream errors can originate upstream even when downstream code is deterministic. A false negative extraction becomes a missing skill, which may lower a match score or cause a course to be recommended unnecessarily. A wrong canonical ID can create a false graph edge. An explicit evidence field, source offset, and explanation string allow a user or researcher to trace such a decision back to a candidate record. This is why provenance is not merely documentation: it is a debugging interface.
+
+\section{Error-analysis protocol for future runs}
+
+Future experiments should preserve the current paired structure and extend it. For each candidate wrapper, save anchor predictions, candidate predictions, selected predictions, and a row-level action log. Stratify errors by hard/soft label, source domain, span length, alias availability, parser outcome, and edit type. Add a blind manual sample review so that a score change can be associated with interpretable examples. Most importantly, keep the extraction anchor immutable during wrapper evaluation. If a new primary model is trained, establish its own artifact, then repeat wrapper evaluation from that version rather than reusing earlier thresholds without verification.

@@ -1,0 +1,22 @@
+[
+  {
+    "course_id": "aws-101",
+    "course_name": "AWS Foundations",
+    "covers_skills": [
+      "AWS"
+    ],
+    "gap_coverage": 0.3333333333333333,
+    "match_score": 0.67,
+    "why_recommended": "Covers 1 missing skill(s): AWS"
+  },
+  {
+    "course_id": "excel-101",
+    "course_name": "Excel for Analysis",
+    "covers_skills": [
+      "Excel"
+    ],
+    "gap_coverage": 0.3333333333333333,
+    "match_score": 0.42,
+    "why_recommended": "Covers 1 missing skill(s): Excel"
+  }
+]

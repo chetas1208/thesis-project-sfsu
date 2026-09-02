@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{Verified Mistral LoRA settings from \codepath{skillllm\_v2\_training\_80ep\_2gpu.yaml} and the persisted training summary.}
+\label{tab:training-config}
+\begin{tabular}{ll}
+\toprule
+Setting & Value \\
+\midrule
+Seed & 42 \\
+Backbone & Mistral Small 3.1 24B Instruct \\
+Adaptation & LoRA; rank 16, alpha 32, dropout 0.05 \\
+Quantization & 4-bit loading; NF4 path in source \\
+Epochs & 80 \\
+Batch / accumulation & 1 / 32 \\
+Learning rate & 0.00012 \\
+Maximum sequence length & 512 \\
+Parallelism & 2-process DDP, GPUs 0 and 1 \\
+Recorded runtime & 324,217.825 seconds \\
+\bottomrule
+\end{tabular}
+\end{table}

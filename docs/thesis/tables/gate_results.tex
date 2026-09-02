@@ -1,0 +1,15 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Safe-wrapper gate results. Acceptance means that the candidate clears configured non-regression floors; it does not mean that it reached the historical improvement target.}
+\label{tab:gate-results}
+\begin{tabular}{lrrrrl}
+\toprule
+Variant & Anchor exact & Candidate exact & Anchor soft & Candidate soft & Decision \\
+\midrule
+Boundary refiner & 0.670069 & 0.671111 & 0.604046 & 0.605505 & accept \\
+GLiNER + taxonomy & 0.670069 & 0.670062 & 0.604046 & 0.602305 & accept \\
+Full CAG/graph & 0.670069 & 0.671102 & 0.604046 & 0.603755 & accept \\
+\bottomrule
+\end{tabular}
+\end{table}

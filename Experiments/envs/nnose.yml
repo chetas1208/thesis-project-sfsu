@@ -1,0 +1,11 @@
+name: skill-bench-nnose
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip=22.3.1
+  - cudatoolkit=11.7.0
+  - faiss=1.7.2
+  - faiss-gpu=1.7.2
+

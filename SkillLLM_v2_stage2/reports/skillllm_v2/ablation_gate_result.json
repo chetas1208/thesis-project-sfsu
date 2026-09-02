@@ -1,0 +1,24 @@
+{
+  "variant": "G_safe_wrapper",
+  "decision": "accept",
+  "improved_over_anchor": false,
+  "reason": "G_safe_wrapper: exact_span_f1 0.202532 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.047109); soft_skill_f1 0.000000 stays within its guardrail (>= -0.030000) -- accepted as non-regressive.",
+  "checks": [
+    {
+      "metric": "exact_span_f1",
+      "anchor": 0.05714285714285715,
+      "candidate": 0.20253164556962025,
+      "floor": 0.04710885714285715,
+      "delta": 0.14538878842676312,
+      "passed": true
+    },
+    {
+      "metric": "soft_skill_f1",
+      "anchor": 0.0,
+      "candidate": 0.0,
+      "floor": -0.03,
+      "delta": 0.0,
+      "passed": true
+    }
+  ]
+}

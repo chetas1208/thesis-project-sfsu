@@ -1,0 +1,60 @@
+\chapter{Problem Formulation}
+\label{ch:problem}
+
+\section{Documents, spans, and labels}
+
+Let a document be a sequence of characters or tokens $X=(x_1,\ldots,x_n)$. A gold skill annotation is a tuple $s_i=(b_i,e_i,c_i)$, where $b_i$ and $e_i$ are start and exclusive end offsets into the original text and $c_i\in\{\textsc{Hard\_Skill},\textsc{Soft\_Skill}\}$. A system predicts a set $\widehat{S}=\{\hat{s}_j\}_{j=1}^{m}$. A predicted span is exact when it has the same boundaries and label as one unmatched gold span. This definition makes the record's offsets part of the scientific object, not incidental metadata.
+
+The implementation represents a prediction as a `SkillCandidate` with the surface form, label, offsets, source, confidence, evidence, optional canonical identifier and name, and arbitrary metadata. The required fields make it possible to preserve the difference between a Mistral candidate, a GLiNER candidate, a dictionary candidate, and a merged candidate. A candidate with one missing offset is invalid; a candidate with both offsets absent is representable but cannot be counted as an aligned span. The primary evaluation path uses aligned predictions.
+
+Hard skills are technical, tool, framework, domain, or method capabilities explicitly named in the input. Soft skills are interpersonal or behavioural capabilities explicitly named in the input. The restriction to explicit mentions is important. A job title, degree, company name, geographic location, or generic responsibility is not a skill merely because an observer could infer capability from it. The Mistral prompt repeats this restriction and asks for exact surface strings. It makes the system's intended epistemic boundary clear: extraction is evidence retrieval from a source, not latent ability assessment.
+
+\section{Metrics}
+
+For a set of predicted spans, let $TP$ be the number of exact matches, $FP$ the unmatched predictions, and $FN$ the unmatched gold spans. Exact precision, recall, and F1 are
+\begin{equation}
+ P=\frac{TP}{TP+FP},\qquad R=\frac{TP}{TP+FN},\qquad F_1=\frac{2PR}{P+R},
+\label{eq:exact-f1}
+\end{equation}
+with zero denominators handled as zero by the implementation. The same calculation can be applied within the hard-skill and soft-skill subsets. Exact F1 is deliberately strict: a prediction that has the right words but includes an extra boundary token does not receive exact credit.
+
+Partial-span F1 relaxes the matching condition to an overlap under the same label. It is informative when a model finds the semantic region but misses a modifier or delimiter. Token F1 measures overlap at token granularity and helps diagnose boundary behaviour. The evaluation artifacts also track parse failures and unaligned predictions. Together, these metrics distinguish three error classes that a single number would combine: failure to identify a skill, an almost-right boundary, and a generative output that cannot be grounded in the source.
+
+The project reports canonical linking separately. For a set of candidates $C$, the stored coverage measure is
+\begin{equation}
+ \operatorname{coverage}(C)=\frac{\left|\{c\in C: c.\text{canonical\_skill\_id}\neq\varnothing\}\right|}{|C|}.
+\label{eq:coverage}
+\end{equation}
+Coverage does not establish correctness. Linking accuracy would require gold canonical identifiers and is defined as the fraction of aligned predictions whose canonical identifier equals a corresponding gold identifier. Such labels are unavailable for the audited linking run. The report consequently uses ``coverage'' for the 0.890 figures and reserves ``accuracy'' for a future labelled evaluation.
+
+\section{Anchor-preserving composition}
+
+Let $A$ denote the Raw Mistral anchor candidates and $W$ a wrapper's candidate output. Candidate merging is safe in a strong local sense when every $a\in A$ is retained unchanged, unless a later explicit output-selection policy chooses the anchor itself. In the implemented merger, a candidate that contains a Mistral source is retained. An unanchored candidate must satisfy source-dependent confidence conditions, alias evidence where configured, and an anchor-overlap rule. This yields an add-only candidate policy rather than an unrestricted vote or replacement policy.
+
+The wrapper-level policy is weaker but operationally useful. Let $f_e(\cdot)$ and $f_s(\cdot)$ denote exact-span and soft-skill F1, and let $\delta_e,\delta_s$ be allowed drops. A wrapper is accepted when
+\begin{equation}
+ f_e(W)\geq f_e(A)-\delta_e \quad\text{and}\quad f_s(W)\geq f_s(A)-\delta_s.
+\label{eq:gate}
+\end{equation}
+Otherwise the selected extraction output is $A$. The active safe-wrapper report records an exact F1 floor of 0.660035 and a soft F1 floor of 0.574046 for the persisted anchor. These values are configuration-specific safeguards, not universal statistical thresholds. An accepted wrapper can still be below a separately defined improvement target; this is why the report separates the \inlinecode{decision} and \inlinecode{improved_over_anchor} fields.
+
+\section{Canonical profile and downstream representations}
+
+An extracted surface form is not yet a durable user skill fact. The profile layer defines a fact
+\begin{equation}
+ p=(u, s, \ell, q, E, M),
+\end{equation}
+where $u$ is a user identifier, $s$ is a surface or canonical skill, $\ell$ is the hard/soft label, $q$ is confidence, $E$ is a list of evidence records, and $M$ contains offsets and source metadata. Facts are grouped by canonical identifier when one exists and by normalized surface form otherwise. Repeated evidence can raise the stored maximum confidence, but evidence items are not discarded. Label disagreement is written as a conflict note rather than silently resolved.
+
+The graph representation contains typed nodes for users, profiles, jobs, courses, skills, skill clusters, and occupations, with typed edges such as \inlinecode{HAS_SKILL}, \inlinecode{REQUIRES}, \inlinecode{PREFERS}, and \inlinecode{TEACHES}. A missing skill is a derived comparison between user skills and job requirements. The graph is intended to make the path behind a recommendation inspectable. It is not a learned graph embedding model in the audited code.
+
+\section{Deterministic matching and recommendation}
+
+The job matcher takes a profile skill set $U$, required skills $R$, preferred skills $P$, and optional externally supplied fit values. Let $r=|U\cap R|/\max(1,|R|)$, $p=|U\cap P|/\max(1,|P|)$, $c=|R\setminus U|/\max(1,|R|)$, and let $s,e,u$ denote semantic-role, experience-level, and user-preference fit fields. The source implements
+\begin{equation}
+ \operatorname{match}=\operatorname{clip}_{[0,1]}(0.45r+0.20p+0.15s+0.10e+0.10u-0.25c).
+\label{eq:match}
+\end{equation}
+This formula is explanatory and deterministic. It should not be read as learned coefficients or as a calibrated probability of hiring.
+
+For a course, the recommender scores gap coverage, prerequisite coverage, supplied level fit, supplied goal alignment, and a workload penalty with fixed weights 0.45, 0.25, 0.15, 0.15, and $-1$ respectively. The output explains which missing skills a course covers. There are no labelled job or course ranking results in the current artifact snapshot, so \Cref{eq:match} is a system specification rather than a validated decision rule.

@@ -1,0 +1,47 @@
+\chapter{Research Problem and Methodology}
+\label{ch:methodology}
+
+\section{Task Formulation}
+
+Let a dataset example be a tuple $(x, S)$ where $x$ is a UTF-8 text string and $S = \{(s_i, \ell_i, b_i, e_i)\}_{i=1}^{n}$ is a set of gold skill spans.
+Each span has surface form $s_i$, label $\ell_i \in \{\textsc{Hard\_Skill}, \textsc{Soft\_Skill}\}$, and character offsets $(b_i, e_i)$ such that $x[b_i:e_i] = s_i$.
+
+The generative extractor produces a structured output $Y = \{(t_j, \hat{\ell}_j)\}$ via instruction-conditioned decoding.
+Predicted spans are aligned back to $x$ by exact or case-insensitive substring search; unaligned predictions are counted but excluded from span-level true positives.
+
+\section{Generative Training Objective}
+
+Fine-tuning uses causal language modeling on formatted prompt--target pairs.
+For example $x$ with gold skills serialized as JSON, the model minimizes next-token negative log-likelihood over the target tokens while the prompt tokens may be masked according to the Hugging Face \texttt{Trainer} configuration in \texttt{train\_sft\_v2.py}.
+This is standard supervised fine-tuning (SFT), not a token-level CRF or span classifier head.
+
+\section{Evaluation Metrics}
+
+Following the benchmark evaluation module, the thesis reports:
+
+\begin{itemize}
+  \item \textbf{Exact span F1}: span boundary and label must match gold exactly after alignment.
+  \item \textbf{Partial span F1}: overlap-based span match with correct label.
+  \item \textbf{Token-level F1}: token membership in skill spans.
+  \item \textbf{Per-label F1}: separate scores for hard and soft skills.
+  \item \textbf{Parse failure rate}: fraction of examples whose raw JSON could not be parsed.
+  \item \textbf{Unaligned prediction rate}: fraction of predicted span texts not found in source text.
+\end{itemize}
+
+For wrapper variants, \textbf{taxonomy linking coverage} is reported as the fraction of extracted spans assigned a canonical skill identifier by the linker when taxonomy files are available.
+
+\section{Experimental Methodology}
+
+Two experimental phases are distinguished:
+
+\begin{enumerate}
+  \item \textbf{Legacy multi-LLM benchmark} (\texttt{SkillLLM\_v2}, commit \texttt{0627abf}): five models, three training epochs each, metrics in \texttt{results/skillspan\_baselines/}.
+  \item \textbf{Stage-2 system evaluation} (\texttt{SkillLLM\_v2\_stage2}): Mistral-focused 80-epoch training, encoder baselines, and wrapper ablations, metrics in \texttt{artifacts/skillllm\_v2/}.
+\end{enumerate}
+
+Results from these phases are not merged into a single training run table without explicit labeling because epoch counts and LoRA ranks differ between phases.
+
+\section{Non-Regression Wrapper Methodology}
+
+Stage-2 wrapper variants must not degrade the Mistral LoRA anchor beyond configured floors on exact span F1 and soft-skill F1 (\texttt{configs/skillllm\_v2\_wrapper\_guardrails.yaml}).
+If a candidate variant fails guardrails, the gate falls back to anchor predictions for extraction metrics while still recording linking outputs where applicable.

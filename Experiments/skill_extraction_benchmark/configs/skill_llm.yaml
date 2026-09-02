@@ -1,0 +1,40 @@
+# ─────────────────────────────────────────────────────────────────────
+# Skill-LLM: LLM-based skill extraction with QLoRA
+# ─────────────────────────────────────────────────────────────────────
+
+base_model: "NousResearch/Meta-Llama-3-8B-Instruct"
+template: "llama3"
+
+quantization:
+  load_in_4bit: true
+  bnb_4bit_compute_dtype: "float16"
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+
+lora:
+  rank: 64
+  alpha: 128
+  dropout: 0.1
+  target_modules: "q_proj,v_proj,k_proj,o_proj"
+
+training:
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  num_train_epochs: 3
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.1
+  max_grad_norm: 0.3
+  bf16: true
+  gradient_checkpointing: true
+  optim: "adamw_torch"
+  weight_decay: 0.0
+  cutoff_len: 2048
+  logging_steps: 10
+  save_steps: 200
+
+generation:
+  max_new_tokens: 512
+  temperature: 0.01
+  top_p: 0.95
+  do_sample: false       # greedy for deterministic evaluation

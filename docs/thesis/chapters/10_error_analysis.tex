@@ -1,0 +1,42 @@
+\chapter{Error Analysis}
+\label{ch:error}
+
+\section{Method}
+
+Error analysis combines aggregate wrapper comparison (\texttt{reports/skillllm\_v2/research\_refresh/wrapper\_error\_analysis.md}) with regression case logs (\texttt{wrapper\_regression\_cases.jsonl}).
+Analysis covers SkillSpan test split with 974 documents in the wrapper audit configuration.
+
+\section{Error Taxonomy}
+
+The following error categories are supported by repository artifacts:
+
+\begin{description}
+  \item[False positive skill] Predicted span not in gold set; common in partial-match gains without exact-match gains.
+  \item[False negative skill] Gold span missed; reflected in recall below 0.67 for exact match.
+  \item[Boundary error] Partial span F1 (0.814--0.816) exceeds exact span F1 (0.670--0.671), indicating near-miss boundaries.
+  \item[Soft-skill confusion] Lower soft-skill F1 than hard-skill F1 across all strong models.
+  \item[Unaligned prediction] Legacy benchmark unaligned rate $\approx$0.3--0.7\%; model text not found verbatim in source.
+  \item[Parse failure] 1 of 3{,}569 legacy test examples failed JSON parsing.
+  \item[Wrapper boundary regression] Two cases tagged \texttt{bad\_boundary\_edit} with module \texttt{taxonomy\_linker} in GLiNER+taxonomy and full graph stages.
+  \item[Hallucinated skill] Generative models occasionally emit skills absent from text; mitigated by alignment and verifier rules in Stage-2.
+\end{description}
+
+\section{Wrapper Edit Statistics}
+
+For Mistral+GLiNER+taxonomy and full CAG/graph stages relative to the anchor:
+
+\begin{itemize}
+  \item Spans kept: 1{,}508; removed: 2; boundary modified: 2
+  \item Added by GLiNER: 3; added by dictionary: 16
+  \item Verifier rejections: 0 in recorded audit
+  \item Exact gains: 5; exact losses: 2
+\end{itemize}
+
+Net exact span F1 change for full graph: +0.0010 absolute.
+
+\section{Qualitative Pattern}
+
+Regression cases document taxonomy linker edits that shrink or shift span boundaries relative to anchor predictions.
+This motivated separating linking metadata from destructive span rewrites in the safe wrapper design.
+
+No fabricated example sentences are included here; readers may inspect \texttt{wrapper\_regression\_cases.jsonl} for verbatim case records tied to example IDs.

@@ -1,0 +1,73 @@
+\chapter{Experimental Setup}
+\label{ch:experiments}
+
+\section{Compute Environment}
+
+Verified hardware from Stage-2 run manifest (\texttt{reports/skillllm\_v2/research\_refresh/run\_manifest.json}):
+
+\begin{itemize}
+  \item 2$\times$ NVIDIA GeForce RTX 3090 (24\,GB)
+  \item PyTorch 2.6.0+cu124
+  \item Python 3.12.3
+\end{itemize}
+
+Legacy benchmark logs also reference 2$\times$24\,GB GPU memory caps for large model loading.
+
+\section{Software Stack}
+
+Core dependencies include Hugging Face Transformers ($\geq$4.51.0 per pipeline validation), PEFT, bitsandbytes for 4-bit loading, Accelerate/torchrun for distributed training, and NetworkX for graph operations.
+Exact package pins appear in \texttt{requirements.txt} on branch \texttt{skill-llm-v2} (commit \texttt{0627abf}).
+
+\section{Legacy Benchmark Protocol}
+
+Script \texttt{scripts/run\_skillspan\_benchmark.sh} iterates models sequentially, invoking \texttt{scripts/run\_skillspan\_benchmark.py} with \texttt{configs/skillspan\_baselines.yaml}.
+Each model run performs LoRA SFT (unless artifacts exist), raw JSON generation on the test split, prediction normalization, and metric computation.
+Key shared settings: seed 42, batch size 1, temperature 0, max tokens 1024.
+
+Table~\ref{tab:legacy-hparams} summarizes verified Mistral legacy training hyperparameters from \texttt{configs/mistral\_small\_3\_1\_v2.yaml} and pipeline overrides.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Legacy benchmark Mistral configuration (3 epochs).}
+  \label{tab:legacy-hparams}
+  \begin{tabular}{ll}
+    \toprule
+    Parameter & Value \\
+    \midrule
+    Base model & Mistral Small 3.1 24B Instruct \\
+    Epochs & 3 \\
+    LoRA rank / alpha & 64 / 128 \\
+    Learning rate & $1.2 \times 10^{-4}$ \\
+    Max sequence length & 2048 (config), 512 (pipeline override) \\
+    Quantization & 4-bit \\
+    Batch size & 1 \\
+    Gradient accumulation & 16 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Stage-2 Training Protocol}
+
+Stage-2 full training uses \texttt{configs/skillllm\_v2\_training\_80ep\_2gpu.yaml}:
+
+\begin{itemize}
+  \item Mistral LoRA: 80 epochs, LoRA rank 16, alpha 32, effective batch 32 via accumulation
+  \item Distributed: 2-process DDP on GPUs 0 and 1
+  \item Training runtime: 324{,}218\,s ($\approx$90.1 hours) per \texttt{training\_summary.json}
+  \item Final train loss: 0.143; dev eval loss: 0.397
+\end{itemize}
+
+\section{Evaluation Protocol}
+
+Stage-2 extraction metrics are computed by \texttt{skillllm\_v2.eval.extraction\_eval} against SkillSpan test JSONL.
+Wrapper ablations on the full test set produce the money table (\texttt{reports/skillllm\_v2/money\_table.md}).
+A separate smoke ablation configuration (\texttt{smoke\_limit: 20}) produces lower F1 values documented only in smoke reports; it is not used for primary claims.
+
+\section{Reproducibility Snapshot}
+
+\begin{itemize}
+  \item Master repo commit: \texttt{0627abf5170ccbe5fe01e5ab1238dc5ac340b880} (branch \texttt{skill-llm-v2})
+  \item Stage-2 repo: no commits recorded at run manifest time; files audited by path and timestamp
+\end{itemize}
+
+Single-run evaluation without multiple seeds is reported; variance estimates are not available in saved artifacts.

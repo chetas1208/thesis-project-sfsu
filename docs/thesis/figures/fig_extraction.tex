@@ -1,0 +1,12 @@
+\begin{tikzpicture}[node distance=5mm and 6mm]
+\node[data] (text) {Input text};
+\node[anchorbox,below=of text] (mistral) {Mistral LoRA\\JSON skill candidates};
+\node[exp,below left=of mistral] (gliner) {GLiNER\\auxiliary candidates};
+\node[impl,below=of mistral] (align) {JSON parsing and\\span alignment};
+\node[impl,below right=of mistral] (dict) {Alias dictionary\\candidates};
+\node[impl,below=11mm of align] (merge) {Source-aware candidate merger\\anchor spans retained; add-only candidates guarded};
+\node[impl,below=of merge] (skills) {Validated skill records with offsets, source,\\confidence, evidence, and optional canonical fields};
+\draw[flow] (text)--(mistral); \draw[flow] (mistral)--(align);
+\draw[flow] (mistral)--(gliner); \draw[flow] (mistral)--(dict);
+\draw[flow] (align)--(merge); \draw[flow] (gliner)--(merge); \draw[flow] (dict)--(merge); \draw[flow] (merge)--(skills);
+\end{tikzpicture}

@@ -1,0 +1,53 @@
+\chapter{Experiments}
+\label{ch:experiments}
+
+\section{Experimental objectives}
+
+The experiments are organised around a narrow claim: identify the strongest extraction anchor in the persisted Stage-2 artifacts and test whether modular additions remain compatible with it. This differs from a broad model sweep. The repository contains earlier multi-model work, but the current Stage-2 study is Mistral-focused and uses stored artifacts from an 80-epoch training path. The comparisons answer three practical questions. First, can the adapted causal model produce source-aligned hard and soft skill spans substantially better than the included BERT and zero-shot GLiNER reference artifacts? Second, do boundary, auxiliary-candidate, taxonomy, and full-wrapper paths alter the anchor metrics? Third, are the resulting records usable by the implemented profile, graph, matching, and recommendation paths without converting smoke success into a ranking claim?
+
+All reported numeric comparisons are descriptive measurements from the persisted files. The work does not report confidence intervals, significance tests, or multi-seed variation because those artifacts are absent. A difference smaller than a thousandth should be read as an observation in this evaluation snapshot, not as a robust superiority statement.
+
+\section{Experiment E1: extraction baselines}
+
+E1 compares the BERT baseline, GLiNER baseline, and Raw Mistral LoRA anchor. The BERT file reports exact-span F1 0.059150, token F1 0.274922, hard-skill F1 0.129799, and soft-skill F1 0.018796. Its note calls it a CPU-fast token-classification baseline. The GLiNER file reports exact-span F1 0.075833, token F1 0.114409, hard-skill F1 0.054559, and soft-skill F1 0.096571. It explicitly identifies the run as zero-shot because fine-tuning was skipped. These labels constrain interpretation: E1 compares available local reference implementations, not fully optimized replications of the BERT or GLiNER literature.
+
+The Mistral anchor was trained with the settings in \Cref{tab:training-config}. Its result is evaluated through deterministic JSON generation, parsing, substring alignment, and the extraction evaluator. Its artifact says `Model load fallback used: False`, which is a crucial validity condition because the extractor contains a deterministic smoke fallback for unavailable model files. The Mistral value is therefore the main model result in this report.
+
+\section{Experiment E2: historical wrapper diagnosis}
+
+E2 is a historical diagnostic, not a row in the primary result table. \inlinecode{wrapper_error_analysis.md} reports an anchor of 0.675034 exact F1 and 0.609792 soft F1 on a 974-document test path. It reports that an older boundary-refiner variant fell to approximately 0.5704 exact F1 and 0.4258 soft F1, while an older full CAG/graph path fell to approximately 0.5616 exact F1 and 0.4080 soft F1. The diagnosis attributes 194 boundary-related regressions to the boundary refiner in the full path and 29 further cases to verifier false rejection. It is a valuable negative result: a post-processor can reduce a model's exactness even when its stated purpose is to clean up spans.
+
+The audit found later full-test artifacts created after this analysis. Their anchor has 0.670069 exact F1 rather than 0.675034, and their safe-wrapper code uses anchor-protection and a gate. These runs should not be averaged or represented as a single ablation series. E2 explains the engineering response; E3 provides the current metric snapshot.
+
+\section{Experiment E3: safe-wrapper variants}
+
+E3 loads the cached full-test Mistral predictions and evaluates three wrapper variants on the same document path. The first applies a non-destructive boundary refiner with verifier and calibrator. The second combines Mistral, GLiNER, and dictionary candidates, applies an anchor-protected merger, then attaches taxonomy information. The third combines the merger, boundary refiner, verifier, calibrator, and taxonomy linker in the full CAG/graph path. The script writes both candidate predictions and selected predictions so that a fallback decision is inspectable.
+
+The active guardrails compare exact-span and soft-skill metrics with the anchor. A candidate can be accepted while still failing to reach the historical improvement target. This is intentional. The policy defines a deployment-like safety threshold, whereas the improvement target remains an informational goal. In the stored output, all variants are accepted because each clears exact and soft floors. The Mistral+GLiNER+taxonomy candidate is 0.000007 lower in exact F1 and 0.001741 lower in soft F1 than the anchor; the full candidate is 0.001033 higher in exact F1 but 0.000291 lower in soft F1. Such deltas should be treated as essentially a compatibility result, not a reason to prefer one architecture on accuracy alone.
+
+\input{tables/gate_results}
+
+\section{Experiment E4: taxonomy attachment}
+
+E4 evaluates whether the local linker attaches canonical fields to wrapper candidates. The analysis report states that an earlier four-entry fallback was replaced by a 696-entry alias table. For the Mistral+GLiNER+taxonomy path, it reports total linking coverage 0.882139 under a detailed analysis and 0.890271 in the metric artifact; for the full path it reports 0.838908 in the detailed analysis and 0.890374 in the metric artifact. These values reflect different candidate artifacts/stages and should not be collapsed. The primary table uses the metric-artifact value, while the detailed report remains useful for error categories and unlinked surface forms.
+
+Most importantly, no canonical gold labels are available for a supervised reranker. The project reports method counts for alias, fuzzy, BM25, and no link, but cannot establish that every attachment is correct. E4 therefore supports an engineering claim---the normalizer attaches canonical metadata with broad local coverage---not a semantic-accuracy claim. The attach-only constraint ensures that a wrong link does not alter the original span metrics, though it can still harm a downstream recommendation and must be evaluated later.
+
+\section{Experiment E5: profile, graph, and recommendation vertical slice}
+
+E5 is an integration and smoke experiment. The profile summarizer aggregates extracted skills, their evidence, and their offsets. The cached-context builder separates stable profile memory, dynamic job-posting retrieval policy, and graph-path policy, then computes a content hash. The graph builder creates typed nodes and direct relationships; the matcher, gap detector, and recommender emit inspectable JSON objects. Unit tests verify a representative user--skill--job--course flow, and demo artifacts contain a profile, job matches, skill gaps, course recommendations, and an explanation.
+
+The evidence supports a vertical-slice claim: records can travel from extraction into a structured profile and then into explainable downstream objects. It does not support a utility claim. The matching-evaluation CSV records job nDCG@10 as `NA`, and the course-recommendation evaluation CSV records P@5 as `NA`, because relevance labels are unavailable. No human-subject study, click-through test, or offline ranking benchmark is stored. Thus E5 evaluates execution and traceability, not recommendation quality.
+
+\section{Artifact tracking and protocol fidelity}
+
+\Cref{fig:provenance} shows the experimental artifact path. The project writes model-training summaries, model files, predictions, raw outputs, metrics, gate reports, money tables, and error analyses under conventional artifact/report directories. The provenance-check script compares downstream modification times with Mistral predictions and checks the metrics note for fallback use. The persisted report indicates no stale or missing artifacts. This check prevents a common research-reporting failure in which a downstream table is silently generated from an older anchor output.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_provenance}
+\caption{Artifact and provenance pipeline. The timestamp check is a practical safeguard, not an immutable experiment-management system.}
+\label{fig:provenance}
+\end{figure}
+
+The remaining protocol limits are clear. The Stage-2 tree has no commit, a model-selection criterion beyond the stored output is not documented as a pre-registration, the full evaluation path contains 974 documents despite the local test JSON having 3,569 rows, and multi-seed reruns are absent. Future experiments should version every source and configuration, explain the 974-document evaluation subset in a machine-readable manifest, and predefine their primary score and selection rule.

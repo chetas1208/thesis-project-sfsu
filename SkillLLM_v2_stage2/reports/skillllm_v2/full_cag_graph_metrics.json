@@ -1,0 +1,19 @@
+{
+  "exact_span_precision": 0.6742424242424242,
+  "exact_span_recall": 0.667991169977925,
+  "exact_span_f1": 0.6711022399645153,
+  "partial_span_precision": 0.81951871657754,
+  "partial_span_recall": 0.8119205298013245,
+  "partial_span_f1": 0.8157019294743845,
+  "token_precision": 0.773494957726393,
+  "token_recall": 0.8021762095922248,
+  "token_f1": 0.7875745475289114,
+  "hard_skill_f1": 0.7286184210526316,
+  "soft_skill_f1": 0.6037554164660568,
+  "macro_f1": 0.6661869187593442,
+  "micro_f1": 0.6711022399645153,
+  "linking_accuracy": 0.8903743315508021,
+  "job_match_ndcg_at_10": null,
+  "course_rec_precision_at_5": null,
+  "notes": "Full CAG/Graph wrapper. Graph matching labels unavailable; ranking metrics are NA."
+}

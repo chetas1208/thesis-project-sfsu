@@ -1,0 +1,23 @@
+# ─────────────────────────────────────────────────────────────────────
+# NNOSE: Nearest Neighbor Occupational Skill Extraction
+# ─────────────────────────────────────────────────────────────────────
+
+backbone: "jjzha/jobbert-base-cased"
+
+training:
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 32
+  learning_rate: 5.0e-5
+  num_train_epochs: 10
+  max_length: 256
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  patience: 3            # early stopping patience (epochs)
+
+datastore:
+  k: 32                  # number of nearest neighbors
+  lambda_value: 0.3      # interpolation weight (0=model only, 1=kNN only)
+  temperature: 10.0      # kNN softmax temperature
+  dim_reduction: 768     # PCA / whitening target dimension
+  sample_percentage: 100 # percentage of train embeddings to index
+  use_gpu_index: true    # use FAISS GPU index if available

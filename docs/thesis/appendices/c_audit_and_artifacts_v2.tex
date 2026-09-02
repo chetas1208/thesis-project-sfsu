@@ -1,0 +1,37 @@
+\chapter{Audit Trail and Artifact Index}
+\label{app:audit}
+
+\section{Primary source of truth}
+
+The detailed audit is maintained outside the PDF at \codepath{docs/thesis/codebase\_audit.md}. It describes the branch state, source modules, configurations, data counts, persisted metrics, historical conflict, test coverage, and claim boundary. This appendix provides a compact index so that a committee member can locate the evidence behind each main result without relying on an informal narrative.
+
+\begin{longtable}{p{0.27\textwidth}p{0.31\textwidth}p{0.31\textwidth}}
+\caption{Claim-to-artifact index.}\label{tab:artifact-index}\\
+\toprule
+Claim & Primary local evidence & Interpretation limit \\
+\midrule
+\endfirsthead
+\toprule
+Claim & Primary local evidence & Interpretation limit \\
+\midrule
+\endhead
+Mistral extraction F1 & \codepath{artifacts/skillllm\_v2/mistral\_lora/metrics.json} & One persisted evaluation snapshot; no multi-seed estimate \\
+Mistral training & \codepath{mistral\_lora/model/training\_summary.json} & Records runtime/loss/world size, not global optimality \\
+BERT and GLiNER baselines & Their respective \codepath{metrics.json} files & CPU-fast and zero-shot qualifications apply \\
+Safe-wrapper decision & \codepath{safe\_wrapper/metrics.json} and \codepath{safe\_wrapper\_gate.md} & Tolerance-based compatibility, not statistical superiority \\
+Historical regression & \codepath{wrapper\_error\_analysis.md} & Older diagnostic; not pooled with later table \\
+Linking coverage & \codepath{mistral\_gliner\_taxonomy/metrics.json}; \codepath{full\_cag\_graph/metrics.json} & Coverage is not supervised linking accuracy \\
+Profile/context path & \codepath{context/*.json}; context source/tests & Smoke-tested structured data flow \\
+Graph/matching/course path & \codepath{demo/*.json}; source/tests & nDCG@10 and P@5 unavailable \\
+Artifact ordering & \codepath{prediction\_provenance\_check.md} & Timestamp check, not immutable lineage \\
+Hardware/runtime & \codepath{research\_refresh/run\_manifest.json} & Describes recorded environment only \\
+\bottomrule
+\end{longtable}
+
+\section{Known metric conflict}
+
+Two source families contain different anchor values. The historical error report uses 0.675034 exact F1 and 0.609792 soft F1 for an earlier anchor. The later primary Mistral `metrics.json` uses 0.670069 and 0.604046. This report uses the later persisted metrics for the main table because they are the artifacts selected by the current money table, sanity report, safe-wrapper metrics, and provenance check. It retains the earlier report only to explain the failure mode that motivated source-aware policy and gate design. No average, difference, or ranking in this thesis mixes the two source families.
+
+\section{Report maintenance checklist}
+
+Before submitting a revision, regenerate tables from the current metric artifacts; rebuild the PDF; update the audit with any changed path or metric; rerun the garbage-text scan; verify every figure/table reference; and update the administrative cover-page details only after the department confirms the final route and template. If a new model run changes the anchor, regenerate every wrapper comparison rather than copying the previous threshold. If labelled downstream data become available, add a separate evaluation chapter/table rather than rewriting the current smoke/demo claims.

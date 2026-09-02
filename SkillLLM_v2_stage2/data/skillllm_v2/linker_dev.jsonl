@@ -1,0 +1,2 @@
+{"surface_form": "Python", "context": "Python programming", "positive_canonical_skill_id": "python", "positive_canonical_skill_name": "Python", "negative_candidates": ["Java"], "taxonomy": "CUSTOM"}
+{"surface_form": "AWS", "context": "AWS cloud", "positive_canonical_skill_id": "aws", "positive_canonical_skill_name": "Amazon Web Services", "negative_candidates": ["Azure"], "taxonomy": "CUSTOM"}

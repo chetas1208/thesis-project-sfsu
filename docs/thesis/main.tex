@@ -1,0 +1,437 @@
+% CSC 898 Master's Thesis — First Draft
+% San Francisco State University, Department of Computer Science
+% Single-file draft. Uses 1-inch margins per Graduate Studies guidance.
+% No official department LaTeX template was found in the repository.
+% Fill administrative placeholders before format check.
+
+\documentclass[12pt,oneside]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black}
+
+\newcommand{\thesisauthor}{[AUTHOR NAME]}
+\newcommand{\thesisadvisor}{[ADVISOR NAME]}
+\newcommand{\thesisdegree}{Master of Science in Computer Science}
+\newcommand{\thesisuniversity}{San Francisco State University}
+\newcommand{\thesissubmissiondate}{[SUBMISSION SEMESTER AND YEAR]}
+
+\title{SkillLLM\_v2: Context-Aware Graph-Augmented Skill Extraction\\and Career Intelligence from Employment Text}
+\author{\thesisauthor}
+\date{\thesissubmissiondate}
+
+\begin{document}
+\onehalfspacing
+
+% ---- Title page ----
+\begin{titlepage}
+  \centering
+  {\large \thesisuniversity\par}
+  {\large Department of Computer Science\par}
+  \vspace{2cm}
+  {\LARGE\bfseries SkillLLM\_v2: Context-Aware Graph-Augmented Skill Extraction and Career Intelligence from Employment Text\par}
+  \vspace{2cm}
+  {\large A Thesis Submitted in Partial Fulfillment of the Requirements for the Degree\par}
+  {\large \thesisdegree\par}
+  \vspace{2cm}
+  {\large by\par}
+  {\large \thesisauthor\par}
+  \vspace{1.5cm}
+  {\large San Francisco, California\par}
+  {\large \thesissubmissiondate\par}
+  \vfill
+  {\large Committee Chair: \thesisadvisor\par}
+\end{titlepage}
+
+% ---- Abstract ----
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Employment-related text encodes skills as unstructured spans rather than normalized database entries.
+This thesis presents SkillLLM\_v2, a locally executed skill intelligence system built on supervised generative extraction from open-weight language models.
+The work proceeds in two verified stages documented in the SkillLLM repository.
+
+First, a controlled SkillSpan benchmark compared five instruction-tuned models under identical splits, prompts, LoRA/4-bit training, and evaluation code.
+Mistral Small 3.1 24B achieved the strongest completed result among feasible models (exact span F1 0.665 on 3{,}569 test examples).
+Gemma 4 26B failed repeatedly on available 2$\times$24\,GB GPU hardware and is reported as hardware-infeasible rather than ranked.
+
+Second, a Stage-2 system centers on an 80-epoch Mistral LoRA extractor (exact span F1 0.670), augmented by GLiNER and dictionary candidates, boundary refinement, taxonomy linking, and a non-regression wrapper gate before graph-based job matching and course recommendation.
+Encoder baselines under the same evaluation protocol reached exact span F1 of 0.059 (BERT) and 0.076 (zero-shot GLiNER).
+The full context-aware graph wrapper preserved anchor extraction quality while achieving taxonomy linking coverage of 0.890.
+Labeled evaluation of job matching and course recommendation was not available in repository artifacts; those modules are demonstrated on synthetic demo inputs only.
+
+\tableofcontents
+\listoftables
+
+% ============================================================
+\chapter{Introduction}
+\label{ch:intro}
+
+\section{Problem and Motivation}
+
+Resumes, job postings, and professional profiles contain explicit mentions of technical and interpersonal skills.
+Downstream applications---job matching, labor-market analytics, and training recommendations---require structured skill representations with traceable evidence in the source text~\cite{senger2024survey,otani2025hrsurvey}.
+Skill extraction from English job postings has been formalized as a span labeling task distinguishing hard and soft skills~\cite{zhang2022skillspan}.
+Recent work shows that repurposing general-purpose large language models through supervised adaptation can improve extraction quality relative to classical sequence taggers and extreme multi-label skill classifiers~\cite{herandi2024skillllm,nguyen2024rethinking,zhang2024nnose}.
+
+This thesis documents what was actually implemented, trained, and measured in the SkillLLM research repository.
+It does not describe planned components as completed work.
+
+\section{Research Questions}
+
+The completed experiments support the following questions:
+
+\begin{enumerate}
+  \item How do contemporary open-weight LLMs compare when fine-tuned on SkillSpan under a shared protocol?
+  \item Which backbone is strongest among models feasible on 2$\times$ NVIDIA RTX 3090 (24\,GB) GPUs?
+  \item How do encoder baselines compare with a fine-tuned generative Mistral extractor?
+  \item Can a guarded hybrid wrapper improve or preserve span metrics while enabling taxonomy normalization and downstream reasoning?
+  \item What error modes remain after fine-tuning and wrapper processing?
+\end{enumerate}
+
+Downstream recommendation performance (RQ4 extension) is not quantitatively answered because labeled job/course evaluation sets were absent from verified artifacts.
+
+\section{Contributions}
+
+\begin{enumerate}
+  \item A reproducible multi-model SkillSpan benchmark pipeline comparing five open-weight LLMs with shared preprocessing, QLoRA training, JSON decoding, span alignment, and multi-metric evaluation.
+  \item Empirical selection of Mistral Small 3.1 24B as the strongest completed benchmark model, with documented Gemma 4 26B failure on available hardware.
+  \item SkillLLM\_v2 Stage-2: a context-aware graph-augmented architecture with hybrid candidate extraction, non-regression gating, taxonomy linking, and NetworkX-based relational reasoning.
+  \item Verified comparative metrics on SkillSpan test data for BERT, GLiNER, raw Mistral LoRA, and wrapper variants.
+\end{enumerate}
+
+\section{Thesis Organization}
+
+Chapter~\ref{ch:background} reviews related work.
+Chapter~\ref{ch:method} defines the task and metrics.
+Chapter~\ref{ch:data} describes datasets.
+Chapter~\ref{ch:arch} presents the architecture.
+Chapters~\ref{ch:setup}--\ref{ch:results} cover experiments and results.
+Chapters~\ref{ch:discuss}--\ref{ch:concl} analyze findings, limitations, and conclusions.
+
+\section{Formatting Note}
+
+This document is prepared for CSC 898 (Master's Thesis) at San Francisco State University.
+Graduate Studies requires department-approved formatting, 1-inch margins, and accessibility review before library submission.
+Final approval by the Graduate Program Specialist is required.
+
+% ============================================================
+\chapter{Background and Related Work}
+\label{ch:background}
+
+\section{Skill Extraction and Labor-Market NLP}
+
+SkillSpan provides expert-annotated hard and soft skill spans on English job posting sentences (4{,}800 train, 3{,}174 dev, 3{,}569 test examples) under CC BY 4.0 licensing~\cite{zhang2022skillspan}.
+It remains the primary evaluation benchmark in this thesis.
+Senger et al.\ survey deep learning approaches to skill extraction and classification from job postings and identify these tasks as central to computational job-market analysis~\cite{senger2024survey}.
+
+Earlier systems addressed skill identification and normalization at scale~\cite{zhao2015skill,hoang2018largescale} and implicit skill recovery for recommendation~\cite{gugnani2020implicit}.
+Extreme multi-label formulations treat skill retrieval as classification over large label spaces~\cite{bhola2020retrieving,goyal2023jobxmlc}.
+ESCOXLM-R and related work incorporate taxonomy-driven pre-training for the job market domain~\cite{zhang2023escoxlmr,levrang2014esco}.
+Entity linking and zero-shot ESCO matching extend extraction toward normalized skill inventories~\cite{zhang2024entitylinking,clavie2023batteries}.
+Soft-skill requirements pose distinct lexical and matching challenges~\cite{sayfullina2018softskill,calanca2019responsible}.
+
+Recent LLM-centric lines include Skill-LLM~\cite{herandi2024skillllm}, SkillGPT~\cite{li2023skillgpt}, and re-evaluations of LLM skill extraction in the job domain~\cite{nguyen2024rethinking}.
+NNOSE proposes nearest-neighbor occupational skill extraction~\cite{zhang2024nnose}, which the repository's earlier resume benchmark also evaluated.
+Synthetic job posting generation (JobSkape) supports data augmentation for skill matching research~\cite{magron2024jobskape}.
+Multilingual and large-scale skill mapping have moved rapidly at the frontier: SkiLLens maps novel skills from millions of European job ads~\cite{desanto2026skillens}, and recent work extracts skills from resumes and offers across six languages~\cite{vasquezrodriguez2026sixlanguages,kavas2025multilingual}.
+
+\section{Named Entity Recognition and Span Extraction}
+
+Classical sequence labeling with BiLSTM-CRF and CNN-CRF architectures established strong NER baselines~\cite{lample2016ner,ma2016bilstmcnncrf,huang2015bilstmcrf}.
+Contextual embeddings from Flair and pooled variants improved sequence taggers~\cite{akbik2018flair,akbik2019pooled}.
+Span-oriented pre-training and prediction (SpanBERT, SpanNER) treat entities as span selections rather than token tags~\cite{joshi2020spanbert,fu2021spanner}.
+GLiNER generalizes open-label NER with a compact bidirectional transformer~\cite{zaratiana2023gliner}; SkillLLM\_v2 uses it as an auxiliary candidate source.
+GPT-NER and related work frame NER through generative LLMs~\cite{wang2023gptner}, aligning with the generative JSON extraction approach used for Mistral in this thesis.
+DyGIE++ jointly models entities and relations via contextualized spans~\cite{wadden2019dygiepp}.
+Domain-adaptive pre-training remains important when transferring general language models to specialized corpora~\cite{gururangan2020dontstop,gnehm2022transfer}.
+
+\section{Transformers, Matching, and HR NLP}
+
+Transformer encoders~\cite{vaswani2017attention,devlin2019bert,liu2019roberta,conneau2020xlmr} underpin both extraction baselines and matching systems.
+Sentence-BERT, SimCSE, and supervised contrastive learning produce semantic embeddings for retrieval and matching~\cite{reimers2019sentencebert,gao2021simcse,khosla2020supervisedcontrastive}.
+Person--job fit has been studied with domain-adapted deep matching networks and context-aware transformers~\cite{bian2019domain,li2020competence}.
+ConFit v2 improves resume--job matching with hypothetical resume embeddings and hard-negative mining~\cite{yu2025confitv2}.
+Human versus LLM resume matching and bias evaluation are active 2025 research areas~\cite{vaishampayan2025humanllm,iso2025bias}.
+Graph-based job recommendation over skill embeddings appears in Skills2Job~\cite{giabelli2021skills2job}.
+Otani et al.\ provide a broader NLP-for-HR survey~\cite{otani2025hrsurvey}.
+
+\section{Fine-Tuning, Retrieval, and This Thesis}
+
+Parameter-efficient fine-tuning via LoRA and QLoRA enables local adapter training of large models~\cite{hu2022lora,dettmers2023qlora}.
+Unified tooling such as LlamaFactory supports reproducible fine-tuning workflows~\cite{zheng2024llamafactory}.
+The Mistral and Mixtral model families provide open-weight backbones for instruction-tuned extraction~\cite{jiang2023mistral,jiang2024mixtral}.
+Retrieval-augmented generation, dense passage retrieval, and late-interaction retrievers (ColBERT) ground dynamic job and course context~\cite{lewis2020rag,karpukhin2020dpr,khattab2020colbert}.
+
+SkillLLM\_v2 situates itself after this literature chronologically: it selects a fine-tuned Mistral extractor on SkillSpan, adds guarded hybrid candidates and taxonomy linking inspired by ESCO normalization work, and implements graph-structured downstream matching consistent with recent HR matching research---while reporting only metrics verified in the repository.
+
+% ============================================================
+\chapter{Methodology}
+\label{ch:method}
+
+\section{Task Definition}
+
+Given input text $x$, the system predicts a set of spans $\hat{S} = \{(\hat{s}_j, \hat{\ell}_j)\}$ where each surface form $\hat{s}_j$ is a substring of $x$ and $\hat{\ell}_j \in \{\textsc{Hard\_Skill}, \textsc{Soft\_Skill}\}$.
+Gold annotations follow the same schema on SkillSpan~\cite{zhang2022skillspan}.
+
+\section{Generative Extraction}
+
+The primary extractor is Mistral Small 3.1 24B Instruct, an open-weight instruction-tuned model in the Mistral lineage~\cite{jiang2023mistral}, fine-tuned with LoRA adapters~\cite{hu2022lora,dettmers2023qlora} on prompt--JSON target pairs.
+Training minimizes causal language modeling loss on the target tokens (supervised fine-tuning in \texttt{train\_sft\_v2.py}), following the generative extraction paradigm explored in Skill-LLM and GPT-NER~\cite{herandi2024skillllm,wang2023gptner}.
+This is structured generative extraction, not classical BiLSTM-CRF tagging~\cite{huang2015bilstmcrf} or token-level fusion.
+
+Inference produces JSON skill lists; predicted strings are aligned to $x$ by exact and case-insensitive substring search.
+Unaligned predictions are counted separately.
+
+\section{Evaluation Metrics}
+
+Reported metrics from repository evaluation scripts include:
+\begin{itemize}
+  \item Exact span F1 (boundary and label must match)
+  \item Partial span F1 (overlap with correct label)
+  \item Token-level F1
+  \item Per-label hard/soft skill F1
+  \item Parse failure rate and unaligned prediction rate
+  \item Taxonomy linking coverage (Stage-2 wrapper)
+\end{itemize}
+
+\section{Two Experimental Phases}
+
+\textbf{Phase A (legacy benchmark):} five LLMs, three epochs each, metrics in \texttt{SkillLLM\_v2/results/skillspan\_baselines/}.
+
+\textbf{Phase B (Stage-2):} Mistral-focused 80-epoch training, encoder baselines, wrapper ablations, metrics in \texttt{SkillLLM\_v2\_stage2/artifacts/skillllm\_v2/}.
+
+Results from these phases are labeled explicitly when compared; they used different epoch counts and LoRA ranks.
+
+% ============================================================
+\chapter{Datasets and Preprocessing}
+\label{ch:data}
+
+\section{SkillSpan}
+
+The primary benchmark uses SkillSpan exported to \texttt{data/source/skillspan\_hf/}.
+The benchmark pipeline converts records to JSONL with \texttt{text} and \texttt{skills} fields (character offsets included in gold data).
+Table~\ref{tab:splits} lists verified split sizes from \texttt{summary\_report.json}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{SkillSpan split sizes.}
+  \label{tab:splits}
+  \begin{tabular}{lr}
+    \toprule
+    Split & Examples \\
+    \midrule
+    Train & 4{,}800 \\
+    Dev   & 3{,}174 \\
+    Test  & 3{,}569 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Generative training uses a fixed system prompt and user prompt requiring JSON output with \textsc{Hard\_Skill} or \textsc{Soft\_Skill} labels; training targets omit offset fields.
+SkillSpan converted examples follow the same span-and-label interface used in prior SkillSpan evaluations~\cite{zhang2022skillspan} and related job-market corpora~\cite{green2022benchmark,gnehm2022finegrained}.
+
+\section{Taxonomies and Normalization Targets}
+
+Stage-2 linking targets ESCO-style alias resources~\cite{levrang2014esco,zhang2024entitylinking} via custom alias files in the repository.
+Full ESCO/O*NET ingestion is an extension point; reported linking coverage (0.890) used the configured custom taxonomy.
+
+\section{Other Repository Data}
+
+\texttt{Extract\_jobDesc/} contains a separate BERT NER track~\cite{devlin2019bert} on scraped job descriptions (entity F1 0.462 gold-only; 0.710 silver-train/gold-eval on verified \texttt{test\_metrics.json} files).
+\texttt{Experiments/skill\_extraction\_benchmark/} contains an earlier resume-sentence benchmark with different metrics (e.g., NNOSE span F1 0.535 per \texttt{comparison.md})~\cite{zhang2024nnose}; it is not merged into SkillSpan tables because metric definitions differ.
+
+Stage-2 demo inputs for job matching use \texttt{inputs/demo/jobs.jsonl} without gold relevance labels.
+
+% ============================================================
+\chapter{SkillLLM\_v2 Architecture}
+\label{ch:arch}
+
+Stage-2 implements a modular pipeline (\texttt{src/skillllm\_v2/}):
+
+\begin{enumerate}
+  \item \textbf{Mistral LoRA extractor} --- primary generative span extractor (\texttt{mistral\_extractor.py}), following the LLM extraction line~\cite{herandi2024skillllm,nguyen2024rethinking}.
+  \item \textbf{GLiNER extractor} --- lightweight recall booster~\cite{zaratiana2023gliner} (zero-shot in verified runs).
+  \item \textbf{Dictionary extractor} --- exact/fuzzy alias matching against taxonomy files~\cite{zhao2015skill,clavie2023batteries}.
+  \item \textbf{Candidate merger} --- deduplication with provenance preservation.
+  \item \textbf{Boundary refiner} --- rule-based span cleanup.
+  \item \textbf{Span verifier and confidence calibrator} --- rule-based with extension points for trained verifiers.
+  \item \textbf{Taxonomy linker} --- maps spans to canonical skill IDs~\cite{zhang2024entitylinking,levrang2014esco}.
+  \item \textbf{Graph layer} --- NetworkX nodes/edges for users, jobs, courses, skills (cf.\ graph job recommenders~\cite{giabelli2021skills2job,goyal2023jobxmlc}).
+  \item \textbf{Job matcher, gap detector, course recommender} --- scoring modules with explainable outputs, related to person--job fit literature~\cite{bian2019domain,yu2025confitv2,li2020competence}.
+\end{enumerate}
+
+Each skill record carries \texttt{surface\_form}, \texttt{label}, offsets, \texttt{source}, \texttt{confidence}, and \texttt{evidence}.
+
+The \textbf{non-regression gate} compares wrapper metrics to the Raw Mistral anchor; if guardrails fail, extraction metrics fall back to anchor predictions while linking metadata may still be recorded.
+
+Stable profile and taxonomy summaries are cached in context packets; dynamic job text is retrieved at inference time~\cite{lewis2020rag,karpukhin2020dpr,reimers2019sentencebert}.
+Graph retrieval explains paths from user skills to missing skills and courses.
+
+% ============================================================
+\chapter{Experimental Setup}
+\label{ch:setup}
+
+\section{Hardware and Software}
+
+Verified Stage-2 environment: 2$\times$ NVIDIA GeForce RTX 3090 (24\,GB), PyTorch 2.6.0+cu124, Python 3.12.3 (\texttt{run\_manifest.json}).
+
+Legacy benchmark enforced Transformers $\geq$4.51.0 and 4-bit QLoRA loading~\cite{dettmers2023qlora}.
+Training follows parameter-efficient adaptation rather than full-model fine-tuning~\cite{howard2018ulmfit,hu2022lora}.
+
+\section{Legacy Benchmark (Phase A)}
+
+Script \texttt{run\_skillspan\_benchmark.sh} trains and evaluates five models sequentially with seed 42, batch size 1, temperature 0.
+Mistral legacy config: 3 epochs, LoRA rank 64, learning rate $1.2 \times 10^{-4}$, 4-bit quantization (\texttt{configs/mistral\_small\_3\_1\_v2.yaml}).
+
+\section{Stage-2 Training (Phase B)}
+
+Mistral LoRA: 80 epochs, LoRA rank 16, alpha 32, batch size 1, gradient accumulation 32, max sequence length 512, 2-GPU DDP (\texttt{skillllm\_v2\_training\_80ep\_2gpu.yaml}).
+Training runtime: 324{,}218 seconds ($\approx$90 hours); train loss 0.143; dev eval loss 0.397 at epoch 80 (\texttt{training\_summary.json}).
+
+Single-run evaluation; multi-seed variance was not recorded in artifacts.
+
+% ============================================================
+\chapter{Results}
+\label{ch:results}
+
+\section{Phase A: Multi-LLM Benchmark}
+
+Table~\ref{tab:legacy} reports completed three-epoch results from \texttt{summary\_report.json}.
+Gemma 4 26B did not complete (meta-tensor and CUDA OOM errors in \texttt{errors.jsonl}).
+
+\begin{table}[htbp]
+  \centering
+  \caption{Legacy SkillSpan benchmark (3 epochs, 3{,}569 test examples).}
+  \label{tab:legacy}
+  \begin{tabular}{lrrr}
+    \toprule
+    Model & Exact F1 & Token F1 & Partial F1 \\
+    \midrule
+    Mistral Small 3.1 24B & 0.665 & 0.730 & 0.798 \\
+    Qwen3 14B            & 0.649 & 0.714 & 0.789 \\
+    Gemma 4 E4B           & 0.636 & 0.705 & 0.781 \\
+    Llama 3.1 8B Instruct & 0.632 & 0.704 & 0.764 \\
+    Gemma 4 26B A4B       & ---   & ---   & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Legacy Mistral per-label F1: hard 0.730, soft 0.587.
+Parse failure rate: 0.028\% (1/3{,}569) for each completed model.
+
+\section{Phase B: Stage-2 Extraction}
+
+Table~\ref{tab:stage2} reports verified test metrics from Stage-2 artifact JSON files.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Stage-2 SkillSpan test metrics.}
+  \label{tab:stage2}
+  \begin{tabular}{lrrrrr}
+    \toprule
+    System & Exact & Token & Partial & Hard & Soft \\
+    \midrule
+    BERT baseline       & 0.059 & 0.275 & 0.176 & 0.130 & 0.019 \\
+    GLiNER (zero-shot)  & 0.076 & 0.114 & 0.135 & 0.055 & 0.097 \\
+    Raw Mistral (80 ep.)& 0.670 & 0.788 & 0.814 & 0.726 & 0.604 \\
+    Full CAG/graph wrap.& 0.671 & 0.788 & 0.816 & 0.729 & 0.604 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Extended Mistral training improved exact span F1 from 0.665 to 0.670 absolute over Phase A.
+The full wrapper adds taxonomy linking coverage 0.890 with gate decision \texttt{accept} and exact span F1 delta +0.001 versus the anchor.
+
+\section{Downstream Metrics}
+
+\texttt{matching\_eval.csv} and \texttt{course\_recommendation\_eval.csv} record NA for nDCG@10 and P@5.
+Demo JSON outputs illustrate job match scores on synthetic inputs only.
+
+\section{Smoke Ablation}
+
+A 20-example smoke ablation (\texttt{extraction\_ablation.md}) reports much lower F1 (e.g., 0.057 for Mistral-only).
+Those numbers reflect the smoke sample and are not used for primary conclusions in this draft.
+
+% ============================================================
+\chapter{Discussion and Error Analysis}
+\label{ch:discuss}
+
+\section{Model Selection}
+
+Among four completed LLMs at equal three-epoch budget, Mistral leads on all primary span metrics despite higher latency than Llama 3.1 8B (2.03\,s vs.\ 0.91\,s per example in legacy logs).
+Capacity and instruction-following appear to outweigh raw inference speed for boundary-sensitive extraction.
+
+\section{Generative vs.\ Encoder Approaches}
+
+Mistral exact span F1 exceeds BERT~\cite{devlin2019bert} and zero-shot GLiNER~\cite{zaratiana2023gliner} by an order of magnitude under shared Stage-2 evaluation.
+JSON generative extraction with supervised LoRA aligns with SkillSpan's span-and-label interface and with recent LLM extraction findings~\cite{nguyen2024rethinking,herandi2024skillllm}.
+The repository's earlier NNOSE baseline on resume sentences achieved lower span F1 under a different protocol~\cite{zhang2024nnose}, reinforcing that benchmark parity matters when comparing systems.
+
+\section{Wrapper Impact}
+
+Wrapper components yield incremental extraction gains (+0.001 exact span F1 for full CAG/graph) but add taxonomy linking at 0.890 coverage.
+The primary Stage-2 engineering contribution is integrated, traceable skill intelligence with non-regression guards rather than a large F1 breakthrough.
+
+Wrapper error analysis on 974 test documents reports two \texttt{bad\_boundary\_edit} regressions attributed to the taxonomy linker in GLiNER+taxonomy and full graph variants.
+Partial span F1 consistently exceeds exact span F1 (0.814 vs.\ 0.670), indicating boundary near-misses as the dominant residual error class.
+Soft-skill F1 trails hard-skill F1 by approximately 0.12 points across strong models, consistent with prior soft-skill matching and annotation studies~\cite{sayfullina2018softskill,calanca2019responsible}.
+
+% ============================================================
+\chapter{Limitations, Reproducibility, and Future Work}
+\label{ch:limits}
+
+\section{Limitations}
+
+\begin{itemize}
+  \item SkillSpan domains may not generalize to resumes or multilingual labor markets~\cite{vasquezrodriguez2026sixlanguages,kavas2025multilingual}.
+  \item Gemma 4 26B was not evaluable on 2$\times$24\,GB GPUs.
+  \item Phase A and Phase B differ in epoch count and LoRA configuration.
+  \item Single-seed runs; small wrapper deltas should be interpreted cautiously.
+  \item No labeled job/course evaluation for downstream modules.
+  \item This LaTeX source has not passed SFSU preliminary format check.
+\end{itemize}
+
+\section{Reproducibility}
+
+Legacy benchmark:
+\begin{verbatim}
+bash scripts/run_skillspan_benchmark.sh
+\end{verbatim}
+from \texttt{SkillLLM\_v2/}.
+
+Stage-2:
+\begin{verbatim}
+bash scripts/run_skillllm_v2_smoke.sh
+PYTHONPATH=src pytest tests/skillllm_v2/ -q
+\end{verbatim}
+from \texttt{SkillLLM\_v2\_stage2/}.
+
+Master repo commit: \texttt{0627abf5170ccbe5fe01e5ab1238dc5ac340b880}.
+
+\section{Future Work}
+
+Construct labeled job/course evaluation sets aligned with ConFit-style resume--job matching benchmarks~\cite{yu2025confitv2,vaishampayan2025humanllm}; run multi-seed training; complete trained span verifiers~\cite{ma2023llminformationextractor}; migrate graph layer to production stores; evaluate bias in matching~\cite{iso2025bias}; integrate live job ingestion under privacy constraints.
+
+% ============================================================
+\chapter{Conclusion}
+\label{ch:concl}
+
+This thesis documented SkillLLM\_v2 from repository evidence: a SkillSpan benchmark selecting Mistral Small 3.1 24B among feasible open-weight models, followed by a context-aware graph-augmented Stage-2 system with verified extraction metrics, taxonomy linking, and guarded wrapper design.
+Encoder baselines remained far behind generative Mistral extraction.
+Downstream recommendation requires labeled evaluation before quantitative claims can be made.
+Soft-skill extraction and span boundaries remain open problems for future work.
+
+% ============================================================
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

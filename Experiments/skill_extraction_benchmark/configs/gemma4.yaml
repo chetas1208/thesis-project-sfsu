@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────────────────────────────
+# Gemma 4: Instruction-tuned baseline with QLoRA
+# ─────────────────────────────────────────────────────────────────────
+
+model_name: "alpindale/gemma-2b-it"   # Ungated mirror to bypass HF 403 Forbidden
+fallback_model_name: "alpindale/gemma-2b-it"
+
+seed: 42
+
+training:
+  max_seq_length: 512
+  learning_rate: 2.0e-4
+  num_train_epochs: 4
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8  # Effective batch size 8 on single GPU, 16 on 2x
+  bf16: true
+  gradient_checkpointing: false
+  optim: "adamw_bnb_8bit"
+
+quantization:
+  load_in_4bit: true
+
+lora:
+  use_lora: true
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: "all-linear"  # Usually simpler with SFTTrainer
+
+generation:
+  max_new_tokens: 128
+  do_sample: false
+  temperature: 0.01  # Strictly deterministic decoding
+  json_schema_mode: true

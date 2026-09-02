@@ -1,0 +1,38 @@
+experiment_name: gemma4_26b_a4b_v2
+base_model_name: google/gemma-4-26B-A4B-it
+local_model_path: /usr/data/models/skillllm-v2/models/gemma-4-26b-a4b-it
+train_file: data/v2/train.jsonl
+val_file: data/v2/val.jsonl
+test_file: data/v2/test.jsonl
+output_dir: outputs/gemma4_26b_a4b_v2
+prompt_template_file: src/prompts/skillspan_span_prompt.txt
+fewshot_prompt_file: src/prompts/skillspan_span_prompt_fewshot.txt
+max_seq_length: 2048
+learning_rate: 0.0001
+epochs: 3
+batch_size: 1
+eval_batch_size: 1
+gradient_accumulation_steps: 16
+lora_r: 64
+lora_alpha: 128
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+use_4bit: true
+use_flash_attention_if_available: true
+use_gradient_checkpointing: true
+use_span_recovery: true
+recovery_threshold: 0.92
+non_thinking_mode: true
+use_span_json_target: true
+use_exact_copy_prompt: true
+seed: 13
+max_new_tokens: 512
+warmup_ratio: 0.05
+weight_decay: 0.01

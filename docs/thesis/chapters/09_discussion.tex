@@ -1,0 +1,40 @@
+\chapter{Analysis and Discussion}
+\label{ch:discussion}
+
+\section{Model Backbone Comparison (RQ1--RQ2)}
+
+The legacy benchmark isolates backbone choice under equal epoch budget and shared prompts.
+Mistral Small 3.1 24B leads Qwen3 14B by 0.016 exact span F1 absolute, despite higher inference latency than Llama 3.1 8B.
+Capacity and instruction quality appear to outweigh the speed advantage of smaller models for boundary-sensitive extraction.
+
+Gemma 4 26B could not be evaluated on available hardware, illustrating that benchmark completeness is constrained by deployment feasibility rather than model interest alone.
+
+\section{Generative vs.\ Encoder Extraction (RQ3)}
+
+Stage-2 results amplify the legacy pattern: Mistral exact span F1 (0.670) exceeds BERT (0.059) and zero-shot GLiNER (0.076) by an order of magnitude.
+Generative JSON extraction with supervised LoRA fine-tuning matches the SkillSpan annotation interface more directly than token classification with post-hoc span reconstruction or zero-shot generalist NER.
+
+GLiNER retains higher relative soft-skill F1 among non-LLM baselines (0.097 vs.\ 0.019 for BERT) but remains far below Mistral soft-skill F1 (0.604).
+
+\section{Extended Training}
+
+Increasing Mistral training from three to eighty epochs improved exact span F1 from 0.665 to 0.670 with train loss 0.143 at epoch 80.
+Dev eval loss (0.397) suggests remaining generalization gap; further epoch scaling was not verified in artifacts.
+
+\section{Wrapper Value (RQ4)}
+
+Wrapper components produce modest extraction changes: full CAG/graph improves exact span F1 by 0.001 absolute over the anchor while increasing linking coverage to 0.890.
+The engineering contribution is therefore primarily \emph{structured downstream intelligence without span regression}, not a large extraction breakthrough.
+
+Wrapper error analysis identified two boundary regressions attributable to the taxonomy linker in GLiNER+taxonomy and full graph variants when comparing against anchor spans on 974 analyzed documents.
+The safe wrapper gate and non-destructive edit policies were introduced explicitly to prevent such regressions from affecting reported metrics.
+
+\section{Soft-Skill Difficulty (RQ5)}
+
+Across legacy and Stage-2 Mistral runs, hard-skill F1 exceeds soft-skill F1 by roughly 0.12--0.13 F1 points.
+Soft skills are more lexically variable and boundary-ambiguous, consistent with SkillSpan annotation challenges noted in prior work~\cite{zhang2022skillspan}.
+
+\section{Interpretation vs.\ Evidence}
+
+Observed metric ordering is fully supported by JSON artifacts.
+Claims about downstream recommendation quality beyond demo outputs are interpretive and labeled as unverified pending labeled evaluation sets.

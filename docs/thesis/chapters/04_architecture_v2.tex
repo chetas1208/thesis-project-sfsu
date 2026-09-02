@@ -1,0 +1,78 @@
+\chapter{SkillLLM\_v2 System Architecture}
+\label{ch:architecture}
+
+\section{Architecture principle and implementation status}
+
+SkillLLM\_v2 is a modular Python system under \codepath{SkillLLM\_v2\_stage2/src/skillllm\_v2}. Its module layout separates extraction, verification, normalization, context, graph, matching, retrieval, training, evaluation, and pipeline concerns. This separation supports a central design principle: extraction evidence must remain inspectable even after a candidate is normalized or used by a downstream component. The project therefore makes provenance a data-model property rather than an after-the-fact report.
+
+The architecture diagram in \Cref{fig:overall} is intentionally status-aware. The green nodes correspond to source modules and persisted artifacts. Yellow nodes in later figures represent bounded experimental paths, such as wrapper variants with stored extraction metrics. Grey dashed nodes represent a future evaluation or production capability. This notation prevents an attractive diagram from turning a proposed GraphRAG-like deployment or an unevaluated ranking score into an implementation claim.
+
+\input{tables/component_status}
+
+\section{Input contract and record schema}
+
+The extractor receives free text from a job posting, resume, user profile, or course description. It returns a list of records validated by \codepath{schema.py}. Required fields are \inlinecode{surface_form}, \inlinecode{label}, \inlinecode{start}, \inlinecode{end}, \inlinecode{source}, \inlinecode{confidence}, \inlinecode{evidence}, \inlinecode{canonical_skill_id}, \inlinecode{canonical_skill_name}, and \inlinecode{metadata}. The canonical fields may be null at extraction time, but their presence keeps a record shape stable across pipeline stages. Source is restricted to known extraction origins, and confidence must lie in $[0,1]$. The schema also requires that offsets are either both known or both null and that a known start offset precedes its end.
+
+This contract has two practical consequences. First, every later module can attach metadata without destroying a text-level audit trail. Second, a malformed output is rejected close to its origin. A wrapper cannot silently treat a text paraphrase as a source-grounded span if it lacks valid offsets. The \inlinecode{find_offsets} helper tries exact matching and then case-insensitive matching while avoiding reuse of already selected occurrences where possible. It is deterministic and simple; it does not perform semantic alignment. That limitation is appropriate for an exact-span benchmark because semantic recovery could conceal an output that does not actually reproduce the source string.
+
+\section{Mistral LoRA extraction anchor}
+
+The primary extractor is \inlinecode{MistralExtractor} in \codepath{extract/mistral\_extractor.py}. It constructs a system message identifying the task as explicit skill extraction and a user message that requires valid JSON. The prompt explicitly prohibits paraphrase and unstated inference, asks for exact source strings, and distinguishes hard and soft skills. At inference, the model is called with sampling disabled. The parser accepts a raw JSON list/object, a fenced JSON block, or a decodable JSON fragment; otherwise it raises an error rather than guessing a structure.
+
+Each parsed entry is converted into a \inlinecode{SkillCandidate}. \inlinecode{SKILL} labels are normalised to hard skill for a dataset interface that lacks a hard/soft distinction; unsupported labels are not retained as an invented class. A fixed confidence of 0.86 is assigned by this extraction adapter, so it must be understood as a pipeline score rather than calibrated probability. The implementation tracks latency and model-load errors in metadata. An alias-based fallback exists for smoke execution when the model path is unavailable and fallback is permitted. Crucially, the persisted primary Mistral metric JSON says that fallback was not used. The full-test result therefore rests on the configured model path and adapter, not this smoke convenience.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_extraction}
+\caption{Implemented extraction path. The anchor creates source-grounded candidates; GLiNER and dictionary components can add candidates but do not replace the anchor by default.}
+\label{fig:extraction}
+\end{figure}
+
+\section{Auxiliary extraction, merging, and refinement}
+
+GLiNER and the dictionary extractor have different roles. GLiNER can propose labels from a generalist NER model, while the dictionary extractor looks for aliases in taxonomy files and supports exact/fuzzy matching. Neither source is treated as automatically correct. \inlinecode{CandidateMerger} first validates every candidate, groups surface forms by normalised/alias-equivalent key and label, retains source provenance in \inlinecode{metadata.sources}, and removes redundant subsumed candidates. It then applies its add-only policy. An anchor candidate is recognised by a Mistral source; it is kept. A candidate without Mistral provenance must meet a configurable minimum confidence that depends on its source combination, and it may require exact alias evidence. Candidate spans overlapping an anchor span are withheld under the policy.
+
+Boundary refinement, span verification, and confidence calibration are deliberately separate modules. The boundary refiner can preserve an original candidate or produce an annotated edit. Its tests assert that it preserves an unsubstantiated long span and never drops a candidate simply because a refinement is unavailable. The verifier applies deterministic checks and can reject generic material; the calibrator applies source- and label-sensitive thresholds. These are useful guardrails, but the source-level controls are not a substitute for empirical generalization. The attached span-verifier artifact shows that a model/dataset path exists, while the audit does not find a comprehensive learned-verifier outcome evaluation to report.
+
+\section{Safe-wrapper selection}
+
+The safe-wrapper entry point starts from cached 80-epoch Mistral predictions for the same 974-document evaluation path. It creates three variants: boundary refinement, Mistral plus GLiNER plus taxonomy, and a full path with merger, refiner, verifier, calibrator, and taxonomy linker. The non-regression gate then evaluates each candidate against anchor metrics and selects the candidate predictions only if exact-span and soft-skill floors are met. If either guardrail fails, the selected extraction predictions are the untouched anchor predictions even though linked candidates can still be produced for downstream inspection.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_safe_wrapper}
+\caption{Safe-wrapper design. Protection occurs twice: candidate merging preserves Mistral-originated spans, and the evaluation gate can fall back to cached anchor predictions.}
+\label{fig:safe-wrapper}
+\end{figure}
+
+The gate is an output-selection mechanism, not a proof of causal improvement. In the persisted safe-wrapper artifact, all three variants receive \inlinecode{accept}, but their \inlinecode{improved_over_anchor} fields are false because none reaches the historical target of 0.675034 exact F1. This is a valuable distinction for a system report. A quality floor can be a reasonable deployment safeguard, while an improvement claim needs stronger evidence such as repeated paired runs, confidence intervals, or a pre-registered evaluation protocol.
+
+\section{Canonicalization and taxonomy attachment}
+
+\inlinecode{TaxonomyLinker} turns a surface form into an optional canonical identifier and name. The alias infrastructure builds an index from configured records; the analysis report identifies 696 canonical entries in the current table. The linker can record alias, fuzzy, and BM25-like decisions. Its essential architectural rule is attach-only behaviour: re-linking never changes \inlinecode{surface_form}, \inlinecode{start}, \inlinecode{end}, \inlinecode{label}, or \inlinecode{source}. This makes canonicalization orthogonal to extraction scoring. A later matching layer may use the canonical ID, but an evaluator can always recover the original text and source.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_normalization}
+\caption{Attach-only normalization. The canonical fields enrich a candidate but do not rewrite the extraction fields used by span evaluation.}
+\label{fig:normalization}
+\end{figure}
+
+The implementation includes loaders named for ESCO, O*NET, Lightcast, and custom records. The reported configuration points at local custom aliases. It is therefore precise to call this an extensible taxonomy interface with a local alias-backed evaluation path. It is imprecise to call it a complete production import of every external taxonomy. The distinction is reinforced by the linking reports: high coverage is available, but a gold canonical-ID dataset for accuracy is not.
+
+\section{Context, graph, and downstream services}
+
+The \inlinecode{context} package transforms already extracted skills into a \inlinecode{ProfileSummary}. Each skill fact carries a surface form, hard/soft label, optional canonical fields, maximum confidence, a list of evidence items, and source offsets. Grouping uses a canonical identifier where present and normalised surface form otherwise. When labels conflict, the summary writes a conflict note. It neither infers a hidden capability nor resolves a contradiction through an opaque model. \inlinecode{SkillMemory} groups facts by label and constructs an alias index. The cached-context builder serialises a packet and stores a SHA-256 content hash, enabling a direct equality check for identical inputs.
+
+The graph layer uses \inlinecode{networkx.MultiDiGraph}. It has typed User, Profile, Job, Course, Skill, SkillCluster, and Occupation nodes. Its direct retrieval functions list a user's skills, a job's required skills, and courses that teach a skill; the explainer attempts a shortest path. The \inlinecode{JobMatcher}, \inlinecode{GapDetector}, and \inlinecode{CourseRecommender} consume simple dictionaries and expose their components in output records. This creates a transparent vertical slice from extracted spans to recommendations, but it is intentionally not presented as a deployed service, learned retriever, or empirically validated career adviser.
+
+\begin{figure}[H]
+\centering
+\input{figures/fig_graph}
+\caption{Implemented in-memory knowledge-graph schema. A missing skill is derived from a user/job comparison; it is not an asserted source fact.}
+\label{fig:graph}
+\end{figure}
+
+\section{Architecture summary}
+
+The completed architecture has one authoritative extraction record and multiple carefully constrained enrichments. At no point does the diagram require an unverified model to overwrite a source span. This makes the system suitable for iterative research: new linkers, retrievers, graph stores, or learned rankers can be introduced behind stable record contracts and evaluated separately. The same modularity also exposes the current boundary: only the extraction and wrapper metrics have full-test numeric evidence; the rest of the architecture must be judged as implemented design and smoke-tested data flow until labelled downstream evaluation is added.

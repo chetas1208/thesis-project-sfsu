@@ -1,0 +1,3382 @@
+{
+  "original_count": 1887,
+  "exact_duplicates_removed": 536,
+  "normalized_duplicates_removed": 3,
+  "near_duplicates_removed": 102,
+  "final_count": 1246,
+  "near_duplicate_threshold": 0.92,
+  "duplicate_groups": [
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_00126cfd96e5",
+      "canonical_title": "Quant Research Analyst - Intern",
+      "canonical_company": "Man Group",
+      "duplicate_job_ids": [
+        "job_00d931c92d46",
+        "job_01ba166ac832",
+        "job_0246bf251c83",
+        "job_04217633640b",
+        "job_0425c072a99f",
+        "job_0494f702480a",
+        "job_04fb0eab3eaf",
+        "job_05b51cd3c563",
+        "job_067878944626",
+        "job_067f4e8fba12",
+        "job_084793cd7af1",
+        "job_087ddf046560",
+        "job_0a78bf9b230f",
+        "job_0b77c7c6752a",
+        "job_0bb74c262470",
+        "job_0bba7be2ed67",
+        "job_0c377f35fe8a",
+        "job_0d13f2e1b99a",
+        "job_0da23800830d",
+        "job_0eb3366d7cef",
+        "job_0eea44a74b9f",
+        "job_107eda554aa5",
+        "job_10bd3f3f8793",
+        "job_112e53dc0552",
+        "job_11728090a1b8",
+        "job_119be335758f",
+        "job_126ca709047f",
+        "job_13caf330bc7d",
+        "job_13fb6177135d",
+        "job_13fc7b2601fb",
+        "job_140999e14812",
+        "job_14195d3b3abd",
+        "job_1438e09e5b75",
+        "job_146bee1606d7",
+        "job_14947f37e02f",
+        "job_15ba11a2749e",
+        "job_16c3c4e64d59",
+        "job_16d73b417b36",
+        "job_170d8756c1a1",
+        "job_172e141f6759",
+        "job_19078b73777c",
+        "job_19e03dcc487b",
+        "job_1a87a6699b84",
+        "job_1af545ee4d12",
+        "job_1b291612f72d",
+        "job_1c161aca6fd8",
+        "job_1d0373ff4168",
+        "job_1d2e67514498",
+        "job_1d331110c535",
+        "job_1e86e1ac5973",
+        "job_1e8f2a9526c9",
+        "job_1ed71bec81d7",
+        "job_1f22c173d5e0",
+        "job_1f4115ef2f5f",
+        "job_1f792f78e037",
+        "job_20945048ca73",
+        "job_20a573727c44",
+        "job_214d05fccc23",
+        "job_2186d6ed70ca",
+        "job_219e5b6b02cf",
+        "job_21a91b7496b0",
+        "job_2433c982def1",
+        "job_247334922add",
+        "job_251709334168",
+        "job_255324fbb3d4",
+        "job_263c6d1b6f56",
+        "job_265cef139808",
+        "job_26e746cb77f8",
+        "job_275c33563852",
+        "job_280ba7b961de",
+        "job_2832de643e29",
+        "job_28b87e7ec757",
+        "job_2ab6618750da",
+        "job_2b644bae5a13",
+        "job_2ba6bda05ed3",
+        "job_2c7317acfecc",
+        "job_2c9536664d08",
+        "job_2ce8dce42c3a",
+        "job_2d20a0363dfc",
+        "job_2d5ad4f6ff26",
+        "job_2dc493c96d52",
+        "job_2ef4212b6f5f",
+        "job_2f667600473c",
+        "job_300e643f6c5e",
+        "job_3047add4ea93",
+        "job_3063110a1737",
+        "job_30be6aa792dd",
+        "job_313d33cde6fb",
+        "job_31652b978793",
+        "job_3236d36f0256",
+        "job_32999e74e20e",
+        "job_32b6f716ed3f",
+        "job_34468939f486",
+        "job_3479b859db7c",
+        "job_34b3f1c8e75c",
+        "job_350a61ad2524",
+        "job_35e1540c45fe",
+        "job_36931e4b9909",
+        "job_37faa3b6e930",
+        "job_388ae4d3dedb",
+        "job_393c50b211ae",
+        "job_396602b58881",
+        "job_3a24e10509e3",
+        "job_3b2bcdd0f5af",
+        "job_3b8530aa9aa7",
+        "job_3bc0f3266dd4",
+        "job_3c345596b2ac",
+        "job_3ccbd35ad857",
+        "job_3d3a3525c106",
+        "job_3e880c8f44f9",
+        "job_3f7b88b374ab",
+        "job_402a20d4bb53",
+        "job_4089381d8e1c",
+        "job_41315aeda095",
+        "job_41bec6336e41",
+        "job_42c01c346715",
+        "job_442ecac6584a",
+        "job_444ae5d5f926",
+        "job_44bd4d7e9021",
+        "job_44f4c0f80503",
+        "job_4552847be165",
+        "job_455da529a698",
+        "job_45b22d3c8b22",
+        "job_463c2a643da2",
+        "job_469313c53fc7",
+        "job_4890bc839387",
+        "job_48c0b5e2791e",
+        "job_48de4f6e4f59",
+        "job_4916a8787108",
+        "job_495034b9a9e5",
+        "job_4aa177668a39",
+        "job_4bd26aa74c00",
+        "job_4bef65f85752",
+        "job_4c722e760ecb",
+        "job_4c7c9af07435",
+        "job_4ce8c6cf1502",
+        "job_4cf6dc64dc43",
+        "job_4f25ebb0e90c",
+        "job_4fa990c0de22",
+        "job_508f3bd943df",
+        "job_50a841d616c3",
+        "job_50efbb6e7da5",
+        "job_51283d8f4038",
+        "job_5168eff633df",
+        "job_5177464c2cb0",
+        "job_517cea0d7771",
+        "job_52ea6f73cc2f",
+        "job_53ce83391833",
+        "job_5455d62e2aac",
+        "job_5488d155ff8e",
+        "job_54dbb56f8fc7",
+        "job_5577152f7dc8",
+        "job_55ad24447c06",
+        "job_563c8899eeea",
+        "job_56cc612f8b98",
+        "job_56f84d86f02d",
+        "job_574e3428e845",
+        "job_5799b5d50593",
+        "job_579ceeef6dee",
+        "job_5a153a47d5cb",
+        "job_5a58744a566a",
+        "job_5a5f03b768a7",
+        "job_5aae2ca17453",
+        "job_5b255e123384",
+        "job_5bb6c2d52fd5",
+        "job_5be14768c1e8",
+        "job_5d9a7d25f650",
+        "job_5dee0d1e1712",
+        "job_5e6e1ecd9b8c",
+        "job_5e8b8406ce98",
+        "job_5f87b2923157",
+        "job_6157184348b1",
+        "job_61c145a2ace7",
+        "job_61d40dfc47b2",
+        "job_61e1d919a5e1",
+        "job_620313007278",
+        "job_63f3cf0f9955",
+        "job_64303d8933e9",
+        "job_66d7217cf174",
+        "job_66ffeb8d05fe",
+        "job_6852d31cd58f",
+        "job_693682b6fb43",
+        "job_6b4a54adcf91",
+        "job_6b8c374c1dbd",
+        "job_6d6f036f1d48",
+        "job_6da479d31819",
+        "job_6da52401c349",
+        "job_6ebd4702f9dc",
+        "job_700533e505bb",
+        "job_7027843e94b8",
+        "job_703618d2dff7",
+        "job_7070a9e9df96",
+        "job_70ee0b1f0b0b",
+        "job_71370c4b99ed",
+        "job_71751edff14a",
+        "job_71fe27a7b38c",
+        "job_7229a27fc0a6",
+        "job_73205cca7026",
+        "job_740eb56c8367",
+        "job_74dc8bc0bc57",
+        "job_76a001827209",
+        "job_76b7a3e2769e",
+        "job_77ed38443155",
+        "job_7812811a790a",
+        "job_795540139570",
+        "job_79b067d9ce46",
+        "job_79b56d3264ea",
+        "job_7a093c24e9c6",
+        "job_7a19f4e52873",
+        "job_7aab325bbf95",
+        "job_7b4c5018349b",
+        "job_7ba9c3576a88",
+        "job_7cf996cb657b",
+        "job_806ca550f594",
+        "job_80b500241899",
+        "job_80b630f14b8a",
+        "job_80f0a86ae60d",
+        "job_819c2187dd52",
+        "job_8265e4f086a4",
+        "job_82d22e992a46",
+        "job_838fbd321107",
+        "job_848b80a90300",
+        "job_8517a3e04a70",
+        "job_85b5c6e585bf",
+        "job_8773395dbbc6",
+        "job_879fbfdcae90",
+        "job_87c0523780e8",
+        "job_880ea036008f",
+        "job_8875de6cd129",
+        "job_88e4af19ba93",
+        "job_89c4e02904af",
+        "job_89d8e2c64ddd",
+        "job_8a44127efbc3",
+        "job_8a7c0433e77c",
+        "job_8b9b6ac90809",
+        "job_8c74a617ee43",
+        "job_908233517580",
+        "job_90e3f62a19eb",
+        "job_91df1a899e45",
+        "job_92809fd4eb4b",
+        "job_932e74c64069",
+        "job_936e0365bd45",
+        "job_9495cb3ecb8d",
+        "job_95153fb8d907",
+        "job_9540d8a0cb23",
+        "job_963eba083be9",
+        "job_9675628ffc07",
+        "job_9743da0de629",
+        "job_978936e3b3dc",
+        "job_97a9f915bf5d",
+        "job_99a4bc983ae3",
+        "job_99c4feb1023a",
+        "job_9a03ba480984",
+        "job_9a54de8ef77b",
+        "job_9b3c7dddcbde",
+        "job_9b67dc9adcaf",
+        "job_9b72991de9e1",
+        "job_9bbbcbddc8c0",
+        "job_9c3a54ece143",
+        "job_a04efb25175c",
+        "job_a11d63e575b8",
+        "job_a185a5d207d8",
+        "job_a1dc670738f7",
+        "job_a362a6747a55",
+        "job_a420c33171ad",
+        "job_a43df4634bed",
+        "job_a468c49aef3d",
+        "job_a4a14442be66",
+        "job_a57a01b036d1",
+        "job_a5f0493bfd86",
+        "job_a7570090ac10",
+        "job_a76077363db7",
+        "job_a7c9896cc5c1",
+        "job_a867a9ea264f",
+        "job_a8ae755910a9",
+        "job_a97d05b6fe6a",
+        "job_a999fd9e050b",
+        "job_aaa753c25d17",
+        "job_aaf9b45845da",
+        "job_abe575dbeca4",
+        "job_ac6e41e522cd",
+        "job_ae062acc9ca9",
+        "job_af154a4672ed",
+        "job_af7e0dc7a8da",
+        "job_afcdc7af5574",
+        "job_b086a083d4b2",
+        "job_b187a02d6476",
+        "job_b18d78f11cd9",
+        "job_b24d05b2d70d",
+        "job_b2d023dd7aed",
+        "job_b2d67dcc0f26",
+        "job_b3017e78a9de",
+        "job_b3822c7a7c2b",
+        "job_b46688896031",
+        "job_b5388fe258e5",
+        "job_b54b03509d77",
+        "job_b5e93fb34171",
+        "job_b5f394dc8f62",
+        "job_b75cf47828a7",
+        "job_b793008b4091",
+        "job_b80519c5fa25",
+        "job_b825667b89d0",
+        "job_b8289da5a0a1",
+        "job_b8a76738053e",
+        "job_b8f593a8bb89",
+        "job_b9c8f48a24d7",
+        "job_ba8951706139",
+        "job_bb08a600f21b",
+        "job_bb1529afcd74",
+        "job_bbb17d0c91b5",
+        "job_bbf4738d6b10",
+        "job_bd76d8aad8b5",
+        "job_be693615d1c0",
+        "job_c016dd390533",
+        "job_c13971da8a75",
+        "job_c237cccafc6c",
+        "job_c2e23dc52b4d",
+        "job_c302a4a43a9b",
+        "job_c38c71a6c878",
+        "job_c3f30647a292",
+        "job_c42b29d7de27",
+        "job_c4a4fb97ab91",
+        "job_c4ad3e546be4",
+        "job_c55f502294cc",
+        "job_c5d28bbd5bd9",
+        "job_c5e544bcd5d4",
+        "job_c5ee93133a40",
+        "job_c5f7526453a7",
+        "job_c6437e4714e9",
+        "job_c66bbd7e7d11",
+        "job_c72cbeac3011",
+        "job_c76f195f9592",
+        "job_c94189d0ba5d",
+        "job_c94e6ac188fe",
+        "job_c9bd5f025f1b",
+        "job_ca9b3ef1fbe3",
+        "job_cafcdf121014",
+        "job_cb0e0d643e77",
+        "job_cb3f5277f87f",
+        "job_cb63bab9e324",
+        "job_cb8210d684a1",
+        "job_ccda403c68c7",
+        "job_cd30e29ad347",
+        "job_cda00acf9fbd",
+        "job_cdc08950cbf1",
+        "job_cdedbf566203",
+        "job_ce28f8092043",
+        "job_ce3c3bf6ee8e",
+        "job_ce50c2bdeb79",
+        "job_ce5f79dd331a",
+        "job_ce7fd6914cb6",
+        "job_cf093771d9a1",
+        "job_cf734e33d828",
+        "job_cf9f8714e992",
+        "job_cfa04f4a1f21",
+        "job_cfbedcb280aa",
+        "job_cfc5b6f057f0",
+        "job_cff1c47d45c2",
+        "job_d01c1e63885a",
+        "job_d04f63f6f014",
+        "job_d05880694e46",
+        "job_d0b2e97aca0d",
+        "job_d2b1ff63bae1",
+        "job_d30755210656",
+        "job_d32f573927b5",
+        "job_d36ac31fa6fe",
+        "job_d3a77dcd81fc",
+        "job_d59cdb21b72e",
+        "job_d607a0348fea",
+        "job_d64483f945d1",
+        "job_d781ab7453a8",
+        "job_d810cfcd19f4",
+        "job_d8aeb4bac4bf",
+        "job_da7a0c1582cb",
+        "job_db8d4a6a8852",
+        "job_dc6c9e8e3887",
+        "job_dcba901faca5",
+        "job_de24e7ddf1c3",
+        "job_deb0e11ac595",
+        "job_dec9511337ec",
+        "job_def5b2fe823f",
+        "job_df57b41b6471",
+        "job_df91ab344b16",
+        "job_e1620b2ddc4f",
+        "job_e1cdee9291a1",
+        "job_e2d0128bbd2c",
+        "job_e2e21edf01d3",
+        "job_e3463f32d4a3",
+        "job_e3668dd72574",
+        "job_e37fbce6eb6b",
+        "job_e39ade6b77cd",
+        "job_e3c8ea0954de",
+        "job_e43f0bc236da",
+        "job_e4d4b03fdf12",
+        "job_e519b601cbc6",
+        "job_e5b10ea358bf",
+        "job_e5fa7a482143",
+        "job_e6563ee91f8a",
+        "job_e65f986a832c",
+        "job_e66d5198e591",
+        "job_e6e07cb61b77",
+        "job_e984fd529fbf",
+        "job_ea573f086776",
+        "job_eaf3282aee94",
+        "job_eb1fb3726118",
+        "job_eb42c8df9db4",
+        "job_ec1d0385a397",
+        "job_ec6401d862df",
+        "job_ec75f9dac41f",
+        "job_ecaf2873669c",
+        "job_ed14e9a3e39d",
+        "job_ed4d91db5f49",
+        "job_edba3c0e9939",
+        "job_eeca68b6c04c",
+        "job_ef3f667799c9",
+        "job_ef487327fc8c",
+        "job_efc2830ba388",
+        "job_efe13d9f84ec",
+        "job_effa7abf703a",
+        "job_f01d04177a88",
+        "job_f0581cb8d95a",
+        "job_f16b55344e9e",
+        "job_f175bd85d9d1",
+        "job_f1802b0a57ba",
+        "job_f2a030b33942",
+        "job_f37444990a13",
+        "job_f4093356d0fe",
+        "job_f4607b2d98b6",
+        "job_f46ee9462e2f",
+        "job_f56f4434f154",
+        "job_f62c27f7896b",
+        "job_f67d3628f15f",
+        "job_f70abdfb6606",
+        "job_f8a5018e45f2",
+        "job_f8f67860cab4",
+        "job_f9c14e48a8cd",
+        "job_f9e5c2203e70",
+        "job_fbfa24f4a3b8",
+        "job_fc48a800ff41",
+        "job_fca94fd84e49",
+        "job_fd08477e7213",
+        "job_fd526dc898c9",
+        "job_fe796854351d",
+        "job_fefbb5a540df",
+        "job_ff182027ac2d",
+        "job_ff31ec02684a",
+        "job_ff42d48bf119",
+        "job_ff855098dfef"
+      ],
+      "duplicate_titles": [
+        "2026 Software Engineering Internship",
+        "Kernel Engineer – Intern and Full-time",
+        "AI Intern",
+        "Quantitative Trading Associate",
+        "Front End Software Engineer Co-op",
+        "Hardware Development Intern - Mechanical",
+        "Junior Data Analyst - Canada-based",
+        "AI & Computer Vision Intern - Data augmentation",
+        "Data Science Intern - Argentina - Year Round 2026",
+        "Research Intern",
+        "Software Engineering Intern- Full Stack / Product - Spring 2026",
+        "Intern Software Engineer 🎓",
+        "Data & AI/ML Intern",
+        "Technical Product Management Intern",
+        "Autonomy Engineer Intern - Deep Learning - Computational Photography",
+        "Software Engineer 1 - Commerce Engineering",
+        "Junior/Mid AI Legal Specialist - Full Remote - Italy",
+        "Junior Quant Researcher - PM Monetisation",
+        "Data Analytics Intern - Summer 2026",
+        "Software Engineer – New Grad",
+        "AI Research Scientist - Intern",
+        "Software Engineer Intern",
+        "Software Engineer Intern",
+        "Software Engineering Intern - Summer 2026",
+        "Geospatial Analysis Intern",
+        "Data Scientist – New Grad",
+        "Engineering Intern - Web3/AI",
+        "AI Engineering Intern - Growth Team",
+        "Intern - Search Machine Learning Engineer",
+        "Software Engineer Intern",
+        "AI/ML Software Engineer Intern",
+        "Data Analyst and Automation Internships",
+        "Software Engineer Intern",
+        "Junior/Mid AI Legal Specialist - Full Remote - Ireland",
+        "Software Engineer – New Grad",
+        "Software Engineer 1 – New Grad",
+        "Teleoperation Software Engineering Internship",
+        "Software Engineer 1",
+        "Machine Learning Engineer 1",
+        "Application Engineering Co-Op",
+        "Quant Trading Associate",
+        "MS/PhD Intern AI Engineer - 정규직 전환형",
+        "Software Engineer Intern - AI-Native — Summer 2026",
+        "Acceleration Kernel Developer Intern",
+        "Software Engineer - New Grad 🇺🇸",
+        "Software Engineer – New Grad - AI",
+        "Junior Quant Trader",
+        "Software Engineering Internship",
+        "Software Engineer 1 - Device Drivers",
+        "Product Engineering Intern",
+        "2026 Technology Internship - UI/UX Engineer - Full Stack",
+        "Product Management Intern",
+        "Mission Software - Python Internship - Fall 2026",
+        "Software Engineer Intern",
+        "Machine Learning Research Intern 🎓",
+        "Software Engineering Intern",
+        "Mobile Engineer Intern - iOS",
+        "Software Engineering Intern",
+        "Pioneering Intelligence Machine Learning Co-Op",
+        "Data Scientist Intern - Masters",
+        "IT Internship - Computer Science",
+        "Data Engineering Intern - AI & Automation",
+        "Software Engineer Intern",
+        "Machine Learning Engineer – Intern - Mle 🎓",
+        "Software Intern - Autonomous Lab",
+        "Data Science internship - Spanish speaker - 6months",
+        "Software Engineer – New Grads",
+        "Software Engineer - Intern - Summer 2027",
+        "Cloud Operations Intern-DevOps",
+        "Software Engineer Intern",
+        "2026 New Grad - Software Engineer - Full-Stack",
+        "Software Engineering Intern- AI/ML Backend - Spring 2026",
+        "AI Strategy & Operations Associate",
+        "Founders Associate - AI",
+        "FPGA Intern",
+        "Geology Intern",
+        "Software Engineer Intern",
+        "Software Engineer 1 - Secure Platform Operations",
+        "Data Engineer Intern",
+        "Teaching Assistant: Machine Learning Data Associate",
+        "Junior Software Engineer",
+        "AI Automation Intern",
+        "Firmware Intern",
+        "GTM Data Engineer Intern",
+        "Data Science Intern - AI Products",
+        "Software Engineer - Intern - Perception 🎓",
+        "Infrastructure Software Engineering Intern - Fall",
+        "Product Manager Intern - Undergraduate",
+        "Data Analytics Engineer 1",
+        "Software Engineer Intern - Chicago",
+        "Software Engineer – New Grad",
+        "AI Software Engineering Intern - Fall 2026",
+        "Test Engineering Intern",
+        "Software Engineer Intern",
+        "Associate Software Engineer – 2026 New Grad",
+        "Cloud MDR Analyst SkillBridge Intern - Hybrid Shift M-F 12 PM - 8 PM ET",
+        "New Grad Software Engineer - Full Stack",
+        "Software Engineering Intern",
+        "Product Management Intern - Clinical 🎓",
+        "Software Engineering Internship - AI/Agentic Systems",
+        "ML Researcher – Intern and Full-time",
+        "Software Engineer - Quality Assurance",
+        "Customer Data ML Intern",
+        "Data Engineering Intern – Graduate Level 🎓",
+        "Software Engineer Intern - Backend",
+        "Firmware / Embedded Engineer -- Intern",
+        "2026 Software Engineering Summer Intern",
+        "Business Analyst Intern - Revenue Operations - AI Innovation - Summer 2026",
+        "Software Engineering Intern",
+        "Software Engineer 1",
+        "Software Development Engineer 1",
+        "Rackner AI Innovation Fellowship – Startup Accelerator Intern",
+        "Software Engineer 1",
+        "Internship - Search Machine Learning Engineer",
+        "Product Management Intern - Software Engineering",
+        "Full-Stack Intern",
+        "Software Engineering Intern - Backend",
+        "Technical Intern - Data/ Web",
+        "Research Scientist Associate III",
+        "Intern Electrical Machines Testing & Data Analytics",
+        "Junior Software Developer",
+        "AI Engineering Intern",
+        "Marketing Data Engineering Intern",
+        "Backend Software Engineering Intern - Fall 2026",
+        "DFT Intern",
+        "Applied Field Engineer AI/ML Intern - 3 months - London 2026",
+        "Software Developer - Entry Level",
+        "Software Engineer 1",
+        "Perception Software Engineering Intern",
+        "IT Software IT Infrastructure Intern",
+        "Software Engineer – New Grad",
+        "Junior Full Stack Engineer - Frontend and Backend - TypeScript, React, Node.js, Next.js",
+        "Product Management Intern - Commercial Mobility",
+        "Research Intern, Machine Learning 🎓",
+        "HW Design Verification Intern 🎓",
+        "Generative AI Pipeline Engineer Intern",
+        "Engineering Intern - AI Agents - Data & Riskos 🎓",
+        "Software Engineer – Early Career",
+        "Quantitative Research Intern",
+        "Software Engineer Intern",
+        "Internship - Fabbrica Italia AI",
+        "Robotics and Autonomous System Engineering Associate",
+        "Quantitative Research Intern - Equity Arbitrage",
+        "Intern Software Engineer",
+        "Rust Software Engineering Intern - Fall",
+        "AI Intern - Argentina - Year Round 2026",
+        "Software Engineering Intern - Summer 2026",
+        "Product Manager 🎓",
+        "Software Engineering Apprentice - Backend",
+        "Software Engineering Intern",
+        "Data Analyst Intern",
+        "Forward Deployed Engineering Intern - AI Agent",
+        "Software Defined Radio Hardware Intern - Summer 2026",
+        "Software Engineering Intern - Frontend",
+        "Data Science Intern - Personalization & Recommender Systems 🎓",
+        "Early Career Software Engineer",
+        "Product Manager – New Grad",
+        "Cloud MDR Analyst SkillBridge Intern - Dayshift M-F 10 AM - 6 PM ET",
+        "Full-stack Software Engineer Intern - Summer 2026",
+        "Software Engineer Intern - Anduril Frontier Systems",
+        "AI Product Manager Intern",
+        "Machine Learning Intern 🎓",
+        "Software Engineering Intern",
+        "Full Stack Developer - Student Co-op",
+        "GIS Data Scientist Intern",
+        "Machine Learning Intern",
+        "Machine Learning Engineer 1 - Machine Learning - Full-stack Engineering 🎓",
+        "Full-Stack Software Engineer Intern",
+        "Software Engineer – Entry Level - Engineering Infrastructure",
+        "Software Engineering Intern",
+        "Data Science Intern",
+        "Software Engineer – New Grad",
+        "Junior/Mid AI Legal Specialist - Full Remote - Netherlands",
+        "Graduate AI Engineer - 2026 start",
+        "Software Engineer Intern",
+        "Software Engineering Intern",
+        "Quant Trading Associate - Amsterdam",
+        "Software Development Engineer 1",
+        "Internship - Search Machine Learning Engineer - Belgrade",
+        "Wearables Prototype Engineer Intern - Hardware + Software",
+        "Software Engineer – Early Career",
+        "AI Account Strategist - Early Career",
+        "Investment Grade Credit Analyst - Data & AI",
+        "Software Engineer – New Grads - Multiple Teams",
+        "Software Engineer Intern",
+        "Forward Deployed Software Engineer - New Grad",
+        "Full Stack Software Engineer – Early Career",
+        "Autonomy Engineer Intern - Computer Vision/Deep Learning Summer 2026",
+        "Backend Developer Intern",
+        "Software Engineering Intern - Summer 2026",
+        "Software Engineer New Grad",
+        "Software Engineer Intern - Internal Apps",
+        "New Grad Product Engineer",
+        "Intern Data Scientist 🎓",
+        "Staff Data Scientist I - ETA",
+        "Full-Stack Software Engineering Intern",
+        "Junior C# Software Engineer 🇺🇸",
+        "Application Engineering Tools & Resource Catalog Intern",
+        "Research Intern 🎓",
+        "Software Engineering Summer Intern 🇺🇸",
+        "Early Career Research Engineer",
+        "Quant Trading Associate - Amsterdam",
+        "Applied AI Workflow Automation Intern",
+        "Software Engineer – Early Career",
+        "Android Software Engineer Graduate Co-op",
+        "Software Engineering Intern",
+        "Junior Software Developer",
+        "Software Engineering Intern - Clinical Tools",
+        "Founding Commercial Associate - AI Agents",
+        "Junior/Mid AI Legal Specialist - Full Remote - Greece",
+        "AV Internship",
+        "Junior Software Engineer",
+        "Digital Tools & AI Builder CMC Techops Co-op",
+        "Associate Data Scientist",
+        "Staff Data Scientist I - Matching",
+        "Autonomy Engineer Intern - Deep Learning - Computational Photography 🎓",
+        "Software Engineering Intern",
+        "People Analytics Intern",
+        "Software Engineer",
+        "Software Engineer Intern - Backend",
+        "Research Engineer Intern 🎓",
+        "AI Deployment Engineering Internship",
+        "R&D Production Development Intern",
+        "Software Engineer Intern",
+        "Associate Applied AI Engineer - Japan - Orbit Program",
+        "Software Engineer Intern",
+        "Product Security Engineering Intern",
+        "Legal Intern - Policy & Public Sector - AI & Cybersecurity Focus - Summer 2026",
+        "Product Engineer 1",
+        "Software Engineering Internship - Platform/DevOps",
+        "GIS Data Scientist Intern",
+        "Firmware Intern",
+        "Software Engineer – New Grad - Agent",
+        "Software Engineer Intern",
+        "Software Engineer 1",
+        "Software Engineer 1",
+        "Full Stack Engineer Intern",
+        "Software Engineer 1",
+        "Data Science Intern/Co-op",
+        "Technology Intern - UI/UX Engineer - Full Stack",
+        "Machine Learning Engineer Intern - 3-month internship",
+        "Software Engineer Intern - Data Platform",
+        "Software Engineer 1 - Commerce Engineering",
+        "Software Engineer 1 - Monetization ML",
+        "ML Research Intern in Agentic Runtime Systems",
+        "Mobile iOS Developer Intern",
+        "Cloud Software Engineer Co-op",
+        "Software Engineer Intern - Data Platform - Summer 2026",
+        "Intern Engineering",
+        "Software Engineer Intern",
+        "Software Engineering Intern",
+        "Software Engineer Intern - Anduril Frontier Systems",
+        "AI Research Intern",
+        "Data Science internship - Spanish speaker - 6months",
+        "Data Analyst Intern",
+        "Data Science Intern",
+        "Test Engineering Intern",
+        "AI Engineer Intern 🎓",
+        "Engineering Intern-Docv & Device",
+        "Delivery Management Intern",
+        "Reliability Test – Intern",
+        "Software Engineer",
+        "Quantitative Technologist C++ Intern",
+        "Fullstack Engineer Intern",
+        "Software Engineer 1 - Monetization ML",
+        "Software Engineer Intern - Fall 2026",
+        "Graduate Software Developer Intern",
+        "AI Product Manager Intern",
+        "Software Engineer Intern",
+        "Agentic AI Software Testing Intern - Intelligence Platform - IPA",
+        "Product Support Engineer Intern",
+        "Robotics and AI Co-op 🛂",
+        "Full Stack Software Engineer Co-op",
+        "Internship - Machine Learning Research Engineer - Berlin",
+        "Data Science Internship",
+        "Digital Intern",
+        "Software Engineer 1 - Full-Stack",
+        "Associate Applied AI Engineer - Madrid/Spain - Orbit Program",
+        "Junior Full Stack Engineer",
+        "Quantitative Analyst Intern",
+        "Software Engineer Intern - Simulation",
+        "Intern - AI/ML Software Engineer - Summer 2026",
+        "Quantitative Research Internship - Quant Research/Trading - Starting Summer 2026",
+        "Productivity Data & Industrial Events Intern",
+        "Sales Reporting and Operations Intern",
+        "Hardware Engineering Intern",
+        "Application Development Intern",
+        "Associate Applied AI Engineer - APAC - Orbit Program",
+        "ML Engineer",
+        "Software Engineer – New Grad",
+        "Data Engineer Co-op",
+        "Manipulation Co-op / Intern - Summer 2026 🎓",
+        "Software Engineer 1 - New Grad",
+        "Product Manager",
+        "Software Engineer – New grad",
+        "Software Engineer – New Grad - Summer 2026",
+        "Product Marketing Intern",
+        "Engineering",
+        "Junior Firmware Engineer 🇺🇸",
+        "Data Analyst - Internship",
+        "Software Engineer 1 / 2 - New York",
+        "Member of Technical Staff",
+        "AI & Management Consulting Intern - Value Engineering - DACH Market",
+        "AI Engineer Intern",
+        "Data Scientist Internship - 6 months",
+        "AI Product Content Intern",
+        "Entry Level Data Analyst",
+        "Engineering Intern- AI Agents - Data & RiskOS",
+        "Software Engineer 1",
+        "Ergonomics Intern 🎓",
+        "Software Engineer Intern",
+        "Junior/Mid AI Legal Specialist - Full Remote - Portugal",
+        "Software Engineering Intern",
+        "AI Intern",
+        "Developer GTM Intern - Enterprise Sales & AI Automation - Summer 2026",
+        "Machine Learning and State Estimation Intern",
+        "Junior Software Engineer",
+        "Data Analyst I",
+        "Product Marketing Engineer Intern – Intern - AI & Automation",
+        "Wireless Hardware Engineer Intern",
+        "New Grad - Full-Stack",
+        "Business Intelligence Analyst Intern",
+        "Data Scientist Intern - Growth Analytics - 6-month internship",
+        "Research Internship Reinforcement Learning - Summer",
+        "PhD Autonomy Engineer Intern - Deep Learning or Computer Vision 🎓",
+        "Entry Level Software Developer",
+        "Full-Stack Engineering Intern",
+        "Software Engineering Intern - Summer 2026",
+        "Software Engineer Intern",
+        "Software Engineering Intern - Simulation and Modeling",
+        "PhD Research Intern - AI & Computer Vision",
+        "Software Engineer 1",
+        "Software Engineer 1",
+        "Software Engineer Intern",
+        "Associate ML Engineer - Builders Program",
+        "Junior Software Engineer",
+        "U.S. Public Policy and AI Innovation Intern - Summer 2026",
+        "Intern - Software Engineer - Platform",
+        "Software Engineer – New grad / early career",
+        "Software Engineer 1",
+        "Software Engineering Intern",
+        "Software Engineer Intern - Summer 2026",
+        "Data Scientist Intern - Growth Analytics - 6-month internship",
+        "Android Developer Intern",
+        "Software Engineer 1",
+        "Software Graduate Intern - Autonomous Lab",
+        "Operations Transformation & AI Associate",
+        "Machine Learning Intern/Co-op - Spring 2026",
+        "Software Engineer 1",
+        "Quantitative Developer Intern",
+        "Software Engineer – New Grad",
+        "Data Science and AI Intern",
+        "Product Owner Intern",
+        "Software Engineering Intern",
+        "Associate AI Engineer - Builders Program",
+        "Applied Research Engineering Intern",
+        "Sales Data & Analytics Intern",
+        "Software Engineer – Early Career - Core Product",
+        "Software Engineer New Grad",
+        "Vision Foundation Model Research Intern 🎓",
+        "Revenue Operations Intern - Enablement - AI Innovation - Summer 2026",
+        "Generative AI Researcher Intern",
+        "Spring Internship - Software Developer",
+        "Data Scientist Intern",
+        "Software Engineer Intern - AI-Native",
+        "Early Career Software Engineer",
+        "AI/ML Intern",
+        "Software Engineer - 2027 Interns",
+        "Founding Engineer",
+        "Early Career Software Engineer - Applied AI",
+        "Research Scientist Associate IV",
+        "Python Software Engineer Co-op",
+        "PhD Graduate AI & Algorithms Engineer - 2026 start",
+        "AI Intern - Long/Short Equities",
+        "PhD AI Research Intern 🎓",
+        "Entry Level Embedded Software Engineer",
+        "Software Engineering Intern",
+        "MBA Product Marketing Intern 🎓",
+        "Compiler Intern",
+        "Software Engineer - Intern",
+        "Product Operations Intern",
+        "AI Intern",
+        "Software Engineer – Early Career",
+        "Early Career AI/ML Engineer",
+        "Software Engineer – New Grad",
+        "Software Engineering Intern - Summer 2026",
+        "Software Engineering Intern",
+        "Associate Data Scientist - Builders Program - Emirati National",
+        "Cloud Operations Intern-DevOps 🛂",
+        "Data & AI Intern",
+        "Heat-to-Power Techno-Economic Analysis Intern",
+        "Intern - Software Engineer - Quality Assurance",
+        "Embedded Software Engineering Intern - Fall 2026",
+        "Backend Developer Summer Intern",
+        "Product Management Intern - Software Engineering 🎓",
+        "Autonomy Engineer Intern Summer 2026",
+        "AI & Operations Strategy Associate",
+        "Software Engineer 1 - Backend",
+        "Software Engineer 1 - New Grad",
+        "Data Analyst I",
+        "Junior Quantitative Researcher",
+        "Intern",
+        "GTM Engineer Intern",
+        "Software Engineering Intern",
+        "Product Manager",
+        "Software Engineering Intern- Test Automation - Spring 2026",
+        "Quantitative Developer - Intern",
+        "Hardware Test and Reliability Intern",
+        "People Data Intern",
+        "Associate Data Analyst - Builders Program - Emirati National",
+        "Data Science Intern 🎓",
+        "Cloud Engineer Co-op",
+        "Agent Deployment Engineer",
+        "Software Engineer 1 - AI Product",
+        "Software Engineering Intern",
+        "Machine Learning Engineer Intern 🎓",
+        "Software Engineer – New Grad - Product",
+        "Software Engineer – New Grad - Forward Deployed AI",
+        "Data Intern",
+        "Power Supply Intern",
+        "Intern - Software Engineer - Perception",
+        "New Grad Software Engineer - Backend Rust",
+        "Android Software Engineer Co-op",
+        "Hardware Development Intern - Electrical",
+        "Software Engineer – New Grad - Forward Deployed AI",
+        "Software Engineer - Perception - Intern - Summer 2026",
+        "PhD Research Intern - AI & Computer Vision 🎓",
+        "Growth AI Playable - Internship",
+        "Embedded Software Engineering Intern - Fall",
+        "Product Builder Intern",
+        "Forward Deployed Engineering Intern - AI-Native",
+        "Software Engineer – AI/ML Intern",
+        "NWE Intern: Category Management - Compute - AI & Business Strategy - Netherlands - Dutch speaker",
+        "AI Product Engineer – New Grad",
+        "Frontend Software Engineering Intern - Fall 2026",
+        "Safety Research Intern 🎓",
+        "Quantitative Research Intern - Summer 2026",
+        "Wearables Prototype Engineer Intern - Hardware + Software",
+        "Machine Learning Engineering Intern",
+        "Intern - Data Management",
+        "AI Engineer Intern - Long/Short Equities",
+        "Software Engineer 1 - TS/SCI w/Poly",
+        "Software Engineering Intern - Frontend",
+        "Fab Software Engineering Intern - Fall",
+        "Software Engineer 1 - Job",
+        "Software Engineering Intern - Summer 2026",
+        "Product Management Intern",
+        "Automation Software Engineering Intern - Fall"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_00643659adca",
+      "canonical_title": "Software Engineer Intern",
+      "canonical_company": "Parsons",
+      "duplicate_job_ids": [
+        "job_62e35c53187d"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_02b78e0fce43",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "Wash U",
+      "duplicate_job_ids": [
+        "job_98a08ffb1cd2"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern - Time-Limited/Remote - WashU IT"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_0588c890867b",
+      "canonical_title": "Software Engineering Intern 🛂",
+      "canonical_company": "Tricentis",
+      "duplicate_job_ids": [
+        "job_aa0cb27a4465"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_05e31e7c411e",
+      "canonical_title": "Customer Solutions Intern (ERP Software)",
+      "canonical_company": "BS&A Software",
+      "duplicate_job_ids": [
+        "job_2c5b93c90284"
+      ],
+      "duplicate_titles": [
+        "Customer Solutions Intern - ERP Software"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_061bd622e701",
+      "canonical_title": "Embedded Software Engineering Intern - 2026 Summer Intern - Boston - MA",
+      "canonical_company": "Shield AI",
+      "duplicate_job_ids": [
+        "job_38f35e2210e0"
+      ],
+      "duplicate_titles": [
+        "Embedded Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_09f304b0cac2",
+      "canonical_title": "Software Engineer - Intern",
+      "canonical_company": "ABC Fitness",
+      "duplicate_job_ids": [
+        "job_9315491c4f10"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_0a46e8093372",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "AssetMark",
+      "duplicate_job_ids": [
+        "job_4ee31bac4e61"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_0a7e7f7dc9f0",
+      "canonical_title": "RevOps AI Analyst Intern",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_1f86ead08f66"
+      ],
+      "duplicate_titles": [
+        "RevOps AI Analyst Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_0b12355e1c8d",
+      "canonical_title": "Decision Sciences Intern - Decision Sciences",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_4b5295805927"
+      ],
+      "duplicate_titles": [
+        "Intern – SQL Developer"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_0ce0ffce6ae9",
+      "canonical_title": "Data Analyst Project Intern - TikTok Shop - EMEA Data Science - 2026 Start - BS/MS）",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_fdf1265b3ae0"
+      ],
+      "duplicate_titles": [
+        "Data Analyst Project Intern - TikTok Shop - Data Science"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_0e2c41b5b674",
+      "canonical_title": "Intern - Software Engineering",
+      "canonical_company": "Magna",
+      "duplicate_job_ids": [
+        "job_c9c1248c12aa",
+        "job_e076f37b5faf"
+      ],
+      "duplicate_titles": [
+        "Intern - Software Engineering",
+        "Software Engineer"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_0f089f99200f",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "Magna",
+      "duplicate_job_ids": [
+        "job_d715c7a32d88",
+        "job_e28f3f64cff8"
+      ],
+      "duplicate_titles": [
+        "Intern - Software Engineering",
+        "Intern - Software Engineering"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_1378743170fc",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "Appian",
+      "duplicate_job_ids": [
+        "job_50d3c3566292"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_15382feeed3b",
+      "canonical_title": "Intern - Software Engineering - Typescript / Full Stack",
+      "canonical_company": "BigCommerce",
+      "duplicate_job_ids": [
+        "job_3ba98471696c"
+      ],
+      "duplicate_titles": [
+        "Intern – Software Engineering - TypeScript / Full Stack"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_16582f3627e4",
+      "canonical_title": "Backend Engineer – New Grad",
+      "canonical_company": "D3",
+      "duplicate_job_ids": [
+        "job_fad8df818923"
+      ],
+      "duplicate_titles": [
+        "Frontend Engineer – New Grad"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_19fc42c0bea2",
+      "canonical_title": "Procurement Intern",
+      "canonical_company": "KION Group",
+      "duplicate_job_ids": [
+        "job_577454177b63"
+      ],
+      "duplicate_titles": [
+        "Procurement Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_1a5a0d7b646a",
+      "canonical_title": "Data Engineer Intern",
+      "canonical_company": "Age of Learning",
+      "duplicate_job_ids": [
+        "job_45f032f2328d"
+      ],
+      "duplicate_titles": [
+        "Data Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_1add25230df0",
+      "canonical_title": "Research Scientist Intern - Multiple Teams 🎓",
+      "canonical_company": "Pindrop",
+      "duplicate_job_ids": [
+        "job_78f1b14d684d"
+      ],
+      "duplicate_titles": [
+        "Research Scientist Intern - AI/ML Research - Fraud - Authentication - Speech - and Video"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_1bb2c4044b71",
+      "canonical_title": "Advanced Development Software Intern - Cooper Lighting Solutions - Summer 2026",
+      "canonical_company": "Signify",
+      "duplicate_job_ids": [
+        "job_ecf61bcc5d38"
+      ],
+      "duplicate_titles": [
+        "Advanced Development Software Intern - Cooper Lighting Solutions"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_1d2f87013b37",
+      "canonical_title": "Software Engineer 1",
+      "canonical_company": "Abbott",
+      "duplicate_job_ids": [
+        "job_dc63157b8471"
+      ],
+      "duplicate_titles": [
+        "Software Engineer 1"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_1e7d600fc982",
+      "canonical_title": "Research Data Engineer 1",
+      "canonical_company": "University of Rochester",
+      "duplicate_job_ids": [
+        "job_f248cb44262d"
+      ],
+      "duplicate_titles": [
+        "Research Data Engineer I"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_1fa6d9afb398",
+      "canonical_title": "System and Firmware Engineer Intern 🎓",
+      "canonical_company": "Analog Devices",
+      "duplicate_job_ids": [
+        "job_61a0cf68f257"
+      ],
+      "duplicate_titles": [
+        "System and Firmware Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_20f6c89518fd",
+      "canonical_title": "Mobile Robots Intern - Mechatronics Vehicle Feature",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_64829b4a6ac9"
+      ],
+      "duplicate_titles": [
+        "Mobile Robots Intern - Mechatronics Vehicle Feature"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_21fb618f3e6e",
+      "canonical_title": "Associate Product Manager – New Grad",
+      "canonical_company": "IXL Learning",
+      "duplicate_job_ids": [
+        "job_9b7ba0ef3972",
+        "job_c393a52599ed"
+      ],
+      "duplicate_titles": [
+        "Software Engineer – New Grad",
+        "Software Developer – New Grad"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_26140f6aa3b6",
+      "canonical_title": "Software Engineer Project Intern - Recommendation Infrastructure - TikTok Video Social - 2026 Start - BS/MS",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_c5437aa782dc"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Project Intern - Recommendation Infrastructure"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_2900c3e927f2",
+      "canonical_title": "AI Engineer - Database Performance Knowledge",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_4b6a53816da9"
+      ],
+      "duplicate_titles": [
+        "AI Engineer Intern - Database Performance Knowledge"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_295ad5f24274",
+      "canonical_title": "Infotainment Software Engineering Intern",
+      "canonical_company": "Hyundai Motor Company",
+      "duplicate_job_ids": [
+        "job_bc03ea036f6e"
+      ],
+      "duplicate_titles": [
+        "Infotainment Software Engineering Intern 🛂"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_2c818527a2ba",
+      "canonical_title": "Product & Program Management Intern",
+      "canonical_company": "KION Group",
+      "duplicate_job_ids": [
+        "job_cef4d87240c8"
+      ],
+      "duplicate_titles": [
+        "Product & Program Management Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_2d26fc92866d",
+      "canonical_title": "Software Product Management Intern",
+      "canonical_company": "Trimble",
+      "duplicate_job_ids": [
+        "job_603c80ab4d3e"
+      ],
+      "duplicate_titles": [
+        "Software Product Management Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_2ee03f2e751f",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "Cognex",
+      "duplicate_job_ids": [
+        "job_5b0c657fe93b"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_2f1bf331effb",
+      "canonical_title": "2026 Fall - GRM - Data Science Intern - 4 Months",
+      "canonical_company": "Royal Bank of Canada",
+      "duplicate_job_ids": [
+        "job_8c91eaf04eb2"
+      ],
+      "duplicate_titles": [
+        "2026 Fall - GRM - Data Science Intern - 4 Months"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_3017d2cd7379",
+      "canonical_title": "Software Developer Intern",
+      "canonical_company": "Applied Materials",
+      "duplicate_job_ids": [
+        "job_742979836383"
+      ],
+      "duplicate_titles": [
+        "Software Developer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_3119ce300000",
+      "canonical_title": "AI/ML Research and Development Intern",
+      "canonical_company": "Pennsylvania State University",
+      "duplicate_job_ids": [
+        "job_517c0d52f56f"
+      ],
+      "duplicate_titles": [
+        "AI/ML Research and Development Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_3265b22271b5",
+      "canonical_title": "Automated Driving Machine Learning Intern 🎓",
+      "canonical_company": "Bosch Group",
+      "duplicate_job_ids": [
+        "job_48d88848c159"
+      ],
+      "duplicate_titles": [
+        "Automated Driving Machine Learning Intern 🎓"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_374788fe35e7",
+      "canonical_title": "Nucleic Acid Analytics Intern",
+      "canonical_company": "SonoThera",
+      "duplicate_job_ids": [
+        "job_e17ec81b0c00"
+      ],
+      "duplicate_titles": [
+        "Protein Analytics Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_3b0b207f15cc",
+      "canonical_title": "Histopathology Imaging Data Science Intern",
+      "canonical_company": "Genmab",
+      "duplicate_job_ids": [
+        "job_958eb923244a"
+      ],
+      "duplicate_titles": [
+        "Histopathology Imaging Data Science Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_3c33f159cf17",
+      "canonical_title": "Intern - Engineering Software - Integration and Test",
+      "canonical_company": "Magna",
+      "duplicate_job_ids": [
+        "job_5b02a90960bd",
+        "job_af3cf5b7464b"
+      ],
+      "duplicate_titles": [
+        "Intern - Engineering Software - Integration and Test",
+        "Intern Software Engineer - Integration and Test"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_3eed30044b49",
+      "canonical_title": "Software Engineer - Backend Internship",
+      "canonical_company": "Samsung",
+      "duplicate_job_ids": [
+        "job_87cf3ed7b7da"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Backend Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_4111a51bfc93",
+      "canonical_title": "Sports Quantitative Analyst Intern",
+      "canonical_company": "Super Technologies",
+      "duplicate_job_ids": [
+        "job_643e43a78284"
+      ],
+      "duplicate_titles": [
+        "Junior Sports Quantitative Analyst"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_413fa3788887",
+      "canonical_title": "AI Engineering Intern",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_8fc38ba71493"
+      ],
+      "duplicate_titles": [
+        "AI Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_43163666d4d7",
+      "canonical_title": "Software Engineer Intern - Perception Data",
+      "canonical_company": "Zoox",
+      "duplicate_job_ids": [
+        "job_45b625ef0a62"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern - Perception Data"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_4679f21d8b95",
+      "canonical_title": "AI Data Scientist Intern",
+      "canonical_company": "Ensono",
+      "duplicate_job_ids": [
+        "job_5af2438e7995"
+      ],
+      "duplicate_titles": [
+        "AI Data Scientist Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_47ec47aa5a15",
+      "canonical_title": "Software Engineering intern",
+      "canonical_company": "FireMon",
+      "duplicate_job_ids": [
+        "job_cd191e8c6413"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_481305a6a80c",
+      "canonical_title": "Intern - AI Software Development Team",
+      "canonical_company": "SitusAMC",
+      "duplicate_job_ids": [
+        "job_64dfae900f05"
+      ],
+      "duplicate_titles": [
+        "Intern - AI Software Development Team"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_4a77a31066b5",
+      "canonical_title": "Intern – Production",
+      "canonical_company": "Scout Motors",
+      "duplicate_job_ids": [
+        "job_81f5e913714d"
+      ],
+      "duplicate_titles": [
+        "Quality Systems Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_4afb37d158d3",
+      "canonical_title": "Software Engineer Intern",
+      "canonical_company": "Cadence Design Systems",
+      "duplicate_job_ids": [
+        "job_fe4f1775cd2f"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_50b82ec4dc4a",
+      "canonical_title": "Product Manager Intern",
+      "canonical_company": "Crunchtime",
+      "duplicate_job_ids": [
+        "job_d2aa2e295112"
+      ],
+      "duplicate_titles": [
+        "GTM Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_51c9d0476d7d",
+      "canonical_title": "Software QA Engineering - Intern",
+      "canonical_company": "ChargePoint",
+      "duplicate_job_ids": [
+        "job_5780218e6882"
+      ],
+      "duplicate_titles": [
+        "Software QA Engineering - Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_520f6eaa92df",
+      "canonical_title": "Frontend Engineering Intern (UI/UX Focus)",
+      "canonical_company": "ENFOS",
+      "duplicate_job_ids": [
+        "job_a3bc9e532e03"
+      ],
+      "duplicate_titles": [
+        "Frontend Engineering Intern - UI/UX Focus - Summer 2026"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_5286140d7b77",
+      "canonical_title": "Dark Wolf Intern",
+      "canonical_company": "Dark Wolf Solutions",
+      "duplicate_job_ids": [
+        "job_7aabbc81e294"
+      ],
+      "duplicate_titles": [
+        "Data and AI Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_52cb436fa66c",
+      "canonical_title": "Research Scientist Intern - AI/ML - Core Ads Growth - PhD",
+      "canonical_company": "Meta",
+      "duplicate_job_ids": [
+        "job_cb37ca954e60"
+      ],
+      "duplicate_titles": [
+        "Research Scientist Intern - AI/ML - Core Ads Growth 🎓"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_54e8c8e06667",
+      "canonical_title": "MBA Product Marketing Intern 🎓",
+      "canonical_company": "Nasuni",
+      "duplicate_job_ids": [
+        "job_b6b4ee14eaf9"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern - Python"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_55d7e1e72cca",
+      "canonical_title": "Machine Learning Engineer Intern",
+      "canonical_company": "Snap",
+      "duplicate_job_ids": [
+        "job_f717b0eb36f0"
+      ],
+      "duplicate_titles": [
+        "Machine Learning Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_5786e4d3753d",
+      "canonical_title": "Software Developer Internship",
+      "canonical_company": "Mercedes-Benz R&D",
+      "duplicate_job_ids": [
+        "job_a30b50ea98d0"
+      ],
+      "duplicate_titles": [
+        "Software Developer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_5a4149279e4d",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "Cadence",
+      "duplicate_job_ids": [
+        "job_5c9819d84fe1"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_5bb081d120a4",
+      "canonical_title": "AI Intern",
+      "canonical_company": "KION Group",
+      "duplicate_job_ids": [
+        "job_a5568d2d9d27"
+      ],
+      "duplicate_titles": [
+        "AI Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_60eeee9adb5e",
+      "canonical_title": "Automation & AI Technology Experience Intern",
+      "canonical_company": "ASM Global",
+      "duplicate_job_ids": [
+        "job_b020c154f2e4"
+      ],
+      "duplicate_titles": [
+        "Automation & AI Technology Experience Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_633b715a06ef",
+      "canonical_title": "Data Engineer Intern",
+      "canonical_company": "MGIC",
+      "duplicate_job_ids": [
+        "job_a31926f1dca6"
+      ],
+      "duplicate_titles": [
+        "Data Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_63f3f9270303",
+      "canonical_title": "Software Intern",
+      "canonical_company": "Cadence",
+      "duplicate_job_ids": [
+        "job_95b3e808d366"
+      ],
+      "duplicate_titles": [
+        "Software Intern 🎓"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_699759223990",
+      "canonical_title": "Software Modeling - Analysis - & Validation Co-op",
+      "canonical_company": "Draper",
+      "duplicate_job_ids": [
+        "job_c1b07f6b59bd"
+      ],
+      "duplicate_titles": [
+        "Software Modeling – & Validation Co-op - Analysis"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_6d7b84b32a05",
+      "canonical_title": "Test Engineering Intern",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_8e3d71361b3b"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_6d8ec2ab7117",
+      "canonical_title": "Software Development Intern",
+      "canonical_company": "DuCharme, McMillen & Associates",
+      "duplicate_job_ids": [
+        "job_c4b3792c7d68"
+      ],
+      "duplicate_titles": [
+        "Software Development Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_6dd37fec6be8",
+      "canonical_title": "Intern - Embedded Software, System, and Test Engineer 🇺🇸",
+      "canonical_company": "Motorola Solutions",
+      "duplicate_job_ids": [
+        "job_ae8217ce2dec"
+      ],
+      "duplicate_titles": [
+        "Intern - Embedded Software - System - and Test Engineer - 2026"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_71056f2227d7",
+      "canonical_title": "Software Engineer Intern",
+      "canonical_company": "Zendesk",
+      "duplicate_job_ids": [
+        "job_75d0f3be1886"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_7524616221ed",
+      "canonical_title": "Embedded Firmware Engineer Intern",
+      "canonical_company": "Trackonomy",
+      "duplicate_job_ids": [
+        "job_96805fca3118"
+      ],
+      "duplicate_titles": [
+        "Embedded Firmware Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_754d7eb731d2",
+      "canonical_title": "RSD Intern - Test Engineering",
+      "canonical_company": "KION Group",
+      "duplicate_job_ids": [
+        "job_b4fe3fca8a07"
+      ],
+      "duplicate_titles": [
+        "RSD Intern - Test Engineering"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_7af0d074271f",
+      "canonical_title": "Software Engineering Intern (Cyber focus) 🇺🇸",
+      "canonical_company": "Smiths Detection",
+      "duplicate_job_ids": [
+        "job_8098ccd1db13"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_7b0599c2e303",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "Particle Measuring Systems",
+      "duplicate_job_ids": [
+        "job_a5f61e1f3fa0"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_7bfc3811c074",
+      "canonical_title": "Agentic AI Applied Scientist Intern - NLP",
+      "canonical_company": "Five9",
+      "duplicate_job_ids": [
+        "job_c0478842833d"
+      ],
+      "duplicate_titles": [
+        "Software Developer AI Insights Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_874f2c8d25d8",
+      "canonical_title": "Junior Data Engineer",
+      "canonical_company": "Abbott",
+      "duplicate_job_ids": [
+        "job_e5d3e08c892f"
+      ],
+      "duplicate_titles": [
+        "Junior Data Engineer"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_8a96cbb2dba8",
+      "canonical_title": "Forward Deployed Software Engineer - Internship - Year at Palantir",
+      "canonical_company": "Palantir",
+      "duplicate_job_ids": [
+        "job_cad2ecc2fdeb"
+      ],
+      "duplicate_titles": [
+        "Forward Deployed Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_8eb50b1716e1",
+      "canonical_title": "Firmware Engineer Intern 🎓",
+      "canonical_company": "NXP Semiconductors",
+      "duplicate_job_ids": [
+        "job_f957d98cab64"
+      ],
+      "duplicate_titles": [
+        "Firmware Engineer Intern - Summer 2026"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_95e8ecaf8f76",
+      "canonical_title": "Mobile Robots Intern - AGV SLAM Research & Enhancement",
+      "canonical_company": "KION Group",
+      "duplicate_job_ids": [
+        "job_e08b83cf3a54"
+      ],
+      "duplicate_titles": [
+        "Mobile Robots Intern - AGV SLAM Research & Enhancement"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_9cf0d316d39e",
+      "canonical_title": "Cloud Analyst Intern - Summer 2026",
+      "canonical_company": "Skechers",
+      "duplicate_job_ids": [
+        "job_ebd324486b34"
+      ],
+      "duplicate_titles": [
+        "Cloud Analyst Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_a4fe2a762c99",
+      "canonical_title": "Software Engineer Intern",
+      "canonical_company": "Thales",
+      "duplicate_job_ids": [
+        "job_e47a4ff9ca87"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_a75feebb4289",
+      "canonical_title": "Data Science & Analytics Intern - NCS - BCIT",
+      "canonical_company": "City of Baltimore",
+      "duplicate_job_ids": [
+        "job_f3fe6ce02813"
+      ],
+      "duplicate_titles": [
+        "Data Science & Analytics Intern - Ncs - Bcit"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_a95ac40e38f7",
+      "canonical_title": "Intern - AI Research",
+      "canonical_company": "Samsung",
+      "duplicate_job_ids": [
+        "job_fdd5c0f5929a"
+      ],
+      "duplicate_titles": [
+        "Intern – AI Research 🎓"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_aa607f8ea540",
+      "canonical_title": "Software Engineer Project Intern - Model Infrastructure",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_adcaed2a7678"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Project Intern - Model Infrastructure - 2026 Start - BS/MS"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_b53ce534c3fb",
+      "canonical_title": "Data Analyst Developer Intern - Grm 🎓",
+      "canonical_company": "Royal Bank of Canada",
+      "duplicate_job_ids": [
+        "job_c45a3267fbfc"
+      ],
+      "duplicate_titles": [
+        "2026 Summer - GRM - Data Analyst Developer Intern - 8 Months"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_b6a658d0b450",
+      "canonical_title": "Data Engineer Intern",
+      "canonical_company": "Leidos",
+      "duplicate_job_ids": [
+        "job_e4ad9dd86156"
+      ],
+      "duplicate_titles": [
+        "Data Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_be9853046d7a",
+      "canonical_title": "Applied AI Experimentation Intern",
+      "canonical_company": "EQ Bank",
+      "duplicate_job_ids": [
+        "job_ed84e7980dc2"
+      ],
+      "duplicate_titles": [
+        "Applied AI Experimentation Intern - Finance Innovation Studio - 2026 Summer"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_c50d6d83d969",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "Cadence",
+      "duplicate_job_ids": [
+        "job_ee10a89420a9"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_d560be56fd54",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "Teledyne",
+      "duplicate_job_ids": [
+        "job_fc606a7fe4b9"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "exact_cleaned_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_de1d70e9516c",
+      "canonical_title": "Software Engineering Intern",
+      "canonical_company": "InvoiceCloud",
+      "duplicate_job_ids": [
+        "job_f3df1629d9d5"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern"
+      ]
+    },
+    {
+      "reason": "normalized_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_29352bed0e23",
+      "canonical_title": "Data Analyst Project Intern - TikTok Shop - FMCG - 2026 Start - BS/MS",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_afffe9626c47"
+      ],
+      "duplicate_titles": [
+        "Data Analyst Project Intern"
+      ]
+    },
+    {
+      "reason": "normalized_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_a96842a77711",
+      "canonical_title": "Software Engineer Project Intern - Content AI Infrastructure",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_293c61854a92"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Project Intern - Content AI Infrastructure - 2026 Start - BS/MS"
+      ]
+    },
+    {
+      "reason": "normalized_text",
+      "similarity": 1.0,
+      "canonical_job_id": "job_f3c7b3f71357",
+      "canonical_title": "Data Analyst Project Intern",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_d8483129c64b"
+      ],
+      "duplicate_titles": [
+        "Data Analyst Project Intern - TikTok Shop - User Product - 2026 Start - BS/MS"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9991,
+      "canonical_job_id": "job_126165b7809a",
+      "canonical_title": "Software Engineer – New Grad - Production Infrastructure",
+      "canonical_company": "Palantir",
+      "duplicate_job_ids": [
+        "job_f5dc20c4810d"
+      ],
+      "duplicate_titles": [
+        "Software Engineer – New Grad - Production Infrastructure"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9578,
+      "canonical_job_id": "job_126165b7809a",
+      "canonical_title": "Software Engineer – New Grad - Production Infrastructure",
+      "canonical_company": "Palantir",
+      "duplicate_job_ids": [
+        "job_0ac5b09b21be"
+      ],
+      "duplicate_titles": [
+        "Year at Palantir – Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9578,
+      "canonical_job_id": "job_126165b7809a",
+      "canonical_title": "Software Engineer – New Grad - Production Infrastructure",
+      "canonical_company": "Palantir",
+      "duplicate_job_ids": [
+        "job_8a96cbb2dba8"
+      ],
+      "duplicate_titles": [
+        "Forward Deployed Software Engineer - Internship - Year at Palantir"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9614,
+      "canonical_job_id": "job_126165b7809a",
+      "canonical_title": "Software Engineer – New Grad - Production Infrastructure",
+      "canonical_company": "Palantir",
+      "duplicate_job_ids": [
+        "job_d19b260fa8ca"
+      ],
+      "duplicate_titles": [
+        "Forward Deployed Software Engineer - Internship - Poland"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9613,
+      "canonical_job_id": "job_126165b7809a",
+      "canonical_title": "Software Engineer – New Grad - Production Infrastructure",
+      "canonical_company": "Palantir",
+      "duplicate_job_ids": [
+        "job_e7a707dadc77"
+      ],
+      "duplicate_titles": [
+        "Forward Deployed Software Engineer - Internship - France"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9979,
+      "canonical_job_id": "job_33cd6900043b",
+      "canonical_title": "Junior ML Platform Engineer - AD/ADAS - Internship",
+      "canonical_company": "Woven by Toyota",
+      "duplicate_job_ids": [
+        "job_e7a21ff0113b"
+      ],
+      "duplicate_titles": [
+        "LLM/VLM Engineer - ADAS - Internship"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9937,
+      "canonical_job_id": "job_290d1f7dbd71",
+      "canonical_title": "PhD Research Intern - Multi-Modal Foundation Encoder for Perception 🎓",
+      "canonical_company": "Zoox",
+      "duplicate_job_ids": [
+        "job_37d50909a8b7"
+      ],
+      "duplicate_titles": [
+        "PhD Research Intern - Offline Driving Intelligence 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9935,
+      "canonical_job_id": "job_290d1f7dbd71",
+      "canonical_title": "PhD Research Intern - Multi-Modal Foundation Encoder for Perception 🎓",
+      "canonical_company": "Zoox",
+      "duplicate_job_ids": [
+        "job_67a0ab3bd2d9"
+      ],
+      "duplicate_titles": [
+        "PhD Research Intern - Vision Language Action Models 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9961,
+      "canonical_job_id": "job_290d1f7dbd71",
+      "canonical_title": "PhD Research Intern - Multi-Modal Foundation Encoder for Perception 🎓",
+      "canonical_company": "Zoox",
+      "duplicate_job_ids": [
+        "job_1f053d613ac0"
+      ],
+      "duplicate_titles": [
+        "PhD Research Intern - Object Detection and Tracking 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9963,
+      "canonical_job_id": "job_290d1f7dbd71",
+      "canonical_title": "PhD Research Intern - Multi-Modal Foundation Encoder for Perception 🎓",
+      "canonical_company": "Zoox",
+      "duplicate_job_ids": [
+        "job_cce007084cd8"
+      ],
+      "duplicate_titles": [
+        "PhD Research Intern - Physical AI in Perception 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9963,
+      "canonical_job_id": "job_290d1f7dbd71",
+      "canonical_title": "PhD Research Intern - Multi-Modal Foundation Encoder for Perception 🎓",
+      "canonical_company": "Zoox",
+      "duplicate_job_ids": [
+        "job_43163666d4d7"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern - Perception Data"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9513,
+      "canonical_job_id": "job_e9ab7bd444bb",
+      "canonical_title": "Fall 2026 Co-Op - Software Engineer - AI/ML",
+      "canonical_company": "Cirrus Logic",
+      "duplicate_job_ids": [
+        "job_d5f361d35ad1"
+      ],
+      "duplicate_titles": [
+        "Intern - Embedded Machine Learning Engineer - AI/ML 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9657,
+      "canonical_job_id": "job_393d4d557761",
+      "canonical_title": "Human Machine Interface - HMI Software Engineering Intern - Fall 2026",
+      "canonical_company": "Hermeus",
+      "duplicate_job_ids": [
+        "job_e6299584be64"
+      ],
+      "duplicate_titles": [
+        "Modeling & Simulation Software Engineering Intern - Fall 2026"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9711,
+      "canonical_job_id": "job_393d4d557761",
+      "canonical_title": "Human Machine Interface - HMI Software Engineering Intern - Fall 2026",
+      "canonical_company": "Hermeus",
+      "duplicate_job_ids": [
+        "job_5ca17f356154"
+      ],
+      "duplicate_titles": [
+        "Hardware-In-the-Loop Software Engineering Intern - Fall 2026"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9672,
+      "canonical_job_id": "job_393d4d557761",
+      "canonical_title": "Human Machine Interface - HMI Software Engineering Intern - Fall 2026",
+      "canonical_company": "Hermeus",
+      "duplicate_job_ids": [
+        "job_52cdbaed9330"
+      ],
+      "duplicate_titles": [
+        "Flight Software Engineering Intern - Summer/Fall 2026"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9551,
+      "canonical_job_id": "job_64d7e22a410d",
+      "canonical_title": "Research Scientist Intern - E-commerce Recommendation - Multiple Teams 🎓",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_bae5ce8a36db"
+      ],
+      "duplicate_titles": [
+        "Research Scientist Intern - E-commerce Recommendation - LLM Applications 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.926,
+      "canonical_job_id": "job_faf4ecb26274",
+      "canonical_title": "AI2 Applied Machine Learning Scientist Co-op/Intern",
+      "canonical_company": "TD Bank",
+      "duplicate_job_ids": [
+        "job_57133c4268f3"
+      ],
+      "duplicate_titles": [
+        "AI2 Data Science Co-op/Intern - FALL 2026"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9945,
+      "canonical_job_id": "job_c4466153acf4",
+      "canonical_title": "Systems Integration and Test – Intern",
+      "canonical_company": "ChargePoint",
+      "duplicate_job_ids": [
+        "job_51c9d0476d7d"
+      ],
+      "duplicate_titles": [
+        "Software QA Engineering - Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9953,
+      "canonical_job_id": "job_c4466153acf4",
+      "canonical_title": "Systems Integration and Test – Intern",
+      "canonical_company": "ChargePoint",
+      "duplicate_job_ids": [
+        "job_f430ae11f253"
+      ],
+      "duplicate_titles": [
+        "Hardware Engineering Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9935,
+      "canonical_job_id": "job_24bdeab5441b",
+      "canonical_title": "AI Operations & Automation Intern",
+      "canonical_company": "Hello Fresh",
+      "duplicate_job_ids": [
+        "job_24e8da77d775"
+      ],
+      "duplicate_titles": [
+        "AI Operations & Automation Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9494,
+      "canonical_job_id": "job_9bcab9d5c8ca",
+      "canonical_title": "2026 Summer - GRM - Data Analyst Developer Intern - 8 Months",
+      "canonical_company": "RBC - Royal Bank of Canada",
+      "duplicate_job_ids": [
+        "job_b53ce534c3fb"
+      ],
+      "duplicate_titles": [
+        "Data Analyst Developer Intern - Grm 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9278,
+      "canonical_job_id": "job_cd305ccd1730",
+      "canonical_title": "Software Engineering Intern - AI Enablement",
+      "canonical_company": "Fortive",
+      "duplicate_job_ids": [
+        "job_82f8f4e07185"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern - AI Enablement"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9278,
+      "canonical_job_id": "job_cd305ccd1730",
+      "canonical_title": "Software Engineering Intern - AI Enablement",
+      "canonical_company": "Fortive",
+      "duplicate_job_ids": [
+        "job_ed43d7e3acf4"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern - AI Enablement"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9745,
+      "canonical_job_id": "job_f30a72597040",
+      "canonical_title": "2026 Fall - GRM - Data Scientist Intern - 4 Months",
+      "canonical_company": "RBC - Royal Bank of Canada",
+      "duplicate_job_ids": [
+        "job_d82bd2b57963"
+      ],
+      "duplicate_titles": [
+        "2026 Fall - GRM - Data Scientist Intern - 4 Months"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9923,
+      "canonical_job_id": "job_b9bfc236d8c7",
+      "canonical_title": "Applied AI Junior Web Developer - Ottawa - ON",
+      "canonical_company": "Trend Micro",
+      "duplicate_job_ids": [
+        "job_de3e99d57c63"
+      ],
+      "duplicate_titles": [
+        "Applied AI Junior Web Developer - Ottawa - ON"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9434,
+      "canonical_job_id": "job_e122fd82b10b",
+      "canonical_title": "Software Development Engineer 1",
+      "canonical_company": "GM financial",
+      "duplicate_job_ids": [
+        "job_72d902114bbd"
+      ],
+      "duplicate_titles": [
+        "Software Development Engineer 1"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9476,
+      "canonical_job_id": "job_4f0ca1831fc9",
+      "canonical_title": "Embedded Engineer 1",
+      "canonical_company": "Honeywell",
+      "duplicate_job_ids": [
+        "job_50b60ca7d13d"
+      ],
+      "duplicate_titles": [
+        "Embedded Engineer 1"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.984,
+      "canonical_job_id": "job_a204adcdeeb3",
+      "canonical_title": "Frontend Software Engineer Intern - Ads Measurement Signal and Privacy - 2026 Summer - BS/MS",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_ccdbbd9e9f83"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern - Ads Measurement Signal and Privacy - 2026 Summer - BS/MS"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9785,
+      "canonical_job_id": "job_22219e6438cf",
+      "canonical_title": "Engineer Intern",
+      "canonical_company": "Microchip Technology",
+      "duplicate_job_ids": [
+        "job_40faad8503a0"
+      ],
+      "duplicate_titles": [
+        "Intern - Engineer"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9801,
+      "canonical_job_id": "job_bd240fc5dfca",
+      "canonical_title": "Software Engineer 1",
+      "canonical_company": "Wyetech",
+      "duplicate_job_ids": [
+        "job_4d4aa93f5973"
+      ],
+      "duplicate_titles": [
+        "Software Engineer 0"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9331,
+      "canonical_job_id": "job_32e6d0ea0be9",
+      "canonical_title": "Algorithm Engineering Intern - Image Processing 🎓",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_b4f11ea6e374"
+      ],
+      "duplicate_titles": [
+        "Algorithm Engineering Intern - Image Processing 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9458,
+      "canonical_job_id": "job_32e6d0ea0be9",
+      "canonical_title": "Algorithm Engineering Intern - Image Processing 🎓",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_f0aa14509759"
+      ],
+      "duplicate_titles": [
+        "Algorithm Engineering Intern - Image Processing 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9705,
+      "canonical_job_id": "job_a5bc87b45746",
+      "canonical_title": "AI Enablement Associate",
+      "canonical_company": "Morgan Stanley",
+      "duplicate_job_ids": [
+        "job_e09a9dcadeed"
+      ],
+      "duplicate_titles": [
+        "AI Governance Associate"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.953,
+      "canonical_job_id": "job_b989cd20e487",
+      "canonical_title": "Accelerated Computing Solutions Analyst – Early Career 🎓",
+      "canonical_company": "Marvell",
+      "duplicate_job_ids": [
+        "job_2692091c77a1"
+      ],
+      "duplicate_titles": [
+        "Accelerated Computing Solutions Analyst – Early Career 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9464,
+      "canonical_job_id": "job_05d35c2dc67a",
+      "canonical_title": "Security Software Engineer Project Intern - Product Security - 2026 Start - BS/MS",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_85283ac4a1ba"
+      ],
+      "duplicate_titles": [
+        "Security Software Engineer Project Intern - Product Security - 2026 Start - BS/MS"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9815,
+      "canonical_job_id": "job_a6e0306b9e89",
+      "canonical_title": "Raytheon Future Ready Lab Intern - Thermal & Mechanical Test Lab",
+      "canonical_company": "RTX",
+      "duplicate_job_ids": [
+        "job_a215c20e0ed8"
+      ],
+      "duplicate_titles": [
+        "Raytheon Future Ready Lab Intern - Thermal & Mechanical Test Lab"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9633,
+      "canonical_job_id": "job_910d69cfb67c",
+      "canonical_title": "Machine Learning Engineer Graduate - TikTok Shop Global E-Commerce - Platform Governance - 2026 Start - PhD",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_16875b2c46c3"
+      ],
+      "duplicate_titles": [
+        "Machine Learning Engineer Graduate - TikTok Shop Global E-Commerce - Platform Governance - 2026 Start - BS/MS"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9214,
+      "canonical_job_id": "job_ffd107ba0347",
+      "canonical_title": "AI/ML Intern 🎓",
+      "canonical_company": "KLA",
+      "duplicate_job_ids": [
+        "job_117f03c4efc2"
+      ],
+      "duplicate_titles": [
+        "AI/ML Intern 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9568,
+      "canonical_job_id": "job_bad48df71e38",
+      "canonical_title": "Product Manager Co-op",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_b55410fbcdb2"
+      ],
+      "duplicate_titles": [
+        "Product Manager Co-op"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9725,
+      "canonical_job_id": "job_b9016d99eed8",
+      "canonical_title": "2026 Fall - CDO - Data Analyst - Enterprise Data Management Solutions Intern - 4 Months - Bedford - NS",
+      "canonical_company": "Royal Bank of Canada",
+      "duplicate_job_ids": [
+        "job_5cc8436ff38e"
+      ],
+      "duplicate_titles": [
+        "2026 Fall - CDO - Data Analyst - Enterprise Data Management Solutions Intern - 4 Months - Bedford - NS"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9701,
+      "canonical_job_id": "job_ce01df267cf6",
+      "canonical_title": "Entry Level Graphics Software Developer",
+      "canonical_company": "Leidos",
+      "duplicate_job_ids": [
+        "job_011969c8da3e"
+      ],
+      "duplicate_titles": [
+        "Entry Level Graphics Software Developer"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9839,
+      "canonical_job_id": "job_461cad144d3a",
+      "canonical_title": "Cryptography Intern",
+      "canonical_company": "Hewlett Packard (HP)",
+      "duplicate_job_ids": [
+        "job_a40cfdad6fcd"
+      ],
+      "duplicate_titles": [
+        "Cryptography Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9233,
+      "canonical_job_id": "job_5c9660e5ca6b",
+      "canonical_title": "Data Analyst Project Intern - Safety Model Operations - 2026 Start - BS/MS）",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_070770f38507"
+      ],
+      "duplicate_titles": [
+        "Data Analyst Project Intern - Safety Model Operations - 2026 Start - BS/MS）"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9309,
+      "canonical_job_id": "job_5c9660e5ca6b",
+      "canonical_title": "Data Analyst Project Intern - Safety Model Operations - 2026 Start - BS/MS）",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_bd0a90e6a64e"
+      ],
+      "duplicate_titles": [
+        "Data Analyst Project Intern - Safety Model Operations - 2026 Start（BS/MS）"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9687,
+      "canonical_job_id": "job_105df7625456",
+      "canonical_title": "IN_Associate 2_Generative AI Engineer_OC - D&A_Advisory_Bhubaneswar",
+      "canonical_company": "PwC",
+      "duplicate_job_ids": [
+        "job_3b04b8fc3b4a"
+      ],
+      "duplicate_titles": [
+        "IN_Associate 2_Generative AI Engineer_OC - D&A_Advisory_Bhubaneswar"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9897,
+      "canonical_job_id": "job_2326783a3e89",
+      "canonical_title": "Entry Level Software Engineer",
+      "canonical_company": "Amentum",
+      "duplicate_job_ids": [
+        "job_b4c42077ea35"
+      ],
+      "duplicate_titles": [
+        "Entry Level Software Engineer 🇺🇸"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9891,
+      "canonical_job_id": "job_58475c35c745",
+      "canonical_title": "Co-op - Software Engineer",
+      "canonical_company": "Fidelity Investments",
+      "duplicate_job_ids": [
+        "job_c4ab8fa2d540"
+      ],
+      "duplicate_titles": [
+        "Co-op – Software Engineer"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9524,
+      "canonical_job_id": "job_779873db5f04",
+      "canonical_title": "DXC Academic Programme - Degree Apprenticeship in Data & AI",
+      "canonical_company": "DXC Technology",
+      "duplicate_job_ids": [
+        "job_a31fb5ec22ac"
+      ],
+      "duplicate_titles": [
+        "DXC Academic Programme - Modern Apprenticeship in Data & AI"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9618,
+      "canonical_job_id": "job_df2d73b54cae",
+      "canonical_title": "Advisory - Deals - Forensic - Data Scientist - Experienced Associate - Kolkata",
+      "canonical_company": "PwC",
+      "duplicate_job_ids": [
+        "job_9c1b4ed5d45f"
+      ],
+      "duplicate_titles": [
+        "Advisory - Deals - Forensic - Data Scientist - Associate 2 - Kolkata"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9233,
+      "canonical_job_id": "job_64c95cbd390e",
+      "canonical_title": "Hospitality and Merchandise Insights Intern",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_7adccd881f0e"
+      ],
+      "duplicate_titles": [
+        "Hospitality and Merchandise Insights Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9879,
+      "canonical_job_id": "job_9df52000aeba",
+      "canonical_title": "Software Engineer Intern",
+      "canonical_company": "Parsons",
+      "duplicate_job_ids": [
+        "job_00643659adca"
+      ],
+      "duplicate_titles": [
+        "Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9498,
+      "canonical_job_id": "job_dcac3fc027b4",
+      "canonical_title": "Apprentice - AI & Automation Specialist - Data Governance Products - x/f/m",
+      "canonical_company": "Doctolib",
+      "duplicate_job_ids": [
+        "job_abb6433ed10e"
+      ],
+      "duplicate_titles": [
+        "AI / Machine Learning Research Intern - x/f/m"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9767,
+      "canonical_job_id": "job_728e7aa057d1",
+      "canonical_title": "Flight Software Engineer 1",
+      "canonical_company": "True Anomaly",
+      "duplicate_job_ids": [
+        "job_4bc5b47e5942"
+      ],
+      "duplicate_titles": [
+        "Software Engineer 1 - Full Stack"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9597,
+      "canonical_job_id": "job_58b33d24b835",
+      "canonical_title": "Business Data Analyst Project Intern - GBS - 2026 Start - BS/MS",
+      "canonical_company": "TikTok",
+      "duplicate_job_ids": [
+        "job_61f9598923e8"
+      ],
+      "duplicate_titles": [
+        "Business Data Analyst Project Intern - GBS - 2026 Start - BS/MS"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9435,
+      "canonical_job_id": "job_d017df15fff9",
+      "canonical_title": "Intern Digital Client",
+      "canonical_company": "Rockwell Automation",
+      "duplicate_job_ids": [
+        "job_154b192540c9"
+      ],
+      "duplicate_titles": [
+        "Intern Digital Client"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.979,
+      "canonical_job_id": "job_61653979a846",
+      "canonical_title": "Enterprise AI Intern",
+      "canonical_company": "Hewlett-Packard",
+      "duplicate_job_ids": [
+        "job_7f04edf9de19"
+      ],
+      "duplicate_titles": [
+        "Enterprise AI Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9488,
+      "canonical_job_id": "job_6ad0342089c9",
+      "canonical_title": "Data Analytics Intern",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_e7174a89f97e"
+      ],
+      "duplicate_titles": [
+        "Data Analytics Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9481,
+      "canonical_job_id": "job_b7f769982a72",
+      "canonical_title": "Procurement and Data Management Intern",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_845bebbb22d4"
+      ],
+      "duplicate_titles": [
+        "Procurement & Data Management Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.943,
+      "canonical_job_id": "job_9e1439311dcd",
+      "canonical_title": "Pharmaziepraktikantin im Bereich FBC FF NLP Production November 2027",
+      "canonical_company": "Sanofi",
+      "duplicate_job_ids": [
+        "job_d9d23381bc10"
+      ],
+      "duplicate_titles": [
+        "Pharmaziepraktikantin im Bereich FBC FF NLP Production November 2026"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9598,
+      "canonical_job_id": "job_1f5ea4e14afb",
+      "canonical_title": "Data Science Intern - Influencer Marketing AI Application",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_bb22d1303405"
+      ],
+      "duplicate_titles": [
+        "Data Science Intern - Influencer Marketing AI Application"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9764,
+      "canonical_job_id": "job_0c9d30056177",
+      "canonical_title": "AI Benchmark & Datasets Engineer/ Researcher Internship",
+      "canonical_company": "Pathway",
+      "duplicate_job_ids": [
+        "job_dc9a4680dc21"
+      ],
+      "duplicate_titles": [
+        "AI Benchmark & Datasets Engineer/ Researcher Internship"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9273,
+      "canonical_job_id": "job_9cc28973dfa1",
+      "canonical_title": "Intern Mission Optimization Engineer",
+      "canonical_company": "Planet",
+      "duplicate_job_ids": [
+        "job_6d7b84b32a05"
+      ],
+      "duplicate_titles": [
+        "Test Engineering Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9645,
+      "canonical_job_id": "job_4c1bc1fd3587",
+      "canonical_title": "System & Electronics Engineering",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_f48a0a5e495b"
+      ],
+      "duplicate_titles": [
+        "System & Electronics Engineering"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9537,
+      "canonical_job_id": "job_37a356e70aae",
+      "canonical_title": "Product Intern",
+      "canonical_company": "ABC Fitness",
+      "duplicate_job_ids": [
+        "job_0c6a45ed517a"
+      ],
+      "duplicate_titles": [
+        "Product Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.93,
+      "canonical_job_id": "job_19eac8dfb3c8",
+      "canonical_title": "Software Developer Internship",
+      "canonical_company": "Al Warren Oil Company",
+      "duplicate_job_ids": [
+        "job_ef51b0acedd9"
+      ],
+      "duplicate_titles": [
+        "Software Development Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9276,
+      "canonical_job_id": "job_19eac8dfb3c8",
+      "canonical_title": "Software Developer Internship",
+      "canonical_company": "Al Warren Oil Company",
+      "duplicate_job_ids": [
+        "job_6a2184270152"
+      ],
+      "duplicate_titles": [
+        "Software Development Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9276,
+      "canonical_job_id": "job_19eac8dfb3c8",
+      "canonical_title": "Software Developer Internship",
+      "canonical_company": "Al Warren Oil Company",
+      "duplicate_job_ids": [
+        "job_4d2675a97dfb"
+      ],
+      "duplicate_titles": [
+        "Software Development Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.974,
+      "canonical_job_id": "job_37a356e70aae",
+      "canonical_title": "Product Intern",
+      "canonical_company": "ABC Fitness",
+      "duplicate_job_ids": [
+        "job_3380716c2f4e"
+      ],
+      "duplicate_titles": [
+        "Product Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9784,
+      "canonical_job_id": "job_c0f2062c39a9",
+      "canonical_title": "Browser Software Engineer Intern",
+      "canonical_company": "Hewlett Packard (HP)",
+      "duplicate_job_ids": [
+        "job_e8060e927449"
+      ],
+      "duplicate_titles": [
+        "Browser Software Engineer Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9555,
+      "canonical_job_id": "job_3ac588ddc53c",
+      "canonical_title": "Product Manager Intern - Influencer Marketing",
+      "canonical_company": "Tencent",
+      "duplicate_job_ids": [
+        "job_e8c9bba91377"
+      ],
+      "duplicate_titles": [
+        "Product Manager Intern - Influencer Marketing"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9688,
+      "canonical_job_id": "job_5e460e758e68",
+      "canonical_title": "Research Intern - Applied Reinforcement Learning 🎓",
+      "canonical_company": "Centific",
+      "duplicate_job_ids": [
+        "job_b988c88152ac"
+      ],
+      "duplicate_titles": [
+        "Research Intern - Applied Reinforcement Learning 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9689,
+      "canonical_job_id": "job_26aea2a08d9d",
+      "canonical_title": "Radio Frequency Engineering Intern",
+      "canonical_company": "Nightwing Intelligence Solutions",
+      "duplicate_job_ids": [
+        "job_d9060678521c"
+      ],
+      "duplicate_titles": [
+        "Radio Frequency Engineering Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9462,
+      "canonical_job_id": "job_ba7ee2987201",
+      "canonical_title": "IT Intern - Hit",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_6fb671c322cc"
+      ],
+      "duplicate_titles": [
+        "IT Intern - Hit"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9211,
+      "canonical_job_id": "job_ba7ee2987201",
+      "canonical_title": "IT Intern - Hit",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_929202f40fe7"
+      ],
+      "duplicate_titles": [
+        "IT Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9456,
+      "canonical_job_id": "job_c39da8cfa0b3",
+      "canonical_title": "Full Stack Software Developer Intern - Summer 2026",
+      "canonical_company": "Parsons",
+      "duplicate_job_ids": [
+        "job_2f3bf37bc470"
+      ],
+      "duplicate_titles": [
+        "Full Stack Software Developer Intern - Summer 2026"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9546,
+      "canonical_job_id": "job_53ba4db9655e",
+      "canonical_title": "Technology Product Analyst Intern 🎓",
+      "canonical_company": "Copart",
+      "duplicate_job_ids": [
+        "job_99904209c2ce"
+      ],
+      "duplicate_titles": [
+        "Technology Product Analyst Intern 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9378,
+      "canonical_job_id": "job_d1e486b733fa",
+      "canonical_title": "Product Manager Intern",
+      "canonical_company": "Age of Learning",
+      "duplicate_job_ids": [
+        "job_1a5a0d7b646a"
+      ],
+      "duplicate_titles": [
+        "Data Engineer Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9638,
+      "canonical_job_id": "job_ab3fb19aa68e",
+      "canonical_title": "Failure Analysis and New Product Qualification Intern 🎓",
+      "canonical_company": "Lumentum",
+      "duplicate_job_ids": [
+        "job_714f7352647d"
+      ],
+      "duplicate_titles": [
+        "Failure Analysis and New Product Qualification Intern 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9669,
+      "canonical_job_id": "job_4f6da1ed95d3",
+      "canonical_title": "Entry Level Model Based Systems Engineer/Analyst",
+      "canonical_company": "Intuitive Research and Technology Corporation",
+      "duplicate_job_ids": [
+        "job_c14bb003b57e"
+      ],
+      "duplicate_titles": [
+        "Entry Level Model Based Systems Engineer/Analyst"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.981,
+      "canonical_job_id": "job_0e2a5fe84220",
+      "canonical_title": "Wireless Network Lab Intern 🎓",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_a159cffef636"
+      ],
+      "duplicate_titles": [
+        "Wireless Network Lab Intern 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9659,
+      "canonical_job_id": "job_494903524e77",
+      "canonical_title": "New Grads 2026 - Software Engineer - Computer Vision",
+      "canonical_company": "WeRide",
+      "duplicate_job_ids": [
+        "job_0188c78d1f60"
+      ],
+      "duplicate_titles": [
+        "New Grads 2026 - Software Engineer - Algorithm 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9589,
+      "canonical_job_id": "job_494903524e77",
+      "canonical_title": "New Grads 2026 - Software Engineer - Computer Vision",
+      "canonical_company": "WeRide",
+      "duplicate_job_ids": [
+        "job_f52efea16b4f"
+      ],
+      "duplicate_titles": [
+        "New Grads 2026 - General Software Engineer"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9606,
+      "canonical_job_id": "job_494903524e77",
+      "canonical_title": "New Grads 2026 - Software Engineer - Computer Vision",
+      "canonical_company": "WeRide",
+      "duplicate_job_ids": [
+        "job_66054268d6cf"
+      ],
+      "duplicate_titles": [
+        "New Grads 2026 - Data Engineer"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9383,
+      "canonical_job_id": "job_decbf7a047b8",
+      "canonical_title": "Hunyuan Multimodal Algorithm Researcher Intern",
+      "canonical_company": "Tencent",
+      "duplicate_job_ids": [
+        "job_c84142285bd6"
+      ],
+      "duplicate_titles": [
+        "Hunyuan Multimodal Algorithm Researcher Intern - Omni Modal"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9354,
+      "canonical_job_id": "job_bd5ba6df1fc5",
+      "canonical_title": "Generative AI Research Intern 🎓",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_571068db22cd"
+      ],
+      "duplicate_titles": [
+        "Generative AI Research Intern 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9296,
+      "canonical_job_id": "job_0fd21814629d",
+      "canonical_title": "Hunyuan Multimodal Reinforcement Learning Research Intern 🎓",
+      "canonical_company": "Tencent",
+      "duplicate_job_ids": [
+        "job_897359d26f33"
+      ],
+      "duplicate_titles": [
+        "Hunyuan Multimodal Reinforcement Learning Research Intern 🎓"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9437,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_2900c3e927f2"
+      ],
+      "duplicate_titles": [
+        "AI Engineer - Database Performance Knowledge"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9481,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_7a7776e25896"
+      ],
+      "duplicate_titles": [
+        "Engineering Intern - Streaming Observability"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9346,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_3743eac5da74"
+      ],
+      "duplicate_titles": [
+        "Software Development Intern - Vector AI"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9213,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_a435b47045c3"
+      ],
+      "duplicate_titles": [
+        "Customer Success AI Insights Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9368,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_38626e5d0ea0"
+      ],
+      "duplicate_titles": [
+        "Software Development Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9311,
+      "canonical_job_id": "job_e7936cd68e40",
+      "canonical_title": "Engine Developer Intern - Gaming",
+      "canonical_company": "Tencent",
+      "duplicate_job_ids": [
+        "job_5829c643401c"
+      ],
+      "duplicate_titles": [
+        "Engine Developer Intern - Gaming"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9277,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_0a7e7f7dc9f0"
+      ],
+      "duplicate_titles": [
+        "RevOps AI Analyst Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9526,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_fe6eb6c1abd0"
+      ],
+      "duplicate_titles": [
+        "Product Engineer Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9526,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_35f264ecc77c"
+      ],
+      "duplicate_titles": [
+        "PMO Automation Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9526,
+      "canonical_job_id": "job_b82ff7138133",
+      "canonical_title": "Engineering Intern - Pipeline Observability and Lineage",
+      "canonical_company": "Actian",
+      "duplicate_job_ids": [
+        "job_413fa3788887"
+      ],
+      "duplicate_titles": [
+        "AI Engineering Intern"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9644,
+      "canonical_job_id": "job_f559fcdd51c2",
+      "canonical_title": "Software Engineer 1 - Frontend - Growth",
+      "canonical_company": "Whoop",
+      "duplicate_job_ids": [
+        "job_4ff9f1125a05"
+      ],
+      "duplicate_titles": [
+        "Android Engineer 1 - Growth"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9749,
+      "canonical_job_id": "job_872bcc2b57af",
+      "canonical_title": "AI Data Associate",
+      "canonical_company": "Centific",
+      "duplicate_job_ids": [
+        "job_cdf38909be95"
+      ],
+      "duplicate_titles": [
+        "AI Data Associate"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.922,
+      "canonical_job_id": "job_c24f7f234615",
+      "canonical_title": "Product Manager Intern - Game Accounts and Studio Partnership",
+      "canonical_company": "Tencent",
+      "duplicate_job_ids": [
+        "job_6de23db3f444"
+      ],
+      "duplicate_titles": [
+        "Product Manager Intern - Game Accounts and Studio Partnership"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9201,
+      "canonical_job_id": "job_dd87d8933797",
+      "canonical_title": "Software Engineering Intern - PC Game Client Development",
+      "canonical_company": "↳",
+      "duplicate_job_ids": [
+        "job_79f3fceb8f1e"
+      ],
+      "duplicate_titles": [
+        "Software Engineering Intern - PC Game Client Development"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9359,
+      "canonical_job_id": "job_c9ee1f5e97e5",
+      "canonical_title": "Machine Learning Intern - 2026",
+      "canonical_company": "NVIDIA",
+      "duplicate_job_ids": [
+        "job_fa83f99e47ac"
+      ],
+      "duplicate_titles": [
+        "Machine Learning Intern - 2026"
+      ]
+    },
+    {
+      "reason": "near_duplicate",
+      "similarity": 0.9507,
+      "canonical_job_id": "job_baee93aec8bd",
+      "canonical_title": "Software Embedded Engineering Intern",
+      "canonical_company": "TripleRing",
+      "duplicate_job_ids": [
+        "job_70c9eb7d8a92"
+      ],
+      "duplicate_titles": [
+        "Data Scientist Intern"
+      ]
+    }
+  ]
+}

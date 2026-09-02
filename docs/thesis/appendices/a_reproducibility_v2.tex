@@ -1,0 +1,53 @@
+\chapter{Reproducibility Record}
+\label{app:reproducibility}
+
+This appendix records the local paths and conditions needed to inspect or reproduce the claims in this report. It is intentionally not a promise that every command will run unchanged on another machine. The source tree has no commit at the audited branch, large model files are local, and the report has no container or lock-file artifact. A future reproducibility release should address those gaps.
+
+\section{Environment evidence}
+
+The run manifest at \codepath{SkillLLM\_v2\_stage2/reports/skillllm\_v2/research\_refresh/run\_manifest.json} records Linux, Python 3.12.3, PyTorch 2.6.0+cu124, CUDA availability, and two NVIDIA GeForce RTX 3090 devices with 24 GiB memory each. The training summary at \codepath{artifacts/skillllm\_v2/mistral\_lora/model/training\_summary.json} records world size 2 and epoch 80. The active full-run YAML is \codepath{configs/skillllm\_v2\_training\_80ep\_2gpu.yaml}. These artifacts describe the recorded run; any new run should write a fresh manifest rather than inheriting this metadata.
+
+The package list in \codepath{requirements.txt} names PyTorch, LLaMA-Factory, GLiNER, NetworkX, scikit-learn, YAML, and related libraries. It is not a complete platform lock. In particular, the exact CUDA driver, compiler, PyPI resolution, installed Git dependency commits, tokenizer assets, and model download state should be captured in a future environment manifest.
+
+\section{Data and source checkpoints}
+
+The dataset root is \codepath{data/source/skillspan\_hf/}. Its three JSON files have 4,800, 3,174, and 3,569 lines for train, development, and test. The dataset README contains its attribution and licence. Before a rerun, record a SHA-256 fingerprint of each JSON file and a manifest identifying the 974-document evaluation path used by the cached Mistral artifacts. This report does not reconstruct that subset because the current artifacts do not explain it sufficiently.
+
+The Mistral training code is \codepath{src/skillllm\_v2/train/mistral\_lora\_trainer.py}; SFT data construction is \codepath{src/skillllm\_v2/train/build\_mistral\_sft\_data.py}. The primary adapter/checkpoint assets are stored under \codepath{artifacts/skillllm\_v2/mistral\_lora/model/}. \inlinecode{training_summary.json} identifies the model path as \codepath{models/mistral-small-3.1-24b-instruct-2503}. This report never modifies any of those model or experiment artifacts.
+
+\section{Representative commands}
+
+The repository's shell scripts provide the authoritative launch interfaces. The following commands are representative inspection and validation commands; they should be run from the Stage-2 root after activating a compatible project environment and setting `PYTHONPATH=src`.
+
+\begin{verbatim}
+cd "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2"
+export PYTHONPATH=src
+export CUDA_VISIBLE_DEVICES=0,1
+export TOKENIZERS_PARALLELISM=false
+export WANDB_DISABLED=true
+
+pytest -q tests/skillllm_v2 tests/test_skillllm_v2_stage2.py
+python -m skillllm_v2.eval.prediction_provenance_check
+python -m skillllm_v2.eval.run_safe_wrapper \
+  --config configs/skillllm_v2_training_80ep_2gpu.yaml
+\end{verbatim}
+
+The final command re-evaluates wrapper components against cached anchor predictions; it does not retrain Mistral. Training is consequential GPU work and should be launched only through the project scripts/configuration after confirming model paths, storage, and a fresh experiment ID. The report's metrics are the persisted historical artifacts, not outputs generated while typesetting this document.
+
+\section{Artifact verification sequence}
+
+The following sequence maintains the report's claim boundary:
+
+\begin{enumerate}
+  \item Inspect the configuration, data paths, and model/training summary.
+  \item Confirm that primary Mistral `metrics.json` says fallback was false.
+  \item Read the primary prediction and metric artifacts before generating tables.
+  \item Run the provenance check and preserve its output with the report revision.
+  \item Treat any status file ending in or describing a smoke operation as smoke evidence only.
+  \item Regenerate wrapper metrics on the same manifest before comparing a code change with the anchor.
+  \item Version source, configuration, dataset fingerprints, and generated tables together before external release.
+\end{enumerate}
+
+\section{Tests and their interpretation}
+
+The focused test suite covers schemas, Mistral SFT-data construction, BERT/GLiNER smoke paths, candidate merging, boundary refinement, calibration, taxonomy linking, profile summarisation, cached context, graph construction, job matching, course recommendation, pipeline gates, and non-regression selection. A current report-verification run passed 50 tests in 1.34 seconds under Python 3.13.12. That runtime is separate from the recorded training environment. A passing unit test demonstrates an invariant or small example; it does not replace the full-test extraction metrics, linking labels, ranking labels, or a deployment evaluation. The distinction should remain visible in automated continuous integration as well as in the thesis.

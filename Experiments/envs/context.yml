@@ -1,0 +1,9 @@
+name: skill-bench-context
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - setuptools<81
+  - wheel

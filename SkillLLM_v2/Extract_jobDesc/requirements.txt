@@ -1,0 +1,10 @@
+playwright>=1.42.0
+beautifulsoup4>=4.12.3
+pandas>=2.2.1
+openai>=1.14.2
+python-dotenv>=1.0.1
+requests
+transformers>=4.44.0
+datasets>=2.21.0
+accelerate>=0.34.0
+torch>=2.2.0

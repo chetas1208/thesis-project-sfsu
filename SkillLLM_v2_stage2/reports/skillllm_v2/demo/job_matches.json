@@ -1,0 +1,42 @@
+[
+  {
+    "job_id": "ml-platform",
+    "match_score": 0.5800000000000001,
+    "matched_skills": [
+      "Docker",
+      "Python",
+      "communication"
+    ],
+    "missing_skills": [
+      "AWS"
+    ],
+    "critical_missing_skills": [
+      "AWS"
+    ],
+    "evidence": [
+      "required coverage=0.50",
+      "preferred coverage=1.00"
+    ],
+    "recommendation_reason": "Fit depends on closing missing skill gaps"
+  },
+  {
+    "job_id": "data-analyst",
+    "match_score": 0.20500000000000002,
+    "matched_skills": [
+      "communication"
+    ],
+    "missing_skills": [
+      "Excel",
+      "SQL"
+    ],
+    "critical_missing_skills": [
+      "Excel",
+      "SQL"
+    ],
+    "evidence": [
+      "required coverage=0.00",
+      "preferred coverage=1.00"
+    ],
+    "recommendation_reason": "Fit depends on closing missing skill gaps"
+  }
+]

@@ -1,0 +1,246 @@
+{
+  "dataset": {
+    "root": "data/source/skillspan_hf",
+    "split": "test",
+    "doc_count": 974
+  },
+  "raw_mistral_metrics": {
+    "exact_span_precision": 0.6735057983942908,
+    "exact_span_recall": 0.6666666666666666,
+    "exact_span_f1": 0.6700687818948303,
+    "partial_span_precision": 0.8180196253345228,
+    "partial_span_recall": 0.8097130242825608,
+    "partial_span_f1": 0.8138451297980919,
+    "token_precision": 0.7747865517382246,
+    "token_recall": 0.8014367208958377,
+    "token_f1": 0.7878863409770688,
+    "hard_skill_f1": 0.7264500205676676,
+    "soft_skill_f1": 0.6040462427745664,
+    "macro_f1": 0.665248131671117,
+    "micro_f1": 0.6700687818948303
+  },
+  "stages": {
+    "mistral_boundary": {
+      "label": "Mistral + Boundary Refiner",
+      "doc_count": 974,
+      "metrics": {
+        "exact_span_precision": 0.6735057983942908,
+        "exact_span_recall": 0.6666666666666666,
+        "exact_span_f1": 0.6700687818948303,
+        "partial_span_precision": 0.8180196253345228,
+        "partial_span_recall": 0.8097130242825608,
+        "partial_span_f1": 0.8138451297980919,
+        "token_precision": 0.7747865517382246,
+        "token_recall": 0.8014367208958377,
+        "token_f1": 0.7878863409770688,
+        "hard_skill_f1": 0.7264500205676676,
+        "soft_skill_f1": 0.6040462427745664,
+        "macro_f1": 0.665248131671117,
+        "micro_f1": 0.6700687818948303
+      },
+      "deltas_vs_raw_mistral": {
+        "exact_span_f1": 0.0,
+        "exact_span_precision": 0.0,
+        "exact_span_recall": 0.0,
+        "partial_span_f1": 0.0,
+        "token_f1": 0.0,
+        "hard_skill_f1": 0.0,
+        "soft_skill_f1": 0.0,
+        "macro_f1": 0.0
+      },
+      "counts": {
+        "kept": 1510,
+        "exact_gains": 0,
+        "exact_losses": 0,
+        "removed": 0
+      },
+      "hard_skill": {
+        "raw_mistral": {
+          "tp": 883,
+          "fp": 374,
+          "fn": 291,
+          "precision": 0.7024661893396977,
+          "recall": 0.752129471890971,
+          "f1": 0.7264500205676676
+        },
+        "wrapper": {
+          "tp": 883,
+          "fp": 374,
+          "fn": 291,
+          "precision": 0.7024661893396977,
+          "recall": 0.752129471890971,
+          "f1": 0.7264500205676676
+        }
+      },
+      "soft_skill": {
+        "raw_mistral": {
+          "tp": 627,
+          "fp": 358,
+          "fn": 464,
+          "precision": 0.6365482233502539,
+          "recall": 0.5747021081576535,
+          "f1": 0.6040462427745664
+        },
+        "wrapper": {
+          "tp": 627,
+          "fp": 358,
+          "fn": 464,
+          "precision": 0.6365482233502539,
+          "recall": 0.5747021081576535,
+          "f1": 0.6040462427745664
+        }
+      },
+      "regression_case_count": 0
+    },
+    "mistral_gliner_taxonomy": {
+      "label": "Mistral + GLiNER + Taxonomy",
+      "doc_count": 974,
+      "metrics": {
+        "exact_span_precision": 0.6721457130164371,
+        "exact_span_recall": 0.667991169977925,
+        "exact_span_f1": 0.6700620017714791,
+        "partial_span_precision": 0.8169702354509107,
+        "partial_span_recall": 0.8119205298013245,
+        "partial_span_f1": 0.8144375553587245,
+        "token_precision": 0.773494957726393,
+        "token_recall": 0.8021762095922248,
+        "token_f1": 0.7875745475289114,
+        "hard_skill_f1": 0.7280197206244866,
+        "soft_skill_f1": 0.6023054755043228,
+        "macro_f1": 0.6651625980644047,
+        "micro_f1": 0.6700620017714791
+      },
+      "deltas_vs_raw_mistral": {
+        "exact_span_f1": -6.78012335120215e-06,
+        "exact_span_precision": -0.0013600853778537036,
+        "exact_span_recall": 0.0013245033112583293,
+        "partial_span_f1": 0.0005924255606326589,
+        "token_f1": -0.0003117934481573492,
+        "hard_skill_f1": 0.0015697000568190012,
+        "soft_skill_f1": -0.0017407672702436372,
+        "macro_f1": -8.553360671226251e-05
+      },
+      "counts": {
+        "kept": 1508,
+        "exact_gains": 5,
+        "exact_losses": 2,
+        "removed": 2,
+        "added_by_dictionary": 16,
+        "added_by_gliner": 3,
+        "boundary_modified": 2
+      },
+      "hard_skill": {
+        "raw_mistral": {
+          "tp": 883,
+          "fp": 374,
+          "fn": 291,
+          "precision": 0.7024661893396977,
+          "recall": 0.752129471890971,
+          "f1": 0.7264500205676676
+        },
+        "wrapper": {
+          "tp": 886,
+          "fp": 374,
+          "fn": 288,
+          "precision": 0.7031746031746032,
+          "recall": 0.7546848381601363,
+          "f1": 0.7280197206244866
+        }
+      },
+      "soft_skill": {
+        "raw_mistral": {
+          "tp": 627,
+          "fp": 358,
+          "fn": 464,
+          "precision": 0.6365482233502539,
+          "recall": 0.5747021081576535,
+          "f1": 0.6040462427745664
+        },
+        "wrapper": {
+          "tp": 627,
+          "fp": 364,
+          "fn": 464,
+          "precision": 0.6326942482341069,
+          "recall": 0.5747021081576535,
+          "f1": 0.6023054755043228
+        }
+      },
+      "regression_case_count": 2
+    },
+    "full_cag_graph": {
+      "label": "Full CAG/Graph",
+      "doc_count": 974,
+      "metrics": {
+        "exact_span_precision": 0.6742424242424242,
+        "exact_span_recall": 0.667991169977925,
+        "exact_span_f1": 0.6711022399645153,
+        "partial_span_precision": 0.81951871657754,
+        "partial_span_recall": 0.8119205298013245,
+        "partial_span_f1": 0.8157019294743845,
+        "token_precision": 0.773494957726393,
+        "token_recall": 0.8021762095922248,
+        "token_f1": 0.7875745475289114,
+        "hard_skill_f1": 0.7286184210526316,
+        "soft_skill_f1": 0.6037554164660568,
+        "macro_f1": 0.6661869187593442,
+        "micro_f1": 0.6711022399645153
+      },
+      "deltas_vs_raw_mistral": {
+        "exact_span_f1": 0.0010334580696850226,
+        "exact_span_precision": 0.0007366258481333876,
+        "exact_span_recall": 0.0013245033112583293,
+        "partial_span_f1": 0.0018567996762925976,
+        "token_f1": -0.0003117934481573492,
+        "hard_skill_f1": 0.002168400484964028,
+        "soft_skill_f1": -0.00029082630850962854,
+        "macro_f1": 0.0009387870882272553
+      },
+      "counts": {
+        "kept": 1508,
+        "exact_gains": 5,
+        "exact_losses": 2,
+        "removed": 2,
+        "added_by_dictionary": 16,
+        "added_by_gliner": 3,
+        "boundary_modified": 2
+      },
+      "hard_skill": {
+        "raw_mistral": {
+          "tp": 883,
+          "fp": 374,
+          "fn": 291,
+          "precision": 0.7024661893396977,
+          "recall": 0.752129471890971,
+          "f1": 0.7264500205676676
+        },
+        "wrapper": {
+          "tp": 886,
+          "fp": 372,
+          "fn": 288,
+          "precision": 0.7042925278219396,
+          "recall": 0.7546848381601363,
+          "f1": 0.7286184210526316
+        }
+      },
+      "soft_skill": {
+        "raw_mistral": {
+          "tp": 627,
+          "fp": 358,
+          "fn": 464,
+          "precision": 0.6365482233502539,
+          "recall": 0.5747021081576535,
+          "f1": 0.6040462427745664
+        },
+        "wrapper": {
+          "tp": 627,
+          "fp": 359,
+          "fn": 464,
+          "precision": 0.6359026369168357,
+          "recall": 0.5747021081576535,
+          "f1": 0.6037554164660568
+        }
+      },
+      "regression_case_count": 2
+    }
+  }
+}

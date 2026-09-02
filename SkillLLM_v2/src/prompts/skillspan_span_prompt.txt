@@ -1,0 +1,17 @@
+Extract every hard skill and soft skill mention from the source text.
+
+Return valid JSON only with this exact schema:
+{"skills":[{"text":"exact substring from source","label":"hard_skill|soft_skill","start":0,"end":0}]}
+
+Rules:
+1. Copy each predicted `text` exactly from the source text.
+2. Do not paraphrase, normalize, expand, or rewrite any skill mention.
+3. `start` and `end` use zero-based character offsets and `end` is exclusive.
+4. Every `label` must be either `hard_skill` or `soft_skill`.
+5. If no skills exist, return `{"skills":[]}`.
+6. Return JSON only. No markdown fences, no explanations, no extra keys.
+
+Source text:
+{{ text }}
+
+JSON:

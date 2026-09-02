@@ -1,0 +1,9 @@
+\begin{tikzpicture}[node distance=5mm]
+\node[data] (skillspan) {Local SkillSpan JSON\\tokens and BIO-style tags};
+\node[impl,below=of skillspan] (splits) {Train / development / test\\4,800 / 3,174 / 3,569 rows};
+\node[impl,below=of splits] (sft) {SFT JSONL construction\\instruction + text + gold skills};
+\node[impl,below=of sft] (train) {4-bit Mistral + LoRA\\two-process DDP training};
+\node[impl,below=of train] (adapter) {Persist adapter, tokenizer,\\training summary, checkpoints};
+\node[impl,below=of adapter] (eval) {Deterministic generation, span alignment,\\persisted predictions and metrics};
+\draw[flow] (skillspan)--(splits); \draw[flow] (splits)--(sft); \draw[flow] (sft)--(train); \draw[flow] (train)--(adapter); \draw[flow] (adapter)--(eval);
+\end{tikzpicture}

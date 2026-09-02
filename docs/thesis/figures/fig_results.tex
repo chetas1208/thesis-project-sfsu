@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\begin{axis}[
+  ybar,bar width=10pt,width=0.94\textwidth,height=6.5cm,
+  ymin=0,ymax=0.8,ylabel={F1},
+  symbolic x coords={BERT,GLiNER,Raw Mistral,Full wrapper},
+  xtick=data,xticklabel style={rotate=18,anchor=east},
+  legend style={at={(0.5,-0.24)},anchor=north,legend columns=2},
+  nodes near coords, every node near coord/.append style={font=\scriptsize,rotate=90,anchor=west},
+  enlarge x limits=0.16]
+\addplot[fill=anchor] coordinates {(BERT,0.059150) (GLiNER,0.075833) (Raw Mistral,0.670069) (Full wrapper,0.671102)};
+\addplot[fill=implemented] coordinates {(BERT,0.274922) (GLiNER,0.114409) (Raw Mistral,0.787886) (Full wrapper,0.787575)};
+\legend{Exact span F1,Token F1}
+\end{axis}
+\end{tikzpicture}

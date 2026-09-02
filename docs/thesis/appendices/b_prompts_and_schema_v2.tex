@@ -1,0 +1,47 @@
+\chapter{Prompt and Data-Contract Details}
+\label{app:prompt-schema}
+
+\section{Extraction prompt design}
+
+The Mistral extractor uses a system message stating that it identifies explicit skill spans from resumes, job postings, and professional text and must return valid JSON only. The user prompt then directs the model to extract exact surface spans, forbid paraphrase and unstated inference, include technical and soft skills only when explicitly mentioned, ignore titles and generic responsibilities unless explicitly skills, and use an empty list when no skills occur. It asks for objects with `text` and `label` fields.
+
+The training renderer constructs the assistant target from the local gold spans as compact JSON. It uses the text and label but not the offset in the target. This means that source alignment is not delegated to the model output schema: after generation, \inlinecode{find_offsets} locates the predicted text in the input and the validator confirms a coherent candidate. The design is conservative. A model output that paraphrases a true skill is not silently credited as an exact span.
+
+\section{Skill candidate contract}
+
+The following abstract JSON record mirrors \inlinecode{SkillCandidate.to_dict()} and its validator. It is a representation schema, not a record copied from a user.
+
+\begin{verbatim}
+{
+  "surface_form": "Python",
+  "label": "HARD_SKILL",
+  "start": 18,
+  "end": 24,
+  "source": "mistral",
+  "confidence": 0.86,
+  "evidence": "experience with Python and SQL",
+  "canonical_skill_id": "optional-id-or-null",
+  "canonical_skill_name": "optional-name-or-null",
+  "metadata": {
+    "raw_label": "HARD_SKILL"
+  }
+}
+\end{verbatim}
+
+The validator restricts labels to \inlinecode{HARD_SKILL} and \inlinecode{SOFT_SKILL}, source to \inlinecode{bert}, \inlinecode{mistral}, \inlinecode{gliner}, or \inlinecode{dictionary}, confidence to the inclusive interval $[0,1]$, and offsets to a valid pair. A merger can add \inlinecode{metadata.sources} to show that several candidates support the same retained record. A linker can fill canonical fields. Neither operation should erase the original source information.
+
+\section{Profile and context contract}
+
+\inlinecode{ProfileSummary} stores a user identifier, generation time, an ordered list of skill facts, target roles, missing skills, course history, preferences, and conflict notes. A fact stores a confidence and one or more \inlinecode{Evidence} items. The cached context packet supplies packet type, cache policy, payload, and content-hash fields. Its policy contains three lists:
+
+\begin{verbatim}
+cag:   profile_summary, skill_memory, taxonomy_aliases, course_catalog_summary
+rag:   job_postings, scraped_descriptions
+graph: user_skill_job_course_paths
+\end{verbatim}
+
+This schema states which category an item belongs to; it does not by itself implement database persistence, authorization, or automatic invalidation. Applications consuming it should surface user controls and treat the hash as an integrity/debugging aid rather than a security boundary.
+
+\section{Matching and recommendation output contract}
+
+The job matcher returns a job identifier, a score in $[0,1]$, matched skills, missing skills, critical missing skills, evidence strings, and a short explanation label. The gap detector emits a list of skill/gap-type pairs. The course recommender returns a course identifier/name, skills it covers, a gap-coverage ratio, a score, and a reason. These outputs contain transparent intermediate values, which is preferable to a bare score in a research prototype. They should not be interpreted as a decision on employment eligibility or a statement of a user's competence.

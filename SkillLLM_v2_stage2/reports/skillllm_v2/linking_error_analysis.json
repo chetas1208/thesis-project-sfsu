@@ -1,0 +1,3198 @@
+{
+  "alias_table_entries": 696,
+  "stages": [
+    {
+      "stage_id": "mistral_gliner_taxonomy",
+      "label": "Mistral + GLiNER + Taxonomy",
+      "total_predictions": 2469,
+      "before_linking_coverage": 0.0692588092345079,
+      "after_linking_coverage": 0.8821385176184691,
+      "tp_count": 1542,
+      "tp_linking_coverage_after": 0.8962386511024644,
+      "link_method_counts": {
+        "alias": 999,
+        "none": 291,
+        "bm25": 1139,
+        "fuzzy": 40
+      },
+      "label_totals": {
+        "HARD_SKILL": 1313,
+        "SOFT_SKILL": 1156
+      },
+      "label_linked_after": {
+        "HARD_SKILL": 1158,
+        "SOFT_SKILL": 1020
+      },
+      "top_unlinked_tp_surfaces": [
+        [
+          "message",
+          1
+        ],
+        [
+          "wealthtech",
+          1
+        ],
+        [
+          "subscriptions",
+          1
+        ],
+        [
+          "resource groups",
+          1
+        ],
+        [
+          "sonarqube",
+          1
+        ],
+        [
+          "infer#",
+          1
+        ],
+        [
+          "iis )",
+          1
+        ],
+        [
+          "yaml",
+          1
+        ],
+        [
+          "appservices",
+          1
+        ],
+        [
+          "servicebus",
+          1
+        ],
+        [
+          "keyvault",
+          1
+        ],
+        [
+          "k8s",
+          1
+        ],
+        [
+          "containers",
+          1
+        ],
+        [
+          "postgis",
+          1
+        ],
+        [
+          "opencv",
+          1
+        ],
+        [
+          "numpy",
+          1
+        ],
+        [
+          "shapely",
+          1
+        ],
+        [
+          "estimate timelines",
+          1
+        ],
+        [
+          "deliver initiatives",
+          1
+        ],
+        [
+          "fixed income instruments",
+          1
+        ]
+      ],
+      "error_cases": [
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-75",
+          "surface_form": "Message",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-117",
+          "surface_form": "wealthtech",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 26,
+          "end": 36
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-131",
+          "surface_form": "subscriptions",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 48,
+          "end": 61
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-131",
+          "surface_form": "resource groups",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 62,
+          "end": 77
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-132",
+          "surface_form": "SonarQube",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 188,
+          "end": 197
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-132",
+          "surface_form": "Infer#",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 214,
+          "end": 220
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-133",
+          "surface_form": "IIS )",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 130,
+          "end": 135
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-136",
+          "surface_form": "yaml",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-137",
+          "surface_form": "AppServices",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 143,
+          "end": 154
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-137",
+          "surface_form": "ServiceBus",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 161,
+          "end": 171
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-137",
+          "surface_form": "KeyVault",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 196,
+          "end": 204
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-140",
+          "surface_form": "K8s",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 50,
+          "end": 53
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-200",
+          "surface_form": "containers",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 49,
+          "end": 59
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-287",
+          "surface_form": "PostGIS",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 59,
+          "end": 66
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-287",
+          "surface_form": "OpenCV",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 69,
+          "end": 75
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-287",
+          "surface_form": "NumPy",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 78,
+          "end": 83
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-287",
+          "surface_form": "Shapely",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 86,
+          "end": 93
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-343",
+          "surface_form": "estimate timelines",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 53,
+          "end": 71
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-454",
+          "surface_form": "Deliver initiatives",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 4,
+          "end": 23
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-461",
+          "surface_form": "fixed income instruments",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 17,
+          "end": 41
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-517",
+          "surface_form": "run experiments",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 18,
+          "end": 33
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-528",
+          "surface_form": "Celery",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-531",
+          "surface_form": "honest",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-531",
+          "surface_form": "communicates openly",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 42,
+          "end": 61
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-578",
+          "surface_form": "recommend optimizations",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 20,
+          "end": 43
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-699",
+          "surface_form": "Assertive",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-802",
+          "surface_form": "good listener",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 14,
+          "end": 27
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-805",
+          "surface_form": "lazy",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-807",
+          "surface_form": "pragmatist",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 19,
+          "end": 29
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-896",
+          "surface_form": "pytest",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 38,
+          "end": 44
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-896",
+          "surface_form": "truffle",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 61,
+          "end": 68
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-896",
+          "surface_form": "Solidity",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 73,
+          "end": 81
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-979",
+          "surface_form": "contribute innovations",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 90,
+          "end": 112
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-983",
+          "surface_form": "social competence",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 12,
+          "end": 29
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1097",
+          "surface_form": "intelligent",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 63,
+          "end": 74
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1099",
+          "surface_form": "Pentaho",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 85,
+          "end": 92
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1102",
+          "surface_form": "issue tracking",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 34,
+          "end": 48
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1108",
+          "surface_form": "analyse requirements",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 13,
+          "end": 33
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1118",
+          "surface_form": "calculating benchmark blends",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 60,
+          "end": 88
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1195",
+          "surface_form": "math",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 50,
+          "end": 54
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1196",
+          "surface_form": "aesthetic know-how",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 5,
+          "end": 23
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1490",
+          "surface_form": "Accessibility",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1490",
+          "surface_form": "usability",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1558",
+          "surface_form": "Blazor",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1560",
+          "surface_form": "Bootstrap",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1618",
+          "surface_form": "considerations",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 37,
+          "end": 51
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1682",
+          "surface_form": "elicit requirements",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 59,
+          "end": 78
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1690",
+          "surface_form": "SharePoint",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 29,
+          "end": 39
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1735",
+          "surface_form": "analyzing",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 75,
+          "end": 84
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1746",
+          "surface_form": "resourceful",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 34,
+          "end": 45
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1849",
+          "surface_form": "regression/reconciliation",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 17,
+          "end": 42
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1875",
+          "surface_form": "Mainframe/IBM iSeries",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 2,
+          "end": 23
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-1935",
+          "surface_form": "Spinnaker",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 44,
+          "end": 53
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2092",
+          "surface_form": "ORMs",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 72,
+          "end": 76
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2198",
+          "surface_form": "Airflow",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 51,
+          "end": 58
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2198",
+          "surface_form": "Jupyter",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 63,
+          "end": 70
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2208",
+          "surface_form": "takes collective responsibility",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 119,
+          "end": 150
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2243",
+          "surface_form": "architect",
+          "label": "SOFT_SKILL",
+          "source": "gliner",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2244",
+          "surface_form": "tackle challenges",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 12,
+          "end": 29
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2244",
+          "surface_form": "RxJava",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 152,
+          "end": 158
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2244",
+          "surface_form": "Couroutines",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 162,
+          "end": 173
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2261",
+          "surface_form": "payment",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 31,
+          "end": 38
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2261",
+          "surface_form": "loyalty",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 39,
+          "end": 46
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2261",
+          "surface_form": "shopping",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 51,
+          "end": 59
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2328",
+          "surface_form": "speak at conferences",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 15,
+          "end": 35
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2397",
+          "surface_form": "vector construction",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 173,
+          "end": 192
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2399",
+          "surface_form": "post-translational modifications",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 47,
+          "end": 79
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2435",
+          "surface_form": "Optimize construction",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 420,
+          "end": 441
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2437",
+          "surface_form": "optimize existing processes",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 56,
+          "end": 83
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2440",
+          "surface_form": "installation",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 66,
+          "end": 78
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2443",
+          "surface_form": "Value stream Mapping",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 21,
+          "end": 41
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2484",
+          "surface_form": "numerate",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2488",
+          "surface_form": "Visual Basic",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 60,
+          "end": 72
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2488",
+          "surface_form": "Pivot",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 77,
+          "end": 82
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2490",
+          "surface_form": "Norwegian",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2506",
+          "surface_form": "feeding",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2506",
+          "surface_form": "moving",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2506",
+          "surface_form": "castration",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 32,
+          "end": 42
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2506",
+          "surface_form": "insemination",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 43,
+          "end": 55
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2519",
+          "surface_form": "create outstanding experiences",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 58,
+          "end": 88
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2522",
+          "surface_form": "deliver maximum impact",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 200,
+          "end": 222
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2522",
+          "surface_form": "Sketch",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 975,
+          "end": 981
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2522",
+          "surface_form": "Invision",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 982,
+          "end": 990
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2575",
+          "surface_form": "Manage HQ reward programmes",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 27
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2576",
+          "surface_form": "Perform benchmarking",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2593",
+          "surface_form": "registered surgeon",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 23,
+          "end": 41
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2594",
+          "surface_form": "patient-centred",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 22,
+          "end": 37
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2594",
+          "surface_form": "inclusive",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 42,
+          "end": 51
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2599",
+          "surface_form": "good humoured",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2599",
+          "surface_form": "loyal",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2705",
+          "surface_form": "Extroverted",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 9,
+          "end": 20
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2737",
+          "surface_form": "cooperation",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2748",
+          "surface_form": "conscientious",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 24,
+          "end": 37
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2750",
+          "surface_form": "good colleague",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 10,
+          "end": 24
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2774",
+          "surface_form": "Deliver Results",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 168,
+          "end": 183
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2784",
+          "surface_form": "commercially astute",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 203,
+          "end": 222
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2812",
+          "surface_form": "thinking visually",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 16,
+          "end": 33
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2813",
+          "surface_form": "show engagement",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 32,
+          "end": 47
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2815",
+          "surface_form": "communicative",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 73,
+          "end": 86
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2816",
+          "surface_form": "turn numbers into actionable insights",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 54,
+          "end": 91
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2817",
+          "surface_form": "PPT",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 87,
+          "end": 90
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2818",
+          "surface_form": "SPSS",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2843",
+          "surface_form": "Controlling returned goods",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 53,
+          "end": 79
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2847",
+          "surface_form": "precise",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 124,
+          "end": 131
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2848",
+          "surface_form": "Show initiative",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2849",
+          "surface_form": "logistics",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 29,
+          "end": 38
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2887",
+          "surface_form": "prioritize",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 30,
+          "end": 40
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2912",
+          "surface_form": "plasmids",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 93,
+          "end": 101
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2912",
+          "surface_form": "mouse colony",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 113,
+          "end": 125
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2912",
+          "surface_form": "antibodies",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 126,
+          "end": 136
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2912",
+          "surface_form": "purchasing",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 142,
+          "end": 152
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2912",
+          "surface_form": "stocking",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 157,
+          "end": 165
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2943",
+          "surface_form": "telephony",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 209,
+          "end": 218
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2948",
+          "surface_form": "prioritise incoming requests",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 61,
+          "end": 89
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2951",
+          "surface_form": "Accurately executing specified procedures",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 260,
+          "end": 301
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2966",
+          "surface_form": "patience",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 72,
+          "end": 80
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2966",
+          "surface_form": "attentiveness",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 85,
+          "end": 98
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-2997",
+          "surface_form": "Czech",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3034",
+          "surface_form": "exceed targets",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 32,
+          "end": 46
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3043",
+          "surface_form": "inspiring",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 35,
+          "end": 44
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3043",
+          "surface_form": "persuasive",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 45,
+          "end": 55
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3043",
+          "surface_form": "convincing",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 60,
+          "end": 70
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3044",
+          "surface_form": "cold calling",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 33,
+          "end": 45
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3086",
+          "surface_form": "Ensuring builds are kept green",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 153,
+          "end": 183
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3097",
+          "surface_form": "critical reasoning",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 96,
+          "end": 114
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3098",
+          "surface_form": "XP",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 68,
+          "end": 70
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3098",
+          "surface_form": "Akana",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 455,
+          "end": 460
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3117",
+          "surface_form": "decanters",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 75,
+          "end": 84
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3117",
+          "surface_form": "Pure Dry)",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 121,
+          "end": 130
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3143",
+          "surface_form": "NiFi",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 210,
+          "end": 214
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3143",
+          "surface_form": "Databricks",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 344,
+          "end": 354
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3161",
+          "surface_form": "Preparing pallets",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 98,
+          "end": 115
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3166",
+          "surface_form": "helpful",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 172,
+          "end": 179
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3182",
+          "surface_form": "intestine",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 163,
+          "end": 172
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3182",
+          "surface_form": "biopharmaceuticals",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 181,
+          "end": 199
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3187",
+          "surface_form": "3D printed organoids",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 120,
+          "end": 140
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3211",
+          "surface_form": "SOLIDWORKS",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3364",
+          "surface_form": "meticulous",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3365",
+          "surface_form": "dusting",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 94,
+          "end": 101
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3365",
+          "surface_form": "vacuuming",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 102,
+          "end": 111
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3378",
+          "surface_form": "Dutiful",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3392",
+          "surface_form": "tourism",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 62,
+          "end": 69
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3395",
+          "surface_form": "Segways",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3413",
+          "surface_form": "manage challenges",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 115,
+          "end": 132
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3426",
+          "surface_form": "overview",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 76,
+          "end": 84
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3443",
+          "surface_form": "advanced electron microscopy",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 81,
+          "end": 109
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3443",
+          "surface_form": "environmental catalysis",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 117,
+          "end": 140
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3452",
+          "surface_form": "committed",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3455",
+          "surface_form": "solid-state nanomaterials",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 186,
+          "end": 211
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3469",
+          "surface_form": "creativity",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 41,
+          "end": 51
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3481",
+          "surface_form": "EQ",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 270,
+          "end": 272
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3481",
+          "surface_form": "compressors",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 273,
+          "end": 284
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3502",
+          "surface_form": "Italian",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 241,
+          "end": 248
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3517",
+          "surface_form": "PLM/PDM",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 195,
+          "end": 202
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3527",
+          "surface_form": "PLM",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 179,
+          "end": 182
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3541",
+          "surface_form": "NorFor",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 169,
+          "end": 175
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3542",
+          "surface_form": "feed evaluation",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 26,
+          "end": 41
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3542",
+          "surface_form": "digestive processes",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 42,
+          "end": 61
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3542",
+          "surface_form": "intermediary metabolism",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 62,
+          "end": 85
+        },
+        {
+          "stage": "mistral_gliner_taxonomy",
+          "doc_id": "test-3547",
+          "surface_form": "enterprising",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 214,
+          "end": 226
+        }
+      ]
+    },
+    {
+      "stage_id": "full_cag_graph",
+      "label": "Full CAG/Graph",
+      "total_predictions": 2601,
+      "before_linking_coverage": 0.06228373702422145,
+      "after_linking_coverage": 0.8389081122645137,
+      "tp_count": 1367,
+      "tp_linking_coverage_after": 0.8749085588880761,
+      "link_method_counts": {
+        "alias": 1014,
+        "bm25": 1124,
+        "none": 419,
+        "fuzzy": 44
+      },
+      "label_totals": {
+        "HARD_SKILL": 1314,
+        "SOFT_SKILL": 1287
+      },
+      "label_linked_after": {
+        "HARD_SKILL": 1156,
+        "SOFT_SKILL": 1026
+      },
+      "top_unlinked_tp_surfaces": [
+        [
+          "plm",
+          2
+        ],
+        [
+          "message",
+          1
+        ],
+        [
+          "wealthtech",
+          1
+        ],
+        [
+          "subscriptions",
+          1
+        ],
+        [
+          "resource groups",
+          1
+        ],
+        [
+          "sonarqube",
+          1
+        ],
+        [
+          "infer#",
+          1
+        ],
+        [
+          "iis )",
+          1
+        ],
+        [
+          "yaml",
+          1
+        ],
+        [
+          "appservices",
+          1
+        ],
+        [
+          "servicebus",
+          1
+        ],
+        [
+          "keyvault",
+          1
+        ],
+        [
+          "k8s",
+          1
+        ],
+        [
+          "containers",
+          1
+        ],
+        [
+          "postgis",
+          1
+        ],
+        [
+          "opencv",
+          1
+        ],
+        [
+          "numpy",
+          1
+        ],
+        [
+          "shapely",
+          1
+        ],
+        [
+          "estimate timelines",
+          1
+        ],
+        [
+          "communicate",
+          1
+        ]
+      ],
+      "error_cases": [
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-75",
+          "surface_form": "Message",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-117",
+          "surface_form": "wealthtech",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 26,
+          "end": 36
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-131",
+          "surface_form": "subscriptions",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 48,
+          "end": 61
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-131",
+          "surface_form": "resource groups",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 62,
+          "end": 77
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-132",
+          "surface_form": "SonarQube",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 188,
+          "end": 197
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-132",
+          "surface_form": "Infer#",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 214,
+          "end": 220
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-133",
+          "surface_form": "IIS )",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 130,
+          "end": 135
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-136",
+          "surface_form": "yaml",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-137",
+          "surface_form": "AppServices",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 143,
+          "end": 154
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-137",
+          "surface_form": "ServiceBus",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 161,
+          "end": 171
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-137",
+          "surface_form": "KeyVault",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 196,
+          "end": 204
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-140",
+          "surface_form": "K8s",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 50,
+          "end": 53
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-200",
+          "surface_form": "containers",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 49,
+          "end": 59
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-287",
+          "surface_form": "PostGIS",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 59,
+          "end": 66
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-287",
+          "surface_form": "OpenCV",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 69,
+          "end": 75
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-287",
+          "surface_form": "NumPy",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 78,
+          "end": 83
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-287",
+          "surface_form": "Shapely",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 86,
+          "end": 93
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-343",
+          "surface_form": "estimate timelines",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 53,
+          "end": 71
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-343",
+          "surface_form": "communicate",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 113,
+          "end": 124
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-343",
+          "surface_form": "investigate",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 129,
+          "end": 140
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-454",
+          "surface_form": "Deliver initiatives",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 4,
+          "end": 23
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-461",
+          "surface_form": "fixed income instruments",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 17,
+          "end": 41
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-517",
+          "surface_form": "run experiments",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 18,
+          "end": 33
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-528",
+          "surface_form": "Celery",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-531",
+          "surface_form": "honest",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 11,
+          "end": 17
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-531",
+          "surface_form": "communicates openly",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 42,
+          "end": 61
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-578",
+          "surface_form": "recommend optimizations",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 20,
+          "end": 43
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-699",
+          "surface_form": "Assertive",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-802",
+          "surface_form": "good listener",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 14,
+          "end": 27
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-805",
+          "surface_form": "lazy",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-807",
+          "surface_form": "pragmatist",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 19,
+          "end": 29
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-896",
+          "surface_form": "pytest",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 38,
+          "end": 44
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-896",
+          "surface_form": "truffle",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 61,
+          "end": 68
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-896",
+          "surface_form": "Solidity",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 73,
+          "end": 81
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-979",
+          "surface_form": "contribute innovations",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 90,
+          "end": 112
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-983",
+          "surface_form": "social competence",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 12,
+          "end": 29
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1097",
+          "surface_form": "intelligent",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 63,
+          "end": 74
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1099",
+          "surface_form": "Pentaho",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 85,
+          "end": 92
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1102",
+          "surface_form": "issue tracking",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 34,
+          "end": 48
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1108",
+          "surface_form": "analyse requirements",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 13,
+          "end": 33
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1118",
+          "surface_form": "calculating benchmark blends",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 60,
+          "end": 88
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1195",
+          "surface_form": "math",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 50,
+          "end": 54
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1196",
+          "surface_form": "aesthetic know-how",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 5,
+          "end": 23
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1265",
+          "surface_form": "optimisation",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 51,
+          "end": 63
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1490",
+          "surface_form": "Accessibility",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1490",
+          "surface_form": "usability",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 14,
+          "end": 23
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1558",
+          "surface_form": "Blazor",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 8,
+          "end": 14
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1560",
+          "surface_form": "Bootstrap",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1618",
+          "surface_form": "considerations",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 37,
+          "end": 51
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1682",
+          "surface_form": "elicit requirements",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 59,
+          "end": 78
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1690",
+          "surface_form": "SharePoint",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 29,
+          "end": 39
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1735",
+          "surface_form": "analyzing",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 75,
+          "end": 84
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1746",
+          "surface_form": "resourceful",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 34,
+          "end": 45
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1849",
+          "surface_form": "regression/reconciliation",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 17,
+          "end": 42
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1875",
+          "surface_form": "Mainframe/IBM iSeries",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 2,
+          "end": 23
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-1935",
+          "surface_form": "Spinnaker",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 44,
+          "end": 53
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2001",
+          "surface_form": "flexibility",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 129,
+          "end": 140
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2092",
+          "surface_form": "ORMs",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 72,
+          "end": 76
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2198",
+          "surface_form": "Airflow",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 51,
+          "end": 58
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2198",
+          "surface_form": "Jupyter",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 63,
+          "end": 70
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2208",
+          "surface_form": "takes collective responsibility",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 119,
+          "end": 150
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2243",
+          "surface_form": "architect",
+          "label": "SOFT_SKILL",
+          "source": "gliner",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2244",
+          "surface_form": "tackle challenges",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 12,
+          "end": 29
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2244",
+          "surface_form": "RxJava",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 152,
+          "end": 158
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2244",
+          "surface_form": "Couroutines",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 162,
+          "end": 173
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2261",
+          "surface_form": "payment",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 31,
+          "end": 38
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2261",
+          "surface_form": "loyalty",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 39,
+          "end": 46
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2261",
+          "surface_form": "shopping",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 51,
+          "end": 59
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2328",
+          "surface_form": "speak at conferences",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 15,
+          "end": 35
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2397",
+          "surface_form": "vector construction",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 173,
+          "end": 192
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2399",
+          "surface_form": "post-translational modifications",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 47,
+          "end": 79
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2435",
+          "surface_form": "Optimize construction",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 420,
+          "end": 441
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2437",
+          "surface_form": "optimize existing processes",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 56,
+          "end": 83
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2440",
+          "surface_form": "installation",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 66,
+          "end": 78
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2443",
+          "surface_form": "Value stream Mapping",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 21,
+          "end": 41
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2475",
+          "surface_form": "benchmarks",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 172,
+          "end": 182
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2484",
+          "surface_form": "numerate",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2488",
+          "surface_form": "Visual Basic",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 60,
+          "end": 72
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2488",
+          "surface_form": "Pivot",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 77,
+          "end": 82
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2490",
+          "surface_form": "Norwegian",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2506",
+          "surface_form": "feeding",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 17,
+          "end": 24
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2506",
+          "surface_form": "moving",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 25,
+          "end": 31
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2506",
+          "surface_form": "castration",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 32,
+          "end": 42
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2506",
+          "surface_form": "insemination",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 43,
+          "end": 55
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2519",
+          "surface_form": "create outstanding experiences",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 58,
+          "end": 88
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2522",
+          "surface_form": "deliver maximum impact",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 200,
+          "end": 222
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2522",
+          "surface_form": "Sketch",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 975,
+          "end": 981
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2522",
+          "surface_form": "Invision",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 982,
+          "end": 990
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2575",
+          "surface_form": "Manage HQ reward programmes",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 27
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2576",
+          "surface_form": "Perform benchmarking",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2593",
+          "surface_form": "registered surgeon",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 23,
+          "end": 41
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2594",
+          "surface_form": "patient-centred",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 22,
+          "end": 37
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2594",
+          "surface_form": "inclusive",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 42,
+          "end": 51
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2599",
+          "surface_form": "good humoured",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2599",
+          "surface_form": "loyal",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2705",
+          "surface_form": "Extroverted",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 9,
+          "end": 20
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2737",
+          "surface_form": "cooperation",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2748",
+          "surface_form": "conscientious",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 24,
+          "end": 37
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2750",
+          "surface_form": "good colleague",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 10,
+          "end": 24
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2774",
+          "surface_form": "Deliver Results",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 168,
+          "end": 183
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2784",
+          "surface_form": "commercially astute",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 203,
+          "end": 222
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2812",
+          "surface_form": "thinking visually",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 16,
+          "end": 33
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2813",
+          "surface_form": "show engagement",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 32,
+          "end": 47
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2815",
+          "surface_form": "communicative",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 73,
+          "end": 86
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2816",
+          "surface_form": "turn numbers into actionable insights",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 54,
+          "end": 91
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2817",
+          "surface_form": "PPT",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 87,
+          "end": 90
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2818",
+          "surface_form": "SPSS",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2843",
+          "surface_form": "Controlling returned goods",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 53,
+          "end": 79
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2847",
+          "surface_form": "precise",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 124,
+          "end": 131
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2848",
+          "surface_form": "Show initiative",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2849",
+          "surface_form": "logistics",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 29,
+          "end": 38
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2887",
+          "surface_form": "prioritize",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 30,
+          "end": 40
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2912",
+          "surface_form": "plasmids",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 93,
+          "end": 101
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2912",
+          "surface_form": "mouse colony",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 113,
+          "end": 125
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2912",
+          "surface_form": "antibodies",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 126,
+          "end": 136
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2912",
+          "surface_form": "purchasing",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 142,
+          "end": 152
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2912",
+          "surface_form": "stocking",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 157,
+          "end": 165
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2943",
+          "surface_form": "telephony",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 209,
+          "end": 218
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2948",
+          "surface_form": "prioritise incoming requests",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 61,
+          "end": 89
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2951",
+          "surface_form": "Accurately executing specified procedures",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 260,
+          "end": 301
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2966",
+          "surface_form": "patience",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 72,
+          "end": 80
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2966",
+          "surface_form": "attentiveness",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 85,
+          "end": 98
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-2997",
+          "surface_form": "Czech",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3003",
+          "surface_form": "establish rapport",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 11,
+          "end": 28
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3034",
+          "surface_form": "exceed targets",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 32,
+          "end": 46
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3043",
+          "surface_form": "inspiring",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 35,
+          "end": 44
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3043",
+          "surface_form": "persuasive",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 45,
+          "end": 55
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3043",
+          "surface_form": "convincing",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 60,
+          "end": 70
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3044",
+          "surface_form": "cold calling",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 33,
+          "end": 45
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3086",
+          "surface_form": "Ensuring builds are kept green",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 153,
+          "end": 183
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3097",
+          "surface_form": "critical reasoning",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 96,
+          "end": 114
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3098",
+          "surface_form": "XP",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 68,
+          "end": 70
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3098",
+          "surface_form": "Akana",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 455,
+          "end": 460
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3117",
+          "surface_form": "decanters",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 75,
+          "end": 84
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3117",
+          "surface_form": "Pure Dry)",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 121,
+          "end": 130
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3143",
+          "surface_form": "NiFi",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 210,
+          "end": 214
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3143",
+          "surface_form": "Databricks",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 344,
+          "end": 354
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3161",
+          "surface_form": "Preparing pallets",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 98,
+          "end": 115
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3166",
+          "surface_form": "helpful",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 172,
+          "end": 179
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3182",
+          "surface_form": "intestine",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 163,
+          "end": 172
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3182",
+          "surface_form": "biopharmaceuticals",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 181,
+          "end": 199
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3187",
+          "surface_form": "3D printed organoids",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 120,
+          "end": 140
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3211",
+          "surface_form": "SOLIDWORKS",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3212",
+          "surface_form": "Communicate professionally",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3310",
+          "surface_form": "pedagogical qualifications",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 51,
+          "end": 77
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3364",
+          "surface_form": "meticulous",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3365",
+          "surface_form": "dusting",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 94,
+          "end": 101
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3365",
+          "surface_form": "vacuuming",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 102,
+          "end": 111
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3371",
+          "surface_form": "confident",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 107,
+          "end": 116
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3378",
+          "surface_form": "Dutiful",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 14,
+          "end": 21
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3392",
+          "surface_form": "tourism",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 62,
+          "end": 69
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3395",
+          "surface_form": "Segways",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3413",
+          "surface_form": "manage challenges",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 115,
+          "end": 132
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3426",
+          "surface_form": "overview",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 76,
+          "end": 84
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3443",
+          "surface_form": "advanced electron microscopy",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 81,
+          "end": 109
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3443",
+          "surface_form": "environmental catalysis",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 117,
+          "end": 140
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3452",
+          "surface_form": "committed",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3455",
+          "surface_form": "solid-state nanomaterials",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 186,
+          "end": 211
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3469",
+          "surface_form": "creativity",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 41,
+          "end": 51
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3481",
+          "surface_form": "EQ",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 270,
+          "end": 272
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3481",
+          "surface_form": "compressors",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 273,
+          "end": 284
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3502",
+          "surface_form": "Italian",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 241,
+          "end": 248
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3517",
+          "surface_form": "PLM/PDM",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 195,
+          "end": 202
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3527",
+          "surface_form": "PLM",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 179,
+          "end": 182
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3528",
+          "surface_form": "PLM",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 58,
+          "end": 61
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3528",
+          "surface_form": "processes",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 403,
+          "end": 412
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3541",
+          "surface_form": "NorFor",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 169,
+          "end": 175
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3542",
+          "surface_form": "feed evaluation",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 26,
+          "end": 41
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3542",
+          "surface_form": "digestive processes",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 42,
+          "end": 61
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3542",
+          "surface_form": "intermediary metabolism",
+          "label": "HARD_SKILL",
+          "source": "mistral",
+          "start": 62,
+          "end": 85
+        },
+        {
+          "stage": "full_cag_graph",
+          "doc_id": "test-3547",
+          "surface_form": "enterprising",
+          "label": "SOFT_SKILL",
+          "source": "mistral",
+          "start": 214,
+          "end": 226
+        }
+      ]
+    }
+  ]
+}

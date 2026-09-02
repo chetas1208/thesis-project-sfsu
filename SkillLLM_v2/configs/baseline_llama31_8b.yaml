@@ -1,0 +1,33 @@
+experiment_name: baseline_llama31_8b
+base_model_name: meta-llama/Llama-3.1-8B-Instruct
+local_model_path: /usr/data/models/skillllm-v2/models/llama-3.1-8b-instruct
+train_file: data/v2/train.jsonl
+val_file: data/v2/val.jsonl
+test_file: data/v2/test.jsonl
+output_dir: outputs/baseline_llama31_8b
+prompt_template_file: src/prompts/skillspan_span_prompt.txt
+fewshot_prompt_file: src/prompts/skillspan_span_prompt_fewshot.txt
+max_seq_length: 2048
+learning_rate: 0.0002
+epochs: 2
+batch_size: 2
+eval_batch_size: 2
+gradient_accumulation_steps: 8
+lora_r: 64
+lora_alpha: 128
+lora_dropout: 0.1
+target_modules:
+  - q_proj
+  - v_proj
+use_4bit: false
+use_flash_attention_if_available: true
+use_gradient_checkpointing: true
+use_span_recovery: false
+recovery_threshold: 0.92
+non_thinking_mode: true
+use_span_json_target: false
+use_exact_copy_prompt: false
+seed: 13
+max_new_tokens: 512
+warmup_ratio: 0.1
+weight_decay: 0.0

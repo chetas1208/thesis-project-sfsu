@@ -1,0 +1,10 @@
+\chapter{Conclusion}
+\label{ch:conclusion}
+
+SkillLLM\_v2 demonstrates a complete, evidence-aware path from span-level skill extraction to canonicalized profile, contextual packet, graph, gap, and course-recommendation records. Its principal measured result is the persisted 80-epoch Mistral LoRA extractor: exact-span F1 0.670069, token F1 0.787886, hard-skill F1 0.726450, and soft-skill F1 0.604046 in the audited Stage-2 artifact. The included BERT and zero-shot GLiNER artifacts are far lower under the same local reporting path. Within this repository, the adapted Mistral model is consequently the correct extraction anchor.
+
+The system's more important design result is negative and constructive at once. Historical wrapper analysis showed that boundary edits and verifier rejection could substantially damage correct anchor spans. The current architecture responds with Mistral-source protection, add-only auxiliary candidates, attach-only linking, and a non-regression gate with explicit fallback. The later safe-wrapper artifacts remain close to the anchor and are accepted under their configured floors, but their thousandth-scale metric differences do not establish a general accuracy gain. The report therefore rejects the premise that more downstream components automatically make extraction better.
+
+The remaining modules are useful because they enrich rather than replace evidence. A canonical identifier can be attached without changing the original span. A profile fact can retain its source, offset, confidence, and conflict note. A cached packet can separate stable information from dynamic job text. A graph and deterministic score can make a gap or course recommendation inspectable. These features are implemented and tested as a vertical slice. They are not yet evidence that the system matches jobs or recommends courses effectively, fairly, or safely.
+
+Next work should version inputs, repeat extraction across seeds, and add gold labels. Until then, extraction provenance remains the central invariant.

@@ -1,0 +1,18 @@
+\begin{tikzpicture}[node distance=5mm and 8mm]
+\node[data] (input) {Resume / profile evidence\\Job or course text};
+\node[anchorbox,below=of input] (extract) {Mistral LoRA extraction anchor};
+\node[impl,below left=of extract] (norm) {Attach-only taxonomy\\normalization};
+\node[impl,below=of extract] (profile) {Evidence-preserving\\profile summary};
+\node[impl,below right=of extract] (policy) {Candidate merger and\\non-regression gate};
+\node[impl,below=of profile] (context) {Cached profile context\\and graph structure};
+\node[impl,below=of context] (outputs) {Skill gaps, job matches,\\course recommendations, explanations};
+\draw[flow] (input)--(extract);
+\draw[flow] (extract)--(norm);
+\draw[flow] (extract)--(profile);
+\draw[flow] (extract)--(policy);
+\draw[flow] (norm)--(context);
+\draw[flow] (profile)--(context);
+\draw[flow] (policy)--(context);
+\draw[flow] (context)--(outputs);
+\node[below=2mm of outputs,font=\scriptsize,align=center] {Green components are implemented. The recommendation outputs are data-flow artifacts,\\not quantitatively validated rankings.};
+\end{tikzpicture}

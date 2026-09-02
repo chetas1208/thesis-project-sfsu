@@ -1,0 +1,10 @@
+\begin{tikzpicture}[node distance=11mm and 17mm]
+\node[impl] (user) {User};
+\node[impl,right=of user] (skill) {Skill};
+\node[impl,right=of skill] (job) {Job};
+\node[impl,below=of skill] (course) {Course};
+\draw[flow] (user)--node[above,font=\scriptsize]{HAS\_SKILL}(skill);
+\draw[flow] (job)--node[above,font=\scriptsize]{REQUIRES / PREFERS}(skill);
+\draw[flow] (course)--node[left,font=\scriptsize]{TEACHES}(skill);
+\draw[dashedflow] (user) to[bend right=27] node[below,font=\scriptsize]{MISSING\_SKILL (derived)} (job);
+\end{tikzpicture}
