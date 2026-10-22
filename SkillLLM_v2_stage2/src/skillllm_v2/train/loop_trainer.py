@@ -258,6 +258,27 @@ def build_round_mix(
     return rows, new_seen, stats
 
 
+def pick_extra_rows(
+    extra_rows: list[dict[str, Any]], extra_seen: set[str], n: int, round_idx: int, seed: int
+) -> tuple[list[dict[str, Any]], set[str], int]:
+    """Draw ``n`` rows from the extra (e.g. pseudo-labelled) pool without replacement across rounds (wraps when exhausted)."""
+    if n <= 0 or not extra_rows:
+        return [], set(extra_seen), 0
+    rng = random.Random(seed * 7000 + round_idx)
+    ids = sorted(r["id"] for r in extra_rows)
+    by_id = {r["id"]: r for r in extra_rows}
+    new_seen = set(extra_seen)
+    wraps = 0
+    unseen = [i for i in ids if i not in new_seen]
+    if len(unseen) < n:
+        wraps = 1
+        new_seen = set()
+        unseen = ids
+    pick = rng.sample(unseen, min(n, len(unseen)))
+    new_seen.update(pick)
+    return [by_id[i] for i in pick], new_seen, wraps
+
+
 def make_batches(lengths: list[int], micro_batch_size: int, seed: int, bucket_mult: int = 16) -> list[list[int]]:
     """Length-bucketed micro-batches (less padding): shuffle, sort inside buckets, shuffle batches."""
     rng = random.Random(seed)
@@ -382,6 +403,7 @@ class LoopState:
     history: list[dict[str, Any]] = field(default_factory=list)
     hard_pool: dict[str, dict[str, Any]] = field(default_factory=dict)
     seen_ids: list[str] = field(default_factory=list)
+    extra_seen_ids: list[str] = field(default_factory=list)
     budget: dict[str, Any] = field(default_factory=dict)
     finished: bool = False
     stop_reason: str | None = None
@@ -452,7 +474,13 @@ def _gold(rows: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
     return [row.get("output", {}).get("skills", []) for row in rows]
 
 
-def run_loop(config: dict[str, Any], backend: Backend, train_rows: list[dict[str, Any]], dev_rows: list[dict[str, Any]]) -> dict[str, Any]:
+def run_loop(
+    config: dict[str, Any],
+    backend: Backend,
+    train_rows: list[dict[str, Any]],
+    dev_rows: list[dict[str, Any]],
+    extra_rows: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
     seed = int(config.get("seed", 42))
     out_dir = Path(config.get("output", {}).get("dir", "artifacts/skillllm_v2/qlora_loop"))
     loop_cfg = config.get("loop", {})
@@ -484,6 +512,8 @@ def run_loop(config: dict[str, Any], backend: Backend, train_rows: list[dict[str
         float(eval_cfg.get("dev_empty_frac", 0.0)),
     )
     seen_ids = set(state.seen_ids)
+    extra_seen = set(state.extra_seen_ids)
+    extra_frac = float(loop_cfg.get("extra_frac", 0.0)) if extra_rows else 0.0
     weights = mining_cfg.get("error_weights")
     _log(f"resume: completed_rounds={state.completed_rounds} best_round={state.best_round} best_f1={state.best_f1:.4f} gpu_hours={budget.gpu_hours:.3f}")
     _log(f"dev subset={len(dev_subset)} docs, train pool={len(train_rows)} docs, hard pool={len(state.hard_pool)}")
@@ -512,10 +542,16 @@ def run_loop(config: dict[str, Any], backend: Backend, train_rows: list[dict[str
 
         started = time.perf_counter()
         empty_frac = empty_frac_for_round(round_idx, max_rounds, float(loop_cfg.get("empty_frac_start", 0.10)), float(loop_cfg.get("empty_frac_end", 0.25)))
+        n_extra = int(round(n_examples * extra_frac))
         mix_rows, seen_ids, mix_stats = build_round_mix(
-            train_rows, state.hard_pool, seen_ids, round_idx, n_examples,
+            train_rows, state.hard_pool, seen_ids, round_idx, n_examples - n_extra,
             float(loop_cfg.get("hard_frac", 0.35)), int(loop_cfg.get("max_repeat", 3)), empty_frac, seed,
         )
+        if n_extra:
+            extra_pick, extra_seen, extra_wraps = pick_extra_rows(extra_rows or [], extra_seen, n_extra, round_idx, seed)
+            mix_rows = mix_rows + extra_pick
+            random.Random(seed * 1000 + round_idx + 1).shuffle(mix_rows)
+            mix_stats = {**mix_stats, "examples": len(mix_rows), "gold_examples": len(mix_rows) - len(extra_pick), "extra_examples": len(extra_pick), "extra_wraps": extra_wraps}
         rdir = round_dir(out_dir, round_idx)
         if rdir.exists():
             shutil.rmtree(rdir)  # partial leftovers of a crashed attempt
@@ -527,7 +563,9 @@ def run_loop(config: dict[str, Any], backend: Backend, train_rows: list[dict[str
         train_info = backend.train_round(mix_rows, lr, round_idx, budget, seed)
         backend.save_adapter(rdir / "adapter")
 
+        t_dev = time.perf_counter()
         dev_preds = backend.predict(dev_subset, budget)
+        dev_seconds = time.perf_counter() - t_dev
         dev_metrics = evaluate_extraction(_gold(dev_subset), dev_preds)
         write_jsonl(rdir / "dev_predictions.jsonl", ({"id": r["id"], "gold": _gold([r])[0], "predictions": p} for r, p in zip(dev_subset, dev_preds)))
 
@@ -538,12 +576,14 @@ def run_loop(config: dict[str, Any], backend: Backend, train_rows: list[dict[str
                 int(mining_cfg.get("probe_size", 192)), float(mining_cfg.get("probe_empty_frac", 0.3)),
                 int(mining_cfg.get("recheck_max", 48)), seed,
             )
+            t_probe = time.perf_counter()
             probe_preds = backend.predict(probe, budget)
+            probe_seconds = time.perf_counter() - t_probe
             mined = mine_hard_examples(probe, probe_preds, weights, float(mining_cfg.get("min_score", 0.5)), mining_cfg.get("top_k"))
             state.hard_pool, pool_info = update_hard_pool(state.hard_pool, mined, [row["id"] for row in probe], round_idx, int(mining_cfg.get("hard_pool_max", 400)))
             write_jsonl(rdir / "hard_examples.jsonl", mined)
             totals = {name: sum(item["errors"][name] for item in mined) for name in ("missed", "spurious", "boundary", "label")}
-            mining_info = {"probe_docs": len(probe), "mined": len(mined), "error_totals": totals, **pool_info}
+            mining_info = {"probe_docs": len(probe), "probe_seconds": round(probe_seconds, 2), "mined": len(mined), "error_totals": totals, **pool_info}
 
         is_best = stopper.update(round_idx, dev_metrics[SELECTION_METRIC])
         if is_best:
@@ -560,6 +600,7 @@ def run_loop(config: dict[str, Any], backend: Backend, train_rows: list[dict[str
             "mix": mix_stats,
             "train": train_info,
             "dev": dev_metrics,
+            "dev_seconds": round(dev_seconds, 2),
             "mining": mining_info,
             "is_best": is_best,
             "gpu_hours_total": budget.gpu_hours,
@@ -571,6 +612,7 @@ def run_loop(config: dict[str, Any], backend: Backend, train_rows: list[dict[str
         state.completed_rounds = round_idx + 1
         state.best_round, state.best_f1, state.since_improve = stopper.best_round, stopper.best, stopper.since_improve
         state.seen_ids = sorted(seen_ids)
+        state.extra_seen_ids = sorted(extra_seen)
         state.budget = budget.to_dict()
         state.save(state_path)
         _log(f"round {round_idx} done: dev {SELECTION_METRIC}={dev_metrics[SELECTION_METRIC]:.4f} best={stopper.best:.4f}@{stopper.best_round} gpu_h={budget.gpu_hours:.3f} tokens={budget.train_tokens}")
@@ -635,6 +677,7 @@ class QLoraBackend:
         self.train_cfg = config.get("train", {})
         self.eval_cfg = config.get("eval", {})
         self.use_4bit = bool(model_cfg.get("use_4bit", True))
+        self.prompt_version = str(config.get("prompt", {}).get("version", "original"))
         self.device_index = int(model_cfg.get("device_index", 0))
         self.cuda = torch.cuda.is_available() and bool(model_cfg.get("use_cuda", True))
         self.device = torch.device(f"cuda:{self.device_index}") if self.cuda else torch.device("cpu")
@@ -702,9 +745,9 @@ class QLoraBackend:
 
     # -- encoding ------------------------------------------------------------------
     def _prompt_text(self, text: str) -> str:
-        from skillllm_v2.extract.mistral_extractor import SYSTEM_PROMPT, USER_PROMPT_TEMPLATE
+        from skillllm_v2.extract.mistral_extractor import build_prompt_messages
 
-        messages = [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": USER_PROMPT_TEMPLATE.format(text=text)}]
+        messages = build_prompt_messages(text, self.prompt_version)
         return self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
     def encode_example(self, row: dict[str, Any]) -> tuple[list[int], list[int]]:
@@ -770,6 +813,7 @@ class QLoraBackend:
         step = 0
         budget_stop = None
         t_step = time.perf_counter()
+        t_train_start = t_step
         for b_index, batch_ids in enumerate(batches):
             batch = self._collate([encoded[i] for i in batch_ids])
             try:
@@ -817,6 +861,7 @@ class QLoraBackend:
             "dropped_too_long": dropped,
             "optimizer_steps": step,
             "tokens": tokens,
+            "train_seconds": round(time.perf_counter() - t_train_start, 2),
             "mean_loss": sum(losses) / max(1, len(losses)),
             "last_loss": losses[-1] if losses else None,
             "oom_skips": oom,
@@ -903,6 +948,36 @@ SMOKE_OVERRIDES = [
 ]
 
 
+def measure_example_tokens(tokenizer: Any, rows: list[dict[str, Any]], prompt_version: str = "original") -> dict[str, Any]:
+    """Exact token breakdown (prompt vs target JSON) of SFT rows under ``prompt_version``. Pure given a tokenizer."""
+    from skillllm_v2.extract.mistral_extractor import build_prompt_messages
+    from skillllm_v2.train.mistral_lora_trainer import _target_json
+
+    def n_tokens(text: str, special: bool = True) -> int:
+        return len(tokenizer(text, add_special_tokens=special)["input_ids"])
+
+    fixed = tokenizer.apply_chat_template(build_prompt_messages("", prompt_version), tokenize=False, add_generation_prompt=True)
+    fixed_tokens = n_tokens(fixed)
+    prompts, texts, targets = [], [], []
+    for row in rows:
+        prompt = tokenizer.apply_chat_template(build_prompt_messages(row["input"], prompt_version), tokenize=False, add_generation_prompt=True)
+        prompts.append(n_tokens(prompt))
+        texts.append(n_tokens(row["input"], special=False))
+        targets.append(n_tokens(_target_json(row), special=False) + 1)  # + eos
+    n = max(1, len(rows))
+    mean_prompt, mean_target = sum(prompts) / n, sum(targets) / n
+    return {
+        "prompt_version": prompt_version,
+        "n_examples": len(rows),
+        "fixed_prompt_tokens": fixed_tokens,
+        "mean_input_text_tokens": round(sum(texts) / n, 2),
+        "mean_prompt_tokens": round(mean_prompt, 2),
+        "mean_target_tokens": round(mean_target, 2),
+        "mean_total_tokens": round(mean_prompt + mean_target, 2),
+        "fixed_prompt_share": round(fixed_tokens / max(1e-9, mean_prompt + mean_target), 4),
+    }
+
+
 def plan(config: dict[str, Any], train_rows: list[dict[str, Any]], dev_rows: list[dict[str, Any]]) -> dict[str, Any]:
     loop_cfg = config.get("loop", {})
     n = int(loop_cfg.get("examples_per_round", 640))
@@ -933,6 +1008,7 @@ def main() -> None:
     parser.add_argument("--set", dest="overrides", action="append", default=[], help="override, e.g. loop.max_rounds=4")
     parser.add_argument("--smoke", action="store_true", help="tiny 1-round run (20 docs) for plumbing checks")
     parser.add_argument("--plan", action="store_true", help="print the data/round plan and exit (no model load)")
+    parser.add_argument("--count-tokens", action="store_true", help="with --plan: load only the tokenizer (CPU) and report exact tokens/example of the round-0 mix")
     args = parser.parse_args()
 
     config = apply_overrides(load_yaml(args.config), (SMOKE_OVERRIDES if args.smoke else []) + args.overrides)
@@ -942,8 +1018,29 @@ def main() -> None:
     dev_rows = subsample(read_jsonl(data_cfg["dev_file"]), data_cfg.get("limit_dev"), seed)
     if not train_rows or not dev_rows:
         raise FileNotFoundError(f"Missing SFT data: {data_cfg.get('train_file')} / {data_cfg.get('dev_file')} (run scripts/build_mistral_sft_data.sh)")
+    extra_rows: list[dict[str, Any]] = []
+    if data_cfg.get("extra_train_file"):
+        extra_rows = read_jsonl(data_cfg["extra_train_file"])
     if args.plan:
-        print(json.dumps(plan(config, train_rows, dev_rows), indent=2))
+        report = plan(config, train_rows, dev_rows)
+        if extra_rows:
+            report["extra_rows"] = len(extra_rows)
+            report["extra_positive_rows"] = sum(_has_skills(r) for r in extra_rows)
+            report["extra_frac"] = float(config.get("loop", {}).get("extra_frac", 0.0))
+        if args.count_tokens:
+            from transformers import AutoTokenizer
+
+            from skillllm_v2.train.mistral_lora_trainer import _ensure_chat_template, _load_tokenizer
+
+            model_path = config["model"]["model_path"]
+            tokenizer = _load_tokenizer(AutoTokenizer, model_path)
+            _ensure_chat_template(tokenizer, model_path)
+            version = str(config.get("prompt", {}).get("version", "original"))
+            mix, _, _ = build_round_mix(train_rows, {}, set(), 0, int(config.get("loop", {}).get("examples_per_round", 640)), 0.0, 1,
+                                        empty_frac_for_round(0, int(config.get("loop", {}).get("max_rounds", 8)), float(config.get("loop", {}).get("empty_frac_start", 0.1)), float(config.get("loop", {}).get("empty_frac_end", 0.25))), seed)
+            report["token_breakdown_round0_mix"] = measure_example_tokens(tokenizer, mix, version)
+            report["round0_mix_total_tokens_est"] = round(report["token_breakdown_round0_mix"]["mean_total_tokens"] * len(mix))
+        print(json.dumps(report, indent=2))
         return
 
     out_dir = Path(config.get("output", {}).get("dir", "artifacts/skillllm_v2/qlora_loop"))
@@ -954,7 +1051,7 @@ def main() -> None:
         _log(f"run already finished ({state.stop_reason}); see {out_dir / 'loop_summary.json'}")
         return
     backend = QLoraBackend(config, resume_adapter_path(out_dir, state))
-    summary = run_loop(config, backend, train_rows, dev_rows)
+    summary = run_loop(config, backend, train_rows, dev_rows, extra_rows=extra_rows or None)
     print(json.dumps(summary, indent=2))
 
 

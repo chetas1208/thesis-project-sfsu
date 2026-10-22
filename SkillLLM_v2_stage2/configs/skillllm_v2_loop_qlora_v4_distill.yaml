@@ -1,0 +1,86 @@
+# Experiment 2 (ENSEMBLE DISTILLATION / SELF-TRAINING): warm start from the QLoRA-loop v2 best adapter (r=16) and continue with the same loop
+# trainer on 1:1 gold-train : pseudo-labelled in-domain chunks (pseudo labels = spans predicted by >= 2 of {anchor, v1, v2}).
+# Original prompt (the warm-start adapter was trained with it). Pre-declared: learning_rate 7e-5 (= the LR v2's last round used,
+# 1.5e-4 * 0.85^5) so the warm start is refined rather than re-trained; patience 3; max 5 rounds (GPU budget); dev subset/metric as v2.
+# See docs/GPU_EXPERIMENTS_LOG.md.
+seed: 42
+run_id: qlora_loop_mistral24b_v4_distill
+
+prompt:
+  version: original
+
+model:
+  model_path: models/mistral-small-3.1-24b-instruct-2503
+  init_adapter_path: artifacts/skillllm_v2/qlora_loop_v2/best
+  use_4bit: true
+  device_index: 0
+  min_free_gb: 19.0
+  attn_implementation: sdpa
+  upcast_norms: false
+
+data:
+  train_file: data/skillllm_v2/mistral_sft/train.jsonl
+  dev_file: data/skillllm_v2/mistral_sft/dev.jsonl
+  limit_train: null
+  limit_dev: null
+  extra_train_file: artifacts/skillllm_v2/qlora_loop_v4_distill/pseudo_pool/pseudo_train.jsonl   # private pseudo-labelled chunks (outside git)
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: ".*language_model.*(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)$"
+
+train:
+  micro_batch_size: 2
+  grad_accum: 8
+  learning_rate: 0.00007
+  lr_decay_per_round: 0.85
+  min_lr_ratio: 0.1
+  warmup_ratio: 0.1
+  weight_decay: 0.0
+  max_grad_norm: 1.0
+  max_seq_length: 768
+  gradient_checkpointing: true
+  optimizer: paged_adamw_8bit
+  max_oom: 3
+  log_every_steps: 5
+
+loop:
+  max_rounds: 5
+  extra_frac: 0.5            # 1:1 gold : pseudo per round (640 examples = 320 + 320)
+  examples_per_round: 640
+  hard_frac: 0.35
+  max_repeat: 3
+  empty_frac_start: 0.10
+  empty_frac_end: 0.25
+  patience: 3
+  min_delta: 0.002
+  baseline_eval: true         # dev F1 of the warm start (v2 best) in this same eval path, for reference only
+  force_continue: false
+
+mining:
+  probe_size: 192
+  probe_empty_frac: 0.30
+  recheck_max: 48
+  hard_pool_max: 400
+  min_score: 0.5
+  error_weights: {missed: 1.0, spurious: 1.0, boundary: 0.75, label: 0.75}
+
+eval:
+  dev_size: 400
+  dev_only_with_gold: true
+  dev_empty_frac: 0.0
+  batch_size: 16
+  max_new_tokens: 384
+
+budget:
+  max_gpu_hours: 2.4         # experiment cap; total project cap is 8 GPU-h (see log)
+  max_train_tokens: 2500000
+  num_gpus: 1
+  max_charge_seconds_per_event: 120
+  eval_reserve_frac: 0.10
+  est_round_hours: 0.0
+
+output:
+  dir: artifacts/skillllm_v2/qlora_loop_v4_distill

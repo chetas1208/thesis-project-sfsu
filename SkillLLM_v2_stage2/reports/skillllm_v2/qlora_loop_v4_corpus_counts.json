@@ -1,0 +1,14 @@
+{
+  "postings_total": 1887,
+  "skillspan_sentences_ge8_tokens": 6942,
+  "overlap_rule": ">= 50% of a SkillSpan (train/dev/test) sentence's 8-gram shingles (sentences with >= 8 normalised tokens) occur in the posting",
+  "postings_removed_for_overlap": 55,
+  "postings_surviving": 1832,
+  "postings_sampled": 600,
+  "chunks_candidate_in_sampled_postings": 47949,
+  "chunks_dropped_equal_to_skillspan_dev_test_sentence": 34,
+  "chunks_selected": 2400,
+  "chunks_per_posting_cap": 4,
+  "seed": 20261022,
+  "note": "counts only; posting text is private and is not stored in reports/docs/git"
+}

@@ -9,7 +9,7 @@ from typing import Any
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 
 from skillllm_v2.config import load_yaml
-from skillllm_v2.extract.mistral_extractor import SYSTEM_PROMPT, USER_PROMPT_TEMPLATE
+from skillllm_v2.extract.mistral_extractor import DEFAULT_PROMPT_VERSION, SYSTEM_PROMPT, USER_PROMPT_TEMPLATE, build_prompt_messages  # noqa: F401
 from skillllm_v2.io_utils import read_jsonl, write_json
 
 
@@ -197,14 +197,10 @@ def _target_json(row: dict[str, Any]) -> str:
     return json.dumps({"skills": skills}, ensure_ascii=False, separators=(",", ":"))
 
 
-def _format_training_text(tokenizer: Any, row: dict[str, Any]) -> str:
+def _format_training_text(tokenizer: Any, row: dict[str, Any], prompt_version: str = DEFAULT_PROMPT_VERSION) -> str:
     text = row["input"]
     target = _target_json(row)
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": USER_PROMPT_TEMPLATE.format(text=text)},
-        {"role": "assistant", "content": target},
-    ]
+    messages = build_prompt_messages(text, prompt_version) + [{"role": "assistant", "content": target}]
     rendered = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
     return rendered + (tokenizer.eos_token or "")
 
