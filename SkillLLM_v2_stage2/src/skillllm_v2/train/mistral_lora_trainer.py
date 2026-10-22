@@ -185,8 +185,7 @@ def _load_model(transformers: Any, model_path: str, model_kwargs: dict[str, Any]
     raise RuntimeError(f"Failed to load model for {model_path}: {' | '.join(errors)}")
 
 
-def _format_training_text(tokenizer: Any, row: dict[str, Any]) -> str:
-    text = row["input"]
+def _target_json(row: dict[str, Any]) -> str:
     skills = []
     for skill in row.get("output", {}).get("skills", []):
         skills.append(
@@ -195,7 +194,12 @@ def _format_training_text(tokenizer: Any, row: dict[str, Any]) -> str:
                 "label": skill.get("label", "HARD_SKILL"),
             }
         )
-    target = json.dumps({"skills": skills}, ensure_ascii=False, separators=(",", ":"))
+    return json.dumps({"skills": skills}, ensure_ascii=False, separators=(",", ":"))
+
+
+def _format_training_text(tokenizer: Any, row: dict[str, Any]) -> str:
+    text = row["input"]
+    target = _target_json(row)
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": USER_PROMPT_TEMPLATE.format(text=text)},

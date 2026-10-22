@@ -1,0 +1,82 @@
+# Low-compute quantized iterative ("loop") QLoRA for the Mistral-Small-3.1-24B skill extractor.
+# Replaces the 80-epoch 2-GPU brute-force run. Single GPU (GPU1), 4-bit NF4 base, rank-8 LoRA,
+# short rounds, hard-example mining, best-by-dev-F1 adapter, hard GPU-hour / token budget.
+# See docs/loop_training.md.
+seed: 42
+run_id: qlora_loop_mistral24b
+
+model:
+  model_path: models/mistral-small-3.1-24b-instruct-2503
+  # Optional warm start (must match lora.r / target_modules). null = fresh adapter.
+  # e.g. artifacts/skillllm_v2/mistral_lora/model  (existing 80-epoch r=16 adapter: set lora.r=16, lora.alpha=32)
+  init_adapter_path: null
+  use_4bit: true            # NF4 + double quant + bf16 compute
+  device_index: 0           # index INSIDE CUDA_VISIBLE_DEVICES (launcher pins CUDA_VISIBLE_DEVICES=1)
+  min_free_gb: 19.0         # refuse to load if the card has less free memory (shared server)
+  attn_implementation: sdpa
+  upcast_norms: false       # true = peft prepare_model_for_kbit_training (fp32 norms/embeddings, +~4 GB)
+
+data:
+  train_file: data/skillllm_v2/mistral_sft/train.jsonl
+  dev_file: data/skillllm_v2/mistral_sft/dev.jsonl
+  limit_train: null
+  limit_dev: null
+
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules: ".*language_model.*(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)$"
+
+train:
+  micro_batch_size: 2
+  grad_accum: 8              # effective batch 16
+  learning_rate: 0.00015
+  lr_decay_per_round: 0.85   # lr_k = lr * 0.85^k (floor 0.25x); cosine inside each round
+  min_lr_ratio: 0.1
+  warmup_ratio: 0.1
+  weight_decay: 0.0
+  max_grad_norm: 1.0
+  max_seq_length: 768        # longer examples are dropped (never truncated)
+  gradient_checkpointing: true
+  optimizer: paged_adamw_8bit
+  max_oom: 3
+  log_every_steps: 5
+
+loop:
+  max_rounds: 8
+  examples_per_round: 640    # ~0.13 epoch of the 4800-doc train split per round
+  hard_frac: 0.35            # share of each round drawn (with upsampling) from the hard pool
+  max_repeat: 3              # a doc can be repeated at most this many times per round
+  empty_frac_start: 0.10     # curriculum: fresh docs start positive-heavy ...
+  empty_frac_end: 0.25       # ... and ramp in empty docs (hard negatives vs false positives)
+  patience: 2                # early stop after this many rounds without beating best by min_delta
+  min_delta: 0.002
+  baseline_eval: false       # set true with init_adapter_path to log the warm-start dev F1
+  force_continue: false
+
+mining:
+  probe_size: 192            # TRAIN docs generated each round to find errors (dev is never mined)
+  probe_empty_frac: 0.30
+  recheck_max: 48            # hard-pool docs re-probed each round (retired once fixed)
+  hard_pool_max: 400
+  min_score: 0.5
+  error_weights: {missed: 1.0, spurious: 1.0, boundary: 0.75, label: 0.75}
+
+eval:
+  dev_size: 160              # fixed dev subset (gold-bearing docs, comparable to wrapper tuning)
+  dev_only_with_gold: true
+  dev_empty_frac: 0.0
+  batch_size: 8
+  max_new_tokens: 384
+
+budget:                      # HARD cap; run stops cleanly and keeps the best adapter
+  max_gpu_hours: 5.0
+  max_train_tokens: 2500000
+  num_gpus: 1
+  max_charge_seconds_per_event: 120   # a guardrails SIGSTOP pause is not billed as GPU time
+  eval_reserve_frac: 0.10             # training stops at 90% of the cap so the last dev eval still fits
+  est_round_hours: 0.0                # optional prior used before any round has been timed
+
+output:
+  dir: artifacts/skillllm_v2/qlora_loop

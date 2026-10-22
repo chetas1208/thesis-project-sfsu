@@ -1,0 +1,16 @@
+{
+  "exact_span_precision": 0.6719817767653758,
+  "exact_span_recall": 0.6512141280353201,
+  "exact_span_f1": 0.6614349775784755,
+  "partial_span_precision": 0.8300683371298405,
+  "partial_span_recall": 0.8044150110375275,
+  "partial_span_f1": 0.8170403587443945,
+  "token_precision": 0.7738991512730904,
+  "token_recall": 0.8187830128882315,
+  "token_f1": 0.7957086391869002,
+  "hard_skill_f1": 0.7159043222828367,
+  "soft_skill_f1": 0.5989407799711122,
+  "macro_f1": 0.6574225511269745,
+  "micro_f1": 0.6614349775784755,
+  "notes": "QLoRA-loop best adapter (artifacts/skillllm_v2/qlora_loop_v2/best, v2, r=16, best round per loop_summary.json) via the Raw Mistral LoRA eval path (MistralExtractor, greedy, max_new_tokens=512, 4-bit NF4, one doc at a time). Model load fallback used: False."
+}
