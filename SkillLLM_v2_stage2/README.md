@@ -15,6 +15,18 @@ The system is intentionally conservative: the Mistral extractor is the source-of
 - Deterministic job matching, skill-gap detection, and course recommendation.
 - Pipeline stage gates, artifact tracking, GPU preflight, and non-regression evaluation.
 
+## Use as a Python library
+
+The final model ships as an installable, typed package (`pip install .`; extras `[model]`, `[eval]`, `[recommend]`, `[test]`). The core install and the model-free offline mode need only the standard library.
+
+```python
+from skillllm_v2 import SkillLLM
+SkillLLM.offline().extract("Python, SQL and communication skills")            # no model, flagged offline
+SkillLLM.from_pretrained(base_dir, adapters=[a, b, c], min_votes=2).extract(text)  # 3-adapter majority vote (3x generation cost)
+```
+
+CLI: `skillllm extract --offline --text "..."`, `skillllm doctor`, `skillllm version`. Install, result schema, the `min_votes` precision/recall dial (held-out P 0.80/R 0.51 at 3 votes, P 0.72/R 0.66/F1 0.690 at 2 votes versus anchor F1 0.670), the honest performance table with caveats and the compute table are in [`docs/LIBRARY.md`](docs/LIBRARY.md); the adapter card template is [`MODEL_CARD.md`](MODEL_CARD.md).
+
 ## Layout
 
 ```text
