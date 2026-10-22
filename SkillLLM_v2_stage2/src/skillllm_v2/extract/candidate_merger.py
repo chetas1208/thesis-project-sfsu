@@ -20,12 +20,12 @@ DEFAULT_TUNED_CONFIG_PATH = "artifacts/skillllm_v2/candidate_merger/tuned_config
 # removes a Raw Mistral candidate).
 DEFAULT_CONFIG: dict[str, Any] = {
     "min_confidence_new_span": {
-        "gliner": 0.60,
-        "dictionary": 0.82,
+        "gliner": 0.90,
+        "dictionary": 0.85,
         # key order matches sorted({"dictionary", "gliner"}) -> "dictionary+gliner"
-        "dictionary+gliner": 0.55,
+        "dictionary+gliner": 0.65,
     },
-    "default_min_confidence_new_span": 0.75,
+    "default_min_confidence_new_span": 0.80,
     "require_alias_evidence_for_new_span": True,
 }
 

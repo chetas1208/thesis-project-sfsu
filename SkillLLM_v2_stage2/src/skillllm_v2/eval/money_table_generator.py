@@ -56,6 +56,10 @@ MONEY_COLUMNS = [
 def _legacy_row(system: str, metrics_path: str, gate_decision: str = "NA") -> dict[str, Any]:
     metrics = read_json(metrics_path, default={}) or {}
     status = "present" if Path(metrics_path).exists() else "missing"
+    course_benchmark = read_json("reports/skillllm_v2/course_recommendation_benchmark.json", default={}) or {}
+    course_rec = metrics.get("course_rec_precision_at_5")
+    if course_rec is None and system == "Old Full CAG/Graph" and "SkillLLM_v2 Full Graph Recommender" in course_benchmark:
+        course_rec = course_benchmark["SkillLLM_v2 Full Graph Recommender"].get("Precision@5")
     return {
         "System": system,
         "Exact Span F1": _fmt(metrics.get("exact_span_f1")),
@@ -65,7 +69,7 @@ def _legacy_row(system: str, metrics_path: str, gate_decision: str = "NA") -> di
         "Soft Skill F1": _fmt(metrics.get("soft_skill_f1")),
         "Linking Accuracy": _fmt(metrics.get("linking_accuracy")),
         "Job Match nDCG@10": _fmt(metrics.get("job_match_ndcg_at_10")),
-        "Course Rec P@5": _fmt(metrics.get("course_rec_precision_at_5")),
+        "Course Rec P@5": _fmt(course_rec),
         "Regression vs Raw Mistral": _regression(metrics),
         "Status": status,
         "Artifact path": metrics_path,
@@ -89,6 +93,10 @@ def _safe_wrapper_row(system: str, variant: str, legacy_metrics_path: str) -> di
     aggregate = read_json(f"{SAFE_WRAPPER_DIR}/metrics.json", default={}) or {}
     if aggregate.get("use_gliner") is False and variant in {"mistral_gliner_taxonomy", "full_cag_graph"}:
         display_system = f"{system} [GLiNER disabled in refresh run]"
+    course_benchmark = read_json("reports/skillllm_v2/course_recommendation_benchmark.json", default={}) or {}
+    course_rec = "NA"
+    if "SkillLLM_v2 Full Graph Recommender" in course_benchmark and variant in {"mistral_gliner_taxonomy", "full_cag_graph"}:
+        course_rec = _fmt(course_benchmark["SkillLLM_v2 Full Graph Recommender"].get("Precision@5"))
     return {
         "System": display_system,
         "Exact Span F1": _fmt(selected.get("exact_span_f1")),
@@ -98,7 +106,7 @@ def _safe_wrapper_row(system: str, variant: str, legacy_metrics_path: str) -> di
         "Soft Skill F1": _fmt(selected.get("soft_skill_f1")),
         "Linking Accuracy": _fmt(payload.get("linking_coverage")),
         "Job Match nDCG@10": "NA",
-        "Course Rec P@5": "NA",
+        "Course Rec P@5": course_rec,
         "Regression vs Raw Mistral": _regression(candidate),
         "Status": "selected_anchor_fallback" if gate.get("decision") == "fallback_to_anchor" else "selected_candidate",
         "Artifact path": f"{SAFE_WRAPPER_DIR}/{variant}/metrics.json",

@@ -73,6 +73,7 @@ class BoundaryRefiner:
         variants.extend(self._head_skill(text, candidate))
         variants.extend(self._split_conjunction(text, candidate))
         variants.extend(self._taxonomy_normalized(text, candidate))
+        variants.extend(self._realign_word_boundary(text, candidate))
         return variants
 
     def _original(self, candidate: dict[str, Any]) -> dict[str, Any]:
@@ -164,3 +165,19 @@ class BoundaryRefiner:
         if normalize_text(candidate_surface) not in self.alias_index:
             return []
         return [_variant(candidate, [(new_start, new_end, candidate_surface)], "taxonomy_normalized", f"core span matches taxonomy alias ({', '.join(applied)})", 0.05)]
+
+    def _realign_word_boundary(self, text: str, candidate: dict[str, Any]) -> list[dict[str, Any]]:
+        start, end = candidate["start"], candidate["end"]
+        surface = candidate["surface_form"]
+        # Check if current span already sits cleanly at word boundaries
+        is_wb = (start == 0 or not text[start - 1].isalnum()) and (end >= len(text) or not text[end].isalnum())
+        if is_wb:
+            return []
+        # Find exact case standalone word in text
+        matches = [(m.start(), m.end()) for m in re.finditer(rf"\b{re.escape(surface)}\b", text)]
+        if not matches:
+            matches = [(m.start(), m.end()) for m in re.finditer(rf"\b{re.escape(surface)}\b", text, re.IGNORECASE)]
+        if matches:
+            ns, ne = matches[0]
+            return [_variant(candidate, [(ns, ne, text[ns:ne])], "realign_word_boundary", "realign subword span to standalone word boundary", 0.10)]
+        return []

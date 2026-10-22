@@ -37,29 +37,29 @@
     "boundary_refiner": {
       "decision": "accept",
       "improved_over_anchor": false,
-      "candidate_exact_span_f1": 0.6711111111111112,
+      "candidate_exact_span_f1": 0.6724444444444444,
       "candidate_soft_skill_f1": 0.6055045871559633,
-      "selected_exact_span_f1": 0.6711111111111112,
+      "selected_exact_span_f1": 0.6724444444444444,
       "selected_soft_skill_f1": 0.6055045871559633,
       "linking_coverage": null
     },
     "mistral_gliner_taxonomy": {
       "decision": "accept",
       "improved_over_anchor": false,
-      "candidate_exact_span_f1": 0.6700620017714791,
-      "candidate_soft_skill_f1": 0.6023054755043228,
-      "selected_exact_span_f1": 0.6700620017714791,
-      "selected_soft_skill_f1": 0.6023054755043228,
-      "linking_coverage": 0.890270990670813
+      "candidate_exact_span_f1": 0.6694783573806881,
+      "candidate_soft_skill_f1": 0.6025949062950505,
+      "selected_exact_span_f1": 0.6694783573806881,
+      "selected_soft_skill_f1": 0.6025949062950505,
+      "linking_coverage": 0.8897321428571429
     },
     "full_cag_graph": {
       "decision": "accept",
       "improved_over_anchor": false,
-      "candidate_exact_span_f1": 0.6711022399645153,
-      "candidate_soft_skill_f1": 0.6037554164660568,
-      "selected_exact_span_f1": 0.6711022399645153,
-      "selected_soft_skill_f1": 0.6037554164660568,
-      "linking_coverage": 0.8903743315508021
+      "candidate_exact_span_f1": 0.6718541574032904,
+      "candidate_soft_skill_f1": 0.6040462427745664,
+      "selected_exact_span_f1": 0.6718541574032904,
+      "selected_soft_skill_f1": 0.6040462427745664,
+      "linking_coverage": 0.8898343036274071
     }
   },
   "output_dir": "artifacts/skillllm_v2/safe_wrapper",
@@ -89,14 +89,14 @@
         "variant": "boundary_refiner",
         "decision": "accept",
         "improved_over_anchor": false,
-        "reason": "boundary_refiner: exact_span_f1 0.671111 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.605505 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
+        "reason": "boundary_refiner: exact_span_f1 0.672444 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.605505 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
         "checks": [
           {
             "metric": "exact_span_f1",
             "anchor": 0.6700687818948303,
-            "candidate": 0.6711111111111112,
+            "candidate": 0.6724444444444444,
             "floor": 0.6600347818948303,
-            "delta": 0.0010423292162808906,
+            "delta": 0.002375662549614077,
             "passed": true
           },
           {
@@ -113,22 +113,22 @@
         "variant": "mistral_gliner_taxonomy",
         "decision": "accept",
         "improved_over_anchor": false,
-        "reason": "mistral_gliner_taxonomy: exact_span_f1 0.670062 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.602305 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
+        "reason": "mistral_gliner_taxonomy: exact_span_f1 0.669478 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.602595 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
         "checks": [
           {
             "metric": "exact_span_f1",
             "anchor": 0.6700687818948303,
-            "candidate": 0.6700620017714791,
+            "candidate": 0.6694783573806881,
             "floor": 0.6600347818948303,
-            "delta": -6.78012335120215e-06,
+            "delta": -0.0005904245141422626,
             "passed": true
           },
           {
             "metric": "soft_skill_f1",
             "anchor": 0.6040462427745664,
-            "candidate": 0.6023054755043228,
+            "candidate": 0.6025949062950505,
             "floor": 0.5740462427745664,
-            "delta": -0.0017407672702436372,
+            "delta": -0.0014513364795158967,
             "passed": true
           }
         ]
@@ -137,22 +137,22 @@
         "variant": "full_cag_graph",
         "decision": "accept",
         "improved_over_anchor": false,
-        "reason": "full_cag_graph: exact_span_f1 0.671102 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.603755 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
+        "reason": "full_cag_graph: exact_span_f1 0.671854 is below the improvement target (0.675034) but stays within the non-regression floor (>= 0.660035); soft_skill_f1 0.604046 stays within its guardrail (>= 0.574046) -- accepted as non-regressive.",
         "checks": [
           {
             "metric": "exact_span_f1",
             "anchor": 0.6700687818948303,
-            "candidate": 0.6711022399645153,
+            "candidate": 0.6718541574032904,
             "floor": 0.6600347818948303,
-            "delta": 0.0010334580696850226,
+            "delta": 0.0017853755084600298,
             "passed": true
           },
           {
             "metric": "soft_skill_f1",
             "anchor": 0.6040462427745664,
-            "candidate": 0.6037554164660568,
+            "candidate": 0.6040462427745664,
             "floor": 0.5740462427745664,
-            "delta": -0.00029082630850962854,
+            "delta": 0.0,
             "passed": true
           }
         ]

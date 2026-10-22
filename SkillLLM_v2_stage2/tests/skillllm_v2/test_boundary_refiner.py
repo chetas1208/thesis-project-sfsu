@@ -36,3 +36,16 @@ def test_boundary_refiner_never_drops_a_candidate() -> None:
     candidate = SkillCandidate("Strong leadership", "SOFT_SKILL", 0, 18, "mistral", 0.9, "Strong leadership").to_dict()
     refined = BoundaryRefiner().refine(text, [candidate])
     assert len(refined) >= 1
+
+
+def test_boundary_refiner_realigns_subword_to_word_boundary() -> None:
+    """A subword-misaligned span (e.g. 'java' inside 'javascript') is realigned to its standalone word."""
+    text = "javascript reactjs java"
+    # Misaligned java at index 0..4 (the prefix of javascript)
+    candidate = SkillCandidate("java", "HARD_SKILL", 0, 4, "mistral", 0.86, "java").to_dict()
+    refined = BoundaryRefiner().refine(text, [candidate])
+    assert len(refined) == 1
+    assert refined[0]["surface_form"] == "java"
+    assert refined[0]["start"] == 19
+    assert refined[0]["end"] == 23
+    assert refined[0]["metadata"]["boundary_edit"]["edit_type"] == "realign_word_boundary"

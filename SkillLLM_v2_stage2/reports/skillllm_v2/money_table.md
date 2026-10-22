@@ -40,9 +40,9 @@ Baselines vs the Raw Mistral LoRA anchor.
 
 | System | Exact Span F1 | Token F1 | Partial Span F1 | HARD_SKILL F1 | Soft Skill F1 | Linking Accuracy | Gate Decision | Candidate Exact Span F1 | Regression vs Raw Mistral |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Mistral + Boundary Refiner (safe wrapper) | 0.671111 | 0.787886 | 0.815111 | 0.727048 | 0.605505 | NA | accept | 0.671111 | 0.001042 |
-| Mistral + GLiNER + Taxonomy (safe wrapper) | 0.670062 | 0.787575 | 0.814438 | 0.728020 | 0.602305 | 0.890271 | accept | 0.670062 | -0.000007 |
-| SkillLLM_v2 Full CAG/Graph (safe wrapper) | 0.671102 | 0.787575 | 0.815702 | 0.728618 | 0.603755 | 0.890374 | accept | 0.671102 | 0.001033 |
+| Mistral + Boundary Refiner (safe wrapper) | 0.672444 | 0.788000 | 0.816444 | 0.729518 | 0.605505 | NA | accept | 0.672444 | 0.002376 |
+| Mistral + GLiNER + Taxonomy (safe wrapper) | 0.669478 | 0.787829 | 0.814206 | 0.726898 | 0.602595 | 0.889732 | accept | 0.669478 | -0.000590 |
+| SkillLLM_v2 Full CAG/Graph (safe wrapper) | 0.671854 | 0.787942 | 0.816807 | 0.729975 | 0.604046 | 0.889834 | accept | 0.671854 | 0.001785 |
 
 ---
 
@@ -55,10 +55,10 @@ Baselines vs the Raw Mistral LoRA anchor.
 | Raw Mistral LoRA (anchor) | NA | NA | 0.000000 | present |
 | Old Boundary Refiner | NA | NA | 0.000000 | present |
 | Old Mistral + GLiNER + Taxonomy | NA | NA | -0.000007 | present |
-| Old Full CAG/Graph | NA | NA | 0.001033 | present |
-| Mistral + Boundary Refiner (safe wrapper) | NA | NA | 0.001042 | selected_candidate |
-| Mistral + GLiNER + Taxonomy (safe wrapper) | NA | NA | -0.000007 | selected_candidate |
-| SkillLLM_v2 Full CAG/Graph (safe wrapper) | NA | NA | 0.001033 | selected_candidate |
+| Old Full CAG/Graph | NA | 1.000000 | 0.001033 | present |
+| Mistral + Boundary Refiner (safe wrapper) | NA | NA | 0.002376 | selected_candidate |
+| Mistral + GLiNER + Taxonomy (safe wrapper) | NA | 1.000000 | -0.000590 | selected_candidate |
+| SkillLLM_v2 Full CAG/Graph (safe wrapper) | NA | 1.000000 | 0.001785 | selected_candidate |
 
 ---
 

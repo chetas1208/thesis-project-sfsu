@@ -4,7 +4,7 @@ GLiNER,0.075833,0.114409,0.135365,0.054559,0.096571,NA,NA,NA,-0.594236,present,a
 Raw Mistral LoRA (anchor),0.670069,0.787886,0.813845,0.726450,0.604046,NA,NA,NA,0.000000,present,artifacts/skillllm_v2/mistral_lora/metrics.json,anchor,NA
 Old Boundary Refiner,0.670069,0.787886,0.813845,0.726450,0.604046,NA,NA,NA,0.000000,present,artifacts/skillllm_v2/mistral_boundary/metrics.json,NA,NA
 Old Mistral + GLiNER + Taxonomy,0.670062,0.787575,0.814438,0.728020,0.602305,0.890271,NA,NA,-0.000007,present,artifacts/skillllm_v2/mistral_gliner_taxonomy/metrics.json,NA,NA
-Old Full CAG/Graph,0.671102,0.787575,0.815702,0.728618,0.603755,0.890374,NA,NA,0.001033,present,artifacts/skillllm_v2/full_cag_graph/metrics.json,NA,NA
-Mistral + Boundary Refiner (safe wrapper),0.671111,0.787886,0.815111,0.727048,0.605505,NA,NA,NA,0.001042,selected_candidate,artifacts/skillllm_v2/safe_wrapper/boundary_refiner/metrics.json,accept,0.671111
-Mistral + GLiNER + Taxonomy (safe wrapper),0.670062,0.787575,0.814438,0.728020,0.602305,0.890271,NA,NA,-0.000007,selected_candidate,artifacts/skillllm_v2/safe_wrapper/mistral_gliner_taxonomy/metrics.json,accept,0.670062
-SkillLLM_v2 Full CAG/Graph (safe wrapper),0.671102,0.787575,0.815702,0.728618,0.603755,0.890374,NA,NA,0.001033,selected_candidate,artifacts/skillllm_v2/safe_wrapper/full_cag_graph/metrics.json,accept,0.671102
+Old Full CAG/Graph,0.671102,0.787575,0.815702,0.728618,0.603755,0.890374,NA,1.000000,0.001033,present,artifacts/skillllm_v2/full_cag_graph/metrics.json,NA,NA
+Mistral + Boundary Refiner (safe wrapper),0.672444,0.788000,0.816444,0.729518,0.605505,NA,NA,NA,0.002376,selected_candidate,artifacts/skillllm_v2/safe_wrapper/boundary_refiner/metrics.json,accept,0.672444
+Mistral + GLiNER + Taxonomy (safe wrapper),0.669478,0.787829,0.814206,0.726898,0.602595,0.889732,NA,1.000000,-0.000590,selected_candidate,artifacts/skillllm_v2/safe_wrapper/mistral_gliner_taxonomy/metrics.json,accept,0.669478
+SkillLLM_v2 Full CAG/Graph (safe wrapper),0.671854,0.787942,0.816807,0.729975,0.604046,0.889834,NA,1.000000,0.001785,selected_candidate,artifacts/skillllm_v2/safe_wrapper/full_cag_graph/metrics.json,accept,0.671854

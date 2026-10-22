@@ -37,11 +37,12 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "head_skill": -0.20,
         "split_conjunction": -0.20,
         "taxonomy_normalized": 0.20,
+        "realign_word_boundary": 0.25,
     },
     # Edit types the selector is allowed to choose (besides "original").
     # Trailing trims / head-skill / conjunction splits are disabled by default
     # because they were the dominant cause of the soft-skill F1 collapse.
-    "allowed_edit_types": ["trim_leading_filler", "taxonomy_normalized"],
+    "allowed_edit_types": ["trim_leading_filler", "taxonomy_normalized", "realign_word_boundary"],
     # Bonus applied to a variant whose normalized surface form is an exact
     # alias/taxonomy match.
     "alias_evidence_bonus": 0.30,

@@ -69,7 +69,11 @@ def find_offsets(text: str, surface: str, used: set[tuple[int, int]] | None = No
     used = used or set()
     if not surface:
         return None, None
-    matches = [(m.start(), m.end()) for m in re.finditer(re.escape(surface), text)]
+    matches = [(m.start(), m.end()) for m in re.finditer(rf"\b{re.escape(surface)}\b", text)]
+    if not matches:
+        matches = [(m.start(), m.end()) for m in re.finditer(rf"\b{re.escape(surface)}\b", text, re.IGNORECASE)]
+    if not matches:
+        matches = [(m.start(), m.end()) for m in re.finditer(re.escape(surface), text)]
     if not matches:
         lower_text = text.lower()
         lower_surface = surface.lower()
