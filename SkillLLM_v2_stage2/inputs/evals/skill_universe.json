@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "synthetic": true,
+    "note": "Hand-authored synthetic role archetypes, alias table and adjacency (transferable) groups used by the match/gap evals. Not real job postings. Authored independently of the matcher/gap detector code.",
+    "tiers": "required[0:2] are core (weight 3), remaining required are important (weight 2), preferred are nice-to-have (weight 1)."
+  },
+  "roles": {
+    "ml_engineer": {"required": ["Python", "Machine Learning", "PyTorch", "SQL"], "preferred": ["Docker", "AWS", "Git"]},
+    "data_analyst": {"required": ["SQL", "Excel", "Statistics", "Tableau"], "preferred": ["Python", "communication"]},
+    "data_engineer": {"required": ["Python", "SQL", "Apache Spark", "Airflow"], "preferred": ["AWS", "Docker", "Kafka"]},
+    "backend_dev": {"required": ["Java", "SQL", "REST APIs", "Git"], "preferred": ["Docker", "PostgreSQL", "Kubernetes"]},
+    "frontend_dev": {"required": ["JavaScript", "React", "HTML", "CSS"], "preferred": ["TypeScript", "Git", "communication"]},
+    "devops_engineer": {"required": ["Linux", "Docker", "Kubernetes", "CI/CD"], "preferred": ["Terraform", "AWS", "Python"]},
+    "cloud_architect": {"required": ["AWS", "Terraform", "Networking", "Kubernetes"], "preferred": ["Python", "leadership"]},
+    "security_analyst": {"required": ["Network Security", "Linux", "SIEM", "Python"], "preferred": ["Incident Response", "communication"]},
+    "product_manager": {"required": ["Product Management", "communication", "Agile", "SQL"], "preferred": ["Data Analysis", "leadership"]},
+    "nlp_scientist": {"required": ["Python", "NLP", "PyTorch", "Statistics"], "preferred": ["Transformers", "Machine Learning", "communication"]},
+    "mobile_dev": {"required": ["Kotlin", "Android", "Git", "REST APIs"], "preferred": ["Java", "Firebase"]},
+    "qa_engineer": {"required": ["Test Automation", "Python", "Selenium", "Git"], "preferred": ["CI/CD", "SQL"]},
+    "bi_developer": {"required": ["SQL", "Power BI", "Data Modeling", "Excel"], "preferred": ["Python", "communication"]},
+    "project_manager": {"required": ["Project Management", "Agile", "communication", "leadership"], "preferred": ["Jira", "Excel"]}
+  },
+  "distractor_skills": ["Photoshop", "Accounting", "Public Speaking", "Spanish", "Welding", "Copywriting", "Figma", "Salesforce", "Negotiation", "Bookkeeping"],
+  "adjacency": [
+    ["PyTorch", "TensorFlow"],
+    ["AWS", "Azure", "GCP"],
+    ["Tableau", "Power BI"],
+    ["React", "Vue", "Angular"],
+    ["Java", "Kotlin"],
+    ["PostgreSQL", "MySQL"],
+    ["Selenium", "Cypress"],
+    ["Apache Spark", "Pandas"],
+    ["Airflow", "Prefect"],
+    ["Terraform", "CloudFormation"],
+    ["Docker", "Podman"],
+    ["CI/CD", "Jenkins", "GitHub Actions"]
+  ],
+  "aliases": {
+    "Python": ["python3", "py"],
+    "JavaScript": ["JS", "Javascript"],
+    "PostgreSQL": ["Postgres"],
+    "Kubernetes": ["k8s"],
+    "Machine Learning": ["ML"],
+    "AWS": ["Amazon Web Services"],
+    "SQL": ["Structured Query Language"],
+    "NLP": ["Natural Language Processing"],
+    "CI/CD": ["continuous integration"],
+    "Power BI": ["PowerBI"],
+    "Excel": ["Microsoft Excel"],
+    "communication": ["communication skills"],
+    "Terraform": ["TF"],
+    "TypeScript": ["TS"],
+    "Git": ["version control"],
+    "Statistics": ["statistical analysis"],
+    "REST APIs": ["REST", "RESTful APIs"],
+    "Project Management": ["PM"],
+    "Test Automation": ["automated testing"]
+  }
+}

@@ -1,0 +1,127 @@
+{"id": "probe-001", "surface": "Python", "gold_id": "python", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-002", "surface": "Docker", "gold_id": "docker", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-003", "surface": "Kubernetes", "gold_id": "kubernetes", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-004", "surface": "Terraform", "gold_id": "terraform", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-005", "surface": "PostgreSQL", "gold_id": "postgresql", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-006", "surface": "Jenkins", "gold_id": "jenkins", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-007", "surface": "TypeScript", "gold_id": "typescript", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-008", "surface": "Kotlin", "gold_id": "kotlin", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-009", "surface": "Git", "gold_id": "git", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-010", "surface": "Linux", "gold_id": "linux", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-011", "surface": "GraphQL", "gold_id": "graphql", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-012", "surface": "Ansible", "gold_id": "ansible", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-013", "surface": "Redis", "gold_id": "redis", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-014", "surface": "Hadoop", "gold_id": "hadoop", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-015", "surface": "Kafka", "gold_id": "kafka", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-016", "surface": "Spark", "gold_id": "spark", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-017", "surface": "teamwork", "gold_id": "teamwork", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-018", "surface": "leadership", "gold_id": "leadership", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-019", "surface": "Scrum", "gold_id": "scrum", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-020", "surface": "Django", "gold_id": "django", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-021", "surface": "Selenium", "gold_id": "selenium", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-022", "surface": "MySQL", "gold_id": "mysql", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-023", "surface": "Angular", "gold_id": "angular", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-024", "surface": "Maven", "gold_id": "maven", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-025", "surface": "Redux", "gold_id": "redux", "category": "exact", "source": "hand-written", "note": "surface is a table entry verbatim"}
+{"id": "probe-026", "surface": "AWS", "gold_id": "amazon-web-services", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-027", "surface": "CI/CD", "gold_id": "continuous-integration-continuous-deployment", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-028", "surface": "NLP", "gold_id": "natural-language-processing", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-029", "surface": "SQL", "gold_id": "structured-query-language", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-030", "surface": "ML", "gold_id": "machine-learning", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-031", "surface": "JS", "gold_id": "javascript", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-032", "surface": "DL", "gold_id": "deep-learning", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-033", "surface": "ReactJS", "gold_id": "react", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-034", "surface": "React.js", "gold_id": "react", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-035", "surface": "NodeJS", "gold_id": "node-js", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-036", "surface": "communication skills", "gold_id": "communication", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-037", "surface": "leadership skills", "gold_id": "leadership", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-038", "surface": "problem-solving skills", "gold_id": "problem-solving", "category": "alias", "source": "hand-written", "note": "curated abbreviation/variant already listed in the table"}
+{"id": "probe-039", "surface": "PYTHON", "gold_id": "python", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-040", "surface": "kubernetes", "gold_id": "kubernetes", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-041", "surface": "Problem Solving", "gold_id": "problem-solving", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-042", "surface": "Node JS", "gold_id": "node-js", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-043", "surface": "java script", "gold_id": "javascript", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-044", "surface": "Type Script", "gold_id": "typescript", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-045", "surface": "Git Hub", "gold_id": "github", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-046", "surface": "Amazon web services", "gold_id": "amazon-web-services", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-047", "surface": "machine-learning", "gold_id": "machine-learning", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-048", "surface": "CI CD", "gold_id": "continuous-integration-continuous-deployment", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-049", "surface": "ReactJs", "gold_id": "react", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-050", "surface": "Team Work", "gold_id": "teamwork", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-051", "surface": "natural language processing", "gold_id": "natural-language-processing", "category": "variant", "source": "hand-written", "note": "case/spacing/punctuation variant"}
+{"id": "probe-052", "surface": "K8s", "gold_id": "kubernetes", "category": "abbrev_unseen", "source": "hand-written", "note": "abbreviation NOT in table; true target is in the table; hard on purpose"}
+{"id": "probe-053", "surface": "TS", "gold_id": "typescript", "category": "abbrev_unseen", "source": "hand-written", "note": "abbreviation NOT in table; true target is in the table; hard on purpose"}
+{"id": "probe-054", "surface": "Postgre", "gold_id": "postgresql", "category": "abbrev_unseen", "source": "hand-written", "note": "abbreviation NOT in table; true target is in the table; hard on purpose"}
+{"id": "probe-055", "surface": "GH Actions", "gold_id": "github", "category": "abbrev_unseen", "source": "hand-written", "note": "abbreviation NOT in table; true target is in the table; hard on purpose"}
+{"id": "probe-056", "surface": "py", "gold_id": "python", "category": "abbrev_unseen", "source": "hand-written", "note": "abbreviation NOT in table; true target is in the table; hard on purpose"}
+{"id": "probe-057", "surface": "Kubernets", "gold_id": "kubernetes", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-058", "surface": "Javascipt", "gold_id": "javascript", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-059", "surface": "Typescrip", "gold_id": "typescript", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-060", "surface": "Terraforms", "gold_id": "terraform", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-061", "surface": "Dockers", "gold_id": "docker", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-062", "surface": "mircoservices", "gold_id": "microservices", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-063", "surface": "Githb", "gold_id": "github", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-064", "surface": "Angualr", "gold_id": "angular", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-065", "surface": "Elastisearch", "gold_id": "elasticsearch", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-066", "surface": "comunication", "gold_id": "communication", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-067", "surface": "Postgre SQL", "gold_id": "postgresql", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-068", "surface": "Jenkin", "gold_id": "jenkins", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-069", "surface": "Kafkaa", "gold_id": "kafka", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-070", "surface": "Pythn", "gold_id": "python", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-071", "surface": "Ansibel", "gold_id": "ansible", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-072", "surface": "Cassandr", "gold_id": "cassandra", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-073", "surface": "Prometheous", "gold_id": "prometheus", "category": "fuzzy_typo", "source": "hand-written", "note": "typo of a table entry"}
+{"id": "probe-074", "surface": "experience with Kubernetes clusters", "gold_id": "kubernetes", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-075", "surface": "Python programming", "gold_id": "python", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-076", "surface": "Docker containers", "gold_id": "docker", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-077", "surface": "Jenkins pipelines", "gold_id": "jenkins", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-078", "surface": "Terraform modules", "gold_id": "terraform", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-079", "surface": "Kafka streaming", "gold_id": "kafka", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-080", "surface": "agile ways of working", "gold_id": "agile", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-081", "surface": "unit tests with JUnit", "gold_id": "junit", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-082", "surface": "React components", "gold_id": "react", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-083", "surface": "Selenium test scripts", "gold_id": "selenium", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-084", "surface": "strong communication", "gold_id": "communication", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-085", "surface": "Ansible playbooks", "gold_id": "ansible", "category": "phrase", "source": "hand-written", "note": "skill embedded in a longer phrase; gold is the named skill"}
+{"id": "probe-086", "surface": "Elastic Search", "gold_id": "elastic-search", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-087", "surface": "Elasticsearch", "gold_id": "elasticsearch", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-088", "surface": "RESTful API", "gold_id": "restful-api", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-089", "surface": "REST API", "gold_id": "rest-api", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-090", "surface": "REST APIs", "gold_id": "rest-apis", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-091", "surface": "Google Cloud Platform", "gold_id": "google-cloud-platform", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-092", "surface": "GCP", "gold_id": "gcp", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-093", "surface": "Microsoft Azure", "gold_id": "microsoft-azure", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-094", "surface": "Vue.js", "gold_id": "vue-js", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-095", "surface": "Vue", "gold_id": "vue", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-096", "surface": "AngularJS", "gold_id": "angularjs", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-097", "surface": "Next.js", "gold_id": "next-js", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-098", "surface": "Java 8", "gold_id": "java-8", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-099", "surface": "Core Java", "gold_id": "core-java", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-100", "surface": "Spring Boot", "gold_id": "spring-boot", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-101", "surface": "React Native", "gold_id": "react-native", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-102", "surface": "Unity 3D", "gold_id": "unity3d", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-103", "surface": "Node", "gold_id": "node", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-104", "surface": "Postgres", "gold_id": "postgres", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-105", "surface": "Java Spring", "gold_id": "java-spring", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-106", "surface": "SQL Server", "gold_id": "sql-server", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-107", "surface": "Oracle DB", "gold_id": "oracle-database", "category": "ambiguous", "source": "hand-written", "note": "table holds several near-duplicate entries; gold is the entry matching the surface most closely"}
+{"id": "probe-108", "surface": "Haskell", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-109", "surface": "Rust", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-110", "surface": "Scala", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-111", "surface": "Salesforce", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-112", "surface": "Figma", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-113", "surface": "welding", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-114", "surface": "bookkeeping", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-115", "surface": "forklift operation", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-116", "surface": "pottery", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-117", "surface": "quantum chromodynamics", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-118", "surface": "tax accounting", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-119", "surface": "carpentry", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-120", "surface": "Photoshop", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-121", "surface": "Tableau", "gold_id": null, "category": "no_match", "source": "hand-written", "note": "skill absent from table; correct behaviour is no link"}
+{"id": "probe-122", "surface": "customer service excellence", "gold_id": null, "category": "no_match_shared_tokens", "source": "hand-written", "note": "absent from table but shares generic head tokens with unrelated entries; a link is a false link"}
+{"id": "probe-123", "surface": "data visualization", "gold_id": null, "category": "no_match_shared_tokens", "source": "hand-written", "note": "absent from table but shares generic head tokens with unrelated entries; a link is a false link"}
+{"id": "probe-124", "surface": "machine vision", "gold_id": null, "category": "no_match_shared_tokens", "source": "hand-written", "note": "absent from table but shares generic head tokens with unrelated entries; a link is a false link"}
+{"id": "probe-125", "surface": "cloud security", "gold_id": null, "category": "no_match_shared_tokens", "source": "hand-written", "note": "absent from table but shares generic head tokens with unrelated entries; a link is a false link"}
+{"id": "probe-126", "surface": "mobile app design", "gold_id": null, "category": "no_match_shared_tokens", "source": "hand-written", "note": "absent from table but shares generic head tokens with unrelated entries; a link is a false link"}
+{"id": "probe-127", "surface": "web scraping", "gold_id": null, "category": "no_match_shared_tokens", "source": "hand-written", "note": "absent from table but shares generic head tokens with unrelated entries; a link is a false link"}

@@ -1,0 +1,1011 @@
+{
+ "dataset": "synthetic",
+ "generator": "skillllm_v2.evals.context_evals.make_profile",
+ "note": "SYNTHETIC profiles: all text, skills, offsets and gold labels are generated, not real user data",
+ "profiles": [
+  {
+   "dataset": "synthetic",
+   "date_conflicts": [
+    "presentation",
+    "rust"
+   ],
+   "extractions": [
+    {
+     "canonical_skill_id": "cv",
+     "canonical_skill_name": "Computer Vision",
+     "confidence": 0.429,
+     "end": 1437,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 1422,
+     "surface_form": "Computer Vision"
+    },
+    {
+     "canonical_skill_id": "airflow",
+     "canonical_skill_name": "Apache Airflow",
+     "confidence": 0.984,
+     "end": 1026,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 1019,
+     "surface_form": "Airflow"
+    },
+    {
+     "canonical_skill_id": "istio",
+     "canonical_skill_name": "Istio",
+     "confidence": 0.789,
+     "end": 72,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 67,
+     "surface_form": "Istio"
+    },
+    {
+     "canonical_skill_id": "tensorflow",
+     "canonical_skill_name": "TensorFlow",
+     "confidence": 0.681,
+     "end": 569,
+     "evidence": "Designed claims processing workflows using TensorFlow",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 559,
+     "surface_form": "TensorFlow"
+    },
+    {
+     "canonical_skill_id": "bigquery",
+     "canonical_skill_name": "BigQuery",
+     "confidence": 0.839,
+     "end": 207,
+     "evidence": "Maintained churn forecasting workflows using BigQuery",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 199,
+     "surface_form": "BigQuery"
+    },
+    {
+     "canonical_skill_id": "airflow",
+     "canonical_skill_name": "Apache Airflow",
+     "confidence": 0.942,
+     "end": 1210,
+     "evidence": "Maintained fraud alerts workflows using Airflow",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 1203,
+     "surface_form": "Airflow"
+    },
+    {
+     "canonical_skill_id": "bigquery",
+     "canonical_skill_name": "BigQuery",
+     "confidence": 0.85,
+     "end": 913,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 905,
+     "surface_form": "BigQuery"
+    },
+    {
+     "canonical_skill_id": "airflow",
+     "canonical_skill_name": "Apache Airflow",
+     "confidence": 0.99,
+     "end": 84,
+     "evidence": "Migrated ride pricing workflows using Istio and Airflow",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 77,
+     "surface_form": "Airflow"
+    },
+    {
+     "canonical_skill_id": "tensorflow",
+     "canonical_skill_name": "TensorFlow",
+     "confidence": 0.648,
+     "end": 514,
+     "evidence": "Maintained document search workflows using TensorFlow",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 504,
+     "surface_form": "TensorFlow"
+    },
+    {
+     "canonical_skill_id": "airflow",
+     "canonical_skill_name": "Apache Airflow",
+     "confidence": 0.942,
+     "end": 1210,
+     "evidence": "Maintained fraud alerts workflows using Airflow",
+     "label": "SOFT_SKILL",
+     "source": "gliner",
+     "start": 1203,
+     "surface_form": "Airflow"
+    },
+    {
+     "canonical_skill_id": "presentation",
+     "canonical_skill_name": "Presentation Skills",
+     "confidence": 0.726,
+     "end": 1526,
+     "evidence": "Maintained sensor telemetry workflows using presentation skills",
+     "label": "SOFT_SKILL",
+     "source": "mistral",
+     "start": 1507,
+     "surface_form": "presentation skills"
+    },
+    {
+     "canonical_skill_id": "mlflow",
+     "canonical_skill_name": "MLflow",
+     "confidence": 0.335,
+     "end": 142,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 136,
+     "surface_form": "MLflow"
+    },
+    {
+     "canonical_skill_id": "excel",
+     "canonical_skill_name": "Microsoft Excel",
+     "confidence": 0.508,
+     "end": 152,
+     "evidence": "Designed clinical trial reporting workflows using MLflow and Excel",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 147,
+     "surface_form": "Excel"
+    },
+    {
+     "canonical_skill_id": "airflow",
+     "canonical_skill_name": "Apache Airflow",
+     "confidence": 0.94,
+     "end": 351,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 344,
+     "surface_form": "Airflow"
+    },
+    {
+     "canonical_skill_id": "airflow",
+     "canonical_skill_name": "Apache Airflow",
+     "confidence": 0.928,
+     "end": 459,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 452,
+     "surface_form": "Airflow"
+    },
+    {
+     "canonical_skill_id": "presentation",
+     "canonical_skill_name": "Presentation Skills",
+     "confidence": 0.77,
+     "end": 1461,
+     "evidence": "Shipped recommendation feeds workflows using Computer Vision and presentation skills",
+     "label": "SOFT_SKILL",
+     "source": "mistral",
+     "start": 1442,
+     "surface_form": "presentation skills"
+    },
+    {
+     "canonical_skill_id": "dl",
+     "canonical_skill_name": "Deep Learning",
+     "confidence": 0.539,
+     "end": 976,
+     "evidence": "Automated log anomaly detection workflows using Deep Learning",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 963,
+     "surface_form": "Deep Learning"
+    },
+    {
+     "canonical_skill_id": "istio",
+     "canonical_skill_name": "Istio",
+     "confidence": 0.862,
+     "end": 859,
+     "evidence": "Built supply chain planning workflows using Istio",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 854,
+     "surface_form": "Istio"
+    },
+    {
+     "canonical_skill_id": "rust",
+     "canonical_skill_name": "Rust",
+     "confidence": 0.899,
+     "end": 404,
+     "evidence": "Designed energy load balancing workflows using Rust",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 400,
+     "surface_form": "Rust"
+    },
+    {
+     "canonical_skill_id": "istio_alt",
+     "canonical_skill_name": "Istio",
+     "confidence": 0.789,
+     "end": 72,
+     "evidence": "",
+     "label": "SOFT_SKILL",
+     "source": "gliner",
+     "start": 67,
+     "surface_form": "Istio"
+    },
+    {
+     "canonical_skill_id": "istio",
+     "canonical_skill_name": "Istio",
+     "confidence": 0.839,
+     "end": 692,
+     "evidence": "Designed inventory tracking workflows using Istio",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 687,
+     "surface_form": "Istio"
+    }
+   ],
+   "gold_important": [
+    "airflow",
+    "istio"
+   ],
+   "gold_skills": [
+    "airflow",
+    "bigquery",
+    "cv",
+    "dl",
+    "excel",
+    "istio",
+    "mlflow",
+    "presentation",
+    "rust",
+    "tensorflow"
+   ],
+   "job_target": "data engineer",
+   "label_conflicts": [
+    {
+     "subtype": "same_id",
+     "surface": "Airflow"
+    },
+    {
+     "subtype": "diff_id",
+     "surface": "Istio"
+    }
+   ],
+   "n_skills": 10,
+   "noise_surfaces": [],
+   "profile_id": "synthetic-10-0",
+   "queries": [
+    {
+     "gold": [
+      "airflow"
+     ],
+     "query": "Airflow",
+     "type": "name"
+    },
+    {
+     "gold": [
+      "excel"
+     ],
+     "query": "Excel",
+     "type": "name"
+    },
+    {
+     "gold": [
+      "mlflow"
+     ],
+     "query": "MLflow",
+     "type": "name"
+    },
+    {
+     "gold": [
+      "airflow"
+     ],
+     "query": "Apache Airflow",
+     "type": "alias"
+    },
+    {
+     "gold": [
+      "excel"
+     ],
+     "query": "Microsoft Excel",
+     "type": "alias"
+    },
+    {
+     "gold": [
+      "rust"
+     ],
+     "query": "what experience does the candidate have with Rust",
+     "type": "natural"
+    },
+    {
+     "gold": [
+      "cv"
+     ],
+     "query": "what experience does the candidate have with Computer Vision",
+     "type": "natural"
+    },
+    {
+     "gold": [
+      "presentation"
+     ],
+     "query": "what experience does the candidate have with presentation skills",
+     "type": "natural"
+    },
+    {
+     "gold": [
+      "airflow"
+     ],
+     "query": "ride pricing",
+     "type": "context"
+    },
+    {
+     "gold": [
+      "presentation"
+     ],
+     "query": "recommendation feeds",
+     "type": "context"
+    },
+    {
+     "gold": [
+      "excel"
+     ],
+     "query": "clinical trial reporting",
+     "type": "context"
+    }
+   ],
+   "quiet_important": [],
+   "text": "Used Rust from 2018 to 2021. Migrated ride pricing workflows using Istio and Airflow. Designed clinical trial reporting workflows using MLflow and Excel. Maintained churn forecasting workflows using BigQuery. Worked with presentation skills between 2013 and 2015, before any commercial exposure. Optimized support ticket triage workflows using Airflow. Designed energy load balancing workflows using Rust. Automated customer onboarding workflows using Airflow. Maintained document search workflows using TensorFlow. Designed claims processing workflows using TensorFlow. Passionate about continuous improvement and collaboration across teams. Designed inventory tracking workflows using Istio. Available for relocation and open to hybrid arrangements. Available for relocation and open to hybrid arrangements. Built supply chain planning workflows using Istio. Designed route optimization workflows using BigQuery. Automated log anomaly detection workflows using Deep Learning. Designed genomics intake workflows using Airflow. Worked with Rust between 2013 and 2015, before any commercial exposure. Holds a bachelor degree and several professional certificates. Maintained fraud alerts workflows using Airflow. Used presentation skills from 2018 to 2021. Holds a bachelor degree and several professional certificates. Available for relocation and open to hybrid arrangements. Shipped recommendation feeds workflows using Computer Vision and presentation skills. Maintained sensor telemetry workflows using presentation skills.",
+   "tiers": {
+    "airflow": "high",
+    "bigquery": "mid",
+    "cv": "low",
+    "dl": "low",
+    "excel": "low",
+    "istio": "high",
+    "mlflow": "low",
+    "presentation": "mid",
+    "rust": "mid",
+    "tensorflow": "mid"
+   }
+  },
+  {
+   "dataset": "synthetic",
+   "date_conflicts": [
+    "cicd",
+    "graphql",
+    "scala",
+    "tensorflow"
+   ],
+   "extractions": [
+    {
+     "canonical_skill_id": "cicd",
+     "canonical_skill_name": "CI/CD",
+     "confidence": 0.423,
+     "end": 1343,
+     "evidence": "Built recommendation feeds workflows using CI/CD",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 1338,
+     "surface_form": "CI/CD"
+    },
+    {
+     "canonical_skill_id": "sas",
+     "canonical_skill_name": "SAS",
+     "confidence": 0.852,
+     "end": 634,
+     "evidence": "Migrated route optimization phase 1 workflows using MATLAB and SAS",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 631,
+     "surface_form": "SAS"
+    },
+    {
+     "canonical_skill_id": "tableau",
+     "canonical_skill_name": "Tableau",
+     "confidence": 0.407,
+     "end": 304,
+     "evidence": "Optimized sensor telemetry phase 1 workflows using Tableau",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 297,
+     "surface_form": "Tableau"
+    },
+    {
+     "canonical_skill_id": "gcp",
+     "canonical_skill_name": "Google Cloud Platform",
+     "confidence": 0.858,
+     "end": 1279,
+     "evidence": "Migrated energy load balancing phase 1 workflows using GCP and Snowflake",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 1276,
+     "surface_form": "GCP"
+    },
+    {
+     "canonical_skill_id": "leadership",
+     "canonical_skill_name": "Leadership",
+     "confidence": 0.808,
+     "end": 1807,
+     "evidence": "Shipped credit scoring phase 1 workflows using leadership",
+     "label": "SOFT_SKILL",
+     "source": "mistral",
+     "start": 1797,
+     "surface_form": "leadership"
+    },
+    {
+     "canonical_skill_id": "sas",
+     "canonical_skill_name": "SAS",
+     "confidence": 0.862,
+     "end": 1496,
+     "evidence": "Migrated route optimization workflows using GCP and SAS",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 1493,
+     "surface_form": "SAS"
+    },
+    {
+     "canonical_skill_id": "graphql",
+     "canonical_skill_name": "GraphQL",
+     "confidence": 0.38,
+     "end": 1156,
+     "evidence": "Migrated claims processing workflows using Snowflake and GraphQL",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 1149,
+     "surface_form": "GraphQL"
+    },
+    {
+     "canonical_skill_id": "postgresql",
+     "canonical_skill_name": "PostgreSQL",
+     "confidence": 0.861,
+     "end": 829,
+     "evidence": "Led delivery of churn forecasting workflows using PostgreSQL",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 819,
+     "surface_form": "PostgreSQL"
+    },
+    {
+     "canonical_skill_id": "nodejs",
+     "canonical_skill_name": "Node.js",
+     "confidence": 0.858,
+     "end": 1748,
+     "evidence": "Designed clinical trial reporting workflows using Node.js",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 1741,
+     "surface_form": "Node.js"
+    },
+    {
+     "canonical_skill_id": "python",
+     "canonical_skill_name": "Python",
+     "confidence": 0.465,
+     "end": 949,
+     "evidence": "Shipped document search workflows using Scala and Python",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 943,
+     "surface_form": "Python"
+    },
+    {
+     "canonical_skill_id": "postgresql",
+     "canonical_skill_name": "PostgreSQL",
+     "confidence": 0.829,
+     "end": 2374,
+     "evidence": "Migrated warehouse scheduling phase 1 workflows using PostgreSQL",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 2364,
+     "surface_form": "PostgreSQL"
+    },
+    {
+     "canonical_skill_id": "aws",
+     "canonical_skill_name": "Amazon Web Services",
+     "confidence": 0.699,
+     "end": 176,
+     "evidence": "Designed warehouse scheduling workflows using AWS",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 173,
+     "surface_form": "AWS"
+    },
+    {
+     "canonical_skill_id": "scala",
+     "canonical_skill_name": "Scala",
+     "confidence": 0.641,
+     "end": 938,
+     "evidence": "Shipped document search workflows using Scala and Python",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 933,
+     "surface_form": "Scala"
+    },
+    {
+     "canonical_skill_id": "grpc",
+     "canonical_skill_name": "gRPC",
+     "confidence": 0.662,
+     "end": 997,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 993,
+     "surface_form": "gRPC"
+    },
+    {
+     "canonical_skill_id": "matlab",
+     "canonical_skill_name": "MATLAB",
+     "confidence": 0.624,
+     "end": 626,
+     "evidence": "Migrated route optimization phase 1 workflows using MATLAB and SAS",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 620,
+     "surface_form": "MATLAB"
+    },
+    {
+     "canonical_skill_id": "tailwind",
+     "canonical_skill_name": "Tailwind CSS",
+     "confidence": 0.462,
+     "end": 1553,
+     "evidence": "Designed energy load balancing workflows using Tailwind",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 1545,
+     "surface_form": "Tailwind"
+    },
+    {
+     "canonical_skill_id": "mentoring",
+     "canonical_skill_name": "Mentoring",
+     "confidence": 0.679,
+     "end": 2786,
+     "evidence": "Shipped credit scoring workflows using mentoring",
+     "label": "SOFT_SKILL",
+     "source": "bert",
+     "start": 2777,
+     "surface_form": "mentoring"
+    },
+    {
+     "canonical_skill_id": "gcp",
+     "canonical_skill_name": "Google Cloud Platform",
+     "confidence": 0.854,
+     "end": 1488,
+     "evidence": "Migrated route optimization workflows using GCP and SAS",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 1485,
+     "surface_form": "GCP"
+    },
+    {
+     "canonical_skill_id": "mentoring",
+     "canonical_skill_name": "Mentoring",
+     "confidence": 0.709,
+     "end": 2198,
+     "evidence": "Optimized document search phase 1 workflows using mentoring",
+     "label": "SOFT_SKILL",
+     "source": "dictionary",
+     "start": 2189,
+     "surface_form": "mentoring"
+    },
+    {
+     "canonical_skill_id": "snowflake",
+     "canonical_skill_name": "Snowflake",
+     "confidence": 0.843,
+     "end": 1144,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 1135,
+     "surface_form": "Snowflake"
+    },
+    {
+     "canonical_skill_id": "leadership",
+     "canonical_skill_name": "Leadership",
+     "confidence": 0.836,
+     "end": 2588,
+     "evidence": "Led delivery of churn forecasting phase 1 workflows using GCP and leadership",
+     "label": "SOFT_SKILL",
+     "source": "bert",
+     "start": 2578,
+     "surface_form": "leadership"
+    },
+    {
+     "canonical_skill_id": "postgresql",
+     "canonical_skill_name": "PostgreSQL",
+     "confidence": 0.823,
+     "end": 891,
+     "evidence": "Migrated inventory tracking phase 1 workflows using Postgres",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 883,
+     "surface_form": "Postgres"
+    },
+    {
+     "canonical_skill_id": "pytorch",
+     "canonical_skill_name": "PyTorch",
+     "confidence": 0.663,
+     "end": 2673,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 2666,
+     "surface_form": "PyTorch"
+    },
+    {
+     "canonical_skill_id": "gcp",
+     "canonical_skill_name": "Google Cloud Platform",
+     "confidence": 0.868,
+     "end": 2661,
+     "evidence": "Migrated fraud alerts workflows using GCP and PyTorch",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 2658,
+     "surface_form": "GCP"
+    },
+    {
+     "canonical_skill_id": "kanban",
+     "canonical_skill_name": "Kanban",
+     "confidence": 0.892,
+     "end": 2137,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 2131,
+     "surface_form": "Kanban"
+    },
+    {
+     "canonical_skill_id": "golang",
+     "canonical_skill_name": "Go",
+     "confidence": 0.651,
+     "end": 1936,
+     "evidence": "Automated ad attribution phase 1 workflows using Golang",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 1930,
+     "surface_form": "Golang"
+    },
+    {
+     "canonical_skill_id": "gcp",
+     "canonical_skill_name": "Google Cloud Platform",
+     "confidence": 0.808,
+     "end": 1879,
+     "evidence": "Maintained recommendation feeds phase 1 workflows using Kanban and GCP",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 1876,
+     "surface_form": "GCP"
+    },
+    {
+     "canonical_skill_id": "nodejs",
+     "canonical_skill_name": "Node.js",
+     "confidence": 0.845,
+     "end": 2256,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 2249,
+     "surface_form": "Node.js"
+    },
+    {
+     "canonical_skill_id": "cv",
+     "canonical_skill_name": "Computer Vision",
+     "confidence": 0.801,
+     "end": 2308,
+     "evidence": "Built ride pricing workflows using Computer Vision",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 2293,
+     "surface_form": "Computer Vision"
+    },
+    {
+     "canonical_skill_id": "sas",
+     "canonical_skill_name": "SAS",
+     "confidence": 0.852,
+     "end": 634,
+     "evidence": "Migrated route optimization phase 1 workflows using MATLAB and SAS",
+     "label": "SOFT_SKILL",
+     "source": "gliner",
+     "start": 631,
+     "surface_form": "SAS"
+    },
+    {
+     "canonical_skill_id": "tensorflow",
+     "canonical_skill_name": "TensorFlow",
+     "confidence": 0.656,
+     "end": 566,
+     "evidence": "Migrated genomics intake workflows using TensorFlow",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 556,
+     "surface_form": "TensorFlow"
+    },
+    {
+     "canonical_skill_id": "time_management",
+     "canonical_skill_name": "Time Management",
+     "confidence": 0.753,
+     "end": 236,
+     "evidence": "Automated sensor telemetry workflows using time management and iOS",
+     "label": "SOFT_SKILL",
+     "source": "gliner",
+     "start": 221,
+     "surface_form": "time management"
+    },
+    {
+     "canonical_skill_id": "ansible",
+     "canonical_skill_name": "Ansible",
+     "confidence": 0.435,
+     "end": 2021,
+     "evidence": "Shipped support ticket triage workflows using Ansible",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 2014,
+     "surface_form": "Ansible"
+    },
+    {
+     "canonical_skill_id": "elasticsearch",
+     "canonical_skill_name": "Elasticsearch",
+     "confidence": 0.615,
+     "end": 2736,
+     "evidence": "Automated supply chain planning workflows using Elasticsearch",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 2723,
+     "surface_form": "Elasticsearch"
+    },
+    {
+     "canonical_skill_id": "pytorch",
+     "canonical_skill_name": "PyTorch",
+     "confidence": 0.67,
+     "end": 481,
+     "evidence": "Maintained log anomaly detection workflows using PyTorch",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 474,
+     "surface_form": "PyTorch"
+    },
+    {
+     "canonical_skill_id": "kanban",
+     "canonical_skill_name": "Kanban",
+     "confidence": 0.866,
+     "end": 1871,
+     "evidence": "Maintained recommendation feeds phase 1 workflows using Kanban and GCP",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 1865,
+     "surface_form": "Kanban"
+    },
+    {
+     "canonical_skill_id": "gcp",
+     "canonical_skill_name": "Google Cloud Platform",
+     "confidence": 0.825,
+     "end": 2573,
+     "evidence": "Led delivery of churn forecasting phase 1 workflows using GCP and leadership",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 2570,
+     "surface_form": "GCP"
+    },
+    {
+     "canonical_skill_id": "kanban",
+     "canonical_skill_name": "Kanban",
+     "confidence": 0.857,
+     "end": 1404,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "mistral",
+     "start": 1398,
+     "surface_form": "Kanban"
+    },
+    {
+     "canonical_skill_id": "snowflake",
+     "canonical_skill_name": "Snowflake",
+     "confidence": 0.815,
+     "end": 1293,
+     "evidence": "",
+     "label": "HARD_SKILL",
+     "source": "gliner",
+     "start": 1284,
+     "surface_form": "Snowflake"
+    },
+    {
+     "canonical_skill_id": "kanban",
+     "canonical_skill_name": "Kanban",
+     "confidence": 0.875,
+     "end": 1051,
+     "evidence": "Automated customer onboarding workflows using Kanban",
+     "label": "HARD_SKILL",
+     "source": "dictionary",
+     "start": 1045,
+     "surface_form": "Kanban"
+    },
+    {
+     "canonical_skill_id": "kanban_alt",
+     "canonical_skill_name": "Kanban",
+     "confidence": 0.875,
+     "end": 1051,
+     "evidence": "Automated customer onboarding workflows using Kanban",
+     "label": "SOFT_SKILL",
+     "source": "gliner",
+     "start": 1045,
+     "surface_form": "Kanban"
+    },
+    {
+     "canonical_skill_id": "ios",
+     "canonical_skill_name": "iOS Development",
+     "confidence": 0.567,
+     "end": 244,
+     "evidence": "Automated sensor telemetry workflows using time management and iOS",
+     "label": "HARD_SKILL",
+     "source": "bert",
+     "start": 241,
+     "surface_form": "iOS"
+    }
+   ],
+   "gold_important": [
+    "gcp",
+    "golang",
+    "kanban",
+    "leadership",
+    "postgresql"
+   ],
+   "gold_skills": [
+    "ansible",
+    "aws",
+    "cicd",
+    "cv",
+    "elasticsearch",
+    "gcp",
+    "golang",
+    "graphql",
+    "grpc",
+    "ios",
+    "kanban",
+    "leadership",
+    "matlab",
+    "mentoring",
+    "nodejs",
+    "postgresql",
+    "python",
+    "pytorch",
+    "sas",
+    "scala",
+    "snowflake",
+    "tableau",
+    "tailwind",
+    "tensorflow",
+    "time_management"
+   ],
+   "job_target": "data engineer",
+   "label_conflicts": [
+    {
+     "subtype": "same_id",
+     "surface": "SAS"
+    },
+    {
+     "subtype": "diff_id",
+     "surface": "Kanban"
+    }
+   ],
+   "n_skills": 25,
+   "noise_surfaces": [],
+   "profile_id": "synthetic-25-0",
+   "queries": [
+    {
+     "gold": [
+      "tensorflow"
+     ],
+     "query": "TensorFlow",
+     "type": "name"
+    },
+    {
+     "gold": [
+      "snowflake"
+     ],
+     "query": "Snowflake",
+     "type": "name"
+    },
+    {
+     "gold": [
+      "gcp"
+     ],
+     "query": "GCP",
+     "type": "name"
+    },
+    {
+     "gold": [
+      "gcp"
+     ],
+     "query": "Google Cloud Platform",
+     "type": "alias"
+    },
+    {
+     "gold": [
+      "golang"
+     ],
+     "query": "Go",
+     "type": "alias"
+    },
+    {
+     "gold": [
+      "aws"
+     ],
+     "query": "Amazon Web Services",
+     "type": "alias"
+    },
+    {
+     "gold": [
+      "grpc"
+     ],
+     "query": "what experience does the candidate have with gRPC",
+     "type": "natural"
+    },
+    {
+     "gold": [
+      "time_management"
+     ],
+     "query": "what experience does the candidate have with time management",
+     "type": "natural"
+    },
+    {
+     "gold": [
+      "ansible"
+     ],
+     "query": "what experience does the candidate have with Ansible",
+     "type": "natural"
+    },
+    {
+     "gold": [
+      "ios",
+      "time_management"
+     ],
+     "query": "sensor telemetry",
+     "type": "context"
+    },
+    {
+     "gold": [
+      "cicd"
+     ],
+     "query": "recommendation feeds",
+     "type": "context"
+    },
+    {
+     "gold": [
+      "gcp",
+      "kanban"
+     ],
+     "query": "recommendation feeds phase 1",
+     "type": "context"
+    }
+   ],
+   "quiet_important": [
+    "golang"
+   ],
+   "text": "Seeking a challenging role with growth opportunities. Worked with CI/CD between 2013 and 2015, before any commercial exposure. Designed warehouse scheduling workflows using AWS. Automated sensor telemetry workflows using time management and iOS. Optimized sensor telemetry phase 1 workflows using Tableau. Available for relocation and open to hybrid arrangements. Native speaker of two languages with strong writing ability. Maintained log anomaly detection workflows using PyTorch. Used GraphQL from 2018 to 2021. Migrated genomics intake workflows using TensorFlow. Migrated route optimization phase 1 workflows using MATLAB and SAS. Passionate about continuous improvement and collaboration across teams. Native speaker of two languages with strong writing ability. Led delivery of churn forecasting workflows using PostgreSQL. Migrated inventory tracking phase 1 workflows using Postgres. Shipped document search workflows using Scala and Python. Maintained ad attribution workflows using gRPC. Automated customer onboarding workflows using Kanban. References are available upon request. Migrated claims processing workflows using Snowflake and GraphQL. Holds a bachelor degree and several professional certificates. Migrated energy load balancing phase 1 workflows using GCP and Snowflake. Built recommendation feeds workflows using CI/CD. Led delivery of fraud alerts phase 1 workflows using Kanban. Used TensorFlow from 2018 to 2021. Migrated route optimization workflows using GCP and SAS. Designed energy load balancing workflows using Tailwind. Worked with Scala between 2013 and 2015, before any commercial exposure. Holds a bachelor degree and several professional certificates. Designed clinical trial reporting workflows using Node.js. Shipped credit scoring phase 1 workflows using leadership. Maintained recommendation feeds phase 1 workflows using Kanban and GCP. Automated ad attribution phase 1 workflows using Golang. Used Scala from 2018 to 2021. Shipped support ticket triage workflows using Ansible. Holds a bachelor degree and several professional certificates. Optimized inventory tracking workflows using Kanban. Optimized document search phase 1 workflows using mentoring. Automated payment reconciliation workflows using Node.js. Built ride pricing workflows using Computer Vision. Migrated warehouse scheduling phase 1 workflows using PostgreSQL. Available for relocation and open to hybrid arrangements. Worked with TensorFlow between 2013 and 2015, before any commercial exposure. Led delivery of churn forecasting phase 1 workflows using GCP and leadership. Used CI/CD from 2018 to 2021. Migrated fraud alerts workflows using GCP and PyTorch. Automated supply chain planning workflows using Elasticsearch. Shipped credit scoring workflows using mentoring. Enjoys hiking, chess and volunteering at community events. Worked with GraphQL between 2013 and 2015, before any commercial exposure. Native speaker of two languages with strong writing ability.",
+   "tiers": {
+    "ansible": "low",
+    "aws": "mid",
+    "cicd": "low",
+    "cv": "mid",
+    "elasticsearch": "mid",
+    "gcp": "high",
+    "golang": "high",
+    "graphql": "low",
+    "grpc": "mid",
+    "ios": "low",
+    "kanban": "high",
+    "leadership": "high",
+    "matlab": "low",
+    "mentoring": "mid",
+    "nodejs": "mid",
+    "postgresql": "high",
+    "python": "low",
+    "pytorch": "mid",
+    "sas": "mid",
+    "scala": "low",
+    "snowflake": "mid",
+    "tableau": "low",
+    "tailwind": "low",
+    "tensorflow": "low",
+    "time_management": "mid"
+   }
+  }
+ ],
+ "seed": 42
+}

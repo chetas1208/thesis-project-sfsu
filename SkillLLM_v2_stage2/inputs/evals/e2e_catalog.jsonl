@@ -1,0 +1,18 @@
+{"course_id": "ev-python-101", "course_name": "Python Fundamentals", "teaches_skills": ["Python"], "prerequisite_skills": []}
+{"course_id": "ev-sql-101", "course_name": "SQL for Analysts", "teaches_skills": ["SQL"], "prerequisite_skills": []}
+{"course_id": "ev-excel-101", "course_name": "Excel for Analysis", "teaches_skills": ["Excel"], "prerequisite_skills": []}
+{"course_id": "ev-ml-101", "course_name": "Machine Learning Basics", "teaches_skills": ["machine learning"], "prerequisite_skills": ["Python"]}
+{"course_id": "ev-pytorch-201", "course_name": "Deep Learning with PyTorch", "teaches_skills": ["PyTorch"], "prerequisite_skills": ["Python", "machine learning"]}
+{"course_id": "ev-docker-101", "course_name": "Docker Essentials", "teaches_skills": ["Docker"], "prerequisite_skills": []}
+{"course_id": "ev-k8s-201", "course_name": "Kubernetes in Practice", "teaches_skills": ["Kubernetes"], "prerequisite_skills": ["Docker"]}
+{"course_id": "ev-aws-101", "course_name": "AWS Foundations", "teaches_skills": ["AWS"], "prerequisite_skills": ["Python"]}
+{"course_id": "ev-tf-201", "course_name": "Terraform on AWS", "teaches_skills": ["Terraform"], "prerequisite_skills": ["AWS"]}
+{"course_id": "ev-js-101", "course_name": "JavaScript Basics", "teaches_skills": ["JavaScript"], "prerequisite_skills": []}
+{"course_id": "ev-react-201", "course_name": "React Applications", "teaches_skills": ["ReactJS"], "prerequisite_skills": ["JavaScript"]}
+{"course_id": "ev-java-101", "course_name": "Java Programming", "teaches_skills": ["Java"], "prerequisite_skills": []}
+{"course_id": "ev-lead-101", "course_name": "Leading Technical Teams", "teaches_skills": ["leadership"], "prerequisite_skills": []}
+{"course_id": "ev-comm-101", "course_name": "Professional Communication", "teaches_skills": ["communication"], "prerequisite_skills": []}
+{"course_id": "ev-team-101", "course_name": "Teamwork in Engineering", "teaches_skills": ["teamwork"], "prerequisite_skills": []}
+{"course_id": "ev-ps-101", "course_name": "Structured Problem Solving", "teaches_skills": ["problem solving"], "prerequisite_skills": []}
+{"course_id": "ev-photo-101", "course_name": "Photo Editing Basics", "teaches_skills": ["Photoshop"], "prerequisite_skills": []}
+{"course_id": "ev-account-101", "course_name": "Accounting for Non-Accountants", "teaches_skills": ["Accounting"], "prerequisite_skills": []}

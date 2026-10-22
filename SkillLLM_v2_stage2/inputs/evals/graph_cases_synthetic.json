@@ -1,0 +1,771 @@
+{
+ "dataset": "synthetic",
+ "generator": "skillllm_v2.evals.graph_evals.make_world / TOY_CASES",
+ "note": "SYNTHETIC toy graphs with hand-computed shortest paths, and one small generated world",
+ "seed": 42,
+ "small_world": {
+  "courses": [
+   {
+    "_prereqs": [
+     "ios development"
+    ],
+    "_teaches": [
+     "figma"
+    ],
+    "course_id": "course-0",
+    "description": "Learn the fundamentals and apply them in production. Builds on your earlier work with Tailwind CSS.",
+    "duration_hours": 30.0,
+    "learning_outcomes": [
+     "Apply Figma in production"
+    ],
+    "level": "intermediate",
+    "prerequisites": [
+     "iOS Development"
+    ],
+    "teaches_skills": [
+     "Figma"
+    ],
+    "title": "Hands-on Figma 0"
+   },
+   {
+    "_prereqs": [
+     "apache kafka",
+     "figma"
+    ],
+    "_teaches": [
+     "rabbitmq",
+     "java"
+    ],
+    "course_id": "course-1",
+    "description": "Learn by doing with weekly projects. Not a Celery course, but Celery knowledge helps. Builds on your earlier work with JUnit.",
+    "duration_hours": 10.0,
+    "learning_outcomes": [
+     "Apply RabbitMQ in production",
+     "Apply Java in production"
+    ],
+    "level": "intermediate",
+    "prerequisites": [
+     "Apache Kafka",
+     "Figma"
+    ],
+    "teaches_skills": [
+     "RabbitMQ",
+     "Java"
+    ],
+    "title": "Machine Intelligence Bootcamp 1"
+   },
+   {
+    "_prereqs": [],
+    "_teaches": [
+     "celery",
+     "sql"
+    ],
+    "course_id": "course-2",
+    "description": "Learn by doing with weekly projects. Not a Apache Kafka course, but Apache Kafka knowledge helps.",
+    "duration_hours": 30.0,
+    "learning_outcomes": [
+     "Apply Celery in production",
+     "Apply SQL in production"
+    ],
+    "level": "intermediate",
+    "prerequisites": [],
+    "teaches_skills": [
+     "Celery",
+     "SQL"
+    ],
+    "title": "Backend Systems Bootcamp 2"
+   },
+   {
+    "_prereqs": [
+     "java"
+    ],
+    "_teaches": [
+     "junit",
+     "terraform"
+    ],
+    "course_id": "course-3",
+    "description": "Learn by doing with weekly projects. Not a Apache Kafka course, but Apache Kafka knowledge helps. Not a Figma course, but Figma knowledge helps.",
+    "duration_hours": 20.0,
+    "learning_outcomes": [
+     "Apply JUnit in production",
+     "Apply Terraform in production"
+    ],
+    "level": "advanced",
+    "prerequisites": [
+     "Java"
+    ],
+    "teaches_skills": [
+     "JUnit",
+     "Terraform"
+    ],
+    "title": "Modern Web Bootcamp 3"
+   },
+   {
+    "_prereqs": [
+     "datadog",
+     "junit"
+    ],
+    "_teaches": [
+     "terraform"
+    ],
+    "course_id": "course-4",
+    "description": "Learn the fundamentals and apply them in production. Often paired with iOS Development in real projects.",
+    "duration_hours": 20.0,
+    "learning_outcomes": [
+     "Apply Terraform in production"
+    ],
+    "level": "beginner",
+    "prerequisites": [
+     "Datadog",
+     "JUnit"
+    ],
+    "teaches_skills": [
+     "Terraform"
+    ],
+    "title": "Security Essentials Bootcamp 4"
+   },
+   {
+    "_prereqs": [
+     "figma"
+    ],
+    "_teaches": [
+     "sql"
+    ],
+    "course_id": "course-5",
+    "description": "Learn by doing with weekly projects. Not a Datadog course, but Datadog knowledge helps.",
+    "duration_hours": 10.0,
+    "learning_outcomes": [
+     "Apply SQL in production"
+    ],
+    "level": "intermediate",
+    "prerequisites": [
+     "Figma"
+    ],
+    "teaches_skills": [
+     "SQL"
+    ],
+    "title": "Modern Web Bootcamp 5"
+   }
+  ],
+  "dataset": "synthetic",
+  "idx": 0,
+  "jobs": [
+   {
+    "_pref": [
+     "apache kafka",
+     "ios development"
+    ],
+    "_req": [
+     "rabbitmq",
+     "terraform",
+     "junit",
+     "pandas"
+    ],
+    "job_id": "job-0",
+    "preferred_skills": [
+     {
+      "importance": 0.7,
+      "skill_name": "Apache Kafka",
+      "source_sentence": "Apache Kafka is a plus."
+     },
+     {
+      "importance": 0.7,
+      "skill_name": "iOS Development",
+      "source_sentence": "iOS Development is a plus."
+     }
+    ],
+    "required_skills": [
+     {
+      "importance": 0.77,
+      "skill_name": "RabbitMQ",
+      "source_sentence": "You must know RabbitMQ."
+     },
+     {
+      "importance": 0.67,
+      "skill_name": "Terraform",
+      "source_sentence": "You must know Terraform."
+     },
+     {
+      "importance": 0.71,
+      "skill_name": "JUnit",
+      "source_sentence": "You must know JUnit."
+     },
+     {
+      "importance": 0.78,
+      "skill_name": "pandas",
+      "source_sentence": "You must know pandas."
+     }
+    ],
+    "title": "Role 0"
+   },
+   {
+    "_pref": [
+     "sql"
+    ],
+    "_req": [
+     "datadog",
+     "ios development",
+     "figma",
+     "junit",
+     "apache kafka"
+    ],
+    "job_id": "job-1",
+    "preferred_skills": [
+     {
+      "importance": 0.7,
+      "skill_name": "SQL",
+      "source_sentence": "SQL is a plus."
+     }
+    ],
+    "required_skills": [
+     {
+      "importance": 0.8,
+      "skill_name": "Datadog",
+      "source_sentence": "You must know Datadog."
+     },
+     {
+      "importance": 0.84,
+      "skill_name": "iOS Development",
+      "source_sentence": "You must know iOS Development."
+     },
+     {
+      "importance": 0.83,
+      "skill_name": "Figma",
+      "source_sentence": "You must know Figma."
+     },
+     {
+      "importance": 0.72,
+      "skill_name": "JUnit",
+      "source_sentence": "You must know JUnit."
+     },
+     {
+      "importance": 0.9,
+      "skill_name": "Apache Kafka",
+      "source_sentence": "You must know Apache Kafka."
+     }
+    ],
+    "title": "Role 1"
+   },
+   {
+    "_pref": [
+     "apache kafka"
+    ],
+    "_req": [
+     "datadog",
+     "terraform",
+     "celery",
+     "sql"
+    ],
+    "job_id": "job-2",
+    "preferred_skills": [
+     {
+      "importance": 0.7,
+      "skill_name": "Apache Kafka",
+      "source_sentence": "Apache Kafka is a plus."
+     }
+    ],
+    "required_skills": [
+     {
+      "importance": 0.72,
+      "skill_name": "Datadog",
+      "source_sentence": "You must know Datadog."
+     },
+     {
+      "importance": 0.99,
+      "skill_name": "Terraform",
+      "source_sentence": "You must know Terraform."
+     },
+     {
+      "importance": 0.9,
+      "skill_name": "Celery",
+      "source_sentence": "You must know Celery."
+     },
+     {
+      "importance": 0.91,
+      "skill_name": "SQL",
+      "source_sentence": "You must know SQL."
+     }
+    ],
+    "title": "Role 2"
+   }
+  ],
+  "names": {
+   "apache kafka": "Apache Kafka",
+   "celery": "Celery",
+   "datadog": "Datadog",
+   "figma": "Figma",
+   "ios development": "iOS Development",
+   "java": "Java",
+   "junit": "JUnit",
+   "pandas": "pandas",
+   "rabbitmq": "RabbitMQ",
+   "sql": "SQL",
+   "tailwind css": "Tailwind CSS",
+   "terraform": "Terraform"
+  },
+  "seed": 42,
+  "skills": [
+   [
+    "java",
+    "Java"
+   ],
+   [
+    "junit",
+    "JUnit"
+   ],
+   [
+    "datadog",
+    "Datadog"
+   ],
+   [
+    "sql",
+    "SQL"
+   ],
+   [
+    "apache kafka",
+    "Apache Kafka"
+   ],
+   [
+    "tailwind css",
+    "Tailwind CSS"
+   ],
+   [
+    "terraform",
+    "Terraform"
+   ],
+   [
+    "figma",
+    "Figma"
+   ],
+   [
+    "ios development",
+    "iOS Development"
+   ],
+   [
+    "celery",
+    "Celery"
+   ],
+   [
+    "rabbitmq",
+    "RabbitMQ"
+   ],
+   [
+    "pandas",
+    "pandas"
+   ]
+  ],
+  "users": [
+   {
+    "_have": [
+     "datadog",
+     "rabbitmq",
+     "java",
+     "ios development",
+     "figma",
+     "celery",
+     "pandas",
+     "terraform"
+    ],
+    "skills": [
+     {
+      "canonical_skill_name": "Datadog",
+      "confidence": 0.67,
+      "evidence": "Worked with Datadog on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "Datadog"
+     },
+     {
+      "canonical_skill_name": "RabbitMQ",
+      "confidence": 0.55,
+      "evidence": "Worked with RabbitMQ on a team project.",
+      "mastery_level": "beginner",
+      "surface_form": "RabbitMQ"
+     },
+     {
+      "canonical_skill_name": "Java",
+      "confidence": 0.98,
+      "evidence": "Worked with Java on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "Java"
+     },
+     {
+      "canonical_skill_name": "iOS Development",
+      "confidence": 0.8,
+      "evidence": "Worked with iOS Development on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "iOS Development"
+     },
+     {
+      "canonical_skill_name": "Figma",
+      "confidence": 0.53,
+      "evidence": "Worked with Figma on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "Figma"
+     },
+     {
+      "canonical_skill_name": "Celery",
+      "confidence": 0.71,
+      "evidence": "Worked with Celery on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "Celery"
+     },
+     {
+      "canonical_skill_name": "pandas",
+      "confidence": 0.92,
+      "evidence": "Worked with pandas on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "pandas"
+     },
+     {
+      "canonical_skill_name": "Terraform",
+      "confidence": 0.67,
+      "evidence": "Worked with Terraform on a team project.",
+      "mastery_level": "beginner",
+      "surface_form": "Terraform"
+     }
+    ],
+    "target_roles": [
+     "Role 0"
+    ],
+    "user_id": "user-0"
+   },
+   {
+    "_have": [
+     "celery",
+     "java",
+     "ios development",
+     "rabbitmq",
+     "junit",
+     "apache kafka",
+     "datadog",
+     "tailwind css"
+    ],
+    "skills": [
+     {
+      "canonical_skill_name": "Celery",
+      "confidence": 0.72,
+      "evidence": "Worked with Celery on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "Celery"
+     },
+     {
+      "canonical_skill_name": "Java",
+      "confidence": 0.87,
+      "evidence": "Worked with Java on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "Java"
+     },
+     {
+      "canonical_skill_name": "iOS Development",
+      "confidence": 0.94,
+      "evidence": "Worked with iOS Development on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "iOS Development"
+     },
+     {
+      "canonical_skill_name": "RabbitMQ",
+      "confidence": 0.89,
+      "evidence": "Worked with RabbitMQ on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "RabbitMQ"
+     },
+     {
+      "canonical_skill_name": "JUnit",
+      "confidence": 0.6,
+      "evidence": "Worked with JUnit on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "JUnit"
+     },
+     {
+      "canonical_skill_name": "Apache Kafka",
+      "confidence": 0.81,
+      "evidence": "Worked with Apache Kafka on a team project.",
+      "mastery_level": "beginner",
+      "surface_form": "Apache Kafka"
+     },
+     {
+      "canonical_skill_name": "Datadog",
+      "confidence": 0.8,
+      "evidence": "Worked with Datadog on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "Datadog"
+     },
+     {
+      "canonical_skill_name": "Tailwind CSS",
+      "confidence": 0.86,
+      "evidence": "Worked with Tailwind CSS on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "Tailwind CSS"
+     }
+    ],
+    "target_roles": [
+     "Role 1"
+    ],
+    "user_id": "user-1"
+   },
+   {
+    "_have": [
+     "ios development",
+     "sql",
+     "junit",
+     "pandas",
+     "tailwind css",
+     "celery",
+     "java",
+     "rabbitmq",
+     "apache kafka"
+    ],
+    "skills": [
+     {
+      "canonical_skill_name": "iOS Development",
+      "confidence": 0.94,
+      "evidence": "Worked with iOS Development on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "iOS Development"
+     },
+     {
+      "canonical_skill_name": "SQL",
+      "confidence": 0.85,
+      "evidence": "Worked with SQL on a team project.",
+      "mastery_level": "beginner",
+      "surface_form": "SQL"
+     },
+     {
+      "canonical_skill_name": "JUnit",
+      "confidence": 0.77,
+      "evidence": "Worked with JUnit on a team project.",
+      "mastery_level": "beginner",
+      "surface_form": "JUnit"
+     },
+     {
+      "canonical_skill_name": "pandas",
+      "confidence": 0.63,
+      "evidence": "Worked with pandas on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "pandas"
+     },
+     {
+      "canonical_skill_name": "Tailwind CSS",
+      "confidence": 0.83,
+      "evidence": "Worked with Tailwind CSS on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "Tailwind CSS"
+     },
+     {
+      "canonical_skill_name": "Celery",
+      "confidence": 0.58,
+      "evidence": "Worked with Celery on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "Celery"
+     },
+     {
+      "canonical_skill_name": "Java",
+      "confidence": 0.99,
+      "evidence": "Worked with Java on a team project.",
+      "mastery_level": "proficient",
+      "surface_form": "Java"
+     },
+     {
+      "canonical_skill_name": "RabbitMQ",
+      "confidence": 0.58,
+      "evidence": "Worked with RabbitMQ on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "RabbitMQ"
+     },
+     {
+      "canonical_skill_name": "Apache Kafka",
+      "confidence": 0.9,
+      "evidence": "Worked with Apache Kafka on a team project.",
+      "mastery_level": "intermediate",
+      "surface_form": "Apache Kafka"
+     }
+    ],
+    "target_roles": [
+     "Role 2"
+    ],
+    "user_id": "user-2"
+   }
+  ]
+ },
+ "toy_path_cases": [
+  {
+   "edges": [
+    [
+     "a",
+     "b"
+    ],
+    [
+     "b",
+     "c"
+    ],
+    [
+     "c",
+     "d"
+    ]
+   ],
+   "expected_path": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "max_hops": 4,
+   "name": "chain3",
+   "source": "a",
+   "target": "d"
+  },
+  {
+   "edges": [
+    [
+     "a",
+     "b"
+    ],
+    [
+     "b",
+     "d"
+    ],
+    [
+     "a",
+     "c"
+    ],
+    [
+     "c",
+     "d"
+    ],
+    [
+     "a",
+     "d"
+    ]
+   ],
+   "expected_path": [
+    "a",
+    "d"
+   ],
+   "max_hops": 4,
+   "name": "shortcut",
+   "source": "a",
+   "target": "d"
+  },
+  {
+   "edges": [
+    [
+     "a",
+     "b"
+    ],
+    [
+     "b",
+     "c"
+    ]
+   ],
+   "expected_path": null,
+   "max_hops": 4,
+   "name": "direction",
+   "source": "c",
+   "target": "a"
+  },
+  {
+   "edges": [
+    [
+     "a",
+     "b"
+    ],
+    [
+     "c",
+     "d"
+    ]
+   ],
+   "expected_path": null,
+   "max_hops": 4,
+   "name": "unreachable",
+   "source": "a",
+   "target": "d"
+  },
+  {
+   "edges": [
+    [
+     "a",
+     "b"
+    ]
+   ],
+   "expected_path": [
+    "a"
+   ],
+   "max_hops": 4,
+   "name": "self",
+   "source": "a",
+   "target": "a"
+  },
+  {
+   "edges": [
+    [
+     "a",
+     "b"
+    ],
+    [
+     "b",
+     "c"
+    ],
+    [
+     "c",
+     "d"
+    ],
+    [
+     "d",
+     "e"
+    ],
+    [
+     "e",
+     "f"
+    ],
+    [
+     "f",
+     "g"
+    ]
+   ],
+   "expected_path": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+   ],
+   "max_hops": 4,
+   "name": "six_hops_cap4",
+   "source": "a",
+   "target": "g"
+  },
+  {
+   "edges": [
+    [
+     "a",
+     "b"
+    ],
+    [
+     "b",
+     "c"
+    ],
+    [
+     "c",
+     "d"
+    ],
+    [
+     "d",
+     "e"
+    ]
+   ],
+   "expected_path": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ],
+   "max_hops": 4,
+   "name": "exactly_cap",
+   "source": "a",
+   "target": "e"
+  }
+ ]
+}
