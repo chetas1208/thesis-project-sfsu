@@ -2,8 +2,13 @@ from __future__ import annotations
 
 from typing import Any
 
+from skillllm_v2.recommend.gap_vector import GapEngine, GapVector
+
 
 class GapDetector:
+    def __init__(self) -> None:
+        self.engine = GapEngine()
+
     def detect(self, user_profile: dict[str, Any], job: dict[str, Any]) -> list[dict[str, Any]]:
         user_skills = set(user_profile.get("skills", []))
         weak_skills = set(user_profile.get("weak_skills", []))
@@ -28,3 +33,6 @@ class GapDetector:
                 gap["gap_type"] = "covered_by_transferable_skill"
                 gap["transferable_from"] = transferable[gap["skill"]]
         return gaps
+
+    def detect_vector(self, user_profile: dict[str, Any], job: dict[str, Any], graph: Any = None) -> GapVector:
+        return self.engine.compute(user_profile, job, graph=graph)

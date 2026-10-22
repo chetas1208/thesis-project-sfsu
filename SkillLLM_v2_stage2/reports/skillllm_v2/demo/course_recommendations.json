@@ -1,22 +1,1004 @@
-[
-  {
-    "course_id": "aws-101",
-    "course_name": "AWS Foundations",
-    "covers_skills": [
-      "AWS"
+{
+  "user_profile": {
+    "user_id": "demo_user",
+    "known_skills_count": 2,
+    "skills": [
+      "Python",
+      "structured query language"
     ],
-    "gap_coverage": 0.3333333333333333,
-    "match_score": 0.67,
-    "why_recommended": "Covers 1 missing skill(s): AWS"
+    "target_roles": []
   },
-  {
-    "course_id": "excel-101",
-    "course_name": "Excel for Analysis",
-    "covers_skills": [
-      "Excel"
+  "target_job": {
+    "job_id": "ml-platform-engineer",
+    "title": "Machine Learning Platform Engineer",
+    "required_skills": [
+      {
+        "skill_name": "Python",
+        "importance": 1.0,
+        "source_sentence": "Must have senior-level Python engineering skills."
+      },
+      {
+        "skill_name": "Docker",
+        "importance": 1.0,
+        "source_sentence": "Extensive experience containerizing distributed applications with Docker."
+      },
+      {
+        "skill_name": "Machine Learning",
+        "importance": 1.0,
+        "source_sentence": "Understanding of machine learning workflows and scikit-learn models."
+      },
+      {
+        "skill_name": "Amazon Web Services",
+        "importance": 0.9,
+        "source_sentence": "Hands-on experience deploying infrastructure on AWS."
+      }
     ],
-    "gap_coverage": 0.3333333333333333,
-    "match_score": 0.42,
-    "why_recommended": "Covers 1 missing skill(s): Excel"
+    "preferred_skills": [
+      {
+        "skill_name": "Kubernetes",
+        "importance": 0.8,
+        "source_sentence": "Kubernetes cluster orchestration preferred."
+      },
+      {
+        "skill_name": "CI/CD",
+        "importance": 0.7,
+        "source_sentence": "Experience designing CI/CD automation pipelines."
+      }
+    ]
+  },
+  "skill_gap_analysis": {
+    "user_id": "demo_user",
+    "job_id": "ml-platform-engineer",
+    "gaps": [
+      {
+        "canonical_skill_id": "docker",
+        "skill_name": "Docker",
+        "gap_type": "missing_critical",
+        "importance": 1.0,
+        "requirement_strength": "required",
+        "user_strength": 0.0,
+        "gap_weight": 1.0,
+        "source_sentence": "Extensive experience containerizing distributed applications with Docker.",
+        "evidence": "",
+        "transferable_from": null,
+        "metadata": {}
+      },
+      {
+        "canonical_skill_id": "machine learning",
+        "skill_name": "Machine Learning",
+        "gap_type": "missing_critical",
+        "importance": 1.0,
+        "requirement_strength": "required",
+        "user_strength": 0.0,
+        "gap_weight": 1.0,
+        "source_sentence": "Understanding of machine learning workflows and scikit-learn models.",
+        "evidence": "",
+        "transferable_from": null,
+        "metadata": {}
+      },
+      {
+        "canonical_skill_id": "amazon web services",
+        "skill_name": "Amazon Web Services",
+        "gap_type": "missing_critical",
+        "importance": 0.9,
+        "requirement_strength": "required",
+        "user_strength": 0.0,
+        "gap_weight": 0.9,
+        "source_sentence": "Hands-on experience deploying infrastructure on AWS.",
+        "evidence": "",
+        "transferable_from": null,
+        "metadata": {}
+      },
+      {
+        "canonical_skill_id": "kubernetes",
+        "skill_name": "Kubernetes",
+        "gap_type": "missing_preferred",
+        "importance": 0.8,
+        "requirement_strength": "preferred",
+        "user_strength": 0.0,
+        "gap_weight": 0.5599999999999999,
+        "source_sentence": "Kubernetes cluster orchestration preferred.",
+        "evidence": "",
+        "transferable_from": null,
+        "metadata": {}
+      },
+      {
+        "canonical_skill_id": "ci cd",
+        "skill_name": "CI/CD",
+        "gap_type": "missing_preferred",
+        "importance": 0.7,
+        "requirement_strength": "preferred",
+        "user_strength": 0.0,
+        "gap_weight": 0.48999999999999994,
+        "source_sentence": "Experience designing CI/CD automation pipelines.",
+        "evidence": "",
+        "transferable_from": null,
+        "metadata": {}
+      }
+    ],
+    "vector": {
+      "docker": 1.0,
+      "machine learning": 1.0,
+      "amazon web services": 0.9,
+      "kubernetes": 0.5599999999999999,
+      "ci cd": 0.48999999999999994
+    },
+    "total_gap_mass": 3.95,
+    "critical_count": 3,
+    "preferred_count": 2,
+    "weak_count": 0
+  },
+  "recommendations": [
+    {
+      "course_id": "mlops-eng-301",
+      "title": "End-to-End MLOps: Production ML Engineering",
+      "rank": 1,
+      "score": 0.5988185654008439,
+      "covered_missing_skills": [
+        "CI/CD",
+        "Docker",
+        "Machine Learning"
+      ],
+      "prerequisite_status": {
+        "is_satisfied": false,
+        "status_code": "flagged_missing_2_prerequisites",
+        "satisfied": [
+          {
+            "skill_id": "python",
+            "canonical_skill_id": "python",
+            "canonical_skill_name": "Python",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Python"
+          }
+        ],
+        "missing": [
+          {
+            "skill_id": "machine learning",
+            "canonical_skill_id": "machine learning",
+            "canonical_skill_name": "Machine Learning",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Machine Learning"
+          },
+          {
+            "skill_id": "docker",
+            "canonical_skill_id": "docker",
+            "canonical_skill_name": "Docker",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Docker"
+          }
+        ],
+        "explanation": "Caution: Missing prerequisite skill(s): Machine Learning, Docker."
+      },
+      "evidence": [
+        {
+          "skill": "CI/CD",
+          "canonical_skill_id": "ci cd",
+          "job_requirement_evidence": "Experience designing CI/CD automation pipelines.",
+          "gap_classification": "missing_preferred",
+          "user_evidence": "User has strength 0.00 (gap weight: 0.49)",
+          "course_learning_outcome_evidence": "Track experiments and artifacts with MLflow and weights & biases"
+        },
+        {
+          "skill": "Docker",
+          "canonical_skill_id": "docker",
+          "job_requirement_evidence": "Extensive experience containerizing distributed applications with Docker.",
+          "gap_classification": "missing_critical",
+          "user_evidence": "User has strength 0.00 (gap weight: 1.00)",
+          "course_learning_outcome_evidence": "Build production inference services using FastAPI and Docker"
+        },
+        {
+          "skill": "Machine Learning",
+          "canonical_skill_id": "machine learning",
+          "job_requirement_evidence": "Understanding of machine learning workflows and scikit-learn models.",
+          "gap_classification": "missing_critical",
+          "user_evidence": "User has strength 0.00 (gap weight: 1.00)",
+          "course_learning_outcome_evidence": "Track experiments and artifacts with MLflow and weights & biases"
+        }
+      ],
+      "explanation_path": [
+        "Target role 'Machine Learning Platform Engineer' requires 'CI/CD' -> User is missing preferred -> Course 'End-to-End MLOps: Production ML Engineering' teaches 'CI/CD' via outcome: \"Track experiments and artifacts with MLflow and weights & biases\"",
+        "Target role 'Machine Learning Platform Engineer' requires 'Docker' -> User is missing critical -> Course 'End-to-End MLOps: Production ML Engineering' teaches 'Docker' via outcome: \"Build production inference services using FastAPI and Docker\"",
+        "Target role 'Machine Learning Platform Engineer' requires 'Machine Learning' -> User is missing critical -> Course 'End-to-End MLOps: Production ML Engineering' teaches 'Machine Learning' via outcome: \"Track experiments and artifacts with MLflow and weights & biases\"",
+        "Caution: Missing prerequisite skill(s): Machine Learning, Docker."
+      ],
+      "limitations": [
+        "Prerequisite gap: Learner should first acquire Machine Learning, Docker."
+      ],
+      "next_profile_update_action": {
+        "trigger": "on_course_completion",
+        "course_id": "mlops-eng-301",
+        "skills_to_add": [
+          {
+            "surface_form": "MLOps",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "mlops",
+            "canonical_skill_name": "MLOps",
+            "confidence": 0.95,
+            "evidence": "Completed course mlops-eng-301: End-to-End MLOps: Production ML Engineering",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "Machine Learning",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "machine learning",
+            "canonical_skill_name": "Machine Learning",
+            "confidence": 0.95,
+            "evidence": "Completed course mlops-eng-301: End-to-End MLOps: Production ML Engineering",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "Docker",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "docker",
+            "canonical_skill_name": "Docker",
+            "confidence": 0.95,
+            "evidence": "Completed course mlops-eng-301: End-to-End MLOps: Production ML Engineering",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "CI/CD",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "ci cd",
+            "canonical_skill_name": "CI/CD",
+            "confidence": 0.95,
+            "evidence": "Completed course mlops-eng-301: End-to-End MLOps: Production ML Engineering",
+            "source": "completed_course"
+          }
+        ],
+        "target_mastery": "proficient",
+        "profile_update_schema": {
+          "user_id": "demo_user",
+          "completed_courses": [
+            "mlops-eng-301"
+          ],
+          "skills": [
+            {
+              "surface_form": "MLOps",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "mlops",
+              "canonical_skill_name": "MLOps",
+              "confidence": 0.95,
+              "evidence": "Completed course mlops-eng-301: End-to-End MLOps: Production ML Engineering",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "Machine Learning",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "machine learning",
+              "canonical_skill_name": "Machine Learning",
+              "confidence": 0.95,
+              "evidence": "Completed course mlops-eng-301: End-to-End MLOps: Production ML Engineering",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "Docker",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "docker",
+              "canonical_skill_name": "Docker",
+              "confidence": 0.95,
+              "evidence": "Completed course mlops-eng-301: End-to-End MLOps: Production ML Engineering",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "CI/CD",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "ci cd",
+              "canonical_skill_name": "CI/CD",
+              "confidence": 0.95,
+              "evidence": "Completed course mlops-eng-301: End-to-End MLOps: Production ML Engineering",
+              "source": "completed_course"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "course_id": "cloud-aws-101",
+      "title": "AWS Cloud Foundations and Core Services",
+      "rank": 2,
+      "score": 0.4811392405063291,
+      "covered_missing_skills": [
+        "Amazon Web Services"
+      ],
+      "prerequisite_status": {
+        "is_satisfied": true,
+        "status_code": "satisfied_none_required",
+        "satisfied": [],
+        "missing": [],
+        "explanation": "Course has no prerequisite requirements."
+      },
+      "evidence": [
+        {
+          "skill": "Amazon Web Services",
+          "canonical_skill_id": "amazon web services",
+          "job_requirement_evidence": "Hands-on experience deploying infrastructure on AWS.",
+          "gap_classification": "missing_critical",
+          "user_evidence": "User has strength 0.00 (gap weight: 0.90)",
+          "course_learning_outcome_evidence": "Provision and configure EC2 virtual machines and S3 buckets"
+        }
+      ],
+      "explanation_path": [
+        "Target role 'Machine Learning Platform Engineer' requires 'Amazon Web Services' -> User is missing critical -> Course 'AWS Cloud Foundations and Core Services' teaches 'Amazon Web Services' via outcome: \"Provision and configure EC2 virtual machines and S3 buckets\"",
+        "Course has no prerequisite requirements."
+      ],
+      "limitations": [
+        "No blocking constraints detected."
+      ],
+      "next_profile_update_action": {
+        "trigger": "on_course_completion",
+        "course_id": "cloud-aws-101",
+        "skills_to_add": [
+          {
+            "surface_form": "Amazon Web Services",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "amazon web services",
+            "canonical_skill_name": "Amazon Web Services",
+            "confidence": 0.95,
+            "evidence": "Completed course cloud-aws-101: AWS Cloud Foundations and Core Services",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "Cloud Computing",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "cloud computing",
+            "canonical_skill_name": "Cloud Computing",
+            "confidence": 0.95,
+            "evidence": "Completed course cloud-aws-101: AWS Cloud Foundations and Core Services",
+            "source": "completed_course"
+          }
+        ],
+        "target_mastery": "proficient",
+        "profile_update_schema": {
+          "user_id": "demo_user",
+          "completed_courses": [
+            "cloud-aws-101"
+          ],
+          "skills": [
+            {
+              "surface_form": "Amazon Web Services",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "amazon web services",
+              "canonical_skill_name": "Amazon Web Services",
+              "confidence": 0.95,
+              "evidence": "Completed course cloud-aws-101: AWS Cloud Foundations and Core Services",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "Cloud Computing",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "cloud computing",
+              "canonical_skill_name": "Cloud Computing",
+              "confidence": 0.95,
+              "evidence": "Completed course cloud-aws-101: AWS Cloud Foundations and Core Services",
+              "source": "completed_course"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "course_id": "devops-docker-k8s-201",
+      "title": "Containerization and Orchestration with Docker & Kubernetes",
+      "rank": 3,
+      "score": 0.2867088607594937,
+      "covered_missing_skills": [
+        "Docker",
+        "Kubernetes"
+      ],
+      "prerequisite_status": {
+        "is_satisfied": false,
+        "status_code": "flagged_missing_1_prerequisites",
+        "satisfied": [],
+        "missing": [
+          {
+            "skill_id": "linux",
+            "canonical_skill_id": "linux",
+            "canonical_skill_name": "Linux",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Linux"
+          }
+        ],
+        "explanation": "Caution: Missing prerequisite skill(s): Linux."
+      },
+      "evidence": [
+        {
+          "skill": "Docker",
+          "canonical_skill_id": "docker",
+          "job_requirement_evidence": "Extensive experience containerizing distributed applications with Docker.",
+          "gap_classification": "missing_critical",
+          "user_evidence": "User has strength 0.00 (gap weight: 1.00)",
+          "course_learning_outcome_evidence": "Write multi-stage Dockerfiles and minimize container image footprint"
+        },
+        {
+          "skill": "Kubernetes",
+          "canonical_skill_id": "kubernetes",
+          "job_requirement_evidence": "Kubernetes cluster orchestration preferred.",
+          "gap_classification": "missing_preferred",
+          "user_evidence": "User has strength 0.00 (gap weight: 0.56)",
+          "course_learning_outcome_evidence": "Deploy Kubernetes pods, deployments, services, and ingress controllers"
+        }
+      ],
+      "explanation_path": [
+        "Target role 'Machine Learning Platform Engineer' requires 'Docker' -> User is missing critical -> Course 'Containerization and Orchestration with Docker & Kubernetes' teaches 'Docker' via outcome: \"Write multi-stage Dockerfiles and minimize container image footprint\"",
+        "Target role 'Machine Learning Platform Engineer' requires 'Kubernetes' -> User is missing preferred -> Course 'Containerization and Orchestration with Docker & Kubernetes' teaches 'Kubernetes' via outcome: \"Deploy Kubernetes pods, deployments, services, and ingress controllers\"",
+        "Caution: Missing prerequisite skill(s): Linux."
+      ],
+      "limitations": [
+        "Prerequisite gap: Learner should first acquire Linux.",
+        "Contains partial skill overlap with higher-ranked recommendations in this session."
+      ],
+      "next_profile_update_action": {
+        "trigger": "on_course_completion",
+        "course_id": "devops-docker-k8s-201",
+        "skills_to_add": [
+          {
+            "surface_form": "Docker",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "docker",
+            "canonical_skill_name": "Docker",
+            "confidence": 0.95,
+            "evidence": "Completed course devops-docker-k8s-201: Containerization and Orchestration with Docker & Kubernetes",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "Kubernetes",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "kubernetes",
+            "canonical_skill_name": "Kubernetes",
+            "confidence": 0.95,
+            "evidence": "Completed course devops-docker-k8s-201: Containerization and Orchestration with Docker & Kubernetes",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "Containerization",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "containerization",
+            "canonical_skill_name": "Containerization",
+            "confidence": 0.95,
+            "evidence": "Completed course devops-docker-k8s-201: Containerization and Orchestration with Docker & Kubernetes",
+            "source": "completed_course"
+          }
+        ],
+        "target_mastery": "proficient",
+        "profile_update_schema": {
+          "user_id": "demo_user",
+          "completed_courses": [
+            "devops-docker-k8s-201"
+          ],
+          "skills": [
+            {
+              "surface_form": "Docker",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "docker",
+              "canonical_skill_name": "Docker",
+              "confidence": 0.95,
+              "evidence": "Completed course devops-docker-k8s-201: Containerization and Orchestration with Docker & Kubernetes",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "Kubernetes",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "kubernetes",
+              "canonical_skill_name": "Kubernetes",
+              "confidence": 0.95,
+              "evidence": "Completed course devops-docker-k8s-201: Containerization and Orchestration with Docker & Kubernetes",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "Containerization",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "containerization",
+              "canonical_skill_name": "Containerization",
+              "confidence": 0.95,
+              "evidence": "Completed course devops-docker-k8s-201: Containerization and Orchestration with Docker & Kubernetes",
+              "source": "completed_course"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "course_id": "devops-cicd-202",
+      "title": "Continuous Integration and Continuous Deployment Pipelines",
+      "rank": 4,
+      "score": 0.24249999999999997,
+      "covered_missing_skills": [
+        "CI/CD"
+      ],
+      "prerequisite_status": {
+        "is_satisfied": false,
+        "status_code": "flagged_missing_2_prerequisites",
+        "satisfied": [],
+        "missing": [
+          {
+            "skill_id": "git",
+            "canonical_skill_id": "git",
+            "canonical_skill_name": "Git",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Git"
+          },
+          {
+            "skill_id": "docker",
+            "canonical_skill_id": "docker",
+            "canonical_skill_name": "Docker",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Docker"
+          }
+        ],
+        "explanation": "Caution: Missing prerequisite skill(s): Git, Docker."
+      },
+      "evidence": [
+        {
+          "skill": "CI/CD",
+          "canonical_skill_id": "ci cd",
+          "job_requirement_evidence": "Experience designing CI/CD automation pipelines.",
+          "gap_classification": "missing_preferred",
+          "user_evidence": "User has strength 0.00 (gap weight: 0.49)",
+          "course_learning_outcome_evidence": "Construct declarative CI/CD pipelines with branch triggers and caching"
+        }
+      ],
+      "explanation_path": [
+        "Target role 'Machine Learning Platform Engineer' requires 'CI/CD' -> User is missing preferred -> Course 'Continuous Integration and Continuous Deployment Pipelines' teaches 'CI/CD' via outcome: \"Construct declarative CI/CD pipelines with branch triggers and caching\"",
+        "Caution: Missing prerequisite skill(s): Git, Docker."
+      ],
+      "limitations": [
+        "Prerequisite gap: Learner should first acquire Git, Docker.",
+        "Contains partial skill overlap with higher-ranked recommendations in this session."
+      ],
+      "next_profile_update_action": {
+        "trigger": "on_course_completion",
+        "course_id": "devops-cicd-202",
+        "skills_to_add": [
+          {
+            "surface_form": "Continuous Integration",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "continuous integration",
+            "canonical_skill_name": "Continuous Integration",
+            "confidence": 0.95,
+            "evidence": "Completed course devops-cicd-202: Continuous Integration and Continuous Deployment Pipelines",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "CI/CD",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "ci cd",
+            "canonical_skill_name": "CI/CD",
+            "confidence": 0.95,
+            "evidence": "Completed course devops-cicd-202: Continuous Integration and Continuous Deployment Pipelines",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "Git",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "git",
+            "canonical_skill_name": "Git",
+            "confidence": 0.95,
+            "evidence": "Completed course devops-cicd-202: Continuous Integration and Continuous Deployment Pipelines",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "DevOps",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "devops",
+            "canonical_skill_name": "DevOps",
+            "confidence": 0.95,
+            "evidence": "Completed course devops-cicd-202: Continuous Integration and Continuous Deployment Pipelines",
+            "source": "completed_course"
+          }
+        ],
+        "target_mastery": "proficient",
+        "profile_update_schema": {
+          "user_id": "demo_user",
+          "completed_courses": [
+            "devops-cicd-202"
+          ],
+          "skills": [
+            {
+              "surface_form": "Continuous Integration",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "continuous integration",
+              "canonical_skill_name": "Continuous Integration",
+              "confidence": 0.95,
+              "evidence": "Completed course devops-cicd-202: Continuous Integration and Continuous Deployment Pipelines",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "CI/CD",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "ci cd",
+              "canonical_skill_name": "CI/CD",
+              "confidence": 0.95,
+              "evidence": "Completed course devops-cicd-202: Continuous Integration and Continuous Deployment Pipelines",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "Git",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "git",
+              "canonical_skill_name": "Git",
+              "confidence": 0.95,
+              "evidence": "Completed course devops-cicd-202: Continuous Integration and Continuous Deployment Pipelines",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "DevOps",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "devops",
+              "canonical_skill_name": "DevOps",
+              "confidence": 0.95,
+              "evidence": "Completed course devops-cicd-202: Continuous Integration and Continuous Deployment Pipelines",
+              "source": "completed_course"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "course_id": "ml-foundations-201",
+      "title": "Applied Machine Learning with Scikit-Learn",
+      "rank": 5,
+      "score": 0.2366666666666667,
+      "covered_missing_skills": [
+        "Machine Learning"
+      ],
+      "prerequisite_status": {
+        "is_satisfied": false,
+        "status_code": "flagged_missing_2_prerequisites",
+        "satisfied": [
+          {
+            "skill_id": "python",
+            "canonical_skill_id": "python",
+            "canonical_skill_name": "Python",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Python"
+          }
+        ],
+        "missing": [
+          {
+            "skill_id": "statistics",
+            "canonical_skill_id": "statistics",
+            "canonical_skill_name": "Statistics",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Statistics"
+          },
+          {
+            "skill_id": "linear algebra",
+            "canonical_skill_id": "linear algebra",
+            "canonical_skill_name": "Linear Algebra",
+            "strictness": "strict",
+            "level": "beginner",
+            "prerequisite_evidence": "Linear Algebra"
+          }
+        ],
+        "explanation": "Caution: Missing prerequisite skill(s): Statistics, Linear Algebra."
+      },
+      "evidence": [
+        {
+          "skill": "Machine Learning",
+          "canonical_skill_id": "machine learning",
+          "job_requirement_evidence": "Understanding of machine learning workflows and scikit-learn models.",
+          "gap_classification": "missing_critical",
+          "user_evidence": "User has strength 0.00 (gap weight: 1.00)",
+          "course_learning_outcome_evidence": "Preprocess tabular data with encoders, scalers, and imputation"
+        }
+      ],
+      "explanation_path": [
+        "Target role 'Machine Learning Platform Engineer' requires 'Machine Learning' -> User is missing critical -> Course 'Applied Machine Learning with Scikit-Learn' teaches 'Machine Learning' via outcome: \"Preprocess tabular data with encoders, scalers, and imputation\"",
+        "Caution: Missing prerequisite skill(s): Statistics, Linear Algebra."
+      ],
+      "limitations": [
+        "Prerequisite gap: Learner should first acquire Statistics, Linear Algebra.",
+        "Contains partial skill overlap with higher-ranked recommendations in this session."
+      ],
+      "next_profile_update_action": {
+        "trigger": "on_course_completion",
+        "course_id": "ml-foundations-201",
+        "skills_to_add": [
+          {
+            "surface_form": "Machine Learning",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "machine learning",
+            "canonical_skill_name": "Machine Learning",
+            "confidence": 0.95,
+            "evidence": "Completed course ml-foundations-201: Applied Machine Learning with Scikit-Learn",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "Scikit-Learn",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "scikit learn",
+            "canonical_skill_name": "Scikit-Learn",
+            "confidence": 0.95,
+            "evidence": "Completed course ml-foundations-201: Applied Machine Learning with Scikit-Learn",
+            "source": "completed_course"
+          },
+          {
+            "surface_form": "Feature Engineering",
+            "label": "HARD_SKILL",
+            "canonical_skill_id": "feature engineering",
+            "canonical_skill_name": "Feature Engineering",
+            "confidence": 0.95,
+            "evidence": "Completed course ml-foundations-201: Applied Machine Learning with Scikit-Learn",
+            "source": "completed_course"
+          }
+        ],
+        "target_mastery": "proficient",
+        "profile_update_schema": {
+          "user_id": "demo_user",
+          "completed_courses": [
+            "ml-foundations-201"
+          ],
+          "skills": [
+            {
+              "surface_form": "Machine Learning",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "machine learning",
+              "canonical_skill_name": "Machine Learning",
+              "confidence": 0.95,
+              "evidence": "Completed course ml-foundations-201: Applied Machine Learning with Scikit-Learn",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "Scikit-Learn",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "scikit learn",
+              "canonical_skill_name": "Scikit-Learn",
+              "confidence": 0.95,
+              "evidence": "Completed course ml-foundations-201: Applied Machine Learning with Scikit-Learn",
+              "source": "completed_course"
+            },
+            {
+              "surface_form": "Feature Engineering",
+              "label": "HARD_SKILL",
+              "canonical_skill_id": "feature engineering",
+              "canonical_skill_name": "Feature Engineering",
+              "confidence": 0.95,
+              "evidence": "Completed course ml-foundations-201: Applied Machine Learning with Scikit-Learn",
+              "source": "completed_course"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "learning_path": {
+    "user_id": "demo_user",
+    "target_role": "Machine Learning Platform Engineer",
+    "total_courses": 5,
+    "total_duration_hours": 150.0,
+    "stages": [
+      {
+        "stage_number": 1,
+        "stage_name": "Core Foundations & Immediate Gaps",
+        "courses": [
+          {
+            "step": 1,
+            "course_id": "cloud-aws-101",
+            "title": "AWS Cloud Foundations and Core Services",
+            "level": "beginner",
+            "duration_hours": 20.0,
+            "provider": "CloudMastery",
+            "covers_skills": [
+              "Amazon Web Services"
+            ],
+            "prerequisites_satisfied_at_step": true
+          },
+          {
+            "step": 2,
+            "course_id": "devops-docker-k8s-201",
+            "title": "Containerization and Orchestration with Docker & Kubernetes",
+            "level": "intermediate",
+            "duration_hours": 30.0,
+            "provider": "DevOpsForge",
+            "covers_skills": [
+              "Docker",
+              "Kubernetes"
+            ],
+            "prerequisites_satisfied_at_step": false
+          },
+          {
+            "step": 3,
+            "course_id": "ml-foundations-201",
+            "title": "Applied Machine Learning with Scikit-Learn",
+            "level": "intermediate",
+            "duration_hours": 35.0,
+            "provider": "MLExcellence",
+            "covers_skills": [
+              "Machine Learning"
+            ],
+            "prerequisites_satisfied_at_step": false
+          }
+        ],
+        "skills_acquired": [
+          "amazon web services",
+          "cloud computing",
+          "containerization",
+          "docker",
+          "feature engineering",
+          "kubernetes",
+          "machine learning",
+          "scikit learn"
+        ],
+        "estimated_hours": 85.0
+      },
+      {
+        "stage_number": 2,
+        "stage_name": "Advanced Specialization & Role Readiness",
+        "courses": [
+          {
+            "step": 4,
+            "course_id": "mlops-eng-301",
+            "title": "End-to-End MLOps: Production ML Engineering",
+            "level": "advanced",
+            "duration_hours": 40.0,
+            "provider": "MLOpsInstitute",
+            "covers_skills": [
+              "CI/CD",
+              "Docker",
+              "Machine Learning"
+            ],
+            "prerequisites_satisfied_at_step": true
+          },
+          {
+            "step": 5,
+            "course_id": "devops-cicd-202",
+            "title": "Continuous Integration and Continuous Deployment Pipelines",
+            "level": "intermediate",
+            "duration_hours": 25.0,
+            "provider": "DevOpsForge",
+            "covers_skills": [
+              "CI/CD"
+            ],
+            "prerequisites_satisfied_at_step": false
+          }
+        ],
+        "skills_acquired": [
+          "ci cd",
+          "continuous integration",
+          "devops",
+          "docker",
+          "git",
+          "machine learning",
+          "mlops"
+        ],
+        "estimated_hours": 65.0
+      }
+    ],
+    "ordered_courses": [
+      {
+        "step": 1,
+        "course_id": "cloud-aws-101",
+        "title": "AWS Cloud Foundations and Core Services",
+        "level": "beginner",
+        "duration_hours": 20.0,
+        "provider": "CloudMastery",
+        "covers_skills": [
+          "Amazon Web Services"
+        ],
+        "prerequisites_satisfied_at_step": true
+      },
+      {
+        "step": 2,
+        "course_id": "devops-docker-k8s-201",
+        "title": "Containerization and Orchestration with Docker & Kubernetes",
+        "level": "intermediate",
+        "duration_hours": 30.0,
+        "provider": "DevOpsForge",
+        "covers_skills": [
+          "Docker",
+          "Kubernetes"
+        ],
+        "prerequisites_satisfied_at_step": false
+      },
+      {
+        "step": 3,
+        "course_id": "ml-foundations-201",
+        "title": "Applied Machine Learning with Scikit-Learn",
+        "level": "intermediate",
+        "duration_hours": 35.0,
+        "provider": "MLExcellence",
+        "covers_skills": [
+          "Machine Learning"
+        ],
+        "prerequisites_satisfied_at_step": false
+      },
+      {
+        "step": 4,
+        "course_id": "mlops-eng-301",
+        "title": "End-to-End MLOps: Production ML Engineering",
+        "level": "advanced",
+        "duration_hours": 40.0,
+        "provider": "MLOpsInstitute",
+        "covers_skills": [
+          "CI/CD",
+          "Docker",
+          "Machine Learning"
+        ],
+        "prerequisites_satisfied_at_step": true
+      },
+      {
+        "step": 5,
+        "course_id": "devops-cicd-202",
+        "title": "Continuous Integration and Continuous Deployment Pipelines",
+        "level": "intermediate",
+        "duration_hours": 25.0,
+        "provider": "DevOpsForge",
+        "covers_skills": [
+          "CI/CD"
+        ],
+        "prerequisites_satisfied_at_step": false
+      }
+    ],
+    "cumulative_gap_coverage": [
+      {
+        "step": 1,
+        "course_id": "cloud-aws-101",
+        "cumulative_gap_coverage_ratio": 0.2278,
+        "cumulative_gap_coverage_pct": "22.8%"
+      },
+      {
+        "step": 2,
+        "course_id": "devops-docker-k8s-201",
+        "cumulative_gap_coverage_ratio": 0.6228,
+        "cumulative_gap_coverage_pct": "62.3%"
+      },
+      {
+        "step": 3,
+        "course_id": "ml-foundations-201",
+        "cumulative_gap_coverage_ratio": 0.8759,
+        "cumulative_gap_coverage_pct": "87.6%"
+      },
+      {
+        "step": 4,
+        "course_id": "mlops-eng-301",
+        "cumulative_gap_coverage_ratio": 1.0,
+        "cumulative_gap_coverage_pct": "100.0%"
+      },
+      {
+        "step": 5,
+        "course_id": "devops-cicd-202",
+        "cumulative_gap_coverage_ratio": 1.0,
+        "cumulative_gap_coverage_pct": "100.0%"
+      }
+    ],
+    "unresolved_prerequisites": [
+      {
+        "course_id": "devops-docker-k8s-201",
+        "course_title": "Containerization and Orchestration with Docker & Kubernetes",
+        "missing_prerequisite": "linux",
+        "step": 2
+      },
+      {
+        "course_id": "ml-foundations-201",
+        "course_title": "Applied Machine Learning with Scikit-Learn",
+        "missing_prerequisite": "statistics",
+        "step": 3
+      },
+      {
+        "course_id": "ml-foundations-201",
+        "course_title": "Applied Machine Learning with Scikit-Learn",
+        "missing_prerequisite": "linear algebra",
+        "step": 3
+      },
+      {
+        "course_id": "devops-cicd-202",
+        "course_title": "Continuous Integration and Continuous Deployment Pipelines",
+        "missing_prerequisite": "git",
+        "step": 5
+      }
+    ]
+  },
+  "pipeline_metadata": {
+    "total_catalog_courses": 15,
+    "graph_nodes": 59,
+    "graph_edges": 75
   }
-]
+}

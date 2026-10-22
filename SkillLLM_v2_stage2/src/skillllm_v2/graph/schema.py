@@ -11,6 +11,7 @@ class NodeType(str, Enum):
     SKILL = "Skill"
     SKILL_CLUSTER = "SkillCluster"
     OCCUPATION = "Occupation"
+    PREREQUISITE = "Prerequisite"
 
 
 class EdgeType(str, Enum):
@@ -20,5 +21,6 @@ class EdgeType(str, Enum):
     PREFERS = "PREFERS"
     TEACHES = "TEACHES"
     REQUIRES_PREREQUISITE = "REQUIRES_PREREQUISITE"
+    RELATED_TO = "RELATED_TO"
     SIMILAR_TO = "SIMILAR_TO"
     BELONGS_TO = "BELONGS_TO"

@@ -1,0 +1,83 @@
+{
+  "method": "sort scenario ids by sha256('skillllm-recsys-loop-v1:<scenario_id>'); first 24 = dev, remaining = test",
+  "salt": "skillllm-recsys-loop-v1",
+  "n_dev": 24,
+  "n_test": 24,
+  "dev": [
+    "sc-02",
+    "sc-03",
+    "sc-04",
+    "sc-06",
+    "sc-08",
+    "sc-09",
+    "sc-10",
+    "sc-12",
+    "sc-13",
+    "sc-15",
+    "sc-17",
+    "sc-18",
+    "sc-20",
+    "sc-21",
+    "sc-25",
+    "sc-26",
+    "sc-27",
+    "sc-30",
+    "sc-32",
+    "sc-35",
+    "sc-37",
+    "sc-44",
+    "sc-46",
+    "sc-48"
+  ],
+  "test": [
+    "sc-01",
+    "sc-05",
+    "sc-07",
+    "sc-11",
+    "sc-14",
+    "sc-16",
+    "sc-19",
+    "sc-22",
+    "sc-23",
+    "sc-24",
+    "sc-28",
+    "sc-29",
+    "sc-31",
+    "sc-33",
+    "sc-34",
+    "sc-36",
+    "sc-38",
+    "sc-39",
+    "sc-40",
+    "sc-41",
+    "sc-42",
+    "sc-43",
+    "sc-45",
+    "sc-47"
+  ],
+  "composition": {
+    "dev": {
+      "experience_level": {
+        "junior": 7,
+        "mid": 14,
+        "senior": 3
+      },
+      "source": {
+        "real_posting_excerpt": 3,
+        "synthetic": 21
+      }
+    },
+    "test": {
+      "experience_level": {
+        "junior": 12,
+        "mid": 9,
+        "senior": 3
+      },
+      "source": {
+        "real_posting_excerpt": 4,
+        "synthetic": 20
+      }
+    }
+  },
+  "note": "Fixed before any tuning. Tune on dev only; test is evaluated once with the frozen config."
+}
