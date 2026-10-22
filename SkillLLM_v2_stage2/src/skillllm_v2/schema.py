@@ -65,6 +65,24 @@ def normalize_text(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+# Graph key: like normalize_text, but symbols that are part of a skill's name survive, so "C++", "C#", "C", "F#",
+# ".NET" and "Node.js" are different graph nodes. normalize_text (used for alias / taxonomy matching everywhere)
+# is deliberately left unchanged: it still maps C++, C# and C to "c" and ".NET" to "net".
+_GRAPH_TOKEN = re.compile(r"(?<![^\W_])\.[^\W_]+(?:\.[^\W_]*[^\W\d_][^\W_]*)*|[^\W_]+(?:\.[^\W\d_][^\W_]*)*[+#]*")
+
+
+def graph_key(value: str) -> str:
+    """Normalized graph node key that preserves symbol-bearing skill names.
+
+    Kept: a trailing run of ``+`` / ``#`` on a token (c++, c#, f#), a leading ``.`` before a word (.net) and a ``.``
+    between a word and an alphabetic segment (node.js, asp.net). Everything else is normalized exactly like
+    :func:`normalize_text` (lowercase, other punctuation to single spaces), so names without those symbols get the
+    same key from both functions and existing alias / taxonomy matching is unaffected. Version numbers ("3.9")
+    are not treated as dotted names.
+    """
+    return " ".join(_GRAPH_TOKEN.findall(value.lower().strip()))
+
+
 def find_offsets(text: str, surface: str, used: set[tuple[int, int]] | None = None) -> tuple[int | None, int | None]:
     used = used or set()
     if not surface:

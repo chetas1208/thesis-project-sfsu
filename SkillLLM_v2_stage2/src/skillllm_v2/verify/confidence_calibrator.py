@@ -5,7 +5,7 @@ from typing import Any
 
 from skillllm_v2.config import load_yaml
 from skillllm_v2.schema import validate_skill
-from skillllm_v2.source_aware_policy import candidate_sources, is_anchor_candidate
+from skillllm_v2.policy import candidate_sources, is_anchor_candidate
 
 DEFAULT_TUNED_CONFIG_PATH = "artifacts/skillllm_v2/confidence_calibrator/tuned_config.yaml"
 

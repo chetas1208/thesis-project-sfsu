@@ -7,7 +7,7 @@ from typing import Any
 from skillllm_v2.config import load_yaml
 from skillllm_v2.normalize.skill_alias_builder import build_alias_index, load_alias_records
 from skillllm_v2.schema import SkillCandidate, normalize_text, validate_skill
-from skillllm_v2.source_aware_policy import candidate_sources, is_anchor_candidate, source_key
+from skillllm_v2.policy import candidate_sources, is_anchor_candidate, source_key
 
 DEFAULT_TUNED_CONFIG_PATH = "artifacts/skillllm_v2/candidate_merger/tuned_config.yaml"
 

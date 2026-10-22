@@ -46,6 +46,33 @@ Important:
 - Use "SKILL" only if the dataset does not distinguish hard and soft skills.
 """
 
+# Compact prompt ("short"): same output schema and label set, no rules/few-shot prose (~41 fixed tokens instead of ~300).
+# NOTE: the template is only meaningful for adapters TRAINED with it; the shipped anchor/v1/v2 adapters use "original".
+SYSTEM_PROMPT_SHORT = "Extract skill spans."
+
+USER_PROMPT_TEMPLATE_SHORT = """Output {{"skills":[{{"text":"<exact span>","label":"HARD_SKILL|SOFT_SKILL"}}]}}
+
+Text:
+{text}"""
+
+DEFAULT_PROMPT_VERSION = "original"
+PROMPT_VERSIONS: dict[str, tuple[str, str]] = {
+    "original": (SYSTEM_PROMPT, USER_PROMPT_TEMPLATE),
+    "short": (SYSTEM_PROMPT_SHORT, USER_PROMPT_TEMPLATE_SHORT),
+}
+
+
+def build_prompt_messages(text: str, prompt_version: str = DEFAULT_PROMPT_VERSION) -> list[dict[str, str]]:
+    """Chat messages for ``text`` under ``prompt_version`` (default = the original prompt, byte-identical to before)."""
+    try:
+        system, template = PROMPT_VERSIONS[prompt_version]
+    except KeyError:
+        raise ValueError(f"unknown prompt_version {prompt_version!r}; choose one of {sorted(PROMPT_VERSIONS)}") from None
+    return [
+        {"role": "system", "content": system},
+        {"role": "user", "content": template.format(text=text)},
+    ]
+
 
 class MistralExtractor:
     """Mistral Small 3.1 24B LoRA extractor with smoke-mode fallback.
@@ -63,7 +90,13 @@ class MistralExtractor:
         max_new_tokens: int = 512,
         fallback_aliases: list[str] | None = None,
         allow_fallback: bool = True,
+        prompt_version: str = DEFAULT_PROMPT_VERSION,
+        record_logprobs: bool = False,
     ) -> None:
+        if prompt_version not in PROMPT_VERSIONS:
+            raise ValueError(f"unknown prompt_version {prompt_version!r}; choose one of {sorted(PROMPT_VERSIONS)}")
+        self.prompt_version = prompt_version
+        self.record_logprobs = record_logprobs
         self.model_path = model_path
         self.adapter_path = adapter_path
         self.use_4bit = use_4bit
@@ -83,11 +116,12 @@ class MistralExtractor:
         self._tokenizer: Any | None = None
         self.load_error: str | None = None
 
+    def is_model_loaded(self) -> bool:
+        """True only when real model weights are loaded (False means ``extract`` uses the deterministic fallback)."""
+        return self._model is not None and self._tokenizer is not None
+
     def build_messages(self, text: str) -> list[dict[str, str]]:
-        return [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": USER_PROMPT_TEMPLATE.format(text=text)},
-        ]
+        return build_prompt_messages(text, self.prompt_version)
 
     def load(self) -> None:
         if self._model is not None:
@@ -141,9 +175,14 @@ class MistralExtractor:
         if self._model is None or self._tokenizer is None:
             skills = self._fallback_extract(text)
         else:
-            raw_output = self._generate(text)
+            if self.record_logprobs:
+                raw_output, token_info = self._generate_with_logprobs(text)
+            else:
+                raw_output, token_info = self._generate(text), None
             parsed = parse_skill_json(raw_output)
             skills = self._skills_from_payload(text, parsed)
+            if token_info is not None:
+                attach_span_logprobs(skills, raw_output, token_info, self._tokenizer)
         latency = time.perf_counter() - start_time
         for skill in skills:
             skill.metadata.setdefault("latency_seconds", latency)
@@ -163,6 +202,30 @@ class MistralExtractor:
         output = model.generate(**inputs, max_new_tokens=self.max_new_tokens, do_sample=False)
         generated = output[0][inputs["input_ids"].shape[-1] :]
         return tokenizer.decode(generated, skip_special_tokens=True)
+
+    def _generate_with_logprobs(self, text: str) -> tuple[str, dict[str, Any]]:
+        """Greedy generation that also returns the log-probability of every generated token (same decoding as ``_generate``)."""
+        import torch
+
+        messages = self.build_messages(text)
+        tokenizer = self._tokenizer
+        model = self._model
+        prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        device = getattr(model, "device", None)
+        if device is None:
+            device = next(model.parameters()).device
+        inputs = tokenizer(prompt, return_tensors="pt").to(device)
+        out = model.generate(
+            **inputs, max_new_tokens=self.max_new_tokens, do_sample=False, output_scores=True, return_dict_in_generate=True
+        )
+        gen_ids = out.sequences[0][inputs["input_ids"].shape[-1] :]
+        logprobs: list[float] = []
+        for step, ids in enumerate(gen_ids.tolist()):
+            if step >= len(out.scores):
+                break
+            logprobs.append(float(torch.log_softmax(out.scores[step][0].float(), dim=-1)[ids]))
+        ids_list = gen_ids.tolist()[: len(logprobs)]
+        return tokenizer.decode(gen_ids, skip_special_tokens=True), {"ids": ids_list, "logprobs": logprobs}
 
     def _skills_from_payload(self, text: str, payload: dict[str, Any] | list[Any]) -> list[SkillCandidate]:
         rows = payload.get("skills", []) if isinstance(payload, dict) else payload
@@ -195,6 +258,65 @@ class MistralExtractor:
         return self._skills_from_payload(text, raw)
 
 
+_SPAN_VALUE_RE = re.compile(r'"(?:text|surface_form)"\s*:\s*"((?:[^"\\]|\\.)*)"')
+
+
+def span_value_char_ranges(raw_output: str) -> list[tuple[int, int, str]]:
+    """(start, end, decoded value) of every ``"text"``/``"surface_form"`` JSON string value in the raw model output."""
+    out: list[tuple[int, int, str]] = []
+    for match in _SPAN_VALUE_RE.finditer(raw_output):
+        try:
+            value = json.loads('"' + match.group(1) + '"')
+        except json.JSONDecodeError:
+            value = match.group(1)
+        out.append((match.start(1), match.end(1), value))
+    return out
+
+
+def token_char_ends(tokenizer: Any, ids: list[int]) -> list[int]:
+    """Cumulative decoded character length after each generated token (monotone, clipped to the final decode)."""
+    ends: list[int] = []
+    prev = 0
+    for k in range(1, len(ids) + 1):
+        prev = max(prev, len(tokenizer.decode(ids[:k], skip_special_tokens=True)))
+        ends.append(prev)
+    return ends
+
+
+def span_token_logprob_stats(
+    token_logprobs: list[float], char_ends: list[int], char_start: int, char_end: int
+) -> dict[str, Any] | None:
+    """sum / mean / min log-probability over the generated tokens that overlap ``[char_start, char_end)``."""
+    picked: list[float] = []
+    prev_end = 0
+    for lp, end in zip(token_logprobs, char_ends):
+        if end > char_start and prev_end < char_end and end > prev_end:
+            picked.append(lp)
+        prev_end = end
+    if not picked:
+        return None
+    return {"sum": sum(picked), "mean": sum(picked) / len(picked), "min": min(picked), "n_tokens": len(picked)}
+
+
+def attach_span_logprobs(skills: list[SkillCandidate], raw_output: str, token_info: dict[str, Any], tokenizer: Any) -> None:
+    """Store ``metadata['logprob']`` on each skill (sum/mean/min token log-prob of its generated ``text`` string).
+
+    Skills are the parsed rows in order, so they line up 1:1 with the ``"text"`` values found in the raw output. If the
+    counts or strings disagree (e.g. a malformed row) every skill gets ``metadata['logprob'] = None`` rather than a wrong
+    number.
+    """
+    ranges = span_value_char_ranges(raw_output)
+    aligned = len(ranges) == len(skills) and all(value.strip() == skill.surface_form for (_, _, value), skill in zip(ranges, skills))
+    if aligned:
+        ends = token_char_ends(tokenizer, token_info["ids"])
+    for index, skill in enumerate(skills):
+        if not aligned:
+            skill.metadata["logprob"] = None
+            continue
+        start, end, _ = ranges[index]
+        skill.metadata["logprob"] = span_token_logprob_stats(token_info["logprobs"], ends, start, end)
+
+
 def parse_skill_json(raw_output: str) -> dict[str, Any] | list[Any]:
     cleaned = raw_output.strip()
     fence = re.fullmatch(r"```(?:json)?\s*(.*?)\s*```", cleaned, flags=re.DOTALL | re.IGNORECASE)
@@ -216,11 +338,13 @@ def parse_skill_json(raw_output: str) -> dict[str, Any] | list[Any]:
     raise ValueError(f"Could not parse Mistral JSON output: {raw_output[:200]}")
 
 
-def _load_tokenizer(auto_tokenizer: Any, model_path: str) -> Any:
+def _load_tokenizer(auto_tokenizer: Any, model_path: str, trust_remote_code: bool = True) -> Any:
+    """Load the tokenizer. `trust_remote_code` defaults to True to keep the research scripts' behaviour on local
+    weights; the public library (`skillllm_v2.api`) passes its own flag, which defaults to False."""
     attempts = [
-        {"trust_remote_code": True, "fix_mistral_regex": True},
-        {"trust_remote_code": True},
-        {"trust_remote_code": True, "use_fast": False},
+        {"trust_remote_code": trust_remote_code, "fix_mistral_regex": True},
+        {"trust_remote_code": trust_remote_code},
+        {"trust_remote_code": trust_remote_code, "use_fast": False},
     ]
     errors = []
     for kwargs in attempts:

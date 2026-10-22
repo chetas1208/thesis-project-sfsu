@@ -31,6 +31,10 @@ class GLiNERExtractor:
         self.device = resolve_gliner_device(device)
         self._model: Any | None = None
 
+    def is_model_loaded(self) -> bool:
+        """True only when a real GLiNER model is loaded (False means ``extract`` returns [] or the hard-coded fallback)."""
+        return self._model is not None
+
     def load(self) -> None:
         if self._model is not None:
             return

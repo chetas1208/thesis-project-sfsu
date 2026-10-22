@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Any
 
 from skillllm_v2.schema import normalize_text, validate_skill
-from skillllm_v2.source_aware_policy import ANCHOR_SOURCES, is_anchor_candidate
+from skillllm_v2.policy import ANCHOR_SOURCES, is_anchor_candidate
 
 GENERIC_REJECTS = {
     "experience",

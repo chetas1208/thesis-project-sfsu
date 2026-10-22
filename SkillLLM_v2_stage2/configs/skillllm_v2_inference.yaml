@@ -1,0 +1,70 @@
+# SkillLLM_v2 end-to-end inference pipeline (skillllm_v2.pipeline.inference.SkillLLMV2Pipeline).
+# Existing sections (model, extractors, taxonomy, calibration) are inherited from the stage-2 config;
+# everything under `inference:` is specific to the inference pipeline. See docs/INFERENCE_PIPELINE.md.
+extends: configs/skillllm_v2_stage2.yaml
+
+inference:
+  # Per-stage switches. `extract` cannot be switched off; a switched-off extraction stage (merge..link) passes
+  # candidates through unchanged, a switched-off downstream stage (profile..explain) yields no artifact.
+  stages:
+    extract: true
+    merge: true
+    refine: true
+    verify: true
+    calibrate: true
+    link: true
+    gate: true
+    profile: true
+    graph: true
+    match: true
+    courses: true
+    explain: true
+  continue_on_error: true        # optional stages that raise are recorded as failed and skipped over
+
+  anchor:
+    mode: auto                   # auto | mistral | stub | none
+    allow_stub: false            # stub is OPT-IN (mode: stub, --no-mistral, or allow_stub: true); auto without weights => no anchor
+    confidence: constant         # constant (Mistral assigns a fixed 0.86) | hook | logprob (NOT IMPLEMENTED; needs confidence_hook)
+  gliner:
+    enabled: auto                # auto (use if the package is installed) | true | false
+    device: cpu                  # never auto-select a GPU for inference
+    threshold: 0.35
+    allow_fallback: false        # true would emit hard-coded stub candidates (flagged); false emits nothing
+  dictionary:
+    enabled: true
+  verify:
+    learned:                     # optional trained TF-IDF/LogReg verifier; absent model => rule verifier only
+      enabled: false
+      model_path: artifacts/skillllm_v2/span_verifier/model/verifier_model.joblib
+      threshold: 0.5
+
+  taxonomy:
+    attach_min_confidence: 0.0   # 0.0 attaches every link (parity with the evaluated wrapper); links never remove skills
+    alias_table_paths:
+      - data/skillllm_v2/taxonomy/skill_aliases.jsonl
+    esco_path: null              # optional external taxonomy exports, wired through normalize.{esco,onet,lightcast}_loader
+    onet_path: null
+    lightcast_path: null
+
+  gate:
+    mode: auto                   # auto | wrapper (force wrapper output) | anchor (force untouched anchor)
+    status_path: artifacts/skillllm_v2/safe_wrapper/non_regression_status.json
+    guardrails_path: configs/skillllm_v2_wrapper_guardrails.yaml
+    on_missing_status: fallback_to_anchor
+    min_anchor_retention: 0.8
+    downstream_from: enriched    # enriched (wrapper-linked, the documented gate behaviour) | selected
+
+  profile:
+    user_id: demo_user
+    top_k_skills: 5
+    top_k_jobs: 5
+  matching:
+    uncertain_confidence_below: 0.5
+  graph:
+    max_hops: 4
+    backend: local               # local (default) | auto (Neo4j, local fallback) | neo4j | mirror; see docs/NEO4J_GRAPH.md
+                                 # credentials: NEO4J_URI / NEO4J_USERNAME / NEO4J_PASSWORD env vars or a .env file (never in this file)
+  courses:
+    port: auto                   # auto | adapter | null  (the only seam to course ingestion/ranking)
+    catalog_path: inputs/courses/course_catalog.jsonl
+    top_k: 5

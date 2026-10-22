@@ -3,27 +3,12 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 from typing import Any, Literal
 
-SkillLabel = Literal["HARD_SKILL", "SOFT_SKILL"]
-SkillSource = Literal["bert", "gliner", "mistral", "dictionary"]
+# SkillCandidate / SkillLabel / SkillSource are defined once, in skillllm_v2.schema
+# (the candidate contract used by every extractor); re-exported here for
+# backward compatibility.
+from skillllm_v2.schema import SkillCandidate, SkillLabel, SkillSource
 TaxonomyName = Literal["ESCO", "ONET", "LIGHTCAST", "CUSTOM"]
 LinkMethod = Literal["alias", "fuzzy", "bm25", "dense", "reranker"]
-
-
-@dataclass(slots=True)
-class SkillCandidate:
-    surface_form: str
-    label: SkillLabel
-    start: int | None
-    end: int | None
-    source: SkillSource
-    confidence: float
-    evidence: str
-    canonical_skill_id: str | None = None
-    canonical_skill_name: str | None = None
-    metadata: dict[str, Any] = field(default_factory=dict)
-
-    def to_dict(self) -> dict[str, Any]:
-        return asdict(self)
 
 
 @dataclass(slots=True)
