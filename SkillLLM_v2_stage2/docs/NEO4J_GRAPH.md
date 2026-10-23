@@ -190,12 +190,12 @@ over 300 chars, no corpus path markers):
 * the synthetic course catalogue `inputs/courses/course_catalog_large.jsonl` (171 courses, all `source: synthetic`): ids, title,
   level, duration, provider, rating, cost, TEACHES / REQUIRES_PREREQUISITE edges with `depth`, `level`, `strictness` and a
   <=200-char `evidence` string (a templated learning-outcome sentence of the fictional course);
-* the 41 synthetic benchmark scenarios of `inputs/courses/benchmark_scenarios.jsonl`: user ids, `experience_level`, skill
+* the 48 synthetic benchmark scenarios (41 archetypes + 7 with a synthetic rewritten job text) of `inputs/courses/benchmark_scenarios.jsonl`: user ids, `experience_level`, skill
   names, job ids/titles, required/preferred skill names;
 * `inputs/demo/*`: 2 demo courses, 2 demo jobs, one demo user (only the curated skills the profile text mentions).
 
-Deliberately NOT uploaded: the 7 benchmark scenarios whose `source` is `real_posting_excerpt` (sc-42..sc-48) and, for every
-scenario, its job text and gold labels; any real job posting (`SkillLLM_v2/Extract_jobDesc`), resume (`Resume+Job Data`),
+Deliberately NOT uploaded: any scenario whose `source` is `real_posting_excerpt` (the build refuses it; none remain) and, for
+every scenario, its job text and gold labels; any real job posting (`SkillLLM_v2/Extract_jobDesc`), resume (`Resume+Job Data`),
 SkillSpan sentence or `data/source` content; course descriptions and learning-outcome lists as node properties; the demo
 profile text; per-user data from the pipeline (see above); derived per-corpus document frequencies
 (`metadata.real_posting_df`).

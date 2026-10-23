@@ -1,7 +1,10 @@
 """Independent graded-relevance labels for the course-recommendation benchmark.
 
     PYTHONPATH=src python -m skillllm_v2.eval.build_relevance_labels \
-        [--catalog inputs/courses/course_catalog_large.jsonl] [--postings PATH]
+        [--catalog inputs/courses/course_catalog_large.jsonl]
+
+The builder is fully reproducible from the repository alone: every scenario's job text is a plain constant
+in benchmark_scenarios_spec.py (no private corpus is read).
 
 Writes
   inputs/courses/benchmark_scenarios.jsonl      scenario inputs (user profile + job) AND the gold needs
@@ -55,7 +58,6 @@ import argparse
 import csv
 import json
 import random
-import re
 from collections import Counter
 from pathlib import Path
 
@@ -65,15 +67,6 @@ from skillllm_v2.eval.benchmark_scenarios_spec import S, SCENARIOS
 ROOT = Path(__file__).resolve().parents[3]
 LABEL_VERSION = "v1-rule"
 W_REQ, W_IMPL, W_PREF = 3, 2, 1
-
-
-def clean_excerpt(raw: str, marker: str, offset: int, length: int) -> str:
-    i = raw.find(marker)
-    if i < 0:
-        i = 0
-    start = max(0, i + offset)
-    text = re.sub(r"\s+", " ", raw[start:start + length]).strip()
-    return text
 
 
 def gold_needs(sc: S) -> dict[str, int]:
@@ -164,38 +157,16 @@ def label_scenario(sc: S, catalog: CourseCatalog) -> dict:
     }
 
 
-def build(catalog_path: Path, postings_path: Path | None, out_dir: Path, report_dir: Path, seed: int = 13) -> None:
+def build(catalog_path: Path, out_dir: Path, report_dir: Path, seed: int = 13) -> None:
     catalog = CourseCatalog.load_from_file(catalog_path)
     vocab = {s for c in catalog for s in c.teaches_skills}
-    postings: dict[int, str] = {}
-    if postings_path and postings_path.exists():
-        wanted = {sc.real_posting["index"] for sc in SCENARIOS if sc.real_posting}
-        for i, line in enumerate(postings_path.open(encoding="utf-8")):
-            if i in wanted:
-                postings[i] = json.loads(line)["job_description_text"]
-
     scen_rows, label_rows, review_pool = [], [], []
     problems = []
-    existing = {}
-    sp = out_dir / "benchmark_scenarios.jsonl"
-    if sp.exists():  # reuse stored excerpts if the external postings file is unavailable
-        for line in sp.open(encoding="utf-8"):
-            d = json.loads(line)
-            existing[d["scenario_id"]] = d
-
     for sc in SCENARIOS:
+        if sc.source == "real_posting_excerpt":
+            raise SystemExit(f"{sc.sid}: real-posting text must not be used in the benchmark")
         text = sc.text
-        posting_meta = None
-        if sc.real_posting:
-            rp = sc.real_posting
-            if rp["index"] in postings:
-                text = clean_excerpt(postings[rp["index"]], rp["marker"], rp["offset"], rp["length"])
-            elif sc.sid in existing:
-                text = existing[sc.sid]["target_job"]["text"]
-            else:
-                raise SystemExit(f"need --postings to extract real posting {rp['index']} for {sc.sid}")
-            posting_meta = {"company": rp["company"], "source_file": "Extract_jobDesc/data/job_descriptions.jsonl", "row_index": rp["index"],
-                            "note": "excerpt of a real public job posting; user profile and skill annotations are synthetic/authored"}
+        posting_meta = sc.provenance
         lab = label_scenario(sc, catalog)
         needs = lab["needs"]
         for s in list(needs) + sc.known_list() + sc.weak_list():
@@ -286,11 +257,10 @@ def build(catalog_path: Path, postings_path: Path | None, out_dir: Path, report_
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--catalog", default=str(ROOT / "inputs/courses/course_catalog_large.jsonl"))
-    ap.add_argument("--postings", default=str(ROOT.parent / "SkillLLM_v2/Extract_jobDesc/data/job_descriptions.jsonl"))
     ap.add_argument("--out-dir", default=str(ROOT / "inputs/courses"))
     ap.add_argument("--report-dir", default=str(ROOT / "reports/skillllm_v2"))
     args = ap.parse_args()
-    build(Path(args.catalog), Path(args.postings), Path(args.out_dir), Path(args.report_dir))
+    build(Path(args.catalog), Path(args.out_dir), Path(args.report_dir))
 
 
 if __name__ == "__main__":

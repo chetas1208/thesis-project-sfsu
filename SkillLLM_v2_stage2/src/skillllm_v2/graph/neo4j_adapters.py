@@ -8,8 +8,8 @@ What :func:`build_curated_plan` includes (everything else is deliberately NOT up
 
 * skill names / aliases from ``resources/offline_aliases.jsonl`` (the curated alias set the offline linker uses);
 * ``inputs/courses/course_catalog_large.jsonl`` rows whose ``source`` is ``synthetic``;
-* ``inputs/courses/benchmark_scenarios.jsonl`` scenarios whose ``source`` is ``synthetic`` (scenarios whose job text is
-  excerpted from a real posting are skipped; job text and gold labels are never uploaded);
+* ``inputs/courses/benchmark_scenarios.jsonl`` scenarios whose ``source`` is ``synthetic`` or ``synthetic_rewrite``
+  (a scenario whose ``source`` is ``real_posting_excerpt`` makes the build fail; job text and gold labels are never uploaded);
 * ``inputs/demo/*`` (profile text is not uploaded: only the curated skills it mentions).
 """
 
@@ -274,10 +274,13 @@ def build_curated_plan(root: Path | str) -> tuple[GraphPlan, dict[str, Any]]:
     prov["included"]["synthetic_course_catalog"] = {"file": "inputs/courses/course_catalog_large.jsonl", "courses": len(synthetic_rows), **sk}
     _add(plan, [], _cooccurrence_edges(plan))
 
-    # ---- synthetic benchmark scenarios (SkillGraphBuilder); posting-derived scenarios are skipped
+    # ---- synthetic benchmark scenarios (SkillGraphBuilder); a scenario marked real_posting_excerpt is refused
     scen_path = root / "inputs" / "courses" / "benchmark_scenarios.jsonl"
     scenarios = _read_jsonl(scen_path)
-    used = [s for s in scenarios if str(s.get("source", "")).lower() == "synthetic" and not s.get("posting_provenance")]
+    real = [s.get("scenario_id") for s in scenarios if str(s.get("source", "")).lower() == "real_posting_excerpt"]
+    if real:
+        raise GraphStoreError(f"refusing to upload benchmark scenarios that carry real-posting text: {real}")
+    used = [s for s in scenarios if str(s.get("source", "")).lower() in ("synthetic", "synthetic_rewrite")]
     skipped = [s["scenario_id"] for s in scenarios if s not in used]
     sb = SkillGraphBuilder()
     extra: dict[str, dict[str, Any]] = {}
@@ -303,7 +306,8 @@ def build_curated_plan(root: Path | str) -> tuple[GraphPlan, dict[str, Any]]:
     nodes, edges, sk = records_from_graph(sb.graph, source="benchmark_synthetic", synthetic=True, index=index, extra_node_props=extra)
     _add(plan, nodes, edges)
     prov["included"]["benchmark_scenarios_synthetic"] = {"file": "inputs/courses/benchmark_scenarios.jsonl", "scenarios": len(used), **sk}
-    prov["skipped"]["benchmark_scenarios_real_posting_excerpt"] = skipped
+    if skipped:
+        prov["skipped"]["benchmark_scenarios_other_source"] = skipped
 
     # ---- demo inputs
     demo = root / "inputs" / "demo"

@@ -63,8 +63,8 @@
         "senior": 3
       },
       "source": {
-        "real_posting_excerpt": 3,
-        "synthetic": 21
+        "synthetic": 21,
+        "synthetic_rewrite": 3
       }
     },
     "test": {
@@ -74,8 +74,8 @@
         "senior": 3
       },
       "source": {
-        "real_posting_excerpt": 4,
-        "synthetic": 20
+        "synthetic": 20,
+        "synthetic_rewrite": 4
       }
     }
   },

@@ -1,50 +1,50 @@
 system,metric,mean,ci95_lo,ci95_hi,n_scenarios,full_minus_system_mean_diff,paired_p,paired_p_holm
-BM25 Keyword,nDCG@10,0.581469,0.525157,0.633696,48,0.286770,0.0002,0.0014
-BM25 Keyword,Precision@5,0.383333,0.320833,0.445833,48,0.233333,0.0002,0.0014
-BM25 Keyword,Recall@10,0.579489,0.505283,0.654527,48,0.233705,0.0002,0.0014
-BM25 Keyword,MAP@10,0.374488,0.313356,0.437986,48,0.313662,0.0002,0.0014
-BM25 Keyword,Weighted Gap Coverage@5,0.700602,0.634445,0.765147,48,0.175906,0.0002,0.0014
-BM25 Keyword,Prerequisite Violation Rate@5,0.325000,0.250000,0.400000,48,-0.279167,0.0002,0.0014
-BM25 Keyword,Redundancy@5,0.035688,0.026101,0.045926,48,0.009206,0.1330,0.3990
+BM25 Keyword,nDCG@10,0.597347,0.543533,0.648969,48,0.270892,0.0002,0.0014
+BM25 Keyword,Precision@5,0.404167,0.345833,0.466667,48,0.212500,0.0002,0.0014
+BM25 Keyword,Recall@10,0.598834,0.526389,0.673025,48,0.214360,0.0002,0.0014
+BM25 Keyword,MAP@10,0.392235,0.329920,0.458953,48,0.295914,0.0002,0.0014
+BM25 Keyword,Weighted Gap Coverage@5,0.718622,0.662742,0.774661,48,0.157886,0.0002,0.0014
+BM25 Keyword,Prerequisite Violation Rate@5,0.320833,0.250000,0.395833,48,-0.275000,0.0002,0.0014
+BM25 Keyword,Redundancy@5,0.038929,0.029484,0.048621,48,0.005966,0.3064,0.9191
 BM25 Keyword,Explanation Completeness@5,0.000000,0.000000,0.000000,48,1.000000,0.0002,0.0014
 BM25 Keyword,Avg #courses returned,10.000000,10.000000,10.000000,48,-1.645833,0.0002,0.0014
-BM25 Keyword,nDCG@10 (content-only labels),0.665105,0.610101,0.715880,48,0.194557,0.0002,0.0014
-BM25 Keyword,Precision@5 (content-only labels),0.600000,0.529167,0.666667,48,0.116667,0.0040,0.0160
-BM25 + prereq filter,nDCG@10,0.669144,0.611935,0.721937,48,0.199095,0.0002,0.0014
-BM25 + prereq filter,Precision@5,0.504167,0.437500,0.575000,48,0.112500,0.0004,0.0016
-BM25 + prereq filter,Recall@10,0.661830,0.584942,0.737393,48,0.151364,0.0002,0.0014
-BM25 + prereq filter,MAP@10,0.528140,0.458359,0.600643,48,0.160010,0.0002,0.0014
-BM25 + prereq filter,Weighted Gap Coverage@5,0.655172,0.583759,0.723229,48,0.221337,0.0002,0.0014
+BM25 Keyword,nDCG@10 (content-only labels),0.682868,0.630410,0.729737,48,0.176118,0.0002,0.0014
+BM25 Keyword,Precision@5 (content-only labels),0.625000,0.558333,0.687500,48,0.091667,0.0182,0.0728
+BM25 + prereq filter,nDCG@10,0.681672,0.627943,0.732234,48,0.186567,0.0002,0.0014
+BM25 + prereq filter,Precision@5,0.520833,0.454167,0.587500,48,0.095833,0.0014,0.0048
+BM25 + prereq filter,Recall@10,0.675389,0.600810,0.747918,48,0.137806,0.0002,0.0014
+BM25 + prereq filter,MAP@10,0.547139,0.477195,0.618403,48,0.141011,0.0002,0.0014
+BM25 + prereq filter,Weighted Gap Coverage@5,0.665090,0.599309,0.729340,48,0.211419,0.0002,0.0014
 BM25 + prereq filter,Prerequisite Violation Rate@5,0.000000,0.000000,0.000000,48,0.045833,0.0008,0.0024
-BM25 + prereq filter,Redundancy@5,0.030258,0.022172,0.038899,48,0.014636,0.0048,0.0288
+BM25 + prereq filter,Redundancy@5,0.032920,0.024715,0.041359,48,0.011974,0.0146,0.0584
 BM25 + prereq filter,Explanation Completeness@5,0.000000,0.000000,0.000000,48,1.000000,0.0002,0.0014
 BM25 + prereq filter,Avg #courses returned,10.000000,10.000000,10.000000,48,-1.645833,0.0002,0.0014
-BM25 + prereq filter,nDCG@10 (content-only labels),0.587117,0.531716,0.638596,48,0.272545,0.0002,0.0014
-BM25 + prereq filter,Precision@5 (content-only labels),0.554167,0.483333,0.625000,48,0.162500,0.0002,0.0014
-Dense Semantic,nDCG@10,0.565308,0.504726,0.624066,48,0.302931,0.0002,0.0014
-Dense Semantic,Precision@5,0.395833,0.333333,0.462500,48,0.220833,0.0002,0.0014
-Dense Semantic,Recall@10,0.582755,0.513822,0.652449,48,0.230440,0.0002,0.0014
-Dense Semantic,MAP@10,0.389169,0.322547,0.458671,48,0.298980,0.0002,0.0014
-Dense Semantic,Weighted Gap Coverage@5,0.678245,0.607401,0.743216,48,0.198263,0.0002,0.0014
-Dense Semantic,Prerequisite Violation Rate@5,0.166667,0.108333,0.233333,48,-0.120833,0.0002,0.0014
-Dense Semantic,Redundancy@5,0.033185,0.025426,0.041290,48,0.011710,0.0142,0.0568
+BM25 + prereq filter,nDCG@10 (content-only labels),0.598427,0.545272,0.649915,48,0.260559,0.0002,0.0014
+BM25 + prereq filter,Precision@5 (content-only labels),0.570833,0.504167,0.637500,48,0.145833,0.0002,0.0014
+Dense Semantic,nDCG@10,0.580186,0.528670,0.631269,48,0.288053,0.0002,0.0014
+Dense Semantic,Precision@5,0.404167,0.341667,0.466667,48,0.212500,0.0002,0.0014
+Dense Semantic,Recall@10,0.599620,0.538558,0.663509,48,0.213575,0.0002,0.0014
+Dense Semantic,MAP@10,0.396453,0.331538,0.463322,48,0.291696,0.0002,0.0014
+Dense Semantic,Weighted Gap Coverage@5,0.693469,0.634451,0.750765,48,0.183039,0.0002,0.0014
+Dense Semantic,Prerequisite Violation Rate@5,0.179167,0.116667,0.245833,48,-0.133333,0.0002,0.0014
+Dense Semantic,Redundancy@5,0.032907,0.025109,0.041201,48,0.011987,0.0112,0.0560
 Dense Semantic,Explanation Completeness@5,0.000000,0.000000,0.000000,48,1.000000,0.0002,0.0014
 Dense Semantic,Avg #courses returned,10.000000,10.000000,10.000000,48,-1.645833,0.0002,0.0014
-Dense Semantic,nDCG@10 (content-only labels),0.613201,0.551428,0.670951,48,0.246460,0.0002,0.0014
-Dense Semantic,Precision@5 (content-only labels),0.566667,0.491667,0.641667,48,0.150000,0.0002,0.0014
-Dense + prereq filter,nDCG@10,0.615276,0.556082,0.670999,48,0.252963,0.0002,0.0014
-Dense + prereq filter,Precision@5,0.450000,0.387500,0.512500,48,0.166667,0.0002,0.0014
-Dense + prereq filter,Recall@10,0.613393,0.546032,0.681301,48,0.199802,0.0002,0.0014
-Dense + prereq filter,MAP@10,0.469064,0.400650,0.539376,48,0.219085,0.0002,0.0014
-Dense + prereq filter,Weighted Gap Coverage@5,0.653968,0.582604,0.721758,48,0.222541,0.0002,0.0014
+Dense Semantic,nDCG@10 (content-only labels),0.628379,0.574854,0.680298,48,0.230608,0.0002,0.0014
+Dense Semantic,Precision@5 (content-only labels),0.575000,0.504167,0.645833,48,0.141667,0.0002,0.0014
+Dense + prereq filter,nDCG@10,0.629042,0.576957,0.678662,48,0.239197,0.0002,0.0014
+Dense + prereq filter,Precision@5,0.462500,0.404167,0.525000,48,0.154167,0.0002,0.0014
+Dense + prereq filter,Recall@10,0.627282,0.564381,0.691617,48,0.185913,0.0002,0.0014
+Dense + prereq filter,MAP@10,0.477561,0.410133,0.546504,48,0.210588,0.0002,0.0014
+Dense + prereq filter,Weighted Gap Coverage@5,0.679609,0.616479,0.740885,48,0.196900,0.0002,0.0014
 Dense + prereq filter,Prerequisite Violation Rate@5,0.000000,0.000000,0.000000,48,0.045833,0.0008,0.0024
-Dense + prereq filter,Redundancy@5,0.032718,0.024306,0.041548,48,0.012176,0.0094,0.0470
+Dense + prereq filter,Redundancy@5,0.032441,0.024008,0.041220,48,0.012454,0.0078,0.0468
 Dense + prereq filter,Explanation Completeness@5,0.000000,0.000000,0.000000,48,1.000000,0.0002,0.0014
 Dense + prereq filter,Avg #courses returned,10.000000,10.000000,10.000000,48,-1.645833,0.0002,0.0014
-Dense + prereq filter,nDCG@10 (content-only labels),0.568951,0.511070,0.624272,48,0.290711,0.0002,0.0014
-Dense + prereq filter,Precision@5 (content-only labels),0.545833,0.470833,0.620833,48,0.170833,0.0002,0.0014
+Dense + prereq filter,nDCG@10 (content-only labels),0.582047,0.531028,0.632696,48,0.276940,0.0002,0.0014
+Dense + prereq filter,Precision@5 (content-only labels),0.558333,0.487500,0.629167,48,0.158333,0.0002,0.0014
 Skill Overlap (user-agnostic),nDCG@10,0.759598,0.718931,0.798528,48,0.108641,0.0002,0.0014
-Skill Overlap (user-agnostic),Precision@5,0.512500,0.437500,0.587500,48,0.104167,0.0014,0.0036
+Skill Overlap (user-agnostic),Precision@5,0.512500,0.437500,0.587500,48,0.104167,0.0014,0.0048
 Skill Overlap (user-agnostic),Recall@10,0.769618,0.711125,0.825505,48,0.043576,0.0002,0.0014
 Skill Overlap (user-agnostic),MAP@10,0.518066,0.456170,0.581551,48,0.170083,0.0002,0.0014
 Skill Overlap (user-agnostic),Weighted Gap Coverage@5,0.777972,0.730433,0.824291,48,0.098536,0.0004,0.0014
@@ -52,10 +52,10 @@ Skill Overlap (user-agnostic),Prerequisite Violation Rate@5,0.195833,0.133333,0.
 Skill Overlap (user-agnostic),Redundancy@5,0.060747,0.050466,0.071128,48,-0.015853,0.0002,0.0014
 Skill Overlap (user-agnostic),Explanation Completeness@5,0.000000,0.000000,0.000000,48,1.000000,0.0002,0.0014
 Skill Overlap (user-agnostic),Avg #courses returned,10.000000,10.000000,10.000000,48,-1.645833,0.0002,0.0014
-Skill Overlap (user-agnostic),nDCG@10 (content-only labels),0.837490,0.809179,0.864760,48,0.022171,0.1068,0.1068
+Skill Overlap (user-agnostic),nDCG@10 (content-only labels),0.837490,0.809179,0.864760,48,0.021496,0.1156,0.1156
 Skill Overlap (user-agnostic),Precision@5 (content-only labels),0.716667,0.645833,0.783333,48,0.000000,0.9721,1.0000
 Gap-Overlap Greedy (no graph),nDCG@10,0.807655,0.772341,0.841123,48,0.060584,0.0004,0.0014
-Gap-Overlap Greedy (no graph),Precision@5,0.529167,0.462500,0.595833,48,0.087500,0.0012,0.0036
+Gap-Overlap Greedy (no graph),Precision@5,0.529167,0.462500,0.595833,48,0.087500,0.0012,0.0048
 Gap-Overlap Greedy (no graph),Recall@10,0.807903,0.747072,0.864286,48,0.005291,0.5619,0.5619
 Gap-Overlap Greedy (no graph),MAP@10,0.606492,0.545008,0.667962,48,0.081657,0.0004,0.0014
 Gap-Overlap Greedy (no graph),Weighted Gap Coverage@5,0.900593,0.874811,0.925449,48,-0.024085,0.0944,0.1888
@@ -63,7 +63,7 @@ Gap-Overlap Greedy (no graph),Prerequisite Violation Rate@5,0.150000,0.095833,0.
 Gap-Overlap Greedy (no graph),Redundancy@5,0.043452,0.034315,0.053155,48,0.001442,0.6401,1.0000
 Gap-Overlap Greedy (no graph),Explanation Completeness@5,0.000000,0.000000,0.000000,48,1.000000,0.0002,0.0014
 Gap-Overlap Greedy (no graph),Avg #courses returned,10.000000,10.000000,10.000000,48,-1.645833,0.0002,0.0014
-Gap-Overlap Greedy (no graph),nDCG@10 (content-only labels),0.895335,0.877273,0.912738,48,-0.035674,0.0008,0.0024
+Gap-Overlap Greedy (no graph),nDCG@10 (content-only labels),0.895335,0.877273,0.912738,48,-0.036349,0.0006,0.0018
 Gap-Overlap Greedy (no graph),Precision@5 (content-only labels),0.762500,0.708333,0.812604,48,-0.045833,0.0432,0.1296
 Gap-Overlap Greedy + prereq filter,nDCG@10,0.852043,0.826338,0.876431,48,0.016196,0.1174,0.1174
 Gap-Overlap Greedy + prereq filter,Precision@5,0.583333,0.516667,0.654167,48,0.033333,0.2050,0.2050
@@ -74,7 +74,7 @@ Gap-Overlap Greedy + prereq filter,Prerequisite Violation Rate@5,0.000000,0.0000
 Gap-Overlap Greedy + prereq filter,Redundancy@5,0.045258,0.035248,0.055744,48,-0.000364,0.9083,1.0000
 Gap-Overlap Greedy + prereq filter,Explanation Completeness@5,0.000000,0.000000,0.000000,48,1.000000,0.0002,0.0014
 Gap-Overlap Greedy + prereq filter,Avg #courses returned,10.000000,10.000000,10.000000,48,-1.645833,0.0002,0.0014
-Gap-Overlap Greedy + prereq filter,nDCG@10 (content-only labels),0.824104,0.785001,0.860267,48,0.035557,0.0316,0.0632
+Gap-Overlap Greedy + prereq filter,nDCG@10 (content-only labels),0.824104,0.785001,0.860267,48,0.034882,0.0362,0.0724
 Gap-Overlap Greedy + prereq filter,Precision@5 (content-only labels),0.733333,0.670833,0.795833,48,-0.016667,0.5009,1.0000
 SkillLLM_v2 Full Graph Recommender,nDCG@10,0.868239,0.846057,0.889277,48,,,
 SkillLLM_v2 Full Graph Recommender,Precision@5,0.616667,0.550000,0.683333,48,,,
@@ -85,5 +85,5 @@ SkillLLM_v2 Full Graph Recommender,Prerequisite Violation Rate@5,0.045833,0.0166
 SkillLLM_v2 Full Graph Recommender,Redundancy@5,0.044894,0.036471,0.053552,48,,,
 SkillLLM_v2 Full Graph Recommender,Explanation Completeness@5,1.000000,1.000000,1.000000,48,,,
 SkillLLM_v2 Full Graph Recommender,Avg #courses returned,8.354167,7.875000,8.812500,48,,,
-SkillLLM_v2 Full Graph Recommender,nDCG@10 (content-only labels),0.859662,0.839118,0.879374,48,,,
+SkillLLM_v2 Full Graph Recommender,nDCG@10 (content-only labels),0.858987,0.838367,0.878972,48,,,
 SkillLLM_v2 Full Graph Recommender,Precision@5 (content-only labels),0.716667,0.662500,0.770833,48,,,

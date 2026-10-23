@@ -99,3 +99,21 @@ Also failing, but not from this work (another change to `match/job_matcher.py` /
 
 ## Tests added
 `tests/skillllm_v2/test_context_bugfixes.py` (24), `test_graph_bugfixes.py` (47), `test_match_explanation_bugfixes.py` (12).
+
+## Data change note: benchmark scenarios sc-42..sc-48 sanitised (privacy)
+Seven benchmark scenarios (sc-42..sc-48) used verbatim excerpts of real job postings from a private corpus as their job text, and their
+provenance records named the posting organisations, the corpus file and the row index. All of that was removed: each scenario now carries a
+synthetic job description written from its authored skill lists (constants in `src/skillllm_v2/eval/benchmark_scenarios_spec.py`),
+`source = "synthetic_rewrite"`, and a provenance note saying the text is synthetic. The organisation names were also dropped from the
+scenario titles. Scenario ids, user profiles, gold needs (required / preferred / implicit skills) and the dev/test split are unchanged,
+so `relevance_labels.jsonl` is byte-identical and the human-review sample draws the same 60 rows (only job title / text columns differ).
+`build_relevance_labels.py` no longer reads the private corpus (the `--postings` option is gone) and is reproducible from the repository alone;
+`scripts/build_course_catalog_large.py` still optionally reads it, but only to store numeric per-skill document frequencies.
+The Neo4j adapter now uploads all 48 scenarios (structured skill data only) and refuses any scenario whose `source` is `real_posting_excerpt`.
+`scripts/check_no_private_text.py` scans every tracked or untracked-non-ignored file for 20-token runs shared with the private corpus and for the
+flagged organisation names (stored as hashes), printing paths and counts only.
+Effect on results: the Full recommender, the Gap-Overlap baselines, Skill-Overlap and every prerequisite metric read only the structured skill
+lists, so their numbers did not change; only the text baselines (BM25, Dense) read the job text, and their nDCG@10 moved by +0.013 to +0.016
+(v1, all 48). No headline conclusion changed; one secondary finding changed (v1: Full's Redundancy@5 is no longer significantly worse than
+BM25 + prereq filter, Holm p 0.029 -> 0.058). The v1 benchmark report was also regenerated with the legacy (pre-tuning) config explicitly, as
+its documentation states; the pipeline default had meanwhile become the tuned config.

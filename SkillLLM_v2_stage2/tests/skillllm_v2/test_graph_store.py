@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import logging
 from pathlib import Path
 
@@ -665,12 +666,12 @@ def test_fallback_clear_namespace_is_namespaced():
 
 
 # --------------------------------------------------------------------------- adapters / data safety
-def test_curated_plan_is_synthetic_only_and_skips_real_posting_scenarios():
+def test_curated_plan_is_synthetic_only_and_includes_rewritten_scenarios():
     plan, prov = build_curated_plan(REPO)
     assert_safe_plan(plan)
-    assert prov["skipped"]["benchmark_scenarios_real_posting_excerpt"] == [f"sc-{i}" for i in range(42, 49)]
-    assert prov["included"]["benchmark_scenarios_synthetic"]["scenarios"] == 41
-    assert not any(n.id in ("job:job-sc-42", "user:user-sc-42") for n in plan.nodes.values())
+    assert "benchmark_scenarios_other_source" not in prov["skipped"]
+    assert prov["included"]["benchmark_scenarios_synthetic"]["scenarios"] == 48
+    assert any(n.id == "job:job-sc-42" for n in plan.nodes.values())
     assert {n.props["source"] for n in plan.nodes.values()} <= {"curated_aliases", "synthetic_catalog", "benchmark_synthetic", "demo", "derived_skill"}
     for n in plan.nodes.values():
         assert not ({"text", "description", "learning_outcomes", "source_sentence"} & set(n.props))
@@ -678,6 +679,17 @@ def test_curated_plan_is_synthetic_only_and_skips_real_posting_scenarios():
     counts = plan.counts()
     assert counts["dangling_edges"] == 0 and counts["total_nodes"] < MAX_NODES
     assert plan_content_hash(plan) == plan_content_hash(build_curated_plan(REPO)[0])  # deterministic => idempotent build_id
+
+
+def test_curated_plan_refuses_real_posting_excerpt_scenarios(tmp_path):
+    import shutil
+    (tmp_path / "inputs" / "courses").mkdir(parents=True)
+    shutil.copy(REPO / "inputs" / "courses" / "course_catalog_large.jsonl", tmp_path / "inputs" / "courses")
+    rows = [json.loads(line) for line in (REPO / "inputs" / "courses" / "benchmark_scenarios.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    rows[0]["source"] = "real_posting_excerpt"
+    (tmp_path / "inputs" / "courses" / "benchmark_scenarios.jsonl").write_text("\n".join(json.dumps(r) for r in rows) + "\n", encoding="utf-8")
+    with pytest.raises(GraphStoreError):
+        build_curated_plan(tmp_path)
 
 
 def test_assert_safe_plan_rejects_free_text_and_foreign_sources():

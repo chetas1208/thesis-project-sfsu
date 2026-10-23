@@ -304,7 +304,10 @@ def run_recommender_benchmark(
         if pipeline is None:
             from skillllm_v2.pipeline.course_recommendation_pipeline import CourseRecommendationPipeline
 
-            pipeline = CourseRecommendationPipeline(catalog_path=str(catalog_path))
+            from skillllm_v2.recommend.config import LEGACY_CONFIG
+
+            # benchmark v1 is the LEGACY (pre-tuning) Full recommender; the tuned config is evaluated by recommend.recommender_final
+            pipeline = CourseRecommendationPipeline(catalog_path=str(catalog_path), config=LEGACY_CONFIG)
         full = pipeline
         base_graph = full.graph.graph.copy()  # networkx MultiDiGraph snapshot (builder itself is not deep-copyable)
 
@@ -500,7 +503,7 @@ def key_findings(res: dict[str, Any]) -> list[str]:
 
 CAVEATS = [
     "**Synthetic catalogue.** All 171 courses are synthetic (hand-authored structure, templated outcomes, fictional providers); results say nothing about real MOOCs. Skill names come from a vocabulary checked against the project taxonomy and 1,887 real job postings, but course content, prerequisite chains and durations are author inventions.",
-    "**Scenario provenance.** 41 of 48 scenarios are synthetic archetypes; 7 use excerpts of real job postings as job text, but their user profiles and skill annotations are authored. No real learner data.",
+    "**Scenario provenance.** All 48 scenarios are synthetic: 41 archetypes plus 7 (sc-42..sc-48) whose job text is a synthetic rewrite written from authored skill lists (an earlier version used real-posting excerpts, removed for privacy). User profiles and skill annotations are authored. No real learner data.",
     "**Label procedure limits.** Labels come from a deterministic rule over hand-authored gold needs and catalogue skill/prerequisite fields (see build_relevance_labels.py). They do not use any system's output, but they share the catalogue's skill/prerequisite metadata with the skill-aware systems, so skill-aware systems (Skill Overlap, Gap-Overlap, Graph) are structurally favoured over text-only retrieval. The thresholds, the grade cap for bridge-needed courses, and the lenient treatment of weak skills are author choices. Human validation of the stratified sample (reports/skillllm_v2/human_review_sample.csv) has NOT been done yet; until then the absolute numbers are unvalidated.",
     "**Metrics on near-duplicate courses.** The catalogue deliberately contains overlapping courses (e.g. a crash course and a full course on the same skill). Graded nDCG does not penalise recommending several equally relevant duplicates; Redundancy@5 is reported separately for that reason.",
     "**Statistics.** n = 48 scenarios, not independent (shared catalogue, overlapping archetypes). Bootstrap CIs resample scenarios only; they ignore label uncertainty. Holm correction is applied across the 7 baseline comparisons within each metric, not across metrics.",
