@@ -86,3 +86,61 @@ permutation via `skillllm_v2.eval.significance` (Holm); negative results reporte
   lr 7e-5 = v2's last-round LR, extra_frac 0.5, max 5 rounds, baseline_eval true, cap 2.4 GPU-h), `scripts/eval_adapter_test.py` (+v3/v4
   wrappers; prompt_version + logprob options), `scripts/significance_v3_v4.py` (smoke-tested: reproduces v2 numbers), `scripts/logprob_confidence_eval.py`
   (smoke-tested on v2 predictions).
+- 2026-10-22 08:54-10:15 UTC  **Step 1a DONE: Exp 1 loop v3 (short prompt)**: 5 rounds, stop reason `plateau` (patience 3), best = round 1.
+  Dev exact-span F1 (400 docs, same subset as v2): 0.6789, **0.6904**, 0.6838, 0.6785, 0.6855 (v2: 0.6584, 0.6652, 0.6913, 0.7029, 0.6772, 0.7005).
+  **GPU-h: 1.333** (loop budget accounting `loop_summary.json`; 4,797 s). Train tokens 390,578 (78k/round vs v2 ~237k/round = 3.0x fewer).
+  Per round (mean of 5): training-step time 338 s (0.094 GPU-h) vs v2 ~710 s (0.197 GPU-h, v2 round 0 from its log; v2 did not store
+  train_seconds) = **2.1x lower**; dev eval (400 docs, batch 16) ~382 s, mining probe ~239 s; total round ~961 s (0.267 GPU-h) vs v2
+  ~1,906 s (0.53 GPU-h) = 2.0x lower (part of that from the larger generation batch 16 vs 8, i.e. not purely the prompt). Peak alloc 18.1 GB.
+  Cumulative GPU-h used so far: **1.33 / 8**.
+- 2026-10-22 10:15-10:55 UTC  Step 1b: logprob-path GPU smoke (`scripts/smoke_logprob_eval.sh`, v2 best, 8 test docs, one-at-a-time): all 8 docs gave
+  predictions identical to the stored v2 test predictions, all 16 spans got an aligned `metadata.logprob`. Cost ~61 s (28 s load + 33 s gen) = **0.017 GPU-h**
+  (guardrails was RED for ~40 min first; waited, no bypass). Observation: v2's span log-probs are close to 0 (many at -0.00x): the
+  model is very peaked, expect weak but non-zero ranking information. Cumulative GPU-h: **1.35 / 8**.
+  Next: held-out test of v3 best (round 1), ONCE.
+- 2026-10-22 11:00-12:00 UTC  **Step 1c DONE: Exp 1 held-out test of v3 best (round 1), ONCE** (`scripts/run_qlora_loop_v3_test_eval.sh`, short prompt, logprobs on):
+  974 docs, 3,920 s generation + 19 s load = **1.10 GPU-h** (wall; guardrails was RED part of the time, so this may include paused wall time; the
+  per-doc rows store `gen_seconds`). Exact-span F1 **0.6439** (P 0.6751 / R 0.6155) vs v2 0.6614, anchor 0.6701.
+  v3 - v2 = -0.0176, 95% CI [-0.0356, +0.0008] (p boot 0.061, Holm-family 0.184 on exact span); v3 - anchor = -0.0262 [-0.0462, -0.0057]
+  (p 0.0126, Holm-family 0.025). Token F1 v3-v2 = -0.0256 [-0.043, -0.008] (p 0.005, Holm-5 0.023): the short-prompt adapter is measurably worse on token F1.
+  Criteria: (1) point within 0.01 of v2: **NOT MET** (-0.0176); formal NI: not met. (2) train-step GPU-h/round 2.1x lower: **MET**
+  (338 s vs ~710 s; total round incl. eval/mining 1.98x lower, marginally under 2x). (3) generation latency 4.02 s/doc vs 4.42 s/doc = 1.10x:
+  **NOT MET** (decode-bound, as predicted). **Experiment 1 verdict: FAILED** (cost win in training, quality loss, no latency win).
+  Reports: `reports/skillllm_v2/qlora_loop_v3_significance.{json,md}`, `qlora_loop_v3_test_metrics.json`.
+  Exp 3 on v3 (CPU): `reports/skillllm_v2/logprob_confidence_v3.{json,md}`.
+  Cumulative GPU-h: 1.35 + 1.10 = **2.45 / 8**.
+- 2026-10-22 12:00 UTC  Step 2a START: Exp 2 pseudo-label generation (anchor, v1, v2; `scripts/run_pseudo_label_generate.sh`, log `logs/pseudo_label_generate.log`).
+- 2026-10-22 12:00-13:50 UTC  **Step 2a DONE: pseudo-label generation**: 2,400 chunks x 3 adapters = 7,200 generations (batch 24, greedy, original prompt),
+  0 parse failures, 5,664 s = **1.57 GPU-h** (0.71-0.87 s/doc; guardrails RED for parts, wall time). Cumulative GPU-h: 2.45 + 1.58 (incl. load) = **4.03 / 8**.
+  Vote result (`reports/skillllm_v2/qlora_loop_v4_pseudo_counts.json`, counts only): distinct predicted spans by votes 1/2/3 = 932 / 653 / 924; kept (>=2 votes) 1,564
+  spans (892 HARD, 672 SOFT; 922 unanimous, 642 two-vote); 664 positive chunks, 86 chunks excluded as uncertain (only 1-vote spans), 1,650 confident-negative
+  chunks of which 221 used (<=25% share); pseudo pool = 885 rows (75% positive). **367 of 664 positive chunks (55%) also contain dropped 1-vote spans**
+  -> their targets omit spans some adapter found: a built-in recall-noise source for the distilled model (to be examined in the v4 result).
+  Step 2b START: v4 distillation loop (`scripts/run_loop_v4_distill.sh`, log `logs/qlora_loop_v4_launch.log`, cap 2.4 GPU-h). Worst-case projection
+  4.03 + 2.4 + ~1.2 (test eval) = 7.6 <= 8.
+- 2026-10-22 14:20 UTC  Step 2b actually started (guardrails queue wait ~2.5 h: RED, and another process of someone else was using GPU1; no bypass). v4 loop warm start from v2 best loaded (92.41M trainable params).
+- 2026-10-22 14:20-15:38 UTC  Step 2b (v4 loop) partial: baseline dev (v2 best, same eval path) **0.7061**; round 0 **0.7031**; round 1 **0.6994**; round 2 trained and dev-evaluated but then
+  **crashed with CUDA OOM in the mining probe** (a foreign process, PID 2196145, held ~3.4 GB on GPU1 while my job used 19.4 GB; not mine, not touched).
+  `loop_state.json` had committed 2 rounds, so round 2 is redone on resume (its ~0.4 GPU-h is wasted). GPU-h so far: loop 0.928 (committed) + ~0.4 (lost round 2) = ~1.33 for v4;
+  cumulative **~5.4 / 8**. Remaining ~2.6: held-out test of v4 needs ~1.15, so v4 loop budget is cut: resume with `budget.max_gpu_hours=2.0` (tracker already at 0.928, i.e. <=~1.07 more:
+  rounds 2 and 3) and `eval.batch_size=8` (OOM headroom; dev-eval numbers are insensitive to this). Projection: ~5.4 + 1.07 + 1.15 = 7.6 <= 8.
+  Note for the evidence record: the dev curve is flat/slightly below the warm-start baseline after 2 rounds, i.e. no dev signal of benefit from the pseudo-labels so far.
+- 2026-10-22 15:40-16:43 UTC  **Step 2b DONE: v4 loop** (resume after the OOM): round 2 redone: dev **0.7052**; round 3: **0.7034**; stopped by `budget_gpu_hours` (cap 2.0).
+  Dev curve (400 docs): baseline v2-best 0.7061 | r0 0.7031 | r1 0.6994 | **r2 0.7052 (best)** | r3 0.7034 -> no round beat the warm start; differences are within the dev SE (~0.02).
+  Loop tracker GPU-h 1.975 (4 rounds + baseline); plus ~0.4 for the crashed round-2 attempt = ~2.4 GPU-h for v4 training. Cumulative GPU-h: 4.03 + 2.4 = **~6.4 / 8**.
+  Pre-declared selection: best v4 round by dev = round 2 (`artifacts/skillllm_v2/qlora_loop_v4_distill/best`). Step 2c START: held-out test of v4 best, ONCE (est. 1.15 GPU-h -> ~7.55 total).
+- 2026-10-22 16:45-17:58 UTC  **Step 2c DONE: v4 held-out test (round 2), ONCE** (`scripts/run_qlora_loop_v4_test_eval.sh`, original prompt, logprobs on; guardrails RED part of the time): 974 docs, 4,465 s gen
+  + 19 s load = **1.25 GPU-h** (4.58 s/doc mean, wall). Exact-span F1 **0.6846** (P 0.7059 / R 0.6645). v4-anchor +0.0145 [-0.0044, +0.0330] p 0.138 (Holm-3 0.276);
+  v4-v2 +0.0231 [+0.0054, +0.0403] p 0.0088 (Holm-3 0.026); v4-ensemble -0.0053 [-0.0220, +0.0108] p 0.52. Criterion A not met; criterion B met (point). Details: `reports/skillllm_v2/qlora_loop_v4_{summary.md,significance.*}`.
+  Exp 3 on v4 (CPU): `reports/skillllm_v2/logprob_confidence_v4.{md,json}`; combined summary `reports/skillllm_v2/logprob_confidence_summary.md`. Full test suite after all edits: 513 passed, 6 skipped (the 4 earlier `tests/evals` failures are gone, fixed elsewhere).
+  **Total GPU-h = 1.333 (v3 loop) + 0.017 (logprob smoke) + 1.10 (v3 test) + 1.58 (pseudo-label gen) + 1.975 (v4 loop tracker) + <=0.4 (lost OOM round) + 1.25 (v4 test) = ~7.65 / 8.**
+- 2026-10-23 ~10:00 UTC  Lead asked for state verification after a session stop: all GPU jobs had finished (no process running, nothing missing); no further GPU work was run. `guardrails status` was RED (watcher running).
+
+## Final summary
+
+| Experiment | Pre-declared success criteria | Outcome | GPU-h | Verdict |
+|---|---|---|---|---|
+| 1. Short prompt (v3) | (1) held-out exact-F1 within 0.01 of v2 (0.6614), CI reported; (2) >= 2x lower train GPU-h/round; (3) >= 1.5x lower generation latency/doc | tokens/example 382 -> 124 (3.08x fewer; fixed prompt 300 -> 41). (1) 0.6439, v3-v2 -0.0176 [-0.0356, +0.0008], v3-anchor -0.0262 [-0.0462, -0.0057]: NOT met. (2) train step 338 s vs ~710 s = 2.1x: met (total round 1.98x). (3) 4.02 vs 4.42 s/doc = 1.10x: NOT met | 1.33 loop + 1.10 test + 0.02 smoke = 2.45 | **FAILED** (cheaper training, worse accuracy, no latency gain) |
+| 2. Distillation (v4) | (A) v4 > anchor 0.6701 with paired CI excluding 0, or (B) within 0.01 of ensemble 0.6899 at 1x cost | test 0.6846 (P 0.706 / R 0.664). A: +0.0145 [-0.0044, +0.0330] p 0.138 NOT met. B: -0.0053 vs ensemble [-0.022, +0.011] met (point). vs v2 +0.0231 [+0.0054, +0.0403]. Dev curve never beat the warm start (0.7061 vs best 0.7052); no gold-only control | 1.58 gen + ~2.4 loop (incl. lost OOM round) + 1.25 test = ~5.2 | **PARTIAL: B met, A not; benefit not attributable to pseudo-labels** |
+| 3. Logprob confidence | primary: AUROC of exp(mean lp) > 0.5 with CI excluding 0.5; compare with constant 0.86 and vote count | v4 AUROC 0.701 [0.676, 0.725], v3 0.714; AURC 0.168/0.183 vs 0.294/0.325 constant; ~= vote count (AUROC diff +0.006 / -0.010, ns), better AURC; combined best (0.734 / 0.767); raw exp(lp) over-confident (ECE 0.26 > constant 0.15-0.18) | 0 (rode on the held-out runs) | **MET as a ranking signal; not usable as a raw probability without recalibration** |
+| Total | cap 8 GPU-h | ~7.65 | ~7.65 | within cap |

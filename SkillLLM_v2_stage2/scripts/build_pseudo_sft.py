@@ -78,6 +78,8 @@ def main() -> None:
         row = {"id": f"pseudo-{i}", "input": chunks[i]["text"], "output": {"skills": kept}}
         if kept:
             positives.append(row)
+            if hist.get(1, 0):
+                stats["positive_chunks_with_dropped_1vote_spans"] += 1  # recall-noise proxy: real skills may be missing from the target
         elif not any_pred:
             negatives.append(row)
         else:
@@ -107,7 +109,6 @@ def main() -> None:
         "kept_spans": sum(labels.values()),
         "kept_spans_by_label": dict(labels),
         "kept_spans_by_votes": {str(k): v for k, v in sorted(votes_kept.items())},
-        "positives_with_unkept_1vote_spans_note": "see build log; 1-vote spans never enter the target",
         "neg_max_share": NEG_MAX_SHARE,
         "note": "counts only; chunk text is private (artifacts dir, outside git)",
     }

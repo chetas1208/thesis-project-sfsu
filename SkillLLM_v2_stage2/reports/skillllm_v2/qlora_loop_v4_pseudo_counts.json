@@ -1,0 +1,33 @@
+{
+  "chunks_in_pool": 2400,
+  "chunks_with_all_three_adapters": 2400,
+  "overlap_conflicts_dropped": 13,
+  "positive_chunks_with_dropped_1vote_spans": 367,
+  "excluded_uncertain_only_1vote": 86,
+  "positive_chunks": 664,
+  "confident_negative_chunks_available": 1650,
+  "confident_negative_chunks_used": 221,
+  "pseudo_pool_rows": 885,
+  "pseudo_pool_positive_share": 0.7503,
+  "spans_predicted_per_adapter": {
+    "anchor": 1681,
+    "v1": 1670,
+    "v2": 1673
+  },
+  "distinct_span_vote_histogram": {
+    "1": 932,
+    "2": 653,
+    "3": 924
+  },
+  "kept_spans": 1564,
+  "kept_spans_by_label": {
+    "HARD_SKILL": 892,
+    "SOFT_SKILL": 672
+  },
+  "kept_spans_by_votes": {
+    "2": 642,
+    "3": 922
+  },
+  "neg_max_share": 0.25,
+  "note": "counts only; chunk text is private (artifacts dir, outside git)"
+}
