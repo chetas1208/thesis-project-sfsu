@@ -1,0 +1,404 @@
+{
+  "file": "CSC220_DataStructures_Spring2025_SanikaDoolani",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "Spring 2025",
+    "instructor": "Dr. Sanika Doolani",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210",
+          "CSC 215"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 210 or CSC 215 with a grade of C or better."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite: CSC 210 or CSC 215 with a grade of C or better."
+      }
+    ],
+    "learning_outcomes": [
+      "Revise, apply and master the fundamentals of Java programming, including object-oriented principles, to effectively implement and manipulate various data structures.",
+      "Apply the principles of object-oriented programming, such as inheritance, polymorphism, and encapsulation, in the design and implementation of robust data structures.",
+      "Understand and utilize advanced object-oriented programming concepts such as inheritance, polymorphism, and interfaces to design and manage data structures in Java.",
+      "Implement key data structures, including arrays, linked lists, stacks, queues, and dictionaries, using Java, with a focus on their practical applications.",
+      "Analyze the structure and functionality of Abstract Data Types (ADTs) and develop custom implementations using Java Collections and basic programming techniques.",
+      "Analyze and evaluate the time and space complexity of various data structures and algorithms.",
+      "Implement and manipulate fundamental data structures such as arrays, linked lists, stacks, queues, trees, and graphs in a high-level programming language.",
+      "Evaluate the performance of different data structures through an understanding of time complexity and space complexity, without delving into detailed algorithmic analysis.",
+      "Design and apply recursive techniques where appropriate in data structure operations, recognizing its use and limitations in Java.",
+      "Debug and manage Java exceptions to ensure the reliability and robustness of data structure implementations.",
+      "Develop a strong foundation in data structures, a critical component in technical interviews and job roles across top tech companies.",
+      "Master the data structures concepts and problem-solving techniques that are frequently tested in coding interviews.",
+      "Learn how to design and implement data structures that enhance the efficiency and scalability of real-world applications.",
+      "Grasp the underlying principles of data structures and their applications, giving you the confidence to tackle complex programming challenges in your career."
+    ],
+    "topics": [
+      "Introduction of Data Structures",
+      "Java history, OOP basics and Data Structure",
+      "Advanced OOP",
+      "Introduction to Algorithm Analysis, Time Complexity, and Big O",
+      "Recursion",
+      "Arrays (1D and multi-dimensional)",
+      "Linked Lists (Single, Double & Circular)",
+      "Stacks (using Arrays & Linked Lists)",
+      "Queues (using Arrays & Linked Lists)",
+      "Trees",
+      "Heaps",
+      "Priority Queues",
+      "Hash Sets & Hash Maps (Dictionaries)",
+      "Graphs",
+      "Preparing for Future: Industry Guest Lecture"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "Master Java - Object Oriented Programming Concepts",
+        "reason": null
+      },
+      {
+        "skill": "Object-Oriented Programming",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "Apply the principles of object-oriented programming, such as inheritance, polymorphism, and encapsulation, in the design and implementation of robust data structures.",
+        "reason": null
+      },
+      {
+        "skill": "Data Structures",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "Implement key data structures, including arrays, linked lists, stacks, queues, and dictionaries, using Java, with a focus on their practical applications.",
+        "reason": null
+      },
+      {
+        "skill": "Algorithm Analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Analyze and evaluate the time and space complexity of various data structures and algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Design and apply recursive techniques where appropriate in data structure operations, recognizing its use and limitations in Java.",
+        "reason": null
+      },
+      {
+        "skill": "Java Exceptions",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Debug and manage Java exceptions to ensure the reliability and robustness of data structure implementations.",
+        "reason": null
+      },
+      {
+        "skill": "Big O notation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Introduction to Algorithm Analysis, Time Complexity, and Big O",
+        "reason": null
+      },
+      {
+        "skill": "Stacks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Stacks (using Arrays & Linked Lists)",
+        "reason": null
+      },
+      {
+        "skill": "Queues",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Queues (using Arrays & Linked Lists)",
+        "reason": null
+      },
+      {
+        "skill": "Trees",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Trees",
+        "reason": null
+      },
+      {
+        "skill": "Graphs",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Graphs",
+        "reason": null
+      },
+      {
+        "skill": "Hash Tables",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Hash Sets & Hash Maps (Dictionaries)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 220",
+      "course_title": "Data Structures"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact",
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "not_found",
+      "approximate",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "approximate"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 47,
+      "exact": 38,
+      "approximate": 8,
+      "not_found": 1
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "Spring 2025",
+    "instructor": "Dr. Sanika Doolani",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210",
+          "CSC 215"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 210 or CSC 215 with a grade of C or better."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite: CSC 210 or CSC 215 with a grade of C or better."
+      }
+    ],
+    "learning_outcomes": [
+      "Revise, apply and master the fundamentals of Java programming, including object-oriented principles, to effectively implement and manipulate various data structures.",
+      "Apply the principles of object-oriented programming, such as inheritance, polymorphism, and encapsulation, in the design and implementation of robust data structures.",
+      "Understand and utilize advanced object-oriented programming concepts such as inheritance, polymorphism, and interfaces to design and manage data structures in Java.",
+      "Implement key data structures, including arrays, linked lists, stacks, queues, and dictionaries, using Java, with a focus on their practical applications.",
+      "Analyze the structure and functionality of Abstract Data Types (ADTs) and develop custom implementations using Java Collections and basic programming techniques.",
+      "Analyze and evaluate the time and space complexity of various data structures and algorithms.",
+      "Implement and manipulate fundamental data structures such as arrays, linked lists, stacks, queues, trees, and graphs in a high-level programming language.",
+      "Evaluate the performance of different data structures through an understanding of time complexity and space complexity, without delving into detailed algorithmic analysis.",
+      "Design and apply recursive techniques where appropriate in data structure operations, recognizing its use and limitations in Java.",
+      "Debug and manage Java exceptions to ensure the reliability and robustness of data structure implementations.",
+      "Develop a strong foundation in data structures, a critical component in technical interviews and job roles across top tech companies.",
+      "Master the data structures concepts and problem-solving techniques that are frequently tested in coding interviews.",
+      "Learn how to design and implement data structures that enhance the efficiency and scalability of real-world applications.",
+      "Grasp the underlying principles of data structures and their applications, giving you the confidence to tackle complex programming challenges in your career."
+    ],
+    "topics": [
+      "Introduction of Data Structures",
+      "Java history, OOP basics and Data Structure",
+      "Advanced OOP",
+      "Introduction to Algorithm Analysis, Time Complexity, and Big O",
+      "Recursion",
+      "Arrays (1D and multi-dimensional)",
+      "Linked Lists (Single, Double & Circular)",
+      "Stacks (using Arrays & Linked Lists)",
+      "Queues (using Arrays & Linked Lists)",
+      "Trees",
+      "Heaps",
+      "Priority Queues",
+      "Hash Sets & Hash Maps (Dictionaries)",
+      "Graphs",
+      "Preparing for Future: Industry Guest Lecture"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "Master Java - Object Oriented Programming Concepts",
+        "reason": null
+      },
+      {
+        "skill": "Object-Oriented Programming",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "Apply the principles of object-oriented programming, such as inheritance, polymorphism, and encapsulation, in the design and implementation of robust data structures.",
+        "reason": null
+      },
+      {
+        "skill": "Data Structures",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "Implement key data structures, including arrays, linked lists, stacks, queues, and dictionaries, using Java, with a focus on their practical applications.",
+        "reason": null
+      },
+      {
+        "skill": "Algorithm Analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Analyze and evaluate the time and space complexity of various data structures and algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Design and apply recursive techniques where appropriate in data structure operations, recognizing its use and limitations in Java.",
+        "reason": null
+      },
+      {
+        "skill": "Java Exceptions",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Debug and manage Java exceptions to ensure the reliability and robustness of data structure implementations.",
+        "reason": null
+      },
+      {
+        "skill": "Big O notation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Introduction to Algorithm Analysis, Time Complexity, and Big O",
+        "reason": null
+      },
+      {
+        "skill": "Stacks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Stacks (using Arrays & Linked Lists)",
+        "reason": null
+      },
+      {
+        "skill": "Queues",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Queues (using Arrays & Linked Lists)",
+        "reason": null
+      },
+      {
+        "skill": "Trees",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Trees",
+        "reason": null
+      },
+      {
+        "skill": "Graphs",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Graphs",
+        "reason": null
+      },
+      {
+        "skill": "Hash Tables",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Hash Sets & Hash Maps (Dictionaries)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 220",
+      "course_title": "Data Structures"
+    }
+  }
+}

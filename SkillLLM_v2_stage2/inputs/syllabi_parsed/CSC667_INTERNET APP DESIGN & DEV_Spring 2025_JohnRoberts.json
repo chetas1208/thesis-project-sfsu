@@ -1,0 +1,268 @@
+{
+  "file": "CSC667_INTERNET APP DESIGN & DEV_Spring 2025_JohnRoberts",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 667",
+    "Grad_equivalent": [
+      "CSC 867"
+    ],
+    "course_title": "Internet Application Design",
+    "term": null,
+    "instructor": "John Roberts",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Grade of C or better in 413"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Grade of C or better in 413"
+      }
+    ],
+    "learning_outcomes": [
+      "Familiarity with HTTP",
+      "Ability to create a simple client/server web application, and understand its components"
+    ],
+    "topics": [
+      "hyper text transfer protocol (HTTP)",
+      "server side applications (APIs, Node.js)",
+      "client side applications (JavaScript, HTML, CSS)",
+      "programming languages and technologies for internet applications (Express, Postgres, SQL)"
+    ],
+    "skills": [
+      {
+        "skill": "HTTP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Teach the hyper text transfer protocol (HTTP)",
+        "reason": null
+      },
+      {
+        "skill": "Node.js",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce the student to server side applications (APIs, Node.js)",
+        "reason": null
+      },
+      {
+        "skill": "JavaScript",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce students to client side applications (JavaScript, HTML, CSS)",
+        "reason": null
+      },
+      {
+        "skill": "HTML",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce students to client side applications (JavaScript, HTML, CSS)",
+        "reason": null
+      },
+      {
+        "skill": "CSS",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce students to client side applications (JavaScript, HTML, CSS)",
+        "reason": null
+      },
+      {
+        "skill": "Express",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Expose the student to programming languages and technologies for internet applications (Express, Postgres, SQL)",
+        "reason": null
+      },
+      {
+        "skill": "Postgres",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Expose the student to programming languages and technologies for internet applications (Express, Postgres, SQL)",
+        "reason": null
+      },
+      {
+        "skill": "SQL",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Expose the student to programming languages and technologies for internet applications (Express, Postgres, SQL)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 667/867",
+      "course_title": "Internet Application Design"
+    },
+    "cross_listed": [
+      "CSC 867"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 20,
+      "exact": 20,
+      "approximate": 0,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 667",
+    "Grad_equivalent": [
+      "CSC 867"
+    ],
+    "course_title": "Internet Application Design",
+    "term": null,
+    "instructor": "John Roberts",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Grade of C or better in 413"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Grade of C or better in 413"
+      }
+    ],
+    "learning_outcomes": [
+      "Familiarity with HTTP",
+      "Ability to create a simple client/server web application, and understand its components"
+    ],
+    "topics": [
+      "hyper text transfer protocol (HTTP)",
+      "server side applications (APIs, Node.js)",
+      "client side applications (JavaScript, HTML, CSS)",
+      "programming languages and technologies for internet applications (Express, Postgres, SQL)"
+    ],
+    "skills": [
+      {
+        "skill": "HTTP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Teach the hyper text transfer protocol (HTTP)",
+        "reason": null
+      },
+      {
+        "skill": "Node.js",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce the student to server side applications (APIs, Node.js)",
+        "reason": null
+      },
+      {
+        "skill": "JavaScript",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce students to client side applications (JavaScript, HTML, CSS)",
+        "reason": null
+      },
+      {
+        "skill": "HTML",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce students to client side applications (JavaScript, HTML, CSS)",
+        "reason": null
+      },
+      {
+        "skill": "CSS",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce students to client side applications (JavaScript, HTML, CSS)",
+        "reason": null
+      },
+      {
+        "skill": "Express",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Expose the student to programming languages and technologies for internet applications (Express, Postgres, SQL)",
+        "reason": null
+      },
+      {
+        "skill": "Postgres",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Expose the student to programming languages and technologies for internet applications (Express, Postgres, SQL)",
+        "reason": null
+      },
+      {
+        "skill": "SQL",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Expose the student to programming languages and technologies for internet applications (Express, Postgres, SQL)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 667/867",
+      "course_title": "Internet Application Design"
+    }
+  }
+}

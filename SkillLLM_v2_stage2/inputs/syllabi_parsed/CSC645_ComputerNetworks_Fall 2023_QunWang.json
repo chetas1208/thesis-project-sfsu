@@ -1,0 +1,419 @@
+{
+  "file": "CSC645_ComputerNetworks_Fall 2023_QunWang",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 645",
+    "Grad_equivalent": [],
+    "course_title": "COMPUTER NETWORKS",
+    "term": "Fall 2023",
+    "instructor": "Qun Wang",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 415"
+        ],
+        "recommended": false,
+        "evidence": "Grades of C or better in CSC 415"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grades of C or better",
+        "evidence": "Grades of C or better in CSC 415"
+      }
+    ],
+    "learning_outcomes": [
+      "Have basic knowledge on how to design, analyze, and implement computer networks",
+      "Gain hands-on experience in network programming and network troubleshooting tools"
+    ],
+    "topics": [
+      "TCP/IP Protocol Stack",
+      "Packet Switching",
+      "Reliable Data Transfer",
+      "Congestion Control",
+      "Routing",
+      "Multiple Access Control",
+      "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+      "Socket Programming",
+      "other emerging topics"
+    ],
+    "skills": [
+      {
+        "skill": "TCP/IP Protocol Stack",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include TCP/IP Protocol Stack",
+        "reason": null
+      },
+      {
+        "skill": "Packet Switching",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Packet Switching",
+        "reason": null
+      },
+      {
+        "skill": "Reliable Data Transfer",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Reliable Data Transfer",
+        "reason": null
+      },
+      {
+        "skill": "Congestion Control",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Congestion Control",
+        "reason": null
+      },
+      {
+        "skill": "Routing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Routing",
+        "reason": null
+      },
+      {
+        "skill": "Multiple Access Control",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Multiple Access Control",
+        "reason": null
+      },
+      {
+        "skill": "HTTP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "SMTP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "TCP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "UDP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "IP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "RIP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "OSPF",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "BGP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "Socket Programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience in network programming and network troubleshooting tools",
+        "reason": "Hands-on experience implies practical application and proficiency"
+      },
+      {
+        "skill": "Network Troubleshooting Tools",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience in network programming and network troubleshooting tools",
+        "reason": "Hands-on experience implies practical application and proficiency"
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 645",
+      "course_title": "COMPUTER NETWORKS"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "not_found",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 32,
+      "exact": 27,
+      "approximate": 5,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 645",
+    "Grad_equivalent": [],
+    "course_title": "COMPUTER NETWORKS",
+    "term": "Fall 2023",
+    "instructor": "Qun Wang",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 415"
+        ],
+        "recommended": false,
+        "evidence": "Grades of C or better in CSC 415"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grades of C or better",
+        "evidence": "Grades of C or better in CSC 415"
+      }
+    ],
+    "learning_outcomes": [
+      "Have basic knowledge on how to design, analyze, and implement computer networks",
+      "Gain hands-on experience in network programming and network troubleshooting tools"
+    ],
+    "topics": [
+      "TCP/IP Protocol Stack",
+      "Packet Switching",
+      "Reliable Data Transfer",
+      "Congestion Control",
+      "Routing",
+      "Multiple Access Control",
+      "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+      "Socket Programming",
+      "other emerging topics"
+    ],
+    "skills": [
+      {
+        "skill": "TCP/IP Protocol Stack",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include TCP/IP Protocol Stack",
+        "reason": null
+      },
+      {
+        "skill": "Packet Switching",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Packet Switching",
+        "reason": null
+      },
+      {
+        "skill": "Reliable Data Transfer",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Reliable Data Transfer",
+        "reason": null
+      },
+      {
+        "skill": "Congestion Control",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Congestion Control",
+        "reason": null
+      },
+      {
+        "skill": "Routing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Routing",
+        "reason": null
+      },
+      {
+        "skill": "Multiple Access Control",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Multiple Access Control",
+        "reason": null
+      },
+      {
+        "skill": "HTTP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "SMTP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "TCP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "UDP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "IP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "RIP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "OSPF",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "BGP",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Internet Protocols (HTTP, SMTP, TCP, UDP, IP, RIP, OSPF, BGP)",
+        "reason": null
+      },
+      {
+        "skill": "Socket Programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience in network programming and network troubleshooting tools",
+        "reason": "Hands-on experience implies practical application and proficiency"
+      },
+      {
+        "skill": "Network Troubleshooting Tools",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience in network programming and network troubleshooting tools",
+        "reason": "Hands-on experience implies practical application and proficiency"
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 645",
+      "course_title": "COMPUTER NETWORKS"
+    }
+  }
+}

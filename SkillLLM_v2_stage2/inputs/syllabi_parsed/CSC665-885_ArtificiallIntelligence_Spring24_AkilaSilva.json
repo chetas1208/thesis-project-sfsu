@@ -1,0 +1,384 @@
+{
+  "file": "CSC665-885_ArtificiallIntelligence_Spring24_AkilaSilva",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 665",
+    "Grad_equivalent": [
+      "CSC 865"
+    ],
+    "course_title": "Artificial Intelligence",
+    "term": "Spring 2024",
+    "instructor": "Akila de Silva, PhD",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite for CSC 665: Restricted to upper-division standing or CSC 413* with a grade of C"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite for CSC 665: Restricted to upper-division standing or CSC 413* with a grade of C"
+      },
+      {
+        "text": "Graduate standing or permission of the instructor",
+        "evidence": "Prerequisite for CSC 865: Graduate standing or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Overview of algorithms and approaches to artificial intelligence.",
+      "Study of fundamental concepts needed to attain human-level intelligence in computer systems.",
+      "Gain experience in working with these concepts through assignments and programming exercises."
+    ],
+    "topics": [
+      "problem-solving methods",
+      "heuristic search",
+      "game playing",
+      "agent architectures",
+      "machine learning",
+      "knowledge representation",
+      "neural networks",
+      "Introduction and Python Review",
+      "Agents",
+      "Search",
+      "Adversarial Search",
+      "Constraint Satisfaction Problems",
+      "Logic",
+      "Uncertainty",
+      "Bayesian networks",
+      "Learning from Examples",
+      "Learning Probabilistic Models",
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "skills": [
+      {
+        "skill": "Python",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 01 Introduction and Python Review",
+        "reason": null
+      },
+      {
+        "skill": "problem-solving methods",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include problem-solving methods",
+        "reason": null
+      },
+      {
+        "skill": "heuristic search",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include heuristic search",
+        "reason": null
+      },
+      {
+        "skill": "game playing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include game playing",
+        "reason": null
+      },
+      {
+        "skill": "agent architectures",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include agent architectures",
+        "reason": null
+      },
+      {
+        "skill": "machine learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include machine learning",
+        "reason": null
+      },
+      {
+        "skill": "knowledge representation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include knowledge representation",
+        "reason": null
+      },
+      {
+        "skill": "neural networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include neural networks",
+        "reason": null
+      },
+      {
+        "skill": "Bayesian networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 10 Bayesian networks",
+        "reason": null
+      },
+      {
+        "skill": "deep learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 14 Deep Learning",
+        "reason": null
+      },
+      {
+        "skill": "reinforcement learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15 Reinforcement Learning",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 665",
+      "course_title": "Artificial Intelligence"
+    },
+    "cross_listed": [
+      "CSC 865"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "not_found",
+      "not_found",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 40,
+      "exact": 32,
+      "approximate": 6,
+      "not_found": 2
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 665",
+    "Grad_equivalent": [
+      "CSC 865"
+    ],
+    "course_title": "Artificial Intelligence",
+    "term": "Spring 2024",
+    "instructor": "Akila de Silva, PhD",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite for CSC 665: Restricted to upper-division standing or CSC 413* with a grade of C"
+      },
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "Restricted to upper-division standing"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite for CSC 665: Restricted to upper-division standing or CSC 413* with a grade of C"
+      },
+      {
+        "text": "Graduate standing or permission of the instructor",
+        "evidence": "Prerequisite for CSC 865: Graduate standing or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Overview of algorithms and approaches to artificial intelligence.",
+      "Study of fundamental concepts needed to attain human-level intelligence in computer systems.",
+      "Gain experience in working with these concepts through assignments and programming exercises."
+    ],
+    "topics": [
+      "problem-solving methods",
+      "heuristic search",
+      "game playing",
+      "agent architectures",
+      "machine learning",
+      "knowledge representation",
+      "neural networks",
+      "Introduction and Python Review",
+      "Agents",
+      "Search",
+      "Adversarial Search",
+      "Constraint Satisfaction Problems",
+      "Logic",
+      "Uncertainty",
+      "Bayesian networks",
+      "Learning from Examples",
+      "Learning Probabilistic Models",
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "skills": [
+      {
+        "skill": "Python",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 01 Introduction and Python Review",
+        "reason": null
+      },
+      {
+        "skill": "problem-solving methods",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include problem-solving methods",
+        "reason": null
+      },
+      {
+        "skill": "heuristic search",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include heuristic search",
+        "reason": null
+      },
+      {
+        "skill": "game playing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include game playing",
+        "reason": null
+      },
+      {
+        "skill": "agent architectures",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include agent architectures",
+        "reason": null
+      },
+      {
+        "skill": "machine learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include machine learning",
+        "reason": null
+      },
+      {
+        "skill": "knowledge representation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include knowledge representation",
+        "reason": null
+      },
+      {
+        "skill": "neural networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include neural networks",
+        "reason": null
+      },
+      {
+        "skill": "Bayesian networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 10 Bayesian networks",
+        "reason": null
+      },
+      {
+        "skill": "deep learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 14 Deep Learning",
+        "reason": null
+      },
+      {
+        "skill": "reinforcement learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15 Reinforcement Learning",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 665",
+      "course_title": "Artificial Intelligence"
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "file": "CSC641-841_ComputerPerformanceEvaluation_Jozo Dujmović",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 641",
+    "Grad_equivalent": [
+      "CSC 641"
+    ],
+    "course_title": "COMPUTER PERFORMANCE EVALUATION",
+    "term": null,
+    "instructor": "Dr. Jozo Dujmović",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 415",
+          "ENGR 456"
+        ],
+        "recommended": false,
+        "evidence": "Formal prerequisites for this course are CSc 415 or ENGR 456 or consent of instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "consent of instructor",
+        "evidence": "Formal prerequisites for this course are CSc 415 or ENGR 456 or consent of instructor."
+      },
+      {
+        "text": "understanding of computer architecture and organization",
+        "evidence": "Essential prerequisites include (1) understanding of computer architecture and organization"
+      },
+      {
+        "text": "understanding of operating system functions and organization",
+        "evidence": "Essential prerequisites include (2) understanding of operating system functions and organization"
+      },
+      {
+        "text": "knowledge of basic probability theory and statistics",
+        "evidence": "Essential prerequisites include (3) knowledge of basic probability theory and statistics"
+      },
+      {
+        "text": "ability to write programs in one of general purpose programming languages",
+        "evidence": "Essential prerequisites include (4) ability to write programs in one of general purpose programming languages"
+      }
+    ],
+    "learning_outcomes": [
+      "Prepare students to effectively solve computer performance analysis problems related to the capacity planning, management, design, tuning, and comparison of computer systems."
+    ],
+    "topics": [
+      "Computer performance analysis at any stage in the life cycle of a computer system, including system design, system selection/procurement, and system use/tuning",
+      "Prediction of performance indicators during design and development",
+      "Evaluation and comparison of performance of existing competitive systems",
+      "Improvement of performance level of existing operational computer systems",
+      "Analytic modeling (queuing theory, and operational analysis)",
+      "Simulation (use of specialized simulators, and general purpose simulation systems and languages)",
+      "Measurement (benchmarking based on natural and synthetic workloads)"
+    ],
+    "skills": [
+      {
+        "skill": "queuing theory",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The main techniques for computer performance analysis include (1) analytic modeling (queuing theory, and operational analysis)",
+        "reason": null
+      },
+      {
+        "skill": "operational analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The main techniques for computer performance analysis include (1) analytic modeling (queuing theory, and operational analysis)",
+        "reason": null
+      },
+      {
+        "skill": "simulation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The main techniques for computer performance analysis include (2) simulation (the use of specialized simulators, and general purpose simulation systems and languages)",
+        "reason": null
+      },
+      {
+        "skill": "benchmarking",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The main techniques for computer performance analysis include (3) measurement (benchmarking based on natural and synthetic workloads)",
+        "reason": null
+      },
+      {
+        "skill": "performance measurement",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Instructional methods include lectures, practical laboratory work (performance measurement and modeling)",
+        "reason": null
+      },
+      {
+        "skill": "performance modeling",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Instructional methods include lectures, practical laboratory work (performance measurement and modeling)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 841",
+      "course_title": "COMPUTER PERFORMANCE EVALUATION"
+    },
+    "cross_listed": [
+      "CSC 841"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact",
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate"
+    ],
+    "learning_outcomes": [
+      "approximate"
+    ],
+    "topics": [
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "exact",
+      "approximate",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 25,
+      "exact": 14,
+      "approximate": 11,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 841",
+    "Grad_equivalent": [
+      "CSC 641"
+    ],
+    "course_title": "COMPUTER PERFORMANCE EVALUATION",
+    "term": null,
+    "instructor": "Dr. Jozo Dujmović",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 415",
+          "ENGR 456"
+        ],
+        "recommended": false,
+        "evidence": "Formal prerequisites for this course are CSc 415 or ENGR 456 or consent of instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "consent of instructor",
+        "evidence": "Formal prerequisites for this course are CSc 415 or ENGR 456 or consent of instructor."
+      },
+      {
+        "text": "understanding of computer architecture and organization",
+        "evidence": "Essential prerequisites include (1) understanding of computer architecture and organization"
+      },
+      {
+        "text": "understanding of operating system functions and organization",
+        "evidence": "Essential prerequisites include (2) understanding of operating system functions and organization"
+      },
+      {
+        "text": "knowledge of basic probability theory and statistics",
+        "evidence": "Essential prerequisites include (3) knowledge of basic probability theory and statistics"
+      },
+      {
+        "text": "ability to write programs in one of general purpose programming languages",
+        "evidence": "Essential prerequisites include (4) ability to write programs in one of general purpose programming languages"
+      }
+    ],
+    "learning_outcomes": [
+      "Prepare students to effectively solve computer performance analysis problems related to the capacity planning, management, design, tuning, and comparison of computer systems."
+    ],
+    "topics": [
+      "Computer performance analysis at any stage in the life cycle of a computer system, including system design, system selection/procurement, and system use/tuning",
+      "Prediction of performance indicators during design and development",
+      "Evaluation and comparison of performance of existing competitive systems",
+      "Improvement of performance level of existing operational computer systems",
+      "Analytic modeling (queuing theory, and operational analysis)",
+      "Simulation (use of specialized simulators, and general purpose simulation systems and languages)",
+      "Measurement (benchmarking based on natural and synthetic workloads)"
+    ],
+    "skills": [
+      {
+        "skill": "queuing theory",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The main techniques for computer performance analysis include (1) analytic modeling (queuing theory, and operational analysis)",
+        "reason": null
+      },
+      {
+        "skill": "operational analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The main techniques for computer performance analysis include (1) analytic modeling (queuing theory, and operational analysis)",
+        "reason": null
+      },
+      {
+        "skill": "simulation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The main techniques for computer performance analysis include (2) simulation (the use of specialized simulators, and general purpose simulation systems and languages)",
+        "reason": null
+      },
+      {
+        "skill": "benchmarking",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The main techniques for computer performance analysis include (3) measurement (benchmarking based on natural and synthetic workloads)",
+        "reason": null
+      },
+      {
+        "skill": "performance measurement",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Instructional methods include lectures, practical laboratory work (performance measurement and modeling)",
+        "reason": null
+      },
+      {
+        "skill": "performance modeling",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Instructional methods include lectures, practical laboratory work (performance measurement and modeling)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 841",
+      "course_title": "COMPUTER PERFORMANCE EVALUATION"
+    }
+  }
+}

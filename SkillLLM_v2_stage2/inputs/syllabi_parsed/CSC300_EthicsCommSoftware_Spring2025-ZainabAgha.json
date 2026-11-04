@@ -1,0 +1,271 @@
+{
+  "file": "CSC300_EthicsCommSoftware_Spring2025-ZainabAgha",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 300",
+    "Grad_equivalent": [],
+    "course_title": "Ethics, Communication, and Tools for Software Development",
+    "term": "Spring 2025",
+    "instructor": "Dr. Zainab Agha",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grade C or better in CSC 210 or equivalent"
+      },
+      {
+        "any_of": [
+          "ENGLISH 214"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grade C or better in English 214 or equivalent"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grade C or better",
+        "evidence": "Prerequisite: grade C or better in CSC 210 or equivalent; grade C or better in English 214 or equivalent."
+      }
+    ],
+    "learning_outcomes": [
+      "Evaluate social and ethical issues that are associated with the access, control and distribution of online information or developing software.",
+      "Understand the department's ethics and plagiarism policy.",
+      "Understand, evaluate and apply various legal, privacy and intellectual property concerns related to online information and software.",
+      "Understand professional responsibility, accountability when writing software.",
+      "Use written and oral communication effectively in the context of computer science ethics and collaborative software development."
+    ],
+    "topics": [
+      "Ethics of technology",
+      "Ethical reasoning",
+      "Privacy",
+      "Freedom of speech",
+      "Content moderation",
+      "Intellectual property",
+      "Online risks",
+      "Artificial intelligence",
+      "Professional and research ethics",
+      "Ethics and writing",
+      "Ethics of future technology",
+      "Privacy and corporations",
+      "Privacy and government",
+      "Freedom of speech and content moderation",
+      "Intellectual property",
+      "Online risks",
+      "Information and security risks",
+      "Evaluating and controlling technology",
+      "Behavioral interventions",
+      "Ethics of artificial intelligence",
+      "Professional ethics",
+      "Ethics of computing research and presentations"
+    ],
+    "skills": [
+      {
+        "skill": "ethical reasoning",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "One of the main goals for this course is to develop critical thinking regarding the technologies we use and develop. In doing so, we will focus on ethical reasoning",
+        "reason": null
+      },
+      {
+        "skill": "reading scientific papers",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "You will develop practical skills in reading, writing, and discussing.",
+        "reason": null
+      },
+      {
+        "skill": "writing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "You will develop practical skills in reading, writing, and discussing.",
+        "reason": null
+      },
+      {
+        "skill": "oral communication",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Use written and oral communication effectively in the context of computer science ethics and collaborative software development.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 300GW",
+      "course_title": "Ethics, Communication, and Tools for Software Development"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "approximate"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "exact",
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 38,
+      "exact": 26,
+      "approximate": 12,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 300GW",
+    "Grad_equivalent": [],
+    "course_title": "Ethics, Communication, and Tools for Software Development",
+    "term": "Spring 2025",
+    "instructor": "Dr. Zainab Agha",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grade C or better in CSC 210 or equivalent"
+      },
+      {
+        "any_of": [
+          "English 214"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grade C or better in English 214 or equivalent"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grade C or better",
+        "evidence": "Prerequisite: grade C or better in CSC 210 or equivalent; grade C or better in English 214 or equivalent."
+      }
+    ],
+    "learning_outcomes": [
+      "Evaluate social and ethical issues that are associated with the access, control and distribution of online information or developing software.",
+      "Understand the department's ethics and plagiarism policy.",
+      "Understand, evaluate and apply various legal, privacy and intellectual property concerns related to online information and software.",
+      "Understand professional responsibility, accountability when writing software.",
+      "Use written and oral communication effectively in the context of computer science ethics and collaborative software development."
+    ],
+    "topics": [
+      "Ethics of technology",
+      "Ethical reasoning",
+      "Privacy",
+      "Freedom of speech",
+      "Content moderation",
+      "Intellectual property",
+      "Online risks",
+      "Artificial intelligence",
+      "Professional and research ethics",
+      "Ethics and writing",
+      "Ethics of future technology",
+      "Privacy and corporations",
+      "Privacy and government",
+      "Freedom of speech and content moderation",
+      "Intellectual property",
+      "Online risks",
+      "Information and security risks",
+      "Evaluating and controlling technology",
+      "Behavioral interventions",
+      "Ethics of artificial intelligence",
+      "Professional ethics",
+      "Ethics of computing research and presentations"
+    ],
+    "skills": [
+      {
+        "skill": "ethical reasoning",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "One of the main goals for this course is to develop critical thinking regarding the technologies we use and develop. In doing so, we will focus on ethical reasoning",
+        "reason": null
+      },
+      {
+        "skill": "reading scientific papers",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "You will develop practical skills in reading, writing, and discussing.",
+        "reason": null
+      },
+      {
+        "skill": "writing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "You will develop practical skills in reading, writing, and discussing.",
+        "reason": null
+      },
+      {
+        "skill": "oral communication",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Use written and oral communication effectively in the context of computer science ethics and collaborative software development.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 300GW",
+      "course_title": "Ethics, Communication, and Tools for Software Development"
+    }
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "file": "CSC872_PatternAnalysisAndMachineIntelligence_Spring2025_KazOkada",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 872",
+    "Grad_equivalent": [],
+    "course_title": "Pattern Analysis and Machine Intelligence",
+    "term": "Spring 2025",
+    "instructor": "Dr. Kazunori Okada",
+    "prerequisites": [],
+    "other_requirements": [
+      {
+        "text": "Graduate standing or consent of the instructor.",
+        "evidence": "Graduate standing or consent of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Learn the foundation of PAMI studies: Artificial intelligence, Pattern recognition, Machine learning, Neural network and Deep Learning",
+      "Learn the general concepts across various fields: Data and knowledge representation, Problem formulation, Problem solving",
+      "Become familiarized with basic algorithms in PAMI practice.",
+      "Become exposed to various application domains and basic literature in PAMI studies."
+    ],
+    "topics": [
+      "Introduction: PAMI Frameworks",
+      "Agent-based AI Framework",
+      "Problem Solving: Search Methods",
+      "Knowledge Representation: Propositional Logic",
+      "Knowledge Representation: First-Order Logic",
+      "Bayesian Framework",
+      "Statistical Modeling: Non-Parametric",
+      "Statistical Modeling: Parametric",
+      "Statistical Modeling: Mixture Models",
+      "Machine Learning Framework",
+      "Supervised Learning: Classification",
+      "Supervised Learning: Regression",
+      "Neural Network: Functional Learning",
+      "Neural Network: Deep Learning"
+    ],
+    "skills": [
+      {
+        "skill": "Artificial Intelligence",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course offers an introduction to modern artificial intelligence: the pattern analysis and machine intelligence (PAMI) studies.",
+        "reason": null
+      },
+      {
+        "skill": "Pattern Recognition",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course offers an introduction to modern artificial intelligence: the pattern analysis and machine intelligence (PAMI) studies.",
+        "reason": null
+      },
+      {
+        "skill": "Machine Learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course offers an introduction to modern artificial intelligence: the pattern analysis and machine intelligence (PAMI) studies.",
+        "reason": null
+      },
+      {
+        "skill": "Neural Networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course offers an introduction to modern artificial intelligence: the pattern analysis and machine intelligence (PAMI) studies.",
+        "reason": null
+      },
+      {
+        "skill": "Deep Learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Neural Network: Deep Learning 1 and 2",
+        "reason": null
+      },
+      {
+        "skill": "Data and Knowledge Representation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Learn the general concepts across various fields: Data and knowledge representation",
+        "reason": null
+      },
+      {
+        "skill": "Problem Formulation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Learn the general concepts across various fields: Problem formulation",
+        "reason": null
+      },
+      {
+        "skill": "Problem Solving",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Learn the general concepts across various fields: Problem solving",
+        "reason": null
+      },
+      {
+        "skill": "MATLAB",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "These tutorials/exercises offer you the opportunity to learn MATLAB: a popular numerical computing software tool which will be used during our fast-prototyping exercises.",
+        "reason": null
+      },
+      {
+        "skill": "Principal Component Analysis (PCA)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Three classic algorithms (PCA for face recognition, Mean Shift for clustering/segmentation, and LDA for classification) will be implemented by you.",
+        "reason": null
+      },
+      {
+        "skill": "Mean Shift Clustering",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Three classic algorithms (PCA for face recognition, Mean Shift for clustering/segmentation, and LDA for classification) will be implemented by you.",
+        "reason": null
+      },
+      {
+        "skill": "Linear Discriminant Analysis (LDA)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Three classic algorithms (PCA for face recognition, Mean Shift for clustering/segmentation, and LDA for classification) will be implemented by you.",
+        "reason": null
+      },
+      {
+        "skill": "Bayesian Framework",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Bayesian Framework",
+        "reason": null
+      },
+      {
+        "skill": "Statistical Modeling",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Statistical Modeling: Non-Parametric, Parametric, Mixture Models",
+        "reason": null
+      },
+      {
+        "skill": "Supervised Learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Supervised Learning: Classification, Regression",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 872",
+      "course_title": "Pattern Analysis and Machine Intelligence"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "approximate",
+      "approximate",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 36,
+      "exact": 27,
+      "approximate": 9,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 872",
+    "Grad_equivalent": [],
+    "course_title": "Pattern Analysis and Machine Intelligence",
+    "term": "Spring 2025",
+    "instructor": "Dr. Kazunori Okada",
+    "prerequisites": [
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "Graduate standing or consent of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Graduate standing or consent of the instructor.",
+        "evidence": "Graduate standing or consent of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Learn the foundation of PAMI studies: Artificial intelligence, Pattern recognition, Machine learning, Neural network and Deep Learning",
+      "Learn the general concepts across various fields: Data and knowledge representation, Problem formulation, Problem solving",
+      "Become familiarized with basic algorithms in PAMI practice.",
+      "Become exposed to various application domains and basic literature in PAMI studies."
+    ],
+    "topics": [
+      "Introduction: PAMI Frameworks",
+      "Agent-based AI Framework",
+      "Problem Solving: Search Methods",
+      "Knowledge Representation: Propositional Logic",
+      "Knowledge Representation: First-Order Logic",
+      "Bayesian Framework",
+      "Statistical Modeling: Non-Parametric",
+      "Statistical Modeling: Parametric",
+      "Statistical Modeling: Mixture Models",
+      "Machine Learning Framework",
+      "Supervised Learning: Classification",
+      "Supervised Learning: Regression",
+      "Neural Network: Functional Learning",
+      "Neural Network: Deep Learning"
+    ],
+    "skills": [
+      {
+        "skill": "Artificial Intelligence",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course offers an introduction to modern artificial intelligence: the pattern analysis and machine intelligence (PAMI) studies.",
+        "reason": null
+      },
+      {
+        "skill": "Pattern Recognition",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course offers an introduction to modern artificial intelligence: the pattern analysis and machine intelligence (PAMI) studies.",
+        "reason": null
+      },
+      {
+        "skill": "Machine Learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course offers an introduction to modern artificial intelligence: the pattern analysis and machine intelligence (PAMI) studies.",
+        "reason": null
+      },
+      {
+        "skill": "Neural Networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course offers an introduction to modern artificial intelligence: the pattern analysis and machine intelligence (PAMI) studies.",
+        "reason": null
+      },
+      {
+        "skill": "Deep Learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Neural Network: Deep Learning 1 and 2",
+        "reason": null
+      },
+      {
+        "skill": "Data and Knowledge Representation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Learn the general concepts across various fields: Data and knowledge representation",
+        "reason": null
+      },
+      {
+        "skill": "Problem Formulation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Learn the general concepts across various fields: Problem formulation",
+        "reason": null
+      },
+      {
+        "skill": "Problem Solving",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Learn the general concepts across various fields: Problem solving",
+        "reason": null
+      },
+      {
+        "skill": "MATLAB",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "These tutorials/exercises offer you the opportunity to learn MATLAB: a popular numerical computing software tool which will be used during our fast-prototyping exercises.",
+        "reason": null
+      },
+      {
+        "skill": "Principal Component Analysis (PCA)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Three classic algorithms (PCA for face recognition, Mean Shift for clustering/segmentation, and LDA for classification) will be implemented by you.",
+        "reason": null
+      },
+      {
+        "skill": "Mean Shift Clustering",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Three classic algorithms (PCA for face recognition, Mean Shift for clustering/segmentation, and LDA for classification) will be implemented by you.",
+        "reason": null
+      },
+      {
+        "skill": "Linear Discriminant Analysis (LDA)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Three classic algorithms (PCA for face recognition, Mean Shift for clustering/segmentation, and LDA for classification) will be implemented by you.",
+        "reason": null
+      },
+      {
+        "skill": "Bayesian Framework",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Bayesian Framework",
+        "reason": null
+      },
+      {
+        "skill": "Statistical Modeling",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Statistical Modeling: Non-Parametric, Parametric, Mixture Models",
+        "reason": null
+      },
+      {
+        "skill": "Supervised Learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Supervised Learning: Classification, Regression",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 872",
+      "course_title": "Pattern Analysis and Machine Intelligence"
+    }
+  }
+}

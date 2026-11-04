@@ -1,0 +1,297 @@
+{
+  "file": "CSC101_IntroToComputing_AndrewScott",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 101",
+    "Grad_equivalent": [],
+    "course_title": "Introduction To Computing",
+    "term": null,
+    "instructor": null,
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "write functionally correct Java programs that solve a specified problem and/or meet a provided specification.",
+      "break down problems into subproblems that are modular and reusable, and define methods to represent those subproblems",
+      "select and apply control structures (e.g., methods, loops, conditionals) to manage the flow of control and information in programs.",
+      "select and apply basic data abstractions (e.g., variables, parameters, arrays) to manage and manipulate data in programs.",
+      "define programs that are well-written, readable, maintainable, and conform to established standards",
+      "identify and fix bugs and errors that occur during the development process",
+      "identify and utilize resources to help overcome difficulties or resolve errors in developing programs",
+      "elaborate on the potential and limitations of computing systems on our society."
+    ],
+    "topics": [
+      "Introduction to the Class and Computing",
+      "Societal Impacts of Computing",
+      "Ethical Reasoning and Starting to Program",
+      "Programming Basics",
+      "Variables and States",
+      "Sequential Execution of Statements",
+      "Conditional Statements To Break Sequence",
+      "Switch and Midterm",
+      "Project and While Loops",
+      "Repetitive Actions Through Loops",
+      "Nested Loop and Project 2",
+      "Arrays",
+      "Multidimensional Arrays and Basic Methods",
+      "Methods Continued",
+      "Revising Methods and Wrapping Up",
+      "Final Practice and Final Exam"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Applying foundational ideas of computing to frame a problem and devise a solution using Java programming language",
+        "reason": null
+      },
+      {
+        "skill": "Expression and evaluation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Expression and evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Variables, state, and data types",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Variables, state, and data types",
+        "reason": null
+      },
+      {
+        "skill": "Sequential execution of statements",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Sequential execution of statements",
+        "reason": null
+      },
+      {
+        "skill": "Conditional statements",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Conditional statements",
+        "reason": null
+      },
+      {
+        "skill": "Loops and iterations",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Loop and Iterations",
+        "reason": null
+      },
+      {
+        "skill": "Arrays",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Managing and manipulating data (with arrays)",
+        "reason": null
+      },
+      {
+        "skill": "Abstraction and modular programming",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Abstraction and modular programming",
+        "reason": null
+      },
+      {
+        "skill": "IntelliJ IDEA",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "IntelliJ IDEA is a powerful IDE. It is the IDE we will be using in this course.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 101",
+      "course_title": "Introduction To Computing"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 35,
+      "exact": 29,
+      "approximate": 6,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 101",
+    "Grad_equivalent": [],
+    "course_title": "Introduction To Computing",
+    "term": null,
+    "instructor": null,
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "write functionally correct Java programs that solve a specified problem and/or meet a provided specification.",
+      "break down problems into subproblems that are modular and reusable, and define methods to represent those subproblems",
+      "select and apply control structures (e.g., methods, loops, conditionals) to manage the flow of control and information in programs.",
+      "select and apply basic data abstractions (e.g., variables, parameters, arrays) to manage and manipulate data in programs.",
+      "define programs that are well-written, readable, maintainable, and conform to established standards",
+      "identify and fix bugs and errors that occur during the development process",
+      "identify and utilize resources to help overcome difficulties or resolve errors in developing programs",
+      "elaborate on the potential and limitations of computing systems on our society."
+    ],
+    "topics": [
+      "Introduction to the Class and Computing",
+      "Societal Impacts of Computing",
+      "Ethical Reasoning and Starting to Program",
+      "Programming Basics",
+      "Variables and States",
+      "Sequential Execution of Statements",
+      "Conditional Statements To Break Sequence",
+      "Switch and Midterm",
+      "Project and While Loops",
+      "Repetitive Actions Through Loops",
+      "Nested Loop and Project 2",
+      "Arrays",
+      "Multidimensional Arrays and Basic Methods",
+      "Methods Continued",
+      "Revising Methods and Wrapping Up",
+      "Final Practice and Final Exam"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Applying foundational ideas of computing to frame a problem and devise a solution using Java programming language",
+        "reason": null
+      },
+      {
+        "skill": "Expression and evaluation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Expression and evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Variables, state, and data types",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Variables, state, and data types",
+        "reason": null
+      },
+      {
+        "skill": "Sequential execution of statements",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Sequential execution of statements",
+        "reason": null
+      },
+      {
+        "skill": "Conditional statements",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Conditional statements",
+        "reason": null
+      },
+      {
+        "skill": "Loops and iterations",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Loop and Iterations",
+        "reason": null
+      },
+      {
+        "skill": "Arrays",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Managing and manipulating data (with arrays)",
+        "reason": null
+      },
+      {
+        "skill": "Abstraction and modular programming",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "covering the following sub-topics: Abstraction and modular programming",
+        "reason": null
+      },
+      {
+        "skill": "IntelliJ IDEA",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "IntelliJ IDEA is a powerful IDE. It is the IDE we will be using in this course.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 101",
+      "course_title": "Introduction To Computing"
+    }
+  }
+}

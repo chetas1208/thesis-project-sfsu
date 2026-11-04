@@ -1,0 +1,398 @@
+{
+  "file": "CSC220_DataStructures-Fall2022-DucTa",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "FALL 2022",
+    "instructor": "Duc Ta",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210",
+          "CSC 306",
+          "CSC 309"
+        ],
+        "recommended": false,
+        "evidence": "CSC 210 or CSC 306 or CSC 309 with a grade of C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grade of C or better",
+        "evidence": "CSC 210 or CSC 306 or CSC 309 with a grade of C or better"
+      }
+    ],
+    "learning_outcomes": [
+      "Be able to write Java programs and an integrated development environment",
+      "Utilize a debugger when doing software development",
+      "Apply Data Structures and ADT concepts effectively when developing small to medium sized projects",
+      "Write robust code utilizing exception handling language features",
+      "Learn what and how to document each program project"
+    ],
+    "topics": [
+      "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs",
+      "Recursion",
+      "Iteration over collections",
+      "Sorting",
+      "Searching",
+      "Big O notation",
+      "Hash table",
+      "Reviews and Object-Oriented Programming",
+      "Primary Data Structures, The Bags",
+      "Stack, Assertion, and Exception Handling",
+      "Recursion",
+      "Operation Counting",
+      "The Efficiency of Algorithms",
+      "Comparison Methods",
+      "Java Lexicography",
+      "Sorting Algorithms",
+      "Queues, Deques, and Priority Queues",
+      "Vector and Lists",
+      "Lists and Iterators",
+      "String Copy and String Pool",
+      "Deep/Shallow/Mixed Copies, Cloneable Interface, and Clone Method",
+      "Hashing, Hash Table, Enum, and Dictionary",
+      "Google Guava",
+      "File I/O",
+      "Graphs",
+      "Trees and Google Trees",
+      "Graphs and Google Graphs"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs",
+        "reason": null
+      },
+      {
+        "skill": "Data Structures",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Apply Data Structures and ADT concepts effectively when developing small to medium sized projects",
+        "reason": null
+      },
+      {
+        "skill": "Exception Handling",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Write robust code utilizing exception handling language features",
+        "reason": null
+      },
+      {
+        "skill": "Debugging",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Utilize a debugger when doing software development",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion",
+        "reason": null
+      },
+      {
+        "skill": "Sorting Algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Sorting Algorithms",
+        "reason": null
+      },
+      {
+        "skill": "Big O notation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Big O notation",
+        "reason": null
+      },
+      {
+        "skill": "Hash Tables",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Hash table",
+        "reason": null
+      },
+      {
+        "skill": "File I/O",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "File I/O",
+        "reason": null
+      },
+      {
+        "skill": "Graphs",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Graphs",
+        "reason": null
+      },
+      {
+        "skill": "Trees",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Trees and Google Trees",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 220.03",
+      "course_title": "Data Structures"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact",
+          "exact",
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 50,
+      "exact": 49,
+      "approximate": 1,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 220.03",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "FALL 2022",
+    "instructor": "Duc Ta",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210",
+          "CSC 306",
+          "CSC 309"
+        ],
+        "recommended": false,
+        "evidence": "CSC 210 or CSC 306 or CSC 309 with a grade of C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grade of C or better",
+        "evidence": "CSC 210 or CSC 306 or CSC 309 with a grade of C or better"
+      }
+    ],
+    "learning_outcomes": [
+      "Be able to write Java programs and an integrated development environment",
+      "Utilize a debugger when doing software development",
+      "Apply Data Structures and ADT concepts effectively when developing small to medium sized projects",
+      "Write robust code utilizing exception handling language features",
+      "Learn what and how to document each program project"
+    ],
+    "topics": [
+      "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs",
+      "Recursion",
+      "Iteration over collections",
+      "Sorting",
+      "Searching",
+      "Big O notation",
+      "Hash table",
+      "Reviews and Object-Oriented Programming",
+      "Primary Data Structures, The Bags",
+      "Stack, Assertion, and Exception Handling",
+      "Recursion",
+      "Operation Counting",
+      "The Efficiency of Algorithms",
+      "Comparison Methods",
+      "Java Lexicography",
+      "Sorting Algorithms",
+      "Queues, Deques, and Priority Queues",
+      "Vector and Lists",
+      "Lists and Iterators",
+      "String Copy and String Pool",
+      "Deep/Shallow/Mixed Copies, Cloneable Interface, and Clone Method",
+      "Hashing, Hash Table, Enum, and Dictionary",
+      "Google Guava",
+      "File I/O",
+      "Graphs",
+      "Trees and Google Trees",
+      "Graphs and Google Graphs"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs",
+        "reason": null
+      },
+      {
+        "skill": "Data Structures",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Apply Data Structures and ADT concepts effectively when developing small to medium sized projects",
+        "reason": null
+      },
+      {
+        "skill": "Exception Handling",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Write robust code utilizing exception handling language features",
+        "reason": null
+      },
+      {
+        "skill": "Debugging",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Utilize a debugger when doing software development",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion",
+        "reason": null
+      },
+      {
+        "skill": "Sorting Algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Sorting Algorithms",
+        "reason": null
+      },
+      {
+        "skill": "Big O notation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Big O notation",
+        "reason": null
+      },
+      {
+        "skill": "Hash Tables",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Hash table",
+        "reason": null
+      },
+      {
+        "skill": "File I/O",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "File I/O",
+        "reason": null
+      },
+      {
+        "skill": "Graphs",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Graphs",
+        "reason": null
+      },
+      {
+        "skill": "Trees",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Trees and Google Trees",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 220.03",
+      "course_title": "Data Structures"
+    }
+  }
+}

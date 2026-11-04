@@ -1,0 +1,363 @@
+{
+  "file": "CSC642-842_HumanComputerInteraction_Spring2025_SanikaDoolani",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 642",
+    "Grad_equivalent": [
+      "CSC 842"
+    ],
+    "course_title": "Human-Computer Interaction",
+    "term": "Spring 2025",
+    "instructor": "Dr. Sanika Doolani",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Graduate standing",
+        "evidence": "Prerequisite for CSC 842: Graduate standing."
+      },
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      },
+      {
+        "text": "Consent of the instructor",
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Understand the fundamentals of Human-Computer Interaction (HCI).",
+      "Apply user-centered design principles to systems, components, or processes.",
+      "Conduct user research using industry-standard methods and evaluate products for usability.",
+      "Develop and iteratively improve design solutions addressing real-world user problems.",
+      "Gain hands-on experience with prototyping and usability testing.",
+      "Work effectively in small teams to complete a semester-long design project.",
+      "Enhance soft skills, including teamwork, communication, and presentation.",
+      "Create and share prototypes and deliverables with a focus on user needs.",
+      "Provide and receive constructive peer feedback on design solutions."
+    ],
+    "topics": [
+      "Iterative, user-centered design process",
+      "Design thinking",
+      "Prototyping",
+      "Usability testing",
+      "Applying HCI principles to solve real-world user problems",
+      "User research",
+      "Concept design",
+      "Paper prototyping",
+      "Low-fidelity, medium-fidelity, and high-fidelity prototyping",
+      "Heuristic evaluation",
+      "App design critique",
+      "Designing for future technologies such as AI and XR",
+      "Research paper writing",
+      "Pitch presentations",
+      "Team design critique"
+    ],
+    "skills": [
+      {
+        "skill": "User-centered design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Apply user-centered design principles to systems, components, or processes.",
+        "reason": null
+      },
+      {
+        "skill": "User research",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Conduct user research using industry-standard methods and evaluate products for usability.",
+        "reason": null
+      },
+      {
+        "skill": "Prototyping",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience with prototyping and usability testing.",
+        "reason": null
+      },
+      {
+        "skill": "Usability testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience with prototyping and usability testing.",
+        "reason": null
+      },
+      {
+        "skill": "Design thinking",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include design thinking, prototyping, usability testing, and applying HCI principles to solve real-world user problems.",
+        "reason": null
+      },
+      {
+        "skill": "Heuristic evaluation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 11 Apr 9 Heuristic Evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Figma",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Mar 19 Figma Basics, Lo-Fidelity Prototype & Evaluation Report",
+        "reason": null
+      },
+      {
+        "skill": "Research paper writing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Apr 28 Designing for Research Paper Writing",
+        "reason": null
+      },
+      {
+        "skill": "Team project management",
+        "type": "inferred",
+        "level": "proficiency",
+        "evidence": "The semester-long group project is a key component of the course, where students will address a user-centered challenge of their choice. Working in small teams, students will iteratively develop prototypes, conduct user research, and present their findings.",
+        "reason": "Managing and collaborating on a semester-long group project implies proficiency in team project management."
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 642",
+      "course_title": "Human-Computer Interaction"
+    },
+    "cross_listed": [
+      "CSC 842"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "not_found",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "approximate",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 41,
+      "exact": 35,
+      "approximate": 5,
+      "not_found": 1
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 642",
+    "Grad_equivalent": [
+      "CSC 842"
+    ],
+    "course_title": "Human-Computer Interaction",
+    "term": "Spring 2025",
+    "instructor": "Dr. Sanika Doolani",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      },
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "Prerequisite for CSC 842: Graduate standing."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Graduate standing",
+        "evidence": "Prerequisite for CSC 842: Graduate standing."
+      },
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      },
+      {
+        "text": "Consent of the instructor",
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Understand the fundamentals of Human-Computer Interaction (HCI).",
+      "Apply user-centered design principles to systems, components, or processes.",
+      "Conduct user research using industry-standard methods and evaluate products for usability.",
+      "Develop and iteratively improve design solutions addressing real-world user problems.",
+      "Gain hands-on experience with prototyping and usability testing.",
+      "Work effectively in small teams to complete a semester-long design project.",
+      "Enhance soft skills, including teamwork, communication, and presentation.",
+      "Create and share prototypes and deliverables with a focus on user needs.",
+      "Provide and receive constructive peer feedback on design solutions."
+    ],
+    "topics": [
+      "Iterative, user-centered design process",
+      "Design thinking",
+      "Prototyping",
+      "Usability testing",
+      "Applying HCI principles to solve real-world user problems",
+      "User research",
+      "Concept design",
+      "Paper prototyping",
+      "Low-fidelity, medium-fidelity, and high-fidelity prototyping",
+      "Heuristic evaluation",
+      "App design critique",
+      "Designing for future technologies such as AI and XR",
+      "Research paper writing",
+      "Pitch presentations",
+      "Team design critique"
+    ],
+    "skills": [
+      {
+        "skill": "User-centered design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Apply user-centered design principles to systems, components, or processes.",
+        "reason": null
+      },
+      {
+        "skill": "User research",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Conduct user research using industry-standard methods and evaluate products for usability.",
+        "reason": null
+      },
+      {
+        "skill": "Prototyping",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience with prototyping and usability testing.",
+        "reason": null
+      },
+      {
+        "skill": "Usability testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience with prototyping and usability testing.",
+        "reason": null
+      },
+      {
+        "skill": "Design thinking",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include design thinking, prototyping, usability testing, and applying HCI principles to solve real-world user problems.",
+        "reason": null
+      },
+      {
+        "skill": "Heuristic evaluation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 11 Apr 9 Heuristic Evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Figma",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Mar 19 Figma Basics, Lo-Fidelity Prototype & Evaluation Report",
+        "reason": null
+      },
+      {
+        "skill": "Research paper writing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Apr 28 Designing for Research Paper Writing",
+        "reason": null
+      },
+      {
+        "skill": "Team project management",
+        "type": "inferred",
+        "level": "proficiency",
+        "evidence": "The semester-long group project is a key component of the course, where students will address a user-centered challenge of their choice. Working in small teams, students will iteratively develop prototypes, conduct user research, and present their findings.",
+        "reason": "Managing and collaborating on a semester-long group project implies proficiency in team project management."
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 642",
+      "course_title": "Human-Computer Interaction"
+    }
+  }
+}
