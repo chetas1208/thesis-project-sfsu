@@ -1,6 +1,8 @@
+_Last updated: 2026-11-13 (repository `main` locked to owner merge; collaborators use feature branches + PRs.)_
+
 ### What was completed
 
-Completed a code-to-artifact audit of `SkillLLM_v2_stage2`; wrote and compiled a 75-page technical research report with 11 chapters, 3 appendices, 15 reproducible system figures, 5 evidence tables, and 53 cited sources. The report distinguishes persisted full-test evidence from historical diagnostics, smoke tests, and unavailable downstream evaluations.
+Completed a code-to-artifact audit of `SkillLLM_v2_stage2`; wrote and compiled a 75-page technical research report with 11 chapters, 3 appendices, 15 reproducible system figures, 5 evidence tables, and 53 cited sources. The report distinguishes persisted full-test evidence from historical diagnostics, smoke tests, and unavailable downstream evaluations. On `main`, integrated a detailed write-up of the job-matching and course-recommendation engines (October 2026 commit).
 
 ### Most important experimental result
 

@@ -177,6 +177,10 @@ This policy keeps the repository cloneable and prevents credentials or personal 
 
 See [`SECURITY.md`](SECURITY.md) and [`CONTRIBUTING.md`](CONTRIBUTING.md) for the detailed workflow.
 
+**`main` branch:** Only the repository owner pushes to or merges into `main`. Collaborators use feature branches and pull requests; see [`CONTRIBUTING.md`](CONTRIBUTING.md#branch-policy-main-is-owner-controlled).
+
+**Progress snapshot (2026-11-13):** Thesis PDF and 75-page technical report are in [`docs/thesis/`](docs/thesis/); advisor-facing status is [`docs/thesis/NEXT_RESEARCH_UPDATE.md`](docs/thesis/NEXT_RESEARCH_UPDATE.md). Latest integrated code on `main` adds the job-matching and course-recommendation engine report (see git history).
+
 ## License and third-party data
 
 The repository code and documentation are distributed under the root [`LICENSE`](LICENSE). The checked-in SkillSpan export carries its own CC BY 4.0 notice. Upstream model weights, datasets, and hosted APIs retain their separate licenses and access requirements; consult the corresponding project documentation before redistribution.

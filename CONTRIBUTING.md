@@ -27,6 +27,16 @@ For shell or Python changes, also run `bash -n` on affected shell launchers and 
 - Linking coverage must not be described as supervised linking accuracy.
 - Job-ranking nDCG@10 and course-ranking P@5 remain unavailable until labelled relevance data exists.
 
+## Branch policy (`main` is owner-controlled)
+
+`main` is protected by a repository ruleset ([Protect main — owner only](https://github.com/chetas1208/thesis-project-sfsu/rules/27232010)):
+
+- **Direct pushes to `main`** are allowed only for **@chetas1208** (ruleset bypass). Everyone else must use a pull request.
+- **Merging into `main`** is performed only by **@chetas1208**, after code-owner review (see [`.github/CODEOWNERS`](.github/CODEOWNERS)).
+- **Feature work** happens on separate branches (for example `feature/...`, `fix/...`, or personal sandboxes). Push those branches freely; open a PR when ready for integration.
+
+Do not force-push `main`. Do not merge your own PR into `main` unless you are the repo owner.
+
 ## Pull requests and commits
 
 Use a focused commit with a descriptive message. Explain which files changed and why, list validation commands, and call out any assumptions or remaining warnings. Keep unrelated generated changes out of the commit. Do not force-push shared branches.
