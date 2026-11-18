@@ -1,0 +1,271 @@
+{
+  "file": "CSC340_ProgrammingMethodology_HuiYang",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 340",
+    "Grad_equivalent": [],
+    "course_title": "Programming Methodology",
+    "term": null,
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grades of C or better in CSC 220 and CSC230."
+      },
+      {
+        "any_of": [
+          "CSC 230"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grades of C or better in CSC 220 and CSC230."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grades of C or better",
+        "evidence": "Prerequisite: grades of C or better in CSC 220 and CSC230."
+      }
+    ],
+    "learning_outcomes": [
+      "Be able to write medium-sized C++ programs utilizing STL and an integrated development environment",
+      "Determine which of the common sorting and searching algorithms to utilize for given problems",
+      "Be able to walk through the problem solving process",
+      "Be able to analyze the runtime complexity of relatively simple recursive and non-recursive algorithms",
+      "Optional: Be able to apply and implement graph algorithms in practice"
+    ],
+    "topics": [
+      "C++ Topics – transitioning from Java, basic and advanced C++ topics abstract data types, inheritance, polymorphism, parameter passing, pointers, dynamic memory allocation for arrays and linked lists, STLs",
+      "Problem solving process: algorithm design and pseudo code representation",
+      "Complexity analysis of fundamental recursive and non-recursive algorithms Binary search, kth-smallest/largest number, quick sort, insertion sort, selection sort, merge sort, Towers of Hanoi",
+      "Optional: trees and graphs"
+    ],
+    "skills": [
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course explores advanced data structures and algorithms for manipulating them in C++.",
+        "reason": null
+      },
+      {
+        "skill": "STL",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Be able to write medium-sized C++ programs utilizing STL and an integrated development environment",
+        "reason": null
+      },
+      {
+        "skill": "algorithm design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Problem solving process: algorithm design and pseudo code representation",
+        "reason": null
+      },
+      {
+        "skill": "runtime complexity analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Be able to analyze the runtime complexity of relatively simple recursive and non-recursive algorithms",
+        "reason": null
+      },
+      {
+        "skill": "sorting algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Cover widely-used searching and sorting algorithms",
+        "reason": null
+      },
+      {
+        "skill": "searching algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Cover widely-used searching and sorting algorithms",
+        "reason": null
+      },
+      {
+        "skill": "graph algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Optional: cover commonly used graph algorithms",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 340",
+      "course_title": "Programming Methodology"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 23,
+      "exact": 23,
+      "approximate": 0,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 340",
+    "Grad_equivalent": [],
+    "course_title": "Programming Methodology",
+    "term": null,
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grades of C or better in CSC 220 and CSC230."
+      },
+      {
+        "any_of": [
+          "CSC 230"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grades of C or better in CSC 220 and CSC230."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grades of C or better",
+        "evidence": "Prerequisite: grades of C or better in CSC 220 and CSC230."
+      }
+    ],
+    "learning_outcomes": [
+      "Be able to write medium-sized C++ programs utilizing STL and an integrated development environment",
+      "Determine which of the common sorting and searching algorithms to utilize for given problems",
+      "Be able to walk through the problem solving process",
+      "Be able to analyze the runtime complexity of relatively simple recursive and non-recursive algorithms",
+      "Optional: Be able to apply and implement graph algorithms in practice"
+    ],
+    "topics": [
+      "C++ Topics – transitioning from Java, basic and advanced C++ topics abstract data types, inheritance, polymorphism, parameter passing, pointers, dynamic memory allocation for arrays and linked lists, STLs",
+      "Problem solving process: algorithm design and pseudo code representation",
+      "Complexity analysis of fundamental recursive and non-recursive algorithms Binary search, kth-smallest/largest number, quick sort, insertion sort, selection sort, merge sort, Towers of Hanoi",
+      "Optional: trees and graphs"
+    ],
+    "skills": [
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course explores advanced data structures and algorithms for manipulating them in C++.",
+        "reason": null
+      },
+      {
+        "skill": "STL",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Be able to write medium-sized C++ programs utilizing STL and an integrated development environment",
+        "reason": null
+      },
+      {
+        "skill": "algorithm design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Problem solving process: algorithm design and pseudo code representation",
+        "reason": null
+      },
+      {
+        "skill": "runtime complexity analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Be able to analyze the runtime complexity of relatively simple recursive and non-recursive algorithms",
+        "reason": null
+      },
+      {
+        "skill": "sorting algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Cover widely-used searching and sorting algorithms",
+        "reason": null
+      },
+      {
+        "skill": "searching algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Cover widely-used searching and sorting algorithms",
+        "reason": null
+      },
+      {
+        "skill": "graph algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Optional: cover commonly used graph algorithms",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 340",
+      "course_title": "Programming Methodology"
+    }
+  }
+}

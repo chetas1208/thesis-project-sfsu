@@ -1,0 +1,287 @@
+{
+  "file": "CSC845_AdvancedComputerNetworks_QunWang",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 845",
+    "Grad_equivalent": [],
+    "course_title": "ADVANCED COMPUTER NETWORKS",
+    "term": null,
+    "instructor": "Qun Wang",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 645"
+        ],
+        "recommended": false,
+        "evidence": "Pre-requisite: Grades of C or better in CSC 645 or equivalent classes"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grades of C or better",
+        "evidence": "Pre-requisite: Grades of C or better in CSC 645 or equivalent classes"
+      }
+    ],
+    "learning_outcomes": [
+      "Have basic knowledge on concepts and principles of architecture and protocols of advanced computer networks",
+      "Gain hands-on experience in reviewing research papers as well as developing and implementing network protocols and applications"
+    ],
+    "topics": [
+      "Wireless and Mobile Networks",
+      "Multimedia Networking",
+      "Software Defined Networking",
+      "Wireless Sensing",
+      "Network Security",
+      "other emerging topics",
+      "Internet Overview",
+      "Multiple Access Technologies",
+      "Mobility Management",
+      "Wireless Networking",
+      "Emerging Topic",
+      "Group Project Presentation",
+      "Wrap Up"
+    ],
+    "skills": [
+      {
+        "skill": "network protocols",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience in reviewing research papers as well as developing and implementing network protocols and applications",
+        "reason": null
+      },
+      {
+        "skill": "network applications",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience in reviewing research papers as well as developing and implementing network protocols and applications",
+        "reason": null
+      },
+      {
+        "skill": "Wireless and Mobile Networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Wireless and Mobile Networks",
+        "reason": null
+      },
+      {
+        "skill": "Multimedia Networking",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Multimedia Networking",
+        "reason": null
+      },
+      {
+        "skill": "Software Defined Networking",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Software Defined Networking",
+        "reason": null
+      },
+      {
+        "skill": "Wireless Sensing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Wireless Sensing",
+        "reason": null
+      },
+      {
+        "skill": "Network Security",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Network Security",
+        "reason": null
+      },
+      {
+        "skill": "NS2",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 5 NS2 Lab",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 845",
+      "course_title": "ADVANCED COMPUTER NETWORKS"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "not_found",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 28,
+      "exact": 24,
+      "approximate": 4,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 845",
+    "Grad_equivalent": [],
+    "course_title": "ADVANCED COMPUTER NETWORKS",
+    "term": null,
+    "instructor": "Qun Wang",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 645"
+        ],
+        "recommended": false,
+        "evidence": "Pre-requisite: Grades of C or better in CSC 645 or equivalent classes"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grades of C or better",
+        "evidence": "Pre-requisite: Grades of C or better in CSC 645 or equivalent classes"
+      }
+    ],
+    "learning_outcomes": [
+      "Have basic knowledge on concepts and principles of architecture and protocols of advanced computer networks",
+      "Gain hands-on experience in reviewing research papers as well as developing and implementing network protocols and applications"
+    ],
+    "topics": [
+      "Wireless and Mobile Networks",
+      "Multimedia Networking",
+      "Software Defined Networking",
+      "Wireless Sensing",
+      "Network Security",
+      "other emerging topics",
+      "Internet Overview",
+      "Multiple Access Technologies",
+      "Mobility Management",
+      "Wireless Networking",
+      "Emerging Topic",
+      "Group Project Presentation",
+      "Wrap Up"
+    ],
+    "skills": [
+      {
+        "skill": "network protocols",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience in reviewing research papers as well as developing and implementing network protocols and applications",
+        "reason": null
+      },
+      {
+        "skill": "network applications",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain hands-on experience in reviewing research papers as well as developing and implementing network protocols and applications",
+        "reason": null
+      },
+      {
+        "skill": "Wireless and Mobile Networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Wireless and Mobile Networks",
+        "reason": null
+      },
+      {
+        "skill": "Multimedia Networking",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Multimedia Networking",
+        "reason": null
+      },
+      {
+        "skill": "Software Defined Networking",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Software Defined Networking",
+        "reason": null
+      },
+      {
+        "skill": "Wireless Sensing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Wireless Sensing",
+        "reason": null
+      },
+      {
+        "skill": "Network Security",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics covered in this course include Network Security",
+        "reason": null
+      },
+      {
+        "skill": "NS2",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 5 NS2 Lab",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 845",
+      "course_title": "ADVANCED COMPUTER NETWORKS"
+    }
+  }
+}

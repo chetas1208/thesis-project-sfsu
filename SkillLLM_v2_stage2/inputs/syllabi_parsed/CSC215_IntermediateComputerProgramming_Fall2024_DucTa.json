@@ -1,0 +1,431 @@
+{
+  "file": "CSC215_IntermediateComputerProgramming_Fall2024_DucTa",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 215",
+    "Grad_equivalent": [],
+    "course_title": "Intermediate Computer Programming",
+    "term": "FALL 2024",
+    "instructor": "Duc Ta",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 101"
+        ],
+        "recommended": false,
+        "evidence": "CSC 101 with a grade of C or better."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "CSC 101 with a grade of C or better."
+      }
+    ],
+    "learning_outcomes": [
+      "Demonstrate basic programming skills in Java.",
+      "Demonstrate understanding of concepts of algorithmic problem solving and design of computer programs.",
+      "Demonstrate the ability to write, debug, and execute small and medium-sized Java programs.",
+      "Demonstrate their readiness to continue the study of object-oriented programming and computer algorithms."
+    ],
+    "topics": [
+      "Design, implementation, testing, debugging, maintenance, and documentation of Java programs.",
+      "Algorithms, programming concepts, and data types in Java.",
+      "Concepts of object-oriented programming; numerical and non-numerical problems.",
+      "Switch statement and switch expression, lambda expression, operation counting.",
+      "Single-Dimensional Arrays and Multidimensional Arrays.",
+      "Objects & Classes and Object-Oriented Thinking.",
+      "Inheritance and Polymorphism.",
+      "Exception Handling and Text I/O.",
+      "Abstract and Interface.",
+      "Sealed Classes and Advanced OOP Topics.",
+      "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion."
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Design, implementation, testing, debugging, maintenance, and documentation of Java programs.",
+        "reason": null
+      },
+      {
+        "skill": "Object-Oriented Programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Concepts of object-oriented programming; numerical and non-numerical problems.",
+        "reason": null
+      },
+      {
+        "skill": "Algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Algorithms, programming concepts, and data types in Java.",
+        "reason": null
+      },
+      {
+        "skill": "Switch statement and switch expression",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch statement and switch expression, lambda expression, operation counting.",
+        "reason": null
+      },
+      {
+        "skill": "Lambda expression",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch statement and switch expression, lambda expression, operation counting.",
+        "reason": null
+      },
+      {
+        "skill": "Arrays (single-dimensional and multidimensional)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Single-Dimensional Arrays and Multidimensional Arrays.",
+        "reason": null
+      },
+      {
+        "skill": "Inheritance and Polymorphism",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Inheritance and Polymorphism.",
+        "reason": null
+      },
+      {
+        "skill": "Exception Handling",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Exception Handling and Text I/O.",
+        "reason": null
+      },
+      {
+        "skill": "Text I/O",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Exception Handling and Text I/O.",
+        "reason": null
+      },
+      {
+        "skill": "Abstract classes and Interfaces",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Abstract and Interface.",
+        "reason": null
+      },
+      {
+        "skill": "Sealed classes",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Sealed Classes and Advanced OOP Topics.",
+        "reason": null
+      },
+      {
+        "skill": "ArrayList",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      },
+      {
+        "skill": "StringBuilder",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      },
+      {
+        "skill": "Data structures",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      },
+      {
+        "skill": "Sorting",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 215",
+      "course_title": "Intermediate Computer Programming"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 36,
+      "exact": 15,
+      "approximate": 21,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 215",
+    "Grad_equivalent": [],
+    "course_title": "Intermediate Computer Programming",
+    "term": "FALL 2024",
+    "instructor": "Duc Ta",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 101"
+        ],
+        "recommended": false,
+        "evidence": "CSC 101 with a grade of C or better."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "CSC 101 with a grade of C or better."
+      }
+    ],
+    "learning_outcomes": [
+      "Demonstrate basic programming skills in Java.",
+      "Demonstrate understanding of concepts of algorithmic problem solving and design of computer programs.",
+      "Demonstrate the ability to write, debug, and execute small and medium-sized Java programs.",
+      "Demonstrate their readiness to continue the study of object-oriented programming and computer algorithms."
+    ],
+    "topics": [
+      "Design, implementation, testing, debugging, maintenance, and documentation of Java programs.",
+      "Algorithms, programming concepts, and data types in Java.",
+      "Concepts of object-oriented programming; numerical and non-numerical problems.",
+      "Switch statement and switch expression, lambda expression, operation counting.",
+      "Single-Dimensional Arrays and Multidimensional Arrays.",
+      "Objects & Classes and Object-Oriented Thinking.",
+      "Inheritance and Polymorphism.",
+      "Exception Handling and Text I/O.",
+      "Abstract and Interface.",
+      "Sealed Classes and Advanced OOP Topics.",
+      "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion."
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Design, implementation, testing, debugging, maintenance, and documentation of Java programs.",
+        "reason": null
+      },
+      {
+        "skill": "Object-Oriented Programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Concepts of object-oriented programming; numerical and non-numerical problems.",
+        "reason": null
+      },
+      {
+        "skill": "Algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Algorithms, programming concepts, and data types in Java.",
+        "reason": null
+      },
+      {
+        "skill": "Switch statement and switch expression",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch statement and switch expression, lambda expression, operation counting.",
+        "reason": null
+      },
+      {
+        "skill": "Lambda expression",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch statement and switch expression, lambda expression, operation counting.",
+        "reason": null
+      },
+      {
+        "skill": "Arrays (single-dimensional and multidimensional)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Single-Dimensional Arrays and Multidimensional Arrays.",
+        "reason": null
+      },
+      {
+        "skill": "Inheritance and Polymorphism",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Inheritance and Polymorphism.",
+        "reason": null
+      },
+      {
+        "skill": "Exception Handling",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Exception Handling and Text I/O.",
+        "reason": null
+      },
+      {
+        "skill": "Text I/O",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Exception Handling and Text I/O.",
+        "reason": null
+      },
+      {
+        "skill": "Abstract classes and Interfaces",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Abstract and Interface.",
+        "reason": null
+      },
+      {
+        "skill": "Sealed classes",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Sealed Classes and Advanced OOP Topics.",
+        "reason": null
+      },
+      {
+        "skill": "ArrayList",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      },
+      {
+        "skill": "StringBuilder",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      },
+      {
+        "skill": "Data structures",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      },
+      {
+        "skill": "Sorting",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Switch expression, ArrayList, StringBuilder, ANSI, Date and Time, internationalization, data structures, sorting, recursion.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 215",
+      "course_title": "Intermediate Computer Programming"
+    }
+  }
+}

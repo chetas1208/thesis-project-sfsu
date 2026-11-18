@@ -1,0 +1,308 @@
+{
+  "file": "CSC220_DataStructures_Spring2025_TracyChen",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "Spring 2025",
+    "instructor": "Xuhui (Tracy) Chen",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210",
+          "CSC 215"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 210 or CSC 215 with a grade of C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite: CSC 210 or CSC 215 with a grade of C or better"
+      }
+    ],
+    "learning_outcomes": [
+      "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+      "Implement data structures in Java.",
+      "Analyze the complexity of algorithms in different implementations of each data structure."
+    ],
+    "topics": [
+      "Java basics",
+      "OOP basics, Generic types, composition, inheritance",
+      "Object type compatibility and type casting, polymorphism, method hiding",
+      "abstract classes, Interfaces, Encapsulation",
+      "ADTs, Java Collections",
+      "Using Bags",
+      "Bag implementation (array, linked list)",
+      "Exceptions",
+      "Using stacks",
+      "Stack implementation",
+      "Time complexity, Big O",
+      "Using queues",
+      "Queue implementation",
+      "Lists",
+      "Recursion",
+      "Dictionaries",
+      "Hashing",
+      "Trees"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs.",
+        "reason": null
+      },
+      {
+        "skill": "Data Structures",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Iteration over collections",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Sorting",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Searching",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Big O notation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Hash tables",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 220",
+      "course_title": "Data Structures"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact",
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 35,
+      "exact": 31,
+      "approximate": 4,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "Spring 2025",
+    "instructor": "Xuhui (Tracy) Chen",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210",
+          "CSC 215"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 210 or CSC 215 with a grade of C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite: CSC 210 or CSC 215 with a grade of C or better"
+      }
+    ],
+    "learning_outcomes": [
+      "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+      "Implement data structures in Java.",
+      "Analyze the complexity of algorithms in different implementations of each data structure."
+    ],
+    "topics": [
+      "Java basics",
+      "OOP basics, Generic types, composition, inheritance",
+      "Object type compatibility and type casting, polymorphism, method hiding",
+      "abstract classes, Interfaces, Encapsulation",
+      "ADTs, Java Collections",
+      "Using Bags",
+      "Bag implementation (array, linked list)",
+      "Exceptions",
+      "Using stacks",
+      "Stack implementation",
+      "Time complexity, Big O",
+      "Using queues",
+      "Queue implementation",
+      "Lists",
+      "Recursion",
+      "Dictionaries",
+      "Hashing",
+      "Trees"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs.",
+        "reason": null
+      },
+      {
+        "skill": "Data Structures",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Iteration over collections",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Sorting",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Searching",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Big O notation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      },
+      {
+        "skill": "Hash tables",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recursion, iteration over collections, sorting, searching, Big O notation, and hash tables.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 220",
+      "course_title": "Data Structures"
+    }
+  }
+}

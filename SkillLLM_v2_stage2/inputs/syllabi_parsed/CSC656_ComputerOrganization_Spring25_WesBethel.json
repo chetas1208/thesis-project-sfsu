@@ -1,0 +1,341 @@
+{
+  "file": "CSC656_ComputerOrganization_Spring25_WesBethel",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 656",
+    "Grad_equivalent": [],
+    "course_title": "Computer Organization",
+    "term": "Spring 2025",
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 415"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 415* (may be taken concurrently) or permission of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "permission of the instructor",
+        "evidence": "Prerequisite: CSC 415* (may be taken concurrently) or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Describe how high level language programs are translated into machine language programs as well how machine language programs execute on CPU hardware (CSC 256, review).",
+      "Cultivate an understanding of the interface between hardware and software, with particular emphasis on modern Instruction Set Architectures (ISAs) and their relationship with datapath, control, and memory systems on computational platforms.",
+      "Develop an understanding of the factors contributing to the program performance and techniques for improving performance and apply them to sample problems.",
+      "Become familiar with the fundamentals of parallel processing on multi-core CPUs and many-core GPUs."
+    ],
+    "topics": [
+      "Instruction set design",
+      "Pipelined datapath and control",
+      "Cache and memory system design",
+      "Input and output subsystems",
+      "Parallel processing",
+      "Software and hardware interactions",
+      "MIPS ISA",
+      "Comparison with other ISAs: x86, ARM",
+      "Digital logic fundamentals",
+      "Processor organization",
+      "Logic blocks",
+      "Datapath",
+      "Control",
+      "Memory systems",
+      "Memories and caches and their impact on program performance",
+      "Shared-memory parallelism on CPUs and GPUs",
+      "Writing parallel codes and measuring their performance"
+    ],
+    "skills": [
+      {
+        "skill": "MIPS assembly language",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "In this class we will focus on the MIPS ISA, which is a continuation of concepts from CSC 256",
+        "reason": null
+      },
+      {
+        "skill": "Instruction Set Architecture (ISA) design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Instruction set design. Pipelined datapath and control.",
+        "reason": null
+      },
+      {
+        "skill": "Pipelined datapath and control",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Instruction set design. Pipelined datapath and control.",
+        "reason": null
+      },
+      {
+        "skill": "Cache and memory system design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Cache and memory system design.",
+        "reason": null
+      },
+      {
+        "skill": "Parallel programming on CPUs and GPUs",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Shared-memory parallelism on CPUs and GPUs",
+        "reason": null
+      },
+      {
+        "skill": "Digital logic fundamentals",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Digital logic fundamentals and processor organization",
+        "reason": null
+      },
+      {
+        "skill": "Computer architecture concepts",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Develop an understanding of computer architecture and organization, from the gate to logic block level",
+        "reason": null
+      },
+      {
+        "skill": "Performance analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Develop an understanding of the factors contributing to the program performance and techniques for improving performance and apply them to sample problems.",
+        "reason": null
+      },
+      {
+        "skill": "MARS MIPS Assembler and Runtime Simulator",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "MARS MIPS Assembler and Runtime Simulator (Required)",
+        "reason": null
+      },
+      {
+        "skill": "VirtualBox Ubuntu VM",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "VirtualBox Ubuntu VM installation ... VM image file",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "Computer Organization Class Number CSC 0656",
+      "course_title": "Computer Organization"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "not_found",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 36,
+      "exact": 32,
+      "approximate": 3,
+      "not_found": 1
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 0656",
+    "Grad_equivalent": [],
+    "course_title": "Computer Organization",
+    "term": "Spring 2025",
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 415"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 415* (may be taken concurrently) or permission of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "permission of the instructor",
+        "evidence": "Prerequisite: CSC 415* (may be taken concurrently) or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Describe how high level language programs are translated into machine language programs as well how machine language programs execute on CPU hardware (CSC 256, review).",
+      "Cultivate an understanding of the interface between hardware and software, with particular emphasis on modern Instruction Set Architectures (ISAs) and their relationship with datapath, control, and memory systems on computational platforms.",
+      "Develop an understanding of the factors contributing to the program performance and techniques for improving performance and apply them to sample problems.",
+      "Become familiar with the fundamentals of parallel processing on multi-core CPUs and many-core GPUs."
+    ],
+    "topics": [
+      "Instruction set design",
+      "Pipelined datapath and control",
+      "Cache and memory system design",
+      "Input and output subsystems",
+      "Parallel processing",
+      "Software and hardware interactions",
+      "MIPS ISA",
+      "Comparison with other ISAs: x86, ARM",
+      "Digital logic fundamentals",
+      "Processor organization",
+      "Logic blocks",
+      "Datapath",
+      "Control",
+      "Memory systems",
+      "Memories and caches and their impact on program performance",
+      "Shared-memory parallelism on CPUs and GPUs",
+      "Writing parallel codes and measuring their performance"
+    ],
+    "skills": [
+      {
+        "skill": "MIPS assembly language",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "In this class we will focus on the MIPS ISA, which is a continuation of concepts from CSC 256",
+        "reason": null
+      },
+      {
+        "skill": "Instruction Set Architecture (ISA) design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Instruction set design. Pipelined datapath and control.",
+        "reason": null
+      },
+      {
+        "skill": "Pipelined datapath and control",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Instruction set design. Pipelined datapath and control.",
+        "reason": null
+      },
+      {
+        "skill": "Cache and memory system design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Cache and memory system design.",
+        "reason": null
+      },
+      {
+        "skill": "Parallel programming on CPUs and GPUs",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Shared-memory parallelism on CPUs and GPUs",
+        "reason": null
+      },
+      {
+        "skill": "Digital logic fundamentals",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Digital logic fundamentals and processor organization",
+        "reason": null
+      },
+      {
+        "skill": "Computer architecture concepts",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Develop an understanding of computer architecture and organization, from the gate to logic block level",
+        "reason": null
+      },
+      {
+        "skill": "Performance analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Develop an understanding of the factors contributing to the program performance and techniques for improving performance and apply them to sample problems.",
+        "reason": null
+      },
+      {
+        "skill": "MARS MIPS Assembler and Runtime Simulator",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "MARS MIPS Assembler and Runtime Simulator (Required)",
+        "reason": null
+      },
+      {
+        "skill": "VirtualBox Ubuntu VM",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "VirtualBox Ubuntu VM installation ... VM image file",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "Computer Organization Class Number CSC 0656",
+      "course_title": "Computer Organization"
+    }
+  }
+}

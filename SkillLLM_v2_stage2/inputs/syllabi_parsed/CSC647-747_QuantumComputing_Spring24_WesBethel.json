@@ -1,0 +1,438 @@
+{
+  "file": "CSC647-747_QuantumComputing_Spring24_WesBethel",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 647",
+    "Grad_equivalent": [
+      "CSC 747"
+    ],
+    "course_title": "Introduction to Quantum Computing and Quantum Information Science",
+    "term": "Spring 2024",
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 415"
+        ],
+        "recommended": false,
+        "evidence": "CSC 415* and MATH 325* with a grade of C or better"
+      },
+      {
+        "any_of": [
+          "MATH 325"
+        ],
+        "recommended": false,
+        "evidence": "CSC 415* and MATH 325* with a grade of C or better"
+      },
+      {
+        "any_of": [
+          "CSC 308"
+        ],
+        "recommended": true,
+        "evidence": "CSC 308, CSC 309, and CSC 656 recommended"
+      },
+      {
+        "any_of": [
+          "CSC 309"
+        ],
+        "recommended": true,
+        "evidence": "CSC 308, CSC 309, and CSC 656 recommended"
+      },
+      {
+        "any_of": [
+          "CSC 656"
+        ],
+        "recommended": true,
+        "evidence": "CSC 308, CSC 309, and CSC 656 recommended"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Upper-division standing",
+        "evidence": "Upper-division standing; CSC 415* and MATH 325* with a grade of C or better"
+      },
+      {
+        "text": "GPA of 3.0 or higher",
+        "evidence": "GPA of 3.0 or higher; or permission of the instructor"
+      },
+      {
+        "text": "Permission of the instructor",
+        "evidence": "or permission of the instructor"
+      },
+      {
+        "text": "Graduate standing",
+        "evidence": "Prerequisite for CSC 747: Graduate standing or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Introduction to quantum computing and quantum information science.",
+      "Comparison of classical and quantum computing architectures and organization.",
+      "Quantum algorithm design and implementation on circuit-based and annealing quantum platforms.",
+      "Program execution and performance analysis on quantum platform simulators and actual quantum hardware, subject to availability.",
+      "Survey of research topics in quantum computing ranging from algorithms (e.g., Grover's Search) and their application to problems in quantum cryptography, quantum machine learning, and hybrid classical/quantum algorithms."
+    ],
+    "topics": [
+      "Classical and quantum computing architectures and organization",
+      "Quantum algorithm design",
+      "Implementation on circuit-based quantum platforms",
+      "Implementation on annealing quantum platforms",
+      "Program execution on quantum simulators",
+      "Performance analysis on quantum hardware",
+      "Grover's Search algorithm",
+      "Quantum cryptography",
+      "Quantum machine learning",
+      "Hybrid classical/quantum algorithms"
+    ],
+    "skills": [
+      {
+        "skill": "Quantum computing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduction to quantum computing and quantum information science.",
+        "reason": null
+      },
+      {
+        "skill": "Quantum algorithm design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Quantum algorithm design and implementation on circuit-based and annealing quantum platforms.",
+        "reason": null
+      },
+      {
+        "skill": "Quantum hardware programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Program execution and performance analysis on quantum platform simulators and actual quantum hardware, subject to availability.",
+        "reason": null
+      },
+      {
+        "skill": "Grover's Search algorithm",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Survey of research topics in quantum computing ranging from algorithms (e.g., Grover's Search)",
+        "reason": null
+      },
+      {
+        "skill": "Quantum cryptography",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "their application to problems in quantum cryptography",
+        "reason": null
+      },
+      {
+        "skill": "Quantum machine learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "their application to problems in quantum machine learning",
+        "reason": null
+      },
+      {
+        "skill": "Hybrid classical/quantum algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "their application to problems in ... hybrid classical/quantum algorithms",
+        "reason": null
+      },
+      {
+        "skill": "Python",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Anaconda Python/Jupyter development environment (free) (Required)",
+        "reason": null
+      },
+      {
+        "skill": "Jupyter",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Anaconda Python/Jupyter development environment (free) (Required)",
+        "reason": null
+      },
+      {
+        "skill": "Qiskit",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Qiskit (free) (Required)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 647/747",
+      "course_title": "Introduction to Quantum Computing and Quantum Information Science"
+    },
+    "cross_listed": [
+      "CSC 747"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 42,
+      "exact": 32,
+      "approximate": 10,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 647",
+    "Grad_equivalent": [
+      "CSC 747"
+    ],
+    "course_title": "Introduction to Quantum Computing and Quantum Information Science",
+    "term": "Spring 2024",
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 415"
+        ],
+        "recommended": false,
+        "evidence": "CSC 415* and MATH 325* with a grade of C or better"
+      },
+      {
+        "any_of": [
+          "MATH 325"
+        ],
+        "recommended": false,
+        "evidence": "CSC 415* and MATH 325* with a grade of C or better"
+      },
+      {
+        "any_of": [
+          "CSC 308"
+        ],
+        "recommended": true,
+        "evidence": "CSC 308, CSC 309, and CSC 656 recommended"
+      },
+      {
+        "any_of": [
+          "CSC 309"
+        ],
+        "recommended": true,
+        "evidence": "CSC 308, CSC 309, and CSC 656 recommended"
+      },
+      {
+        "any_of": [
+          "CSC 656"
+        ],
+        "recommended": true,
+        "evidence": "CSC 308, CSC 309, and CSC 656 recommended"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Upper-division standing",
+        "evidence": "Upper-division standing; CSC 415* and MATH 325* with a grade of C or better"
+      },
+      {
+        "text": "GPA of 3.0 or higher",
+        "evidence": "GPA of 3.0 or higher; or permission of the instructor"
+      },
+      {
+        "text": "Permission of the instructor",
+        "evidence": "or permission of the instructor"
+      },
+      {
+        "text": "Graduate standing",
+        "evidence": "Prerequisite for CSC 747: Graduate standing or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Introduction to quantum computing and quantum information science.",
+      "Comparison of classical and quantum computing architectures and organization.",
+      "Quantum algorithm design and implementation on circuit-based and annealing quantum platforms.",
+      "Program execution and performance analysis on quantum platform simulators and actual quantum hardware, subject to availability.",
+      "Survey of research topics in quantum computing ranging from algorithms (e.g., Grover's Search) and their application to problems in quantum cryptography, quantum machine learning, and hybrid classical/quantum algorithms."
+    ],
+    "topics": [
+      "Classical and quantum computing architectures and organization",
+      "Quantum algorithm design",
+      "Implementation on circuit-based quantum platforms",
+      "Implementation on annealing quantum platforms",
+      "Program execution on quantum simulators",
+      "Performance analysis on quantum hardware",
+      "Grover's Search algorithm",
+      "Quantum cryptography",
+      "Quantum machine learning",
+      "Hybrid classical/quantum algorithms"
+    ],
+    "skills": [
+      {
+        "skill": "Quantum computing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduction to quantum computing and quantum information science.",
+        "reason": null
+      },
+      {
+        "skill": "Quantum algorithm design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Quantum algorithm design and implementation on circuit-based and annealing quantum platforms.",
+        "reason": null
+      },
+      {
+        "skill": "Quantum hardware programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Program execution and performance analysis on quantum platform simulators and actual quantum hardware, subject to availability.",
+        "reason": null
+      },
+      {
+        "skill": "Grover's Search algorithm",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Survey of research topics in quantum computing ranging from algorithms (e.g., Grover's Search)",
+        "reason": null
+      },
+      {
+        "skill": "Quantum cryptography",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "their application to problems in quantum cryptography",
+        "reason": null
+      },
+      {
+        "skill": "Quantum machine learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "their application to problems in quantum machine learning",
+        "reason": null
+      },
+      {
+        "skill": "Hybrid classical/quantum algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "their application to problems in ... hybrid classical/quantum algorithms",
+        "reason": null
+      },
+      {
+        "skill": "Python",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Anaconda Python/Jupyter development environment (free) (Required)",
+        "reason": null
+      },
+      {
+        "skill": "Jupyter",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Anaconda Python/Jupyter development environment (free) (Required)",
+        "reason": null
+      },
+      {
+        "skill": "Qiskit",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Qiskit (free) (Required)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 647/747",
+      "course_title": "Introduction to Quantum Computing and Quantum Information Science"
+    }
+  }
+}

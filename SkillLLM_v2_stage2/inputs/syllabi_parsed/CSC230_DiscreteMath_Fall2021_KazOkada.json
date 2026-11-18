@@ -1,0 +1,331 @@
+{
+  "file": "CSC230_DiscreteMath_Fall2021_KazOkada",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 230",
+    "Grad_equivalent": [],
+    "course_title": "Discrete Mathematical Structures for Computer Science",
+    "term": "Fall 2021",
+    "instructor": "Dr. Kazunori Okada",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "CSC 210 (Programming) with a grade of C or better"
+      },
+      {
+        "any_of": [
+          "MATH 227"
+        ],
+        "recommended": false,
+        "evidence": "MATH 227 (Calculus II) with a grade of C or better or must be taken concurrently"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Concurrent registration to CSC 210 is not allowed",
+        "evidence": "Concurrent registration to CSC 210 is not allowed"
+      }
+    ],
+    "learning_outcomes": [
+      "Introduce students to ideas and techniques from discrete mathematics that are widely used in computer science."
+    ],
+    "topics": [
+      "sets",
+      "logic",
+      "proof techniques",
+      "induction procedures",
+      "relations",
+      "functions",
+      "graphs",
+      "trees",
+      "combinatorics",
+      "recursive procedures"
+    ],
+    "skills": [
+      {
+        "skill": "set theory",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "formal logic",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "proof techniques",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "induction procedures",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "relations",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "functions",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "graphs",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "trees",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "combinatorics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "recursive procedures",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 230",
+      "course_title": "Discrete Mathematical Structures for Computer Science"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "not_found",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 28,
+      "exact": 28,
+      "approximate": 0,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 230",
+    "Grad_equivalent": [],
+    "course_title": "Discrete Mathematical Structures for Computer Science",
+    "term": "Fall 2021",
+    "instructor": "Dr. Kazunori Okada",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "CSC 210 (Programming) with a grade of C or better"
+      },
+      {
+        "any_of": [
+          "MATH 227"
+        ],
+        "recommended": false,
+        "evidence": "MATH 227 (Calculus II) with a grade of C or better or must be taken concurrently"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Concurrent registration to CSC 210 is not allowed",
+        "evidence": "Concurrent registration to CSC 210 is not allowed"
+      }
+    ],
+    "learning_outcomes": [
+      "Introduce students to ideas and techniques from discrete mathematics that are widely used in computer science."
+    ],
+    "topics": [
+      "sets",
+      "logic",
+      "proof techniques",
+      "induction procedures",
+      "relations",
+      "functions",
+      "graphs",
+      "trees",
+      "combinatorics",
+      "recursive procedures"
+    ],
+    "skills": [
+      {
+        "skill": "set theory",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "formal logic",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "proof techniques",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "induction procedures",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "relations",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "functions",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "graphs",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "trees",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "combinatorics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      },
+      {
+        "skill": "recursive procedures",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "We study topics in such areas as sets, logic, proof techniques, induction procedures, relations, functions, graphs, trees, combinatorics, and recursive procedures.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 230",
+      "course_title": "Discrete Mathematical Structures for Computer Science"
+    }
+  }
+}

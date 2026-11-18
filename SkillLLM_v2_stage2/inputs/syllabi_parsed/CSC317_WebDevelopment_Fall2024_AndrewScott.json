@@ -1,0 +1,314 @@
+{
+  "file": "CSC317_WebDevelopment_Fall2024_AndrewScott",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 317",
+    "Grad_equivalent": [],
+    "course_title": "Introduction to Web Software Development",
+    "term": "Fall 2024",
+    "instructor": "Andrew T. Scott",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 220 or permission of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "permission of the instructor",
+        "evidence": "Prerequisite: CSC 220 or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Understand the basics of web application development",
+      "Gain experience with Linux, Command Line, and Git and Version Control",
+      "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+      "Be able to define client-server architecture model and how it pertains to Web Development",
+      "Develop and run multiple individual website projects",
+      "Collaborate with a team on a medium-sized web application project"
+    ],
+    "topics": [
+      "UNIX",
+      "creating web pages including reading and processing user input submitted through web pages",
+      "client side programming",
+      "server side programming",
+      "connecting a web page to a database",
+      "building an e-commerce site or Internet Application"
+    ],
+    "skills": [
+      {
+        "skill": "Linux",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with Linux, Command Line, and Git and Version Control",
+        "reason": null
+      },
+      {
+        "skill": "Command Line",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with Linux, Command Line, and Git and Version Control",
+        "reason": null
+      },
+      {
+        "skill": "Git",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with Linux, Command Line, and Git and Version Control",
+        "reason": null
+      },
+      {
+        "skill": "Version Control",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with Linux, Command Line, and Git and Version Control",
+        "reason": null
+      },
+      {
+        "skill": "HTML5",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "CSS",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "JavaScript",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "Node.js",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "MySQL",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "Client-server architecture",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Be able to define client-server architecture model and how it pertains to Web Development",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 0317",
+      "course_title": "Introduction to Web Software Development"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 27,
+      "exact": 26,
+      "approximate": 1,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 0317",
+    "Grad_equivalent": [],
+    "course_title": "Introduction to Web Software Development",
+    "term": "Fall 2024",
+    "instructor": "Andrew T. Scott",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 220 or permission of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "permission of the instructor",
+        "evidence": "Prerequisite: CSC 220 or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Understand the basics of web application development",
+      "Gain experience with Linux, Command Line, and Git and Version Control",
+      "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+      "Be able to define client-server architecture model and how it pertains to Web Development",
+      "Develop and run multiple individual website projects",
+      "Collaborate with a team on a medium-sized web application project"
+    ],
+    "topics": [
+      "UNIX",
+      "creating web pages including reading and processing user input submitted through web pages",
+      "client side programming",
+      "server side programming",
+      "connecting a web page to a database",
+      "building an e-commerce site or Internet Application"
+    ],
+    "skills": [
+      {
+        "skill": "Linux",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with Linux, Command Line, and Git and Version Control",
+        "reason": null
+      },
+      {
+        "skill": "Command Line",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with Linux, Command Line, and Git and Version Control",
+        "reason": null
+      },
+      {
+        "skill": "Git",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with Linux, Command Line, and Git and Version Control",
+        "reason": null
+      },
+      {
+        "skill": "Version Control",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with Linux, Command Line, and Git and Version Control",
+        "reason": null
+      },
+      {
+        "skill": "HTML5",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "CSS",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "JavaScript",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "Node.js",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "MySQL",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Gain experience with modern web technologies: HTML5, CSS, Javascript, Node, MySQL",
+        "reason": null
+      },
+      {
+        "skill": "Client-server architecture",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Be able to define client-server architecture model and how it pertains to Web Development",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 0317",
+      "course_title": "Introduction to Web Software Development"
+    }
+  }
+}

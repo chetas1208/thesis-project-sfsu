@@ -1,0 +1,433 @@
+{
+  "file": "CSC631_MultiplayerOnlineGameDesignAndDevelopment_Spring2023_IlmiYoon.docx",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 631",
+    "Grad_equivalent": [
+      "CSC 831"
+    ],
+    "course_title": "Multiplayer Online Game Design and Development",
+    "term": "Spring 2023",
+    "instructor": "Dr. Ilmi Yoon",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in CSC 413"
+      }
+    ],
+    "other_requirements": [],
+    "learning_outcomes": [],
+    "topics": [
+      "real-time game engine (Unity3D) programming (Foundation of graphics and Game engine programming)",
+      "network programming for multiplayer architecture (Game client & Game Server, Protocol Design)",
+      "Software Engineering related issues on game development",
+      "Unity engine basics",
+      "team-based multiplayer game development",
+      "game design planning",
+      "graphics pipeline",
+      "shading and texture",
+      "game server and network programming",
+      "character animation",
+      "game AI",
+      "VR, AR",
+      "kinematics, IK",
+      "GPU understanding",
+      "special effects",
+      "graphics and deep learning (Generative technologies)",
+      "integration problem discussion",
+      "test run & troubleshooting"
+    ],
+    "skills": [
+      {
+        "skill": "Unity3D",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "During the first month, you will be required to complete a few tutorial projects to learn the basics of Unity engine and network programming.",
+        "reason": null
+      },
+      {
+        "skill": "network programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Topics include ... network programming for multiplayer architecture (Game client & Game Server, Protocol Design)",
+        "reason": null
+      },
+      {
+        "skill": "game engine programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Topics include real-time game engine (Unity3D) programming (Foundation of graphics and Game engine programming)",
+        "reason": null
+      },
+      {
+        "skill": "graphics pipeline",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Graphics Pipeline for better understanding of Game Engine (All the Terms!)",
+        "reason": null
+      },
+      {
+        "skill": "shading and texture",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Shading and Texture",
+        "reason": null
+      },
+      {
+        "skill": "game server development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Game Server and Network Programming",
+        "reason": null
+      },
+      {
+        "skill": "character animation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Character Animation (Denzill presentation)",
+        "reason": null
+      },
+      {
+        "skill": "game AI",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Game AI",
+        "reason": null
+      },
+      {
+        "skill": "virtual reality (VR)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "VR, AR",
+        "reason": null
+      },
+      {
+        "skill": "augmented reality (AR)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "VR, AR",
+        "reason": null
+      },
+      {
+        "skill": "kinematics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Kinematics, IK",
+        "reason": null
+      },
+      {
+        "skill": "GPU understanding",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Understanding GPU",
+        "reason": null
+      },
+      {
+        "skill": "special effects",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Special Effects (Denzill Presentations)",
+        "reason": null
+      },
+      {
+        "skill": "deep learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Graphics and Deep Learning (Generative technologies)",
+        "reason": null
+      },
+      {
+        "skill": "software engineering",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Software Engineering related issues on game development",
+        "reason": null
+      },
+      {
+        "skill": "Git",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "HW2 & 3 instruction (Git + Unity : Denzill presentation)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 631/831",
+      "course_title": "Multiplayer Online Game Design and Development"
+    },
+    "cross_listed": [
+      "CSC 831"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [],
+    "learning_outcomes": [],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 39,
+      "exact": 35,
+      "approximate": 4,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 631",
+    "Grad_equivalent": [
+      "CSC 831"
+    ],
+    "course_title": "Multiplayer Online Game Design and Development",
+    "term": "Spring 2023",
+    "instructor": "Dr. Ilmi Yoon",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in CSC 413"
+      }
+    ],
+    "other_requirements": [],
+    "learning_outcomes": [],
+    "topics": [
+      "real-time game engine (Unity3D) programming (Foundation of graphics and Game engine programming)",
+      "network programming for multiplayer architecture (Game client & Game Server, Protocol Design)",
+      "Software Engineering related issues on game development",
+      "Unity engine basics",
+      "team-based multiplayer game development",
+      "game design planning",
+      "graphics pipeline",
+      "shading and texture",
+      "game server and network programming",
+      "character animation",
+      "game AI",
+      "VR, AR",
+      "kinematics, IK",
+      "GPU understanding",
+      "special effects",
+      "graphics and deep learning (Generative technologies)",
+      "integration problem discussion",
+      "test run & troubleshooting"
+    ],
+    "skills": [
+      {
+        "skill": "Unity3D",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "During the first month, you will be required to complete a few tutorial projects to learn the basics of Unity engine and network programming.",
+        "reason": null
+      },
+      {
+        "skill": "network programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Topics include ... network programming for multiplayer architecture (Game client & Game Server, Protocol Design)",
+        "reason": null
+      },
+      {
+        "skill": "game engine programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Topics include real-time game engine (Unity3D) programming (Foundation of graphics and Game engine programming)",
+        "reason": null
+      },
+      {
+        "skill": "graphics pipeline",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Graphics Pipeline for better understanding of Game Engine (All the Terms!)",
+        "reason": null
+      },
+      {
+        "skill": "shading and texture",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Shading and Texture",
+        "reason": null
+      },
+      {
+        "skill": "game server development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Game Server and Network Programming",
+        "reason": null
+      },
+      {
+        "skill": "character animation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Character Animation (Denzill presentation)",
+        "reason": null
+      },
+      {
+        "skill": "game AI",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Game AI",
+        "reason": null
+      },
+      {
+        "skill": "virtual reality (VR)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "VR, AR",
+        "reason": null
+      },
+      {
+        "skill": "augmented reality (AR)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "VR, AR",
+        "reason": null
+      },
+      {
+        "skill": "kinematics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Kinematics, IK",
+        "reason": null
+      },
+      {
+        "skill": "GPU understanding",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Understanding GPU",
+        "reason": null
+      },
+      {
+        "skill": "special effects",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Special Effects (Denzill Presentations)",
+        "reason": null
+      },
+      {
+        "skill": "deep learning",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Graphics and Deep Learning (Generative technologies)",
+        "reason": null
+      },
+      {
+        "skill": "software engineering",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Software Engineering related issues on game development",
+        "reason": null
+      },
+      {
+        "skill": "Git",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "HW2 & 3 instruction (Git + Unity : Denzill presentation)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 631/831",
+      "course_title": "Multiplayer Online Game Design and Development"
+    }
+  }
+}

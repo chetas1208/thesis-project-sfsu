@@ -1,0 +1,334 @@
+{
+  "file": "CSC600-ProgrammingParadigmsAndLanguages_Spring2025_JozoDujmovic",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 600",
+    "Grad_equivalent": [],
+    "course_title": "PROGRAMMING PARADIGMS AND LANGUAGES",
+    "term": null,
+    "instructor": "Dr. Jozo Dujmović",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Grades of C or better in CSc 413 and CSc 510."
+      },
+      {
+        "any_of": [
+          "CSC 510"
+        ],
+        "recommended": false,
+        "evidence": "Grades of C or better in CSc 413 and CSc 510."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Grades of C or better in CSc 413 and CSc 510."
+      }
+    ],
+    "learning_outcomes": [
+      "Education in software development.",
+      "Learn fundamental programing paradigms.",
+      "Develop respectful and tolerant approach to various programming languages.",
+      "Learn to always recognize and support components of software quality.",
+      "Develop critical thinking in the software area.",
+      "Prepare for a long professional life in a permanently changing computational problem-solving area.",
+      "After completing CSc 600 students can write in their resumes “I am familiar with SW development using procedural, logic, functional and object-oriented programming paradigms.”"
+    ],
+    "topics": [
+      "Syntax and semantics of programming languages. BNF, EBNF, syntax diagrams, and parenthetic notation. Syntax errors and semantic errors. Interaction of syntax and semantics.",
+      "Procedural programming paradigm. Basic data types and data formats. Concepts of imperative languages. Procedural vs. nonprocedural programming style. Study of software performance problems. Avoiding brute force programs. Program performance measurement. Efficient use of C/C++.",
+      "Logic programming paradigm: Concepts of declarative programming. Logic programming and nonprocedural problem-solving using Prolog. Facts, rules, and the operation of Prolog inference engine.",
+      "Functional programming paradigm. Concepts of first-class objects. Functional programming style and recursive problem-solving using Scheme or Racket. Anonymous functions and functions that return functions.",
+      "Object oriented programming paradigm. Concepts of multiparadigm languages. OO programming and problem-solving using Ruby. Design and implementation of interpreters and virtual machines (optional)."
+    ],
+    "skills": [
+      {
+        "skill": "BNF",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Syntax and semantics of programming languages. BNF, EBNF, syntax diagrams, and parenthetic notation.",
+        "reason": null
+      },
+      {
+        "skill": "EBNF",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Syntax and semantics of programming languages. BNF, EBNF, syntax diagrams, and parenthetic notation.",
+        "reason": null
+      },
+      {
+        "skill": "syntax diagrams",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Syntax and semantics of programming languages. BNF, EBNF, syntax diagrams, and parenthetic notation.",
+        "reason": null
+      },
+      {
+        "skill": "C",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Efficient use of C/C++.",
+        "reason": null
+      },
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Efficient use of C/C++.",
+        "reason": null
+      },
+      {
+        "skill": "Prolog",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Logic programming and nonprocedural problem-solving using Prolog.",
+        "reason": null
+      },
+      {
+        "skill": "Scheme",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Functional programming style and recursive problem-solving using Scheme or Racket.",
+        "reason": null
+      },
+      {
+        "skill": "Racket",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Functional programming style and recursive problem-solving using Scheme or Racket.",
+        "reason": null
+      },
+      {
+        "skill": "Ruby",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "OO programming and problem-solving using Ruby.",
+        "reason": null
+      },
+      {
+        "skill": "programming paradigms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "I am familiar with SW development using procedural, logic, functional and object-oriented programming paradigms.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSc 600",
+      "course_title": "PROGRAMMING PARADIGMS AND LANGUAGES"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 29,
+      "exact": 25,
+      "approximate": 4,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSc 600",
+    "Grad_equivalent": [],
+    "course_title": "PROGRAMMING PARADIGMS AND LANGUAGES",
+    "term": null,
+    "instructor": "Dr. Jozo Dujmović",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSc 413"
+        ],
+        "recommended": false,
+        "evidence": "Grades of C or better in CSc 413 and CSc 510."
+      },
+      {
+        "any_of": [
+          "CSc 510"
+        ],
+        "recommended": false,
+        "evidence": "Grades of C or better in CSc 413 and CSc 510."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Grades of C or better in CSc 413 and CSc 510."
+      }
+    ],
+    "learning_outcomes": [
+      "Education in software development.",
+      "Learn fundamental programing paradigms.",
+      "Develop respectful and tolerant approach to various programming languages.",
+      "Learn to always recognize and support components of software quality.",
+      "Develop critical thinking in the software area.",
+      "Prepare for a long professional life in a permanently changing computational problem-solving area.",
+      "After completing CSc 600 students can write in their resumes “I am familiar with SW development using procedural, logic, functional and object-oriented programming paradigms.”"
+    ],
+    "topics": [
+      "Syntax and semantics of programming languages. BNF, EBNF, syntax diagrams, and parenthetic notation. Syntax errors and semantic errors. Interaction of syntax and semantics.",
+      "Procedural programming paradigm. Basic data types and data formats. Concepts of imperative languages. Procedural vs. nonprocedural programming style. Study of software performance problems. Avoiding brute force programs. Program performance measurement. Efficient use of C/C++.",
+      "Logic programming paradigm: Concepts of declarative programming. Logic programming and nonprocedural problem-solving using Prolog. Facts, rules, and the operation of Prolog inference engine.",
+      "Functional programming paradigm. Concepts of first-class objects. Functional programming style and recursive problem-solving using Scheme or Racket. Anonymous functions and functions that return functions.",
+      "Object oriented programming paradigm. Concepts of multiparadigm languages. OO programming and problem-solving using Ruby. Design and implementation of interpreters and virtual machines (optional)."
+    ],
+    "skills": [
+      {
+        "skill": "BNF",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Syntax and semantics of programming languages. BNF, EBNF, syntax diagrams, and parenthetic notation.",
+        "reason": null
+      },
+      {
+        "skill": "EBNF",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Syntax and semantics of programming languages. BNF, EBNF, syntax diagrams, and parenthetic notation.",
+        "reason": null
+      },
+      {
+        "skill": "syntax diagrams",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Syntax and semantics of programming languages. BNF, EBNF, syntax diagrams, and parenthetic notation.",
+        "reason": null
+      },
+      {
+        "skill": "C",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Efficient use of C/C++.",
+        "reason": null
+      },
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Efficient use of C/C++.",
+        "reason": null
+      },
+      {
+        "skill": "Prolog",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Logic programming and nonprocedural problem-solving using Prolog.",
+        "reason": null
+      },
+      {
+        "skill": "Scheme",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Functional programming style and recursive problem-solving using Scheme or Racket.",
+        "reason": null
+      },
+      {
+        "skill": "Racket",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Functional programming style and recursive problem-solving using Scheme or Racket.",
+        "reason": null
+      },
+      {
+        "skill": "Ruby",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "OO programming and problem-solving using Ruby.",
+        "reason": null
+      },
+      {
+        "skill": "programming paradigms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "I am familiar with SW development using procedural, logic, functional and object-oriented programming paradigms.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSc 600",
+      "course_title": "PROGRAMMING PARADIGMS AND LANGUAGES"
+    }
+  }
+}

@@ -1,0 +1,528 @@
+{
+  "file": "CSC849_SearchEngines_Spring2019_AnaghaKulkarni",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 849",
+    "Grad_equivalent": [],
+    "course_title": "Search Engines",
+    "term": "Spring 2019",
+    "instructor": "Dr. Anagha Kulkarni",
+    "prerequisites": [],
+    "other_requirements": [
+      {
+        "text": "Consent of the instructor",
+        "evidence": "Prerequisite: Consent of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "have a thorough understanding of the basic concepts of text processing, and information retrieval.",
+      "have a good grasp of the internals of a modern search engine.",
+      "have a broad understanding of the applications of IR.",
+      "have the skillset to develop or extend a complex search system."
+    ],
+    "topics": [
+      "Boolean Retrieval, Inverted Index, Boolean Query Evaluation",
+      "Common Text Processing Operations",
+      "Positional Indexes",
+      "Skip Lists/Pointers",
+      "Index construction and compression",
+      "Vector Space Model",
+      "Probabilistic IR",
+      "Language Models for IR",
+      "Evaluation in IR",
+      "Relevance feedback, Query expansion",
+      "Text Classification",
+      "Clustering",
+      "Web Search & Link Analysis",
+      "Federated Search",
+      "Applications of IR: BioInformatics, Legal IR, Medical Decision Support Systems"
+    ],
+    "skills": [
+      {
+        "skill": "text processing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The objectives of this course are: 1. Introduce the students to the fundamental concepts of text processing and information retrieval.",
+        "reason": null
+      },
+      {
+        "skill": "information retrieval",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The objectives of this course are: 1. Introduce the students to the fundamental concepts of text processing and information retrieval.",
+        "reason": null
+      },
+      {
+        "skill": "Boolean retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 1: Boolean Retrieval, Inverted Index, Boolean Query Evaluation.",
+        "reason": null
+      },
+      {
+        "skill": "inverted index",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 1: Boolean Retrieval, Inverted Index, Boolean Query Evaluation.",
+        "reason": null
+      },
+      {
+        "skill": "positional indexes",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 2: Positional Indexes.",
+        "reason": null
+      },
+      {
+        "skill": "skip lists",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 2: Skip Lists/Pointers.",
+        "reason": null
+      },
+      {
+        "skill": "index construction",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 3: Index construction and compression.",
+        "reason": null
+      },
+      {
+        "skill": "index compression",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 3: Index construction and compression.",
+        "reason": null
+      },
+      {
+        "skill": "vector space model",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 4: Vector Space Model.",
+        "reason": null
+      },
+      {
+        "skill": "probabilistic information retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 5: Probabilistic IR.",
+        "reason": null
+      },
+      {
+        "skill": "language models for IR",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 6: Language Models for IR.",
+        "reason": null
+      },
+      {
+        "skill": "evaluation in information retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 7: Evaluation in IR.",
+        "reason": null
+      },
+      {
+        "skill": "relevance feedback",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 8: Relevance feedback, Query expansion.",
+        "reason": null
+      },
+      {
+        "skill": "query expansion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 8: Relevance feedback, Query expansion.",
+        "reason": null
+      },
+      {
+        "skill": "text classification",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 9: Text Classification.",
+        "reason": null
+      },
+      {
+        "skill": "clustering",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 10: Clustering.",
+        "reason": null
+      },
+      {
+        "skill": "web search",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 11: Web Search & Link Analysis.",
+        "reason": null
+      },
+      {
+        "skill": "link analysis",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 11: Web Search & Link Analysis.",
+        "reason": null
+      },
+      {
+        "skill": "federated search",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 12: Federated Search.",
+        "reason": null
+      },
+      {
+        "skill": "bioinformatics information retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 13: Applications of IR: BioInformatics, Legal IR, Medical Decision Support Systems.",
+        "reason": null
+      },
+      {
+        "skill": "legal information retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 13: Applications of IR: BioInformatics, Legal IR, Medical Decision Support Systems.",
+        "reason": null
+      },
+      {
+        "skill": "medical decision support systems",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 13: Applications of IR: BioInformatics, Legal IR, Medical Decision Support Systems.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 849",
+      "course_title": "Search Engines"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 44,
+      "exact": 23,
+      "approximate": 21,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 849",
+    "Grad_equivalent": [],
+    "course_title": "Search Engines",
+    "term": "Spring 2019",
+    "instructor": "Dr. Anagha Kulkarni",
+    "prerequisites": [],
+    "other_requirements": [
+      {
+        "text": "Consent of the instructor",
+        "evidence": "Prerequisite: Consent of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "have a thorough understanding of the basic concepts of text processing, and information retrieval.",
+      "have a good grasp of the internals of a modern search engine.",
+      "have a broad understanding of the applications of IR.",
+      "have the skillset to develop or extend a complex search system."
+    ],
+    "topics": [
+      "Boolean Retrieval, Inverted Index, Boolean Query Evaluation",
+      "Common Text Processing Operations",
+      "Positional Indexes",
+      "Skip Lists/Pointers",
+      "Index construction and compression",
+      "Vector Space Model",
+      "Probabilistic IR",
+      "Language Models for IR",
+      "Evaluation in IR",
+      "Relevance feedback, Query expansion",
+      "Text Classification",
+      "Clustering",
+      "Web Search & Link Analysis",
+      "Federated Search",
+      "Applications of IR: BioInformatics, Legal IR, Medical Decision Support Systems"
+    ],
+    "skills": [
+      {
+        "skill": "text processing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The objectives of this course are: 1. Introduce the students to the fundamental concepts of text processing and information retrieval.",
+        "reason": null
+      },
+      {
+        "skill": "information retrieval",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The objectives of this course are: 1. Introduce the students to the fundamental concepts of text processing and information retrieval.",
+        "reason": null
+      },
+      {
+        "skill": "Boolean retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 1: Boolean Retrieval, Inverted Index, Boolean Query Evaluation.",
+        "reason": null
+      },
+      {
+        "skill": "inverted index",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 1: Boolean Retrieval, Inverted Index, Boolean Query Evaluation.",
+        "reason": null
+      },
+      {
+        "skill": "positional indexes",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 2: Positional Indexes.",
+        "reason": null
+      },
+      {
+        "skill": "skip lists",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 2: Skip Lists/Pointers.",
+        "reason": null
+      },
+      {
+        "skill": "index construction",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 3: Index construction and compression.",
+        "reason": null
+      },
+      {
+        "skill": "index compression",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 3: Index construction and compression.",
+        "reason": null
+      },
+      {
+        "skill": "vector space model",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 4: Vector Space Model.",
+        "reason": null
+      },
+      {
+        "skill": "probabilistic information retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 5: Probabilistic IR.",
+        "reason": null
+      },
+      {
+        "skill": "language models for IR",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 6: Language Models for IR.",
+        "reason": null
+      },
+      {
+        "skill": "evaluation in information retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 7: Evaluation in IR.",
+        "reason": null
+      },
+      {
+        "skill": "relevance feedback",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 8: Relevance feedback, Query expansion.",
+        "reason": null
+      },
+      {
+        "skill": "query expansion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 8: Relevance feedback, Query expansion.",
+        "reason": null
+      },
+      {
+        "skill": "text classification",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 9: Text Classification.",
+        "reason": null
+      },
+      {
+        "skill": "clustering",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 10: Clustering.",
+        "reason": null
+      },
+      {
+        "skill": "web search",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 11: Web Search & Link Analysis.",
+        "reason": null
+      },
+      {
+        "skill": "link analysis",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 11: Web Search & Link Analysis.",
+        "reason": null
+      },
+      {
+        "skill": "federated search",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 12: Federated Search.",
+        "reason": null
+      },
+      {
+        "skill": "bioinformatics information retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 13: Applications of IR: BioInformatics, Legal IR, Medical Decision Support Systems.",
+        "reason": null
+      },
+      {
+        "skill": "legal information retrieval",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 13: Applications of IR: BioInformatics, Legal IR, Medical Decision Support Systems.",
+        "reason": null
+      },
+      {
+        "skill": "medical decision support systems",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 13: Applications of IR: BioInformatics, Legal IR, Medical Decision Support Systems.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 849",
+      "course_title": "Search Engines"
+    }
+  }
+}

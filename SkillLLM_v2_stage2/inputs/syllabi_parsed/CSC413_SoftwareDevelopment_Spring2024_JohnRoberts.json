@@ -1,0 +1,213 @@
+{
+  "file": "CSC413_SoftwareDevelopment_Spring2024_JohnRoberts",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 413",
+    "Grad_equivalent": [],
+    "course_title": "SOFTWARE DEVELOPMENT",
+    "term": "Fall 2024",
+    "instructor": "John Roberts",
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [],
+    "topics": [
+      "Introduction and Data Structures",
+      "GitHub Fundamentals",
+      "Compilers, Lexical Analysis, and the X programming language",
+      "Designing and writing the Lexer",
+      "Grammars and Parsing",
+      "Writing the X Parser",
+      "Parsing expressions",
+      "Code generation",
+      "Interpreting"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 1 (413) - Intro, Java Review and TDD.pdf",
+        "reason": null
+      },
+      {
+        "skill": "GitHub",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "GitHub Fundamentals",
+        "reason": null
+      },
+      {
+        "skill": "Compiler design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Compilers, Lexical Analysis, and the X programming language",
+        "reason": null
+      },
+      {
+        "skill": "Lexical analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Designing and writing the Lexer",
+        "reason": null
+      },
+      {
+        "skill": "Parsing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Grammars and Parsing",
+        "reason": null
+      },
+      {
+        "skill": "Code generation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Codegen, tentative",
+        "reason": null
+      },
+      {
+        "skill": "Interpreting",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Interpreting, tentative",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 413",
+      "course_title": "SOFTWARE DEVELOPMENT"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [],
+    "topics": [
+      "approximate",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "approximate",
+      "exact",
+      "not_found",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 18,
+      "exact": 13,
+      "approximate": 4,
+      "not_found": 1
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 413",
+    "Grad_equivalent": [],
+    "course_title": "SOFTWARE DEVELOPMENT",
+    "term": "Fall 2024",
+    "instructor": "John Roberts",
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [],
+    "topics": [
+      "Introduction and Data Structures",
+      "GitHub Fundamentals",
+      "Compilers, Lexical Analysis, and the X programming language",
+      "Designing and writing the Lexer",
+      "Grammars and Parsing",
+      "Writing the X Parser",
+      "Parsing expressions",
+      "Code generation",
+      "Interpreting"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 1 (413) - Intro, Java Review and TDD.pdf",
+        "reason": null
+      },
+      {
+        "skill": "GitHub",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "GitHub Fundamentals",
+        "reason": null
+      },
+      {
+        "skill": "Compiler design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Compilers, Lexical Analysis, and the X programming language",
+        "reason": null
+      },
+      {
+        "skill": "Lexical analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Designing and writing the Lexer",
+        "reason": null
+      },
+      {
+        "skill": "Parsing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Grammars and Parsing",
+        "reason": null
+      },
+      {
+        "skill": "Code generation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Codegen, tentative",
+        "reason": null
+      },
+      {
+        "skill": "Interpreting",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Interpreting, tentative",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 413",
+      "course_title": "SOFTWARE DEVELOPMENT"
+    }
+  }
+}

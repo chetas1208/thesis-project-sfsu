@@ -1,0 +1,274 @@
+{
+  "file": "CSC510_AnalysisOfAlgorithms_Spring2025_TimothySun",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 510",
+    "Grad_equivalent": [],
+    "course_title": "Analysis of Algorithms I",
+    "term": "Spring 2025",
+    "instructor": "Prof. Timothy Sun",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 340"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in CSC 340"
+      },
+      {
+        "any_of": [
+          "MATH 324"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in ... MATH 324"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "A grade of C or better in CSC 340 and MATH 324."
+      }
+    ],
+    "learning_outcomes": [
+      "learn about major design methodologies for algorithms",
+      "apply them to designing algorithms for solving new problems",
+      "proving correctness and determining runtime of algorithms",
+      "algorithms for solving classic problems in computer science"
+    ],
+    "topics": [
+      "Time and space complexity",
+      "Dynamic programming",
+      "Recursion, divide and conquer",
+      "Greedy algorithms",
+      "Backtracking",
+      "Graph algorithms"
+    ],
+    "skills": [
+      {
+        "skill": "Time and space complexity",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Time and space complexity",
+        "reason": null
+      },
+      {
+        "skill": "Dynamic programming",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Dynamic programming",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Recursion, divide and conquer",
+        "reason": null
+      },
+      {
+        "skill": "Divide and conquer",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Recursion, divide and conquer",
+        "reason": null
+      },
+      {
+        "skill": "Greedy algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Greedy algorithms",
+        "reason": null
+      },
+      {
+        "skill": "Backtracking",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Backtracking",
+        "reason": null
+      },
+      {
+        "skill": "Graph algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Graph algorithms",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 510",
+      "course_title": "Analysis of Algorithms I"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "approximate"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "approximate",
+      "approximate",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 24,
+      "exact": 14,
+      "approximate": 10,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 510",
+    "Grad_equivalent": [],
+    "course_title": "Analysis of Algorithms I",
+    "term": "Spring 2025",
+    "instructor": "Prof. Timothy Sun",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 340"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in CSC 340"
+      },
+      {
+        "any_of": [
+          "MATH 324"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in ... MATH 324"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "A grade of C or better in CSC 340 and MATH 324."
+      }
+    ],
+    "learning_outcomes": [
+      "learn about major design methodologies for algorithms",
+      "apply them to designing algorithms for solving new problems",
+      "proving correctness and determining runtime of algorithms",
+      "algorithms for solving classic problems in computer science"
+    ],
+    "topics": [
+      "Time and space complexity",
+      "Dynamic programming",
+      "Recursion, divide and conquer",
+      "Greedy algorithms",
+      "Backtracking",
+      "Graph algorithms"
+    ],
+    "skills": [
+      {
+        "skill": "Time and space complexity",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Time and space complexity",
+        "reason": null
+      },
+      {
+        "skill": "Dynamic programming",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Dynamic programming",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Recursion, divide and conquer",
+        "reason": null
+      },
+      {
+        "skill": "Divide and conquer",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Recursion, divide and conquer",
+        "reason": null
+      },
+      {
+        "skill": "Greedy algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Greedy algorithms",
+        "reason": null
+      },
+      {
+        "skill": "Backtracking",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Backtracking",
+        "reason": null
+      },
+      {
+        "skill": "Graph algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: Graph algorithms",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 510",
+      "course_title": "Analysis of Algorithms I"
+    }
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "file": "CSC642-842_Human-Computer Interaction_Spring2025_ZainabAgha",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 642",
+    "Grad_equivalent": [
+      "CSC 842"
+    ],
+    "course_title": "Human-Computer Interaction",
+    "term": "Spring 2025",
+    "instructor": "Dr. Zainab Agha",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Graduate standing",
+        "evidence": "Prerequisite for CSC 842: Graduate standing."
+      },
+      {
+        "text": "Consent of the instructor",
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      },
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Understand the basics of the field of Human-Computer Interaction (HCI)",
+      "Understand and apply design principles to a system, component, or process from a user-centered perspective.",
+      "Apply user-centered design and research methods to conduct user studies and evaluate a product.",
+      "Develop and iterate upon user-centered design-based solutions to real-world technological problems.",
+      "Understand and be able to apply industry standard methods for evaluation of usability.",
+      "Complete a semester long design project in small team setting; write a report and present it, as well as provide constructive peer feedback."
+    ],
+    "topics": [
+      "Introduction to Human-Computer Interaction",
+      "Course Overview",
+      "Introductions",
+      "HCI Principles",
+      "Feedback Cycles",
+      "Identifying and Defining a User Problem",
+      "User Needs and Requirements",
+      "Research Methods: Interviews/Focus Groups/Card Sorting",
+      "Research Methods: Participatory Design, User Personas, User Tasks, Storyboards",
+      "Prototyping Tools and Techniques",
+      "Surveys, Longitudinal Methods, and Data Analysis Approaches",
+      "HCI Evaluations Methods",
+      "Ethics of Human Subjects Research",
+      "Reporting Findings and Peer Review",
+      "HCI Applications",
+      "Project Discussions",
+      "In-Class Usability Testing",
+      "HCI Applications: Emerging Topics in HCI Communities"
+    ],
+    "skills": [
+      {
+        "skill": "User-centered design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Apply user-centered design and research methods to conduct user studies and evaluate a product.",
+        "reason": null
+      },
+      {
+        "skill": "Research methods (Interviews, Focus Groups, Card Sorting, Participatory Design, Surveys, Longitudinal Methods, Data Analysis)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Research Methods: Interviews/Focus Groups/Card Sorting; Research Methods: Participatory Design, User Personas, User Tasks, Storyboards; Surveys, Longitudinal Methods, and Data Analysis Approaches",
+        "reason": null
+      },
+      {
+        "skill": "Prototyping tools (e.g., Figma)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "High-fidelity prototype using Figma or a design tool of your choice",
+        "reason": null
+      },
+      {
+        "skill": "Usability testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Conduct usability testing of your prototype and incorporate feedback",
+        "reason": null
+      },
+      {
+        "skill": "HCI evaluation methods",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Understand and be able to apply industry standard methods for evaluation of usability.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 642",
+      "course_title": "Human-Computer Interaction"
+    },
+    "cross_listed": [
+      "CSC 842"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 37,
+      "exact": 35,
+      "approximate": 2,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 642",
+    "Grad_equivalent": [
+      "CSC 842"
+    ],
+    "course_title": "Human-Computer Interaction",
+    "term": "Spring 2025",
+    "instructor": "Dr. Zainab Agha",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      },
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "Prerequisite for CSC 842: Graduate standing."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Graduate standing",
+        "evidence": "Prerequisite for CSC 842: Graduate standing."
+      },
+      {
+        "text": "Consent of the instructor",
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      },
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite for CSC 642: CSC 413 with a grade of C or better or consent of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Understand the basics of the field of Human-Computer Interaction (HCI)",
+      "Understand and apply design principles to a system, component, or process from a user-centered perspective.",
+      "Apply user-centered design and research methods to conduct user studies and evaluate a product.",
+      "Develop and iterate upon user-centered design-based solutions to real-world technological problems.",
+      "Understand and be able to apply industry standard methods for evaluation of usability.",
+      "Complete a semester long design project in small team setting; write a report and present it, as well as provide constructive peer feedback."
+    ],
+    "topics": [
+      "Introduction to Human-Computer Interaction",
+      "Course Overview",
+      "Introductions",
+      "HCI Principles",
+      "Feedback Cycles",
+      "Identifying and Defining a User Problem",
+      "User Needs and Requirements",
+      "Research Methods: Interviews/Focus Groups/Card Sorting",
+      "Research Methods: Participatory Design, User Personas, User Tasks, Storyboards",
+      "Prototyping Tools and Techniques",
+      "Surveys, Longitudinal Methods, and Data Analysis Approaches",
+      "HCI Evaluations Methods",
+      "Ethics of Human Subjects Research",
+      "Reporting Findings and Peer Review",
+      "HCI Applications",
+      "Project Discussions",
+      "In-Class Usability Testing",
+      "HCI Applications: Emerging Topics in HCI Communities"
+    ],
+    "skills": [
+      {
+        "skill": "User-centered design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Apply user-centered design and research methods to conduct user studies and evaluate a product.",
+        "reason": null
+      },
+      {
+        "skill": "Research methods (Interviews, Focus Groups, Card Sorting, Participatory Design, Surveys, Longitudinal Methods, Data Analysis)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Research Methods: Interviews/Focus Groups/Card Sorting; Research Methods: Participatory Design, User Personas, User Tasks, Storyboards; Surveys, Longitudinal Methods, and Data Analysis Approaches",
+        "reason": null
+      },
+      {
+        "skill": "Prototyping tools (e.g., Figma)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "High-fidelity prototype using Figma or a design tool of your choice",
+        "reason": null
+      },
+      {
+        "skill": "Usability testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Conduct usability testing of your prototype and incorporate feedback",
+        "reason": null
+      },
+      {
+        "skill": "HCI evaluation methods",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Understand and be able to apply industry standard methods for evaluation of usability.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 642",
+      "course_title": "Human-Computer Interaction"
+    }
+  }
+}
