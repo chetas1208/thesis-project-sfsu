@@ -1,26 +1,52 @@
 {
   "schema": "skillllm_v2-eval-card/1.0",
-  "generated_utc": "2026-11-18T08:28:42+00:00",
+  "generated_utc": "2026-11-18T08:53:24+00:00",
   "argv": [
     "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/repro_card.py"
   ],
   "git": {
     "repository": "/home/923873155/Sem 4 Research",
-    "commit": "54aab906d548d871ad855bdbb09b7eea18ddf0d5",
+    "commit": "a5acd1c72840cbdda76c7972089448db65d3b492",
     "branch": "main",
-    "commit_date": "2026-11-13T21:12:37+00:00",
+    "commit_date": "2026-11-18T08:43:11+00:00",
     "dirty": true,
-    "n_dirty_entries": 9,
+    "n_dirty_entries": 35,
     "dirty_entries_sample": [
-      "?? SkillLLM_v2_stage2/Decisions.md",
-      "?? SkillLLM_v2_stage2/Progress.md",
-      "?? SkillLLM_v2_stage2/docs/thesis/evaluation/",
-      "?? SkillLLM_v2_stage2/docs/thesis/tables/",
-      "?? SkillLLM_v2_stage2/inputs/evals/research/",
-      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/",
-      "?? SkillLLM_v2_stage2/scripts/evals/",
-      "?? SkillLLM_v2_stage2/src/skillllm_v2/evals/research/",
-      "?? SkillLLM_v2_stage2/tests/evals/research/"
+      "M SkillLLM_v2_stage2/Progress.md",
+      " M SkillLLM_v2_stage2/docs/thesis/evaluation/chapter_evaluation.md",
+      " M SkillLLM_v2_stage2/docs/thesis/tables/evaluation_headline.tex",
+      " M SkillLLM_v2_stage2/docs/thesis/tables/evaluation_hypotheses.tex",
+      " M SkillLLM_v2_stage2/docs/thesis/tables/evaluation_layer_status.tex",
+      " M SkillLLM_v2_stage2/reports/skillllm_v2/eval_suite/REPORT.md",
+      " M SkillLLM_v2_stage2/reports/skillllm_v2/eval_suite/results.json",
+      " M SkillLLM_v2_stage2/reports/skillllm_v2/evals/L10_significance/results.json",
+      " M SkillLLM_v2_stage2/reports/skillllm_v2/evals/LEADERBOARD.md",
+      " M SkillLLM_v2_stage2/reports/skillllm_v2/evals/leaderboard.json",
+      "?? SkillLLM_v2_stage2/inputs/evals/research/L11_human_eval/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L01_extraction/per_unit_scores.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L01_extraction/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L02_generalization/per_unit_scores.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L02_generalization/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L03_robustness/per_unit_scores.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L03_robustness/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L04_calibration/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L05_wrapper/ladder/per_doc_counts.csv",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L05_wrapper/per_unit_scores.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L05_wrapper/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L06_linking/per_mention_outputs.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L06_linking/per_unit_scores.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L06_linking/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L07_compaction/per_unit_scores.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L07_compaction/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L08_graph_retrieval/per_unit_scores.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L08_graph_retrieval/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L09_course_rec/per_unit_scores.jsonl",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L09_course_rec/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L10_significance/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L11_human_eval/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/L12_systems/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/repro/smoke/",
+      "?? SkillLLM_v2_stage2/reports/skillllm_v2/evals/smoke/"
     ],
     "note": "Stage-2 is tracked by the outer repository; its nested .git is empty and is never used."
   },
@@ -129,6 +155,11 @@
         "path": "inputs/courses/relevance_labels.jsonl",
         "bytes": 24087,
         "sha256": "ce64a36c7e7f4e98037b3d0bfdda62e9ec205af12e77524450443fc08f04ec18"
+      },
+      {
+        "path": "inputs/courses/sfsu_catalog.jsonl",
+        "bytes": 61081,
+        "sha256": "ac4f1c98ddc31f83b95b59b6f0ba343de9cab7f587e4b760677b865c8a29192f"
       }
     ],
     "eval_inputs": [
@@ -1878,8 +1909,8 @@
     {
       "layer": "L10_significance",
       "command": "PYTHONPATH=src /opt/miniconda/bin/python -m skillllm_v2.evals.research.significance",
-      "utc": "2026-11-18T08:28:22+00:00",
-      "git": "54aab906d548 dirty",
+      "utc": "2026-11-18T08:53:17+00:00",
+      "git": "a5acd1c72840 dirty",
       "status": "present",
       "python": "3.13.12",
       "host": "srva"
@@ -1909,7 +1940,7 @@
     }
   ],
   "intermediate_outputs": {
-    "n_files": 462,
+    "n_files": 463,
     "files": [
       {
         "path": "reports/skillllm_v2/evals/CONTRACT.md",
@@ -2779,7 +2810,7 @@
       {
         "path": "reports/skillllm_v2/evals/L10_significance/results.json",
         "bytes": 1693155,
-        "sha256": "db46043418b3285751039bb862b045944455a5371b00cf750c8a17132348b0ad"
+        "sha256": "4443ab198a1d0309f3391bc95999c94a1c86229ad9028927075f78435825ecd1"
       },
       {
         "path": "reports/skillllm_v2/evals/L10_significance/smoke/REPORT.md",
@@ -3124,12 +3155,17 @@
       {
         "path": "reports/skillllm_v2/evals/LEADERBOARD.md",
         "bytes": 16340,
-        "sha256": "f2113d077b4d5fa137a29d2ea310cf886932356235670fdd5680ecbed4db20d1"
+        "sha256": "e1736277872853868d70a1233c498b9be9951d7a968c0f9cafa5e0ebf6e01355"
+      },
+      {
+        "path": "reports/skillllm_v2/evals/README.md",
+        "bytes": 1305,
+        "sha256": "ab26d9722d7d8f6f2537a57577a1113234f6f3edfd2d0f851dc7667f16c74b07"
       },
       {
         "path": "reports/skillllm_v2/evals/leaderboard.json",
         "bytes": 31378,
-        "sha256": "d58842b015943a44cd4cc90fb3029e8614beea52105a52aeeee465b84fc9ab37"
+        "sha256": "d99f1878437370ebe335ecdd17b9cb26d8315942a4cad80a81b22e817ed465f5"
       },
       {
         "path": "reports/skillllm_v2/evals/naming_audit/REPORT.md",

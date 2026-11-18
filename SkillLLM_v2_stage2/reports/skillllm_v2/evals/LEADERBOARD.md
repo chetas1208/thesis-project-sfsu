@@ -1,6 +1,6 @@
 # SkillLLM_v2 research evaluation — leaderboard
 
-Generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/*/results.json` (git 54aab906d548 dirty). Values are copied from layer records, never recomputed here. `-` = no value. A missing layer means its results.json does not exist yet; nothing is estimated in its place.
+Generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/*/results.json` (git a5acd1c72840 dirty). Values are copied from layer records, never recomputed here. `-` = no value. A missing layer means its results.json does not exist yet; nothing is estimated in its place.
 
 ## Layer status
 
@@ -15,7 +15,7 @@ Generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/*/results.js
 | L07_compaction | Profile compaction | A4 | measured | 560 | 560 | 0 | 0 | 0 | 2026-11-17T21:16:49+00:00 |
 | L08_graph_retrieval | Graph-augmented retrieval | A5 | measured + not_available | 174 | 169 | 0 | 0 | 5 | 2026-11-18T07:08:07+00:00 |
 | L09_course_rec | Course recommendation | A5 | measured | 385 | 385 | 0 | 0 | 0 | 2026-11-18T07:14:29+00:00 |
-| L10_significance | Central significance testing | A2 | measured | 1056 | 1056 | 0 | 0 | 0 | 2026-11-18T08:28:22+00:00 |
+| L10_significance | Central significance testing | A2 | measured | 1056 | 1056 | 0 | 0 | 0 | 2026-11-18T08:53:17+00:00 |
 | L11_human_eval | Human evaluation | A6 | measured + pending_human | 57 | 8 | 0 | 49 | 0 | 2026-11-18T08:25:23+00:00 |
 | L12_systems | Systems: latency, memory | A3 | measured + not_available | 48 | 45 | 0 | 0 | 3 | 2026-11-18T07:42:00+00:00 |
 

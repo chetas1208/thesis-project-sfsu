@@ -1,18 +1,18 @@
 {
  "meta": {
-  "git_commit": "f196af97f395f51bf023b641c81301a0db9a9529",
+  "git_commit": "a5acd1c72840cbdda76c7972089448db65d3b492",
   "git_dirty": true,
   "seed": 42,
   "smoke": false,
   "n_boot": 2000,
-  "started_utc": "2026-10-22T08:35:09+00:00",
-  "finished_utc": "2026-10-22T08:39:57+00:00",
-  "duration_seconds": 287.4,
+  "started_utc": "2026-11-18T08:43:25+00:00",
+  "finished_utc": "2026-11-18T08:50:15+00:00",
+  "duration_seconds": 409.5,
   "python": "3.13.12",
   "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
   "modules_requested": "all",
   "git": {
-   "commit": "f196af97f395f51bf023b641c81301a0db9a9529"
+   "commit": "a5acd1c72840cbdda76c7972089448db65d3b492"
   }
  },
  "modules": [
@@ -21,7 +21,7 @@
    "module_path": "skillllm_v2.evals.extraction_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 10.57,
+   "seconds": 13.79,
    "n_results": 107,
    "traceback": ""
   },
@@ -30,7 +30,7 @@
    "module_path": "skillllm_v2.evals.verifier_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 35.65,
+   "seconds": 50.4,
    "n_results": 173,
    "traceback": ""
   },
@@ -39,7 +39,7 @@
    "module_path": "skillllm_v2.evals.calibration_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 92.34,
+   "seconds": 108.5,
    "n_results": 113,
    "traceback": ""
   },
@@ -48,7 +48,7 @@
    "module_path": "skillllm_v2.evals.linking_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 105.72,
+   "seconds": 154.44,
    "n_results": 50,
    "traceback": ""
   },
@@ -57,7 +57,7 @@
    "module_path": "skillllm_v2.evals.context_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 7.26,
+   "seconds": 12.23,
    "n_results": 38,
    "traceback": ""
   },
@@ -66,7 +66,7 @@
    "module_path": "skillllm_v2.evals.graph_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 1.65,
+   "seconds": 2.48,
    "n_results": 42,
    "traceback": ""
   },
@@ -75,7 +75,7 @@
    "module_path": "skillllm_v2.evals.match_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 7.1,
+   "seconds": 24.92,
    "n_results": 42,
    "traceback": ""
   },
@@ -84,7 +84,7 @@
    "module_path": "skillllm_v2.evals.gap_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 7.21,
+   "seconds": 12.05,
    "n_results": 55,
    "traceback": ""
   },
@@ -93,7 +93,7 @@
    "module_path": "skillllm_v2.evals.explanation_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 7.04,
+   "seconds": 12.58,
    "n_results": 44,
    "traceback": ""
   },
@@ -102,7 +102,7 @@
    "module_path": "skillllm_v2.evals.e2e_evals",
    "status": "ok",
    "reason": "",
-   "seconds": 12.8,
+   "seconds": 17.95,
    "n_results": 47,
    "traceback": ""
   }
@@ -21111,29 +21111,29 @@
    "eval_name": "context.packet_over_raw_tokens",
    "module": "context",
    "metric": "packet_tokens / raw_profile_tokens (>1 = expansion, <1 = savings)",
-   "value": 10.552891132737821,
+   "value": 10.53777002715691,
    "n": 40,
    "dataset": "synthetic_profiles_v1 (seeded generator, evals/context_evals.py; fixtures in inputs/evals/)",
    "ci": [
-    10.209355474448344,
-    10.957802517672691
+    10.194553413055786,
+    10.944362337902993
    ],
    "details": {
     "by_profile_size": {
      "10": {
-      "mean_packet_over_raw_tokens": 12.301,
+      "mean_packet_over_raw_tokens": 12.269,
       "n_profiles": 10
      },
      "25": {
-      "mean_packet_over_raw_tokens": 10.507,
+      "mean_packet_over_raw_tokens": 10.503,
       "n_profiles": 10
      },
      "60": {
-      "mean_packet_over_raw_tokens": 9.894,
+      "mean_packet_over_raw_tokens": 9.883,
       "n_profiles": 10
      },
      "95": {
-      "mean_packet_over_raw_tokens": 9.509,
+      "mean_packet_over_raw_tokens": 9.496,
       "n_profiles": 10
      }
     },
@@ -21151,12 +21151,12 @@
    "eval_name": "context.packet_over_naive_tokens",
    "module": "context",
    "metric": "packet_tokens / (raw_text + extraction_json) tokens",
-   "value": 1.3704457891709398,
+   "value": 1.3684990897872462,
    "n": 40,
    "dataset": "synthetic_profiles_v1 (seeded generator, evals/context_evals.py; fixtures in inputs/evals/)",
    "ci": [
-    1.3274521291632506,
-    1.4204457217133657
+    1.3256186544580395,
+    1.4186543798354554
    ],
    "details": {
     "note": "naive = what a prompt would carry without the packet"
@@ -21171,12 +21171,12 @@
    "eval_name": "context.packet_over_raw_chars",
    "module": "context",
    "metric": "packet_chars / raw_profile_chars",
-   "value": 5.125864264340253,
+   "value": 5.113220808640186,
    "n": 40,
    "dataset": "synthetic_profiles_v1 (seeded generator, evals/context_evals.py; fixtures in inputs/evals/)",
    "ci": [
-    4.924437581797266,
-    5.360973056433707
+    4.913030453989241,
+    5.349540768781532
    ],
    "details": {},
    "caveats": [],
@@ -22223,12 +22223,12 @@
    "eval_name": "graph.skill_builder.provenance_complete",
    "module": "graph",
    "metric": "SkillGraphBuilder: share of edges carrying every provenance key of PROVENANCE_SPEC",
-   "value": 0.0,
+   "value": 0.577949705666927,
    "n": 12,
    "dataset": "synthetic_worlds_v1 (seeded generator, evals/graph_evals.py) + inputs/demo",
    "ci": [
-    0.0,
-    0.0
+    0.5665796992504523,
+    0.5895798705336813
    ],
    "details": {},
    "caveats": [
@@ -22271,18 +22271,18 @@
     },
     "skill_builder_per_key_mean": {
      "HAS_SKILL.confidence": 1.0,
-     "HAS_SKILL.evidence_text": 0.0,
+     "HAS_SKILL.evidence_text": 1.0,
      "HAS_SKILL.last_seen": 0.0,
-     "HAS_SKILL.source": 0.0,
-     "PREFERS.importance": 0.0,
-     "PREFERS.requirement_strength": 0.0,
-     "PREFERS.source_sentence": 0.0,
-     "REQUIRES.importance": 0.0,
-     "REQUIRES.requirement_strength": 0.0,
-     "REQUIRES.source_sentence": 0.0,
-     "TEACHES.confidence": 0.0,
-     "TEACHES.depth": 0.0,
-     "TEACHES.learning_outcome_evidence": 0.0
+     "HAS_SKILL.source": 1.0,
+     "PREFERS.importance": 1.0,
+     "PREFERS.requirement_strength": 1.0,
+     "PREFERS.source_sentence": 1.0,
+     "REQUIRES.importance": 1.0,
+     "REQUIRES.requirement_strength": 1.0,
+     "REQUIRES.source_sentence": 1.0,
+     "TEACHES.confidence": 1.0,
+     "TEACHES.depth": 1.0,
+     "TEACHES.learning_outcome_evidence": 1.0
     }
    },
    "caveats": [],
@@ -22355,7 +22355,7 @@
    "details": {
     "dangling_edge_rate_after_probe": 1.0,
     "untyped_nodes": 2,
-    "add_node_silently_retypes_existing_node": true
+    "add_node_silently_retypes_existing_node": false
    },
    "caveats": [
     "a typo in an id yields an untyped dangling node that no later check in the builders catches; add_node with an existing id and a different type overwrites the type without error"
@@ -22543,11 +22543,11 @@
    "eval_name": "graph.path_toy_exact_match",
    "module": "graph",
    "metric": "hand-computed toy cases where explain_skill_path returns exactly the expected path",
-   "value": 0.8571428571428571,
+   "value": 1.0,
    "n": 7,
    "dataset": "synthetic_worlds_v1 (seeded generator, evals/graph_evals.py) + inputs/demo",
    "ci": [
-    0.5714285714285714,
+    1.0,
     1.0
    ],
    "details": {
@@ -22633,10 +22633,12 @@
        "b",
        "c",
        "d",
-       "e"
+       "e",
+       "f",
+       "g"
       ],
-      "exact": false,
-      "endpoint_ok": false,
+      "exact": true,
+      "endpoint_ok": true,
       "realisable": true,
       "confidence": 0.7
      },
@@ -22715,15 +22717,15 @@
    "eval_name": "graph.path_ends_at_target_beyond_hops",
    "module": "graph",
    "metric": "reachable pairs with distance > max_hops: returned path still ends at the target",
-   "value": 0.0,
+   "value": 1.0,
    "n": 28,
    "dataset": "synthetic_worlds_v1 (seeded generator, evals/graph_evals.py) + inputs/demo",
    "ci": [
-    0.0,
-    0.0
+    1.0,
+    1.0
    ],
    "details": {
-    "truncated_to_wrong_endpoint_rate": 1.0
+    "truncated_to_wrong_endpoint_rate": 0.0
    },
    "caveats": [
     "explain_skill_path trims the path to max_hops+1 nodes but still labels it as the path from source to target: the returned `path` ends at an intermediate node while `target` says otherwise"
@@ -22757,12 +22759,12 @@
    "eval_name": "graph.explainer_connects_user_to_job",
    "module": "graph",
    "metric": "user/job pairs sharing a skill (so an explanatory path exists) for which explain_skill_path(user, job) returns a path",
-   "value": 0.0,
+   "value": 1.0,
    "n": 12,
    "dataset": "synthetic_worlds_v1 (seeded generator, evals/graph_evals.py) + inputs/demo",
    "ci": [
-    0.0,
-    0.0
+    1.0,
+    1.0
    ],
    "details": {
     "job_to_required_skill_found": 1.0
@@ -22977,12 +22979,12 @@
    "eval_name": "graph.retriever_unknown_node_leak_rate",
    "module": "graph",
    "metric": "unknown user ids for which SkillGraphRetriever.skills_for_user returns another user's skills (0.0 is correct)",
-   "value": 1.0,
+   "value": 0.0,
    "n": 12,
    "dataset": "probe (deterministic)",
    "ci": [
-    1.0,
-    1.0
+    0.0,
+    0.0
    ],
    "details": {
     "CourseGraphBuilder.get_user_skills_leak_rate": 0.0,
@@ -23657,17 +23659,17 @@
    "eval_name": "match.robust.alias_25pct.ndcg_at_10_delta",
    "module": "match",
    "metric": "ndcg_at_10_delta_vs_clean",
-   "value": -0.033372721715211065,
+   "value": -0.013343333244804098,
    "n": 109,
    "dataset": "synthetic-match-v1(seed=42,candidates=112,jobs=42)",
    "ci": [
-    -0.047859917872082346,
-    -0.020107994310585724
+    -0.021776847437783114,
+    -0.006468832484296812
    ],
    "details": {
     "perturbation": "alias",
     "level": 0.25,
-    "ndcg_at_10_perturbed": 0.9571505941485479,
+    "ndcg_at_10_perturbed": 0.9771799826189548,
     "ndcg_at_10_clean": 0.990523315863759,
     "keyword_jaccard_delta": -0.030468409405135656,
     "keyword_jaccard_delta_ci": [
@@ -23691,17 +23693,17 @@
    "eval_name": "match.robust.alias_50pct.ndcg_at_10_delta",
    "module": "match",
    "metric": "ndcg_at_10_delta_vs_clean",
-   "value": -0.09622904084891956,
+   "value": -0.034169753037938136,
    "n": 109,
    "dataset": "synthetic-match-v1(seed=42,candidates=112,jobs=42)",
    "ci": [
-    -0.1315623750058279,
-    -0.06497397750532866
+    -0.05434058130814399,
+    -0.0187800502787882
    ],
    "details": {
     "perturbation": "alias",
     "level": 0.5,
-    "ndcg_at_10_perturbed": 0.8942942750148394,
+    "ndcg_at_10_perturbed": 0.9563535628258207,
     "ndcg_at_10_clean": 0.990523315863759,
     "keyword_jaccard_delta": -0.0676473630012015,
     "keyword_jaccard_delta_ci": [
@@ -23725,17 +23727,17 @@
    "eval_name": "match.robust.lowercase_user_skills.ndcg_at_10_delta",
    "module": "match",
    "metric": "ndcg_at_10_delta_vs_clean",
-   "value": -0.711888774495795,
+   "value": 0.0,
    "n": 109,
    "dataset": "synthetic-match-v1(seed=42,candidates=112,jobs=42)",
    "ci": [
-    -0.7670955154514271,
-    -0.6532172667072206
+    0.0,
+    0.0
    ],
    "details": {
     "perturbation": "case",
     "level": 1.0,
-    "ndcg_at_10_perturbed": 0.27863454136796395,
+    "ndcg_at_10_perturbed": 0.990523315863759,
     "ndcg_at_10_clean": 0.990523315863759,
     "keyword_jaccard_delta": 0.0,
     "keyword_jaccard_delta_ci": [
@@ -23999,34 +24001,21 @@
    "eval_name": "match.prop.case_invariance",
    "module": "match",
    "metric": "violation_rate",
-   "value": 0.27666666666666667,
+   "value": 0.0,
    "n": 600,
    "dataset": "synthetic-random-cases",
    "ci": [
-    0.24166666666666667,
-    0.32
+    0.0,
+    0.0
    ],
    "details": {
-    "example": {
-     "user": [
-      "Machine Learning",
-      "Data Analysis",
-      "Network Security",
-      "Kubernetes",
-      "Transformers"
-     ],
-     "job_required": [
-      "Python"
-     ],
-     "score_orig": 0.10083333333333339,
-     "score_lower": 0.0
-    },
+    "example": null,
     "direction": "lower",
-    "violations": 166
+    "violations": 0
    },
    "caveats": [
     "property check over seeded random cases; expectation is 0 violations",
-    "FINDING: JobMatcher compares skill strings exactly (case-sensitive) so 'python' != 'Python'"
+    "REGRESSION GUARD (bug fixed, docs/BUGFIX_LOG_MATCH.md): JobMatcher compares skill strings exactly (case-sensitive) so 'python' != 'Python'"
    ],
    "status": "ok",
    "reason": "",
@@ -24037,20 +24026,20 @@
    "eval_name": "match.prop.alias_invariance",
    "module": "match",
    "metric": "violation_rate",
-   "value": 0.14,
+   "value": 0.05333333333333334,
    "n": 600,
    "dataset": "synthetic-random-cases",
    "ci": [
-    0.11333333333333333,
-    0.16833333333333333
+    0.03666666666666667,
+    0.07333333333333333
    ],
    "details": {
     "direction": "lower",
-    "violations": 84
+    "violations": 32
    },
    "caveats": [
     "property check over seeded random cases; expectation is 0 violations",
-    "FINDING: JobMatcher has no alias resolution; an alias surface form ('Postgres') scores as a missing skill"
+    "REGRESSION GUARD (bug fixed, docs/BUGFIX_LOG_MATCH.md): JobMatcher has no alias resolution; an alias surface form ('Postgres') scores as a missing skill"
    ],
    "status": "ok",
    "reason": "",
@@ -24231,8 +24220,8 @@
    "details": {
     "pooled_over_pairs": true,
     "micro_precision": 1.0,
-    "micro_recall": 0.8045267489711934,
-    "micro_f1": 0.8916761687571265,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
     "total_truth_gaps": 972
    },
    "caveats": [
@@ -24248,18 +24237,18 @@
    "eval_name": "gap.detector.micro_recall",
    "module": "gap",
    "metric": "micro_recall",
-   "value": 0.8045267489711934,
+   "value": 1.0,
    "n": 240,
    "dataset": "synthetic-gap-v1(seed=42,pairs=240)",
    "ci": [
-    0.7810590631364562,
-    0.8261316872427984
+    1.0,
+    1.0
    ],
    "details": {
     "pooled_over_pairs": true,
     "micro_precision": 1.0,
-    "micro_recall": 0.8045267489711934,
-    "micro_f1": 0.8916761687571265,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
     "total_truth_gaps": 972
    },
    "caveats": [
@@ -24275,18 +24264,18 @@
    "eval_name": "gap.detector.micro_f1",
    "module": "gap",
    "metric": "micro_f1",
-   "value": 0.8916761687571265,
+   "value": 1.0,
    "n": 240,
    "dataset": "synthetic-gap-v1(seed=42,pairs=240)",
    "ci": [
-    0.8781902552204176,
-    0.9054895302773062
+    1.0,
+    1.0
    ],
    "details": {
     "pooled_over_pairs": true,
     "micro_precision": 1.0,
-    "micro_recall": 0.8045267489711934,
-    "micro_f1": 0.8916761687571265,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
     "total_truth_gaps": 972
    },
    "caveats": [
@@ -24302,12 +24291,12 @@
    "eval_name": "gap.detector.macro_f1",
    "module": "gap",
    "metric": "macro_f1_per_pair",
-   "value": 0.8709742340992341,
+   "value": 1.0,
    "n": 240,
    "dataset": "synthetic-gap-v1(seed=42,pairs=240)",
    "ci": [
-    0.8493233618233619,
-    0.8922960372960372
+    1.0,
+    1.0
    ],
    "details": {},
    "caveats": [
@@ -24346,14 +24335,14 @@
    "module": "gap",
    "metric": "gap_type_accuracy_given_detected",
    "value": 1.0,
-   "n": 236,
+   "n": 240,
    "dataset": "synthetic-gap-v1(seed=42,pairs=240)",
    "ci": [
     1.0,
     1.0
    ],
    "details": {
-    "skills_compared": 782,
+    "skills_compared": 972,
     "overall": 1.0
    },
    "caveats": [
@@ -24981,12 +24970,12 @@
    "eval_name": "gap.differential.detector_vs_engine_gap_set_jaccard",
    "module": "gap",
    "metric": "jaccard_of_gap_skill_sets",
-   "value": 0.8010714285714287,
+   "value": 1.0,
    "n": 240,
    "dataset": "synthetic-gap-v1(seed=42,pairs=240)",
    "ci": [
-    0.7737698412698413,
-    0.8268353174603175
+    1.0,
+    1.0
    ],
    "details": {},
    "caveats": [
@@ -25002,7 +24991,7 @@
    "module": "gap",
    "metric": "gap_type_agreement",
    "value": 1.0,
-   "n": 782,
+   "n": 972,
    "dataset": "synthetic-gap-v1(seed=42,pairs=240)",
    "ci": null,
    "details": {
@@ -25020,12 +25009,12 @@
    "eval_name": "gap.robust.detector.spurious_gap_share_under_lowercased_user_skills",
    "module": "gap",
    "metric": "added_gaps_per_job_skill",
-   "value": 0.4515873015873016,
+   "value": 0.0,
    "n": 240,
    "dataset": "synthetic-gap-v1(seed=42,pairs=240)",
    "ci": [
-    0.4287946428571428,
-    0.47318948412698414
+    0.0,
+    0.0
    ],
    "details": {
     "direction": "lower"
@@ -25033,7 +25022,7 @@
    "caveats": [
     "synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not real labelled data",
     "string-profile and dict-profile views of the same authored state are fed to the legacy detector and the gap engine respectively",
-    "FINDING if >0: GapDetector.detect compares exact strings"
+    "REGRESSION GUARD (bug fixed, docs/BUGFIX_LOG_MATCH.md): if >0, GapDetector.detect compares exact strings"
    ],
    "status": "ok",
    "reason": "",
@@ -25326,21 +25315,21 @@
    "eval_name": "gap.prop.detector.one_gap_per_skill_when_listed_required_and_preferred",
    "module": "gap",
    "metric": "violation_rate",
-   "value": 1.0,
+   "value": 0.0,
    "n": 400,
    "dataset": "synthetic-random-cases",
    "ci": [
-    1.0,
-    1.0
+    0.0,
+    0.0
    ],
    "details": {
     "direction": "lower",
-    "violations": 400
+    "violations": 0
    },
    "caveats": [
     "property check over seeded random cases; expectation is 0 violations",
     "condition is constructed in every case (rate 1.0 = the behaviour exists)",
-    "FINDING if >0: a skill listed as both required and preferred yields duplicate gap entries"
+    "REGRESSION GUARD (bug fixed, docs/BUGFIX_LOG_MATCH.md): if >0, a skill listed as both required and preferred yields duplicate gap entries"
    ],
    "status": "ok",
    "reason": "",
@@ -25351,26 +25340,21 @@
    "eval_name": "gap.prop.detector.held_skill_never_labelled_covered_by_transferable",
    "module": "gap",
    "metric": "violation_rate",
-   "value": 1.0,
+   "value": 0.0,
    "n": 400,
    "dataset": "synthetic-random-cases",
    "ci": [
-    1.0,
-    1.0
+    0.0,
+    0.0
    ],
    "details": {
-    "example": {
-     "held_skill": "Apache Spark",
-     "weak": true,
-     "labelled": "covered_by_transferable_skill"
-    },
     "direction": "lower",
-    "violations": 400
+    "violations": 0
    },
    "caveats": [
     "property check over seeded random cases; expectation is 0 violations",
     "condition is constructed in every case (rate 1.0 = the behaviour exists)",
-    "FINDING if >0: transferable override is applied to skills the user already holds (weak_skill relabelled)"
+    "REGRESSION GUARD (bug fixed, docs/BUGFIX_LOG_MATCH.md): if >0, transferable override is applied to skills the user already holds (weak_skill relabelled)"
    ],
    "status": "ok",
    "reason": "",
@@ -25381,20 +25365,20 @@
    "eval_name": "gap.prop.detector.case_invariance",
    "module": "gap",
    "metric": "violation_rate",
-   "value": 0.2275,
+   "value": 0.0,
    "n": 400,
    "dataset": "synthetic-random-cases",
    "ci": [
-    0.185,
-    0.2725
+    0.0,
+    0.0
    ],
    "details": {
     "direction": "lower",
-    "violations": 91
+    "violations": 0
    },
    "caveats": [
     "property check over seeded random cases; expectation is 0 violations",
-    "FINDING if >0: GapDetector.detect compares exact strings, so 'python' vs 'Python' creates a spurious gap"
+    "REGRESSION GUARD (bug fixed, docs/BUGFIX_LOG_MATCH.md): if >0, GapDetector.detect compares exact strings, so 'python' vs 'Python' creates a spurious gap"
    ],
    "status": "ok",
    "reason": "",
@@ -26270,12 +26254,12 @@
    "eval_name": "explain.match.static_boilerplate_share",
    "module": "explain",
    "metric": "share of explanation claims that are static boilerplate (limitations), neither supported nor unsupported",
-   "value": 0.08529667957105647,
+   "value": 0.11149470564614944,
    "n": 8,
    "dataset": "synthetic_worlds_v1 (seeded generator, evals/graph_evals.py)",
    "ci": [
-    0.08327457188401176,
-    0.08747956351526229
+    0.10237839456200376,
+    0.11959036140409204
    ],
    "details": {},
    "caveats": [
@@ -26290,12 +26274,12 @@
    "eval_name": "explain.match.evidence_relevance",
    "module": "explain",
    "metric": "evidence lines that concern a matched or missing skill of this job (rest = unrelated profile skills dumped into the explanation)",
-   "value": 0.14674272486772486,
+   "value": 1.0,
    "n": 8,
    "dataset": "synthetic_worlds_v1 (seeded generator, evals/graph_evals.py)",
    "ci": [
-    0.10300099206349206,
-    0.19431216931216932
+    1.0,
+    1.0
    ],
    "details": {},
    "caveats": [
@@ -26330,12 +26314,12 @@
    "eval_name": "explain.match.completeness",
    "module": "explain",
    "metric": "explanations with user skill, job skill, gap types and evidence all present",
-   "value": 1.0,
+   "value": 0.7291666666666666,
    "n": 8,
    "dataset": "synthetic_worlds_v1 (seeded generator, evals/graph_evals.py)",
    "ci": [
-    1.0,
-    1.0
+    0.625,
+    0.8333333333333334
    ],
    "details": {},
    "caveats": [],
@@ -26735,12 +26719,12 @@
    "eval_name": "e2e.gap_demo.precision",
    "module": "e2e",
    "metric": "precision",
-   "value": 0.5805555555555556,
+   "value": 0.6722222222222222,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    0.3416666666666666,
-    0.7916666666666666
+    0.4583333333333333,
+    0.8666666666666667
    ],
    "details": {
     "mode": "demo"
@@ -26783,12 +26767,12 @@
    "eval_name": "e2e.gap_demo.f1",
    "module": "e2e",
    "metric": "f1",
-   "value": 0.6258597883597884,
+   "value": 0.7171296296296297,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    0.3888888888888889,
-    0.8327380952380953
+    0.49722222222222223,
+    0.8953703703703705
    ],
    "details": {
     "mode": "demo"
@@ -26879,12 +26863,12 @@
    "eval_name": "e2e.name_consistency.false_gap_rate_demo_wiring",
    "module": "e2e",
    "metric": "share_of_held_and_extracted_skills_flagged_as_gaps",
-   "value": 0.15625,
+   "value": 0.0,
    "n": 8,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
     0.0,
-    0.40625
+    0.0
    ],
    "details": {
     "direction": "lower",
@@ -27205,18 +27189,18 @@
    "eval_name": "e2e.latency.extract_profile",
    "module": "e2e",
    "metric": "mean_latency_ms",
-   "value": 15.143398746052602,
+   "value": 27.540508890524507,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    13.256375408673193,
-    18.305191411248718
+    24.852706158223253,
+    31.85063786804676
    ],
    "details": {
     "direction": "lower",
-    "median_ms": 13.887859997339547,
-    "p95_ms": 30.422974989051,
-    "pipeline_init_ms": 1327.4116810061969,
+    "median_ms": 26.259916368871927,
+    "p95_ms": 48.79926424473524,
+    "pipeline_init_ms": 2291.264954023063,
     "hardware_dependent": true
    },
    "caveats": [
@@ -27231,18 +27215,18 @@
    "eval_name": "e2e.latency.extract_job",
    "module": "e2e",
    "metric": "mean_latency_ms",
-   "value": 15.877824754473599,
+   "value": 26.913508966875572,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    14.688092087453697,
-    17.043372591918644
+    26.172184152528644,
+    27.658437262289226
    ],
    "details": {
     "direction": "lower",
-    "median_ms": 16.60044601885602,
-    "p95_ms": 19.211906008422375,
-    "pipeline_init_ms": 1327.4116810061969,
+    "median_ms": 27.22298027947545,
+    "p95_ms": 28.66294700652361,
+    "pipeline_init_ms": 2291.264954023063,
     "hardware_dependent": true
    },
    "caveats": [
@@ -27257,18 +27241,18 @@
    "eval_name": "e2e.latency.match",
    "module": "e2e",
    "metric": "mean_latency_ms",
-   "value": 0.01676008105278015,
+   "value": 0.1595796396334966,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    0.014706994988955557,
-    0.01932349308238675
+    0.141239531027774,
+    0.17844579027344784
    ],
    "details": {
     "direction": "lower",
-    "median_ms": 0.017152982763946056,
-    "p95_ms": 0.02723099896684289,
-    "pipeline_init_ms": 1327.4116810061969,
+    "median_ms": 0.15626801177859306,
+    "p95_ms": 0.2185502089560032,
+    "pipeline_init_ms": 2291.264954023063,
     "hardware_dependent": true
    },
    "caveats": [
@@ -27283,18 +27267,18 @@
    "eval_name": "e2e.latency.gap_detect",
    "module": "e2e",
    "metric": "mean_latency_ms",
-   "value": 0.007899090026815733,
+   "value": 0.11826104794939359,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    0.007016928672480087,
-    0.009015917991443226
+    0.09635610816379388,
+    0.14100425566236177
    ],
    "details": {
     "direction": "lower",
-    "median_ms": 0.007786002242937684,
-    "p95_ms": 0.01246700412593782,
-    "pipeline_init_ms": 1327.4116810061969,
+    "median_ms": 0.10715937241911888,
+    "p95_ms": 0.19055232405662537,
+    "pipeline_init_ms": 2291.264954023063,
     "hardware_dependent": true
    },
    "caveats": [
@@ -27309,18 +27293,18 @@
    "eval_name": "e2e.latency.gap_vector",
    "module": "e2e",
    "metric": "mean_latency_ms",
-   "value": 0.04197450228578722,
+   "value": 0.1673970449094971,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    0.03744383623901134,
-    0.04634242213796824
+    0.13150930559883514,
+    0.20190634919951359
    ],
    "details": {
     "direction": "lower",
-    "median_ms": 0.04226499004289508,
-    "p95_ms": 0.05462300032377243,
-    "pipeline_init_ms": 1327.4116810061969,
+    "median_ms": 0.15707267448306084,
+    "p95_ms": 0.260709784924984,
+    "pipeline_init_ms": 2291.264954023063,
     "hardware_dependent": true
    },
    "caveats": [
@@ -27335,18 +27319,18 @@
    "eval_name": "e2e.latency.recommend",
    "module": "e2e",
    "metric": "mean_latency_ms",
-   "value": 0.3604681648236389,
+   "value": 0.5692392587661743,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    0.2954484128470843,
-    0.42781574787416804
+    0.49725547432899475,
+    0.6487697052458922
    ],
    "details": {
     "direction": "lower",
-    "median_ms": 0.3457360144238919,
-    "p95_ms": 0.5877680086996406,
-    "pipeline_init_ms": 1327.4116810061969,
+    "median_ms": 0.5896189250051975,
+    "p95_ms": 0.8289390243589878,
+    "pipeline_init_ms": 2291.264954023063,
     "hardware_dependent": true
    },
    "caveats": [
@@ -27361,12 +27345,12 @@
    "eval_name": "e2e.latency.total_per_case",
    "module": "e2e",
    "metric": "mean_latency_ms",
-   "value": 31.44832533871522,
+   "value": 55.46849484865864,
    "n": 12,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    28.92805092657606,
-    35.14530875448448
+    52.33277834486216,
+    60.21359011841317
    ],
    "details": {
     "direction": "lower",
@@ -27410,8 +27394,8 @@
    "ci": null,
    "details": {
     "digests": {
-     "1": "bb2b1e53d47c2a2ee2573fdb95e019a6a5a8881a988f83a59b5aef5621ee1b07",
-     "424242": "bb2b1e53d47c2a2ee2573fdb95e019a6a5a8881a988f83a59b5aef5621ee1b07"
+     "1": "98d23b06de9738d779347650a9c6843b504f1129c26569303527612e0c14c352",
+     "424242": "98d23b06de9738d779347650a9c6843b504f1129c26569303527612e0c14c352"
     },
     "direction": "higher"
    },
@@ -27427,11 +27411,11 @@
    "eval_name": "e2e.degradation.graceful_share",
    "module": "e2e",
    "metric": "graceful_share_of_expected_scenarios",
-   "value": 0.8181818181818182,
+   "value": 1.0,
    "n": 11,
    "dataset": "synthetic-degradation-scenarios",
    "ci": [
-    0.5454545454545454,
+    1.0,
     1.0
    ],
    "details": {
@@ -27439,79 +27423,79 @@
      {
       "name": "mistral_extractor_raises",
       "expect_graceful": true,
-      "graceful": false,
-      "error": "RuntimeError: extractor unavailable",
-      "seconds": 0.017
+      "graceful": true,
+      "error": "",
+      "seconds": 0.05
      },
      {
       "name": "gliner_extractor_raises",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 0.039
+      "seconds": 0.047
      },
      {
       "name": "dictionary_extractor_raises",
       "expect_graceful": true,
-      "graceful": false,
-      "error": "RuntimeError: extractor unavailable",
-      "seconds": 0.016
+      "graceful": true,
+      "error": "",
+      "seconds": 0.043
      },
      {
       "name": "empty_course_catalog",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 0.04
+      "seconds": 0.046
      },
      {
       "name": "empty_profile_text",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 0.038
+      "seconds": 0.044
      },
      {
       "name": "job_text_without_skills",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 0.039
+      "seconds": 0.046
      },
      {
       "name": "unicode_and_emoji_text",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 0.038
+      "seconds": 0.045
      },
      {
       "name": "catalog_row_missing_fields",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 0.04
+      "seconds": 0.046
      },
      {
       "name": "very_long_text_20k_chars",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 1.85
+      "seconds": 2.781
      },
      {
       "name": "user_profile_without_skills_key",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 0.0
+      "seconds": 0.001
      },
      {
       "name": "job_without_skill_lists",
       "expect_graceful": true,
       "graceful": true,
       "error": "",
-      "seconds": 0.0
+      "seconds": 0.001
      },
      {
       "name": "job_without_job_id",
@@ -27573,6 +27557,7 @@
      "deep_merge",
      "explain_skill_path",
      "generate_recommendation_explanation",
+     "graph_key",
      "is_anchor_candidate",
      "load_config",
      "main",
@@ -27690,17 +27675,17 @@
    "eval_name": "e2e.inference.latency_after_warmup",
    "module": "e2e",
    "metric": "mean_latency_ms",
-   "value": 15.526295094539158,
+   "value": 23.082393179224297,
    "n": 11,
    "dataset": "synthetic-e2e-v1(cases=12)",
    "ci": [
-    13.64159645957195,
-    17.63958527590148
+    21.32046434350989,
+    24.763300803235985
    ],
    "details": {
     "direction": "lower",
     "hardware_dependent": true,
-    "first_call_ms": 623.000368999783
+    "first_call_ms": 1089.3920422531664
    },
    "caveats": [
     "first call (lazy loading) excluded and reported in details"
@@ -28387,5 +28372,5 @@
  ],
  "regression": null,
  "exit_code": 0,
- "baseline_action": "baseline updated (650 gated metrics) -> /home/923873155/Sem 4 Research/SkillLLM_v2_stage2/reports/skillllm_v2/eval_suite/baseline.json"
+ "baseline_action": ""
 }

@@ -1,11 +1,11 @@
 # Evaluation card — SkillLLM_v2 research evaluation (proposed name: SkillGraphLM)
 
-Generated 2026-11-18T08:28:42+00:00 by `python -m skillllm_v2.evals.research.repro_card` (re-runnable). Machine-readable twin: `eval_card.json` (complete lists; this page abbreviates long lists).
+Generated 2026-11-18T08:53:24+00:00 by `python -m skillllm_v2.evals.research.repro_card` (re-runnable). Machine-readable twin: `eval_card.json` (complete lists; this page abbreviates long lists).
 
 ## 1. Code version
 
-- Repository `/home/923873155/Sem 4 Research`, branch `main`, commit `54aab906d548d871ad855bdbb09b7eea18ddf0d5` (2026-11-13T21:12:37+00:00).
-- Working tree dirty: **True** (9 entries under SkillLLM_v2_stage2). The evaluation code is uncommitted, so the commit alone does not identify it. The file hashes below and in `intermediate_outputs` do.
+- Repository `/home/923873155/Sem 4 Research`, branch `main`, commit `a5acd1c72840cbdda76c7972089448db65d3b492` (2026-11-18T08:43:11+00:00).
+- Working tree dirty: **True** (35 entries under SkillLLM_v2_stage2). The evaluation code is uncommitted, so the commit alone does not identify it. The file hashes below and in `intermediate_outputs` do.
 
 ## 2. Datasets
 
@@ -19,7 +19,7 @@ SkillSpan (HF export, CC-BY-4.0, Zhang et al. 2022):
 | data/source/skillspan_hf/test.json | 1116219 | 8438eda34939a5877b984ea5daf9e6ff39b2d5c7e3d73cca0499d3de3784d24a |
 | data/source/skillspan_hf/train.json | 2207996 | 5e884c3426087d14fc437d328eb72132082edbfe1e776292ae0e6e9b36c1e1f6 |
 
-Derived SkillLLM_v2 data: 11 files; course benchmark inputs: 4 files; eval inputs: 72 files (hashes in JSON).
+Derived SkillLLM_v2 data: 11 files; course benchmark inputs: 5 files; eval inputs: 72 files (hashes in JSON).
 
 | file | sha256 |
 |---|---|
@@ -38,6 +38,7 @@ Derived SkillLLM_v2 data: 11 files; course benchmark inputs: 4 files; eval input
 | inputs/courses/course_catalog.jsonl | f2f6b48d0aac54d3 |
 | inputs/courses/course_catalog_large.jsonl | 1b42b903e75f53fa |
 | inputs/courses/relevance_labels.jsonl | ce64a36c7e7f4e98 |
+| inputs/courses/sfsu_catalog.jsonl | ac4f1c98ddc31f83 |
 
 External datasets (`data/external/MANIFEST.jsonl`, sha256 `6b5fe2f8f7895c9fa8bb59f3aebb43e13e5906dd409e451a047b057e33a324b3`):
 
@@ -199,7 +200,7 @@ The shipped anchor and loop-v1/v2 adapters were trained and evaluated with the `
 | L07_compaction | PYTHONPATH=src /opt/miniconda/bin/python -m skillllm_v2.evals.research.compaction --seed 42 --n-boot 2000 --n-profiles 120 | 2026-11-17T21:16:49+00:00 | 54aab906d548 dirty | present |
 | L08_graph_retrieval | PYTHONPATH=src /opt/miniconda/bin/python -m skillllm_v2.evals.research.graph_retrieval --seed 42 --n-boot 2000 | 2026-11-18T07:08:07+00:00 | 54aab906d548 dirty | present |
 | L09_course_rec | PYTHONPATH=src /opt/miniconda/bin/python -m skillllm_v2.evals.research.course_rec --seed 42 --n-boot 2000 | 2026-11-18T07:14:29+00:00 | 54aab906d548 dirty | present |
-| L10_significance | PYTHONPATH=src /opt/miniconda/bin/python -m skillllm_v2.evals.research.significance | 2026-11-18T08:28:22+00:00 | 54aab906d548 dirty | present |
+| L10_significance | PYTHONPATH=src /opt/miniconda/bin/python -m skillllm_v2.evals.research.significance | 2026-11-18T08:53:17+00:00 | a5acd1c72840 dirty | present |
 | L11_human_eval | PYTHONPATH=src /opt/miniconda/bin/python -m skillllm_v2.evals.research.human_eval_samples --seed 42 --n-boot 2000 | 2026-11-18T08:25:23+00:00 | 54aab906d548 dirty | present |
 | L12_systems | PYTHONPATH=src /opt/miniconda/bin/python -m skillllm_v2.evals.research.systems | 2026-11-18T07:42:00+00:00 | 54aab906d548 dirty | present |
 | (all) | bash scripts/evals/run_research_evals.sh [--smoke] | - | - | runner |
@@ -208,7 +209,7 @@ Heavy jobs run through `/home/923873155/server-guardrails/bin/guardrails run cpu
 
 ## 11. Intermediate outputs
 
-462 files under `reports/skillllm_v2/evals/`, `inputs/evals/research/` and `artifacts/skillllm_v2/evals_gpu/`, each with sha256 in `eval_card.json` (`intermediate_outputs.files`). GPU jobs with DONE.json: ['artifacts/skillllm_v2/evals_gpu/anchor_dev_logprobs/DONE.json', 'artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json', 'artifacts/skillllm_v2/evals_gpu/anchor_test_nospan/DONE.json', 'artifacts/skillllm_v2/evals_gpu/bert_fair/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_anchor/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_bert_fair/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_gliner_zeroshot/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_safe_wrapper/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_token_lookup/DONE.json', 'artifacts/skillllm_v2/evals_gpu/test974_bert_fair/DONE.json', 'artifacts/skillllm_v2/evals_gpu/test974_gliner_zeroshot/DONE.json', 'artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json', 'artifacts/skillllm_v2/evals_gpu/test974_token_lookup/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_anchor/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_bert_fair/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_gliner_zeroshot/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_safe_wrapper/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_token_lookup/DONE.json'].
+463 files under `reports/skillllm_v2/evals/`, `inputs/evals/research/` and `artifacts/skillllm_v2/evals_gpu/`, each with sha256 in `eval_card.json` (`intermediate_outputs.files`). GPU jobs with DONE.json: ['artifacts/skillllm_v2/evals_gpu/anchor_dev_logprobs/DONE.json', 'artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json', 'artifacts/skillllm_v2/evals_gpu/anchor_test_nospan/DONE.json', 'artifacts/skillllm_v2/evals_gpu/bert_fair/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_anchor/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_bert_fair/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_gliner_zeroshot/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_safe_wrapper/DONE.json', 'artifacts/skillllm_v2/evals_gpu/robustness_token_lookup/DONE.json', 'artifacts/skillllm_v2/evals_gpu/test974_bert_fair/DONE.json', 'artifacts/skillllm_v2/evals_gpu/test974_gliner_zeroshot/DONE.json', 'artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json', 'artifacts/skillllm_v2/evals_gpu/test974_token_lookup/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_anchor/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_bert_fair/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_gliner_zeroshot/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_safe_wrapper/DONE.json', 'artifacts/skillllm_v2/evals_gpu/xdata_token_lookup/DONE.json'].
 
 ## 12. Known reproducibility limits
 

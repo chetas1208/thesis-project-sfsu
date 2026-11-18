@@ -6,13 +6,13 @@
 
 | key | value |
 |---|---|
-| git_commit | f196af97f395f51bf023b641c81301a0db9a9529 |
+| git_commit | a5acd1c72840cbdda76c7972089448db65d3b492 |
 | git_dirty | True |
 | seed | 42 |
 | smoke | False |
-| started_utc | 2026-10-22T08:35:09+00:00 |
-| finished_utc | 2026-10-22T08:39:57+00:00 |
-| duration_seconds | 287.4 |
+| started_utc | 2026-11-18T08:43:25+00:00 |
+| finished_utc | 2026-11-18T08:50:15+00:00 |
+| duration_seconds | 409.5 |
 | python | 3.13.12 |
 | platform | Linux-6.8.0-147-generic-x86_64-with-glibc2.39 |
 | n_boot | 2000 |
@@ -22,24 +22,23 @@
 
 - Oracle cross-checks: 5 agree, 0 DISAGREE, 6 skipped (library not importable)
 - Controls: 37 pass, 0 FAIL, 0 reported without a verdict, 0 skipped
-- Regression gate: not run (baseline written by this run)
+- Regression gate: not run (no baseline)
 - Modules: 10 ran, 0 crashed/import errors, 0 not available
-- Baseline: baseline updated (650 gated metrics) -> /home/923873155/Sem 4 Research/SkillLLM_v2_stage2/reports/skillllm_v2/eval_suite/baseline.json
 
 ## Per-module summary
 
 | module | status | evals | ok | skipped | failed | controls (pass/fail/other) | seconds | note |
 |---|---|---|---|---|---|---|---|---|
-| extraction | ok | 107 | 107 | 0 | 0 | 2/0/0 | 10.6 |  |
-| verifier | ok | 173 | 165 | 8 | 0 | 0/0/0 | 35.6 |  |
-| calibration | ok | 113 | 109 | 4 | 0 | 12/0/0 | 92.3 |  |
-| linking | ok | 50 | 46 | 4 | 0 | 1/0/0 | 105.7 |  |
-| context | ok | 38 | 35 | 3 | 0 | 2/0/0 | 7.3 |  |
-| graph | ok | 42 | 40 | 2 | 0 | 1/0/0 | 1.6 |  |
-| match | ok | 42 | 42 | 0 | 0 | 7/0/0 | 7.1 |  |
-| gap | ok | 55 | 55 | 0 | 0 | 6/0/0 | 7.2 |  |
-| explanation | ok | 44 | 42 | 2 | 0 | 2/0/0 | 7.0 |  |
-| e2e | ok | 47 | 47 | 0 | 0 | 4/0/0 | 12.8 |  |
+| extraction | ok | 107 | 107 | 0 | 0 | 2/0/0 | 13.8 |  |
+| verifier | ok | 173 | 165 | 8 | 0 | 0/0/0 | 50.4 |  |
+| calibration | ok | 113 | 109 | 4 | 0 | 12/0/0 | 108.5 |  |
+| linking | ok | 50 | 46 | 4 | 0 | 1/0/0 | 154.4 |  |
+| context | ok | 38 | 35 | 3 | 0 | 2/0/0 | 12.2 |  |
+| graph | ok | 42 | 40 | 2 | 0 | 1/0/0 | 2.5 |  |
+| match | ok | 42 | 42 | 0 | 0 | 7/0/0 | 24.9 |  |
+| gap | ok | 55 | 55 | 0 | 0 | 6/0/0 | 12.1 |  |
+| explanation | ok | 44 | 42 | 2 | 0 | 2/0/0 | 12.6 |  |
+| e2e | ok | 47 | 47 | 0 | 0 | 4/0/0 | 17.9 |  |
 
 ## Coverage vs the pipeline stages
 
@@ -572,9 +571,9 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | link | link.skillspan_gold_links | recall@k/mrr/precision | - | 0 | SkillSpan(HF) test | skipped: SkillSpan has span annotations only (no taxonomy ids) and n... | No gold taxonomy ids exist for SkillSpan and no external taxonomy (ESCO/O*NET/Lightcast) is present... |
 | link | link.gold_surface_coverage | coverage | 0.8870 [0.8713, 0.9019] | 974 | SkillSpan(HF) test 974-doc subset, safe_wrap... | ok | No gold taxonomy ids exist for SkillSpan and no external taxonomy (ESCO/O*NET/Lightcast) is present... |
 | link | link.abstention.never_removes_skill | share_of_skills_retained | 1.0000 | 2233 | SkillSpan(HF) test 974-doc subset, safe_wrap... | ok | Checks the linking stage only; the verifier/calibrator stages upstream may legitimately drop spans. |
-| context | context.packet_over_raw_tokens | packet_tokens / raw_profile_tokens (>1 = expansion, <1 = savings) | 10.5529 [10.2094, 10.9578] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok | production compact_context does no pruning: it re-packages, so values >1 mean the 'compacted' packe... |
-| context | context.packet_over_naive_tokens | packet_tokens / (raw_text + extraction_json) tokens | 1.3704 [1.3275, 1.4204] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok |  |
-| context | context.packet_over_raw_chars | packet_chars / raw_profile_chars | 5.1259 [4.9244, 5.3610] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok |  |
+| context | context.packet_over_raw_tokens | packet_tokens / raw_profile_tokens (>1 = expansion, <1 = savings) | 10.5378 [10.1946, 10.9444] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok | production compact_context does no pruning: it re-packages, so values >1 mean the 'compacted' packe... |
+| context | context.packet_over_naive_tokens | packet_tokens / (raw_text + extraction_json) tokens | 1.3685 [1.3256, 1.4187] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok |  |
+| context | context.packet_over_raw_chars | packet_chars / raw_profile_chars | 5.1132 [4.9130, 5.3495] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok |  |
 | context | context.skill_storage_multiplicity | copies of each skill stored in the packet (profile_summary.skills + s... | 2.0000 [2.0000, 2.0000] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok | packet-size inefficiency: profile_summary.skills duplicated in skill_memory.skills_by_label |
 | context | context.production_recall_important | recall of gold-important skills in production packet | 1.0000 [1.0000, 1.0000] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok | no skill is ever dropped by production compaction, so recall is bounded only by extraction input qu... |
 | context | context.production_recall_all | recall of all gold skills in production packet | 1.0000 [1.0000, 1.0000] | 40 | synthetic_profiles_v1 (seeded generator, eva... | ok |  |
@@ -619,7 +618,7 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | graph | graph.course_builder.dangling_edge_rate | CourseGraphBuilder: share of edges with an untyped (implicitly create... | 0.0000 [0.0000, 0.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok | EDGE_SIGNATURE / PROVENANCE_SPEC are this eval's conventions derived from the builders and the arch... |
 | graph | graph.skill_builder.dangling_edge_rate | SkillGraphBuilder: share of edges with an untyped (implicitly created... | 0.0000 [0.0000, 0.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | graph | graph.course_builder.provenance_complete | CourseGraphBuilder: share of edges carrying every provenance key of P... | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok | EDGE_SIGNATURE / PROVENANCE_SPEC are this eval's conventions derived from the builders and the arch... |
-| graph | graph.skill_builder.provenance_complete | SkillGraphBuilder: share of edges carrying every provenance key of PR... | 0.0000 [0.0000, 0.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok | SkillGraphBuilder (graph/graph_builder.py) records almost no provenance by design: only HAS_SKILL c... |
+| graph | graph.skill_builder.provenance_complete | SkillGraphBuilder: share of edges carrying every provenance key of PR... | 0.5779 [0.5666, 0.5896] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok | SkillGraphBuilder (graph/graph_builder.py) records almost no provenance by design: only HAS_SKILL c... |
 | graph | graph.course_builder.provenance_key_presence_min | lowest per-key presence rate among spec keys (CourseGraphBuilder) | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | graph | graph.course_builder.evidence_nonempty_rate | share of edges whose evidence field is a non-empty string (synthetic ... | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok | on inputs/demo, users and jobs list skills as plain strings so evidence_text/source_sentence are em... |
 | graph | graph.course_builder.skill_node_attr_ok | Skill nodes with canonical_skill_id == node id and a canonical_skill_... | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
@@ -633,12 +632,12 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | graph | graph.determinism_same_clock | identical canonical graph from two builds of the same input (clock fr... | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | graph | graph.determinism_across_clock_ticks | identical canonical graph when the wall clock advances between builds | 0.0000 [0.0000, 0.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok | HAS_SKILL.last_seen defaults to utc-now at build time, so graphs are not byte-stable across seconds... |
 | graph | graph.order_invariance | identical canonical graph when users/jobs/courses are ingested in a d... | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
-| graph | graph.path_toy_exact_match | hand-computed toy cases where explain_skill_path returns exactly the ... | 0.8571 [0.5714, 1.0000] | 7 | synthetic_worlds_v1 (seeded generator, evals... | ok | expected paths are hand-computed; 'six_hops_cap4' expects the full path because a path whose end is... |
+| graph | graph.path_toy_exact_match | hand-computed toy cases where explain_skill_path returns exactly the ... | 1.0000 [1.0000, 1.0000] | 7 | synthetic_worlds_v1 (seeded generator, evals... | ok | expected paths are hand-computed; 'six_hops_cap4' expects the full path because a path whose end is... |
 | graph | graph.path_shortest_correct_within_hops | reachable pairs with BFS distance <= max_hops: returned path is short... | 1.0000 [1.0000, 1.0000] | 30 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | graph | graph.path_found_when_reachable | reachable pairs for which a non-empty path is returned | 1.0000 [1.0000, 1.0000] | 30 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
-| graph | graph.path_ends_at_target_beyond_hops | reachable pairs with distance > max_hops: returned path still ends at... | 0.0000 [0.0000, 0.0000] | 28 | synthetic_worlds_v1 (seeded generator, evals... | ok | explain_skill_path trims the path to max_hops+1 nodes but still labels it as the path from source t... |
+| graph | graph.path_ends_at_target_beyond_hops | reachable pairs with distance > max_hops: returned path still ends at... | 1.0000 [1.0000, 1.0000] | 28 | synthetic_worlds_v1 (seeded generator, evals... | ok | explain_skill_path trims the path to max_hops+1 nodes but still labels it as the path from source t... |
 | graph | graph.explanation_path_realisable_rate | non-empty returned paths whose consecutive nodes are connected by gra... | 1.0000 [1.0000, 1.0000] | 30 | synthetic_worlds_v1 (seeded generator, evals... | ok | truncated paths are realisable as a prefix (each hop is a real edge) even though they miss the targ... |
-| graph | graph.explainer_connects_user_to_job | user/job pairs sharing a skill (so an explanatory path exists) for wh... | 0.0000 [0.0000, 0.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok | in builder-made graphs every edge points INTO a Skill node (User->Skill, Job->Skill, Course->Skill)... |
+| graph | graph.explainer_connects_user_to_job | user/job pairs sharing a skill (so an explanatory path exists) for wh... | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok | in builder-made graphs every edge points INTO a Skill node (User->Skill, Job->Skill, Course->Skill)... |
 | graph | graph.retriever_exact_user_skills | SkillGraphRetriever.skills_for_user equals the spec skill set (exact,... | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | graph | graph.retriever_exact_job_requirements | SkillGraphRetriever.required_skills_for_job equals the spec | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | graph | graph.retriever_exact_courses_for_skill | SkillGraphRetriever.courses_for_skill equals the spec | 1.0000 [1.0000, 1.0000] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
@@ -648,7 +647,7 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | graph | graph.contextual_retriever_mrr | ContextualRetriever MRR for 'learn <skill>' | 0.8896 [0.8613, 0.9144] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | graph | graph.title_baseline_recall_at_5 | title-only keyword baseline recall@5 | 0.2984 [0.2387, 0.3671] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | graph | graph.random_baseline_recall_at_5 | random course ranking recall@5 (negative control) | 0.1643 [0.1285, 0.2012] | 12 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
-| graph | graph.retriever_unknown_node_leak_rate | unknown user ids for which SkillGraphRetriever.skills_for_user return... | 1.0000 [1.0000, 1.0000] | 12 | probe (deterministic) | ok | networkx treats a str nbunch that is not a node as an iterable of characters, so out_edges('14') yi... |
+| graph | graph.retriever_unknown_node_leak_rate | unknown user ids for which SkillGraphRetriever.skills_for_user return... | 0.0000 [0.0000, 0.0000] | 12 | probe (deterministic) | ok | networkx treats a str nbunch that is not a node as an iterable of characters, so out_edges('14') yi... |
 | graph | graph.skill_id_collision_rate | groups of genuinely different skills (C/C++/C#, F#/F, .NET/NET) that ... | 1.0000 [1.0000, 1.0000] | 3 | probe: hand-picked distinct skill names (det... | ok | graph builders derive node ids with normalize_text, which strips punctuation: 'C++' and 'C#' become... |
 | graph | graph.edge_truth_vs_human_annotation | precision/recall of extracted graph edges against human-annotated ski... | - | 0 | none | skipped: no human-annotated user/job/course graph is available offli... |  |
 | graph | graph.taxonomy_alignment | node identity agreement with an external taxonomy (ESCO/O*NET) | - | 0 | none | skipped: no external taxonomy snapshot is checked in; only normalize... |  |
@@ -673,9 +672,9 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | match | match.score_zero_clamp_rate | share_of_scores_equal_0 | 0.4766 [0.4613, 0.4900] | 4704 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | FINDING if high: the matcher clamps to 0, so weak matches are indistinguishable (ties) |
 | match | match.tie_rate_top10 | adjacent_equal_score_share_in_top10 | 0.4306 [0.3998, 0.4633] | 112 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | ties are broken by job_id in the headline numbers |
 | match | match.tie_sensitivity_spread | ndcg_at_10_optimistic_minus_pessimistic_tiebreak | 0.0102 [0.0031, 0.0197] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | a large spread means the reported nDCG depends on how a consumer breaks ties, which the matcher lea... |
-| match | match.robust.alias_25pct.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | -0.0334 [-0.0479, -0.0201] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
-| match | match.robust.alias_50pct.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | -0.0962 [-0.1316, -0.0650] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
-| match | match.robust.lowercase_user_skills.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | -0.7119 [-0.7671, -0.6532] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
+| match | match.robust.alias_25pct.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | -0.0133 [-0.0218, -0.0065] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
+| match | match.robust.alias_50pct.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | -0.0342 [-0.0543, -0.0188] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
+| match | match.robust.lowercase_user_skills.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | 0.0000 [0.0000, 0.0000] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
 | match | match.robust.noise_skills_3.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | 0.0000 [0.0000, 0.0000] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
 | match | match.robust.noise_skills_8.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | 0.0000 [0.0000, 0.0000] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
 | match | match.robust.missing_25pct.ndcg_at_10_delta | ndcg_at_10_delta_vs_clean | -0.0916 [-0.1235, -0.0633] | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok | synthetic benchmark: authored role archetypes, not real postings; ground-truth grading (tiered cove... |
@@ -684,8 +683,8 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | match | match.prop.score_in_unit_interval | violation_rate | 0.0000 [0.0000, 0.0000] | 600 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations |
 | match | match.prop.adding_required_or_preferred_skill_never_lowers_score | violation_rate | 0.0000 [0.0000, 0.0000] | 600 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations |
 | match | match.prop.irrelevant_skill_invariance | violation_rate | 0.0000 [0.0000, 0.0000] | 600 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations |
-| match | match.prop.case_invariance | violation_rate | 0.2767 [0.2417, 0.3200] | 600 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; FINDING: JobMatcher compares ... |
-| match | match.prop.alias_invariance | violation_rate | 0.1400 [0.1133, 0.1683] | 600 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; FINDING: JobMatcher has no al... |
+| match | match.prop.case_invariance | violation_rate | 0.0000 [0.0000, 0.0000] | 600 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; REGRESSION GUARD (bug fixed, ... |
+| match | match.prop.alias_invariance | violation_rate | 0.0533 [0.0367, 0.0733] | 600 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; REGRESSION GUARD (bug fixed, ... |
 | match | match.invariance.irrelevant_attributes_and_order | max_abs_score_delta | 0.0000 | 1500 | synthetic-random-cases | ok | scores are invariant by construction if the matcher only reads skills; this guards regressions that... |
 | match | match.control.invariance_zero_delta | max_abs_score_delta | 0.0000 | 1500 | synthetic-random-cases | ok |  |
 | match | match.control.oracle_ranking_ndcg_at_10 | ndcg_at_10 | 1.0000 | 109 | synthetic-match-v1(seed=42,candidates=112,jo... | ok |  |
@@ -695,11 +694,11 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | match | match.control.metric_hand_computed_ndcg | abs_error | 0.0000 | 1 | synthetic-match-v1(seed=42,candidates=112,jo... | ok |  |
 | match | match.control.benchmark_determinism | max_abs_diff | 0.0000 | 112 | synthetic-match-v1(seed=42,candidates=112,jo... | ok |  |
 | gap | gap.detector.micro_precision | micro_precision | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
-| gap | gap.detector.micro_recall | micro_recall | 0.8045 [0.7811, 0.8261] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
-| gap | gap.detector.micro_f1 | micro_f1 | 0.8917 [0.8782, 0.9055] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
-| gap | gap.detector.macro_f1 | macro_f1_per_pair | 0.8710 [0.8493, 0.8923] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
+| gap | gap.detector.micro_recall | micro_recall | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
+| gap | gap.detector.micro_f1 | micro_f1 | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
+| gap | gap.detector.macro_f1 | macro_f1_per_pair | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
 | gap | gap.detector.critical_gap_recall | critical_gap_recall | 1.0000 [1.0000, 1.0000] | 311 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
-| gap | gap.detector.gap_type_accuracy | gap_type_accuracy_given_detected | 1.0000 [1.0000, 1.0000] | 236 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
+| gap | gap.detector.gap_type_accuracy | gap_type_accuracy_given_detected | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
 | gap | gap.engine.micro_precision | micro_precision | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
 | gap | gap.engine.micro_recall | micro_recall | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
 | gap | gap.engine.micro_f1 | micro_f1 | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
@@ -725,9 +724,9 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | gap | gap.engine.transferable_recall | transferable_label_recall | 1.0000 [1.0000, 1.0000] | 42 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
 | gap | gap.engine.transferable_false_positive_rate | false_transferable_rate_on_absent_skills | 0.0000 [0.0000, 0.0000] | 537 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
 | gap | gap.engine.transferable_weight_ratio | weight_over_missing_weight | 0.6000 [0.6000, 0.6000] | 42 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
-| gap | gap.differential.detector_vs_engine_gap_set_jaccard | jaccard_of_gap_skill_sets | 0.8011 [0.7738, 0.8268] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | both systems read the same authored state; disagreement = behavioural inconsistency between the two... |
-| gap | gap.differential.detector_vs_engine_gap_type_agreement | gap_type_agreement | 1.0000 | 782 | synthetic-gap-v1(seed=42,pairs=240) | ok | pooled over skills in both gap sets; not independent across pairs |
-| gap | gap.robust.detector.spurious_gap_share_under_lowercased_user_skills | added_gaps_per_job_skill | 0.4516 [0.4288, 0.4732] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
+| gap | gap.differential.detector_vs_engine_gap_set_jaccard | jaccard_of_gap_skill_sets | 1.0000 [1.0000, 1.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | both systems read the same authored state; disagreement = behavioural inconsistency between the two... |
+| gap | gap.differential.detector_vs_engine_gap_type_agreement | gap_type_agreement | 1.0000 | 972 | synthetic-gap-v1(seed=42,pairs=240) | ok | pooled over skills in both gap sets; not independent across pairs |
+| gap | gap.robust.detector.spurious_gap_share_under_lowercased_user_skills | added_gaps_per_job_skill | 0.0000 [0.0000, 0.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
 | gap | gap.robust.engine.spurious_gap_share_under_lowercased_user_skills | added_gaps_per_job_skill | 0.0000 [0.0000, 0.0000] | 240 | synthetic-gap-v1(seed=42,pairs=240) | ok | synthetic pairs with authored per-skill states; truth gaps/severities are authored judgements, not ... |
 | gap | gap.prop.engine.adding_strong_held_skill_never_increases_gap | violation_rate | 0.0000 [0.0000, 0.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations |
 | gap | gap.prop.engine.adding_held_skill_any_strength_never_increases_its_we... | violation_rate | 0.0000 [0.0000, 0.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations |
@@ -740,9 +739,9 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | gap | gap.prop.engine.required_weight_ge_preferred_at_equal_importance | violation_rate | 0.0000 [0.0000, 0.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations |
 | gap | gap.prop.detector.adding_held_skill_never_adds_gaps | violation_rate | 0.0000 [0.0000, 0.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations |
 | gap | gap.prop.detector.job_skill_order_invariance | violation_rate | 0.0000 [0.0000, 0.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations |
-| gap | gap.prop.detector.one_gap_per_skill_when_listed_required_and_preferred | violation_rate | 1.0000 [1.0000, 1.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; condition is constructed in e... |
-| gap | gap.prop.detector.held_skill_never_labelled_covered_by_transferable | violation_rate | 1.0000 [1.0000, 1.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; condition is constructed in e... |
-| gap | gap.prop.detector.case_invariance | violation_rate | 0.2275 [0.1850, 0.2725] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; FINDING if >0: GapDetector.de... |
+| gap | gap.prop.detector.one_gap_per_skill_when_listed_required_and_preferred | violation_rate | 0.0000 [0.0000, 0.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; condition is constructed in e... |
+| gap | gap.prop.detector.held_skill_never_labelled_covered_by_transferable | violation_rate | 0.0000 [0.0000, 0.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; condition is constructed in e... |
+| gap | gap.prop.detector.case_invariance | violation_rate | 0.0000 [0.0000, 0.0000] | 400 | synthetic-random-cases | ok | property check over seeded random cases; expectation is 0 violations; REGRESSION GUARD (bug fixed, ... |
 | gap | gap.control.rank_corr_perfect_and_reversed | tau_perfect_minus_tau_reversed | 2.0000 | 4 | synthetic-gap-v1(seed=42,pairs=240) | ok |  |
 | gap | gap.control.kendall_tau_b_tie_hand_example | abs_error | 0.0000 | 1 | synthetic-gap-v1(seed=42,pairs=240) | ok |  |
 | gap | gap.control.rank_corr_matches_scipy | max_abs_diff_vs_scipy | 0.0000 | 60 | synthetic-gap-v1(seed=42,pairs=240) | ok |  |
@@ -779,10 +778,10 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | explain | explain.legacy_cfg.audit_sensitivity_explanation_mutations | explanation text corrupted (swapped skill/course, flipped gap label, ... | 1.0000 [1.0000, 1.0000] | 40 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | explain | explain.trace_path_faithful_when_edge_missing | queries with an absent job->skill or course->skill edge where trace_e... | 0.0000 [0.0000, 0.0000] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok | trace_explanation_path builds its narrative from fixed templates and only reads the edge for option... |
 | explain | explain.match.unsupported_claim_rate | match explanation: share of checkable claims (matched/missing skills,... | 0.0000 [0.0000, 0.0000] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok | inputs are structured dicts from the synthetic worlds via the real JobMatcher / GapDetector / summa... |
-| explain | explain.match.static_boilerplate_share | share of explanation claims that are static boilerplate (limitations)... | 0.0853 [0.0833, 0.0875] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok | limitations are two fixed strings; one asserts an extraction fallback policy unrelated to the recom... |
-| explain | explain.match.evidence_relevance | evidence lines that concern a matched or missing skill of this job (r... | 0.1467 [0.1030, 0.1943] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok | generate_recommendation_explanation lists the first evidence of EVERY profile skill, not only the m... |
+| explain | explain.match.static_boilerplate_share | share of explanation claims that are static boilerplate (limitations)... | 0.1115 [0.1024, 0.1196] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok | limitations are two fixed strings; one asserts an extraction fallback policy unrelated to the recom... |
+| explain | explain.match.evidence_relevance | evidence lines that concern a matched or missing skill of this job (r... | 1.0000 [1.0000, 1.0000] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok | generate_recommendation_explanation lists the first evidence of EVERY profile skill, not only the m... |
 | explain | explain.match.missing_skill_has_evidence | explanations with missing skills that include any evidence line about... | 0.0000 [0.0000, 0.0000] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok | evidence only covers user profile skills, so job-side gaps are never evidenced |
-| explain | explain.match.completeness | explanations with user skill, job skill, gap types and evidence all p... | 1.0000 [1.0000, 1.0000] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
+| explain | explain.match.completeness | explanations with user skill, job skill, gap types and evidence all p... | 0.7292 [0.6250, 0.8333] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | explain | explain.match.audit_sensitivity | inputs or explanation corrupted -> audit reports a new unsupported cl... | 1.0000 [1.0000, 1.0000] | 48 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | explain | explain.match.audit_sensitivity.corrupt_evidence_line | mutation 'corrupt_evidence_line' detected | 1.0000 [1.0000, 1.0000] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
 | explain | explain.match.audit_sensitivity.course_stops_teaching_gap_skill | mutation 'course_stops_teaching_gap_skill' detected | 1.0000 [1.0000, 1.0000] | 8 | synthetic_worlds_v1 (seeded generator, evals... | ok |  |
@@ -802,13 +801,13 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | e2e | e2e.gap_pipeline.precision | precision | 0.9792 [0.9375, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.gap_pipeline.recall | recall | 0.7986 [0.6944, 0.8958] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.gap_pipeline.f1 | f1 | 0.8665 [0.8012, 0.9365] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
-| e2e | e2e.gap_demo.precision | precision | 0.5806 [0.3417, 0.7917] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
+| e2e | e2e.gap_demo.precision | precision | 0.6722 [0.4583, 0.8667] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.gap_demo.recall | recall | 0.9583 [0.8750, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
-| e2e | e2e.gap_demo.f1 | f1 | 0.6259 [0.3889, 0.8327] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
+| e2e | e2e.gap_demo.f1 | f1 | 0.7171 [0.4972, 0.8954] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.gap_oracle.precision | precision | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.gap_oracle.recall | recall | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.gap_oracle.f1 | f1 | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
-| e2e | e2e.name_consistency.false_gap_rate_demo_wiring | share_of_held_and_extracted_skills_flagged_as_gaps | 0.1562 [0.0000, 0.4062] | 8 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
+| e2e | e2e.name_consistency.false_gap_rate_demo_wiring | share_of_held_and_extracted_skills_flagged_as_gaps | 0.0000 [0.0000, 0.0000] | 8 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.recommend_pipeline.precision_at_3 | precision_at_3 | 0.6296 [0.5185, 0.7407] | 9 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.recommend_pipeline.gap_to_course_linkage_at_5 | share_of_reachable_gaps_covered_by_top5 | 0.6204 [0.5278, 0.7315] | 9 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.recommend_oracle.precision_at_3 | precision_at_3 | 0.8889 [0.7778, 0.9630] | 9 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
@@ -820,22 +819,22 @@ Value is the point estimate; `[lo, hi]` is a 95% percentile-bootstrap interval o
 | e2e | e2e.schema_valid.pipeline.vector_path | valid_output_share | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.schema_valid.pipeline.demo_path | valid_output_share | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.schema_valid.oracle.vector_path | valid_output_share | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
-| e2e | e2e.latency.extract_profile | mean_latency_ms | 15.1434 [13.2564, 18.3052] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
-| e2e | e2e.latency.extract_job | mean_latency_ms | 15.8778 [14.6881, 17.0434] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
-| e2e | e2e.latency.match | mean_latency_ms | 0.0168 [0.0147, 0.0193] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
-| e2e | e2e.latency.gap_detect | mean_latency_ms | 0.0079 [0.0070, 0.0090] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
-| e2e | e2e.latency.gap_vector | mean_latency_ms | 0.0420 [0.0374, 0.0463] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
-| e2e | e2e.latency.recommend | mean_latency_ms | 0.3605 [0.2954, 0.4278] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
-| e2e | e2e.latency.total_per_case | mean_latency_ms | 31.4483 [28.9281, 35.1453] | 12 | synthetic-e2e-v1(cases=12) | ok | sum of stage means per case, full-pipeline mode |
+| e2e | e2e.latency.extract_profile | mean_latency_ms | 27.5405 [24.8527, 31.8506] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
+| e2e | e2e.latency.extract_job | mean_latency_ms | 26.9135 [26.1722, 27.6584] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
+| e2e | e2e.latency.match | mean_latency_ms | 0.1596 [0.1412, 0.1784] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
+| e2e | e2e.latency.gap_detect | mean_latency_ms | 0.1183 [0.0964, 0.1410] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
+| e2e | e2e.latency.gap_vector | mean_latency_ms | 0.1674 [0.1315, 0.2019] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
+| e2e | e2e.latency.recommend | mean_latency_ms | 0.5692 [0.4973, 0.6488] | 12 | synthetic-e2e-v1(cases=12) | ok | CPU wall-clock on whatever machine ran the suite; first call includes warm-up; stub extractors, not... |
+| e2e | e2e.latency.total_per_case | mean_latency_ms | 55.4685 [52.3328, 60.2136] | 12 | synthetic-e2e-v1(cases=12) | ok | sum of stage means per case, full-pipeline mode |
 | e2e | e2e.determinism.in_process | identical_output_share | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | two runs in one process |
 | e2e | e2e.determinism.across_hash_seeds | identical_digest_across_PYTHONHASHSEED | 1.0000 | 2 | synthetic-e2e-v1(cases=12) | ok | two fresh interpreter processes with different PYTHONHASHSEED values; catches set-iteration-order n... |
-| e2e | e2e.degradation.graceful_share | graceful_share_of_expected_scenarios | 0.8182 [0.5455, 1.0000] | 11 | synthetic-degradation-scenarios | ok | graceful = returns schema-valid output without raising; scenarios marked informational are input-co... |
+| e2e | e2e.degradation.graceful_share | graceful_share_of_expected_scenarios | 1.0000 [1.0000, 1.0000] | 11 | synthetic-degradation-scenarios | ok | graceful = returns schema-valid output without raising; scenarios marked informational are input-co... |
 | e2e | e2e.inference_module_present | module_importable | 1.0000 | 1 | synthetic-e2e-v1(cases=12) | ok | module imported; only the generic probe below (completion, strict JSON, recall, latency, determinis... |
 | e2e | e2e.inference.completion_share | run_completes_share | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.inference.strict_json_share | to_dict_strict_json_share | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.inference.profile_skill_recall | recall | 0.5194 [0.3667, 0.6792] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
 | e2e | e2e.inference.determinism_same_skills_twice | identical_share | 1.0000 [1.0000, 1.0000] | 12 | synthetic-e2e-v1(cases=12) | ok | synthetic authored cases (12 in a full run, 5 in smoke) -- tiny n, wide CIs; not real resumes/posti... |
-| e2e | e2e.inference.latency_after_warmup | mean_latency_ms | 15.5263 [13.6416, 17.6396] | 11 | synthetic-e2e-v1(cases=12) | ok | first call (lazy loading) excluded and reported in details |
+| e2e | e2e.inference.latency_after_warmup | mean_latency_ms | 23.0824 [21.3205, 24.7633] | 11 | synthetic-e2e-v1(cases=12) | ok | first call (lazy loading) excluded and reported in details |
 | e2e | e2e.control.oracle_wiring_reproduces_truth_gaps | exact_match_share | 1.0000 | 12 | synthetic-e2e-v1(cases=12) | ok |  |
 | e2e | e2e.control.schema_validator_rejects_corruption | rejected_share | 1.0000 | 7 | synthetic-e2e-v1(cases=12) | ok |  |
 | e2e | e2e.control.traceability_checker_flags_tampering | flagged_share | 1.0000 | 4 | synthetic-e2e-v1(cases=12) | ok |  |

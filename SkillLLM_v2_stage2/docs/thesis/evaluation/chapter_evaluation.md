@@ -351,7 +351,7 @@ protocol: `human_eval_protocol.md`. Every human metric is `pending_human` until 
 ### 9.1 Status of the layers
 
 <!-- BEGIN AUTO:layer_status -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | layer | title | owner | status | records | measured | pending_gpu | pending_human | not_available | generated_utc |
 |---|---|---|---|---|---|---|---|---|---|
@@ -364,7 +364,7 @@ _Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADER
 | L07_compaction | Profile compaction | A4 | measured | 560 | 560 | 0 | 0 | 0 | 2026-11-17T21:16:49+00:00 |
 | L08_graph_retrieval | Graph-augmented retrieval | A5 | measured + not_available | 174 | 169 | 0 | 0 | 5 | 2026-11-18T07:08:07+00:00 |
 | L09_course_rec | Course recommendation | A5 | measured | 385 | 385 | 0 | 0 | 0 | 2026-11-18T07:14:29+00:00 |
-| L10_significance | Central significance testing | A2 | measured | 1056 | 1056 | 0 | 0 | 0 | 2026-11-18T08:28:22+00:00 |
+| L10_significance | Central significance testing | A2 | measured | 1056 | 1056 | 0 | 0 | 0 | 2026-11-18T08:53:17+00:00 |
 | L11_human_eval | Human evaluation | A6 | measured + pending_human | 57 | 8 | 0 | 49 | 0 | 2026-11-18T08:25:23+00:00 |
 | L12_systems | Systems: latency, memory | A3 | measured + not_available | 48 | 45 | 0 | 0 | 3 | 2026-11-18T07:42:00+00:00 |
 <!-- END AUTO:layer_status -->
@@ -372,7 +372,7 @@ _Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADER
 ### 9.2 Headline metrics
 
 <!-- BEGIN AUTO:headline -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | layer | system | metric | value | ci | n | unit | split | provenance |
 |---|---|---|---|---|---|---|---|---|
@@ -408,7 +408,7 @@ _Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADER
 ### 9.3 Pre-registered hypotheses
 
 <!-- BEGIN AUTO:hypotheses -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | hypothesis | owner_layer | verdict | delta | ci | p_raw | p_holm | status | note |
 |---|---|---|---|---|---|---|---|---|
@@ -427,7 +427,7 @@ _Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADER
 ### 9.4 Extraction (L01)
 
 <!-- BEGIN AUTO:layer:L01_extraction -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -470,7 +470,7 @@ Source: `reports/skillllm_v2/evals/L01_extraction/results.json` (generated 2026-
 ### 9.5 Generalization to unseen skills (L02)
 
 <!-- BEGIN AUTO:layer:L02_generalization -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -513,7 +513,7 @@ Source: `reports/skillllm_v2/evals/L02_generalization/results.json` (generated 2
 ### 9.6 Robustness (L03)
 
 <!-- BEGIN AUTO:layer:L03_robustness -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -559,7 +559,7 @@ Source: `reports/skillllm_v2/evals/L03_robustness/results.json` (generated 2026-
 ### 9.7 Calibration and selective prediction (L04)
 
 <!-- BEGIN AUTO:layer:L04_calibration -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -602,7 +602,7 @@ Source: `reports/skillllm_v2/evals/L04_calibration/results.json` (generated 2026
 ### 9.8 Safe-wrapper contribution (L05)
 
 <!-- BEGIN AUTO:layer:L05_wrapper -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -645,7 +645,7 @@ Source: `reports/skillllm_v2/evals/L05_wrapper/results.json` (generated 2026-11-
 ### 9.9 Taxonomy linking (L06)
 
 <!-- BEGIN AUTO:layer:L06_linking -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -691,7 +691,7 @@ Source: `reports/skillllm_v2/evals/L06_linking/results.json` (generated 2026-11-
 ### 9.10 Profile compaction (L07)
 
 <!-- BEGIN AUTO:layer:L07_compaction -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -734,7 +734,7 @@ Source: `reports/skillllm_v2/evals/L07_compaction/results.json` (generated 2026-
 ### 9.11 Graph-augmented retrieval (L08)
 
 <!-- BEGIN AUTO:layer:L08_graph_retrieval -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -782,7 +782,7 @@ Source: `reports/skillllm_v2/evals/L08_graph_retrieval/results.json` (generated 
 ### 9.12 Course recommendation (L09)
 
 <!-- BEGIN AUTO:layer:L09_course_rec -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -825,7 +825,7 @@ Source: `reports/skillllm_v2/evals/L09_course_rec/results.json` (generated 2026-
 ### 9.13 Central significance testing (L10)
 
 <!-- BEGIN AUTO:layer:L10_significance -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -862,13 +862,13 @@ _Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADER
 
 _1026 further measured records: see `reports/skillllm_v2/evals/L10_significance/REPORT.md`._
 
-Source: `reports/skillllm_v2/evals/L10_significance/results.json` (generated 2026-11-18T08:28:22+00:00, git 54aab906d548 dirty).
+Source: `reports/skillllm_v2/evals/L10_significance/results.json` (generated 2026-11-18T08:53:17+00:00, git a5acd1c72840 dirty).
 <!-- END AUTO:layer:L10_significance -->
 
 ### 9.14 Human evaluation (L11)
 
 <!-- BEGIN AUTO:layer:L11_human_eval -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -897,7 +897,7 @@ Source: `reports/skillllm_v2/evals/L11_human_eval/results.json` (generated 2026-
 ### 9.15 Systems cost (L12)
 
 <!-- BEGIN AUTO:layer:L12_systems -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 | system | metric | value | ci | n | unit | split |
 |---|---|---|---|---|---|---|
@@ -947,7 +947,7 @@ Source: `reports/skillllm_v2/evals/L12_systems/results.json` (generated 2026-11-
 ### 10.1 Verdicts as emitted by the layers
 
 <!-- BEGIN AUTO:verdict_statements -->
-_Auto-generated 2026-11-18T08:28:41+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
+_Auto-generated 2026-11-18T08:53:24+00:00 from `reports/skillllm_v2/evals/LEADERBOARD.md` — do not edit inside this block._
 
 - **H1: NOT SUPPORTED** [mistral_lora] (layer L01_extraction, measured). primary effect = 0.0370 [0.0165, 0.0573]; p_raw = 0.0004, p_Holm = 0.0004. Pre-registered rule: H1 SUPPORTED iff anchor exact-span F1 minus baseline >= 0.10 AND Holm-adjusted p < 0.05 against EVERY baseline in family H1_anchor_vs_baselines (paired, 974 test sentences; p = approximate randomization, 10,000 shuffles; CI = paired bootstrap, 10,000 resamples).
 - **H2: NOT SUPPORTED** [R7_safe_wrapper_stored] (layer L05_wrapper, measured). primary effect = 0.0000 [0.0000, 0.0000]; p_raw = 1.0000, p_Holm = 1.0000. Pre-registered rule: H2: APR(safe) - APR(legacy) 95% CI lower bound > 0 against BOTH legacy full_cag_graph and legacy mistral_gliner_taxonomy, AND exact-F1(safe) - exact-F1(anchor) lower 95% CI bound > -0.005 (D-A2-02). Caveat recorded by the layer: Single training run of the anchor and one test split: CIs reflect document sampling only.; SOFT_SKILL = SkillSpan 'skill' component (tags_skill), HARD_SKILL = 'knowledge' (tags_knowledge).; 974-doc subset with >=1 gold s
