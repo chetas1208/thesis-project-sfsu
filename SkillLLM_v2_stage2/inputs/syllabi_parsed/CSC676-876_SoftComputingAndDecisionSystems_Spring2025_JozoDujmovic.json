@@ -1,0 +1,318 @@
+{
+  "file": "CSC676-876_SoftComputingAndDecisionSystems_Spring2025_JozoDujmovic",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 676",
+    "Grad_equivalent": [
+      "CSc 876"
+    ],
+    "course_title": "Soft Computing and Decision Support Systems",
+    "term": null,
+    "instructor": "Dr. Jozo Dujmović",
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "To promote critical thinking as a prerequisite and motivation for creative work.",
+      "To be exposed to recent computational intelligence research results, decision methods, tools, and applications, and to participate in such research activities.",
+      "To learn how to develop new techniques and software tools based on observation, experiments, and modeling of human mental activities.",
+      "To learn how to find, read, and analyze research papers, and how to present research and development results in professionally correct and efficient scientific ways (as technical reports and research papers).",
+      "Presentation of selected areas of soft computing in an advanced research-oriented way.",
+      "Soft computing as an area of computational intelligence.",
+      "Observable properties of human reasoning and their modeling.",
+      "Development, validation, and use of human-centric graded logic models.",
+      "Graded logic as a soft computing generalization of classic Boolean logic, and fuzzy logic.",
+      "Decision engineering techniques based on the LSP method and corresponding software tools: evaluation and selection of complex objects and alternatives.",
+      "Critical thinking that stimulates developments of soft computing methods and tools.",
+      "Critical reading of modern literature in the area of computational intelligence.",
+      "Experimental work in modeling human reasoning.",
+      "Development of realistic and justifiable decision criteria.",
+      "Development and use of professional-level decision support software (LSP.NT, etc.)",
+      "Soft computing applications in real estate, medicine, ecology, space management, geography (GIS), strategic planning, computer science, and personal decision making."
+    ],
+    "topics": [
+      "Human-centric aspects of artificial intelligence.",
+      "Survey of soft computing and related areas of computational intelligence.",
+      "Decision engineering methods, decision support tools, and a spectrum of decision-making applications.",
+      "Modeling of human mental activities.",
+      "Study of logic aggregation operators and information fusion models.",
+      "Graded logic (fully continuum-valued propositional logic).",
+      "LSP method for evaluation, optimization and comparison of complex systems.",
+      "Applications of soft computing methods.",
+      "Development and use of software systems for decision support.",
+      "Granulation and graduation",
+      "Fuzzy sets, fuzzy logic, and fuzzy systems",
+      "Approximate reasoning",
+      "Possibility theory",
+      "Fuzzy decision making",
+      "Fuzzy controllers",
+      "Concept of rough sets",
+      "Computing with words",
+      "Perceptual computing, and granular computing",
+      "Neural networks and their use"
+    ],
+    "skills": [
+      {
+        "skill": "Graded logic",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Development, validation, and use of human-centric graded logic models.",
+        "reason": null
+      },
+      {
+        "skill": "Fuzzy logic",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Graded logic as a soft computing generalization of classic Boolean logic, and fuzzy logic.",
+        "reason": null
+      },
+      {
+        "skill": "LSP decision method",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Decision engineering techniques based on the LSP method and corresponding software tools: evaluation and selection of complex objects and alternatives.",
+        "reason": null
+      },
+      {
+        "skill": "Neural networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Neural networks and their use.",
+        "reason": null
+      },
+      {
+        "skill": "Computational intelligence",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Survey of soft computing and related areas of computational intelligence.",
+        "reason": null
+      },
+      {
+        "skill": "Software development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "To learn how to develop new techniques and software tools based on observation, experiments, and modeling of human mental activities.",
+        "reason": null
+      },
+      {
+        "skill": "Decision support software (LSP.NT)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Development and use of professional-level decision support software (LSP.NT, etc.)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSc 876/676",
+      "course_title": "Soft Computing and Decision Support Systems"
+    },
+    "cross_listed": [
+      "CSC 876"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 45,
+      "exact": 44,
+      "approximate": 1,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSc 676",
+    "Grad_equivalent": [
+      "CSc 876"
+    ],
+    "course_title": "Soft Computing and Decision Support Systems",
+    "term": null,
+    "instructor": "Dr. Jozo Dujmović",
+    "prerequisites": [
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "For 876 graduate students, an essential prerequisite is a clear interest in individual creative work in computational intelligence, based on standard CS preparation in mathematical modeling and software development."
+      },
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "SFSU Bulleting prerequisites for 876 are graduate standing or permission of the instructor."
+      },
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "For undergraduate 676 students the SFSU Bulletin prerequisites are upper-division standing, GPA of 3.0 or better; or permission of the instructor."
+      }
+    ],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "To promote critical thinking as a prerequisite and motivation for creative work.",
+      "To be exposed to recent computational intelligence research results, decision methods, tools, and applications, and to participate in such research activities.",
+      "To learn how to develop new techniques and software tools based on observation, experiments, and modeling of human mental activities.",
+      "To learn how to find, read, and analyze research papers, and how to present research and development results in professionally correct and efficient scientific ways (as technical reports and research papers).",
+      "Presentation of selected areas of soft computing in an advanced research-oriented way.",
+      "Soft computing as an area of computational intelligence.",
+      "Observable properties of human reasoning and their modeling.",
+      "Development, validation, and use of human-centric graded logic models.",
+      "Graded logic as a soft computing generalization of classic Boolean logic, and fuzzy logic.",
+      "Decision engineering techniques based on the LSP method and corresponding software tools: evaluation and selection of complex objects and alternatives.",
+      "Critical thinking that stimulates developments of soft computing methods and tools.",
+      "Critical reading of modern literature in the area of computational intelligence.",
+      "Experimental work in modeling human reasoning.",
+      "Development of realistic and justifiable decision criteria.",
+      "Development and use of professional-level decision support software (LSP.NT, etc.)",
+      "Soft computing applications in real estate, medicine, ecology, space management, geography (GIS), strategic planning, computer science, and personal decision making."
+    ],
+    "topics": [
+      "Human-centric aspects of artificial intelligence.",
+      "Survey of soft computing and related areas of computational intelligence.",
+      "Decision engineering methods, decision support tools, and a spectrum of decision-making applications.",
+      "Modeling of human mental activities.",
+      "Study of logic aggregation operators and information fusion models.",
+      "Graded logic (fully continuum-valued propositional logic).",
+      "LSP method for evaluation, optimization and comparison of complex systems.",
+      "Applications of soft computing methods.",
+      "Development and use of software systems for decision support.",
+      "Granulation and graduation",
+      "Fuzzy sets, fuzzy logic, and fuzzy systems",
+      "Approximate reasoning",
+      "Possibility theory",
+      "Fuzzy decision making",
+      "Fuzzy controllers",
+      "Concept of rough sets",
+      "Computing with words",
+      "Perceptual computing, and granular computing",
+      "Neural networks and their use"
+    ],
+    "skills": [
+      {
+        "skill": "Graded logic",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Development, validation, and use of human-centric graded logic models.",
+        "reason": null
+      },
+      {
+        "skill": "Fuzzy logic",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Graded logic as a soft computing generalization of classic Boolean logic, and fuzzy logic.",
+        "reason": null
+      },
+      {
+        "skill": "LSP decision method",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Decision engineering techniques based on the LSP method and corresponding software tools: evaluation and selection of complex objects and alternatives.",
+        "reason": null
+      },
+      {
+        "skill": "Neural networks",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Neural networks and their use.",
+        "reason": null
+      },
+      {
+        "skill": "Computational intelligence",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Survey of soft computing and related areas of computational intelligence.",
+        "reason": null
+      },
+      {
+        "skill": "Software development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "To learn how to develop new techniques and software tools based on observation, experiments, and modeling of human mental activities.",
+        "reason": null
+      },
+      {
+        "skill": "Decision support software (LSP.NT)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Development and use of professional-level decision support software (LSP.NT, etc.)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSc 876/676",
+      "course_title": "Soft Computing and Decision Support Systems"
+    }
+  }
+}

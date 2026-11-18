@@ -1,0 +1,392 @@
+{
+  "file": "CSC621-821_BiomedicalImaging_Fall2023_KazOkada",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 621",
+    "Grad_equivalent": [
+      "CSC 821"
+    ],
+    "course_title": "Biomedical Imaging & Analysis",
+    "term": "Fall 2023",
+    "instructor": "Dr. Kazunori Okada",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 510"
+        ],
+        "recommended": false,
+        "evidence": "CSC510 and MATH 325 with grades of C or better"
+      },
+      {
+        "any_of": [
+          "MATH 325"
+        ],
+        "recommended": false,
+        "evidence": "CSC510 and MATH 325 with grades of C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "CSC510 and MATH 325 with grades of C or better"
+      },
+      {
+        "text": "GPA of 3.0 or higher",
+        "evidence": "GPA of 3.0 or higher"
+      },
+      {
+        "text": "Consent of the instructor",
+        "evidence": "or consent of the instructor"
+      },
+      {
+        "text": "Graduate standing",
+        "evidence": "CSC821: Graduate standing or consent of the instructor"
+      }
+    ],
+    "learning_outcomes": [
+      "Developing comprehensive overview of basic topics in biomedical imaging & analysis",
+      "Deeper knowledge of a specific biomedical imaging and analysis application",
+      "Developing a biomedical image analysis system using public APIs",
+      "Conducting a literature survey and writing a report (for graduate students)"
+    ],
+    "topics": [
+      "Course Overview: Framework, History, Applications",
+      "Imaging Methods & Physics: Optical, X-ray, CT, MRI",
+      "Imaging Methods & Physics: PET, US, Fusion, Biology",
+      "Image Data Structure and Image Visualization",
+      "Digital Image Processing: Practical Foundation",
+      "Digital Image Filtering: Spatial Domain",
+      "Digital Image Filtering: Frequency Domain",
+      "Advanced Processing: Edge Detection & Morphology",
+      "Image Segmentation: Thresholding, Region Growing",
+      "Image Segmentation: Watersheds, Level Sets, Graph",
+      "Image Registration: Geometry-based Registration",
+      "Image Registration: Intensity-Based Registration",
+      "Image Quantification: Change Analysis, Classification",
+      "Group Project Work and Final Presentation"
+    ],
+    "skills": [
+      {
+        "skill": "Biomedical Imaging Physics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course, an introduction to biomedical imaging and analysis, covers two main components: physical image formation (e.g., imaging physics, 3D imaging, image formats, visualization)",
+        "reason": null
+      },
+      {
+        "skill": "Digital Image Processing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "computational data analysis (e.g., digital image processing, filtering, registration, segmentation, quantification)",
+        "reason": null
+      },
+      {
+        "skill": "Image Filtering (Spatial and Frequency Domain)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Digital Image Filtering: Spatial Domain; Digital Image Filtering: Frequency Domain",
+        "reason": null
+      },
+      {
+        "skill": "Image Segmentation Techniques",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Image Segmentation: Thresholding, Region Growing; Image Segmentation: Watersheds, Level Sets, Graph",
+        "reason": null
+      },
+      {
+        "skill": "Image Registration Methods",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Image Registration: Geometry-based Registration; Image Registration: Intensity-Based Registration",
+        "reason": null
+      },
+      {
+        "skill": "Image Quantification and Classification",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Image Quantification: Change Analysis, Classification",
+        "reason": null
+      },
+      {
+        "skill": "Insight Segmentation and Registration Toolkit (ITK)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "For coding platform, students will use Insight Segmentation and Registration Toolkit (ITK: http://www.itk.org/) with C++ or (SimpleITK: https://simpleitk.org/TUTORIAL) with Python",
+        "reason": null
+      },
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "For coding platform, students will use Insight Segmentation and Registration Toolkit (ITK: http://www.itk.org/) with C++",
+        "reason": null
+      },
+      {
+        "skill": "Python",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "For coding platform, students will use ... SimpleITK: https://simpleitk.org/TUTORIAL with Python",
+        "reason": null
+      },
+      {
+        "skill": "Literature Survey and Academic Writing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "An independent literature survey study is to be carried out by each graduate student ... submit a written report summarizing and critiquing the survey results",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 621-821",
+      "course_title": "Biomedical Imaging & Analysis"
+    },
+    "cross_listed": [
+      "CSC 821"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 39,
+      "exact": 31,
+      "approximate": 8,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 621",
+    "Grad_equivalent": [
+      "CSC 821"
+    ],
+    "course_title": "Biomedical Imaging & Analysis",
+    "term": "Fall 2023",
+    "instructor": "Dr. Kazunori Okada",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 510"
+        ],
+        "recommended": false,
+        "evidence": "CSC510 and MATH 325 with grades of C or better"
+      },
+      {
+        "any_of": [
+          "MATH 325"
+        ],
+        "recommended": false,
+        "evidence": "CSC510 and MATH 325 with grades of C or better"
+      },
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "Upper-division standing"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "CSC510 and MATH 325 with grades of C or better"
+      },
+      {
+        "text": "GPA of 3.0 or higher",
+        "evidence": "GPA of 3.0 or higher"
+      },
+      {
+        "text": "Consent of the instructor",
+        "evidence": "or consent of the instructor"
+      },
+      {
+        "text": "Graduate standing",
+        "evidence": "CSC821: Graduate standing or consent of the instructor"
+      }
+    ],
+    "learning_outcomes": [
+      "Developing comprehensive overview of basic topics in biomedical imaging & analysis",
+      "Deeper knowledge of a specific biomedical imaging and analysis application",
+      "Developing a biomedical image analysis system using public APIs",
+      "Conducting a literature survey and writing a report (for graduate students)"
+    ],
+    "topics": [
+      "Course Overview: Framework, History, Applications",
+      "Imaging Methods & Physics: Optical, X-ray, CT, MRI",
+      "Imaging Methods & Physics: PET, US, Fusion, Biology",
+      "Image Data Structure and Image Visualization",
+      "Digital Image Processing: Practical Foundation",
+      "Digital Image Filtering: Spatial Domain",
+      "Digital Image Filtering: Frequency Domain",
+      "Advanced Processing: Edge Detection & Morphology",
+      "Image Segmentation: Thresholding, Region Growing",
+      "Image Segmentation: Watersheds, Level Sets, Graph",
+      "Image Registration: Geometry-based Registration",
+      "Image Registration: Intensity-Based Registration",
+      "Image Quantification: Change Analysis, Classification",
+      "Group Project Work and Final Presentation"
+    ],
+    "skills": [
+      {
+        "skill": "Biomedical Imaging Physics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This course, an introduction to biomedical imaging and analysis, covers two main components: physical image formation (e.g., imaging physics, 3D imaging, image formats, visualization)",
+        "reason": null
+      },
+      {
+        "skill": "Digital Image Processing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "computational data analysis (e.g., digital image processing, filtering, registration, segmentation, quantification)",
+        "reason": null
+      },
+      {
+        "skill": "Image Filtering (Spatial and Frequency Domain)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Digital Image Filtering: Spatial Domain; Digital Image Filtering: Frequency Domain",
+        "reason": null
+      },
+      {
+        "skill": "Image Segmentation Techniques",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Image Segmentation: Thresholding, Region Growing; Image Segmentation: Watersheds, Level Sets, Graph",
+        "reason": null
+      },
+      {
+        "skill": "Image Registration Methods",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Image Registration: Geometry-based Registration; Image Registration: Intensity-Based Registration",
+        "reason": null
+      },
+      {
+        "skill": "Image Quantification and Classification",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Image Quantification: Change Analysis, Classification",
+        "reason": null
+      },
+      {
+        "skill": "Insight Segmentation and Registration Toolkit (ITK)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "For coding platform, students will use Insight Segmentation and Registration Toolkit (ITK: http://www.itk.org/) with C++ or (SimpleITK: https://simpleitk.org/TUTORIAL) with Python",
+        "reason": null
+      },
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "For coding platform, students will use Insight Segmentation and Registration Toolkit (ITK: http://www.itk.org/) with C++",
+        "reason": null
+      },
+      {
+        "skill": "Python",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "For coding platform, students will use ... SimpleITK: https://simpleitk.org/TUTORIAL with Python",
+        "reason": null
+      },
+      {
+        "skill": "Literature Survey and Academic Writing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "An independent literature survey study is to be carried out by each graduate student ... submit a written report summarizing and critiquing the survey results",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 621-821",
+      "course_title": "Biomedical Imaging & Analysis"
+    }
+  }
+}

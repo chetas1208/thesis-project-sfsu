@@ -1,0 +1,264 @@
+{
+  "file": "CSC413_SoftwareDevelopment_BrianParra",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 413",
+    "Grad_equivalent": [],
+    "course_title": null,
+    "term": null,
+    "instructor": "Brian Parra",
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "Learn to work in teams",
+      "Develop Large Scale Software",
+      "Work on skills for job interviews",
+      "Develop clean, professional looking code"
+    ],
+    "topics": [
+      "Compiler design",
+      "Bytecode interpretation, code execution",
+      "Design Patterns",
+      "UI programming",
+      "Application Development",
+      "Storage and Databases",
+      "Multithreading",
+      "Git",
+      "Rest apis"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "FinalExam (java only)",
+        "reason": null
+      },
+      {
+        "skill": "Git",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Git Info Sheet: https://github.com/brianxautumn/git-demo",
+        "reason": null
+      },
+      {
+        "skill": "MongoDB",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Project will be Java + Mongo + React.",
+        "reason": null
+      },
+      {
+        "skill": "React",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Project will be Java + Mongo + React.",
+        "reason": null
+      },
+      {
+        "skill": "REST APIs",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Topics: Rest apis",
+        "reason": null
+      },
+      {
+        "skill": "Multithreading",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics: Multithreading",
+        "reason": null
+      },
+      {
+        "skill": "Design Patterns",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics: Design Patterns",
+        "reason": null
+      },
+      {
+        "skill": "Bytecode interpretation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics: Bytecode interpretation, code execution",
+        "reason": null
+      },
+      {
+        "skill": "Compiler design",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics: Compiler design",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 413",
+      "course_title": "Computer Science 413"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "approximate",
+    "course_title": "not_found",
+    "cross_listed": [],
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 24,
+      "exact": 17,
+      "approximate": 6,
+      "not_found": 1
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 413",
+    "Grad_equivalent": [],
+    "course_title": null,
+    "term": null,
+    "instructor": "Brian Parra",
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "Learn to work in teams",
+      "Develop Large Scale Software",
+      "Work on skills for job interviews",
+      "Develop clean, professional looking code"
+    ],
+    "topics": [
+      "Compiler design",
+      "Bytecode interpretation, code execution",
+      "Design Patterns",
+      "UI programming",
+      "Application Development",
+      "Storage and Databases",
+      "Multithreading",
+      "Git",
+      "Rest apis"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "FinalExam (java only)",
+        "reason": null
+      },
+      {
+        "skill": "Git",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Git Info Sheet: https://github.com/brianxautumn/git-demo",
+        "reason": null
+      },
+      {
+        "skill": "MongoDB",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Project will be Java + Mongo + React.",
+        "reason": null
+      },
+      {
+        "skill": "React",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Project will be Java + Mongo + React.",
+        "reason": null
+      },
+      {
+        "skill": "REST APIs",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Topics: Rest apis",
+        "reason": null
+      },
+      {
+        "skill": "Multithreading",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics: Multithreading",
+        "reason": null
+      },
+      {
+        "skill": "Design Patterns",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics: Design Patterns",
+        "reason": null
+      },
+      {
+        "skill": "Bytecode interpretation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics: Bytecode interpretation, code execution",
+        "reason": null
+      },
+      {
+        "skill": "Compiler design",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics: Compiler design",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 413",
+      "course_title": "Computer Science 413"
+    }
+  }
+}

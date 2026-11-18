@@ -1,0 +1,495 @@
+{
+  "file": "CSC648-848_Software Engineering_Fall2023_DragutinPetkovic",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 648",
+    "Grad_equivalent": [
+      "CSC 848"
+    ],
+    "course_title": "SOFTWARE ENGINEERING/ADVANCED SOFTWARE ENGINEERING",
+    "term": null,
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "a grade of C or better in CSC 413 and in CSC 317, or consent of the instructor"
+      },
+      {
+        "any_of": [
+          "CSC 317"
+        ],
+        "recommended": false,
+        "evidence": "a grade of C or better in CSC 413 and in CSC 317, or consent of the instructor"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "consent of the instructor",
+        "evidence": "a grade of C or better in CSC 413 and in CSC 317, or consent of the instructor"
+      },
+      {
+        "text": "Grade of C or better",
+        "evidence": "a grade of C or better in CSC 413 and in CSC 317, or consent of the instructor"
+      }
+    ],
+    "learning_outcomes": [
+      "Knowledge of modern Agile SE engineering methods/processes and best practices for team-centric SW development, and their appropriate application",
+      "Knowledge of basic components and tools for team-centric full lifecycle SW development from use cases and initial specifications to design, implementation, testing, evaluation as well as code management and deployment on cloud systems",
+      "Knowledge of best practices for the design, implementation and evaluation for delivering easy to use and maintainable SW",
+      "Ability to constantly iterate and re-prioritize plans and designs based on user needs, budget, schedule and resources",
+      "Development of significant SE teamwork and project based experience, as close as possible to real life",
+      "Use of GenAI tools in SW Engineering"
+    ],
+    "topics": [
+      "Introduction and motivation for Software Engineering(SE)",
+      "Overview of several basic SE methodologies with emphasis on Iterative and Incremental Development and User Centered Design",
+      "Usability and UI design principles and practice",
+      "Usability evaluation",
+      "Basic components of SW Engineering process: Planning; Requirements and Specifications; Iterative Design, Rapid Prototyping, Mockups; Software Design; Coding and documentation techniques (high level only)",
+      "SW Engineering related to Web application development",
+      "Open source SW development and management",
+      "SW Engineering using GenAI tools",
+      "Software Configuration Management, Code management, Delivery, Installation, and Documentation",
+      "Software Metrics, and Usability Measurements and evaluation",
+      "Software QA and Testing",
+      "Software Maintenance",
+      "Project Management issues",
+      "Teamwork and Communication as integral part of SW Engineering",
+      "Issues related to global SW engineering",
+      "Real life examples and cases from instructor and students",
+      "Guest and student presentations",
+      "Final Team Project including several milestones, interaction with instructor, and final demo and delivery"
+    ],
+    "skills": [
+      {
+        "skill": "Agile software engineering methods",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Knowledge of modern Agile SE engineering methods/processes and best practices for team-centric SW development, and their appropriate application",
+        "reason": null
+      },
+      {
+        "skill": "Iterative and Incremental Development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Overview of several basic SE methodologies with emphasis on Iterative and Incremental Development and User Centered Design",
+        "reason": null
+      },
+      {
+        "skill": "User Centered Design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Overview of several basic SE methodologies with emphasis on Iterative and Incremental Development and User Centered Design",
+        "reason": null
+      },
+      {
+        "skill": "Usability evaluation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Usability evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Software design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Basic components of SW Engineering process: Planning; Requirements and Specifications; Iterative Design, Rapid Prototyping, Mockups; Software Design; Coding and documentation techniques (high level only)",
+        "reason": null
+      },
+      {
+        "skill": "Coding and documentation techniques",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basic components of SW Engineering process: Planning; Requirements and Specifications; Iterative Design, Rapid Prototyping, Mockups; Software Design; Coding and documentation techniques (high level only)",
+        "reason": null
+      },
+      {
+        "skill": "Web application development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "SW Engineering related to Web application development",
+        "reason": null
+      },
+      {
+        "skill": "Open source software development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Open source SW development and management",
+        "reason": null
+      },
+      {
+        "skill": "GenAI tools",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "SW Engineering using GenAI tools",
+        "reason": null
+      },
+      {
+        "skill": "Software Configuration Management",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Software Configuration Management, Code management, Delivery, Installation, and Documentation",
+        "reason": null
+      },
+      {
+        "skill": "Software Metrics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Software Metrics, and Usability Measurements and evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Software QA and Testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Software QA and Testing",
+        "reason": null
+      },
+      {
+        "skill": "Software Maintenance",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Software Maintenance",
+        "reason": null
+      },
+      {
+        "skill": "Project Management",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Project Management issues",
+        "reason": null
+      },
+      {
+        "skill": "GitHub",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Each team will have team lead, front end lead, back end lead and github master.",
+        "reason": null
+      },
+      {
+        "skill": "Cloud deployment",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "All SW and tools as well as cloud servers for deployment will be open source and free.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 648/848",
+      "course_title": "SOFTWARE ENGINEERING/ADVANCED SOFTWARE ENGINEERING"
+    },
+    "cross_listed": [
+      "CSC 848"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 49,
+      "exact": 49,
+      "approximate": 0,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 648",
+    "Grad_equivalent": [
+      "CSC 848"
+    ],
+    "course_title": "SOFTWARE ENGINEERING/ADVANCED SOFTWARE ENGINEERING",
+    "term": null,
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "a grade of C or better in CSC 413 and in CSC 317, or consent of the instructor"
+      },
+      {
+        "any_of": [
+          "CSC 317"
+        ],
+        "recommended": false,
+        "evidence": "a grade of C or better in CSC 413 and in CSC 317, or consent of the instructor"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "consent of the instructor",
+        "evidence": "a grade of C or better in CSC 413 and in CSC 317, or consent of the instructor"
+      },
+      {
+        "text": "Grade of C or better",
+        "evidence": "a grade of C or better in CSC 413 and in CSC 317, or consent of the instructor"
+      }
+    ],
+    "learning_outcomes": [
+      "Knowledge of modern Agile SE engineering methods/processes and best practices for team-centric SW development, and their appropriate application",
+      "Knowledge of basic components and tools for team-centric full lifecycle SW development from use cases and initial specifications to design, implementation, testing, evaluation as well as code management and deployment on cloud systems",
+      "Knowledge of best practices for the design, implementation and evaluation for delivering easy to use and maintainable SW",
+      "Ability to constantly iterate and re-prioritize plans and designs based on user needs, budget, schedule and resources",
+      "Development of significant SE teamwork and project based experience, as close as possible to real life",
+      "Use of GenAI tools in SW Engineering"
+    ],
+    "topics": [
+      "Introduction and motivation for Software Engineering(SE)",
+      "Overview of several basic SE methodologies with emphasis on Iterative and Incremental Development and User Centered Design",
+      "Usability and UI design principles and practice",
+      "Usability evaluation",
+      "Basic components of SW Engineering process: Planning; Requirements and Specifications; Iterative Design, Rapid Prototyping, Mockups; Software Design; Coding and documentation techniques (high level only)",
+      "SW Engineering related to Web application development",
+      "Open source SW development and management",
+      "SW Engineering using GenAI tools",
+      "Software Configuration Management, Code management, Delivery, Installation, and Documentation",
+      "Software Metrics, and Usability Measurements and evaluation",
+      "Software QA and Testing",
+      "Software Maintenance",
+      "Project Management issues",
+      "Teamwork and Communication as integral part of SW Engineering",
+      "Issues related to global SW engineering",
+      "Real life examples and cases from instructor and students",
+      "Guest and student presentations",
+      "Final Team Project including several milestones, interaction with instructor, and final demo and delivery"
+    ],
+    "skills": [
+      {
+        "skill": "Agile software engineering methods",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Knowledge of modern Agile SE engineering methods/processes and best practices for team-centric SW development, and their appropriate application",
+        "reason": null
+      },
+      {
+        "skill": "Iterative and Incremental Development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Overview of several basic SE methodologies with emphasis on Iterative and Incremental Development and User Centered Design",
+        "reason": null
+      },
+      {
+        "skill": "User Centered Design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Overview of several basic SE methodologies with emphasis on Iterative and Incremental Development and User Centered Design",
+        "reason": null
+      },
+      {
+        "skill": "Usability evaluation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Usability evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Software design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Basic components of SW Engineering process: Planning; Requirements and Specifications; Iterative Design, Rapid Prototyping, Mockups; Software Design; Coding and documentation techniques (high level only)",
+        "reason": null
+      },
+      {
+        "skill": "Coding and documentation techniques",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basic components of SW Engineering process: Planning; Requirements and Specifications; Iterative Design, Rapid Prototyping, Mockups; Software Design; Coding and documentation techniques (high level only)",
+        "reason": null
+      },
+      {
+        "skill": "Web application development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "SW Engineering related to Web application development",
+        "reason": null
+      },
+      {
+        "skill": "Open source software development",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Open source SW development and management",
+        "reason": null
+      },
+      {
+        "skill": "GenAI tools",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "SW Engineering using GenAI tools",
+        "reason": null
+      },
+      {
+        "skill": "Software Configuration Management",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Software Configuration Management, Code management, Delivery, Installation, and Documentation",
+        "reason": null
+      },
+      {
+        "skill": "Software Metrics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Software Metrics, and Usability Measurements and evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Software QA and Testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Software QA and Testing",
+        "reason": null
+      },
+      {
+        "skill": "Software Maintenance",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Software Maintenance",
+        "reason": null
+      },
+      {
+        "skill": "Project Management",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Project Management issues",
+        "reason": null
+      },
+      {
+        "skill": "GitHub",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Each team will have team lead, front end lead, back end lead and github master.",
+        "reason": null
+      },
+      {
+        "skill": "Cloud deployment",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "All SW and tools as well as cloud servers for deployment will be open source and free.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 648/848",
+      "course_title": "SOFTWARE ENGINEERING/ADVANCED SOFTWARE ENGINEERING"
+    }
+  }
+}

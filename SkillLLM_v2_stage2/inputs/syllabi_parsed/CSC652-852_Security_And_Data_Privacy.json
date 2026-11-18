@@ -1,0 +1,167 @@
+{
+  "file": "CSC652-852_Security_And_Data_Privacy",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 652",
+    "Grad_equivalent": [
+      "CSC 852"
+    ],
+    "course_title": "Security and Data Privacy",
+    "term": "Summer 2023",
+    "instructor": "Jingyi Wang",
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "master the basic security concepts and cryptographic techniques",
+      "have a solid understanding of the foundational concepts of private data analysis",
+      "have a good grasp of the design principles of practical and useful algorithms for various modern data applications."
+    ],
+    "topics": [
+      "Basic security concepts",
+      "Cryptography basics",
+      "Differential Privacy"
+    ],
+    "skills": [
+      {
+        "skill": "security concepts",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "master the basic security concepts and cryptographic techniques",
+        "reason": null
+      },
+      {
+        "skill": "cryptographic techniques",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "master the basic security concepts and cryptographic techniques",
+        "reason": null
+      },
+      {
+        "skill": "private data analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "have a solid understanding of the foundational concepts of private data analysis",
+        "reason": null
+      },
+      {
+        "skill": "algorithm design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "have a good grasp of the design principles of practical and useful algorithms for various modern data applications.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 652",
+      "course_title": "Security and Data Privacy"
+    },
+    "cross_listed": [
+      "CSC 852"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 13,
+      "exact": 13,
+      "approximate": 0,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 652",
+    "Grad_equivalent": [
+      "CSC 852"
+    ],
+    "course_title": "Security and Data Privacy",
+    "term": "Summer 2023",
+    "instructor": "Jingyi Wang",
+    "prerequisites": [
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "Good mathematical background in probability, algorithms (including randomized algorithms), linear algebra and calculus is required."
+      }
+    ],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "master the basic security concepts and cryptographic techniques",
+      "have a solid understanding of the foundational concepts of private data analysis",
+      "have a good grasp of the design principles of practical and useful algorithms for various modern data applications."
+    ],
+    "topics": [
+      "Basic security concepts",
+      "Cryptography basics",
+      "Differential Privacy"
+    ],
+    "skills": [
+      {
+        "skill": "security concepts",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "master the basic security concepts and cryptographic techniques",
+        "reason": null
+      },
+      {
+        "skill": "cryptographic techniques",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "master the basic security concepts and cryptographic techniques",
+        "reason": null
+      },
+      {
+        "skill": "private data analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "have a solid understanding of the foundational concepts of private data analysis",
+        "reason": null
+      },
+      {
+        "skill": "algorithm design",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "have a good grasp of the design principles of practical and useful algorithms for various modern data applications.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 652",
+      "course_title": "Security and Data Privacy"
+    }
+  }
+}

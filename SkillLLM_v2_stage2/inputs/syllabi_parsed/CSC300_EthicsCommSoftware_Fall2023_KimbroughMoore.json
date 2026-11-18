@@ -1,0 +1,238 @@
+{
+  "file": "CSC300_EthicsCommSoftware_Fall2023_KimbroughMoore",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 300",
+    "Grad_equivalent": [],
+    "course_title": "Ethics, Communication, and Tools for Software Development",
+    "term": "Fall 2023",
+    "instructor": "Kimbrough Moore",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grade C or better in CSC 210 or equivalent"
+      },
+      {
+        "any_of": [
+          "ENGLISH 214"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grade C or better in English 214 or equivalent"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grade C or better",
+        "evidence": "Prerequisite: grade C or better in CSC 210 or equivalent; grade C or better in English 214 or equivalent"
+      }
+    ],
+    "learning_outcomes": [
+      "To gain practical experience in thinking through everyday ethical situations involving technology.",
+      "To improve effective written communication in the context of computer science and software development.",
+      "To develop the ability to talk about and discuss issues in computer science, one on one and in a group setting.",
+      "To become familiar with basic tools used in SW development.",
+      "To move beyond the question of \"how to code\" toward an understanding of \"why we code.\""
+    ],
+    "topics": [
+      "Online privacy",
+      "freedom of speech",
+      "intellectual property",
+      "crime and security (including piracy)",
+      "technology at work",
+      "failures and risks of new technology",
+      "professional ethics",
+      "ethics of future technology",
+      "evaluating and controlling technology",
+      "errors, failures, and risks",
+      "ethics of artificial intelligence"
+    ],
+    "skills": [
+      {
+        "skill": "ethical reasoning",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course explores the ethics of technology and how to live a good life while surrounded by gadgets and gizmos. In doing so, we'll focus on the finer points of abstract ethical reasoning as well as the nitty gritty of real-world applications",
+        "reason": null
+      },
+      {
+        "skill": "written communication",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "You’ll find - by the end of the semester - that you’re considerably better at all three. During the semester, we'll have wide-ranging discussions that include issues of: ... and you'll develop practical skills in reading, writing, and discussing.",
+        "reason": null
+      },
+      {
+        "skill": "discussion and oral communication",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "To develop the ability to talk about and discuss issues in computer science, one on one and in a group setting.",
+        "reason": null
+      },
+      {
+        "skill": "software development tools",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "To become familiar with basic tools used in SW development.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 300",
+      "course_title": "Ethics, Communication, and Tools for Software Development"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "approximate"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 27,
+      "exact": 25,
+      "approximate": 2,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 300",
+    "Grad_equivalent": [],
+    "course_title": "Ethics, Communication, and Tools for Software Development",
+    "term": "Fall 2023",
+    "instructor": "Kimbrough Moore",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grade C or better in CSC 210 or equivalent"
+      },
+      {
+        "any_of": [
+          "English 214"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: grade C or better in English 214 or equivalent"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grade C or better",
+        "evidence": "Prerequisite: grade C or better in CSC 210 or equivalent; grade C or better in English 214 or equivalent"
+      }
+    ],
+    "learning_outcomes": [
+      "To gain practical experience in thinking through everyday ethical situations involving technology.",
+      "To improve effective written communication in the context of computer science and software development.",
+      "To develop the ability to talk about and discuss issues in computer science, one on one and in a group setting.",
+      "To become familiar with basic tools used in SW development.",
+      "To move beyond the question of \"how to code\" toward an understanding of \"why we code.\""
+    ],
+    "topics": [
+      "Online privacy",
+      "freedom of speech",
+      "intellectual property",
+      "crime and security (including piracy)",
+      "technology at work",
+      "failures and risks of new technology",
+      "professional ethics",
+      "ethics of future technology",
+      "evaluating and controlling technology",
+      "errors, failures, and risks",
+      "ethics of artificial intelligence"
+    ],
+    "skills": [
+      {
+        "skill": "ethical reasoning",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course explores the ethics of technology and how to live a good life while surrounded by gadgets and gizmos. In doing so, we'll focus on the finer points of abstract ethical reasoning as well as the nitty gritty of real-world applications",
+        "reason": null
+      },
+      {
+        "skill": "written communication",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "You’ll find - by the end of the semester - that you’re considerably better at all three. During the semester, we'll have wide-ranging discussions that include issues of: ... and you'll develop practical skills in reading, writing, and discussing.",
+        "reason": null
+      },
+      {
+        "skill": "discussion and oral communication",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "To develop the ability to talk about and discuss issues in computer science, one on one and in a group setting.",
+        "reason": null
+      },
+      {
+        "skill": "software development tools",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "To become familiar with basic tools used in SW development.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 300",
+      "course_title": "Ethics, Communication, and Tools for Software Development"
+    }
+  }
+}

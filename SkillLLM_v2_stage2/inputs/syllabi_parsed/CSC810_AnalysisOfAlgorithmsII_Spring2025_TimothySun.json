@@ -1,0 +1,273 @@
+{
+  "file": "CSC810_AnalysisOfAlgorithmsII_Spring2025_TimothySun",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 810",
+    "Grad_equivalent": [],
+    "course_title": "Analysis of Algorithms II",
+    "term": "Spring 2025",
+    "instructor": "Prof. Timothy Sun",
+    "prerequisites": [],
+    "other_requirements": [
+      {
+        "text": "Graduate standing or instructor’s permission",
+        "evidence": "Prerequisites: Graduate standing or instructor’s permission."
+      }
+    ],
+    "learning_outcomes": [
+      "learn about major design methodologies for algorithms",
+      "apply them to designing algorithms for solving new problems",
+      "prove correctness and determine runtime of algorithms",
+      "understand hardness results in the form of lower bounds or in the P vs. NP problem"
+    ],
+    "topics": [
+      "Time and space complexity",
+      "Graph algorithms",
+      "Proofs of correctness",
+      "NP-completeness",
+      "Classical design techniques (e.g., recursion, dynamic programming, etc.)",
+      "Approximation algorithms",
+      "Lower bounds",
+      "Randomized algorithms"
+    ],
+    "skills": [
+      {
+        "skill": "algorithm design",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "CSC 810 is a graduate course on the design and analysis of algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "algorithm analysis",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "CSC 810 is a graduate course on the design and analysis of algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "proof of correctness",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "we will learn about ... proving correctness ... of algorithms",
+        "reason": null
+      },
+      {
+        "skill": "runtime analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "we will learn about ... determining runtime of algorithms",
+        "reason": null
+      },
+      {
+        "skill": "NP-completeness",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: ... NP-completeness",
+        "reason": null
+      },
+      {
+        "skill": "approximation algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: ... Approximation algorithms",
+        "reason": null
+      },
+      {
+        "skill": "randomized algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: ... Randomized algorithms",
+        "reason": null
+      },
+      {
+        "skill": "dynamic programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Classical design techniques (e.g., recursion, dynamic programming, etc.)",
+        "reason": null
+      },
+      {
+        "skill": "recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Classical design techniques (e.g., recursion, dynamic programming, etc.)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 810",
+      "course_title": "Analysis of Algorithms II"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "not_found",
+      "approximate"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 24,
+      "exact": 14,
+      "approximate": 9,
+      "not_found": 1
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 810",
+    "Grad_equivalent": [],
+    "course_title": "Analysis of Algorithms II",
+    "term": "Spring 2025",
+    "instructor": "Prof. Timothy Sun",
+    "prerequisites": [],
+    "other_requirements": [
+      {
+        "text": "Graduate standing or instructor’s permission",
+        "evidence": "Prerequisites: Graduate standing or instructor’s permission."
+      }
+    ],
+    "learning_outcomes": [
+      "learn about major design methodologies for algorithms",
+      "apply them to designing algorithms for solving new problems",
+      "prove correctness and determine runtime of algorithms",
+      "understand hardness results in the form of lower bounds or in the P vs. NP problem"
+    ],
+    "topics": [
+      "Time and space complexity",
+      "Graph algorithms",
+      "Proofs of correctness",
+      "NP-completeness",
+      "Classical design techniques (e.g., recursion, dynamic programming, etc.)",
+      "Approximation algorithms",
+      "Lower bounds",
+      "Randomized algorithms"
+    ],
+    "skills": [
+      {
+        "skill": "algorithm design",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "CSC 810 is a graduate course on the design and analysis of algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "algorithm analysis",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "CSC 810 is a graduate course on the design and analysis of algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "proof of correctness",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "we will learn about ... proving correctness ... of algorithms",
+        "reason": null
+      },
+      {
+        "skill": "runtime analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "we will learn about ... determining runtime of algorithms",
+        "reason": null
+      },
+      {
+        "skill": "NP-completeness",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: ... NP-completeness",
+        "reason": null
+      },
+      {
+        "skill": "approximation algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: ... Approximation algorithms",
+        "reason": null
+      },
+      {
+        "skill": "randomized algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "A partial list of topics include: ... Randomized algorithms",
+        "reason": null
+      },
+      {
+        "skill": "dynamic programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Classical design techniques (e.g., recursion, dynamic programming, etc.)",
+        "reason": null
+      },
+      {
+        "skill": "recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Classical design techniques (e.g., recursion, dynamic programming, etc.)",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 810",
+      "course_title": "Analysis of Algorithms II"
+    }
+  }
+}

@@ -1,0 +1,528 @@
+{
+  "file": "CSC671-871_DeepLearning_Fall 2024_RobertMateescu",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 671",
+    "Grad_equivalent": [
+      "CSC 871"
+    ],
+    "course_title": "Deep Learning",
+    "term": "Fall 2024",
+    "instructor": "Robert Mateescu",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 510"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      },
+      {
+        "any_of": [
+          "MATH 225",
+          "MATH 325"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Upper-division standing",
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      },
+      {
+        "text": "GPA of 3.0 or higher",
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      },
+      {
+        "text": "Permission of the instructor",
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      },
+      {
+        "text": "Graduate standing",
+        "evidence": "Prerequisite for CSC 871: Graduate standing or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Understand and explain deep learning, including motivation, problem formulation, algorithms, and science behind deep learning.",
+      "Analyze and evaluate the design and implementation of deep neural networks.",
+      "Choose and apply appropriate methods and tools to solve problems using deep neural networks.",
+      "Design and construct deep learning systems using appropriate methods.",
+      "Think critically about using deep learning models for different tasks and their potential societal impact.",
+      "Communicate findings (both positive and negative results) through presentations and project reports."
+    ],
+    "topics": [
+      "History of neural networks",
+      "AI vs. ML vs. NN (artificial intelligence vs. machine learning vs. neural networks)",
+      "Learning from data, training and inference with neural networks",
+      "Perceptron and Perceptron convergence theorem",
+      "Logistic regression, binary cross-entropy",
+      "Softmax regression, cross-entropy",
+      "Multi-layer perceptron",
+      "Activation functions",
+      "Width vs. depth",
+      "Gradient descent",
+      "Backpropagation",
+      "Computation graph",
+      "Bias-variance tradeoff",
+      "Convolutional Neural Networks – image data",
+      "Convolutional operation, edge detection, feature extraction, channels, padding, stride, pooling layers",
+      "Examples of classic CNN architectures",
+      "Transfer learning, image style transfer",
+      "Sequence Models (RNNs) – text data",
+      "Text data, bag of words, embeddings, skip-gram models",
+      "Recurrent Neural Networks, working details",
+      "LSTM",
+      "RNN with original Attention mechanism",
+      "Transformer Architecture",
+      "Encoder / decoder",
+      "Tokenizer, embeddings",
+      "Simple self-attention",
+      "Learnable weights, scaling: scaled dot product self-attention",
+      "Attention head, multi-head attention",
+      "Positional embedding, linear layer, skip connections, layer normalization",
+      "Masked attention",
+      "GPT 3 (original ChatGPT) entire architecture",
+      "Autoencoders",
+      "Generative Adversarial Networks (GANs)",
+      "AI Ethics and Explainability"
+    ],
+    "skills": [
+      {
+        "skill": "Deep Neural Networks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The class will provide an overview of the main building blocks of deep learning systems, as well as deeper dives into the theory and practice of deep learning.",
+        "reason": null
+      },
+      {
+        "skill": "Convolutional Neural Networks (CNN)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Main Classes of Deep Learning Models: Convolutional Neural Networks – image data",
+        "reason": null
+      },
+      {
+        "skill": "Recurrent Neural Networks (RNN), LSTM",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Main Classes of Deep Learning Models: Sequence Models (RNNs) – text data",
+        "reason": null
+      },
+      {
+        "skill": "Transformer Architecture",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Main Classes of Deep Learning Models: Transformer Architecture",
+        "reason": null
+      },
+      {
+        "skill": "PyTorch",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "You will have a chance to: design a deep learning model, implement the model in PyTorch, train and evaluate the model.",
+        "reason": null
+      },
+      {
+        "skill": "Gradient Descent",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include gradient descent and backpropagation.",
+        "reason": null
+      },
+      {
+        "skill": "Backpropagation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include gradient descent and backpropagation.",
+        "reason": null
+      },
+      {
+        "skill": "Logistic Regression",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include logistic regression, binary cross-entropy.",
+        "reason": null
+      },
+      {
+        "skill": "Softmax Regression",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include softmax regression, cross-entropy.",
+        "reason": null
+      },
+      {
+        "skill": "Activation Functions",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include activation functions.",
+        "reason": null
+      },
+      {
+        "skill": "Computation Graph",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include computation graph.",
+        "reason": null
+      },
+      {
+        "skill": "Bias-Variance Tradeoff",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include bias-variance tradeoff.",
+        "reason": null
+      },
+      {
+        "skill": "Autoencoders",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Advanced and Related Topics include Autoencoders.",
+        "reason": null
+      },
+      {
+        "skill": "Generative Adversarial Networks (GANs)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Advanced and Related Topics include Generative Adversarial Networks (GANs).",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 671",
+      "course_title": "Deep Learning"
+    },
+    "cross_listed": [
+      "CSC 871"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "approximate"
+      },
+      {
+        "courses": [
+          "exact",
+          "exact"
+        ],
+        "evidence": "approximate"
+      }
+    ],
+    "other_requirements": [
+      "approximate",
+      "approximate",
+      "approximate",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 66,
+      "exact": 41,
+      "approximate": 25,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 671",
+    "Grad_equivalent": [
+      "CSC 871"
+    ],
+    "course_title": "Deep Learning",
+    "term": "Fall 2024",
+    "instructor": "Robert Mateescu",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 510"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      },
+      {
+        "any_of": [
+          "MATH 225",
+          "MATH 325"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Upper-division standing",
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      },
+      {
+        "text": "GPA of 3.0 or higher",
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      },
+      {
+        "text": "Permission of the instructor",
+        "evidence": "Prerequisites for CSC 671: Upper-division standing; CSC 510*; MATH 225 or MATH 325 with a grade of C or better; GPA of 3.0 or higher; or permission of the instructor."
+      },
+      {
+        "text": "Graduate standing",
+        "evidence": "Prerequisite for CSC 871: Graduate standing or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Understand and explain deep learning, including motivation, problem formulation, algorithms, and science behind deep learning.",
+      "Analyze and evaluate the design and implementation of deep neural networks.",
+      "Choose and apply appropriate methods and tools to solve problems using deep neural networks.",
+      "Design and construct deep learning systems using appropriate methods.",
+      "Think critically about using deep learning models for different tasks and their potential societal impact.",
+      "Communicate findings (both positive and negative results) through presentations and project reports."
+    ],
+    "topics": [
+      "History of neural networks",
+      "AI vs. ML vs. NN (artificial intelligence vs. machine learning vs. neural networks)",
+      "Learning from data, training and inference with neural networks",
+      "Perceptron and Perceptron convergence theorem",
+      "Logistic regression, binary cross-entropy",
+      "Softmax regression, cross-entropy",
+      "Multi-layer perceptron",
+      "Activation functions",
+      "Width vs. depth",
+      "Gradient descent",
+      "Backpropagation",
+      "Computation graph",
+      "Bias-variance tradeoff",
+      "Convolutional Neural Networks – image data",
+      "Convolutional operation, edge detection, feature extraction, channels, padding, stride, pooling layers",
+      "Examples of classic CNN architectures",
+      "Transfer learning, image style transfer",
+      "Sequence Models (RNNs) – text data",
+      "Text data, bag of words, embeddings, skip-gram models",
+      "Recurrent Neural Networks, working details",
+      "LSTM",
+      "RNN with original Attention mechanism",
+      "Transformer Architecture",
+      "Encoder / decoder",
+      "Tokenizer, embeddings",
+      "Simple self-attention",
+      "Learnable weights, scaling: scaled dot product self-attention",
+      "Attention head, multi-head attention",
+      "Positional embedding, linear layer, skip connections, layer normalization",
+      "Masked attention",
+      "GPT 3 (original ChatGPT) entire architecture",
+      "Autoencoders",
+      "Generative Adversarial Networks (GANs)",
+      "AI Ethics and Explainability"
+    ],
+    "skills": [
+      {
+        "skill": "Deep Neural Networks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "The class will provide an overview of the main building blocks of deep learning systems, as well as deeper dives into the theory and practice of deep learning.",
+        "reason": null
+      },
+      {
+        "skill": "Convolutional Neural Networks (CNN)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Main Classes of Deep Learning Models: Convolutional Neural Networks – image data",
+        "reason": null
+      },
+      {
+        "skill": "Recurrent Neural Networks (RNN), LSTM",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Main Classes of Deep Learning Models: Sequence Models (RNNs) – text data",
+        "reason": null
+      },
+      {
+        "skill": "Transformer Architecture",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Main Classes of Deep Learning Models: Transformer Architecture",
+        "reason": null
+      },
+      {
+        "skill": "PyTorch",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "You will have a chance to: design a deep learning model, implement the model in PyTorch, train and evaluate the model.",
+        "reason": null
+      },
+      {
+        "skill": "Gradient Descent",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include gradient descent and backpropagation.",
+        "reason": null
+      },
+      {
+        "skill": "Backpropagation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include gradient descent and backpropagation.",
+        "reason": null
+      },
+      {
+        "skill": "Logistic Regression",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include logistic regression, binary cross-entropy.",
+        "reason": null
+      },
+      {
+        "skill": "Softmax Regression",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include softmax regression, cross-entropy.",
+        "reason": null
+      },
+      {
+        "skill": "Activation Functions",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include activation functions.",
+        "reason": null
+      },
+      {
+        "skill": "Computation Graph",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include computation graph.",
+        "reason": null
+      },
+      {
+        "skill": "Bias-Variance Tradeoff",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Topics include bias-variance tradeoff.",
+        "reason": null
+      },
+      {
+        "skill": "Autoencoders",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Advanced and Related Topics include Autoencoders.",
+        "reason": null
+      },
+      {
+        "skill": "Generative Adversarial Networks (GANs)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Advanced and Related Topics include Generative Adversarial Networks (GANs).",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 671",
+      "course_title": "Deep Learning"
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "file": "CSC510_AnalysisOfAlgorithms_Spring2025_KazOkada",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 510",
+    "Grad_equivalent": [],
+    "course_title": "Analysis of Algorithms I",
+    "term": "Spring 2025",
+    "instructor": "Dr. Kazunori Okada",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 340"
+        ],
+        "recommended": false,
+        "evidence": "CSC 340 (Programming Methodology) and MATH 324 (Probability and Statistics with Computing) with a grade of C or better."
+      },
+      {
+        "any_of": [
+          "MATH 324"
+        ],
+        "recommended": false,
+        "evidence": "CSC 340 (Programming Methodology) and MATH 324 (Probability and Statistics with Computing) with a grade of C or better."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "with a grade of C or better",
+        "evidence": "CSC 340 (Programming Methodology) and MATH 324 (Probability and Statistics with Computing) with a grade of C or better."
+      },
+      {
+        "text": "Concurrent registration is not allowed",
+        "evidence": "Concurrent registration is not allowed."
+      }
+    ],
+    "learning_outcomes": [
+      "Introduce students to ideas and techniques of main algorithm analysis and design methodologies.",
+      "Study topics in such areas as measures of algorithm complexity in space and time.",
+      "Study algorithms of classical problems such as sorting and shortest-path.",
+      "Solve problems by determining and applying an appropriate designing methodology."
+    ],
+    "topics": [
+      "Overview & Math Review",
+      "Complexity Functions",
+      "Asymptotic Notations",
+      "Recurrence Relations",
+      "Divide and Conquer",
+      "Dynamic Programming",
+      "Greedy Algorithm",
+      "Backtracking",
+      "Branch and Bound"
+    ],
+    "skills": [
+      {
+        "skill": "algorithm complexity analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "We study topics in such areas as measures of algorithm complexity in space and time",
+        "reason": null
+      },
+      {
+        "skill": "divide and conquer",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Divide and Conquer - 2 weeks",
+        "reason": null
+      },
+      {
+        "skill": "dynamic programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Dynamic Programming - 2 weeks",
+        "reason": null
+      },
+      {
+        "skill": "greedy algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Greedy Algorithm - 2 weeks",
+        "reason": null
+      },
+      {
+        "skill": "backtracking",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Backtracking - 1 week",
+        "reason": null
+      },
+      {
+        "skill": "branch and bound",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Branch and Bound - 1 week",
+        "reason": null
+      },
+      {
+        "skill": "recurrence relations",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recurrence Relations - 1 week",
+        "reason": null
+      },
+      {
+        "skill": "asymptotic notation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Asymptotic Notations - 0.5 week",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 510",
+      "course_title": "Analysis of Algorithms I"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "not_found"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "not_found"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 29,
+      "exact": 18,
+      "approximate": 9,
+      "not_found": 2
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 510",
+    "Grad_equivalent": [],
+    "course_title": "Analysis of Algorithms I",
+    "term": "Spring 2025",
+    "instructor": "Dr. Kazunori Okada",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 340"
+        ],
+        "recommended": false,
+        "evidence": "CSC 340 (Programming Methodology) and MATH 324 (Probability and Statistics with Computing) with a grade of C or better."
+      },
+      {
+        "any_of": [
+          "MATH 324"
+        ],
+        "recommended": false,
+        "evidence": "CSC 340 (Programming Methodology) and MATH 324 (Probability and Statistics with Computing) with a grade of C or better."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "with a grade of C or better",
+        "evidence": "CSC 340 (Programming Methodology) and MATH 324 (Probability and Statistics with Computing) with a grade of C or better."
+      },
+      {
+        "text": "Concurrent registration is not allowed",
+        "evidence": "Concurrent registration is not allowed."
+      }
+    ],
+    "learning_outcomes": [
+      "Introduce students to ideas and techniques of main algorithm analysis and design methodologies.",
+      "Study topics in such areas as measures of algorithm complexity in space and time.",
+      "Study algorithms of classical problems such as sorting and shortest-path.",
+      "Solve problems by determining and applying an appropriate designing methodology."
+    ],
+    "topics": [
+      "Overview & Math Review",
+      "Complexity Functions",
+      "Asymptotic Notations",
+      "Recurrence Relations",
+      "Divide and Conquer",
+      "Dynamic Programming",
+      "Greedy Algorithm",
+      "Backtracking",
+      "Branch and Bound"
+    ],
+    "skills": [
+      {
+        "skill": "algorithm complexity analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "We study topics in such areas as measures of algorithm complexity in space and time",
+        "reason": null
+      },
+      {
+        "skill": "divide and conquer",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Divide and Conquer - 2 weeks",
+        "reason": null
+      },
+      {
+        "skill": "dynamic programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Dynamic Programming - 2 weeks",
+        "reason": null
+      },
+      {
+        "skill": "greedy algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Greedy Algorithm - 2 weeks",
+        "reason": null
+      },
+      {
+        "skill": "backtracking",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Backtracking - 1 week",
+        "reason": null
+      },
+      {
+        "skill": "branch and bound",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Branch and Bound - 1 week",
+        "reason": null
+      },
+      {
+        "skill": "recurrence relations",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Recurrence Relations - 1 week",
+        "reason": null
+      },
+      {
+        "skill": "asymptotic notation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Asymptotic Notations - 0.5 week",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 510",
+      "course_title": "Analysis of Algorithms I"
+    }
+  }
+}

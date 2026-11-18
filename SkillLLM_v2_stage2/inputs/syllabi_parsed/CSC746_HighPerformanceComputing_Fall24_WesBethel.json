@@ -1,0 +1,318 @@
+{
+  "file": "CSC746_HighPerformanceComputing_Fall24_WesBethel",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 746",
+    "Grad_equivalent": [],
+    "course_title": "High-Performance Computing",
+    "term": "Fall 2024",
+    "instructor": "E. Wes Bethel",
+    "prerequisites": [],
+    "other_requirements": [
+      {
+        "text": "Graduate standing or permission of the instructor",
+        "evidence": "Prerequisite: Graduate standing or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Develop code for multi-core CPUs and many-core GPU processors with attention to detail at multiple levels.",
+      "Design and implement parallel algorithms from serial code building blocks.",
+      "Perform serial code performance analysis and optimization.",
+      "Design, debug, and optimize shared-memory parallel code on multi-core CPUs using OpenMP.",
+      "Design, debug, and optimize shared-memory parallel code on many-core GPUs using CUDA and OpenMP device offload.",
+      "Design, debug, and optimize distributed-memory parallel code on modern heterogeneous HPC systems using MPI and hybrid parallelism.",
+      "Gain familiarity with Partitioned Global Address Space (PGAS) languages such as Unified Parallel C (UPC).",
+      "Cultivate technical writing skills through technical reports describing problem, approach, implementation, and results.",
+      "Cultivate oral presentation skills through technical paper style presentations on coding assignments and semester project.",
+      "Complete a significant semester project involving self-study, parallelization, performance analysis, and technical presentation."
+    ],
+    "topics": [
+      "Basics of multiprocessor systems such as clusters and graphics processors",
+      "Message-passing and shared memory-based software development",
+      "Cloud computing",
+      "Serial code performance measurement and optimization",
+      "Shared-memory parallel code design patterns",
+      "OpenMP programming",
+      "CUDA programming for NVIDIA GPUs",
+      "OpenMP device offload for GPUs",
+      "Distributed-memory parallel computing principles",
+      "Message Passing Interface (MPI)",
+      "Hybrid parallelism (MPI + OpenMP)",
+      "Partitioned Global Address Space (PGAS) languages",
+      "Technical writing in LaTeX",
+      "Technical oral presentations",
+      "Use of NERSC supercomputing resources"
+    ],
+    "skills": [
+      {
+        "skill": "OpenMP",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Use performance measurement tools to study performance, including strong- and weak-scaling characteristics. Develop familiarity with multiple approaches for writing shared-memory parallel code primarily in OpenMP.",
+        "reason": null
+      },
+      {
+        "skill": "CUDA",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This part of the course will focus on the unique architecture of many-core GPUs, along with common approaches for writing code for them: CUDA (for NVIDIA-based GPUs)...",
+        "reason": null
+      },
+      {
+        "skill": "MPI",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Students will become familiar with the Message Passing Interface (MPI), which is the industry standard for developing distributed memory parallel codes...",
+        "reason": null
+      },
+      {
+        "skill": "Unified Parallel C (UPC)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "As an alternative to MPI-based approaches, students will be exposed to Partitioned Global Address Space (PGAS) languages such as Unified Parallel C (UPC).",
+        "reason": null
+      },
+      {
+        "skill": "Serial code performance analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Working with multiple serial codes on multiple CPU-based platforms, learn best practices in performance measurement in studying code performance behavior and implementing code optimizations to improve performance.",
+        "reason": null
+      },
+      {
+        "skill": "Technical writing (LaTeX)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Students will generate a technical report describing the problem being solved, the approach and implementation, and a results section... implemented in LaTeX using a provided template.",
+        "reason": null
+      },
+      {
+        "skill": "Technical oral presentation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "For each of the coding assignments, students will give a brief oral presentation describing the problem being solved, their implementation, and results of the performance study.",
+        "reason": null
+      },
+      {
+        "skill": "Performance measurement tools",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Use performance measurement tools to study performance, including strong- and weak-scaling characteristics.",
+        "reason": null
+      },
+      {
+        "skill": "Hybrid parallelism (MPI + OpenMP)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will become familiar with the concept of “hybrid parallelism” that is a blend of both distributed-memory parallel using MPI and shared-memory parallel using, e.g., OpenMP.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 746",
+      "course_title": "High-Performance Computing"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate",
+      "exact",
+      "not_found",
+      "exact",
+      "approximate",
+      "approximate",
+      "approximate"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 37,
+      "exact": 11,
+      "approximate": 25,
+      "not_found": 1
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 746",
+    "Grad_equivalent": [],
+    "course_title": "High-Performance Computing",
+    "term": "Fall 2024",
+    "instructor": "E. Wes Bethel",
+    "prerequisites": [
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "Prerequisite: Graduate standing or permission of the instructor."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Graduate standing or permission of the instructor",
+        "evidence": "Prerequisite: Graduate standing or permission of the instructor."
+      }
+    ],
+    "learning_outcomes": [
+      "Develop code for multi-core CPUs and many-core GPU processors with attention to detail at multiple levels.",
+      "Design and implement parallel algorithms from serial code building blocks.",
+      "Perform serial code performance analysis and optimization.",
+      "Design, debug, and optimize shared-memory parallel code on multi-core CPUs using OpenMP.",
+      "Design, debug, and optimize shared-memory parallel code on many-core GPUs using CUDA and OpenMP device offload.",
+      "Design, debug, and optimize distributed-memory parallel code on modern heterogeneous HPC systems using MPI and hybrid parallelism.",
+      "Gain familiarity with Partitioned Global Address Space (PGAS) languages such as Unified Parallel C (UPC).",
+      "Cultivate technical writing skills through technical reports describing problem, approach, implementation, and results.",
+      "Cultivate oral presentation skills through technical paper style presentations on coding assignments and semester project.",
+      "Complete a significant semester project involving self-study, parallelization, performance analysis, and technical presentation."
+    ],
+    "topics": [
+      "Basics of multiprocessor systems such as clusters and graphics processors",
+      "Message-passing and shared memory-based software development",
+      "Cloud computing",
+      "Serial code performance measurement and optimization",
+      "Shared-memory parallel code design patterns",
+      "OpenMP programming",
+      "CUDA programming for NVIDIA GPUs",
+      "OpenMP device offload for GPUs",
+      "Distributed-memory parallel computing principles",
+      "Message Passing Interface (MPI)",
+      "Hybrid parallelism (MPI + OpenMP)",
+      "Partitioned Global Address Space (PGAS) languages",
+      "Technical writing in LaTeX",
+      "Technical oral presentations",
+      "Use of NERSC supercomputing resources"
+    ],
+    "skills": [
+      {
+        "skill": "OpenMP",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Use performance measurement tools to study performance, including strong- and weak-scaling characteristics. Develop familiarity with multiple approaches for writing shared-memory parallel code primarily in OpenMP.",
+        "reason": null
+      },
+      {
+        "skill": "CUDA",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This part of the course will focus on the unique architecture of many-core GPUs, along with common approaches for writing code for them: CUDA (for NVIDIA-based GPUs)...",
+        "reason": null
+      },
+      {
+        "skill": "MPI",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Students will become familiar with the Message Passing Interface (MPI), which is the industry standard for developing distributed memory parallel codes...",
+        "reason": null
+      },
+      {
+        "skill": "Unified Parallel C (UPC)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "As an alternative to MPI-based approaches, students will be exposed to Partitioned Global Address Space (PGAS) languages such as Unified Parallel C (UPC).",
+        "reason": null
+      },
+      {
+        "skill": "Serial code performance analysis",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Working with multiple serial codes on multiple CPU-based platforms, learn best practices in performance measurement in studying code performance behavior and implementing code optimizations to improve performance.",
+        "reason": null
+      },
+      {
+        "skill": "Technical writing (LaTeX)",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Students will generate a technical report describing the problem being solved, the approach and implementation, and a results section... implemented in LaTeX using a provided template.",
+        "reason": null
+      },
+      {
+        "skill": "Technical oral presentation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "For each of the coding assignments, students will give a brief oral presentation describing the problem being solved, their implementation, and results of the performance study.",
+        "reason": null
+      },
+      {
+        "skill": "Performance measurement tools",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Use performance measurement tools to study performance, including strong- and weak-scaling characteristics.",
+        "reason": null
+      },
+      {
+        "skill": "Hybrid parallelism (MPI + OpenMP)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will become familiar with the concept of “hybrid parallelism” that is a blend of both distributed-memory parallel using MPI and shared-memory parallel using, e.g., OpenMP.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 746",
+      "course_title": "High-Performance Computing"
+    }
+  }
+}

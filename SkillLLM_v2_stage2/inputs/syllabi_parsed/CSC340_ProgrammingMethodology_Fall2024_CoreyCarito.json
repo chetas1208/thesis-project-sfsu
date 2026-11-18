@@ -1,0 +1,292 @@
+{
+  "file": "CSC340_ProgrammingMethodology_Fall2024_CoreyCarito",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 340",
+    "Grad_equivalent": [],
+    "course_title": "Programming Methodology",
+    "term": "Fall 2024",
+    "instructor": "Corey Carito",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "CSC 220 and CSC 230 with grades of C or better, or equivalent."
+      },
+      {
+        "any_of": [
+          "CSC 230"
+        ],
+        "recommended": false,
+        "evidence": "CSC 220 and CSC 230 with grades of C or better, or equivalent."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grades of C or better",
+        "evidence": "CSC 220 and CSC 230 with grades of C or better, or equivalent."
+      }
+    ],
+    "learning_outcomes": [
+      "Advanced data structures and algorithms for manipulation in C++ with an emphasis on design and implementation, practical applications, and algorithms for sorting and searching.",
+      "Students will learn and understand the concepts and applications of basic and advanced C++ topics.",
+      "Students will learn the problem solving process and describe their solution to a computational problem in pseudocode and outline of solutions.",
+      "Students will apply the above skills to develop medium sized C++ projects to solve real-world problems.",
+      "Students will learn to analyze the time complexity of foundational algorithms.",
+      "Students will be comfortable performing unit-tests on C++ programs."
+    ],
+    "topics": [
+      "Advanced data structures",
+      "Algorithms for sorting and searching",
+      "Basic and advanced C++ topics",
+      "Problem solving process",
+      "Pseudocode and solution outlining",
+      "Medium sized C++ projects",
+      "Time complexity analysis",
+      "Unit testing in C++",
+      "Object-oriented programming (OOP) in C++",
+      "Collaborative coding project"
+    ],
+    "skills": [
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Advanced data structures and algorithms for manipulation in C++ with an emphasis on design and implementation, practical applications, and algorithms for sorting and searching.",
+        "reason": null
+      },
+      {
+        "skill": "Data structures",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Advanced data structures and algorithms for manipulation in C++ with an emphasis on design and implementation, practical applications, and algorithms for sorting and searching.",
+        "reason": null
+      },
+      {
+        "skill": "Algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Advanced data structures and algorithms for manipulation in C++ with an emphasis on design and implementation, practical applications, and algorithms for sorting and searching.",
+        "reason": null
+      },
+      {
+        "skill": "Unit testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Students will be comfortable performing unit-tests on C++ programs.",
+        "reason": null
+      },
+      {
+        "skill": "Object-oriented programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "C++ OOP collaborative coding project - details to come!",
+        "reason": null
+      },
+      {
+        "skill": "Time complexity analysis",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "Pseudocode",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn the problem solving process and describe their solution to a computational problem in pseudocode and outline of solutions.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 340",
+      "course_title": "Programming Methodology"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "not_found",
+      "exact",
+      "not_found",
+      "not_found",
+      "not_found",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 30,
+      "exact": 26,
+      "approximate": 0,
+      "not_found": 4
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 340",
+    "Grad_equivalent": [],
+    "course_title": "Programming Methodology",
+    "term": "Fall 2024",
+    "instructor": "Corey Carito",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "CSC 220 and CSC 230 with grades of C or better, or equivalent."
+      },
+      {
+        "any_of": [
+          "CSC 230"
+        ],
+        "recommended": false,
+        "evidence": "CSC 220 and CSC 230 with grades of C or better, or equivalent."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grades of C or better",
+        "evidence": "CSC 220 and CSC 230 with grades of C or better, or equivalent."
+      }
+    ],
+    "learning_outcomes": [
+      "Advanced data structures and algorithms for manipulation in C++ with an emphasis on design and implementation, practical applications, and algorithms for sorting and searching.",
+      "Students will learn and understand the concepts and applications of basic and advanced C++ topics.",
+      "Students will learn the problem solving process and describe their solution to a computational problem in pseudocode and outline of solutions.",
+      "Students will apply the above skills to develop medium sized C++ projects to solve real-world problems.",
+      "Students will learn to analyze the time complexity of foundational algorithms.",
+      "Students will be comfortable performing unit-tests on C++ programs."
+    ],
+    "topics": [
+      "Advanced data structures",
+      "Algorithms for sorting and searching",
+      "Basic and advanced C++ topics",
+      "Problem solving process",
+      "Pseudocode and solution outlining",
+      "Medium sized C++ projects",
+      "Time complexity analysis",
+      "Unit testing in C++",
+      "Object-oriented programming (OOP) in C++",
+      "Collaborative coding project"
+    ],
+    "skills": [
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Advanced data structures and algorithms for manipulation in C++ with an emphasis on design and implementation, practical applications, and algorithms for sorting and searching.",
+        "reason": null
+      },
+      {
+        "skill": "Data structures",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Advanced data structures and algorithms for manipulation in C++ with an emphasis on design and implementation, practical applications, and algorithms for sorting and searching.",
+        "reason": null
+      },
+      {
+        "skill": "Algorithms",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Advanced data structures and algorithms for manipulation in C++ with an emphasis on design and implementation, practical applications, and algorithms for sorting and searching.",
+        "reason": null
+      },
+      {
+        "skill": "Unit testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Students will be comfortable performing unit-tests on C++ programs.",
+        "reason": null
+      },
+      {
+        "skill": "Object-oriented programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "C++ OOP collaborative coding project - details to come!",
+        "reason": null
+      },
+      {
+        "skill": "Time complexity analysis",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "Pseudocode",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn the problem solving process and describe their solution to a computational problem in pseudocode and outline of solutions.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 340",
+      "course_title": "Programming Methodology"
+    }
+  }
+}

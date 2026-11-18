@@ -1,0 +1,430 @@
+{
+  "file": "CSC620-820_NaturalLanguageTechnologies_Spring2025_AnaghaKulkarni",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 620",
+    "Grad_equivalent": [
+      "CSC 820"
+    ],
+    "course_title": "Natural Language Technologies",
+    "term": "Spring 2025",
+    "instructor": "Dr. Anagha Kulkarni",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: Consent of the instructor & CSC 413 (grade C or better)"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Consent of the instructor",
+        "evidence": "Prerequisite: Consent of the instructor & CSC 413 (grade C or better)"
+      },
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite: Consent of the instructor & CSC 413 (grade C or better)"
+      }
+    ],
+    "learning_outcomes": [
+      "a thorough understanding of NLP fundamentals.",
+      "a good grasp of the internals of a modern NLP system.",
+      "a broad understanding of the applications of NLP.",
+      "the skillset to develop or extend complex NLP systems."
+    ],
+    "topics": [
+      "Introduction to NLP and its applications",
+      "Basics of Text Processing. Regular Expressions. Edit Distance.",
+      "Language Modeling and N-Grams",
+      "Naïve Bayes Classification",
+      "Evaluation",
+      "Logistic Regression",
+      "Cross Validation & Statistical Significance Testing",
+      "Vector Semantics",
+      "Neural Nets and Neural Language Models",
+      "Sequence Processing with Recurrent Networks",
+      "Buffer weeks"
+    ],
+    "skills": [
+      {
+        "skill": "Python",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Python has become the native language of NLP. Unless you already know Python, you should be committed to learning it if you want to take this course.",
+        "reason": null
+      },
+      {
+        "skill": "Natural Language Processing (NLP)",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "The objectives of this course are to: 1. introduce the fundamental concepts and techniques of Natural Language Processing (NLP).",
+        "reason": null
+      },
+      {
+        "skill": "Regular Expressions",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 2 Ch 2 Basics of Text Processing. Regular Expressions. Edit Distance.",
+        "reason": null
+      },
+      {
+        "skill": "Edit Distance",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 2 Ch 2 Basics of Text Processing. Regular Expressions. Edit Distance.",
+        "reason": null
+      },
+      {
+        "skill": "Language Modeling",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 3 Ch 3 Language Modeling and N-Grams",
+        "reason": null
+      },
+      {
+        "skill": "N-Grams",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 3 Ch 3 Language Modeling and N-Grams",
+        "reason": null
+      },
+      {
+        "skill": "Naïve Bayes Classification",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 4 & 5 Ch 4 Naïve Bayes Classification",
+        "reason": null
+      },
+      {
+        "skill": "Evaluation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 4 & 5 Ch 4 Naïve Bayes Classification Evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Logistic Regression",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 6, 7, 8 Ch 5 Logistic Regression",
+        "reason": null
+      },
+      {
+        "skill": "Cross Validation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 6, 7, 8 Ch 5 Logistic Regression Cross Validation & Statistical Significance Testing",
+        "reason": null
+      },
+      {
+        "skill": "Statistical Significance Testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 6, 7, 8 Ch 5 Logistic Regression Cross Validation & Statistical Significance Testing",
+        "reason": null
+      },
+      {
+        "skill": "Vector Semantics",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 9 Ch 6 Vector Semantics",
+        "reason": null
+      },
+      {
+        "skill": "Neural Networks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 10 & 11 Ch 7 Neural Nets and Neural Language Models",
+        "reason": null
+      },
+      {
+        "skill": "Neural Language Models",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 10 & 11 Ch 7 Neural Nets and Neural Language Models",
+        "reason": null
+      },
+      {
+        "skill": "Recurrent Neural Networks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 12 & 13 Ch 9 Sequence Processing with Recurrent Networks",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 620 & CSC 820",
+      "course_title": "Natural Language Technologies"
+    },
+    "cross_listed": [
+      "CSC 820"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 37,
+      "exact": 24,
+      "approximate": 13,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 620",
+    "Grad_equivalent": [
+      "CSC 820"
+    ],
+    "course_title": "Natural Language Technologies",
+    "term": "Spring 2025",
+    "instructor": "Dr. Anagha Kulkarni",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: Consent of the instructor & CSC 413 (grade C or better)"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Consent of the instructor",
+        "evidence": "Prerequisite: Consent of the instructor & CSC 413 (grade C or better)"
+      },
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite: Consent of the instructor & CSC 413 (grade C or better)"
+      }
+    ],
+    "learning_outcomes": [
+      "a thorough understanding of NLP fundamentals.",
+      "a good grasp of the internals of a modern NLP system.",
+      "a broad understanding of the applications of NLP.",
+      "the skillset to develop or extend complex NLP systems."
+    ],
+    "topics": [
+      "Introduction to NLP and its applications",
+      "Basics of Text Processing. Regular Expressions. Edit Distance.",
+      "Language Modeling and N-Grams",
+      "Naïve Bayes Classification",
+      "Evaluation",
+      "Logistic Regression",
+      "Cross Validation & Statistical Significance Testing",
+      "Vector Semantics",
+      "Neural Nets and Neural Language Models",
+      "Sequence Processing with Recurrent Networks",
+      "Buffer weeks"
+    ],
+    "skills": [
+      {
+        "skill": "Python",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Python has become the native language of NLP. Unless you already know Python, you should be committed to learning it if you want to take this course.",
+        "reason": null
+      },
+      {
+        "skill": "Natural Language Processing (NLP)",
+        "type": "explicit",
+        "level": "mastery",
+        "evidence": "The objectives of this course are to: 1. introduce the fundamental concepts and techniques of Natural Language Processing (NLP).",
+        "reason": null
+      },
+      {
+        "skill": "Regular Expressions",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 2 Ch 2 Basics of Text Processing. Regular Expressions. Edit Distance.",
+        "reason": null
+      },
+      {
+        "skill": "Edit Distance",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 2 Ch 2 Basics of Text Processing. Regular Expressions. Edit Distance.",
+        "reason": null
+      },
+      {
+        "skill": "Language Modeling",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 3 Ch 3 Language Modeling and N-Grams",
+        "reason": null
+      },
+      {
+        "skill": "N-Grams",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 3 Ch 3 Language Modeling and N-Grams",
+        "reason": null
+      },
+      {
+        "skill": "Naïve Bayes Classification",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 4 & 5 Ch 4 Naïve Bayes Classification",
+        "reason": null
+      },
+      {
+        "skill": "Evaluation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 4 & 5 Ch 4 Naïve Bayes Classification Evaluation",
+        "reason": null
+      },
+      {
+        "skill": "Logistic Regression",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 6, 7, 8 Ch 5 Logistic Regression",
+        "reason": null
+      },
+      {
+        "skill": "Cross Validation",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 6, 7, 8 Ch 5 Logistic Regression Cross Validation & Statistical Significance Testing",
+        "reason": null
+      },
+      {
+        "skill": "Statistical Significance Testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 6, 7, 8 Ch 5 Logistic Regression Cross Validation & Statistical Significance Testing",
+        "reason": null
+      },
+      {
+        "skill": "Vector Semantics",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 9 Ch 6 Vector Semantics",
+        "reason": null
+      },
+      {
+        "skill": "Neural Networks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 10 & 11 Ch 7 Neural Nets and Neural Language Models",
+        "reason": null
+      },
+      {
+        "skill": "Neural Language Models",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 10 & 11 Ch 7 Neural Nets and Neural Language Models",
+        "reason": null
+      },
+      {
+        "skill": "Recurrent Neural Networks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 12 & 13 Ch 9 Sequence Processing with Recurrent Networks",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 620 & CSC 820",
+      "course_title": "Natural Language Technologies"
+    }
+  }
+}

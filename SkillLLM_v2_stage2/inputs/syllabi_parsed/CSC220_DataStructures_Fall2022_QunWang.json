@@ -1,0 +1,467 @@
+{
+  "file": "CSC220_DataStructures_Fall2022_QunWang",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "Fall 2022",
+    "instructor": "Qun Wang",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "Pre-requisite: CSC 210 with a grade of C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Pre-requisite: CSC 210 with a grade of C or better"
+      }
+    ],
+    "learning_outcomes": [],
+    "topics": [
+      "Basic Java programming language",
+      "Java Collections API",
+      "Recursion",
+      "Advanced Java Topics",
+      "Intro. to analysis of algorithms",
+      "Intro. to sorting & Searching",
+      "Trees & Binary Search Trees",
+      "Hashing",
+      "Heaps",
+      "Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Basic Java programming language; Java Collections API; Recursion; Advanced Java Topics",
+        "reason": null
+      },
+      {
+        "skill": "Java Collections API",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Basic Java programming language; Java Collections API; Recursion; Advanced Java Topics",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Basic Java programming language; Java Collections API; Recursion; Advanced Java Topics",
+        "reason": null
+      },
+      {
+        "skill": "Analysis of algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Course Outline: Intro. to analysis of algorithms",
+        "reason": null
+      },
+      {
+        "skill": "Sorting algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Course Outline: Intro. to sorting & Searching",
+        "reason": null
+      },
+      {
+        "skill": "Searching algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Course Outline: Intro. to sorting & Searching",
+        "reason": null
+      },
+      {
+        "skill": "Trees",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Trees & Binary Search Trees",
+        "reason": null
+      },
+      {
+        "skill": "Binary Search Trees",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Trees & Binary Search Trees",
+        "reason": null
+      },
+      {
+        "skill": "Hashing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Hashing",
+        "reason": null
+      },
+      {
+        "skill": "Heaps",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Heaps",
+        "reason": null
+      },
+      {
+        "skill": "Abstract Data Types",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Bags",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Lists",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Stacks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Queues",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Deques",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Priority Queues",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Dictionaries",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Tables",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CS 220",
+      "course_title": "Data Structures"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 34,
+      "exact": 18,
+      "approximate": 16,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CS 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "Fall 2022",
+    "instructor": "Qun Wang",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "Pre-requisite: CSC 210 with a grade of C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Pre-requisite: CSC 210 with a grade of C or better"
+      }
+    ],
+    "learning_outcomes": [],
+    "topics": [
+      "Basic Java programming language",
+      "Java Collections API",
+      "Recursion",
+      "Advanced Java Topics",
+      "Intro. to analysis of algorithms",
+      "Intro. to sorting & Searching",
+      "Trees & Binary Search Trees",
+      "Hashing",
+      "Heaps",
+      "Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Basic Java programming language; Java Collections API; Recursion; Advanced Java Topics",
+        "reason": null
+      },
+      {
+        "skill": "Java Collections API",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Basic Java programming language; Java Collections API; Recursion; Advanced Java Topics",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Basic Java programming language; Java Collections API; Recursion; Advanced Java Topics",
+        "reason": null
+      },
+      {
+        "skill": "Analysis of algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Course Outline: Intro. to analysis of algorithms",
+        "reason": null
+      },
+      {
+        "skill": "Sorting algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Course Outline: Intro. to sorting & Searching",
+        "reason": null
+      },
+      {
+        "skill": "Searching algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Course Outline: Intro. to sorting & Searching",
+        "reason": null
+      },
+      {
+        "skill": "Trees",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Trees & Binary Search Trees",
+        "reason": null
+      },
+      {
+        "skill": "Binary Search Trees",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Trees & Binary Search Trees",
+        "reason": null
+      },
+      {
+        "skill": "Hashing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Hashing",
+        "reason": null
+      },
+      {
+        "skill": "Heaps",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Heaps",
+        "reason": null
+      },
+      {
+        "skill": "Abstract Data Types",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Bags",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Lists",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Stacks",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Queues",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Deques",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Priority Queues",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Dictionaries",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      },
+      {
+        "skill": "Tables",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Course Outline: Abstract Data Types & Implementations: Bags, Lists, Stacks, Queues, Deques, Priority Queues, Dictionaries/Tables",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CS 220",
+      "course_title": "Data Structures"
+    }
+  }
+}

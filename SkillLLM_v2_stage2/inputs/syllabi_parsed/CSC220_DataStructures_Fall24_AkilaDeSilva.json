@@ -1,0 +1,341 @@
+{
+  "file": "CSC220_DataStructures_Fall24_AkilaDeSilva",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "Fall 2024",
+    "instructor": "Akila de Silva, PhD",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210",
+          "CSC 215"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisites: CSC 210 or CSC 215 with a grade of C or better."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisites: CSC 210 or CSC 215 with a grade of C or better."
+      }
+    ],
+    "learning_outcomes": [
+      "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+      "Implement data structures in Java.",
+      "Analyze the complexity of algorithms with different implementations of each data structure."
+    ],
+    "topics": [
+      "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs.",
+      "Recursion",
+      "iteration over collections",
+      "Big O notation",
+      "hash table"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Implement data structures in Java.",
+        "reason": null
+      },
+      {
+        "skill": "ADT bag",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Array",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Stack",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Queue",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "List",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Tree",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Dictionary",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Recursion, iteration over collections Big O notation and hash table.",
+        "reason": null
+      },
+      {
+        "skill": "Iteration",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Recursion, iteration over collections Big O notation and hash table.",
+        "reason": null
+      },
+      {
+        "skill": "Big O notation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Recursion, iteration over collections Big O notation and hash table.",
+        "reason": null
+      },
+      {
+        "skill": "Hash table",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Recursion, iteration over collections Big O notation and hash table.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 220",
+      "course_title": "Data Structures"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact",
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 26,
+      "exact": 26,
+      "approximate": 0,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 220",
+    "Grad_equivalent": [],
+    "course_title": "Data Structures",
+    "term": "Fall 2024",
+    "instructor": "Akila de Silva, PhD",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210",
+          "CSC 215"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisites: CSC 210 or CSC 215 with a grade of C or better."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisites: CSC 210 or CSC 215 with a grade of C or better."
+      }
+    ],
+    "learning_outcomes": [
+      "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+      "Implement data structures in Java.",
+      "Analyze the complexity of algorithms with different implementations of each data structure."
+    ],
+    "topics": [
+      "Linear and non-linear data structures in Java, including lists, stacks, queues, trees, tables, and graphs.",
+      "Recursion",
+      "iteration over collections",
+      "Big O notation",
+      "hash table"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Implement data structures in Java.",
+        "reason": null
+      },
+      {
+        "skill": "ADT bag",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Array",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Stack",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Queue",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "List",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Tree",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Dictionary",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Use various data structures, such as ADT bag, Array, Stack, Queue, List, Tree, and Dictionary, to solve programming problems.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Recursion, iteration over collections Big O notation and hash table.",
+        "reason": null
+      },
+      {
+        "skill": "Iteration",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Recursion, iteration over collections Big O notation and hash table.",
+        "reason": null
+      },
+      {
+        "skill": "Big O notation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Recursion, iteration over collections Big O notation and hash table.",
+        "reason": null
+      },
+      {
+        "skill": "Hash table",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Recursion, iteration over collections Big O notation and hash table.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 220",
+      "course_title": "Data Structures"
+    }
+  }
+}

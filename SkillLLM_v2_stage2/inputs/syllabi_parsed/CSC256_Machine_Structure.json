@@ -1,0 +1,329 @@
+{
+  "file": "CSC256_Machine_Structure",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 256",
+    "Grad_equivalent": [],
+    "course_title": "Machine Structures",
+    "term": "Spring 2025",
+    "instructor": "Jingyi Wang",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 230",
+          "CSC 330"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisites: a grade of C or better in CSC230 or CSC330"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "a grade of C or better",
+        "evidence": "Prerequisites: a grade of C or better in CSC230 or CSC330"
+      }
+    ],
+    "learning_outcomes": [
+      "Translate C/C++ code into assembly language",
+      "Perform simple optimizations by hand",
+      "Trace and debug at the assembly level",
+      "Understand and extend simple CPU implementations",
+      "Understand basic interrupt/exception handling",
+      "Make simple performance estimates for assembly code"
+    ],
+    "topics": [
+      "Introduction",
+      "Integer representation/Integer arithmetic",
+      "Assignment statements, logical and arithmetic instructions, Directives, variables, I/O, if-else, while, for, do-while loops, shift/rotate, logical statements",
+      "load/store, pointers, arrays",
+      "Stack, Simple functions, tracking nested calls, call frames, array arguments, return values",
+      "Machine language, assembly, disassembly",
+      "Logic 1, 2, 3",
+      "Single MIPS CPU, Pipelines MIPS, Performance, Power",
+      "Interrupts/signals",
+      "Storage technology, Memory hierarchy, Cache, Virtual memory basics, I/O basics."
+    ],
+    "skills": [
+      {
+        "skill": "C/C++",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Translate C/C++ code into assembly language",
+        "reason": null
+      },
+      {
+        "skill": "Assembly language",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Translate C/C++ code into assembly language",
+        "reason": null
+      },
+      {
+        "skill": "Assembly debugging",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Trace and debug at the assembly level",
+        "reason": null
+      },
+      {
+        "skill": "CPU architecture",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Understand and extend simple CPU implementations",
+        "reason": null
+      },
+      {
+        "skill": "Interrupt/exception handling",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Understand basic interrupt/exception handling",
+        "reason": null
+      },
+      {
+        "skill": "Performance estimation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Make simple performance estimates for assembly code",
+        "reason": null
+      },
+      {
+        "skill": "Integer arithmetic",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Integer representation/Integer arithmetic",
+        "reason": null
+      },
+      {
+        "skill": "MIPS assembly",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Single MIPS CPU, Pipelines MIPS, Performance, Power",
+        "reason": null
+      },
+      {
+        "skill": "Digital logic",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Logic 1, 2, 3",
+        "reason": null
+      },
+      {
+        "skill": "Memory hierarchy",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Storage technology, Memory hierarchy, Cache, Virtual memory basics, I/O basics.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 256",
+      "course_title": "Machine Structures"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact",
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 32,
+      "exact": 32,
+      "approximate": 0,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 256",
+    "Grad_equivalent": [],
+    "course_title": "Machine Structures",
+    "term": "Spring 2025",
+    "instructor": "Jingyi Wang",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 230",
+          "CSC 330"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisites: a grade of C or better in CSC230 or CSC330"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "a grade of C or better",
+        "evidence": "Prerequisites: a grade of C or better in CSC230 or CSC330"
+      }
+    ],
+    "learning_outcomes": [
+      "Translate C/C++ code into assembly language",
+      "Perform simple optimizations by hand",
+      "Trace and debug at the assembly level",
+      "Understand and extend simple CPU implementations",
+      "Understand basic interrupt/exception handling",
+      "Make simple performance estimates for assembly code"
+    ],
+    "topics": [
+      "Introduction",
+      "Integer representation/Integer arithmetic",
+      "Assignment statements, logical and arithmetic instructions, Directives, variables, I/O, if-else, while, for, do-while loops, shift/rotate, logical statements",
+      "load/store, pointers, arrays",
+      "Stack, Simple functions, tracking nested calls, call frames, array arguments, return values",
+      "Machine language, assembly, disassembly",
+      "Logic 1, 2, 3",
+      "Single MIPS CPU, Pipelines MIPS, Performance, Power",
+      "Interrupts/signals",
+      "Storage technology, Memory hierarchy, Cache, Virtual memory basics, I/O basics."
+    ],
+    "skills": [
+      {
+        "skill": "C/C++",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Translate C/C++ code into assembly language",
+        "reason": null
+      },
+      {
+        "skill": "Assembly language",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Translate C/C++ code into assembly language",
+        "reason": null
+      },
+      {
+        "skill": "Assembly debugging",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Trace and debug at the assembly level",
+        "reason": null
+      },
+      {
+        "skill": "CPU architecture",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Understand and extend simple CPU implementations",
+        "reason": null
+      },
+      {
+        "skill": "Interrupt/exception handling",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Understand basic interrupt/exception handling",
+        "reason": null
+      },
+      {
+        "skill": "Performance estimation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Make simple performance estimates for assembly code",
+        "reason": null
+      },
+      {
+        "skill": "Integer arithmetic",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Integer representation/Integer arithmetic",
+        "reason": null
+      },
+      {
+        "skill": "MIPS assembly",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Single MIPS CPU, Pipelines MIPS, Performance, Power",
+        "reason": null
+      },
+      {
+        "skill": "Digital logic",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Logic 1, 2, 3",
+        "reason": null
+      },
+      {
+        "skill": "Memory hierarchy",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Storage technology, Memory hierarchy, Cache, Virtual memory basics, I/O basics.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 256",
+      "course_title": "Machine Structures"
+    }
+  }
+}

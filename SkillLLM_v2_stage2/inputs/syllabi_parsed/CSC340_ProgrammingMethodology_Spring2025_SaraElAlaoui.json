@@ -1,0 +1,538 @@
+{
+  "file": "CSC340_ProgrammingMethodology_Spring2025_SaraElAlaoui",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 340",
+    "Grad_equivalent": [],
+    "course_title": "Programming Methodology",
+    "term": "Spring 2025",
+    "instructor": "Sara El Alaoui",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "This course builds on contents covered in CSC 220 and CSC 230."
+      },
+      {
+        "any_of": [
+          "CSC 230"
+        ],
+        "recommended": false,
+        "evidence": "This course builds on contents covered in CSC 220 and CSC 230."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grades of C or better",
+        "evidence": "Please talk to me if you have not passed both courses with grades of C or better."
+      }
+    ],
+    "learning_outcomes": [
+      "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ADTs, pointer-based implementation of dynamic arrays and linked lists, operator overloading, STLs, inheritance, and polymorphism.",
+      "Students will learn the problem solving process and describe their solution to a computational problem in pseudocode.",
+      "Students will apply the above skills to develop medium sized C++ projects to solve real-world problems.",
+      "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as binary search, insertion sort, selection sort, quick sort, and finding the k-th ranked object."
+    ],
+    "topics": [
+      "Intro to Programming Methodology",
+      "C++ vs. Java",
+      "C++ basics",
+      "Problem solving",
+      "Data abstraction I",
+      "Data abstraction II",
+      "Generic Programming, Templates I",
+      "Pointers, Memory Management I",
+      "Templates II",
+      "Smartpointers, Memory Management II",
+      "Loop Complexity",
+      "Inheritance, Polymorphism and BIG 5",
+      "Overloading, friends",
+      "STL",
+      "Design Decisions (Data Structures)",
+      "Recursion, Time complexity",
+      "Sorting algorithms",
+      "Sorting and Recursion Lab",
+      "Trees Introduction",
+      "Trees: implementations and Algorithms",
+      "Graphs: implementations and Algorithms",
+      "Guest Lecture"
+    ],
+    "skills": [
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "More importantly, it teaches how to critically think about a problem, how to design an efficient and effective solution, and how to professionally implement your solution in C++.",
+        "reason": null
+      },
+      {
+        "skill": "Abstract Data Types (ADTs)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ADTs...",
+        "reason": null
+      },
+      {
+        "skill": "Pointer-based implementation of dynamic arrays and linked lists",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... pointer-based implementation of dynamic arrays and linked lists...",
+        "reason": null
+      },
+      {
+        "skill": "Operator overloading",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... operator overloading...",
+        "reason": null
+      },
+      {
+        "skill": "Standard Template Library (STL)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... STLs...",
+        "reason": null
+      },
+      {
+        "skill": "Inheritance",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... inheritance...",
+        "reason": null
+      },
+      {
+        "skill": "Polymorphism",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... polymorphism.",
+        "reason": null
+      },
+      {
+        "skill": "Algorithm time complexity analysis",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as binary search, insertion sort, selection sort, quick sort, and finding the k-th ranked object.",
+        "reason": null
+      },
+      {
+        "skill": "Binary search",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as binary search...",
+        "reason": null
+      },
+      {
+        "skill": "Insertion sort",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as ... insertion sort...",
+        "reason": null
+      },
+      {
+        "skill": "Selection sort",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as ... selection sort...",
+        "reason": null
+      },
+      {
+        "skill": "Quick sort",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as ... quick sort...",
+        "reason": null
+      },
+      {
+        "skill": "Finding the k-th ranked object",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as ... finding the k-th ranked object.",
+        "reason": null
+      },
+      {
+        "skill": "Pseudocode",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn the problem solving process and describe their solution to a computational problem in pseudocode.",
+        "reason": null
+      },
+      {
+        "skill": "Templates",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Generic Programming, Templates I and Templates II.",
+        "reason": null
+      },
+      {
+        "skill": "Memory management",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Pointers, Memory Management I and Smartpointers, Memory Management II.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Recursion, Time complexity and Sorting and Recursion Lab.",
+        "reason": null
+      },
+      {
+        "skill": "Trees",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Trees Introduction and Trees: implementations and Algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "Graphs",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Graphs: implementations and Algorithms.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 340",
+      "course_title": "Programming Methodology"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "approximate",
+      "approximate",
+      "approximate",
+      "approximate"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "not_found"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "not_found"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "not_found"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "not_found"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "not_found"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      }
+    ],
+    "summary": {
+      "checked": 52,
+      "exact": 28,
+      "approximate": 19,
+      "not_found": 5
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 340",
+    "Grad_equivalent": [],
+    "course_title": "Programming Methodology",
+    "term": "Spring 2025",
+    "instructor": "Sara El Alaoui",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "This course builds on contents covered in CSC 220 and CSC 230."
+      },
+      {
+        "any_of": [
+          "CSC 230"
+        ],
+        "recommended": false,
+        "evidence": "This course builds on contents covered in CSC 220 and CSC 230."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grades of C or better",
+        "evidence": "Please talk to me if you have not passed both courses with grades of C or better."
+      }
+    ],
+    "learning_outcomes": [
+      "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ADTs, pointer-based implementation of dynamic arrays and linked lists, operator overloading, STLs, inheritance, and polymorphism.",
+      "Students will learn the problem solving process and describe their solution to a computational problem in pseudocode.",
+      "Students will apply the above skills to develop medium sized C++ projects to solve real-world problems.",
+      "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as binary search, insertion sort, selection sort, quick sort, and finding the k-th ranked object."
+    ],
+    "topics": [
+      "Intro to Programming Methodology",
+      "C++ vs. Java",
+      "C++ basics",
+      "Problem solving",
+      "Data abstraction I",
+      "Data abstraction II",
+      "Generic Programming, Templates I",
+      "Pointers, Memory Management I",
+      "Templates II",
+      "Smartpointers, Memory Management II",
+      "Loop Complexity",
+      "Inheritance, Polymorphism and BIG 5",
+      "Overloading, friends",
+      "STL",
+      "Design Decisions (Data Structures)",
+      "Recursion, Time complexity",
+      "Sorting algorithms",
+      "Sorting and Recursion Lab",
+      "Trees Introduction",
+      "Trees: implementations and Algorithms",
+      "Graphs: implementations and Algorithms",
+      "Guest Lecture"
+    ],
+    "skills": [
+      {
+        "skill": "C++",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "More importantly, it teaches how to critically think about a problem, how to design an efficient and effective solution, and how to professionally implement your solution in C++.",
+        "reason": null
+      },
+      {
+        "skill": "Abstract Data Types (ADTs)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ADTs...",
+        "reason": null
+      },
+      {
+        "skill": "Pointer-based implementation of dynamic arrays and linked lists",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... pointer-based implementation of dynamic arrays and linked lists...",
+        "reason": null
+      },
+      {
+        "skill": "Operator overloading",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... operator overloading...",
+        "reason": null
+      },
+      {
+        "skill": "Standard Template Library (STL)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... STLs...",
+        "reason": null
+      },
+      {
+        "skill": "Inheritance",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... inheritance...",
+        "reason": null
+      },
+      {
+        "skill": "Polymorphism",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn and understand the concepts and applications of basic and advanced C++ topics including ... polymorphism.",
+        "reason": null
+      },
+      {
+        "skill": "Algorithm time complexity analysis",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as binary search, insertion sort, selection sort, quick sort, and finding the k-th ranked object.",
+        "reason": null
+      },
+      {
+        "skill": "Binary search",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as binary search...",
+        "reason": null
+      },
+      {
+        "skill": "Insertion sort",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as ... insertion sort...",
+        "reason": null
+      },
+      {
+        "skill": "Selection sort",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as ... selection sort...",
+        "reason": null
+      },
+      {
+        "skill": "Quick sort",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as ... quick sort...",
+        "reason": null
+      },
+      {
+        "skill": "Finding the k-th ranked object",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn to analyze the time complexity of foundational algorithms (recursive and non-recursive) such as ... finding the k-th ranked object.",
+        "reason": null
+      },
+      {
+        "skill": "Pseudocode",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Students will learn the problem solving process and describe their solution to a computational problem in pseudocode.",
+        "reason": null
+      },
+      {
+        "skill": "Templates",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Generic Programming, Templates I and Templates II.",
+        "reason": null
+      },
+      {
+        "skill": "Memory management",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Pointers, Memory Management I and Smartpointers, Memory Management II.",
+        "reason": null
+      },
+      {
+        "skill": "Recursion",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Recursion, Time complexity and Sorting and Recursion Lab.",
+        "reason": null
+      },
+      {
+        "skill": "Trees",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Trees Introduction and Trees: implementations and Algorithms.",
+        "reason": null
+      },
+      {
+        "skill": "Graphs",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Tentative Course Outline includes Graphs: implementations and Algorithms.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 340",
+      "course_title": "Programming Methodology"
+    }
+  }
+}

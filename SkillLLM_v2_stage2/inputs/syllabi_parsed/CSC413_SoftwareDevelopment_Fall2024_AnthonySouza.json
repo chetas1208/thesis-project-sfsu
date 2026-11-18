@@ -1,0 +1,341 @@
+{
+  "file": "CSC413_SoftwareDevelopment_Fall2024_AnthonySouza",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 413",
+    "Grad_equivalent": [],
+    "course_title": "Software Development",
+    "term": "Fall 2024",
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite CSC220 with a C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite CSC220 with a C or better"
+      }
+    ],
+    "learning_outcomes": [
+      "Knowledge of object-oriented programming principles.",
+      "Knowledge basic software design pattern.",
+      "Knowledge and practice of the software development process.",
+      "Introduce the student to integrated development environments.",
+      "Expose the student to other software development tools including debuggers, code profilers and build tools.",
+      "Students will design and develop several applications that increase in size.",
+      "Students will practice making good software design choices to the best of their ability."
+    ],
+    "topics": [
+      "Design and development of modern software applications.",
+      "Object-oriented techniques: encapsulation, inheritance, and polymorphism as mechanisms for data design and problem solution.",
+      "Software design, debugging, testing, and UI design.",
+      "Software maintenance.",
+      "Software development tools.",
+      "Java programming language",
+      "Software design patterns",
+      "Integrated development environments (IDEs) - IntelliJ IDEA",
+      "Debuggers, code profilers, build tools",
+      "Threading",
+      "Generics",
+      "Testing",
+      "Git version control",
+      "SOLID Principles"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "It is ”required” that you have a computer that can run JetBrains IntelliJ 2021.0.0 or later with JavaSE technology.",
+        "reason": null
+      },
+      {
+        "skill": "Object-oriented programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Object-oriented techniques: encapsulation, inheritance, and polymorphism as mechanisms for data design and problem solution.",
+        "reason": null
+      },
+      {
+        "skill": "Software design patterns",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Knowledge basic software design pattern.",
+        "reason": null
+      },
+      {
+        "skill": "Debugging",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Expose the student to other software development tools including debuggers, code profilers and build tools.",
+        "reason": null
+      },
+      {
+        "skill": "Testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Software design, debugging, testing, and UI design.",
+        "reason": null
+      },
+      {
+        "skill": "Git",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This class will use GitHub to manage our class assignments.",
+        "reason": "Use of GitHub for assignments implies familiarity with Git version control."
+      },
+      {
+        "skill": "Integrated Development Environment (IntelliJ IDEA)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce the student to integrated development environments.",
+        "reason": null
+      },
+      {
+        "skill": "Threading",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Module Quiz - Threading",
+        "reason": null
+      },
+      {
+        "skill": "Generics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Module Quiz - Generics",
+        "reason": null
+      },
+      {
+        "skill": "SOLID Principles",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Module Quiz SOLID Principles",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 413",
+      "course_title": "Software Development"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "not_found",
+      "approximate",
+      "approximate",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "not_found",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 36,
+      "exact": 31,
+      "approximate": 3,
+      "not_found": 2
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 413",
+    "Grad_equivalent": [],
+    "course_title": "Software Development",
+    "term": "Fall 2024",
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 220"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite CSC220 with a C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "Grade of C or better",
+        "evidence": "Prerequisite CSC220 with a C or better"
+      }
+    ],
+    "learning_outcomes": [
+      "Knowledge of object-oriented programming principles.",
+      "Knowledge basic software design pattern.",
+      "Knowledge and practice of the software development process.",
+      "Introduce the student to integrated development environments.",
+      "Expose the student to other software development tools including debuggers, code profilers and build tools.",
+      "Students will design and develop several applications that increase in size.",
+      "Students will practice making good software design choices to the best of their ability."
+    ],
+    "topics": [
+      "Design and development of modern software applications.",
+      "Object-oriented techniques: encapsulation, inheritance, and polymorphism as mechanisms for data design and problem solution.",
+      "Software design, debugging, testing, and UI design.",
+      "Software maintenance.",
+      "Software development tools.",
+      "Java programming language",
+      "Software design patterns",
+      "Integrated development environments (IDEs) - IntelliJ IDEA",
+      "Debuggers, code profilers, build tools",
+      "Threading",
+      "Generics",
+      "Testing",
+      "Git version control",
+      "SOLID Principles"
+    ],
+    "skills": [
+      {
+        "skill": "Java",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "It is ”required” that you have a computer that can run JetBrains IntelliJ 2021.0.0 or later with JavaSE technology.",
+        "reason": null
+      },
+      {
+        "skill": "Object-oriented programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Object-oriented techniques: encapsulation, inheritance, and polymorphism as mechanisms for data design and problem solution.",
+        "reason": null
+      },
+      {
+        "skill": "Software design patterns",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Knowledge basic software design pattern.",
+        "reason": null
+      },
+      {
+        "skill": "Debugging",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Expose the student to other software development tools including debuggers, code profilers and build tools.",
+        "reason": null
+      },
+      {
+        "skill": "Testing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Software design, debugging, testing, and UI design.",
+        "reason": null
+      },
+      {
+        "skill": "Git",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "This class will use GitHub to manage our class assignments.",
+        "reason": "Use of GitHub for assignments implies familiarity with Git version control."
+      },
+      {
+        "skill": "Integrated Development Environment (IntelliJ IDEA)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Introduce the student to integrated development environments.",
+        "reason": null
+      },
+      {
+        "skill": "Threading",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Module Quiz - Threading",
+        "reason": null
+      },
+      {
+        "skill": "Generics",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Module Quiz - Generics",
+        "reason": null
+      },
+      {
+        "skill": "SOLID Principles",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Module Quiz SOLID Principles",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 413",
+      "course_title": "Software Development"
+    }
+  }
+}

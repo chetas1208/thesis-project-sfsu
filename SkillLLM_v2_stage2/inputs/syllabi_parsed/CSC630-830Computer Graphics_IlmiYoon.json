@@ -1,0 +1,555 @@
+{
+  "file": "CSC630-830Computer Graphics_IlmiYoon",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 630",
+    "Grad_equivalent": [
+      "CSC 830"
+    ],
+    "course_title": "Computer Graphics",
+    "term": null,
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in CSC 413"
+      },
+      {
+        "any_of": [
+          "MATH 225",
+          "MATH 325"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in ... Math 225/325 Linear Algebra"
+      }
+    ],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "Teach you the foundation of 3D graphics - modeling, rendering, shading and animation.",
+      "Teach you the principles of 3D computer graphics while helping you practice picking up the latest trends and tools.",
+      "Learn how to learn a new technology through available resources."
+    ],
+    "topics": [
+      "Modeling",
+      "Rendering",
+      "Shading",
+      "2D & 3D",
+      "OpenGL",
+      "GPU",
+      "GLSL",
+      "Generative AI on Graphics",
+      "Rasterizer",
+      "Vector & Matrix",
+      "Transforms",
+      "Lighting/Shading (Interpolation, dot product)",
+      "Texture (Texture map, normal map, environment map, etc)",
+      "Modeling & computer vision & AI",
+      "3D graphics rendering",
+      "graphics pipeline",
+      "GPU & Shading language",
+      "Compression technologies",
+      "AutoEncoder",
+      "Latent vector",
+      "GAN",
+      "StyleGan",
+      "VR and AR applications"
+    ],
+    "skills": [
+      {
+        "skill": "3D graphics modeling",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course is aiming to teach you the foundation of 3D graphics - modeling, rendering, shading and animation.",
+        "reason": null
+      },
+      {
+        "skill": "Rendering",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course is aiming to teach you the foundation of 3D graphics - modeling, rendering, shading and animation.",
+        "reason": null
+      },
+      {
+        "skill": "Shading",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course is aiming to teach you the foundation of 3D graphics - modeling, rendering, shading and animation.",
+        "reason": null
+      },
+      {
+        "skill": "Animation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "modeling or animation are covered in mathematical concepts, not practical usage of them.",
+        "reason": "Animation is covered in mathematical concepts but not practical usage."
+      },
+      {
+        "skill": "Linear algebra",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "In general computer graphics builds on linear algebra, vector math and a variety of algorithms (sometimes called the graphics pipeline).",
+        "reason": null
+      },
+      {
+        "skill": "Vector math",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "In general computer graphics builds on linear algebra, vector math and a variety of algorithms (sometimes called the graphics pipeline).",
+        "reason": null
+      },
+      {
+        "skill": "Graphics pipeline",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "In general computer graphics builds on linear algebra, vector math and a variety of algorithms (sometimes called the graphics pipeline).",
+        "reason": null
+      },
+      {
+        "skill": "OpenGL",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "We use graphics libraries (like OpenGL) to interface with the gpu to ultimately light pixels on the screen.",
+        "reason": null
+      },
+      {
+        "skill": "GPU programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "We use graphics libraries (like OpenGL) to interface with the gpu to ultimately light pixels on the screen.",
+        "reason": null
+      },
+      {
+        "skill": "GLSL",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 4 (2/20, 2/22): GLSL, Transforms & Project 2, Group Study & Presentations requirement (midterm plan)",
+        "reason": null
+      },
+      {
+        "skill": "Lighting and shading techniques",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 5 (2/27, 2/29): Lighting/Shading, (Interpolation, dot product)",
+        "reason": null
+      },
+      {
+        "skill": "Texture mapping",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 7 (3/12, 3/14): Texture (Texture map, normal map, environment map, etc)",
+        "reason": null
+      },
+      {
+        "skill": "Computer vision",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 8 (3/19, 3/21): Modeling & computer vision & AI",
+        "reason": null
+      },
+      {
+        "skill": "Generative AI",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 1 (1/31, 2/1): ... Generative AI on Graphics ... Week 14: ... Generative AI",
+        "reason": null
+      },
+      {
+        "skill": "Compression technologies",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 14: Understanding Compression technologies, AutoEncoder, Modeling, Computer Vision and Generative AI",
+        "reason": null
+      },
+      {
+        "skill": "AutoEncoder",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 14: Understanding Compression technologies, AutoEncoder, Modeling, Computer Vision and Generative AI",
+        "reason": null
+      },
+      {
+        "skill": "GAN",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15: Latent vector, GAN, StyleGan, VR and AR applications",
+        "reason": null
+      },
+      {
+        "skill": "StyleGan",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15: Latent vector, GAN, StyleGan, VR and AR applications",
+        "reason": null
+      },
+      {
+        "skill": "VR applications",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15: Latent vector, GAN, StyleGan, VR and AR applications",
+        "reason": null
+      },
+      {
+        "skill": "AR applications",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15: Latent vector, GAN, StyleGan, VR and AR applications",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 630/830",
+      "course_title": "Computer Graphics"
+    },
+    "cross_listed": [
+      "CSC 830"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact",
+          "exact"
+        ],
+        "evidence": "approximate"
+      }
+    ],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "exact",
+      "approximate",
+      "approximate"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "approximate"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 54,
+      "exact": 49,
+      "approximate": 5,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 630",
+    "Grad_equivalent": [
+      "CSC 830"
+    ],
+    "course_title": "Computer Graphics",
+    "term": null,
+    "instructor": null,
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in CSC 413"
+      },
+      {
+        "any_of": [
+          "MATH 225",
+          "MATH 325"
+        ],
+        "recommended": false,
+        "evidence": "A grade of C or better in ... Math 225/325 Linear Algebra"
+      }
+    ],
+    "other_requirements": [],
+    "learning_outcomes": [
+      "Teach you the foundation of 3D graphics - modeling, rendering, shading and animation.",
+      "Teach you the principles of 3D computer graphics while helping you practice picking up the latest trends and tools.",
+      "Learn how to learn a new technology through available resources."
+    ],
+    "topics": [
+      "Modeling",
+      "Rendering",
+      "Shading",
+      "2D & 3D",
+      "OpenGL",
+      "GPU",
+      "GLSL",
+      "Generative AI on Graphics",
+      "Rasterizer",
+      "Vector & Matrix",
+      "Transforms",
+      "Lighting/Shading (Interpolation, dot product)",
+      "Texture (Texture map, normal map, environment map, etc)",
+      "Modeling & computer vision & AI",
+      "3D graphics rendering",
+      "graphics pipeline",
+      "GPU & Shading language",
+      "Compression technologies",
+      "AutoEncoder",
+      "Latent vector",
+      "GAN",
+      "StyleGan",
+      "VR and AR applications"
+    ],
+    "skills": [
+      {
+        "skill": "3D graphics modeling",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course is aiming to teach you the foundation of 3D graphics - modeling, rendering, shading and animation.",
+        "reason": null
+      },
+      {
+        "skill": "Rendering",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course is aiming to teach you the foundation of 3D graphics - modeling, rendering, shading and animation.",
+        "reason": null
+      },
+      {
+        "skill": "Shading",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "This course is aiming to teach you the foundation of 3D graphics - modeling, rendering, shading and animation.",
+        "reason": null
+      },
+      {
+        "skill": "Animation",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "modeling or animation are covered in mathematical concepts, not practical usage of them.",
+        "reason": "Animation is covered in mathematical concepts but not practical usage."
+      },
+      {
+        "skill": "Linear algebra",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "In general computer graphics builds on linear algebra, vector math and a variety of algorithms (sometimes called the graphics pipeline).",
+        "reason": null
+      },
+      {
+        "skill": "Vector math",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "In general computer graphics builds on linear algebra, vector math and a variety of algorithms (sometimes called the graphics pipeline).",
+        "reason": null
+      },
+      {
+        "skill": "Graphics pipeline",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "In general computer graphics builds on linear algebra, vector math and a variety of algorithms (sometimes called the graphics pipeline).",
+        "reason": null
+      },
+      {
+        "skill": "OpenGL",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "We use graphics libraries (like OpenGL) to interface with the gpu to ultimately light pixels on the screen.",
+        "reason": null
+      },
+      {
+        "skill": "GPU programming",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "We use graphics libraries (like OpenGL) to interface with the gpu to ultimately light pixels on the screen.",
+        "reason": null
+      },
+      {
+        "skill": "GLSL",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 4 (2/20, 2/22): GLSL, Transforms & Project 2, Group Study & Presentations requirement (midterm plan)",
+        "reason": null
+      },
+      {
+        "skill": "Lighting and shading techniques",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 5 (2/27, 2/29): Lighting/Shading, (Interpolation, dot product)",
+        "reason": null
+      },
+      {
+        "skill": "Texture mapping",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Week 7 (3/12, 3/14): Texture (Texture map, normal map, environment map, etc)",
+        "reason": null
+      },
+      {
+        "skill": "Computer vision",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 8 (3/19, 3/21): Modeling & computer vision & AI",
+        "reason": null
+      },
+      {
+        "skill": "Generative AI",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 1 (1/31, 2/1): ... Generative AI on Graphics ... Week 14: ... Generative AI",
+        "reason": null
+      },
+      {
+        "skill": "Compression technologies",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 14: Understanding Compression technologies, AutoEncoder, Modeling, Computer Vision and Generative AI",
+        "reason": null
+      },
+      {
+        "skill": "AutoEncoder",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 14: Understanding Compression technologies, AutoEncoder, Modeling, Computer Vision and Generative AI",
+        "reason": null
+      },
+      {
+        "skill": "GAN",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15: Latent vector, GAN, StyleGan, VR and AR applications",
+        "reason": null
+      },
+      {
+        "skill": "StyleGan",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15: Latent vector, GAN, StyleGan, VR and AR applications",
+        "reason": null
+      },
+      {
+        "skill": "VR applications",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15: Latent vector, GAN, StyleGan, VR and AR applications",
+        "reason": null
+      },
+      {
+        "skill": "AR applications",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Week 15: Latent vector, GAN, StyleGan, VR and AR applications",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 630/830",
+      "course_title": "Computer Graphics"
+    }
+  }
+}

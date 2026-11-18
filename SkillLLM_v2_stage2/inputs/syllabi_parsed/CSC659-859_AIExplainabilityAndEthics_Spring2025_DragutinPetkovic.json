@@ -1,0 +1,413 @@
+{
+  "file": "CSC659-859_AIExplainabilityAndEthics_Spring2025_DragutinPetkovic",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 659",
+    "Grad_equivalent": [
+      "CSC 859"
+    ],
+    "course_title": "AI Explainability and Ethics",
+    "term": null,
+    "instructor": "D. Petkovic",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "For CSC 659 students: CSC 413 with C or better"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grade of C or better",
+        "evidence": "For CSC 659 students: CSC 413 with C or better"
+      },
+      {
+        "text": "graduate students in good standing",
+        "evidence": "for CSC 859: graduate students in good standing (any major)"
+      },
+      {
+        "text": "consent of the instructor",
+        "evidence": "or consent of the instructor"
+      }
+    ],
+    "learning_outcomes": [
+      "Basics of AI and GenAI algorithms and their limitations",
+      "Basics of methods and measures for accuracy evaluation of AI and GenAI systems",
+      "Prompt engineering and proper usage of GenAI  in various areas like SW engineering, education",
+      "Causes of issues and problems in AI and GenAI and ways to mitigate them",
+      "Basic issues and components of AI Ethics and Trustworthiness",
+      "AI explainability techniques and their applications in various applications in various areas such as biomedical research, health, robotics, business",
+      "Recent AI regulatory initiatives and pros and cons of AI regulation",
+      "Best practices and tools for AI and GenAI trustworthiness and ethics audit",
+      "Implementation and evaluation of full AI pipeline using selected algorithm  and open source tools (e.g. Random Forest)",
+      "Working in a team to implement and audit AI/GenAI application for accuracy and trustworthiness",
+      "Details and usage of GenAI customization  techniques like fine-tuning and RAG",
+      "Details of chosen explainability techniques such as RFEX, GradCAM",
+      "Research, report writing and class presentation of and advanced topic in AI/GenAI agreed upon with the instructor"
+    ],
+    "topics": [
+      "Overview of selected AI algorithms and applications",
+      "More detailed analysis of selected AI algorithm, e.g. Random Forest",
+      "Overview of Gen-AI  technologies and applications",
+      "Methods for measuring and evaluating the accuracy of AI and GenAI systems",
+      "Prompt engineering and proper usage of GenAI",
+      "Overview of Explainable AI approaches",
+      "Limitations and problems with AI and GenAI (e.g. hallucinations, fake news filtering, autonomous cars, bias in various AI applications, etc.) and mitigation strategies",
+      "Methods to customize GenAI such as fine-tuning and Resource Augmented Generation (RAG)",
+      "Overview of Ethical and Trustworthy AI and best practices for its audit and verification",
+      "Recent regulatory, political and industry initiatives  for Trustworthy AI and pros and cons of regulations for AI",
+      "Implementation of full AI pipeline for one selected  algorithm e.g. Random Forest (individual project)",
+      "Implementation of ethics and trustworthiness audit of chosen AI applications (team project)",
+      "Guest talks of industry experts (optional)",
+      "Class seminars by graduate students covering selected advanced topics"
+    ],
+    "skills": [
+      {
+        "skill": "AI algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basics of AI and GenAI algorithms and their limitations",
+        "reason": null
+      },
+      {
+        "skill": "Generative AI (GenAI)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basics of AI and GenAI algorithms and their limitations",
+        "reason": null
+      },
+      {
+        "skill": "Prompt engineering",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Prompt engineering and proper usage of GenAI  in various areas like SW engineering, education",
+        "reason": null
+      },
+      {
+        "skill": "Accuracy evaluation methods",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basics of methods and measures for accuracy evaluation of AI and GenAI systems",
+        "reason": null
+      },
+      {
+        "skill": "Explainable AI techniques",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "AI explainability techniques and their applications in various applications in various areas such as biomedical research, health, robotics, business",
+        "reason": null
+      },
+      {
+        "skill": "Ethics and trustworthiness auditing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basic issues and components of AI Ethics and Trustworthiness",
+        "reason": null
+      },
+      {
+        "skill": "Random Forest algorithm",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Implementation and evaluation of full AI pipeline using selected algorithm  and open source tools (e.g. Random Forest)",
+        "reason": null
+      },
+      {
+        "skill": "GenAI customization techniques (fine-tuning, RAG)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Details and usage of GenAI customization  techniques like fine-tuning and RAG",
+        "reason": null
+      },
+      {
+        "skill": "Explainability techniques (RFEX, GradCAM)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Details of chosen explainability techniques such as RFEX, GradCAM",
+        "reason": null
+      },
+      {
+        "skill": "Open source AI tools and databases",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Use of standard open source AI implementations/tools and open source databases as well as the use of GenAI",
+        "reason": null
+      },
+      {
+        "skill": "Coding exercises",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Several individual homework assignments ranging from literature review to coding exercises, with proper use of GenAI",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "Course Number: CSC 659/859",
+      "course_title": "Course Title: AI Explainability and Ethics"
+    },
+    "cross_listed": [
+      "CSC 859"
+    ]
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [
+      "exact"
+    ],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      }
+    ],
+    "other_requirements": [
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "learning_outcomes": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 46,
+      "exact": 46,
+      "approximate": 0,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 659",
+    "Grad_equivalent": [
+      "CSC 859"
+    ],
+    "course_title": "AI Explainability and Ethics",
+    "term": null,
+    "instructor": "D. Petkovic",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 413"
+        ],
+        "recommended": false,
+        "evidence": "For CSC 659 students: CSC 413 with C or better"
+      },
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "for CSC 859: graduate students in good standing (any major)"
+      },
+      {
+        "any_of": [],
+        "recommended": false,
+        "evidence": "or consent of the instructor"
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "grade of C or better",
+        "evidence": "For CSC 659 students: CSC 413 with C or better"
+      },
+      {
+        "text": "graduate students in good standing",
+        "evidence": "for CSC 859: graduate students in good standing (any major)"
+      },
+      {
+        "text": "consent of the instructor",
+        "evidence": "or consent of the instructor"
+      }
+    ],
+    "learning_outcomes": [
+      "Basics of AI and GenAI algorithms and their limitations",
+      "Basics of methods and measures for accuracy evaluation of AI and GenAI systems",
+      "Prompt engineering and proper usage of GenAI  in various areas like SW engineering, education",
+      "Causes of issues and problems in AI and GenAI and ways to mitigate them",
+      "Basic issues and components of AI Ethics and Trustworthiness",
+      "AI explainability techniques and their applications in various applications in various areas such as biomedical research, health, robotics, business",
+      "Recent AI regulatory initiatives and pros and cons of AI regulation",
+      "Best practices and tools for AI and GenAI trustworthiness and ethics audit",
+      "Implementation and evaluation of full AI pipeline using selected algorithm  and open source tools (e.g. Random Forest)",
+      "Working in a team to implement and audit AI/GenAI application for accuracy and trustworthiness",
+      "Details and usage of GenAI customization  techniques like fine-tuning and RAG",
+      "Details of chosen explainability techniques such as RFEX, GradCAM",
+      "Research, report writing and class presentation of and advanced topic in AI/GenAI agreed upon with the instructor"
+    ],
+    "topics": [
+      "Overview of selected AI algorithms and applications",
+      "More detailed analysis of selected AI algorithm, e.g. Random Forest",
+      "Overview of Gen-AI  technologies and applications",
+      "Methods for measuring and evaluating the accuracy of AI and GenAI systems",
+      "Prompt engineering and proper usage of GenAI",
+      "Overview of Explainable AI approaches",
+      "Limitations and problems with AI and GenAI (e.g. hallucinations, fake news filtering, autonomous cars, bias in various AI applications, etc.) and mitigation strategies",
+      "Methods to customize GenAI such as fine-tuning and Resource Augmented Generation (RAG)",
+      "Overview of Ethical and Trustworthy AI and best practices for its audit and verification",
+      "Recent regulatory, political and industry initiatives  for Trustworthy AI and pros and cons of regulations for AI",
+      "Implementation of full AI pipeline for one selected  algorithm e.g. Random Forest (individual project)",
+      "Implementation of ethics and trustworthiness audit of chosen AI applications (team project)",
+      "Guest talks of industry experts (optional)",
+      "Class seminars by graduate students covering selected advanced topics"
+    ],
+    "skills": [
+      {
+        "skill": "AI algorithms",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basics of AI and GenAI algorithms and their limitations",
+        "reason": null
+      },
+      {
+        "skill": "Generative AI (GenAI)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basics of AI and GenAI algorithms and their limitations",
+        "reason": null
+      },
+      {
+        "skill": "Prompt engineering",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Prompt engineering and proper usage of GenAI  in various areas like SW engineering, education",
+        "reason": null
+      },
+      {
+        "skill": "Accuracy evaluation methods",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basics of methods and measures for accuracy evaluation of AI and GenAI systems",
+        "reason": null
+      },
+      {
+        "skill": "Explainable AI techniques",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "AI explainability techniques and their applications in various applications in various areas such as biomedical research, health, robotics, business",
+        "reason": null
+      },
+      {
+        "skill": "Ethics and trustworthiness auditing",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Basic issues and components of AI Ethics and Trustworthiness",
+        "reason": null
+      },
+      {
+        "skill": "Random Forest algorithm",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Implementation and evaluation of full AI pipeline using selected algorithm  and open source tools (e.g. Random Forest)",
+        "reason": null
+      },
+      {
+        "skill": "GenAI customization techniques (fine-tuning, RAG)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Details and usage of GenAI customization  techniques like fine-tuning and RAG",
+        "reason": null
+      },
+      {
+        "skill": "Explainability techniques (RFEX, GradCAM)",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Details of chosen explainability techniques such as RFEX, GradCAM",
+        "reason": null
+      },
+      {
+        "skill": "Open source AI tools and databases",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Use of standard open source AI implementations/tools and open source databases as well as the use of GenAI",
+        "reason": null
+      },
+      {
+        "skill": "Coding exercises",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Several individual homework assignments ranging from literature review to coding exercises, with proper use of GenAI",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "Course Number: CSC 659/859",
+      "course_title": "Course Title: AI Explainability and Ethics"
+    }
+  }
+}

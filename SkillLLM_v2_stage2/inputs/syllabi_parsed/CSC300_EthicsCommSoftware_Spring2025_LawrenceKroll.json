@@ -1,0 +1,283 @@
+{
+  "file": "CSC300_EthicsCommSoftware_Spring2025_LawrenceKroll",
+  "model": "gpt-4.1-mini",
+  "extracted": {
+    "course_id": "CSC 300",
+    "Grad_equivalent": [],
+    "course_title": "ETHICS, COMMUNICATION, AND TOOLS FOR SOFTWARE DEVELOPMENT",
+    "term": "Spring, 2025",
+    "instructor": "Lawrence Kroll",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 210 with grade C or better, upper-division student"
+      },
+      {
+        "any_of": [
+          "CSC 101",
+          "CSC 215"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: ... OR CSC 101 followed by CSC 215."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "upper-division student",
+        "evidence": "Prerequisite: CSC 210 with grade C or better, upper-division student"
+      }
+    ],
+    "learning_outcomes": [
+      "Evaluate social and ethical issues that are associated with the access, control, and distribution of online information or developing software.",
+      "Understand the department's ethics and plagiarism policy.",
+      "Understand, evaluate, and apply various legal, privacy, and intellectual property concerns related to online information and software.",
+      "Understand professional responsibility and accountability when writing software.",
+      "Use written and oral communication effectively in the context of computer science ethics and collaborative software development."
+    ],
+    "topics": [
+      "frameworks for legal and ethical decision making",
+      "privacy",
+      "reliability on computers",
+      "freedom of speech",
+      "intellectual property rights and protection",
+      "copyright laws",
+      "patents",
+      "trade secrets",
+      "professional responsibilities",
+      "accountability",
+      "code of ethics",
+      "written communication and tools used in collaborative software development",
+      "software specifications",
+      "requirements and use cases",
+      "abstracts",
+      "executive summaries",
+      "short technical reports",
+      "documentation",
+      "creating effective technical presentations"
+    ],
+    "skills": [
+      {
+        "skill": "software specifications",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Written communication and tools used in collaborative software development software specifications; requirements and use cases.",
+        "reason": null
+      },
+      {
+        "skill": "requirements and use cases",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Written communication and tools used in collaborative software development software specifications; requirements and use cases.",
+        "reason": null
+      },
+      {
+        "skill": "technical writing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Abstracts, executive summaries, short technical reports, and documentation, creating effective technical presentations.",
+        "reason": null
+      },
+      {
+        "skill": "legal and ethical decision making",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "frameworks for legal and ethical decision making; privacy, reliability on computers; freedom of speech; intellectual property rights and protection, copyright laws, patents, and trade secrets.",
+        "reason": null
+      },
+      {
+        "skill": "intellectual property law",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "frameworks for legal and ethical decision making; privacy, reliability on computers; freedom of speech; intellectual property rights and protection, copyright laws, patents, and trade secrets.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 300",
+      "course_title": "ETHICS, COMMUNICATION, AND TOOLS FOR SOFTWARE DEVELOPMENT"
+    },
+    "cross_listed": []
+  },
+  "verification": {
+    "course_id": "exact",
+    "course_id_evidence": "exact",
+    "course_title": "exact",
+    "cross_listed": [],
+    "prerequisites": [
+      {
+        "courses": [
+          "exact"
+        ],
+        "evidence": "exact"
+      },
+      {
+        "courses": [
+          "exact",
+          "exact"
+        ],
+        "evidence": "approximate"
+      }
+    ],
+    "other_requirements": [
+      "exact"
+    ],
+    "learning_outcomes": [
+      "approximate",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "topics": [
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact",
+      "exact"
+    ],
+    "skills": [
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": true,
+        "evidence": "exact"
+      },
+      {
+        "skill_named_in_text": false,
+        "evidence": "exact"
+      }
+    ],
+    "summary": {
+      "checked": 37,
+      "exact": 35,
+      "approximate": 2,
+      "not_found": 0
+    }
+  },
+  "llm_raw": {
+    "course_id": "CSC 300",
+    "Grad_equivalent": [],
+    "course_title": "ETHICS, COMMUNICATION, AND TOOLS FOR SOFTWARE DEVELOPMENT",
+    "term": "Spring, 2025",
+    "instructor": "Lawrence Kroll",
+    "prerequisites": [
+      {
+        "any_of": [
+          "CSC 210"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: CSC 210 with grade C or better, upper-division student"
+      },
+      {
+        "any_of": [
+          "CSC 101",
+          "CSC 215"
+        ],
+        "recommended": false,
+        "evidence": "Prerequisite: ... OR CSC 101 followed by CSC 215."
+      }
+    ],
+    "other_requirements": [
+      {
+        "text": "upper-division student",
+        "evidence": "Prerequisite: CSC 210 with grade C or better, upper-division student"
+      }
+    ],
+    "learning_outcomes": [
+      "Evaluate social and ethical issues that are associated with the access, control, and distribution of online information or developing software.",
+      "Understand the department's ethics and plagiarism policy.",
+      "Understand, evaluate, and apply various legal, privacy, and intellectual property concerns related to online information and software.",
+      "Understand professional responsibility and accountability when writing software.",
+      "Use written and oral communication effectively in the context of computer science ethics and collaborative software development."
+    ],
+    "topics": [
+      "frameworks for legal and ethical decision making",
+      "privacy",
+      "reliability on computers",
+      "freedom of speech",
+      "intellectual property rights and protection",
+      "copyright laws",
+      "patents",
+      "trade secrets",
+      "professional responsibilities",
+      "accountability",
+      "code of ethics",
+      "written communication and tools used in collaborative software development",
+      "software specifications",
+      "requirements and use cases",
+      "abstracts",
+      "executive summaries",
+      "short technical reports",
+      "documentation",
+      "creating effective technical presentations"
+    ],
+    "skills": [
+      {
+        "skill": "software specifications",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Written communication and tools used in collaborative software development software specifications; requirements and use cases.",
+        "reason": null
+      },
+      {
+        "skill": "requirements and use cases",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "Written communication and tools used in collaborative software development software specifications; requirements and use cases.",
+        "reason": null
+      },
+      {
+        "skill": "technical writing",
+        "type": "explicit",
+        "level": "proficiency",
+        "evidence": "Abstracts, executive summaries, short technical reports, and documentation, creating effective technical presentations.",
+        "reason": null
+      },
+      {
+        "skill": "legal and ethical decision making",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "frameworks for legal and ethical decision making; privacy, reliability on computers; freedom of speech; intellectual property rights and protection, copyright laws, patents, and trade secrets.",
+        "reason": null
+      },
+      {
+        "skill": "intellectual property law",
+        "type": "explicit",
+        "level": "familiarity",
+        "evidence": "frameworks for legal and ethical decision making; privacy, reliability on computers; freedom of speech; intellectual property rights and protection, copyright laws, patents, and trade secrets.",
+        "reason": null
+      }
+    ],
+    "evidence": {
+      "course_id": "CSC 300",
+      "course_title": "ETHICS, COMMUNICATION, AND TOOLS FOR SOFTWARE DEVELOPMENT"
+    }
+  }
+}
