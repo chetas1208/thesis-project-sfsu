@@ -1,0 +1,5 @@
+item_id,sentence,mention,candidate_A,candidate_B,candidate_C,candidate_D,candidate_E,options,q1_choice,q2_note,notes
+T0-P3-01,Hands-on ⟦k8s⟧ experience.,k8s,use Kubernetes (synthetic) - container orchestration,use Kafka (synthetic) - event streaming,use Docker (synthetic) - containers,use Ansible (synthetic) - configuration management,use Terraform (synthetic) - infrastructure as code,A-E | NONE_OF_THESE | NOT_A_SKILL,,,
+T0-P3-02,Good ⟦Excel modelling⟧ skills.,Excel modelling,use spreadsheets software (synthetic),use Microsoft Excel (synthetic),use Microsoft Word (synthetic),perform financial analysis (synthetic),use Power BI (synthetic),A-E | NONE_OF_THESE | NOT_A_SKILL,,,
+T0-P3-03,Knowledge of ⟦maritime law⟧.,maritime law,tax law (synthetic),labour law (synthetic),contract law (synthetic),customs regulations (synthetic),environmental law (synthetic),A-E | NONE_OF_THESE | NOT_A_SKILL,,,
+T0-P3-04,We are a ⟦fast-growing⟧ team in a modern office.,fast-growing,manage growth strategy (synthetic),work in teams (synthetic),use agile project management (synthetic),manage a team (synthetic),adapt to change (synthetic),A-E | NONE_OF_THESE | NOT_A_SKILL,,,

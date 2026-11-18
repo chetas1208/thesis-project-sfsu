@@ -1,0 +1,696 @@
+{"canonical_skill_id": "amazon-web-services", "canonical_skill_name": "Amazon Web Services", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "continuous-integration-continuous-deployment", "canonical_skill_name": "continuous integration/continuous deployment", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "javascript", "canonical_skill_name": "JavaScript", "esco_uris": ["http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"], "stage": "name_pref"}
+{"canonical_skill_id": "machine-learning", "canonical_skill_name": "machine learning", "esco_uris": ["http://data.europa.eu/esco/skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"], "stage": "name_pref"}
+{"canonical_skill_id": "natural-language-processing", "canonical_skill_name": "natural language processing", "esco_uris": ["http://data.europa.eu/esco/skill/fff0e2cd-d0bd-4b02-9daf-158b79d9688a"], "stage": "name_pref"}
+{"canonical_skill_id": "deep-learning", "canonical_skill_name": "deep learning", "esco_uris": ["http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080"], "stage": "name_pref"}
+{"canonical_skill_id": "structured-query-language", "canonical_skill_name": "structured query language", "esco_uris": ["http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742"], "stage": "alias_pref"}
+{"canonical_skill_id": "pytorch-lightning", "canonical_skill_name": "PyTorch Lightning", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "react", "canonical_skill_name": "React", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "node-js", "canonical_skill_name": "Node.js", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "python", "canonical_skill_name": "Python", "esco_uris": ["http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d"], "stage": "name_alt"}
+{"canonical_skill_id": "docker", "canonical_skill_name": "Docker", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "kubernetes", "canonical_skill_name": "Kubernetes", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "pytorch", "canonical_skill_name": "PyTorch", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "communication", "canonical_skill_name": "communication", "esco_uris": ["http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7"], "stage": "name_pref"}
+{"canonical_skill_id": "leadership", "canonical_skill_name": "leadership", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "problem-solving", "canonical_skill_name": "problem solving", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "teamwork", "canonical_skill_name": "teamwork", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "collaboration", "canonical_skill_name": "collaboration", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "information-technology", "canonical_skill_name": "Information Technology", "esco_uris": ["http://data.europa.eu/esco/skill/ddc3119d-1d6e-4324-9125-a3380d299ac5"], "stage": "name_alt"}
+{"canonical_skill_id": "web-technology", "canonical_skill_name": "Web Technology", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "agile", "canonical_skill_name": "Agile", "esco_uris": ["http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"], "stage": "name_alt"}
+{"canonical_skill_id": "selenium", "canonical_skill_name": "Selenium", "esco_uris": ["http://data.europa.eu/esco/skill/7557f0f4-b8bc-4ac0-b91e-222ab1ba744f"], "stage": "name_alt"}
+{"canonical_skill_id": "circleci", "canonical_skill_name": "CircleCI", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "jenkins", "canonical_skill_name": "Jenkins", "esco_uris": ["http://data.europa.eu/esco/skill/f47a1998-0beb-43be-9f46-380aa4d183da"], "stage": "name_alt"}
+{"canonical_skill_id": "qa", "canonical_skill_name": "QA", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "java", "canonical_skill_name": "Java", "esco_uris": ["http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389"], "stage": "name_alt"}
+{"canonical_skill_id": "kotlin", "canonical_skill_name": "Kotlin", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "typescript", "canonical_skill_name": "Typescript", "esco_uris": ["http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68"], "stage": "name_pref"}
+{"canonical_skill_id": "agile-methodologies", "canonical_skill_name": "Agile methodologies", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "continuous-delivery", "canonical_skill_name": "continuous delivery", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "degree-in-computer-science", "canonical_skill_name": "degree in Computer Science", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "financial-services", "canonical_skill_name": "Financial Services", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cloud", "canonical_skill_name": "cloud", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "solving-business-problems-through-innovation-and-engineering-practices", "canonical_skill_name": "solving business problems through innovation and engineering practices", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "apply-your-depth-of-knowledge-and-expertise", "canonical_skill_name": "apply your depth of knowledge and expertise", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "partner-continuously-with-your-many-stakeholders", "canonical_skill_name": "partner continuously with your many stakeholders", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bs-ba-degree", "canonical_skill_name": "BS/BA degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "core-java", "canonical_skill_name": "Core Java", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "spring-boot", "canonical_skill_name": "Spring Boot", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "microservices", "canonical_skill_name": "microservices", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cloud-technologies", "canonical_skill_name": "cloud technologies", "esco_uris": ["http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0"], "stage": "name_pref"}
+{"canonical_skill_id": "application-data-and-infrastructure-architecture", "canonical_skill_name": "application data and infrastructure architecture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "industry-wide-technology-trends-and-best-practices", "canonical_skill_name": "industry-wide technology trends and best practices", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "work-in-large-collaborative-teams", "canonical_skill_name": "work in large collaborative teams", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "building-an-innovative-culture", "canonical_skill_name": "building an innovative culture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "modern-programming-languages", "canonical_skill_name": "modern programming languages", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "business-analysis", "canonical_skill_name": "business analysis", "esco_uris": ["http://data.europa.eu/esco/skill/633a3637-2c6b-40ae-ac38-289eb2a62aa6"], "stage": "name_pref"}
+{"canonical_skill_id": "development", "canonical_skill_name": "development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "maintenance", "canonical_skill_name": "maintenance", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "software-improvement", "canonical_skill_name": "software improvement", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "front-end", "canonical_skill_name": "front-end", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "css", "canonical_skill_name": "CSS", "esco_uris": ["http://data.europa.eu/esco/skill/e5d1f825-60ed-4bdd-872a-e748c387f777"], "stage": "name_pref"}
+{"canonical_skill_id": "passion", "canonical_skill_name": "passion", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "enthusiasm", "canonical_skill_name": "enthusiasm", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "self-starter", "canonical_skill_name": "self-starter", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "team-player", "canonical_skill_name": "team player", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "open", "canonical_skill_name": "open", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "webpack", "canonical_skill_name": "Webpack", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "redux", "canonical_skill_name": "Redux", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "test-driven-development", "canonical_skill_name": "Test Driven Development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "html", "canonical_skill_name": "HTML", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "full-stack", "canonical_skill_name": "Full-stack", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "saas", "canonical_skill_name": "SaaS", "esco_uris": ["http://data.europa.eu/esco/skill/83218cac-3599-417e-93d2-26013cdccd98"], "stage": "name_alt"}
+{"canonical_skill_id": "pair-programming", "canonical_skill_name": "pair programming", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "es6", "canonical_skill_name": "ES6", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "b2b", "canonical_skill_name": "B2B", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "computer-software", "canonical_skill_name": "Computer Software", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "vue-js", "canonical_skill_name": "vue.js", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "vuex", "canonical_skill_name": "vuex", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "laravel", "canonical_skill_name": "laravel", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mysql", "canonical_skill_name": "MySQL", "esco_uris": ["http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f"], "stage": "name_pref"}
+{"canonical_skill_id": "passionate", "canonical_skill_name": "passionate", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "functional-programming", "canonical_skill_name": "functional programming", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "jira", "canonical_skill_name": "Jira", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "php", "canonical_skill_name": "PHP", "esco_uris": ["http://data.europa.eu/esco/skill/4350c38d-0fe9-4ca7-bab9-40ed7f72b04f"], "stage": "name_pref"}
+{"canonical_skill_id": "back-end", "canonical_skill_name": "back-end", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "vue", "canonical_skill_name": "Vue", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scss", "canonical_skill_name": "SCSS", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "performance", "canonical_skill_name": "performance", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scalability", "canonical_skill_name": "scalability", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "monitoring", "canonical_skill_name": "monitoring", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "stay-focused-on-common-goals", "canonical_skill_name": "stay focused on common goals", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "architecture-and-design-across-all-systems", "canonical_skill_name": "architecture and design across all systems", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "xml", "canonical_skill_name": "XML", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "jquery", "canonical_skill_name": "jquery", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "databases", "canonical_skill_name": "databases", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "apache", "canonical_skill_name": "Apache", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "publishing", "canonical_skill_name": "Publishing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "tdd", "canonical_skill_name": "TDD", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "code-reviews", "canonical_skill_name": "code reviews", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "positive-attitude", "canonical_skill_name": "Positive attitude", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "proactive", "canonical_skill_name": "proactive", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "problem-solver", "canonical_skill_name": "problem solver", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "production-environments", "canonical_skill_name": "production environments", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "graphql", "canonical_skill_name": "GraphQL", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "production-environment", "canonical_skill_name": "production environment", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "junit", "canonical_skill_name": "JUnit", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "shell-scripting", "canonical_skill_name": "shell scripting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "version-control", "canonical_skill_name": "version control", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ci", "canonical_skill_name": "CI", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "gradle", "canonical_skill_name": "gradle", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "postgresql", "canonical_skill_name": "PostgreSQL", "esco_uris": ["http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996"], "stage": "name_pref"}
+{"canonical_skill_id": "terraform", "canonical_skill_name": "Terraform", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "elasticsearch", "canonical_skill_name": "Elasticsearch", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "web-services", "canonical_skill_name": "web-services", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "design", "canonical_skill_name": "design", "esco_uris": ["http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41"], "stage": "name_alt"}
+{"canonical_skill_id": "messaging", "canonical_skill_name": "messaging", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "asynchronous-communication", "canonical_skill_name": "asynchronous communication", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "google-cloud", "canonical_skill_name": "Google Cloud", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "azure", "canonical_skill_name": "Azure", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cassandra", "canonical_skill_name": "Cassandra", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "spring", "canonical_skill_name": "Spring", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "restful-web-services", "canonical_skill_name": "restful web services )", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "orm", "canonical_skill_name": "ORM", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "maven", "canonical_skill_name": "Maven", "esco_uris": ["http://data.europa.eu/esco/skill/0d168770-4d9c-4096-b048-a6577818d306"], "stage": "name_alt"}
+{"canonical_skill_id": "caching", "canonical_skill_name": "Caching", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "tomcat", "canonical_skill_name": "Tomcat", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "it-security", "canonical_skill_name": "IT Security", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "software-development", "canonical_skill_name": "software development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "security", "canonical_skill_name": "security", "esco_uris": ["http://data.europa.eu/esco/skill/749ce4c2-4dfd-461a-a8f3-0f6914814d3e"], "stage": "name_alt"}
+{"canonical_skill_id": "infrastructure", "canonical_skill_name": "infrastructure", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "iam", "canonical_skill_name": "iam", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "pki", "canonical_skill_name": "pki", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sysadmin", "canonical_skill_name": "sysadmin", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "develop", "canonical_skill_name": "develop", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dns", "canonical_skill_name": "DNS", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "configuration-management", "canonical_skill_name": "Configuration Management", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "logging", "canonical_skill_name": "Logging", "esco_uris": ["http://data.europa.eu/esco/skill/e8488824-3865-4d2a-97e9-fe4647d6add3"], "stage": "name_pref"}
+{"canonical_skill_id": "interpersonal-skills", "canonical_skill_name": "interpersonal skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "pragmatic", "canonical_skill_name": "pragmatic", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "solution-oriented", "canonical_skill_name": "solution-oriented", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "automation", "canonical_skill_name": "automation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "html5", "canonical_skill_name": "HTML5", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ruby", "canonical_skill_name": "Ruby", "esco_uris": ["http://data.europa.eu/esco/skill/0ccdfe98-f845-4598-84a1-3dca66e9d9a3"], "stage": "name_alt"}
+{"canonical_skill_id": "keeping-the-team-and-other-key-stakeholders-up-to-speed", "canonical_skill_name": "keeping the team and other key stakeholders up to speed", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "end-to-end-software", "canonical_skill_name": "end-to-end software", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mentor", "canonical_skill_name": "mentor", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "j2ee", "canonical_skill_name": "J2EE", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "kafka", "canonical_skill_name": "Kafka", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "elastic-search", "canonical_skill_name": "Elastic Search", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "data-structures", "canonical_skill_name": "data structures", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "multithreading", "canonical_skill_name": "multithreading", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "angular", "canonical_skill_name": "Angular", "esco_uris": ["http://data.europa.eu/esco/skill/1ffac4ac-fda7-407d-8ed1-ca8f4a8dc146"], "stage": "name_pref"}
+{"canonical_skill_id": "smart", "canonical_skill_name": "smart", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "driven", "canonical_skill_name": "driven", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "gaming", "canonical_skill_name": "Gaming", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "collaborate", "canonical_skill_name": "collaborate", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "javascript-based", "canonical_skill_name": "JavaScript-based", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "front-end-technologies", "canonical_skill_name": "front end technologies", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "code-quality", "canonical_skill_name": "code quality", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "css3", "canonical_skill_name": "CSS3", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "git", "canonical_skill_name": "Git", "esco_uris": ["http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f"], "stage": "name_alt"}
+{"canonical_skill_id": "github", "canonical_skill_name": "GitHub )", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "testing", "canonical_skill_name": "testing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "design-patterns", "canonical_skill_name": "design patterns", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "linux", "canonical_skill_name": "linux", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "lead-the-endpoint-engineering-team", "canonical_skill_name": "lead the Endpoint Engineering team", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "windows", "canonical_skill_name": "windows", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bachelor-s-degree", "canonical_skill_name": "Bachelors degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "software-engineering", "canonical_skill_name": "Software Engineering", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "public-cloud", "canonical_skill_name": "public cloud", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "microsoft-azure", "canonical_skill_name": "Microsoft Azure", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "master-s-degree", "canonical_skill_name": "master's degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cyber-security", "canonical_skill_name": "Cyber Security", "esco_uris": ["http://data.europa.eu/esco/skill/8088750d-8388-4170-a76f-48354c469c44"], "stage": "name_pref"}
+{"canonical_skill_id": "devops", "canonical_skill_name": "DevOps", "esco_uris": ["http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4"], "stage": "name_pref"}
+{"canonical_skill_id": "snowflake", "canonical_skill_name": "Snowflake", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "people-management", "canonical_skill_name": "people management", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "net", "canonical_skill_name": ". net", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "c", "canonical_skill_name": "C++", "esco_uris": ["http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a", "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f"], "stage": "name_pref"}
+{"canonical_skill_id": "net-core", "canonical_skill_name": ". Net Core", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "front-end-development", "canonical_skill_name": "front-end development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mssql", "canonical_skill_name": "MSSQL", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "svn", "canonical_skill_name": "SVN", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "agile-development", "canonical_skill_name": "agile development", "esco_uris": ["http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221"], "stage": "name_pref"}
+{"canonical_skill_id": "iot", "canonical_skill_name": "IoT", "esco_uris": ["http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51"], "stage": "name_alt"}
+{"canonical_skill_id": "german", "canonical_skill_name": "German", "esco_uris": ["http://data.europa.eu/esco/skill/4812a4ea-dc55-4dc6-b9b0-4a59bba2c647"], "stage": "name_pref"}
+{"canonical_skill_id": "english", "canonical_skill_name": "English", "esco_uris": ["http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0"], "stage": "name_pref"}
+{"canonical_skill_id": "architecture", "canonical_skill_name": "architecture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "consulting", "canonical_skill_name": "Consulting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "software-development-engineering", "canonical_skill_name": "Software Development / Engineering", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "user-interface", "canonical_skill_name": "user-interface", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "user-experience", "canonical_skill_name": "user-experience", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ux", "canonical_skill_name": "UX", "esco_uris": ["http://data.europa.eu/esco/skill/07dd856d-6141-48a7-a228-918f88494812"], "stage": "name_alt"}
+{"canonical_skill_id": "ui", "canonical_skill_name": "UI", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "human-computer-interaction", "canonical_skill_name": "human-computer interaction", "esco_uris": ["http://data.europa.eu/esco/skill/9136cbf1-7916-4f1c-bc9a-0318ee1d6016"], "stage": "name_pref"}
+{"canonical_skill_id": "angularjs", "canonical_skill_name": "angularjs", "esco_uris": ["http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97"], "stage": "name_alt"}
+{"canonical_skill_id": "sapui5", "canonical_skill_name": "sapui5", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "big-data", "canonical_skill_name": "Big Data", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "internet-of-things", "canonical_skill_name": "Internet of Things", "esco_uris": ["http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51"], "stage": "name_pref"}
+{"canonical_skill_id": "analytics", "canonical_skill_name": "analytics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "artificial-intelligence", "canonical_skill_name": "Artificial Intelligence", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sap", "canonical_skill_name": "SAP", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "integration", "canonical_skill_name": "integration", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "next-js", "canonical_skill_name": "next.js", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sass", "canonical_skill_name": "sass", "esco_uris": ["http://data.europa.eu/esco/skill/1110c92f-3059-445a-9436-0f4200d365f5"], "stage": "name_pref"}
+{"canonical_skill_id": "attention-to-detail", "canonical_skill_name": "attention to detail", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "technical-skills", "canonical_skill_name": "technical skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "disciplined", "canonical_skill_name": "disciplined", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "motivated", "canonical_skill_name": "motivated", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "hard-working", "canonical_skill_name": "hard working", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "application", "canonical_skill_name": "application", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "data", "canonical_skill_name": "data", "esco_uris": ["http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833"], "stage": "name_alt"}
+{"canonical_skill_id": "infrastructure-architecture", "canonical_skill_name": "infrastructure architecture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "developmental-toolsets", "canonical_skill_name": "developmental toolsets", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "spring-mvc", "canonical_skill_name": "spring-mvc", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "micro-service-architecture", "canonical_skill_name": "Micro Service architecture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cloud-services", "canonical_skill_name": "Cloud Services", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "storage-systems", "canonical_skill_name": "storage systems )", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "prometheus", "canonical_skill_name": "Prometheus", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "splunk", "canonical_skill_name": "Splunk", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dynatrace", "canonical_skill_name": "DynaTrace", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cloud-computing", "canonical_skill_name": "Cloud Computing", "esco_uris": ["http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0"], "stage": "name_alt"}
+{"canonical_skill_id": "oracle", "canonical_skill_name": "oracle", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "solve-complex-problems", "canonical_skill_name": "Solve complex problems", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "identify-opportunities", "canonical_skill_name": "Identify opportunities", "esco_uris": ["http://data.europa.eu/esco/skill/bdcf429c-5ccf-4c3d-bb61-4c987573a35e"], "stage": "name_alt"}
+{"canonical_skill_id": "resiliency", "canonical_skill_name": "resiliency", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scale", "canonical_skill_name": "scale", "esco_uris": ["http://data.europa.eu/esco/skill/4c58528e-bdaa-43ad-8f5a-8ad0b8cd4bbb"], "stage": "name_alt"}
+{"canonical_skill_id": "end-to-end-performance-and-operability", "canonical_skill_name": "end-to-end performance and operability", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "service-topology", "canonical_skill_name": "service topology", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "troubleshoot-issues", "canonical_skill_name": "troubleshoot issues", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "define-mitigations", "canonical_skill_name": "define mitigations", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "professional-curiosity", "canonical_skill_name": "Professional curiosity", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "hands-on", "canonical_skill_name": "hands-on", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "unix-linux", "canonical_skill_name": "UNIX/LINUX", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "go", "canonical_skill_name": "go", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "oracle-database", "canonical_skill_name": "Oracle database", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "forecasting", "canonical_skill_name": "forecasting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "identifies-and-implements-complex-solutions", "canonical_skill_name": "Identifies and implements complex solutions", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "networking", "canonical_skill_name": "networking", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scripting-languages", "canonical_skill_name": "scripting languages", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "running-large-scale-customer-facing-web-services", "canonical_skill_name": "running large scale customer facing web services", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "rest", "canonical_skill_name": "REST", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "json", "canonical_skill_name": "JSON", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bioinformatics", "canonical_skill_name": "bioinformatics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "biotechnology", "canonical_skill_name": "Biotechnology", "esco_uris": ["http://data.europa.eu/esco/skill/61bef658-d7f9-4759-b1b0-0f9cb3bc581a"], "stage": "name_pref"}
+{"canonical_skill_id": "bash", "canonical_skill_name": "Bash", "esco_uris": ["http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97"], "stage": "name_alt"}
+{"canonical_skill_id": "master-degree", "canonical_skill_name": "Master degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "data-science", "canonical_skill_name": "data science", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "computer-science", "canonical_skill_name": "computer science", "esco_uris": ["http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787"], "stage": "name_pref"}
+{"canonical_skill_id": "perl", "canonical_skill_name": "Perl", "esco_uris": ["http://data.europa.eu/esco/skill/401eb8d8-6daa-4f8b-90ad-60afc71eb4f8"], "stage": "name_pref"}
+{"canonical_skill_id": "unix", "canonical_skill_name": "Unix", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "data-analysis", "canonical_skill_name": "data analysis", "esco_uris": ["http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833"], "stage": "name_alt"}
+{"canonical_skill_id": "team-spirit", "canonical_skill_name": "team spirit", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "set-priorities", "canonical_skill_name": "set priorities", "esco_uris": ["http://data.europa.eu/esco/skill/d9013e0e-e937-43d5-ab71-0e917ee882b8"], "stage": "name_alt"}
+{"canonical_skill_id": "android", "canonical_skill_name": "android", "esco_uris": ["http://data.europa.eu/esco/skill/d8829a1d-dbde-435b-b921-29d6462f35c9"], "stage": "name_alt"}
+{"canonical_skill_id": "university-degree", "canonical_skill_name": "university degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "engineering", "canonical_skill_name": "engineering", "esco_uris": ["http://data.europa.eu/esco/skill/b8ac179c-4a29-4467-9177-031daf1321d6"], "stage": "name_alt"}
+{"canonical_skill_id": "restful-api", "canonical_skill_name": "RESTful API", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "experienced", "canonical_skill_name": "experienced", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "code", "canonical_skill_name": "code", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "implementation", "canonical_skill_name": "implementation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "apis", "canonical_skill_name": "APIs", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ci-cd-pipelines", "canonical_skill_name": "CI/CD pipelines", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "java-ee", "canonical_skill_name": "java-ee", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "enthusiastic", "canonical_skill_name": "enthusiastic", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "take-ownership-of-tasks", "canonical_skill_name": "take ownership of tasks", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "hibernate", "canonical_skill_name": "Hibernate", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "storm", "canonical_skill_name": "Storm )", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cloud-platforms", "canonical_skill_name": "cloud platforms", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "work-in-a-team", "canonical_skill_name": "work in a team", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "talented", "canonical_skill_name": "talented", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "java-spring", "canonical_skill_name": "Java/Spring", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "lambda", "canonical_skill_name": "Lambda", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ec2", "canonical_skill_name": "EC2", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "infrastructure-as-code", "canonical_skill_name": "Infrastructure-as-Code", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cloudformation", "canonical_skill_name": "CloudFormation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "automation-tooling", "canonical_skill_name": "automation tooling", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "debugging", "canonical_skill_name": "debugging", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "trouble-shooting", "canonical_skill_name": "trouble shooting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "coding", "canonical_skill_name": "coding", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "phd", "canonical_skill_name": "PhD", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "modern-c", "canonical_skill_name": "modern C++", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cmake", "canonical_skill_name": "CMake", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "network-automation", "canonical_skill_name": "network automation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bgp", "canonical_skill_name": "BGP", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mpls", "canonical_skill_name": "MPLS", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "tcp-ip", "canonical_skill_name": "TCP/IP", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scripting", "canonical_skill_name": "scripting", "esco_uris": ["http://data.europa.eu/esco/skill/b105ec9b-0857-41d6-8d07-a83e58b73d90"], "stage": "name_alt"}
+{"canonical_skill_id": "organizational-verbal-and-written-communication-skills", "canonical_skill_name": "organizational verbal and written communication skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "compliance", "canonical_skill_name": "compliance", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "programming", "canonical_skill_name": "programming", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dhcp", "canonical_skill_name": "DHCP", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "deployment", "canonical_skill_name": "deployment", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "agile-software-development", "canonical_skill_name": "Agile Software Development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "web-development", "canonical_skill_name": "Web Development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "degree", "canonical_skill_name": "degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scrum", "canonical_skill_name": "Scrum", "esco_uris": ["http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"], "stage": "name_alt"}
+{"canonical_skill_id": "node", "canonical_skill_name": "Node", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "postgres", "canonical_skill_name": "Postgres", "esco_uris": ["http://data.europa.eu/esco/skill/a8d07b5a-c1a1-42c6-9d53-db9c7a2ca996"], "stage": "name_alt"}
+{"canonical_skill_id": "telecommunications", "canonical_skill_name": "Telecommunications", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "television", "canonical_skill_name": "Television", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "web-applications", "canonical_skill_name": "web applications", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "video-streaming", "canonical_skill_name": "Video Streaming", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "etl", "canonical_skill_name": "ETL", "esco_uris": ["http://data.europa.eu/esco/skill/9d0d89be-bffa-4393-b6f6-8d05bea49051"], "stage": "name_alt"}
+{"canonical_skill_id": "hadoop", "canonical_skill_name": "hadoop", "esco_uris": ["http://data.europa.eu/esco/skill/e46291c7-52b9-4174-bd59-178884861038"], "stage": "name_pref"}
+{"canonical_skill_id": "spark", "canonical_skill_name": "Spark", "esco_uris": ["http://data.europa.eu/esco/skill/af7ae54f-4649-4c16-87c7-59ba41d4d57f"], "stage": "name_pref"}
+{"canonical_skill_id": "curiosity", "canonical_skill_name": "curiosity", "esco_uris": ["http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156"], "stage": "name_alt"}
+{"canonical_skill_id": "software-development-lifecycle", "canonical_skill_name": "software development lifecycle", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "application-data", "canonical_skill_name": "application data", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "financial-control", "canonical_skill_name": "financial control", "esco_uris": ["http://data.europa.eu/esco/skill/e4c205f6-55ba-4bed-9c5d-2032058300c0"], "stage": "name_alt"}
+{"canonical_skill_id": "budget-management", "canonical_skill_name": "budget management *", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "achieve-organizational-goals", "canonical_skill_name": "achieve organizational goals *", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "enterprise-software", "canonical_skill_name": "Enterprise Software", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "kubernetes-environments", "canonical_skill_name": "Kubernetes environments", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "application-architecture", "canonical_skill_name": "application architecture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sql-server", "canonical_skill_name": "sql-server", "esco_uris": ["http://data.europa.eu/esco/skill/c062bab3-3ea0-4291-9220-a2d8fef4bead"], "stage": "name_pref"}
+{"canonical_skill_id": "data-warehouse", "canonical_skill_name": "Data Warehouse", "esco_uris": ["http://data.europa.eu/esco/skill/3ec2e4d6-7000-4905-bf1a-c5b1679416de"], "stage": "name_pref"}
+{"canonical_skill_id": "data-warehouse-environment", "canonical_skill_name": "Data Warehouse environment", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "administrative-tasks", "canonical_skill_name": "administrative tasks", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "capacity-management", "canonical_skill_name": "Capacity management", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "data-management", "canonical_skill_name": "data management", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ms-office", "canonical_skill_name": "MS Office", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "identify-articulate-and-influence-the-shape-of-business-outcomes", "canonical_skill_name": "Identify articulate and influence the shape of business outcomes", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "platform-solutions", "canonical_skill_name": "platform solutions", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "business-and-technology-landscape", "canonical_skill_name": "business and technology landscape", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "balance-the-books-between-technology-purism-best-practice-and-solution-fit", "canonical_skill_name": "balance the books between technology purism best-practice and solution-fit", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "work-in-cross-functional-teams", "canonical_skill_name": "work in cross-functional teams", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "help-others-learn", "canonical_skill_name": "help others learn", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "grasp-of-a-variety-of-technologies-languages-and-methodologies", "canonical_skill_name": "grasp of a variety of technologies languages and methodologies", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "retrospectives", "canonical_skill_name": "Retrospectives", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "consultative-approach", "canonical_skill_name": "consultative approach", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "django", "canonical_skill_name": "django", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "get-stuff-done-quickly", "canonical_skill_name": "get stuff done quickly", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "help-build-a-huge-product", "canonical_skill_name": "Help build a huge product", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "find-the-latest-tech", "canonical_skill_name": "Find the latest tech", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "use-best-practise-rules", "canonical_skill_name": "use best practise rules", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "objective-c", "canonical_skill_name": "Objective-C", "esco_uris": ["http://data.europa.eu/esco/skill/9973a5a2-7822-4161-99e9-95c781eb63f8"], "stage": "name_pref"}
+{"canonical_skill_id": "swift", "canonical_skill_name": "Swift", "esco_uris": ["http://data.europa.eu/esco/skill/be80acfc-b6f2-4411-9b8d-b19d9cd2556a"], "stage": "name_alt"}
+{"canonical_skill_id": "ios", "canonical_skill_name": "iOS", "esco_uris": ["http://data.europa.eu/esco/skill/ce26e71f-2d47-474e-89b6-7920931ac4fc"], "stage": "name_pref"}
+{"canonical_skill_id": "software-architecture", "canonical_skill_name": "software architecture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "unit-testing", "canonical_skill_name": "Unit testing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "http", "canonical_skill_name": "HTTP", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "being-part-of-a-team", "canonical_skill_name": "being part of a team", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "managing-stakeholders", "canonical_skill_name": "managing stakeholders", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "organizational-skills", "canonical_skill_name": "organizational skills *", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "multi-task", "canonical_skill_name": "multi-task", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bitbucket", "canonical_skill_name": "BitBucket", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "organization-organization", "canonical_skill_name": "<ORGANIZATION> <ORGANIZATION>", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "risk-management", "canonical_skill_name": "Risk Management", "esco_uris": ["http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0"], "stage": "name_pref"}
+{"canonical_skill_id": "organization", "canonical_skill_name": "<ORGANIZATION>", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "build-new-features", "canonical_skill_name": "build new features", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "design-and-implement-useful-api-methods", "canonical_skill_name": "design and implement useful API methods", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "api", "canonical_skill_name": "API", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "increase-the-reliability-of-our-software-continuously", "canonical_skill_name": "increase the reliability of our software continuously", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "java-11", "canonical_skill_name": "Java 11", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "love-challenging-tasks", "canonical_skill_name": "love challenging tasks", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "building-complex-products", "canonical_skill_name": "building complex products", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "rest-apis", "canonical_skill_name": "REST APIs .", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mobile", "canonical_skill_name": "mobile", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mobile-technologies", "canonical_skill_name": "mobile technologies", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bug-fixing", "canonical_skill_name": "bug fixing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "working-on-impactful-security-products", "canonical_skill_name": "Working on impactful security products", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "backend", "canonical_skill_name": "backend", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "web", "canonical_skill_name": "Web", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "curious", "canonical_skill_name": "curious", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "redis", "canonical_skill_name": "Redis", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bs-ms-degree", "canonical_skill_name": "BS/MS degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "frontend", "canonical_skill_name": "frontend", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "gitlab", "canonical_skill_name": "GitLab", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "puppet", "canonical_skill_name": "Puppet", "esco_uris": ["http://data.europa.eu/esco/skill/6417a4cc-6f61-4459-a114-761a7fa0279d"], "stage": "name_alt"}
+{"canonical_skill_id": "ansible", "canonical_skill_name": "Ansible", "esco_uris": ["http://data.europa.eu/esco/skill/6f8a40d6-f9ce-43ec-a72f-d4213a53f3ed"], "stage": "name_pref"}
+{"canonical_skill_id": "debug", "canonical_skill_name": "debug", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "monitor", "canonical_skill_name": "monitor", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "confluence", "canonical_skill_name": "Confluence", "esco_uris": ["http://data.europa.eu/esco/skill/580660a6-5d3a-421d-a54f-d85b706c2b2f"], "stage": "name_alt"}
+{"canonical_skill_id": "quality-assurance", "canonical_skill_name": "quality assurance", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "automated-testing", "canonical_skill_name": "automated testing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "test-automation-frameworks", "canonical_skill_name": "test automation frameworks", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "detail-oriented", "canonical_skill_name": "detail-oriented", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "work-independently", "canonical_skill_name": "work independently", "esco_uris": ["http://data.europa.eu/esco/skill/c29aa9d2-4da8-4bdd-831c-8d4a2fb51730"], "stage": "name_pref"}
+{"canonical_skill_id": "unix-scripting", "canonical_skill_name": "UNIX scripting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "eye-for-detail", "canonical_skill_name": "eye for detail", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "project-management", "canonical_skill_name": "project management", "esco_uris": ["http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388"], "stage": "name_pref"}
+{"canonical_skill_id": "digital-marketing", "canonical_skill_name": "Digital Marketing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "french", "canonical_skill_name": "French", "esco_uris": ["http://data.europa.eu/esco/skill/e747e77e-0ea1-4001-8b07-1d11946b5f1b"], "stage": "name_pref"}
+{"canonical_skill_id": "commitment", "canonical_skill_name": "commitment", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "working-in-a-team", "canonical_skill_name": "working in a team", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dynamic", "canonical_skill_name": "dynamic", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "consumer-electronics", "canonical_skill_name": "Consumer Electronics", "esco_uris": ["http://data.europa.eu/esco/skill/6c153605-d62c-4970-81a9-49646ab32032"], "stage": "name_pref"}
+{"canonical_skill_id": "dedication", "canonical_skill_name": "dedication", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sre", "canonical_skill_name": "SRE", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ambitious", "canonical_skill_name": "ambitious", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "npm", "canonical_skill_name": "npm", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "nginx", "canonical_skill_name": "Nginx", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "rancher", "canonical_skill_name": "Rancher", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "analysis", "canonical_skill_name": "analysis", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "java-8", "canonical_skill_name": "Java 8", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "jms", "canonical_skill_name": "JMS", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "relational-databases", "canonical_skill_name": "relational databases", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "finance", "canonical_skill_name": "finance", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "architecture-design", "canonical_skill_name": "architecture design", "esco_uris": ["http://data.europa.eu/esco/skill/80c042de-bc1a-4d78-b266-35bc80ba3093"], "stage": "name_alt"}
+{"canonical_skill_id": "spring-framework", "canonical_skill_name": "Spring framework", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "self-driven", "canonical_skill_name": "self-driven", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "application-development", "canonical_skill_name": "Application development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "code-review", "canonical_skill_name": "code review", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "banking", "canonical_skill_name": "Banking", "esco_uris": ["http://data.europa.eu/esco/skill/88af9294-b697-4687-ae19-aefbb6234dfa"], "stage": "name_alt"}
+{"canonical_skill_id": "cloud-infrastructure", "canonical_skill_name": "cloud infrastructure", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sales", "canonical_skill_name": "Sales", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "nav-bc", "canonical_skill_name": "NAV/BC", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "planning", "canonical_skill_name": "planning", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "business-administration", "canonical_skill_name": "business administration", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "visionary", "canonical_skill_name": "visionary", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "frontend-architecture", "canonical_skill_name": "frontend architecture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "work-with-your-team", "canonical_skill_name": "Work with your team", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "javascript-typescript", "canonical_skill_name": "JavaScript/Typescript", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "react-native", "canonical_skill_name": "React Native", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "retail", "canonical_skill_name": "Retail", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "react-redux", "canonical_skill_name": "React/Redux", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "server-side-rendering", "canonical_skill_name": "server-side rendering", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "building-web-applications", "canonical_skill_name": "building web-applications", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "responsible", "canonical_skill_name": "responsible", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "api-s", "canonical_skill_name": "API’s", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "serverless", "canonical_skill_name": "serverless", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "event-driven", "canonical_skill_name": "event-driven", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "management", "canonical_skill_name": "management", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "test", "canonical_skill_name": "test", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ecs", "canonical_skill_name": "ECS", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dynamodb", "canonical_skill_name": "DynamoDB", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "financial-technology", "canonical_skill_name": "Financial Technology", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "elastic-stack", "canonical_skill_name": "Elastic Stack", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "kanban", "canonical_skill_name": "Kanban", "esco_uris": ["http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"], "stage": "name_alt"}
+{"canonical_skill_id": "openshift", "canonical_skill_name": "OpenShift", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "data-analytics", "canonical_skill_name": "Data & Analytics", "esco_uris": ["http://data.europa.eu/esco/skill/97bd1c21-66b2-4b7e-ad0f-e3cda590e378"], "stage": "name_pref"}
+{"canonical_skill_id": "intuitively-presenting-an-unfamiliar-field-to-users", "canonical_skill_name": "intuitively presenting an unfamiliar field to users", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "wpf", "canonical_skill_name": "WPF", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "life-sciences", "canonical_skill_name": "Life Sciences", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "communicator", "canonical_skill_name": "communicator", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "swedish", "canonical_skill_name": "Swedish", "esco_uris": ["http://data.europa.eu/esco/skill/7ee51257-8947-4b69-9bdf-322baf0a6398"], "stage": "name_pref"}
+{"canonical_skill_id": "analytical", "canonical_skill_name": "analytical", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "creative", "canonical_skill_name": "creative", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "embedded", "canonical_skill_name": "embedded", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "coordinate-outsourced-development", "canonical_skill_name": "coordinate outsourced development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "jest", "canonical_skill_name": "jest", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "nsoperation", "canonical_skill_name": "NSOperation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "rest-api", "canonical_skill_name": "REST API", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "blockchain", "canonical_skill_name": "Blockchain", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "applied-ai", "canonical_skill_name": "Applied AI", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "statistics", "canonical_skill_name": "statistics", "esco_uris": ["http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833"], "stage": "name_pref"}
+{"canonical_skill_id": "bs", "canonical_skill_name": "BS", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "hardworking", "canonical_skill_name": "hardworking", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "pandas", "canonical_skill_name": "Pandas", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "hiring", "canonical_skill_name": "hiring", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mentoring", "canonical_skill_name": "mentoring", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "working-independently", "canonical_skill_name": "working independently", "esco_uris": ["http://data.europa.eu/esco/skill/c29aa9d2-4da8-4bdd-831c-8d4a2fb51730"], "stage": "name_alt"}
+{"canonical_skill_id": "organised", "canonical_skill_name": "organised", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "google-cloud-platform", "canonical_skill_name": "google-cloud-platform", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "c-net", "canonical_skill_name": "C#/.NET", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "solution-architecture", "canonical_skill_name": "solution architecture", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "aurora", "canonical_skill_name": "Aurora", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "oop", "canonical_skill_name": "oop", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bdd", "canonical_skill_name": "BDD", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "documentation", "canonical_skill_name": "documentation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "embedded-systems", "canonical_skill_name": "embedded systems", "esco_uris": ["http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d"], "stage": "name_pref"}
+{"canonical_skill_id": "firmware-development", "canonical_skill_name": "Firmware development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "c-c", "canonical_skill_name": "C/C++", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "gcp", "canonical_skill_name": "GCP", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "digital-health", "canonical_skill_name": "Digital Health", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mobile-application", "canonical_skill_name": "Mobile Application", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "music", "canonical_skill_name": "Music", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "hr-software", "canonical_skill_name": "HR software", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "master-s", "canonical_skill_name": "Master's", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "hr", "canonical_skill_name": "HR", "esco_uris": ["http://data.europa.eu/esco/skill/e437eba1-3e22-41f2-8703-741e94785cba"], "stage": "name_alt"}
+{"canonical_skill_id": "improve-supply", "canonical_skill_name": "improve supply", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "acquire-new-customers", "canonical_skill_name": "acquire new customers", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "business-development", "canonical_skill_name": "business development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "e-commerce", "canonical_skill_name": "E-Commerce", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "science", "canonical_skill_name": "Science", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "product-management", "canonical_skill_name": "product management", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "business-understanding", "canonical_skill_name": "business understanding", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "collaboration-skills", "canonical_skill_name": "collaboration skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "digitalization", "canonical_skill_name": "digitalization .", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "persistent", "canonical_skill_name": "persistent", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "self-motivated", "canonical_skill_name": "self-motivated", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "gynaecology", "canonical_skill_name": "gynaecology", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "obstetrics", "canonical_skill_name": "obstetrics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "specialist", "canonical_skill_name": "specialist", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "reporting", "canonical_skill_name": "reporting", "esco_uris": ["http://data.europa.eu/esco/skill/3391d6dd-d584-4c8c-9af9-d2f0c45e2b4b"], "stage": "name_alt"}
+{"canonical_skill_id": "energetic", "canonical_skill_name": "energetic", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "drive", "canonical_skill_name": "drive", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sports", "canonical_skill_name": "sports", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scandinavian-market", "canonical_skill_name": "Scandinavian market", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "academic-degree", "canonical_skill_name": "academic degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "stakeholder-management", "canonical_skill_name": "stakeholder management", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "global-finance", "canonical_skill_name": "Global Finance", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "independent", "canonical_skill_name": "independent", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "master-of-science-degree", "canonical_skill_name": "Master of Science degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "biochemistry", "canonical_skill_name": "biochemistry", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "chemical-engineering", "canonical_skill_name": "Chemical Engineering", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "academic-record", "canonical_skill_name": "academic record", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bsc-msc-diploma", "canonical_skill_name": "BSc/MSc diploma", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "analytical-and-problem-solving-skills", "canonical_skill_name": "analytical and problem solving skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "positive", "canonical_skill_name": "positive", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ancestral-population-genomics", "canonical_skill_name": "ancestral population genomics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "skilled", "canonical_skill_name": "skilled", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "release-test", "canonical_skill_name": "release test", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "open-minded", "canonical_skill_name": "open-minded", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "effective", "canonical_skill_name": "Effective", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cancer-immunotherapy", "canonical_skill_name": "cancer immunotherapy", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "organic-and-or-physical-chemistry", "canonical_skill_name": "organic- and/or physical-chemistry", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "phd-degree", "canonical_skill_name": "PhD degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cad", "canonical_skill_name": "CAD", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "process", "canonical_skill_name": "Process", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "structured", "canonical_skill_name": "structured", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "managerial-economics", "canonical_skill_name": "managerial economics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "supply-chain-management", "canonical_skill_name": "supply chain management", "esco_uris": ["http://data.europa.eu/esco/skill/f929c89e-c363-4132-a918-e021d57b307c"], "stage": "name_pref"}
+{"canonical_skill_id": "supply-chain", "canonical_skill_name": "supply chain", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "teaching", "canonical_skill_name": "teaching", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "examination", "canonical_skill_name": "examination", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "research", "canonical_skill_name": "Research", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "molecular-cell-biology", "canonical_skill_name": "molecular cell biology", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "water-and-salt-balance", "canonical_skill_name": "water and salt balance", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "predictive-processing", "canonical_skill_name": "predictive processing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "computational-modelling", "canonical_skill_name": "computational modelling", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "meg", "canonical_skill_name": "MEG", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "music-cognition", "canonical_skill_name": "music cognition", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "eeg", "canonical_skill_name": "EEG", "esco_uris": ["http://data.europa.eu/esco/skill/371d4ecb-4413-4d4c-9ffb-d3ad82f1f552"], "stage": "name_alt"}
+{"canonical_skill_id": "ethical-standards", "canonical_skill_name": "ethical standards", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "molecular-biology", "canonical_skill_name": "molecular biology", "esco_uris": ["http://data.europa.eu/esco/skill/8f2a4d74-b16f-4023-8fc1-b8dc8b21ffb9"], "stage": "name_pref"}
+{"canonical_skill_id": "business-cases", "canonical_skill_name": "business cases", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "change-management", "canonical_skill_name": "change management", "esco_uris": ["http://data.europa.eu/esco/skill/06fa9997-1720-45e8-a0cf-ee3060049f8b"], "stage": "name_alt"}
+{"canonical_skill_id": "detailed-design", "canonical_skill_name": "detailed design", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "result-oriented-approach", "canonical_skill_name": "result-oriented approach", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "neurosurgery", "canonical_skill_name": "Neurosurgery", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bachelor-or-master-s-degree", "canonical_skill_name": "Bachelor or Masters degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "topological-phases-of-matter", "canonical_skill_name": "topological phases of matter", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "master-and-phd-degree", "canonical_skill_name": "Master and PhD degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cand-merc", "canonical_skill_name": "Cand.Merc", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "quantum-transport-electronic-structures", "canonical_skill_name": "quantum transport electronic structures", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "msc", "canonical_skill_name": "MSc", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mechanical-engineering", "canonical_skill_name": "mechanical engineering", "esco_uris": ["http://data.europa.eu/esco/skill/9c071f1d-eac3-449d-b004-c14775b5a3b9"], "stage": "name_pref"}
+{"canonical_skill_id": "physics", "canonical_skill_name": "physics", "esco_uris": ["http://data.europa.eu/esco/skill/692ace70-7f97-4214-92bd-88f7637d8a44"], "stage": "name_pref"}
+{"canonical_skill_id": "mobile-technology", "canonical_skill_name": "Mobile Technology", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "economics", "canonical_skill_name": "economics", "esco_uris": ["http://data.europa.eu/esco/skill/88af9294-b697-4687-ae19-aefbb6234dfa"], "stage": "name_pref"}
+{"canonical_skill_id": "runner", "canonical_skill_name": "runner .", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "holistic-mindset", "canonical_skill_name": "holistic mindset", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "retail-and-markets-trading", "canonical_skill_name": "Retail and Markets trading", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "troubleshooting", "canonical_skill_name": "troubleshooting", "esco_uris": ["http://data.europa.eu/esco/skill/334e3e49-fb02-4051-809a-f06adfdc1c40"], "stage": "name_alt"}
+{"canonical_skill_id": "safe", "canonical_skill_name": "SAFE", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "communication-and-presentation-skills", "canonical_skill_name": "communication and presentation skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "professional-attitude", "canonical_skill_name": "professional attitude", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "grid-connection", "canonical_skill_name": "grid connection", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "wind-turbines", "canonical_skill_name": "wind turbines", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "wind-power-plants", "canonical_skill_name": "wind power plants", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "degree-in-engineering", "canonical_skill_name": "degree in Engineering", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "organized", "canonical_skill_name": "organized", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "oil", "canonical_skill_name": "oil", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "gas", "canonical_skill_name": "gas", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "biology", "canonical_skill_name": "biology", "esco_uris": ["http://data.europa.eu/esco/skill/9433da85-70fa-4a25-8f96-71fa59dd1989"], "stage": "name_pref"}
+{"canonical_skill_id": "furniture-industry", "canonical_skill_name": "furniture industry?", "esco_uris": ["http://data.europa.eu/esco/skill/c6482540-4e20-42ab-9154-16deb6db7536"], "stage": "name_pref"}
+{"canonical_skill_id": "determined", "canonical_skill_name": "determined", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "self-motivating", "canonical_skill_name": "self-motivating", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "danish", "canonical_skill_name": "Danish", "esco_uris": ["http://data.europa.eu/esco/skill/273a28d6-1bd3-4d13-a906-3d75c1cfdfc1"], "stage": "name_pref"}
+{"canonical_skill_id": "buffers", "canonical_skill_name": "buffers", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dedicated", "canonical_skill_name": "dedicated", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "powerpoint", "canonical_skill_name": "PowerPoint", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "preschool", "canonical_skill_name": "preschool", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "location", "canonical_skill_name": "<LOCATION>", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "danish-class-b-driver-s-license", "canonical_skill_name": "Danish Class B Drivers License", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ajax", "canonical_skill_name": "AJAX", "esco_uris": ["http://data.europa.eu/esco/skill/b4dc6e4f-dc7d-445f-8ce2-d7b9d225e282"], "stage": "name_pref"}
+{"canonical_skill_id": "erp", "canonical_skill_name": "ERP", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ecommerce", "canonical_skill_name": "ecommerce", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "public-health", "canonical_skill_name": "public health", "esco_uris": ["http://data.europa.eu/esco/skill/9570e84e-6699-4c9f-9a12-7bc82d53a231"], "stage": "name_pref"}
+{"canonical_skill_id": "protein-chemistry", "canonical_skill_name": "protein chemistry", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cell-biology", "canonical_skill_name": "cell biology", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "bachelor-s-or-master-s-degree", "canonical_skill_name": "bachelors or masters degree", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "systematic", "canonical_skill_name": "systematic", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "genomics", "canonical_skill_name": "genomics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "rna-seq", "canonical_skill_name": "RNA-seq", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "r", "canonical_skill_name": "R", "esco_uris": ["http://data.europa.eu/esco/skill/51586df8-1c46-4b47-8583-773cb63bf00b"], "stage": "name_pref"}
+{"canonical_skill_id": "business-acumen", "canonical_skill_name": "business acumen", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "offshore-substations", "canonical_skill_name": "offshore substations", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "communications-skills", "canonical_skill_name": "communications skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "can-do-attitude", "canonical_skill_name": "can-do attitude", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "make-decisions", "canonical_skill_name": "make decisions", "esco_uris": ["http://data.europa.eu/esco/skill/d62d2b4c-a6f8-439e-8a1b-4f29ab5f2c47"], "stage": "name_pref"}
+{"canonical_skill_id": "team-building", "canonical_skill_name": "Team building", "esco_uris": ["http://data.europa.eu/esco/skill/eab3bafa-eebb-47bf-85ce-e336c5019108"], "stage": "name_pref"}
+{"canonical_skill_id": "commercial-flair", "canonical_skill_name": "commercial flair", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "holistic", "canonical_skill_name": "holistic", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "it-consulting", "canonical_skill_name": "IT Consulting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cloud-adoption-and-migration", "canonical_skill_name": "cloud adoption and migration", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "system-design", "canonical_skill_name": "system design", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "test-automation", "canonical_skill_name": "Test Automation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "technology-consulting", "canonical_skill_name": "Technology Consulting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "motivation", "canonical_skill_name": "motivation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cybersecurity", "canonical_skill_name": "cybersecurity", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "pioneer-new-approaches", "canonical_skill_name": "pioneer new approaches", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "technical-insight", "canonical_skill_name": "technical insight", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "service-minded", "canonical_skill_name": "service minded", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "open-mind", "canonical_skill_name": "open mind", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "analytical-skills", "canonical_skill_name": "analytical skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "jee", "canonical_skill_name": "JEE", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ruby-on-rails", "canonical_skill_name": "ruby-on-rails", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "customer-focus", "canonical_skill_name": "customer focus", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "project-management-skills", "canonical_skill_name": "project management skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "programming-skills", "canonical_skill_name": "Programming Skills", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "javascript-node-js", "canonical_skill_name": "JavaScript/Node.js", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dbt", "canonical_skill_name": "dbt", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "singer", "canonical_skill_name": "Singer", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "muscle-models-with-learning-and-adaptation", "canonical_skill_name": "muscle models with learning and adaptation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "walking-robots", "canonical_skill_name": "walking robots", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "model-rules", "canonical_skill_name": "model rules", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "property-law-rules-of-location", "canonical_skill_name": "property law rules of <LOCATION>", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "result-oriented", "canonical_skill_name": "result-oriented", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "powders", "canonical_skill_name": "powders", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "visit-customers", "canonical_skill_name": "visit customers", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dairy-industry", "canonical_skill_name": "dairy industry", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "lead-the-next-stage-of-development-and-strategy-execution", "canonical_skill_name": "lead the next stage of development and strategy execution", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "small-scale-conservation-enterprises", "canonical_skill_name": "small scale conservation enterprises", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "capacity-development", "canonical_skill_name": "capacity development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "strategic-service-delivery", "canonical_skill_name": "strategic service delivery", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "marketing", "canonical_skill_name": "Marketing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sustainable-development", "canonical_skill_name": "Sustainable Development", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "materials-engineering", "canonical_skill_name": "Materials Engineering", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "supervision", "canonical_skill_name": "supervision", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "production-planning", "canonical_skill_name": "production planning", "esco_uris": ["http://data.europa.eu/esco/skill/2a778aeb-f246-4f03-9a96-c60183001037"], "stage": "name_alt"}
+{"canonical_skill_id": "outgoing", "canonical_skill_name": "outgoing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "simplification", "canonical_skill_name": "simplification", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "excel", "canonical_skill_name": "Excel", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "drive-projects", "canonical_skill_name": "drive projects", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "proteomics", "canonical_skill_name": "proteomics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "european-data-protection-regulation", "canonical_skill_name": "European Data Protection Regulation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "industry-wide-technology-strategies-and-best-practices", "canonical_skill_name": "industry wide technology strategies and best practices", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "nosql", "canonical_skill_name": "nosql", "esco_uris": ["http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c"], "stage": "name_pref"}
+{"canonical_skill_id": "asp-net-web-api", "canonical_skill_name": "asp.net-web-api", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "powershell", "canonical_skill_name": "powershell", "esco_uris": ["http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97"], "stage": "name_alt"}
+{"canonical_skill_id": "json-net", "canonical_skill_name": "json.net", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "azure-paas", "canonical_skill_name": "Azure PaaS", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "identify-app-issues-vs-configuration-environment-issues", "canonical_skill_name": "identify app issues vs configuration/environment issues )", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "solving-business-problems-through-innovation-engineering-practices", "canonical_skill_name": "solving business problems through innovation & engineering practices", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "computer-graphics", "canonical_skill_name": "Computer Graphics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "open-source", "canonical_skill_name": "open-source", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "heroku", "canonical_skill_name": "heroku", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "reference-data", "canonical_skill_name": "reference data", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "writing-software", "canonical_skill_name": "writing software", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "trustworthy", "canonical_skill_name": "trustworthy", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "powerbi", "canonical_skill_name": "powerbi", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dax", "canonical_skill_name": "dax", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "data-modeling", "canonical_skill_name": "data-modeling", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "azure-analysis-services", "canonical_skill_name": "azure-analysis-services", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sprint-planning", "canonical_skill_name": "sprint planning", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "f", "canonical_skill_name": "f#", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "qa-testing", "canonical_skill_name": "qa testing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "cypress", "canonical_skill_name": "cypress", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mocha-js", "canonical_skill_name": "mocha.js", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "chai", "canonical_skill_name": "chai", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "collaboration-tools", "canonical_skill_name": "Collaboration Tools", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "software-quality", "canonical_skill_name": "software-quality", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "automated-tests", "canonical_skill_name": "automated-tests", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "learn", "canonical_skill_name": "learn", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "frameworks", "canonical_skill_name": "frameworks", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "entertainment", "canonical_skill_name": "Entertainment", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mobile-game", "canonical_skill_name": "Mobile Game", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "unity3d", "canonical_skill_name": "unity3d", "esco_uris": ["http://data.europa.eu/esco/skill/d1a86399-24d8-415f-98b9-e8cbb6b04a26"], "stage": "name_alt"}
+{"canonical_skill_id": "unity", "canonical_skill_name": "Unity", "esco_uris": ["http://data.europa.eu/esco/skill/4c58528e-bdaa-43ad-8f5a-8ad0b8cd4bbb", "http://data.europa.eu/esco/skill/d1a86399-24d8-415f-98b9-e8cbb6b04a26"], "stage": "name_alt"}
+{"canonical_skill_id": "programming-languages", "canonical_skill_name": "programming languages", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "algorithm", "canonical_skill_name": "algorithm", "esco_uris": ["http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38"], "stage": "name_alt"}
+{"canonical_skill_id": "database", "canonical_skill_name": "database", "esco_uris": ["http://data.europa.eu/esco/skill/43ae58b9-5e56-4524-b45a-b422777a0576"], "stage": "name_pref"}
+{"canonical_skill_id": "concurrency", "canonical_skill_name": "concurrency", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "quality", "canonical_skill_name": "quality", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "regulatory-reporting", "canonical_skill_name": "Regulatory Reporting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "less", "canonical_skill_name": "less", "esco_uris": ["http://data.europa.eu/esco/skill/26fa7a33-a426-4cd5-9792-33bf668612e1"], "stage": "name_pref"}
+{"canonical_skill_id": "net-framework", "canonical_skill_name": ". NET Framework", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "integration-testing", "canonical_skill_name": "Integration Testing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "microsoft-dynamics", "canonical_skill_name": "microsoft-dynamics", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "dynamics-365", "canonical_skill_name": "Dynamics 365", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scrum-agile", "canonical_skill_name": "SCRUM/Agile )", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "azure-cosmosdb", "canonical_skill_name": "azure-cosmosdb", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "automation-testing", "canonical_skill_name": "automation testing", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "translation", "canonical_skill_name": "Translation", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "nestjs", "canonical_skill_name": "nestjs", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "sqlalchemy", "canonical_skill_name": "sqlalchemy", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "online-travel", "canonical_skill_name": "Online Travel", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "distributed-system", "canonical_skill_name": "distributed-system", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "share-your-knowledge", "canonical_skill_name": "Share your knowledge", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "lean", "canonical_skill_name": "LEAN", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "flexible", "canonical_skill_name": "flexible", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "reliable", "canonical_skill_name": "reliable", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "goal-oriented", "canonical_skill_name": "goal oriented", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "gmp", "canonical_skill_name": "GMP", "esco_uris": ["http://data.europa.eu/esco/skill/13f22eb5-e3a8-405a-9d89-c8124d4a239a"], "stage": "name_alt"}
+{"canonical_skill_id": "application-support", "canonical_skill_name": "application support", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "mechanical-understanding", "canonical_skill_name": "mechanical understanding", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "high-speed-separators", "canonical_skill_name": "high-speed separators", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "matlab", "canonical_skill_name": "MATLAB", "esco_uris": ["http://data.europa.eu/esco/skill/c3a03c5a-c260-4c26-9b9a-873abb396f4d"], "stage": "name_pref"}
+{"canonical_skill_id": "business-research", "canonical_skill_name": "business research", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "respected-universities-business-schools", "canonical_skill_name": "respected universities/business schools", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "leading-academic-journals", "canonical_skill_name": "leading academic journals", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "research-management", "canonical_skill_name": "research management", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "provide-dynamic-leadership", "canonical_skill_name": "provide dynamic leadership", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "development-of-research-teaching-and-research-dissemination", "canonical_skill_name": "development of research teaching and research dissemination", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "working-with-business-and-society", "canonical_skill_name": "working with business and society", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "research-based-teaching", "canonical_skill_name": "Research-based teaching", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "ph-d", "canonical_skill_name": "Ph.D", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "international-setting", "canonical_skill_name": "international setting", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "scr-catalysts", "canonical_skill_name": "SCR catalysts", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "audio-engineering", "canonical_skill_name": "audio engineering", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "directionality-beam-forming", "canonical_skill_name": "directionality/beam-forming", "esco_uris": [], "stage": "unmapped"}
+{"canonical_skill_id": "teamcenter", "canonical_skill_name": "Teamcenter", "esco_uris": [], "stage": "unmapped"}

@@ -1,0 +1,202 @@
+item_id,doc_id,end,gold_label,gold_overlap,in_gold,source,start,stratum,systems_predicting
+P1-0001,test-2445,140,SOFT_SKILL,[],True,house,121,anchor_fn,
+P1-0002,test-201,60,HARD_SKILL,[],True,tech,40,anchor_fn,
+P1-0003,test-3086,196,,[],False,house,169,baseline_only,bert_lookup
+P1-0004,test-889,44,,"[[9, 59]]",False,tech,9,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0005,test-1176,20,,[],False,tech,10,anchor_fp,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0006,test-3416,70,,[],False,house,52,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0007,test-3527,200,,[],False,house,183,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0008,test-3420,359,,"[[325, 367]]",False,house,337,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0009,test-1189,48,,"[[0, 77]]",False,tech,21,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0010,test-1102,110,,[],False,tech,98,baseline_only,bert_lookup
+P1-0011,test-2998,28,SOFT_SKILL,[],True,house,0,anchor_fn,
+P1-0012,test-2912,112,HARD_SKILL,[],True,house,102,anchor_fn,
+P1-0013,test-3098,98,,[],False,house,85,added_by_wrapper,legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0014,test-1741,69,,"[[47, 69]]",False,tech,55,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0015,test-1189,77,,"[[0, 77]]",False,tech,53,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0016,test-2397,141,HARD_SKILL,[],True,house,122,anchor_fn,
+P1-0017,test-2478,194,,[],False,house,170,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0018,test-2908,238,,[],False,house,212,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0019,test-3365,148,,[],False,house,134,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0020,test-525,78,,[],False,tech,52,baseline_only,bert_lookup
+P1-0021,test-1743,95,HARD_SKILL,[],True,tech,76,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0022,test-3182,172,HARD_SKILL,[],True,house,163,anchor_fn,
+P1-0023,test-2571,136,SOFT_SKILL,[],True,house,113,agreed_tp_control,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0024,test-70,118,HARD_SKILL,[],True,tech,88,anchor_fn,bert_lookup
+P1-0025,test-3366,170,,[],False,house,139,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0026,test-1107,35,,[],False,tech,32,baseline_only,bert_lookup
+P1-0027,test-771,30,HARD_SKILL,[],True,tech,14,anchor_fn,bert_lookup; gliner_zero_shot
+P1-0028,test-2522,196,,[],False,house,164,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0029,test-3310,93,,"[[51, 77]]",False,house,51,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0030,test-875,10,HARD_SKILL,[],True,tech,3,anchor_fn,
+P1-0031,test-3420,15,,"[[0, 35]]",False,house,9,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0032,test-982,77,,"[[57, 77]]",False,tech,72,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0033,test-3117,63,,[],False,house,49,baseline_only,bert_lookup
+P1-0034,test-3299,135,,[],False,house,96,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0035,test-1849,114,HARD_SKILL,[],True,tech,95,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0036,test-1494,56,,"[[3, 28], [33, 56]]",False,tech,3,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0037,test-788,51,,[],False,tech,48,added_by_wrapper,bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy
+P1-0038,test-1265,63,HARD_SKILL,[],True,tech,51,anchor_fn,
+P1-0039,test-2889,12,HARD_SKILL,[],True,house,8,agreed_tp_control,anchor; bert_lookup; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0040,test-3517,97,,[],False,house,58,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0041,test-461,60,HARD_SKILL,[],True,tech,46,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0042,test-786,109,HARD_SKILL,[],True,tech,102,anchor_fn,
+P1-0043,test-3187,116,SOFT_SKILL,[],True,house,97,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0044,test-22,65,SOFT_SKILL,[],True,tech,22,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0045,test-3098,180,SOFT_SKILL,[],True,house,153,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0046,test-3166,215,,[],False,house,190,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0047,test-1263,72,,[],False,tech,51,anchor_fp,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0048,test-3086,107,,[],False,house,101,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0049,test-137,17,,"[[2, 17]]",False,tech,0,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0050,test-523,46,,[],False,tech,33,added_by_wrapper,legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0051,test-2737,9,,[],False,house,0,baseline_only,bert_lookup
+P1-0052,test-1101,71,SOFT_SKILL,[],True,tech,51,anchor_fn,bert_lookup
+P1-0053,test-3188,22,,[],False,house,9,added_by_wrapper,legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0054,test-2708,33,,[],False,house,13,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0055,test-3447,87,HARD_SKILL,[],True,house,65,anchor_fn,bert_lookup
+P1-0056,test-2446,84,,"[[19, 46]]",False,house,19,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0057,test-1614,203,,[],False,tech,182,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0058,test-1046,63,HARD_SKILL,[],True,tech,46,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0059,test-520,25,,"[[0, 52]]",False,tech,22,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0060,test-2440,151,,[],False,house,100,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0061,test-2011,34,SOFT_SKILL,[],True,tech,25,anchor_fn,bert_lookup
+P1-0062,test-3357,40,,"[[8, 27]]",False,house,8,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0063,test-1247,14,HARD_SKILL,[],True,tech,5,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0064,test-2812,33,SOFT_SKILL,[],True,house,16,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0065,test-2434,135,SOFT_SKILL,[],True,house,85,anchor_fn,
+P1-0066,test-3482,82,SOFT_SKILL,[],True,house,52,anchor_fn,
+P1-0067,test-2322,72,,"[[33, 43], [48, 65]]",False,tech,33,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0068,test-2327,52,SOFT_SKILL,[],True,tech,18,anchor_fn,
+P1-0069,test-2327,65,,"[[18, 52]]",False,tech,0,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0070,test-1457,33,HARD_SKILL,[],True,tech,27,agreed_tp_control,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0071,test-1875,93,HARD_SKILL,[],True,tech,70,anchor_fn,
+P1-0072,test-2441,10,,[],False,house,9,baseline_only,bert_lookup
+P1-0073,test-3066,115,,"[[91, 115]]",False,house,106,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0074,test-1334,35,HARD_SKILL,[],True,tech,21,anchor_fn,bert_lookup
+P1-0075,test-3449,63,,"[[0, 71]]",False,house,56,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0076,test-3480,50,,"[[43, 50]]",False,house,26,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0077,test-1269,38,SOFT_SKILL,[],True,tech,18,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0078,test-1401,120,SOFT_SKILL,[],True,tech,102,anchor_fn,
+P1-0079,test-134,80,,[],False,tech,72,baseline_only,bert_lookup
+P1-0080,test-1610,11,,[],False,tech,7,added_by_wrapper,bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy
+P1-0081,test-3214,13,,[],False,house,0,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0082,test-806,114,,[],False,tech,94,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0083,test-2315,44,HARD_SKILL,[],True,tech,32,anchor_fn,bert_lookup
+P1-0084,test-3273,151,,"[[123, 164]]",False,house,143,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0085,test-3213,77,,"[[0, 41]]",False,house,0,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0086,test-3029,151,SOFT_SKILL,[],True,house,121,anchor_fn,
+P1-0087,test-696,186,,[],False,tech,173,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0088,test-2782,59,,[],False,house,45,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0089,test-3289,23,SOFT_SKILL,[],True,house,0,anchor_fn,
+P1-0090,test-2243,55,,"[[4, 13], [14, 19], [24, 32]]",False,house,4,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0091,test-525,89,SOFT_SKILL,[],True,tech,21,anchor_fn,
+P1-0092,test-875,2,HARD_SKILL,[],True,tech,0,anchor_fn,
+P1-0093,test-1626,87,,"[[72, 80]]",False,tech,72,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0094,test-3098,269,,[],False,house,223,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0095,test-2435,135,,[],False,house,122,added_by_wrapper,legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0096,test-3522,128,,[],False,house,106,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0097,test-528,35,,"[[29, 44]]",False,tech,29,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0098,test-3363,26,,"[[4, 11]]",False,house,4,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0099,test-2478,128,,"[[83, 107]]",False,house,83,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0100,test-1685,90,,"[[68, 80]]",False,tech,68,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0101,test-132,114,,[],False,tech,108,baseline_only,bert_lookup
+P1-0102,test-3141,93,SOFT_SKILL,[],True,house,68,anchor_fn,
+P1-0103,test-1867,47,,[],False,tech,22,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0104,test-3072,176,SOFT_SKILL,[],True,house,141,anchor_fn,
+P1-0105,test-697,8,,[],False,tech,0,added_by_wrapper,gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0106,test-3502,248,HARD_SKILL,[],True,house,241,anchor_fn,
+P1-0107,test-2993,7,,[],False,house,0,baseline_only,bert_lookup
+P1-0108,test-1404,27,SOFT_SKILL,[],True,tech,0,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0109,test-3044,79,SOFT_SKILL,[],True,house,50,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0110,test-2989,42,,[],False,house,39,baseline_only,bert_lookup
+P1-0111,test-525,89,,"[[21, 89]]",False,tech,79,boundary,anchor; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0112,test-3517,474,,[],False,house,417,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0113,test-2522,787,,[],False,house,764,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0114,test-2361,84,,"[[25, 47]]",False,house,25,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0115,test-456,39,,"[[4, 62]]",False,tech,31,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0116,test-1109,68,,"[[15, 68]]",False,tech,39,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0117,test-2951,301,,"[[260, 301]]",False,house,271,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0118,test-2442,6,,[],False,house,0,baseline_only,bert_lookup
+P1-0119,test-1264,31,SOFT_SKILL,[],True,tech,16,anchor_fn,
+P1-0120,test-1486,53,,[],False,tech,25,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0121,test-3086,216,,"[[192, 241]]",False,house,192,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0122,test-3365,133,,[],False,house,117,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0123,test-2204,32,,[],False,tech,12,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0124,test-1935,38,,[],False,tech,16,anchor_fp,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0125,test-513,21,,[],False,tech,5,anchor_fp,anchor; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0126,test-1116,32,,[],False,tech,15,anchor_fp,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0127,test-2485,83,,"[[64, 107]]",False,house,64,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0128,test-287,56,HARD_SKILL,[],True,tech,50,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0129,test-2098,90,,[],False,tech,68,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0130,test-1685,45,,"[[14, 20], [21, 32], [37, 45]]",False,tech,14,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0131,test-3479,128,SOFT_SKILL,[],True,house,109,agreed_tp_control,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0132,test-507,116,,[],False,tech,100,added_by_wrapper,bert_lookup; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy
+P1-0133,test-2784,176,,"[[161, 188]]",False,house,171,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0134,test-2208,176,SOFT_SKILL,[],True,tech,155,anchor_fn,
+P1-0135,test-3273,120,,[],False,house,81,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0136,test-3470,44,,[],False,house,36,baseline_only,bert_lookup
+P1-0137,test-3420,77,,"[[66, 95]]",False,house,71,boundary,anchor; bert_lookup
+P1-0138,test-2475,167,,"[[127, 167]]",False,house,148,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0139,test-277,190,,[],False,tech,174,added_by_wrapper,legacy_full_cag_graph; legacy_gliner_taxonomy
+P1-0140,test-598,7,,[],False,tech,0,anchor_fp,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0141,test-3502,585,SOFT_SKILL,[],True,house,556,anchor_fn,
+P1-0142,test-2435,363,,[],False,house,289,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0143,test-3517,176,,[],False,house,166,added_by_wrapper,legacy_full_cag_graph; legacy_gliner_taxonomy
+P1-0144,test-2443,87,HARD_SKILL,[],True,house,42,anchor_fn,
+P1-0145,test-1486,102,,[],False,tech,57,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0146,test-2483,90,SOFT_SKILL,[],True,house,70,anchor_fn,gliner_zero_shot
+P1-0147,test-3527,126,,[],False,house,111,anchor_fp,anchor; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0148,test-1856,118,HARD_SKILL,[],True,tech,104,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0149,test-3086,100,,[],False,house,90,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0150,test-2098,64,,[],False,tech,39,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0151,test-3371,99,SOFT_SKILL,[],True,house,81,anchor_fn,
+P1-0152,test-886,63,,[],False,tech,59,baseline_only,bert_lookup
+P1-0153,test-1523,13,HARD_SKILL,[],True,tech,3,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0154,test-1102,110,,"[[2, 26], [34, 48], [65, 75], [80, 97]]",False,tech,2,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0155,test-2259,26,,"[[0, 6], [10, 26]]",False,house,0,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0156,test-2483,27,,"[[17, 62]]",False,house,17,boundary,anchor; bert_lookup; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0157,test-522,47,,[],False,tech,31,added_by_wrapper,bert_lookup; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy
+P1-0158,test-3205,66,,"[[12, 22], [26, 66]]",False,house,0,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0159,test-2316,123,,"[[57, 107]]",False,tech,57,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0160,test-1195,73,HARD_SKILL,[],True,tech,59,anchor_fn,gliner_zero_shot
+P1-0161,test-2782,36,,[],False,house,33,baseline_only,bert_lookup
+P1-0162,test-696,99,,[],False,tech,87,baseline_only,bert_lookup
+P1-0163,test-2746,49,SOFT_SKILL,[],True,house,12,anchor_fn,bert_lookup
+P1-0164,test-3529,61,,"[[16, 41]]",False,house,16,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0165,test-1855,101,,"[[47, 64], [71, 101]]",False,tech,47,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0166,test-3378,21,SOFT_SKILL,[],True,house,14,anchor_fn,
+P1-0167,test-2708,82,SOFT_SKILL,[],True,house,38,agreed_tp_control,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0168,test-2774,157,,[],False,house,144,baseline_only,bert_lookup
+P1-0169,test-2998,35,,"[[0, 28]]",False,house,0,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0170,test-2487,262,SOFT_SKILL,[],True,house,234,anchor_fn,
+P1-0171,test-3420,123,,[],False,house,107,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0172,test-3520,126,SOFT_SKILL,[],True,house,117,anchor_fn,gliner_zero_shot
+P1-0173,test-1860,170,HARD_SKILL,[],True,tech,156,anchor_fn,
+P1-0174,test-696,219,,[],False,tech,191,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0175,test-412,11,HARD_SKILL,[],True,tech,5,anchor_fn,bert_lookup
+P1-0176,test-3295,48,,"[[0, 34]]",False,house,0,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0177,test-3357,517,,[],False,house,505,anchor_fp,anchor; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0178,test-3521,14,,[],False,house,0,baseline_only,bert_lookup
+P1-0179,test-2522,488,SOFT_SKILL,[],True,house,430,anchor_fn,
+P1-0180,test-527,19,,[],False,tech,4,baseline_only,bert_lookup
+P1-0181,test-2749,36,,"[[8, 45]]",False,house,8,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0182,test-2705,67,SOFT_SKILL,[],True,house,35,anchor_fn,
+P1-0183,test-3091,45,,[],False,house,18,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0184,test-3143,120,,[],False,house,109,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0185,test-3446,194,HARD_SKILL,[],True,house,157,anchor_fn,
+P1-0186,test-3285,76,HARD_SKILL,[],True,house,59,anchor_fn,
+P1-0187,test-3482,51,HARD_SKILL,[],True,house,15,anchor_fn,
+P1-0188,test-573,77,,[],False,tech,73,baseline_only,bert_lookup
+P1-0189,test-1623,246,,[],False,tech,236,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0190,test-1849,82,,"[[47, 66]]",False,tech,47,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0191,test-1335,44,,"[[0, 44]]",False,tech,34,boundary,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0192,test-1402,20,,[],False,tech,0,anchor_fp,anchor; bert_lookup; gliner_zero_shot; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0193,test-1853,46,,"[[2, 40]]",False,tech,2,boundary,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0194,test-3528,433,HARD_SKILL,[],True,house,423,anchor_fn,
+P1-0195,test-132,185,SOFT_SKILL,[],True,tech,155,anchor_fn,
+P1-0196,test-2321,115,HARD_SKILL,[],True,tech,108,anchor_fn,bert_lookup
+P1-0197,test-2770,97,,[],False,house,48,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0198,test-1316,40,HARD_SKILL,[],True,tech,27,anchor_fn,
+P1-0199,test-1200,108,,[],False,tech,87,anchor_fp,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0200,test-3476,58,,[],False,house,37,anchor_fp,anchor; bert_lookup; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper
+P1-0201,test-2579,34,,[],False,house,0,anchor_fp,anchor; legacy_full_cag_graph; legacy_gliner_taxonomy; safe_wrapper

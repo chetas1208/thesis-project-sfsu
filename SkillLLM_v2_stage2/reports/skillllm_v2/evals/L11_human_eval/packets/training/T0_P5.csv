@@ -1,0 +1,3 @@
+item_id,target_job_title,learner_known_skills,course_title,q1_relevance,q2_gap_closure,q3_prereq_ready,notes
+T0-P5-01,Data Engineer,Python; SQL,Apache Spark Fundamentals,,,,
+T0-P5-02,Data Engineer,Python; SQL,Introduction to Python,,,,

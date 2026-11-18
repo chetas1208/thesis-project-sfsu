@@ -1,0 +1,2232 @@
+{
+  "meta": {
+    "date_utc": "2026-11-17T20:55:33+00:00",
+    "terms": [
+      "SkillGraphLM",
+      "SkillGraph-LM",
+      "SkillGraph LM",
+      "SkillGraph",
+      "Skill-LLM",
+      "SkillLLM",
+      "SkillGPT"
+    ],
+    "title": "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence",
+    "screening_rule": " (fixed before running; final risk is adjudicated in REPORT.md and may be raised, never silently lowered):\n  * exact  = the normalised term (lower-case, alphanumerics only) equals a normalised token / token pair / token triple of a hit\n             title or name;  substring = the normalised term occurs inside the normalised hit text.\n  * scholarly source (arXiv, OpenAlex, S2, DBLP, Crossref, ACL): exact in a title -> high; substring only -> low; nothing -> none.\n  * package registry (PyPI, npm) exact project name taken -> medium (high if the description is in the skills/jobs/education\n    domain); not taken -> none.\n  * code / model hubs (GitHub, Hugging Face): exact name -> high if the hit is in the skills/jobs/education/LLM domain or has\n    >= 50 stars/likes, otherwise medium; substring only -> low; nothing -> none.\n",
+    "manual_source": "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/reports/skillllm_v2/evals/naming_audit/manual_queries.json"
+  },
+  "records": [
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "arxiv",
+      "query_url": "https://export.arxiv.org/api/query?search_query=all%3ASkillGraphLM&max_results=25",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "openalex",
+      "query_url": "https://api.openalex.org/works?search=%22SkillGraphLM%22&per_page=25&mailto=research-audit%40example.org",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "semantic_scholar",
+      "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=SkillGraphLM&limit=25&fields=title%2Cyear%2Curl%2Cvenue",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:14:18+00:00",
+      "term": "SkillGraphLM",
+      "source": "dblp",
+      "query_url": "https://dblp.org/search/publ/api?q=SkillGraphLM&format=json&h=25",
+      "status": "blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "crossref",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=SkillGraphLM&rows=20&select=DOI%2Ctitle%2Cissued",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "hit_count = top-20 relevance results whose title contains the term (Crossref totals are fuzzy)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "github",
+      "query_url": "https://github.com/search?type=repositories&q=SkillGraphLM",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "pypi",
+      "query_url": "https://pypi.org/project/skillgraphlm/",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "project name 'skillgraphlm' not registered"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "npm",
+      "query_url": "https://www.npmjs.com/package/skillgraphlm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "exact name free; npm full-text total 0"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "hf_models",
+      "query_url": "https://huggingface.co/models?search=skillgraphlm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "hf_datasets",
+      "query_url": "https://huggingface.co/datasets?search=SkillGraphLM",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "hf_spaces",
+      "query_url": "https://huggingface.co/spaces?search=skillgraphlm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM",
+      "source": "acl_anthology",
+      "query_url": "https://aclanthology.org/anthology.bib.gz",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "title search over 139573 ACL Anthology bibliography entries (anthology.bib.gz)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "arxiv",
+      "query_url": "https://export.arxiv.org/api/query?search_query=all%3A%22SkillGraph-LM%22&max_results=25",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "openalex",
+      "query_url": "https://api.openalex.org/works?search=%22SkillGraph-LM%22&per_page=25&mailto=research-audit%40example.org",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:19:11+00:00",
+      "term": "SkillGraph-LM",
+      "source": "semantic_scholar",
+      "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=SkillGraph-LM&limit=25&fields=title%2Cyear%2Curl%2Cvenue",
+      "status": "http_429",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: http_429 (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:19:32+00:00",
+      "term": "SkillGraph-LM",
+      "source": "dblp",
+      "query_url": "https://dblp.org/search/publ/api?q=SkillGraph-LM&format=json&h=25",
+      "status": "blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "crossref",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=SkillGraph-LM&rows=20&select=DOI%2Ctitle%2Cissued",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "hit_count = top-20 relevance results whose title contains the term (Crossref totals are fuzzy)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "github",
+      "query_url": "https://github.com/search?type=repositories&q=SkillGraph-LM",
+      "status": "ok",
+      "hit_count": 6,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "pypi",
+      "query_url": "https://pypi.org/project/skillgraph-lm/",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "project name 'skillgraph-lm' not registered"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "npm",
+      "query_url": "https://www.npmjs.com/package/skillgraph-lm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "exact name free; npm full-text total 1865"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "hf_models",
+      "query_url": "https://huggingface.co/models?search=skillgraphlm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "hf_datasets",
+      "query_url": "https://huggingface.co/datasets?search=SkillGraph-LM",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "hf_spaces",
+      "query_url": "https://huggingface.co/spaces?search=skillgraphlm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph-LM",
+      "source": "acl_anthology",
+      "query_url": "https://aclanthology.org/anthology.bib.gz",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "title search over 139573 ACL Anthology bibliography entries (anthology.bib.gz)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "arxiv",
+      "query_url": "https://export.arxiv.org/api/query?search_query=all%3A%22SkillGraph+LM%22&max_results=25",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "openalex",
+      "query_url": "https://api.openalex.org/works?search=%22SkillGraph+LM%22&per_page=25&mailto=research-audit%40example.org",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "semantic_scholar",
+      "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=SkillGraph+LM&limit=25&fields=title%2Cyear%2Curl%2Cvenue",
+      "status": "ok",
+      "hit_count": 111166,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:19:52+00:00",
+      "term": "SkillGraph LM",
+      "source": "dblp",
+      "query_url": "https://dblp.org/search/publ/api?q=SkillGraph+LM&format=json&h=25",
+      "status": "blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "crossref",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=SkillGraph+LM&rows=20&select=DOI%2Ctitle%2Cissued",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "hit_count = top-20 relevance results whose title contains the term (Crossref totals are fuzzy)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "github",
+      "query_url": "https://github.com/search?type=repositories&q=%22SkillGraph%20LM%22",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "pypi",
+      "query_url": "https://pypi.org/project/skillgraph-lm/",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "project name 'skillgraph-lm' not registered"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "npm",
+      "query_url": "https://www.npmjs.com/package/skillgraph-lm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "exact name free; npm full-text total 1865"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "hf_models",
+      "query_url": "https://huggingface.co/models?search=skillgraphlm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "hf_datasets",
+      "query_url": "https://huggingface.co/datasets?search=SkillGraphLM",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "hf_spaces",
+      "query_url": "https://huggingface.co/spaces?search=skillgraphlm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph LM",
+      "source": "acl_anthology",
+      "query_url": "https://aclanthology.org/anthology.bib.gz",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "title search over 139573 ACL Anthology bibliography entries (anthology.bib.gz)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "arxiv",
+      "query_url": "https://export.arxiv.org/api/query?search_query=all%3ASkillGraph&max_results=25",
+      "status": "ok",
+      "hit_count": 4,
+      "relevant_hits": [
+        {
+          "title": "SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs",
+          "url": "http://arxiv.org/abs/2605.12039v2",
+          "extra": "Skill libraries enable large language model agents to reuse experience from past interactions, but most existing libraries store skills as isolated entries and retrieve them only by semantic similarit",
+          "kind": "paper",
+          "title_match": "exact",
+          "abstract_match": "exact"
+        },
+        {
+          "title": "SkillGraph: Self-Evolving Multi-Agent Collaboration with Multimodal Graph Topology",
+          "url": "http://arxiv.org/abs/2604.17503v1",
+          "extra": "Scaling vision-language models into Visual Multiagent Systems (VMAS) is hindered by two coupled issues. First, communication topologies are fixed before inference, leaving them blind to visual content",
+          "kind": "paper",
+          "title_match": "exact",
+          "abstract_match": "exact"
+        },
+        {
+          "title": "SkillGraph: Graph Foundation Priors for LLM Agent Tool Sequence Recommendation",
+          "url": "http://arxiv.org/abs/2604.19793v1",
+          "extra": "LLM agents must select tools from large API libraries and order them correctly. Existing methods use semantic similarity for both retrieval and ordering, but ordering depends on inter-tool data depend",
+          "kind": "paper",
+          "title_match": "exact",
+          "abstract_match": "exact"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "3 paper title(s) use the exact name",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "openalex",
+      "query_url": "https://api.openalex.org/works?search=%22SkillGraph%22&per_page=25&mailto=research-audit%40example.org",
+      "status": "ok",
+      "hit_count": 51,
+      "relevant_hits": [
+        {
+          "title": "SkillGraph: Dependency-Aware Retrieval for Compositional Agent Skills",
+          "url": "https://doi.org/10.2139/ssrn.6862721",
+          "extra": "2026",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs",
+          "url": "https://doi.org/10.48550/arxiv.2605.12039",
+          "extra": "2026",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "SkillGraph: Self-Evolving Multi-Agent Collaboration with Multimodal Graph Topology",
+          "url": "https://doi.org/10.48550/arxiv.2604.17503",
+          "extra": "2026",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "SkillGraph: Graph Foundation Priors for LLM Agent Tool Sequence Recommendation",
+          "url": "https://doi.org/10.48550/arxiv.2604.19793",
+          "extra": "2026",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "SkillGraph: A Multi-Agent Architecture for AI-Powered Career Recommendation Using Knowledge Graphs and Graph Neural Networks",
+          "url": "https://doi.org/10.5281/zenodo.21523002",
+          "extra": "2026",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "Skillgraph-Align: A Skill Graph Enhanced Job Recommendation Method for University Graduates\u2014A Decade-Long Validation on Real-World Data",
+          "url": "https://doi.org/10.1109/bigdata66926.2025.11402469",
+          "extra": "2025",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "ManiSkillFormer: Demonstration-Free Compositional Manipulation via Geometric Contracts and Agentic Skill Graph",
+          "url": "https://doi.org/10.48550/arxiv.2609.16331",
+          "extra": "2026",
+          "kind": "paper",
+          "title_match": "exact"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "7 paper title(s) use the exact name",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "semantic_scholar",
+      "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=SkillGraph&limit=25&fields=title%2Cyear%2Curl%2Cvenue",
+      "status": "ok",
+      "hit_count": 6,
+      "relevant_hits": [
+        {
+          "title": "Skillgraph-Align: A Skill Graph Enhanced Job Recommendation Method for University Graduates\u2014A Decade-Long Validation on Real-World Data",
+          "url": "https://www.semanticscholar.org/paper/76d3d2bbb57f2669009a87703241b4d2e83fe99e",
+          "extra": "2025 BigData Congress [Services Society]",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs",
+          "url": "https://www.semanticscholar.org/paper/23de47ccf09c6245869df922f162935ee1f61071",
+          "extra": "2026 arXiv.org",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "SkillGraph: Self-Evolving Multi-Agent Collaboration with Multimodal Graph Topology",
+          "url": "https://www.semanticscholar.org/paper/bcff4bbe521c218a876408e3ee8d38e519f2a0d6",
+          "extra": "2026 arXiv.org",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "SkillGraph: Graph Foundation Priors for LLM Agent Tool Sequence Recommendation",
+          "url": "https://www.semanticscholar.org/paper/f199a46cc1a18f26fda74591b6aad1ab43e8f78b",
+          "extra": "2026 arXiv.org",
+          "kind": "paper",
+          "title_match": "exact"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "4 paper title(s) use the exact name",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:20:13+00:00",
+      "term": "SkillGraph",
+      "source": "dblp",
+      "query_url": "https://dblp.org/search/publ/api?q=SkillGraph&format=json&h=25",
+      "status": "blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "crossref",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=SkillGraph&rows=20&select=DOI%2Ctitle%2Cissued",
+      "status": "ok",
+      "hit_count": 2,
+      "relevant_hits": [
+        {
+          "title": "SkillGraph: Dependency-Aware Retrieval for Compositional Agent Skills",
+          "url": "https://doi.org/10.2139/ssrn.6862721",
+          "extra": "",
+          "kind": "paper",
+          "title_match": "exact"
+        },
+        {
+          "title": "Skillgraph-Align: A Skill Graph Enhanced Job Recommendation Method for University Graduates\u2014A Decade-Long Validation on Real-World Data",
+          "url": "https://doi.org/10.1109/bigdata66926.2025.11402469",
+          "extra": "",
+          "kind": "paper",
+          "title_match": "exact"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "2 paper title(s) use the exact name",
+      "note": "hit_count = top-20 relevance results whose title contains the term (Crossref totals are fuzzy)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "github",
+      "query_url": "https://github.com/search?type=repositories&q=SkillGraph",
+      "status": "ok",
+      "hit_count": 996,
+      "relevant_hits": [
+        {
+          "title": "tejassudsfp/skillgraph-backend",
+          "url": "https://github.com/tejassudsfp/skillgraph-backend",
+          "extra": "Backend for skillgraph - a skill based framework for building agents that work.",
+          "kind": "repo",
+          "stars": 35,
+          "title_match": "substring",
+          "desc_match": "exact",
+          "domain": true,
+          "updated": "2026-08-31T06:53:21Z"
+        },
+        {
+          "title": "niez233/skillgraph",
+          "url": "https://github.com/niez233/skillgraph",
+          "extra": "",
+          "kind": "repo",
+          "stars": 19,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-11-14T07:36:33Z"
+        },
+        {
+          "title": "NVIDIA-Omniverse/usd-developer-skillgraph",
+          "url": "https://github.com/NVIDIA-Omniverse/usd-developer-skillgraph",
+          "extra": "Moved to NVIDIA-Omniverse/omniverse-labs \u2192 projects/nanousd-labs/usd-developer-skillgraph. Standalone repo retired. Skill graph that generates USD library code from the USD Core Spec.",
+          "kind": "repo",
+          "stars": 3,
+          "title_match": "substring",
+          "desc_match": "exact",
+          "domain": true,
+          "updated": "2026-07-12T14:33:16Z"
+        },
+        {
+          "title": "tejassudsfp/skillgraph-frontend",
+          "url": "https://github.com/tejassudsfp/skillgraph-frontend",
+          "extra": "Frontend for skillgraph - a skill based framework for building agents that work.",
+          "kind": "repo",
+          "stars": 4,
+          "title_match": "substring",
+          "desc_match": "exact",
+          "domain": true,
+          "updated": "2026-07-22T17:05:06Z"
+        },
+        {
+          "title": "Ashwin-R05/Skillgraph---NLP",
+          "url": "https://github.com/Ashwin-R05/Skillgraph---NLP",
+          "extra": "SkillGraph is an explainable, interactive NLP system that infers implicit skills in resumes against job descriptions, verifies uncertain inferences directly with the candidate, and suggests resume rewrites \u2014 rather than silently scoring the",
+          "kind": "repo",
+          "stars": 14,
+          "title_match": "substring",
+          "desc_match": "exact",
+          "domain": true,
+          "updated": "2026-11-04T18:00:00Z"
+        },
+        {
+          "title": "AtulACleaver/SkillGraph",
+          "url": "https://github.com/AtulACleaver/SkillGraph",
+          "extra": "Type your skills, pick a target role, and see how ready you are, which roles fit, and what to learn next. Built from 12,872 Indian tech job postings using association rule mining (Apriori, FP-growth) and a calibrated classifier. FastAPI + R",
+          "kind": "repo",
+          "stars": 3,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-10-31T04:43:30Z"
+        },
+        {
+          "title": "unito-projects/SkillGraph",
+          "url": "https://github.com/unito-projects/SkillGraph",
+          "extra": "A project to organize the creation of an app for displaying skill level of a person.",
+          "kind": "repo",
+          "stars": 2,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2025-01-06T15:53:49Z"
+        },
+        {
+          "title": "SwatiManjari/SkillGraph",
+          "url": "https://github.com/SwatiManjari/SkillGraph",
+          "extra": "A web application developed collaboratively for DevHack 2026 using modern web technologies.",
+          "kind": "repo",
+          "stars": 2,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-10-24T05:57:35Z"
+        },
+        {
+          "title": "LithikaMurugesan/skillGraph",
+          "url": "https://github.com/LithikaMurugesan/skillGraph",
+          "extra": "",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-08-14T09:50:56Z"
+        },
+        {
+          "title": "lahari2005-sketch/SkillGraph",
+          "url": "https://github.com/lahari2005-sketch/SkillGraph",
+          "extra": "Graph-based job and skill recommendation system using CognoDB",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-08-11T09:16:24Z"
+        },
+        {
+          "title": "roshanamurthur/skillgraph",
+          "url": "https://github.com/roshanamurthur/skillgraph",
+          "extra": "",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-03-15T02:55:35Z"
+        },
+        {
+          "title": "LeoTheOriginal/SkillGraph",
+          "url": "https://github.com/LeoTheOriginal/SkillGraph",
+          "extra": "",
+          "kind": "repo",
+          "stars": 1,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-04-20T20:04:21Z"
+        },
+        {
+          "title": "GnaneshwariCodes/SkillGraph",
+          "url": "https://github.com/GnaneshwariCodes/SkillGraph",
+          "extra": "",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-08-25T08:53:31Z"
+        },
+        {
+          "title": "neelambika014/SkillGraph",
+          "url": "https://github.com/neelambika014/SkillGraph",
+          "extra": "",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-11-03T05:03:48Z"
+        },
+        {
+          "title": "Jooli2004/SkillGraph",
+          "url": "https://github.com/Jooli2004/SkillGraph",
+          "extra": "Graph-based skill management application using React, Express.js and CognoDB",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-08-21T04:32:19Z"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "21 same-name item(s) in the domain or with >= 50 stars/likes",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "pypi",
+      "query_url": "https://pypi.org/project/skillgraph/",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [
+        {
+          "title": "skillgraph",
+          "url": "https://pypi.org/project/skillgraph/",
+          "extra": "The skillgraph library.",
+          "kind": "package",
+          "title_match": "exact",
+          "domain": true,
+          "version": "0.0.1"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "package name registered in the same domain",
+      "note": "project name 'skillgraph' is registered"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "npm",
+      "query_url": "https://www.npmjs.com/package/skillgraph",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [
+        {
+          "title": "@raghuveer-s/skillgraph",
+          "url": "https://www.npmjs.com/package/@raghuveer-s/skillgraph",
+          "extra": "The skillgraph command-line package manager \u2014 npm, but for AI-agent skills.",
+          "kind": "package",
+          "title_match": "exact",
+          "domain": true
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "package name registered in the same domain",
+      "note": "exact name free; npm full-text total 10"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "hf_models",
+      "query_url": "https://huggingface.co/models?search=skillgraph",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "hf_datasets",
+      "query_url": "https://huggingface.co/datasets?search=SkillGraph",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [
+        {
+          "title": "duture/skill-graph-train-datasets",
+          "url": "https://huggingface.co/datasets/duture/skill-graph-train-datasets",
+          "extra": "",
+          "kind": "dataset",
+          "title_match": "substring",
+          "likes": 0,
+          "domain": true
+        }
+      ],
+      "screening_risk": "low",
+      "rationale": "1 partial-name item(s)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "hf_spaces",
+      "query_url": "https://huggingface.co/spaces?search=skillgraph",
+      "status": "ok",
+      "hit_count": 2,
+      "relevant_hits": [
+        {
+          "title": "jeeya-ahuja05/skill-graph-adaptive-env",
+          "url": "https://huggingface.co/spaces/jeeya-ahuja05/skill-graph-adaptive-env",
+          "extra": "",
+          "kind": "space",
+          "title_match": "substring",
+          "likes": 1,
+          "domain": true
+        },
+        {
+          "title": "vijayk12/skillgraph-backend",
+          "url": "https://huggingface.co/spaces/vijayk12/skillgraph-backend",
+          "extra": "",
+          "kind": "space",
+          "title_match": "substring",
+          "likes": 0,
+          "domain": true
+        }
+      ],
+      "screening_risk": "low",
+      "rationale": "2 partial-name item(s)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraph",
+      "source": "acl_anthology",
+      "query_url": "https://aclanthology.org/anthology.bib.gz",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [
+        {
+          "title": "S}kill{DAG}: Self-Evolving Typed Skill Graphs for {LLM} Skill Selection at Scale",
+          "url": "https://aclanthology.org/2026.findings-emnlp.1022/",
+          "extra": "bai-etal-2026-skilldag",
+          "kind": "paper",
+          "title_match": "substring"
+        }
+      ],
+      "screening_risk": "low",
+      "rationale": "1 title(s) contain it as a substring",
+      "note": "title search over 139573 ACL Anthology bibliography entries (anthology.bib.gz)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "arxiv",
+      "query_url": "https://export.arxiv.org/api/query?search_query=all%3A%22Skill-LLM%22&max_results=25",
+      "status": "ok",
+      "hit_count": 8,
+      "relevant_hits": [
+        {
+          "title": "Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction",
+          "url": "http://arxiv.org/abs/2410.12052v1",
+          "extra": "Accurate skill extraction from job descriptions is crucial in the hiring process but remains challenging. Named Entity Recognition (NER) is a common approach used to address this issue. With the demon",
+          "kind": "paper",
+          "title_match": "exact",
+          "abstract_match": "exact"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "1 paper title(s) use the exact name",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "openalex",
+      "query_url": "https://api.openalex.org/works?search=%22Skill-LLM%22&per_page=25&mailto=research-audit%40example.org",
+      "status": "ok",
+      "hit_count": 192,
+      "relevant_hits": [
+        {
+          "title": "Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction",
+          "url": "https://doi.org/10.48550/arxiv.2410.12052",
+          "extra": "2024",
+          "kind": "paper",
+          "title_match": "exact"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "1 paper title(s) use the exact name",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:25:06+00:00",
+      "term": "Skill-LLM",
+      "source": "semantic_scholar",
+      "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=Skill-LLM&limit=25&fields=title%2Cyear%2Curl%2Cvenue",
+      "status": "http_429",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: http_429 (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:25:27+00:00",
+      "term": "Skill-LLM",
+      "source": "dblp",
+      "query_url": "https://dblp.org/search/publ/api?q=Skill-LLM&format=json&h=25",
+      "status": "blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "crossref",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=Skill-LLM&rows=20&select=DOI%2Ctitle%2Cissued",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "hit_count = top-20 relevance results whose title contains the term (Crossref totals are fuzzy)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "github",
+      "query_url": "https://github.com/search?type=repositories&q=Skill-LLM",
+      "status": "ok",
+      "hit_count": 461118,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "pypi",
+      "query_url": "https://pypi.org/project/skill-llm/",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "project name 'skill-llm' not registered"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "npm",
+      "query_url": "https://www.npmjs.com/package/skill-llm",
+      "status": "ok",
+      "hit_count": 2,
+      "relevant_hits": [
+        {
+          "title": "@digipair/skill-llm",
+          "url": "https://www.npmjs.com/package/@digipair/skill-llm",
+          "extra": "This library was generated with [Nx](https://nx.dev).",
+          "kind": "package",
+          "title_match": "exact",
+          "domain": false
+        }
+      ],
+      "screening_risk": "medium",
+      "rationale": "package name registered",
+      "note": "exact name free; npm full-text total 69047"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "hf_models",
+      "query_url": "https://huggingface.co/models?search=skillllm",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [
+        {
+          "title": "yapyapieee/Skill-LLM",
+          "url": "https://huggingface.co/yapyapieee/Skill-LLM",
+          "extra": "",
+          "kind": "model",
+          "title_match": "exact",
+          "likes": 0,
+          "domain": true
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "1 same-name item(s) in the domain or with >= 50 stars/likes",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "hf_datasets",
+      "query_url": "https://huggingface.co/datasets?search=Skill-LLM",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "hf_spaces",
+      "query_url": "https://huggingface.co/spaces?search=skillllm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "Skill-LLM",
+      "source": "acl_anthology",
+      "query_url": "https://aclanthology.org/anthology.bib.gz",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "title search over 139573 ACL Anthology bibliography entries (anthology.bib.gz)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "arxiv",
+      "query_url": "https://export.arxiv.org/api/query?search_query=all%3ASkillLLM&max_results=25",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "openalex",
+      "query_url": "https://api.openalex.org/works?search=%22SkillLLM%22&per_page=25&mailto=research-audit%40example.org",
+      "status": "ok",
+      "hit_count": 4,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:30:20+00:00",
+      "term": "SkillLLM",
+      "source": "semantic_scholar",
+      "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=SkillLLM&limit=25&fields=title%2Cyear%2Curl%2Cvenue",
+      "status": "http_429",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: http_429 (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:30:41+00:00",
+      "term": "SkillLLM",
+      "source": "dblp",
+      "query_url": "https://dblp.org/search/publ/api?q=SkillLLM&format=json&h=25",
+      "status": "blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "crossref",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=SkillLLM&rows=20&select=DOI%2Ctitle%2Cissued",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "hit_count = top-20 relevance results whose title contains the term (Crossref totals are fuzzy)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "github",
+      "query_url": "https://github.com/search?type=repositories&q=SkillLLM",
+      "status": "ok",
+      "hit_count": 5,
+      "relevant_hits": [
+        {
+          "title": "chetas1208/thesis-project-sfsu",
+          "url": "https://github.com/chetas1208/thesis-project-sfsu",
+          "extra": "Evidence-preserving SkillLLM research: span extraction, provenance-aware normalization, context, graph, matching, and reproducible thesis artifacts.",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "",
+          "desc_match": "exact",
+          "domain": true,
+          "updated": "2026-10-28T21:18:22Z"
+        },
+        {
+          "title": "JoylimJY/skill-llm",
+          "url": "https://github.com/JoylimJY/skill-llm",
+          "extra": "",
+          "kind": "repo",
+          "stars": 3,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-04-16T06:47:10Z"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "2 same-name item(s) in the domain or with >= 50 stars/likes",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "pypi",
+      "query_url": "https://pypi.org/project/skillllm/",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "project name 'skillllm' not registered"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "npm",
+      "query_url": "https://www.npmjs.com/package/skillllm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "exact name free; npm full-text total 0"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "hf_models",
+      "query_url": "https://huggingface.co/models?search=skillllm",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [
+        {
+          "title": "yapyapieee/Skill-LLM",
+          "url": "https://huggingface.co/yapyapieee/Skill-LLM",
+          "extra": "",
+          "kind": "model",
+          "title_match": "exact",
+          "likes": 0,
+          "domain": true
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "1 same-name item(s) in the domain or with >= 50 stars/likes",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "hf_datasets",
+      "query_url": "https://huggingface.co/datasets?search=SkillLLM",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "hf_spaces",
+      "query_url": "https://huggingface.co/spaces?search=skillllm",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillLLM",
+      "source": "acl_anthology",
+      "query_url": "https://aclanthology.org/anthology.bib.gz",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "title search over 139573 ACL Anthology bibliography entries (anthology.bib.gz)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "arxiv",
+      "query_url": "https://export.arxiv.org/api/query?search_query=all%3ASkillGPT&max_results=25",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [
+        {
+          "title": "SkillGPT: a RESTful API service for skill extraction and standardization using a Large Language Model",
+          "url": "http://arxiv.org/abs/2304.11060v2",
+          "extra": "We present SkillGPT, a tool for skill extraction and standardization (SES) from free-style job descriptions and user profiles with an open-source Large Language Model (LLM) as backbone. Most previous ",
+          "kind": "paper",
+          "title_match": "exact",
+          "abstract_match": "exact"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "1 paper title(s) use the exact name",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "openalex",
+      "query_url": "https://api.openalex.org/works?search=%22SkillGPT%22&per_page=25&mailto=research-audit%40example.org",
+      "status": "ok",
+      "hit_count": 41,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "semantic_scholar",
+      "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=SkillGPT&limit=25&fields=title%2Cyear%2Curl%2Cvenue",
+      "status": "ok",
+      "hit_count": 1,
+      "relevant_hits": [
+        {
+          "title": "SkillGPT: a RESTful API service for skill extraction and standardization using a Large Language Model",
+          "url": "https://www.semanticscholar.org/paper/2a8500ef24d3392529b029023e865f804c31fd09",
+          "extra": "2023 arXiv.org",
+          "kind": "paper",
+          "title_match": "exact"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "1 paper title(s) use the exact name",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:31:02+00:00",
+      "term": "SkillGPT",
+      "source": "dblp",
+      "query_url": "https://dblp.org/search/publ/api?q=SkillGPT&format=json&h=25",
+      "status": "blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "crossref",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=SkillGPT&rows=20&select=DOI%2Ctitle%2Cissued",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "hit_count = top-20 relevance results whose title contains the term (Crossref totals are fuzzy)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "github",
+      "query_url": "https://github.com/search?type=repositories&q=SkillGPT",
+      "status": "ok",
+      "hit_count": 12,
+      "relevant_hits": [
+        {
+          "title": "aida-ugent/SkillGPT",
+          "url": "https://github.com/aida-ugent/SkillGPT",
+          "extra": "",
+          "kind": "repo",
+          "stars": 67,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-11-01T10:44:20Z"
+        },
+        {
+          "title": "sudhirVoid/skillGPT",
+          "url": "https://github.com/sudhirVoid/skillGPT",
+          "extra": "",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2025-01-02T08:29:57Z"
+        },
+        {
+          "title": "rankgabss-ux/SkillGpt",
+          "url": "https://github.com/rankgabss-ux/SkillGpt",
+          "extra": "",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2026-10-24T15:35:24Z"
+        },
+        {
+          "title": "yazi-mellissa/SkillGPT",
+          "url": "https://github.com/yazi-mellissa/SkillGPT",
+          "extra": "",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2025-05-02T09:41:03Z"
+        },
+        {
+          "title": "annepusushmareddy-cell/SkillGPT_AI",
+          "url": "https://github.com/annepusushmareddy-cell/SkillGPT_AI",
+          "extra": "SkillGPT AI is an intelligent AI-powered platform designed to help users learn, practice, and improve real-world skills through personalized guidance, interactive learning, and smart automation. The project combines modern AI technologies w",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "exact",
+          "domain": true,
+          "updated": "2026-05-16T07:32:24Z"
+        },
+        {
+          "title": "sudhirVoid/skillGPT_BE",
+          "url": "https://github.com/sudhirVoid/skillGPT_BE",
+          "extra": "",
+          "kind": "repo",
+          "stars": 0,
+          "title_match": "exact",
+          "desc_match": "",
+          "domain": true,
+          "updated": "2025-02-15T04:39:06Z"
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "6 same-name item(s) in the domain or with >= 50 stars/likes",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "pypi",
+      "query_url": "https://pypi.org/project/skillgpt/",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "project name 'skillgpt' not registered"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "npm",
+      "query_url": "https://www.npmjs.com/package/skillgpt",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "package name free",
+      "note": "exact name free; npm full-text total 0"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "hf_models",
+      "query_url": "https://huggingface.co/models?search=skillgpt",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "hf_datasets",
+      "query_url": "https://huggingface.co/datasets?search=SkillGPT",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no same-name item",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "hf_spaces",
+      "query_url": "https://huggingface.co/spaces?search=skillgpt",
+      "status": "ok",
+      "hit_count": 2,
+      "relevant_hits": [
+        {
+          "title": "mrobi/SkillGPT",
+          "url": "https://huggingface.co/spaces/mrobi/SkillGPT",
+          "extra": "",
+          "kind": "space",
+          "title_match": "exact",
+          "likes": 0,
+          "domain": true
+        }
+      ],
+      "screening_risk": "high",
+      "rationale": "1 same-name item(s) in the domain or with >= 50 stars/likes",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGPT",
+      "source": "acl_anthology",
+      "query_url": "https://aclanthology.org/anthology.bib.gz",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "title search over 139573 ACL Anthology bibliography entries (anthology.bib.gz)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence",
+      "source": "arxiv",
+      "query_url": "https://export.arxiv.org/api/query?search_query=all%3A%22SkillGraphLM%3A+Non-Regressive+Skill+Extraction+and+Graph-Augmented+Learning-Path+Intelligence%22&max_results=25",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence",
+      "source": "openalex",
+      "query_url": "https://api.openalex.org/works?search=%22SkillGraphLM%3A+Non-Regressive+Skill+Extraction+and+Graph-Augmented+Learning-Path+Intelligence%22&per_page=25&mailto=research-audit%40example.org",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:35:55+00:00",
+      "term": "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence",
+      "source": "semantic_scholar",
+      "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=SkillGraphLM%3A+Non-Regressive+Skill+Extraction+and+Graph-Augmented+Learning-Path+Intelligence&limit=25&fields=title%2Cyear%2Curl%2Cvenue",
+      "status": "http_429",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: http_429 (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-18T07:36:16+00:00",
+      "term": "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence",
+      "source": "dblp",
+      "query_url": "https://dblp.org/search/publ/api?q=SkillGraphLM%3A+Non-Regressive+Skill+Extraction+and+Graph-Augmented+Learning-Path+Intelligence&format=json&h=25",
+      "status": "blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer",
+      "hit_count": null,
+      "relevant_hits": [],
+      "screening_risk": "unknown",
+      "rationale": "query failed: blocked: dblp returned an HTML bot challenge (HTTP 202), no API answer (retry)",
+      "note": ""
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence",
+      "source": "crossref",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=SkillGraphLM%3A+Non-Regressive+Skill+Extraction+and+Graph-Augmented+Learning-Path+Intelligence&rows=20&select=DOI%2Ctitle%2Cissued",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "hit_count = top-20 relevance results whose title contains the term (Crossref totals are fuzzy)"
+    },
+    {
+      "date_utc": "2026-11-17T20:55:33+00:00",
+      "term": "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence",
+      "source": "acl_anthology",
+      "query_url": "https://aclanthology.org/anthology.bib.gz",
+      "status": "ok",
+      "hit_count": 0,
+      "relevant_hits": [],
+      "screening_risk": "none",
+      "rationale": "no matching title",
+      "note": "title search over 139573 ACL Anthology bibliography entries (anthology.bib.gz)"
+    }
+  ],
+  "manual_records": [
+    {
+      "date_utc": "2026-11-17T21:00:00+00:00",
+      "term": "SkillGraphLM",
+      "source": "web_search",
+      "query": "\"SkillGraphLM\"",
+      "status": "ok",
+      "hit_count": 0,
+      "screening_risk": "none",
+      "final_risk": "medium",
+      "rationale": "No page uses the exact string. Top results are the 2026 arXiv paper 'SkillGraph' (2605.12039) and other LLM skill-graph papers (HiSkill, SkillDAG): the prefix collides with same-field LLM work (see SkillGraph rows), so confusability is medium.",
+      "relevant_hits": [
+        {
+          "title": "SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs",
+          "url": "https://huggingface.co/papers/2605.12039"
+        },
+        {
+          "title": "HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs",
+          "url": "https://arxiv.org/pdf/2607.25853"
+        },
+        {
+          "title": "SkillDAG (EMNLP 2026 Findings)",
+          "url": "https://aclanthology.org/2026.findings-emnlp.1022.pdf"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:00:00+00:00",
+      "term": "SkillGraph-LM",
+      "source": "web_search",
+      "query": "\"SkillGraph-LM\" OR \"SkillGraph LM\" language model",
+      "status": "ok",
+      "hit_count": 0,
+      "screening_risk": "none",
+      "rationale": "No exact hit for either spelling; results are SkillGraph / SkillDAG / HiSkill agent-skill-graph papers.",
+      "relevant_hits": [
+        {
+          "title": "SkillDAG: Self-Evolving Typed Skill Graphs for LLM Skill Selection at Scale",
+          "url": "https://huggingface.co/papers/2606.03056.md"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:00:00+00:00",
+      "term": "SkillGraph LM",
+      "source": "web_search",
+      "query": "\"SkillGraph-LM\" OR \"SkillGraph LM\" language model",
+      "status": "ok",
+      "hit_count": 0,
+      "screening_risk": "none",
+      "rationale": "Same query as SkillGraph-LM; no exact hit.",
+      "relevant_hits": [],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:00:00+00:00",
+      "term": "SkillGraphLM",
+      "source": "web_search_code_hubs",
+      "query": "\"SkillGraphLM\" OR \"SkillGraph-LM\" site:github.com OR site:huggingface.co",
+      "status": "ok",
+      "hit_count": 0,
+      "screening_risk": "none",
+      "rationale": "No repository or model with the exact name; the only nearby repository is niez233/skillgraph (code of arXiv 2604.17503).",
+      "relevant_hits": [
+        {
+          "title": "niez233/skillgraph",
+          "url": "https://github.com/niez233/skillgraph"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:00:00+00:00",
+      "term": "SkillGraph",
+      "source": "web_search",
+      "query": "\"SkillGraph\" skills graph",
+      "status": "ok",
+      "hit_count": 19,
+      "screening_risk": "high",
+      "final_risk": "high",
+      "rationale": "Many same-name products: PyPI skills-graph, skillgraph.pages.dev ('Intelligence Layer for Skillshop'), skillgraph-mcp (Go), an npm skillgraph package manager for agent skills; 'skills graph' is also an established HR-tech term (LinkedIn, Cornerstone).",
+      "relevant_hits": [
+        {
+          "title": "skills-graph (PyPI)",
+          "url": "https://pypi.org/project/skills-graph/"
+        },
+        {
+          "title": "SkillGraph - Intelligence Layer for Skillshop",
+          "url": "https://skillgraph.pages.dev/"
+        },
+        {
+          "title": "skillgraph-mcp (Go package)",
+          "url": "https://pkg.go.dev/github.com/jrodeiro5/skillgraph-mcp"
+        },
+        {
+          "title": "Building LinkedIn's Skills Graph",
+          "url": "https://engineering.linkedin.com/blog/2022/building-linkedin-s-skills-graph-to-power-a-skills-first-world"
+        },
+        {
+          "title": "What Is the Cornerstone Skills Graph?",
+          "url": "https://cornerstoneondemand.com/rework/what-cornerstone-skills-graph"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:05:00+00:00",
+      "term": "SkillGraph",
+      "source": "web_search_products",
+      "query": "\"SkillGraph\" company job market skills taxonomy platform",
+      "status": "ok",
+      "hit_count": 18,
+      "screening_risk": "high",
+      "final_risk": "high",
+      "rationale": "Product Hunt lists 'Skillgraph', a career strategy platform launched 2026-03-17 that measures a user's abilities against target employers/roles and highlights abilities to build next (verified by fetching the listing): same problem space as this thesis (skill gap -> learning).",
+      "relevant_hits": [
+        {
+          "title": "Skillgraph - career strategy platform (Product Hunt, launched 2026-03-17)",
+          "url": "https://www.producthunt.com/products/skillgraph-career-strategy-platform/launches/skillgraph-2"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:05:00+00:00",
+      "term": "SkillGraph",
+      "source": "web_search_scholarly",
+      "query": "\"SkillGraph\" arXiv 2604.17503 multi-agent",
+      "status": "ok",
+      "hit_count": 10,
+      "screening_risk": "high",
+      "rationale": "arXiv 2604.17503 'SkillGraph: Self-Evolving Multi-Agent Collaboration with Multimodal Graph Topology' (cs.AI, 2026) with code at github.com/niez233/skillgraph.",
+      "relevant_hits": [
+        {
+          "title": "SkillGraph: Self-Evolving Multi-Agent Collaboration with Multimodal Graph Topology",
+          "url": "https://arxiv.org/abs/2604.17503"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool"
+    },
+    {
+      "date_utc": "2026-11-17T21:05:00+00:00",
+      "term": "SkillGraph",
+      "source": "web_search_domain",
+      "query": "\"SkillsGraph\" OR \"SkillGraph\" LLM career learning path recommendation",
+      "status": "ok",
+      "hit_count": 18,
+      "screening_risk": "medium",
+      "rationale": "Adjacent career/learning-path systems (CareerMentorGraph, JobCannon skills graph, KG+LLM learning-path papers); no exact-name system in this query, but the domain is crowded with 'skills graph' terminology.",
+      "relevant_hits": [
+        {
+          "title": "The Skills Graph (JobCannon methodology)",
+          "url": "https://jobcannon.io/methodology/skills-graph"
+        },
+        {
+          "title": "Problem-Based Learning-Path Recommendations Through Integrating Knowledge Graphs and Large Language Models",
+          "url": "https://zenodo.org/records/11259529"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:00:00+00:00",
+      "term": "Skill-LLM",
+      "source": "web_search",
+      "query": "\"Skill-LLM\" skill extraction large language model",
+      "status": "ok",
+      "hit_count": 10,
+      "screening_risk": "high",
+      "final_risk": "high",
+      "rationale": "Herandi et al. (2024), 'Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction', arXiv 2410.12052, code github.com/herandy/Skill-LLM: same task (SkillSpan skill extraction with a fine-tuned LLM). Already cited by this repository.",
+      "relevant_hits": [
+        {
+          "title": "Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction",
+          "url": "https://arxiv.org/abs/2410.12052"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:00:00+00:00",
+      "term": "SkillLLM",
+      "source": "web_search",
+      "query": "\"SkillLLM\"",
+      "status": "ok",
+      "hit_count": 10,
+      "screening_risk": "high",
+      "final_risk": "high",
+      "rationale": "The unhyphenated string resolves to Skill-LLM (Herandi et al., 2024, same task); the internal name 'SkillLLM' is therefore not usable as a research name.",
+      "relevant_hits": [
+        {
+          "title": "Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction",
+          "url": "https://arxiv.org/pdf/2410.12052"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool",
+      "reverified_by_B5": "2026-11-18T07:10Z: independent re-search reproduced the same nearest hits"
+    },
+    {
+      "date_utc": "2026-11-17T21:00:00+00:00",
+      "term": "SkillGPT",
+      "source": "web_search",
+      "query": "\"SkillGPT\" skill extraction",
+      "status": "ok",
+      "hit_count": 21,
+      "screening_risk": "high",
+      "final_risk": "high",
+      "rationale": "Li, Kang & De Bie (2023), 'SkillGPT: a RESTful API service for skill extraction and standardization using a Large Language Model', arXiv 2304.11060, code github.com/aida-ugent/SkillGPT: same task.",
+      "relevant_hits": [
+        {
+          "title": "SkillGPT (arXiv 2304.11060)",
+          "url": "https://arxiv.org/pdf/2304.11060"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool"
+    },
+    {
+      "date_utc": "2026-11-17T21:05:00+00:00",
+      "term": "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence",
+      "source": "web_search",
+      "query": "\"Non-Regressive Skill Extraction\" graph-augmented learning path",
+      "status": "ok",
+      "hit_count": 0,
+      "screening_risk": "none",
+      "final_risk": "none",
+      "rationale": "No source uses the phrase 'Non-Regressive Skill Extraction'; results are unrelated learning-path / skill-graph papers and patents.",
+      "relevant_hits": [],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool"
+    },
+    {
+      "date_utc": "2026-11-17T21:06:00+00:00",
+      "term": "SkillGraph",
+      "source": "trademark_secondary",
+      "query": "SKILLGRAPH trademark USPTO registration (web search over trademark aggregators)",
+      "status": "partial: USPTO tmsearch not reachable programmatically (JS app; POST API returned 405; no headless browser available); EUIPO eSearch connection failed; Justia record returned 403 to the fetcher",
+      "hit_count": 1,
+      "screening_risk": "medium",
+      "final_risk": "medium",
+      "rationale": "An aggregator (Justia) lists a USPTO application SKILLGRAPHS, serial 99842770, class 35, status 'new application, not yet assigned to an examiner'. Not verified against TSDR. No SKILLGRAPH (singular) or SKILLGRAPHLM mark surfaced. A formal search by the user (tmsearch.uspto.gov, euipo.europa.eu/eSearch) is required before any public/commercial use.",
+      "relevant_hits": [
+        {
+          "title": "SKILLGRAPHS - Trademark Details (serial 99842770; unverified)",
+          "url": "https://trademarks.justia.com/998/42/skillgraphs-99842770.html"
+        }
+      ],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool"
+    },
+    {
+      "date_utc": "2026-11-17T21:06:00+00:00",
+      "term": "SkillGraphLM",
+      "source": "google_scholar",
+      "query": "https://scholar.google.com/scholar?q=%22SkillGraphLM%22",
+      "status": "not reachable: redirected to a Google sign-in/consent sync page (bot protection)",
+      "hit_count": null,
+      "screening_risk": "unknown",
+      "rationale": "Google Scholar cannot be queried programmatically from this host; OpenAlex, Semantic Scholar, Crossref, arXiv and the ACL Anthology bibliography were used as scholarly substitutes.",
+      "relevant_hits": [],
+      "recorded_by": "A6 (predecessor, previous session)",
+      "date_note": "date_utc is the predecessor's estimate (written before the clock was checked); the query was not time-stamped by the tool"
+    },
+    {
+      "date_utc": "2026-11-18T07:10:00+00:00",
+      "recorded_by": "B5",
+      "term": "SkillGraphLM",
+      "source": "web_search",
+      "query": "\"SkillGraphLM\"",
+      "status": "ok",
+      "hit_count": 0,
+      "screening_risk": "none",
+      "final_risk": "medium",
+      "rationale": "Exact string appears on no returned page (10 results). Results are the nearest names: SkillGraph (arXiv 2605.12039, RL for agents), HiSkill (arXiv 2607.25853), SkillDAG (EMNLP 2026 Findings, aclanthology 2026.findings-emnlp.1022), and a USPTO patent publication on a \"skill representation graph\" (US 12265939). Zero exact collisions, but the 10-letter prefix SkillGraph is occupied several times in the same field, so confusability with those works is medium.",
+      "relevant_hits": [
+        {
+          "title": "SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs",
+          "url": "https://arxiv.org/pdf/2605.12039"
+        },
+        {
+          "title": "HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs",
+          "url": "https://arxiv.org/pdf/2607.25853"
+        },
+        {
+          "title": "SkillDAG (EMNLP 2026 Findings)",
+          "url": "https://aclanthology.org/2026.findings-emnlp.1022.pdf"
+        },
+        {
+          "title": "Systems and methods for generation and traversal of a skill representation graph using machine learning (US patent 12265939)",
+          "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12265939"
+        }
+      ]
+    },
+    {
+      "date_utc": "2026-11-18T07:10:00+00:00",
+      "recorded_by": "B5",
+      "term": "SkillGraph-LM",
+      "source": "web_search",
+      "query": "\"SkillGraph-LM\" OR \"SkillGraph LM\" skill extraction learning path language model",
+      "status": "ok",
+      "hit_count": 0,
+      "screening_risk": "none",
+      "final_risk": "low",
+      "rationale": "No exact hit for either spelling. New nearest neighbour not found by the predecessor: SkillGraph-Service (arXiv 2605.01582, Le, Abel & Laforge, 2 May 2026, \"KG-First, LLM-Fallback: A Hybrid Microservice for Grounded Skill Search and Explanation\": ESCO/ROME/O*NET knowledge graph for competency-based education, verified by fetching the arXiv abstract page; no code link). Same domain (skills graph + education + LLM) as this thesis, so the \"SkillGraph\" prefix is used by a directly adjacent system.",
+      "relevant_hits": [
+        {
+          "title": "KG-First, LLM-Fallback: A Hybrid Microservice for Grounded Skill Search and Explanation (SkillGraph-Service)",
+          "url": "https://arxiv.org/abs/2605.01582"
+        },
+        {
+          "title": "Dynamic Skill Adaptation for Large Language Models",
+          "url": "https://arxiv.org/pdf/2412.19361"
+        },
+        {
+          "title": "SkillDAG: Self-Evolving Typed Skill Graphs for LLM Skill Selection at Scale",
+          "url": "https://arxiv.org/pdf/2606.03056"
+        }
+      ]
+    },
+    {
+      "date_utc": "2026-11-18T07:10:00+00:00",
+      "recorded_by": "B5",
+      "term": "SkillGraph",
+      "source": "web_search_scholarly",
+      "query": "SkillGraph arXiv skill graph LLM job skills learning path",
+      "status": "ok",
+      "hit_count": 10,
+      "screening_risk": "high",
+      "final_risk": "high",
+      "rationale": "Several papers are titled \"SkillGraph\": 2605.12039 (RL agents, May 2026), 2604.17503 (multi-agent topology), a tool-sequence paper and a dependency-aware retrieval paper (found by the arXiv/OpenAlex APIs in naming_audit_raw.json), plus SkillGraph-Service 2605.01582 (education) and JobCannon \"The Skills Graph\" (careers, ESCO/O*NET anchored, skill-gap and course recommendation). The bare name SkillGraph is heavily used.",
+      "relevant_hits": [
+        {
+          "title": "SkillGraph (RL for agents)",
+          "url": "https://arxiv.org/pdf/2605.12039"
+        },
+        {
+          "title": "SkillGraph-Service",
+          "url": "https://arxiv.org/abs/2605.01582"
+        },
+        {
+          "title": "The Skills Graph (JobCannon)",
+          "url": "https://jobcannon.io/methodology/skills-graph"
+        }
+      ]
+    },
+    {
+      "date_utc": "2026-11-18T07:10:00+00:00",
+      "recorded_by": "B5",
+      "term": "SkillGraphLM",
+      "source": "web_search_code_hubs",
+      "query": "\"SkillGraphLM\" site:github.com OR site:huggingface.co OR site:pypi.org",
+      "status": "ok",
+      "hit_count": 0,
+      "screening_risk": "none",
+      "final_risk": "low",
+      "rationale": "No repository, model or package named SkillGraphLM. Nearby registry names: PyPI skill-graphs (documentation-based skill graphs for AI agents), PyPI skills-graph (persist AI skills in Memgraph), PyPI skg (capability-token enforcement), Hugging Face paper pages for SkillGraph / SkillDAG / CaSKG (2608.25500). None is the exact name (the API-based PyPI/npm/GitHub/HF checks in naming_audit_raw.json agree).",
+      "relevant_hits": [
+        {
+          "title": "skill-graphs (PyPI)",
+          "url": "https://pypi.org/project/skill-graphs/"
+        },
+        {
+          "title": "skills-graph (PyPI)",
+          "url": "https://pypi.org/project/skills-graph/"
+        },
+        {
+          "title": "skg (PyPI)",
+          "url": "https://pypi.org/project/skg/"
+        }
+      ]
+    },
+    {
+      "date_utc": "2026-11-18T07:10:00+00:00",
+      "recorded_by": "B5",
+      "term": "SkillGraph",
+      "source": "web_search_products",
+      "query": "\"SkillGraph\" skill gap career learning path product company trademark",
+      "status": "ok",
+      "hit_count": 18,
+      "screening_risk": "high",
+      "final_risk": "high",
+      "rationale": "Product Hunt \"Skillgraph\" (career strategy platform, 2026; fetched: compares a user's skills with roles at target companies and shows what to develop next, early MVP); a \"SkillGraph+\" platform on smart-recruitment.netlify.app (4-year guided skill roadmaps, carries a trademark symbol on the page, owner not stated); \"Skill-Graph India\" initiative. \"skills graph\" is also a generic HR-tech category term (LinkedIn, Cornerstone, Coursera Career Graph, Workday). No trademark registry entry surfaced in web search (registries are not indexed).",
+      "relevant_hits": [
+        {
+          "title": "Skillgraph career strategy platform (Product Hunt)",
+          "url": "https://www.producthunt.com/products/skillgraph-career-strategy-platform"
+        },
+        {
+          "title": "SkillGraph+ (smart-recruitment)",
+          "url": "https://smart-recruitment.netlify.app/problems/problem-learning-chaos"
+        },
+        {
+          "title": "Skill-Graph India",
+          "url": "https://www.newsbytesapp.com/news/business/skill-graph-india-bridging-the-ai-skills-gap/tldr"
+        }
+      ]
+    },
+    {
+      "date_utc": "2026-11-18T07:10:00+00:00",
+      "recorded_by": "B5",
+      "term": "Skill-LLM",
+      "source": "web_search",
+      "query": "\"Skill-LLM\" OR \"SkillLLM\" OR \"SkillGPT\" skill extraction job postings large language model",
+      "status": "ok",
+      "hit_count": 10,
+      "screening_risk": "high",
+      "final_risk": "high",
+      "rationale": "Skill-LLM (Herandi et al., arXiv 2410.12052, Oct 2024; fine-tuned LLM for skill extraction evaluated on SkillSpan, code github.com/herandy/Skill-LLM) is the same task and dataset as this thesis. No separate \"SkillLLM\" or \"SkillGPT\" project surfaced in this query (SkillGPT, arXiv 2304.11060, is found by the arXiv/GitHub API checks).",
+      "relevant_hits": [
+        {
+          "title": "Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction",
+          "url": "https://arxiv.org/abs/2410.12052"
+        }
+      ]
+    },
+    {
+      "date_utc": "2026-11-18T07:10:00+00:00",
+      "recorded_by": "B5",
+      "term": "SkillGraph",
+      "source": "trademark_secondary",
+      "query": "SKILLGRAPHS Justia trademark record, fetched again",
+      "status": "partial: Justia returned HTTP 403 to the fetcher again; USPTO tmsearch / EUIPO eSearch / WIPO Global Brand DB are JS apps not reachable from this host",
+      "hit_count": null,
+      "screening_risk": "unknown",
+      "final_risk": "medium",
+      "rationale": "The predecessor's Justia listing (SKILLGRAPHS, serial 99842770, class 35, new application) could not be re-fetched, so it remains UNVERIFIED. Trademark clearance is a legal step this audit cannot perform: the user must run a formal search (USPTO TESS replacement tmsearch.uspto.gov, EUIPO eSearch plus, WIPO) before any commercial use of the name.",
+      "relevant_hits": [
+        {
+          "title": "SKILLGRAPHS (unverified aggregator listing)",
+          "url": "https://trademarks.justia.com/998/42/skillgraphs-99842770.html"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "SkillGraphLM": {
+      "max_risk": "medium",
+      "by_source": {
+        "arxiv": "none",
+        "openalex": "none",
+        "semantic_scholar": "none",
+        "dblp": "unknown",
+        "crossref": "none",
+        "github": "none",
+        "pypi": "none",
+        "npm": "none",
+        "hf_models": "none",
+        "hf_datasets": "none",
+        "hf_spaces": "none",
+        "acl_anthology": "none",
+        "web_search": "medium",
+        "web_search_code_hubs": "low",
+        "google_scholar": "unknown"
+      },
+      "unknown_sources": [
+        "dblp",
+        "google_scholar"
+      ]
+    },
+    "SkillGraph-LM": {
+      "max_risk": "low",
+      "by_source": {
+        "arxiv": "none",
+        "openalex": "none",
+        "semantic_scholar": "unknown",
+        "dblp": "unknown",
+        "crossref": "none",
+        "github": "none",
+        "pypi": "none",
+        "npm": "none",
+        "hf_models": "none",
+        "hf_datasets": "none",
+        "hf_spaces": "none",
+        "acl_anthology": "none",
+        "web_search": "low"
+      },
+      "unknown_sources": [
+        "semantic_scholar",
+        "dblp"
+      ]
+    },
+    "SkillGraph LM": {
+      "max_risk": "none",
+      "by_source": {
+        "arxiv": "none",
+        "openalex": "none",
+        "semantic_scholar": "none",
+        "dblp": "unknown",
+        "crossref": "none",
+        "github": "none",
+        "pypi": "none",
+        "npm": "none",
+        "hf_models": "none",
+        "hf_datasets": "none",
+        "hf_spaces": "none",
+        "acl_anthology": "none",
+        "web_search": "none"
+      },
+      "unknown_sources": [
+        "dblp"
+      ]
+    },
+    "SkillGraph": {
+      "max_risk": "high",
+      "by_source": {
+        "arxiv": "high",
+        "openalex": "high",
+        "semantic_scholar": "high",
+        "dblp": "unknown",
+        "crossref": "high",
+        "github": "high",
+        "pypi": "high",
+        "npm": "high",
+        "hf_models": "none",
+        "hf_datasets": "low",
+        "hf_spaces": "low",
+        "acl_anthology": "low",
+        "web_search": "high",
+        "web_search_products": "high",
+        "web_search_scholarly": "high",
+        "web_search_domain": "medium",
+        "trademark_secondary": "medium"
+      },
+      "unknown_sources": [
+        "dblp"
+      ]
+    },
+    "Skill-LLM": {
+      "max_risk": "high",
+      "by_source": {
+        "arxiv": "high",
+        "openalex": "high",
+        "semantic_scholar": "unknown",
+        "dblp": "unknown",
+        "crossref": "none",
+        "github": "none",
+        "pypi": "none",
+        "npm": "medium",
+        "hf_models": "high",
+        "hf_datasets": "none",
+        "hf_spaces": "none",
+        "acl_anthology": "none",
+        "web_search": "high"
+      },
+      "unknown_sources": [
+        "semantic_scholar",
+        "dblp"
+      ]
+    },
+    "SkillLLM": {
+      "max_risk": "high",
+      "by_source": {
+        "arxiv": "none",
+        "openalex": "none",
+        "semantic_scholar": "unknown",
+        "dblp": "unknown",
+        "crossref": "none",
+        "github": "high",
+        "pypi": "none",
+        "npm": "none",
+        "hf_models": "high",
+        "hf_datasets": "none",
+        "hf_spaces": "none",
+        "acl_anthology": "none",
+        "web_search": "high"
+      },
+      "unknown_sources": [
+        "semantic_scholar",
+        "dblp"
+      ]
+    },
+    "SkillGPT": {
+      "max_risk": "high",
+      "by_source": {
+        "arxiv": "high",
+        "openalex": "none",
+        "semantic_scholar": "high",
+        "dblp": "unknown",
+        "crossref": "none",
+        "github": "high",
+        "pypi": "none",
+        "npm": "none",
+        "hf_models": "none",
+        "hf_datasets": "none",
+        "hf_spaces": "high",
+        "acl_anthology": "none",
+        "web_search": "high"
+      },
+      "unknown_sources": [
+        "dblp"
+      ]
+    },
+    "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence": {
+      "max_risk": "none",
+      "by_source": {
+        "arxiv": "none",
+        "openalex": "none",
+        "semantic_scholar": "unknown",
+        "dblp": "unknown",
+        "crossref": "none",
+        "acl_anthology": "none",
+        "web_search": "none"
+      },
+      "unknown_sources": [
+        "semantic_scholar",
+        "dblp"
+      ]
+    }
+  }
+}

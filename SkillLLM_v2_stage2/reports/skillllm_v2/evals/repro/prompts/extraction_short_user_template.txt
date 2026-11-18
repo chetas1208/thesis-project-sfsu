@@ -1,0 +1,4 @@
+Output {{"skills":[{{"text":"<exact span>","label":"HARD_SKILL|SOFT_SKILL"}}]}}
+
+Text:
+{text}

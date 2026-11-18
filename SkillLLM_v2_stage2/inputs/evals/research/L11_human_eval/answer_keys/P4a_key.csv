@@ -1,0 +1,81 @@
+item_id,course_id,prereq
+P4a-0001,web-019,Node.js
+P4a-0002,sec-009,Security Operations
+P4a-0003,sec-006,Network Security
+P4a-0004,sec-010,Cybersecurity
+P4a-0005,devops-017,CI/CD
+P4a-0006,web-018,React
+P4a-0007,cloud-014,Cloud Architecture
+P4a-0008,ml-015,Python
+P4a-0009,ml-020,Deep Learning
+P4a-0010,ml-009,Machine Learning
+P4a-0011,ml-010,Machine Learning
+P4a-0012,data-016,Python
+P4a-0013,devops-006,Git
+P4a-0014,prog-025,Data Structures
+P4a-0015,ml-009,Python
+P4a-0016,devops-011,Monitoring
+P4a-0017,sec-006,Linux
+P4a-0018,data-010,Python
+P4a-0019,sec-007,Cybersecurity
+P4a-0020,devops-016,Kubernetes
+P4a-0021,ml-013,Machine Learning
+P4a-0022,devops-015,Site Reliability Engineering
+P4a-0023,cloud-011,Linux
+P4a-0024,cloud-012,Computer Networking
+P4a-0025,ml-014,Deep Learning
+P4a-0026,cloud-007,Microsoft Azure
+P4a-0027,ml-014,PyTorch
+P4a-0028,ml-028,Python
+P4a-0029,data-013,SQL
+P4a-0030,prog-012,C++
+P4a-0031,ml-016,Python
+P4a-0032,ml-025,Machine Learning
+P4a-0033,prog-002,Python
+P4a-0034,web-020,JavaScript
+P4a-0035,ml-018,Prompt Engineering
+P4a-0036,cloud-009,Python
+P4a-0037,web-005,React
+P4a-0038,prog-007,Java
+P4a-0039,ml-024,Machine Learning
+P4a-0040,prog-004,Data Structures
+P4a-0041,devops-001,Linux
+P4a-0042,devops-008,Kubernetes
+P4a-0043,devops-012,Monitoring
+P4a-0044,ml-025,Pandas
+P4a-0045,sec-008,Cybersecurity
+P4a-0046,ml-002,Linear Algebra
+P4a-0047,ml-005,Machine Learning
+P4a-0048,ml-006,Machine Learning
+P4a-0049,cloud-012,Cloud Computing
+P4a-0050,data-005,SQL
+P4a-0051,web-007,JavaScript
+P4a-0052,ml-022,Machine Learning
+P4a-0053,prog-009,JavaScript
+P4a-0054,data-030,Python
+P4a-0055,data-010,SQL
+P4a-0056,data-004,SQL
+P4a-0057,prog-015,Linux
+P4a-0058,devops-007,Git
+P4a-0059,ml-013,Python
+P4a-0060,web-015,JavaScript
+P4a-0061,data-011,Python
+P4a-0062,cloud-009,Google Cloud Platform
+P4a-0063,data-003,SQL
+P4a-0064,devops-005,Kubernetes
+P4a-0065,ml-021,Machine Learning
+P4a-0066,ml-003,Linear Algebra
+P4a-0067,sec-014,Docker
+P4a-0068,ml-008,Machine Learning
+P4a-0069,data-009,SQL
+P4a-0070,web-008,JavaScript
+P4a-0071,web-002,CSS
+P4a-0072,data-023,Probability
+P4a-0073,ml-021,Docker
+P4a-0074,devops-014,Kubernetes
+P4a-0075,data-024,Statistics
+P4a-0076,ml-017,Transformers
+P4a-0077,web-003,JavaScript
+P4a-0078,cloud-010,Cloud Computing
+P4a-0079,web-013,REST APIs
+P4a-0080,prog-003,Python

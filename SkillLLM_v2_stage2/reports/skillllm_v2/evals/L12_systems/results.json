@@ -1,0 +1,1666 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "utc": "2026-11-18T07:42:00+00:00",
+    "git": {
+      "commit": "54aab906d548d871ad855bdbb09b7eea18ddf0d5",
+      "branch": "main",
+      "dirty": true
+    },
+    "seed": 42,
+    "argv": [
+      "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/systems.py"
+    ],
+    "python": "3.13.12",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "host": "srva",
+    "pid": 2516996,
+    "layer": "L12_systems",
+    "smoke": false,
+    "n_boot": 2000
+  },
+  "records": [
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "rerun_output_identity_rate",
+      "value": 1.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+          "sha256": "ac5917d0267670b04e26f41b7deffdfc7b883d8cceb7b418541984aaf548bf44",
+          "bytes": 836367
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "stored predictions remain the official anchor artifact (coordinator ruling); the re-run quantifies reproducibility"
+      ],
+      "details": {
+        "definition": "share of docs whose ordered (surface_form, raw label) list from the J1 re-run equals the stored file",
+        "differing_ids": [],
+        "parse_errors": 0
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "rerun_spanset_identity_rate_legacy_offsets",
+      "value": 1.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+          "sha256": "ac5917d0267670b04e26f41b7deffdfc7b883d8cceb7b418541984aaf548bf44",
+          "bytes": 836367
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "stored predictions remain the official anchor artifact (coordinator ruling); the re-run quantifies reproducibility"
+      ],
+      "details": {
+        "definition": "share of docs whose J1 (start,end,label) set, re-resolved with the legacy find_offsets, equals the stored set"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "rerun_spanset_identity_rate_current_offsets",
+      "value": 0.9969199178644764,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+          "sha256": "ac5917d0267670b04e26f41b7deffdfc7b883d8cceb7b418541984aaf548bf44",
+          "bytes": 836367
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "stored predictions remain the official anchor artifact (coordinator ruling); the re-run quantifies reproducibility"
+      ],
+      "details": {
+        "definition": "share of docs whose J1 (start,end,label) set as written by today's extractor equals the stored set"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "exact_span_f1_rerun_current_offsets",
+      "value": 0.6714000443754161,
+      "ci_low": 0.6473228100117138,
+      "ci_high": 0.6958515782046056,
+      "ci_method": "document bootstrap",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+          "sha256": "ac5917d0267670b04e26f41b7deffdfc7b883d8cceb7b418541984aaf548bf44",
+          "bytes": 836367
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "stored predictions remain the official anchor artifact (coordinator ruling); the re-run quantifies reproducibility"
+      ],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "exact_span_f1_rerun_legacy_offsets",
+      "value": 0.6700687818948303,
+      "ci_low": 0.6464036907359888,
+      "ci_high": 0.6944333668307777,
+      "ci_method": "document bootstrap",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+          "sha256": "ac5917d0267670b04e26f41b7deffdfc7b883d8cceb7b418541984aaf548bf44",
+          "bytes": 836367
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "stored predictions remain the official anchor artifact (coordinator ruling); the re-run quantifies reproducibility"
+      ],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "exact_span_f1_stored",
+      "value": 0.6700687818948303,
+      "ci_low": 0.6464036907359888,
+      "ci_high": 0.6944333668307777,
+      "ci_method": "document bootstrap",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+          "sha256": "ac5917d0267670b04e26f41b7deffdfc7b883d8cceb7b418541984aaf548bf44",
+          "bytes": 836367
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "stored predictions remain the official anchor artifact (coordinator ruling); the re-run quantifies reproducibility"
+      ],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "exact_span_f1_delta_rerun_current_minus_stored",
+      "value": 0.001331262480585793,
+      "ci_low": 0.0,
+      "ci_high": 0.0030329947044932604,
+      "ci_method": "paired document bootstrap",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl",
+          "sha256": "ac5917d0267670b04e26f41b7deffdfc7b883d8cceb7b418541984aaf548bf44",
+          "bytes": 836367
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "p_boot": 0.09095452273863068,
+        "p_ar": 0.25,
+        "n_units_differ": 3,
+        "interpretation": "offset-code drift + any decoding nondeterminism"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor_base",
+      "metric": "n_params",
+      "value": 24011361280.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "model",
+      "split": "n/a",
+      "dataset": "model files",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "models/mistral-small-3.1-24b-instruct-2503/model.safetensors.index.json",
+          "sha256": "664a049408e8694e5867312145b74b1971ad5472061a1f176e0806dec9b3d21c",
+          "bytes": 57907
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "by_group": {
+          "language_model": 23572403200,
+          "multi_modal_projector": 35652608,
+          "vision_tower": 403305472,
+          "total": 24011361280
+        },
+        "source": "safetensors headers of the 10 HF shards (bf16 checkpoint)",
+        "note": "Mistral-Small-3.1 is multimodal; only the language model is used for extraction"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor_base",
+      "metric": "n_params_language_model",
+      "value": 23572403200.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "model",
+      "split": "n/a",
+      "dataset": "model files",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "models/mistral-small-3.1-24b-instruct-2503/model.safetensors.index.json",
+          "sha256": "664a049408e8694e5867312145b74b1971ad5472061a1f176e0806dec9b3d21c",
+          "bytes": 57907
+        }
+      ],
+      "caveats": [],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor_lora",
+      "metric": "n_params_trainable",
+      "value": 92405760.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "model",
+      "split": "n/a",
+      "dataset": "adapter files",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/mistral_lora/model/adapter_model.safetensors",
+          "sha256": "36ff344f684844a6a7e33187583b6b5181542487c99e2e065cd0b22a2f20d29c",
+          "bytes": 369706976
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "fraction_of_base": 0.0038484182101315664,
+        "adapter_config": {
+          "alpha_pattern": {},
+          "auto_mapping": null,
+          "base_model_name_or_path": "models/mistral-small-3.1-24b-instruct-2503",
+          "bias": "none",
+          "fan_in_fan_out": false,
+          "inference_mode": true,
+          "init_lora_weights": true,
+          "layer_replication": null,
+          "layers_pattern": null,
+          "layers_to_transform": null,
+          "loftq_config": {},
+          "lora_alpha": 32,
+          "lora_dropout": 0.05,
+          "megatron_config": null,
+          "megatron_core": "megatron.core",
+          "modules_to_save": null,
+          "peft_type": "LORA",
+          "r": 16,
+          "rank_pattern": {},
+          "revision": null,
+          "target_modules": ".*language_model.*(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)$",
+          "task_type": "CAUSAL_LM",
+          "use_dora": false,
+          "use_rslora": false
+        }
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "base_model_hf_shards",
+      "metric": "disk_gb",
+      "value": 48.02280056,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "artifact",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "bytes": 48022800560,
+        "note": ""
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "base_model_dir_total",
+      "metric": "disk_gb",
+      "value": 96.077777512,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "artifact",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "bytes": 96077777512,
+        "note": "dir also holds a 48 GB consolidated.safetensors (Mistral-native format) not read by the HF loader"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "lora_adapter",
+      "metric": "disk_gb",
+      "value": 0.369706976,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "artifact",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "bytes": 369706976,
+        "note": ""
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "span_verifier_joblib",
+      "metric": "disk_gb",
+      "value": 0.00128106,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "artifact",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "bytes": 1281060,
+        "note": ""
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "token_lookup_table",
+      "metric": "disk_gb",
+      "value": 0.000102035,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "artifact",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "bytes": 102035,
+        "note": ""
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "bert_fair_model_pt",
+      "metric": "disk_gb",
+      "value": 0.43331219,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "artifact",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "bytes": 433312190,
+        "note": ""
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "gliner_medium_v2.1_cache",
+      "metric": "disk_gb",
+      "value": 1.561548538,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "artifact",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "bytes": 1561548538,
+        "note": ""
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "span_verifier",
+      "metric": "n_params",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "model",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "none",
+      "status": "not_available",
+      "reason": "the safe wrapper's SpanVerifier (src/skillllm_v2/verify/span_verifier.py) is rule-based (confidence threshold + generic-phrase / length rules); the TF-IDF+LR joblib in artifacts/skillllm_v2/span_verifier/model/verifier_model.joblib is a separate artifact, its size is reported as disk_gb",
+      "provenance": [],
+      "caveats": [],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "taxonomy_reranker",
+      "metric": "n_params",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "model",
+      "split": "n/a",
+      "dataset": "files",
+      "direction": "none",
+      "status": "not_available",
+      "reason": "never trained: artifacts/skillllm_v2/taxonomy_reranker/metrics.json training_mode=retrieval_only (placeholder README)",
+      "provenance": [],
+      "caveats": [],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "latency_p95",
+      "value": 16.66135635094249,
+      "ci_low": 15.15482381619512,
+      "ci_high": 18.386348913307828,
+      "ci_method": "bootstrap of the 95th percentile over docs (1000)",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "shared host (20 cores): load average was NOT recorded in the J1 snapshots (recorded 35.3 / 35.2 / 34.9 median in the later J3/J4/J6 runs, ~38 in the coordinator's Progress.md notes); bitsandbytes 4-bit decoding is CPU-launch-bound, so latency depends on host load",
+        "batch size 1, greedy, max_new_tokens 512, logprob recording on (output_scores), one RTX 3090"
+      ],
+      "details": {
+        "headline": true,
+        "unit_of_value": "seconds per document",
+        "p50": 5.7545747072435915,
+        "p99": 28.508199134380526,
+        "mean": 7.0395538951088605,
+        "per_predicted_span": {
+          "n": 901,
+          "mean": 3.3196564050177484,
+          "p50": 3.2289764129091054,
+          "p95": 4.574893196579069,
+          "p99": 5.0564914317801595,
+          "max": 6.401316674891859,
+          "sum": 2991.0104209209912
+        },
+        "throughput_docs_per_hour": 511.3960420846141,
+        "gen_tokens_per_second": {
+          "n": 974,
+          "mean": 5.816923602545282,
+          "p50": 5.818540630663559,
+          "p95": 6.480639256182522,
+          "p99": 6.795340170172593,
+          "max": 7.058913159964811,
+          "sum": 5665.683588879105
+        },
+        "gpu_sampled_docs_shared": 0
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "peak_vram_gb",
+      "value": 18.484297728,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "batch size 1, greedy, max_new_tokens 512, logprob recording on (output_scores), one RTX 3090"
+      ],
+      "details": {
+        "headline": true,
+        "definition": "torch.cuda.max_memory_reserved over the J1 run (1e9 bytes); nvidia-smi adds ~0.3-0.5 GB CUDA context",
+        "peak_allocated_gb": 16.3162112,
+        "alloc_after_load_gb": [
+          15.813356032
+        ]
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "cpu_peak_rss_gb",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "not_available",
+      "reason": "host process RSS was not recorded by the anchor GPU jobs (gpu_anchor_infer.py logs CUDA memory and nvidia-smi snapshots only); not re-measured to avoid a second 4-bit model load",
+      "provenance": [],
+      "caveats": [],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "latency_p50",
+      "value": 5.7545747072435915,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "shared host (20 cores): load average was NOT recorded in the J1 snapshots (recorded 35.3 / 35.2 / 34.9 median in the later J3/J4/J6 runs, ~38 in the coordinator's Progress.md notes); bitsandbytes 4-bit decoding is CPU-launch-bound, so latency depends on host load",
+        "batch size 1, greedy, max_new_tokens 512, logprob recording on (output_scores), one RTX 3090"
+      ],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "latency_p99",
+      "value": 28.508199134380526,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "shared host (20 cores): load average was NOT recorded in the J1 snapshots (recorded 35.3 / 35.2 / 34.9 median in the later J3/J4/J6 runs, ~38 in the coordinator's Progress.md notes); bitsandbytes 4-bit decoding is CPU-launch-bound, so latency depends on host load",
+        "batch size 1, greedy, max_new_tokens 512, logprob recording on (output_scores), one RTX 3090"
+      ],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "seconds_per_predicted_span",
+      "value": 3.0582183290972482,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "shared host (20 cores): load average was NOT recorded in the J1 snapshots (recorded 35.3 / 35.2 / 34.9 median in the later J3/J4/J6 runs, ~38 in the coordinator's Progress.md notes); bitsandbytes 4-bit decoding is CPU-launch-bound, so latency depends on host load",
+        "batch size 1, greedy, max_new_tokens 512, logprob recording on (output_scores), one RTX 3090"
+      ],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "throughput_docs_per_hour_per_gpu",
+      "value": 511.3960420846141,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "shared host (20 cores): load average was NOT recorded in the J1 snapshots (recorded 35.3 / 35.2 / 34.9 median in the later J3/J4/J6 runs, ~38 in the coordinator's Progress.md notes); bitsandbytes 4-bit decoding is CPU-launch-bound, so latency depends on host load",
+        "batch size 1, greedy, max_new_tokens 512, logprob recording on (output_scores), one RTX 3090"
+      ],
+      "details": {}
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "decode_seconds_per_generated_token",
+      "value": 0.16689991686509664,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl",
+          "sha256": "b4c75aa87bc9ce70267af4ceebab06b831ca356ff3fe5c41740c8d348a5cf9c1",
+          "bytes": 1552402
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/DONE.json",
+          "sha256": "b6b7a064b85426c92f383a8fb21ef82adcbe4643a4fc142a2c51dd4946ed0c9a",
+          "bytes": 4167
+        }
+      ],
+      "caveats": [
+        "shared host (20 cores): load average was NOT recorded in the J1 snapshots (recorded 35.3 / 35.2 / 34.9 median in the later J3/J4/J6 runs, ~38 in the coordinator's Progress.md notes); bitsandbytes 4-bit decoding is CPU-launch-bound, so latency depends on host load",
+        "batch size 1, greedy, max_new_tokens 512, logprob recording on (output_scores), one RTX 3090"
+      ],
+      "details": {
+        "model": "OLS latency = a + b * n_generated_tokens over J1 docs",
+        "intercept_s": 0.0970999610335063,
+        "r2": 0.9936889993946001,
+        "mean_generated_tokens": 41.596509240246405
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "qlora_v4_adapter_prior_run",
+      "metric": "mean_seconds_per_doc",
+      "value": 4.584249090348039,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/qlora_loop_v4_eval/timing_segments.jsonl",
+          "sha256": "5cde9b371272df40994371eefa19ae4d350fbc75173299f1e6ca882375d117cd",
+          "bytes": 239
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "peak_alloc_gb": 16.3162112,
+        "peak_reserved_gb": 18.482200576,
+        "note": "same base + an r=16 adapter, same decoding path with logprobs, earlier quieter host"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "token_lookup",
+      "metric": "latency_p95",
+      "value": 0.00018068663775920867,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_token_lookup/predictions.jsonl",
+          "sha256": "448df7d0bc8903156e5c7e59e4156a5403bfabfb0e8ad83d839f7100eb485449",
+          "bytes": 1674460
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_token_lookup/DONE.json",
+          "sha256": "469b52a67d435780f3160c93f94075b6beb7ccd2140bf9b0da118ba7eba0c4a3",
+          "bytes": 1687
+        }
+      ],
+      "caveats": [
+        "CPU, batch 1, guardrails-pinned threads on a shared host"
+      ],
+      "details": {
+        "device": "cpu",
+        "p50": 5.6432560086250305e-05,
+        "p99": 0.00031413277145475105,
+        "peak_rss_gb": 0.04182016,
+        "peak_rss_source": "fresh-process measurement, 100 docs",
+        "stage_latency_seconds": null,
+        "n_params": null
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "gliner_zeroshot",
+      "metric": "latency_p95",
+      "value": 2.0842811935115604,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_gliner_zeroshot/predictions.jsonl",
+          "sha256": "363b6f6ac6606489a6b130e194202fdf1ca202888fcc8569b3dddb2f4165508a",
+          "bytes": 292922
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_gliner_zeroshot/DONE.json",
+          "sha256": "609afd23a7eb6309489cf0661beee769aca2a2f91e7eaf14142fda72fb2ef890",
+          "bytes": 1571
+        }
+      ],
+      "caveats": [
+        "CPU, batch 1, guardrails-pinned threads on a shared host"
+      ],
+      "details": {
+        "device": "cpu",
+        "p50": 0.9298462390433997,
+        "p99": 2.7563152868254033,
+        "peak_rss_gb": 2.407677952,
+        "peak_rss_source": "fresh-process measurement, 100 docs",
+        "stage_latency_seconds": null,
+        "n_params": 195175936
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "bert_fair",
+      "metric": "latency_p95",
+      "value": 0.3394159665796903,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_bert_fair/predictions.jsonl",
+          "sha256": "93eb4c52ef44df2e65d2af4741b0cb44ab4fb53d59d9e16e1d77bdee2b0f0a5f",
+          "bytes": 780435
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_bert_fair/DONE.json",
+          "sha256": "f8fc5ae6a9936b9f2d6c24d78ee2755fa149f20433f87b454112cb2029f36937",
+          "bytes": 1590
+        }
+      ],
+      "caveats": [
+        "CPU, batch 1, guardrails-pinned threads on a shared host"
+      ],
+      "details": {
+        "device": "cpu",
+        "p50": 0.19779718620702624,
+        "p99": 0.4744603013712911,
+        "peak_rss_gb": 1.56583936,
+        "peak_rss_source": "test974 job",
+        "stage_latency_seconds": null,
+        "n_params": 108314886
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper",
+      "metric": "latency_p95",
+      "value": 1.4430592761375007,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json",
+          "sha256": "b2e6732b6a212fd3880bb047c15bb9cea64d33fc1e7f133f8469474c87e700f0",
+          "bytes": 3580
+        }
+      ],
+      "caveats": [
+        "CPU, batch 1, guardrails-pinned threads on a shared host",
+        "wrapper latency EXCLUDES the anchor LLM call"
+      ],
+      "details": {
+        "device": "cpu",
+        "p50": 0.8063344950787723,
+        "p99": 2.049601837289519,
+        "peak_rss_gb": 2.410029056,
+        "peak_rss_source": "fresh-process measurement, 100 docs",
+        "stage_latency_seconds": {
+          "gliner": {
+            "n": 974,
+            "mean": 0.7941156712397015,
+            "p50": 0.7117971507832408,
+            "p95": 1.300034133857116,
+            "p99": 1.9393462054897088,
+            "max": 3.2462473679333925,
+            "sum": 773.4686637874693
+          },
+          "dictionary": {
+            "n": 974,
+            "mean": 0.014950399390790894,
+            "p50": 0.011327221058309078,
+            "p95": 0.04242683495394884,
+            "p99": 0.06651902625337239,
+            "max": 0.12375935399904847,
+            "sum": 14.561689006630331
+          },
+          "merger": {
+            "n": 974,
+            "mean": 0.000160735311346163,
+            "p50": 9.47355292737484e-05,
+            "p95": 0.00021228883415460524,
+            "p99": 0.003177099647000432,
+            "max": 0.003605789039283991,
+            "sum": 0.15655619325116277
+          },
+          "boundary_refiner": {
+            "n": 974,
+            "mean": 0.012872506277750436,
+            "p50": 0.012203743448480964,
+            "p95": 0.01843805611133575,
+            "p99": 0.022669065818190573,
+            "max": 0.038707918021827936,
+            "sum": 12.537821114528924
+          },
+          "verifier": {
+            "n": 974,
+            "mean": 8.69677448932089e-05,
+            "p50": 5.510426126420498e-05,
+            "p95": 0.0001000959891825914,
+            "p99": 0.0007814037287607436,
+            "max": 0.003166475798934698,
+            "sum": 0.08470658352598548
+          },
+          "calibrator": {
+            "n": 974,
+            "mean": 1.214364652562068e-05,
+            "p50": 8.347444236278534e-06,
+            "p95": 1.6050762496888638e-05,
+            "p99": 2.3587746545672394e-05,
+            "max": 0.0030443440191447735,
+            "sum": 0.011827911715954542
+          },
+          "linker": {
+            "n": 974,
+            "mean": 0.06402412362614728,
+            "p50": 0.05524208559654653,
+            "p95": 0.18335625061299646,
+            "p99": 0.3111146787088364,
+            "max": 0.6303495359607041,
+            "sum": 62.35949641186744
+          }
+        },
+        "n_params": null
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper:gliner",
+      "metric": "stage_latency_mean_s",
+      "value": 0.7941156712397015,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json",
+          "sha256": "b2e6732b6a212fd3880bb047c15bb9cea64d33fc1e7f133f8469474c87e700f0",
+          "bytes": 3580
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "p50": 0.7117971507832408,
+        "p95": 1.300034133857116,
+        "p99": 1.9393462054897088,
+        "sum_s": 773.4686637874693
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper:dictionary",
+      "metric": "stage_latency_mean_s",
+      "value": 0.014950399390790894,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json",
+          "sha256": "b2e6732b6a212fd3880bb047c15bb9cea64d33fc1e7f133f8469474c87e700f0",
+          "bytes": 3580
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "p50": 0.011327221058309078,
+        "p95": 0.04242683495394884,
+        "p99": 0.06651902625337239,
+        "sum_s": 14.561689006630331
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper:merger",
+      "metric": "stage_latency_mean_s",
+      "value": 0.000160735311346163,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json",
+          "sha256": "b2e6732b6a212fd3880bb047c15bb9cea64d33fc1e7f133f8469474c87e700f0",
+          "bytes": 3580
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "p50": 9.47355292737484e-05,
+        "p95": 0.00021228883415460524,
+        "p99": 0.003177099647000432,
+        "sum_s": 0.15655619325116277
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper:boundary_refiner",
+      "metric": "stage_latency_mean_s",
+      "value": 0.012872506277750436,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json",
+          "sha256": "b2e6732b6a212fd3880bb047c15bb9cea64d33fc1e7f133f8469474c87e700f0",
+          "bytes": 3580
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "p50": 0.012203743448480964,
+        "p95": 0.01843805611133575,
+        "p99": 0.022669065818190573,
+        "sum_s": 12.537821114528924
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper:verifier",
+      "metric": "stage_latency_mean_s",
+      "value": 8.69677448932089e-05,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json",
+          "sha256": "b2e6732b6a212fd3880bb047c15bb9cea64d33fc1e7f133f8469474c87e700f0",
+          "bytes": 3580
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "p50": 5.510426126420498e-05,
+        "p95": 0.0001000959891825914,
+        "p99": 0.0007814037287607436,
+        "sum_s": 0.08470658352598548
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper:calibrator",
+      "metric": "stage_latency_mean_s",
+      "value": 1.214364652562068e-05,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json",
+          "sha256": "b2e6732b6a212fd3880bb047c15bb9cea64d33fc1e7f133f8469474c87e700f0",
+          "bytes": 3580
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "p50": 8.347444236278534e-06,
+        "p95": 1.6050762496888638e-05,
+        "p99": 2.3587746545672394e-05,
+        "sum_s": 0.011827911715954542
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper:linker",
+      "metric": "stage_latency_mean_s",
+      "value": 0.06402412362614728,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/DONE.json",
+          "sha256": "b2e6732b6a212fd3880bb047c15bb9cea64d33fc1e7f133f8469474c87e700f0",
+          "bytes": 3580
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "p50": 0.05524208559654653,
+        "p95": 0.18335625061299646,
+        "p99": 0.3111146787088364,
+        "sum_s": 62.35949641186744
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "token_lookup",
+      "metric": "rerun_spanset_identity_rate",
+      "value": 1.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/bert_baseline/predictions.jsonl",
+          "sha256": "8f7145b6096a7971fd0b918ccd9c9ab86ba70cae94ae0c9620ca25d1203f0ecf",
+          "bytes": 4519049
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_token_lookup/predictions.jsonl",
+          "sha256": "448df7d0bc8903156e5c7e59e4156a5403bfabfb0e8ad83d839f7100eb485449",
+          "bytes": 1674460
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "definition": "share of docs whose re-run (start,end,label) set equals the stored artifact"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "gliner_zeroshot",
+      "metric": "rerun_spanset_identity_rate",
+      "value": 1.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/gliner_baseline/predictions.jsonl",
+          "sha256": "743403d3fc8dd36d3aca5d975298bf2cb9049122d8ff0982714e2a90465ab4c1",
+          "bytes": 620477
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_gliner_zeroshot/predictions.jsonl",
+          "sha256": "363b6f6ac6606489a6b130e194202fdf1ca202888fcc8569b3dddb2f4165508a",
+          "bytes": 292922
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "definition": "share of docs whose re-run (start,end,label) set equals the stored artifact"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "safe_wrapper",
+      "metric": "rerun_spanset_identity_rate",
+      "value": 0.9938398357289527,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 974,
+      "unit": "document",
+      "split": "test",
+      "dataset": "SkillSpan(HF) test, 974 gold-bearing docs",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/safe_wrapper/predictions.jsonl",
+          "sha256": "945e748c0ba0bccea36ec37e563a327692f0923a23fd99cbaa2d1ce9bb3f65cf",
+          "bytes": 2645859
+        },
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/test974_safe_wrapper/predictions.jsonl",
+          "sha256": "20c34995e73d8e629756c910d6ff9bf08f2e1cc200fd30b506d65ca9dfe3c4ce",
+          "bytes": 2939706
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "definition": "share of docs whose re-run (start,end,label) set equals the stored artifact"
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "bert_fair:bert-base-cased_s42",
+      "metric": "train_seconds",
+      "value": 545.4656976619735,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "run",
+      "split": "train",
+      "dataset": "SkillSpan train (4800) + dev selection",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/bert_fair/runs/bert-base-cased_s42/DONE.json",
+          "sha256": "b4dd696be2f99b33ff53f5ffef8ae223530299dddc99b3b96058fc82fb3983e6",
+          "bytes": 1807
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "peak_alloc_gb_train": 3.672589824,
+        "epochs_run": 20,
+        "best_epoch": 20,
+        "n_params": 108314886,
+        "test_predict_seconds_3569_docs_batch64": 2.9521389580331743
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "bert_fair:bert-base-cased_s43",
+      "metric": "train_seconds",
+      "value": 554.3594556599855,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "run",
+      "split": "train",
+      "dataset": "SkillSpan train (4800) + dev selection",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/bert_fair/runs/bert-base-cased_s43/DONE.json",
+          "sha256": "514960d053c5ebc22a3fd6687fd9afc0efe3b77e9e3b878f9ecc8c860a900760",
+          "bytes": 1807
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "peak_alloc_gb_train": 3.680146944,
+        "epochs_run": 20,
+        "best_epoch": 20,
+        "n_params": 108314886,
+        "test_predict_seconds_3569_docs_batch64": 2.8961131093092263
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "bert_fair:bert-base-cased_s44",
+      "metric": "train_seconds",
+      "value": 544.5388849014416,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "run",
+      "split": "train",
+      "dataset": "SkillSpan train (4800) + dev selection",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/bert_fair/runs/bert-base-cased_s44/DONE.json",
+          "sha256": "e7a6ac44394089573d1b7252ef1d441c59e74acc1768d5c1b3d380da9972a7ba",
+          "bytes": 1804
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "peak_alloc_gb_train": 3.68768256,
+        "epochs_run": 20,
+        "best_epoch": 17,
+        "n_params": 108314886,
+        "test_predict_seconds_3569_docs_batch64": 2.8722869507037103
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "bert_fair:jjzha__jobbert-base-cased_s42",
+      "metric": "train_seconds",
+      "value": 533.4459002041258,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "run",
+      "split": "train",
+      "dataset": "SkillSpan train (4800) + dev selection",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/bert_fair/runs/jjzha__jobbert-base-cased_s42/DONE.json",
+          "sha256": "8fa9aa17f8326506ac9cc09dae76296278f896f110ea766b4d03afa9d14c98dd",
+          "bytes": 1823
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "peak_alloc_gb_train": 3.67303936,
+        "epochs_run": 20,
+        "best_epoch": 19,
+        "n_params": 108314886,
+        "test_predict_seconds_3569_docs_batch64": 2.8711935337632895
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "bert_fair:jjzha__jobbert-base-cased_s43",
+      "metric": "train_seconds",
+      "value": 544.5987809472717,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "run",
+      "split": "train",
+      "dataset": "SkillSpan train (4800) + dev selection",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/bert_fair/runs/jjzha__jobbert-base-cased_s43/DONE.json",
+          "sha256": "07ef6c88ed15eaab3aaf386646d2c75d33696570dde32629abe2c1be30ae74f9",
+          "bytes": 1825
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "peak_alloc_gb_train": 3.683380736,
+        "epochs_run": 20,
+        "best_epoch": 18,
+        "n_params": 108314886,
+        "test_predict_seconds_3569_docs_batch64": 2.8502801046706736
+      }
+    },
+    {
+      "layer": "L12_systems",
+      "system": "bert_fair:jjzha__jobbert-base-cased_s44",
+      "metric": "train_seconds",
+      "value": 380.4758238787763,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 1,
+      "unit": "run",
+      "split": "train",
+      "dataset": "SkillSpan train (4800) + dev selection",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "artifacts/skillllm_v2/evals_gpu/bert_fair/runs/jjzha__jobbert-base-cased_s44/DONE.json",
+          "sha256": "f18bf914361ac60e6b02b45a4fe81bab178db63423dbe52e68ea55aaebaef822",
+          "bytes": 1822
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "peak_alloc_gb_train": 3.689763328,
+        "epochs_run": 14,
+        "best_epoch": 9,
+        "n_params": 108314886,
+        "test_predict_seconds_3569_docs_batch64": 2.8226311109028757
+      }
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "P1": {
+    "title": "Extraction: candidate span validity, type and boundary",
+    "n_items": 201,
+    "questions": [
+      [
+        "q1_is_skill",
+        "nominal",
+        [
+          "yes",
+          "no"
+        ]
+      ],
+      [
+        "q2_type",
+        "nominal",
+        [
+          "SKILL",
+          "KNOWLEDGE"
+        ]
+      ],
+      [
+        "q3_boundary",
+        "nominal",
+        [
+          "exact",
+          "too_long",
+          "too_short",
+          "shifted"
+        ]
+      ],
+      [
+        "q4_corrected_span",
+        "text",
+        null
+      ]
+    ],
+    "packet_files": [
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P1__A.csv",
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P1__B.csv"
+    ],
+    "answer_key": "inputs/evals/research/L11_human_eval/answer_keys/P1_key.csv",
+    "pool_sizes": {
+      "anchor_fp": 187,
+      "anchor_fn": 692,
+      "boundary": 475,
+      "added_by_wrapper": 11,
+      "baseline_only": 6201,
+      "agreed_tp_control": 1573
+    },
+    "systems": [
+      "anchor",
+      "bert_lookup",
+      "gliner_zero_shot",
+      "legacy_full_cag_graph",
+      "legacy_gliner_taxonomy",
+      "safe_wrapper"
+    ]
+  },
+  "P2": {
+    "title": "Extraction: full-sentence span annotation",
+    "n_items": 100,
+    "questions": [
+      [
+        "spans",
+        "spans",
+        null
+      ],
+      [
+        "q_headline",
+        "nominal",
+        [
+          "yes",
+          "no"
+        ]
+      ]
+    ],
+    "packet_files": [
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P2__A.csv",
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P2__B.csv"
+    ],
+    "answer_key": "inputs/evals/research/L11_human_eval/answer_keys/P2_key.csv",
+    "pool_sizes": {
+      "gold_bearing": 893,
+      "gold_free": 985
+    }
+  },
+  "P3": {
+    "title": "Normalization / taxonomy linking",
+    "n_items": 150,
+    "questions": [
+      [
+        "q1_choice",
+        "nominal",
+        [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "NONE_OF_THESE",
+          "NOT_A_SKILL"
+        ]
+      ],
+      [
+        "q2_note",
+        "text",
+        null
+      ]
+    ],
+    "packet_files": [
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P3__A.csv",
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P3__B.csv"
+    ],
+    "answer_key": "inputs/evals/research/L11_human_eval/answer_keys/P3_key.csv",
+    "origin": "reports/skillllm_v2/evals/L06_linking/annotation_sample.csv",
+    "sha256": "a396933229517a145af620ec6dc08b86892655af10badded89c8af2a2ef8267b",
+    "source_rows": 300,
+    "subsampled_to": 150,
+    "shown_columns": [
+      "item_id",
+      "sentence",
+      "mention",
+      "candidate_A",
+      "candidate_B",
+      "candidate_C",
+      "candidate_D",
+      "candidate_E",
+      "options"
+    ],
+    "hidden_columns": []
+  },
+  "P4a": {
+    "title": "Graph: prerequisite edge validity",
+    "n_items": 80,
+    "questions": [
+      [
+        "q1_edge",
+        "ordinal",
+        [
+          "invalid",
+          "questionable",
+          "valid"
+        ]
+      ]
+    ],
+    "packet_files": [
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P4a__A.csv",
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P4a__B.csv"
+    ],
+    "answer_key": "inputs/evals/research/L11_human_eval/answer_keys/P4a_key.csv",
+    "pool": 124,
+    "origin": "inputs/courses/course_catalog_large.jsonl (synthetic, project-authored catalogue)"
+  },
+  "P4b": {
+    "title": "Graph: learning-path pedagogical validity",
+    "n_items": 60,
+    "questions": [
+      [
+        "q1_all_edges_valid",
+        "nominal",
+        [
+          "yes",
+          "no"
+        ]
+      ],
+      [
+        "q2_pedagogical",
+        "ordinal",
+        [
+          "0",
+          "1",
+          "2"
+        ]
+      ],
+      [
+        "q3_missing_step",
+        "text",
+        null
+      ]
+    ],
+    "packet_files": [
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P4b__A.csv",
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P4b__B.csv"
+    ],
+    "answer_key": "inputs/evals/research/L11_human_eval/answer_keys/P4b_key.csv",
+    "origin": "reports/skillllm_v2/evals/L08_graph_retrieval/paths_for_human_eval.jsonl",
+    "pool": 350
+  },
+  "P5": {
+    "title": "Course recommendation: relevance, gap closure, readiness",
+    "n_items": 213,
+    "questions": [
+      [
+        "q1_relevance",
+        "ordinal",
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ],
+      [
+        "q2_gap_closure",
+        "ordinal",
+        [
+          "none",
+          "partial",
+          "substantial"
+        ]
+      ],
+      [
+        "q3_prereq_ready",
+        "ordinal",
+        [
+          "no",
+          "needs_bridge",
+          "yes"
+        ]
+      ]
+    ],
+    "packet_files": [
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P5__A.csv",
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P5__B.csv"
+    ],
+    "answer_key": "inputs/evals/research/L11_human_eval/answer_keys/P5_key.csv",
+    "origin": "cached re-run of the frozen DEFAULT_CONFIG recommender inputs/evals/research/L11_human_eval/cache/full_tuned_heldout_recs.json (sha256 eb514b244779); top-10 identical to stored benchmark-v2 rankings for 24/24 held-out scenarios",
+    "n_heldout_scenarios": 24,
+    "n_legacy_rows": 60,
+    "legacy_sample": "reports/skillllm_v2/human_review_sample.csv"
+  },
+  "P6": {
+    "title": "Course recommendation: explanation faithfulness",
+    "n_items": 120,
+    "questions": [
+      [
+        "q1_faithful",
+        "ordinal",
+        [
+          "unfaithful",
+          "partially",
+          "faithful"
+        ]
+      ],
+      [
+        "q2_unsupported_claims",
+        "text",
+        null
+      ],
+      [
+        "q3_helpful",
+        "interval",
+        [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      ]
+    ],
+    "packet_files": [
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P6__A.csv",
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P6__B.csv"
+    ],
+    "answer_key": "inputs/evals/research/L11_human_eval/answer_keys/P6_key.csv",
+    "origin": "cached re-run of the frozen DEFAULT_CONFIG recommender inputs/evals/research/L11_human_eval/cache/full_tuned_heldout_recs.json (sha256 eb514b244779); top-10 identical to stored benchmark-v2 rankings for 24/24 held-out scenarios",
+    "note": "Full recommender only; not system-blind by construction"
+  },
+  "P7": {
+    "title": "Robustness: perturbation validity",
+    "n_items": 50,
+    "questions": [
+      [
+        "q1_meaning_preserved",
+        "ordinal",
+        [
+          "no",
+          "partially",
+          "yes"
+        ]
+      ],
+      [
+        "q2_skills_recoverable",
+        "nominal",
+        [
+          "yes",
+          "no"
+        ]
+      ],
+      [
+        "q3_fluency",
+        "ordinal",
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ]
+    ],
+    "packet_files": [
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P7__A.csv",
+      "reports/skillllm_v2/evals/L11_human_eval/packets/P7__B.csv"
+    ],
+    "answer_key": "inputs/evals/research/L11_human_eval/answer_keys/P7_key.csv",
+    "origin": "reports/skillllm_v2/evals/L03_robustness/perturbation_validity_sample.csv",
+    "sha256": "9afea5d1fb3ab7d4f35cf95ab3aba87e4c24c933db3efc64f3e1cc595e5425fd",
+    "shown_columns": [
+      "original_text",
+      "perturbed_text"
+    ]
+  },
+  "training": {
+    "P1": 8,
+    "P2": 4,
+    "P3": 4,
+    "P4a": 3,
+    "P5": 2
+  }
+}

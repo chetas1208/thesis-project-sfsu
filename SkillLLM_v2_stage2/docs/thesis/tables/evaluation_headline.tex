@@ -1,0 +1,40 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Headline evaluation metrics with 95\% bootstrap confidence intervals over independent units.}
+\label{tab:evaluation-headline}
+\begin{tabular}{lllrlr}
+\toprule
+Layer & System & Metric & Value & 95\% CI & n \\
+\midrule
+L01 & mistral\_lora & exact\_span\_f1 & 0.6701 & [0.6465, 0.6938] & 974 \\
+L01 & mistral\_lora & token\_f1 & 0.7879 & [0.7701, 0.8053] & 974 \\
+L02 & mistral\_lora & unseen\_exact\_f1 & 0.5874 & [0.5589, 0.6157] & 974 \\
+L03 & anchor & mean\_degradation\_exact\_f1 & 0.0223 & [0.0035, 0.0417] & 120 \\
+L04 & anchor\_logprob:primary[sum\_lp]\_platt & sel\_risk@80 & 0.2664 & [0.2394, 0.2950] & 974 \\
+L04 & anchor\_logprob:primary[sum\_lp]\_platt & ece\_w10 & 0.0187 & [0.0133, 0.0422] & 974 \\
+L05 & R7\_safe\_wrapper\_stored & exact\_span\_f1 & 0.6719 & [0.6477, 0.6954] & 974 \\
+L05 & R7\_safe\_wrapper\_stored & apr & 0.9987 & [0.9958, 1.0000] & 974 \\
+L06 & shipped\_bridge & top1\_acc\_linkable & 0.1573 & [0.1258, 0.1903] & 55 \\
+L06 & shipped\_bridge & recall@5 & 0.1620 & [0.1295, 0.1968] & 55 \\
+L06 & shipped\_bridge & mrr@10 & 0.1594 & [0.1280, 0.1930] & 55 \\
+L06 & cascade\_esco@tau\_val & top1\_acc\_linkable & 0.3239 & [0.2856, 0.3599] & 55 \\
+L06 & cascade\_esco@tau\_val & recall@5 & 0.5056 & [0.4604, 0.5505] & 55 \\
+L06 & cascade\_esco@tau\_val & mrr@10 & 0.3999 & [0.3619, 0.4380] & 55 \\
+L07 & compact@0.5[informative] & token\_reduction\_vs\_full & 0.0928 & [0.0110, 0.1674] & 120 \\
+L07 & compact@0.5[informative] & job\_ndcg10 & 0.2487 & [0.2007, 0.2993] & 119 \\
+L07 & compact@0.5[informative] & course\_ndcg10 & 0.7284 & [0.6939, 0.7604] & 117 \\
+L07 & compact@0.5[informative] & gap\_jaccard\_vs\_full & 0.3483 & [0.2961, 0.4014] & 120 \\
+L08 & hybrid+graph & recall@10 & 0.8424 & [0.7578, 0.9199] & 24 \\
+L08 & hybrid+graph & ndcg@10 & 0.8244 & [0.7777, 0.8691] & 24 \\
+L08 & SkillLLM\_v2 Full recommender (explanation paths) & path\_validity & 1.0000 & [1.0000, 1.0000] & 24 \\
+L09 & SkillLLM\_v2 Full & precision@5 & 0.6083 & [0.5333, 0.6833] & 24 \\
+L09 & SkillLLM\_v2 Full & ndcg@10 & 0.8854 & [0.8514, 0.9160] & 24 \\
+L09 & SkillLLM\_v2 Full & wsgc@5 & 0.8382 & [0.7735, 0.8994] & 24 \\
+L09 & SkillLLM\_v2 Full & prereq\_violation\_rate & 0.0000 & [0.0000, 0.0000] & 24 \\
+L12 & anchor & latency\_p95 & 16.6614 & [15.1548, 18.3863] & 974 \\
+L12 & anchor & peak\_vram\_gb & 18.4843 & - & 974 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Generated 2026-11-18T08:28:41+00:00 by skillllm\_v2.evals.research.leaderboard; values copied from layer records.
+\end{table}

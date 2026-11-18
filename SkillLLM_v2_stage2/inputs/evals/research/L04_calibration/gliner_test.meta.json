@@ -1,0 +1,9 @@
+{
+ "split": "test",
+ "n_docs": 974,
+ "seconds": 891.409138917923,
+ "model": "urchade/gliner_medium-v2.1",
+ "threshold": 0.35,
+ "device": "cpu",
+ "utc": "2026-11-17T21:47:46Z"
+}

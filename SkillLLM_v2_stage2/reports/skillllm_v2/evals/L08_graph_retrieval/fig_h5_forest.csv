@@ -1,0 +1,26 @@
+name,n,delta,lo,hi,p_holm
+TEST primary: hybrid+graph − hybrid,24,0.0855294560504873,0.04780229149211051,0.1204246902301811,0.0005999400059994001
+"TEST pool variant: GraphRAG − RAG (B=20, dense rerank)",24,0.00499527426125976,0.0,0.012676848906315381,0.24937506249375063
+TEST graph vs flat skill overlap inside the same fusion,24,0.015108381508196827,-0.0005058653083199102,0.0347290674125366,0.21057894210578942
+multi-gap (≥2): primary: hybrid+graph − hybrid,24,0.0855294560504873,0.04919602342673163,0.12150942134382832,nan
+multi-gap (≥2): graph vs flat skill overlap inside the same fusion,24,0.015108381508196827,-0.00015035694868238968,0.03487750655511728,nan
+needs prerequisite hop: primary: hybrid+graph − hybrid,21,0.07808685547021635,0.037360788557249294,0.11425531942332337,nan
+needs prerequisite hop: graph vs flat skill overlap inside the same fusion,21,0.015469033162933027,-0.0020407772107314233,0.0388802754689211,nan
+no prerequisite hop: primary: hybrid+graph − hybrid,3,0.1376276601123839,0.0,0.21154335696523385,nan
+no prerequisite hop: graph vs flat skill overlap inside the same fusion,3,0.012583819925043427,0.0,0.03775145977513028,nan
+labels=content_only,24,0.09065268030536455,0.06411880760047156,0.11971564829150898,nan
+SG all: primary: hybrid+graph − hybrid,239,0.1373001480778112,0.12227743730877833,0.15256870721605897,nan
+"SG all: pool variant: GraphRAG − RAG (B=20, dense rerank)",239,0.011541816460438304,0.006952345088614775,0.016235213314477106,nan
+SG all: graph vs flat skill overlap inside the same fusion,239,0.058971087825640665,0.046041220350384285,0.07263837542304744,nan
+SG multi-gap (≥2): primary: hybrid+graph − hybrid,213,0.13271322292571433,0.11766214157844987,0.1482157245647619,nan
+"SG multi-gap (≥2): pool variant: GraphRAG − RAG (B=20, dense rerank)",213,0.012415415577540426,0.0075034227876405795,0.017825038130796618,nan
+SG multi-gap (≥2): graph vs flat skill overlap inside the same fusion,213,0.05598342177975441,0.042397784413868975,0.0687703965217359,nan
+SG 1-gap: primary: hybrid+graph − hybrid,26,0.1748776502853742,0.11215778675622781,0.24185610819452705,nan
+"SG 1-gap: pool variant: GraphRAG − RAG (B=20, dense rerank)",26,0.0043850236934093855,0.0,0.011952586667792621,nan
+SG 1-gap: graph vs flat skill overlap inside the same fusion,26,0.08344696735540116,0.03323532810170964,0.14079865675447265,nan
+SG needs prerequisite hop: primary: hybrid+graph − hybrid,197,0.14208604779514541,0.12560874773921618,0.1594566954153409,nan
+"SG needs prerequisite hop: pool variant: GraphRAG − RAG (B=20, dense rerank)",197,0.014760718720132363,0.009857226837207966,0.02012413149549885,nan
+SG needs prerequisite hop: graph vs flat skill overlap inside the same fusion,197,0.07126566968065565,0.0556534900953509,0.08703483743526039,nan
+SG no prerequisite hop: primary: hybrid+graph − hybrid,42,0.11485199940364846,0.07765627317220203,0.158027654098154,nan
+"SG no prerequisite hop: pool variant: GraphRAG − RAG (B=20, dense rerank)",42,-0.003556367948126688,-0.011705697704613148,0.0010365938602330854,nan
+SG no prerequisite hop: graph vs flat skill overlap inside the same fusion,42,0.001303644362832323,-0.003103576675182277,0.007860674243756279,nan

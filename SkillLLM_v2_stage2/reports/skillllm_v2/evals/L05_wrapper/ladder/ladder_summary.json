@@ -1,0 +1,3873 @@
+{
+ "rows": [
+  {
+   "system": "R0_raw_mistral",
+   "kind": "ladder",
+   "description": "Raw Mistral LoRA anchor (stored predictions)",
+   "exact_span_f1": 0.6700687818948302,
+   "exact_span_f1_ci": [
+    0.6464784258600874,
+    0.6937707528565935
+   ],
+   "exact_span_precision": 0.6735057983942908,
+   "exact_span_precision_ci": [
+    0.6480032943419854,
+    0.6985466347207961
+   ],
+   "exact_span_recall": 0.6666666666666666,
+   "exact_span_recall_ci": [
+    0.640602906749727,
+    0.6926270772238514
+   ],
+   "token_f1": 0.7878863409770688,
+   "token_f1_ci": [
+    0.7700693136804567,
+    0.8052596195492039
+   ],
+   "hard_skill_f1": 0.7264500205676676,
+   "hard_skill_f1_ci": [
+    0.6949598144372544,
+    0.7566939494405305
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.5715567681283282,
+    0.6355894217839534
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5389044988792827,
+    0.6095337995717156
+   ],
+   "apr": 1.0,
+   "apr_ci": [
+    1.0,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 0.0,
+   "nwg_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.0,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 0.0,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "tp": 1510,
+   "fp": 732,
+   "fn": 755,
+   "gained_tp": 0,
+   "destroyed_tp": 0,
+   "added_fp": 0,
+   "removed_fp": 0,
+   "anchor_tp": 1510,
+   "kept_tp": 1510,
+   "n_gold": 2265,
+   "n_pred": 2242,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 0,
+   "linking_coverage": null
+  },
+  {
+   "system": "R1_boundary",
+   "kind": "ladder",
+   "description": "+ boundary selector/refiner",
+   "exact_span_f1": 0.671400044375416,
+   "exact_span_f1_ci": [
+    0.647281474782923,
+    0.6950773862052352
+   ],
+   "exact_span_precision": 0.6748438893844781,
+   "exact_span_precision_ci": [
+    0.6494290282360357,
+    0.7001277618627068
+   ],
+   "exact_span_recall": 0.667991169977925,
+   "exact_span_recall_ci": [
+    0.6413573741748035,
+    0.6937974236784095
+   ],
+   "token_f1": 0.787999626156578,
+   "token_f1_ci": [
+    0.7694733214980227,
+    0.8054978267385804
+   ],
+   "hard_skill_f1": 0.7289181406828465,
+   "hard_skill_f1_ci": [
+    0.697346451574966,
+    0.7593838044543679
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.571154922465765,
+    0.636100455244438
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5394335299845352,
+    0.6097770344959025
+   ],
+   "apr": 1.0,
+   "apr_ci": [
+    1.0,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 2.6490066225165565,
+   "nwg_per_1000_gold_ci": [
+    0.0,
+    6.105538595726123
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0527692978630614
+   ],
+   "destroyed_tp_per_1000_gold": 0.0,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 1.3245033112582782,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    3.0527692978630614
+   ],
+   "tp": 1513,
+   "fp": 729,
+   "fn": 752,
+   "gained_tp": 3,
+   "destroyed_tp": 0,
+   "added_fp": 0,
+   "removed_fp": 3,
+   "anchor_tp": 1510,
+   "kept_tp": 1510,
+   "n_gold": 2265,
+   "n_pred": 2242,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 3,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.001331262480585793,
+   "delta_exact_span_f1_ci": [
+    0.0,
+    0.003066981026591129
+   ],
+   "p_boot_exact_span_f1": 0.10878912108789121,
+   "p_ar_exact_span_f1": 0.25,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.00011328517950925932,
+   "delta_token_f1_ci": [
+    0.0,
+    0.00027383231119940674
+   ],
+   "p_boot_token_f1": 0.10878912108789121,
+   "p_ar_token_f1": 0.25,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "R2_gliner_addonly",
+   "kind": "ladder",
+   "description": "+ GLiNER candidates via add-only CandidateMerger",
+   "exact_span_f1": 0.6715555555555556,
+   "exact_span_f1_ci": [
+    0.6474913153600497,
+    0.695227524972253
+   ],
+   "exact_span_precision": 0.6760626398210291,
+   "exact_span_precision_ci": [
+    0.6504012965974214,
+    0.7008970006995285
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.640562930568296,
+    0.6936268805172199
+   ],
+   "token_f1": 0.7881633204192071,
+   "token_f1_ci": [
+    0.769629134523943,
+    0.8055977030997006
+   ],
+   "hard_skill_f1": 0.7293729372937293,
+   "hard_skill_f1_ci": [
+    0.6982501067008109,
+    0.7589099422323307
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.571288028219071,
+    0.6356747373240622
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5389269148950493,
+    0.6095581605049594
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958649207443143,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 3.9735099337748343,
+   "nwg_per_1000_gold_ci": [
+    0.0,
+    8.857494035876181
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0474863820253346
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7235587834770767
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 3.532008830022075,
+   "removed_fp_per_1000_gold_ci": [
+    0.881445570736007,
+    7.227943990519841
+   ],
+   "tp": 1511,
+   "fp": 724,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 0,
+   "removed_fp": 8,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2235,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 29,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 7,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.00148677366072536,
+   "delta_exact_span_f1_ci": [
+    -0.0005923802156451025,
+    0.00366162120852344
+   ],
+   "p_boot_exact_span_f1": 0.16518348165183483,
+   "p_ar_exact_span_f1": 0.13888611138886112,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.0002769794421383365,
+   "delta_token_f1_ci": [
+    1.2549599293146253e-05,
+    0.0006919254109176931
+   ],
+   "p_boot_token_f1": 0.034996500349965,
+   "p_ar_token_f1": 0.12538746125387462,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "R3_dictionary",
+   "kind": "ladder",
+   "description": "+ dictionary (alias) candidates",
+   "exact_span_f1": 0.6711081501221408,
+   "exact_span_f1_ci": [
+    0.6472295583239678,
+    0.6947972014062628
+   ],
+   "exact_span_precision": 0.6751563896336015,
+   "exact_span_precision_ci": [
+    0.650410204744843,
+    0.7000441727965839
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.640473611221965,
+    0.6934242017975073
+   ],
+   "token_f1": 0.7878359998754114,
+   "token_f1_ci": [
+    0.7696048267315878,
+    0.8059360299876493
+   ],
+   "hard_skill_f1": 0.7287716405605935,
+   "hard_skill_f1_ci": [
+    0.6978324147882362,
+    0.7588687050728051
+   ],
+   "soft_skill_f1": 0.6037554164660568,
+   "soft_skill_f1_ci": [
+    0.5712975380814102,
+    0.6357357948648658
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5398298383317713,
+    0.6100798797848782
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.99581589958159,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 2.6490066225165565,
+   "nwg_per_1000_gold_ci": [
+    -1.8099752350011984,
+    7.606263982102908
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0514718043733415
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7548525721574535
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.0809859154929575
+   ],
+   "removed_fp_per_1000_gold": 3.532008830022075,
+   "removed_fp_per_1000_gold_ci": [
+    0.875647162067393,
+    7.152436298614216
+   ],
+   "tp": 1511,
+   "fp": 727,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 8,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2238,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 10,
+   "linking_coverage": 0.0013404825737265416,
+   "delta_exact_span_f1": 0.0010393682273105442,
+   "delta_exact_span_f1_ci": [
+    -0.001177938073840412,
+    0.003208586394553231
+   ],
+   "p_boot_exact_span_f1": 0.36196380361963804,
+   "p_ar_exact_span_f1": 0.36026397360263973,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.03411016573585e-05,
+   "delta_token_f1_ci": [
+    -0.0005824590036443533,
+    0.00047605617442214295
+   ],
+   "p_boot_token_f1": 0.8363163683631637,
+   "p_ar_token_f1": 0.8756124387561244,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "R4_taxonomy",
+   "kind": "ladder",
+   "description": "+ taxonomy linking (span-neutral by construction)",
+   "exact_span_f1": 0.6711081501221408,
+   "exact_span_f1_ci": [
+    0.6471625971115288,
+    0.694426856979633
+   ],
+   "exact_span_precision": 0.6751563896336015,
+   "exact_span_precision_ci": [
+    0.6495679010545472,
+    0.6998224765552543
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6405826884034742,
+    0.6927576679523113
+   ],
+   "token_f1": 0.7878359998754114,
+   "token_f1_ci": [
+    0.7700160792041336,
+    0.8057216309471085
+   ],
+   "hard_skill_f1": 0.7287716405605935,
+   "hard_skill_f1_ci": [
+    0.6970344018835054,
+    0.7584020910510363
+   ],
+   "soft_skill_f1": 0.6037554164660568,
+   "soft_skill_f1_ci": [
+    0.5707497741644083,
+    0.6352386727078891
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5389097142575693,
+    0.6094591814001844
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958534899792675,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 2.6490066225165565,
+   "nwg_per_1000_gold_ci": [
+    -1.7676042670946557,
+    7.732124970082702
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0608117852780423
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7322715560700543
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.076923076923077
+   ],
+   "removed_fp_per_1000_gold": 3.532008830022075,
+   "removed_fp_per_1000_gold_ci": [
+    0.8795074758135445,
+    7.1589168013555
+   ],
+   "tp": 1511,
+   "fp": 727,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 8,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2238,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 10,
+   "linking_coverage": 0.889633601429848,
+   "delta_exact_span_f1": 0.0010393682273105442,
+   "delta_exact_span_f1_ci": [
+    -0.001074132456195606,
+    0.0033159683657777465
+   ],
+   "p_boot_exact_span_f1": 0.34136586341365865,
+   "p_ar_exact_span_f1": 0.36396360363963604,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.03411016573585e-05,
+   "delta_token_f1_ci": [
+    -0.0005856549479914152,
+    0.00046703735275857025
+   ],
+   "p_boot_token_f1": 0.8527147285271472,
+   "p_ar_token_f1": 0.8784121587841216,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "R5_verifier",
+   "kind": "ladder",
+   "description": "+ SpanVerifier",
+   "exact_span_f1": 0.672153024911032,
+   "exact_span_f1_ci": [
+    0.6482065928118974,
+    0.6954354506663794
+   ],
+   "exact_span_precision": 0.6772747646795159,
+   "exact_span_precision_ci": [
+    0.6517497862099829,
+    0.7015592511854962
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6405908344449956,
+    0.6926959539519738
+   ],
+   "token_f1": 0.7878359998754114,
+   "token_f1_ci": [
+    0.7699894265348123,
+    0.805380191930589
+   ],
+   "hard_skill_f1": 0.7293729372937293,
+   "hard_skill_f1_ci": [
+    0.6975608186583796,
+    0.758865391214825
+   ],
+   "soft_skill_f1": 0.6052123552123552,
+   "soft_skill_f1_ci": [
+    0.5725760017471637,
+    0.6361905210717652
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5397101089693207,
+    0.6096494406305619
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958448753462604,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 5.739514348785872,
+   "nwg_per_1000_gold_ci": [
+    0.8740972580453157,
+    11.443661971830986
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0715563061752897
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.737226277372263
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.0541012216404884
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.0836664940244454,
+    11.042458724890603
+   ],
+   "tp": 1511,
+   "fp": 720,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2231,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 17,
+   "linking_coverage": 0.8897355445988346,
+   "delta_exact_span_f1": 0.0020842430162018033,
+   "delta_exact_span_f1_ci": [
+    -0.00015213227058406275,
+    0.004546441595089294
+   ],
+   "p_boot_exact_span_f1": 0.0705929407059294,
+   "p_ar_exact_span_f1": 0.0655934406559344,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.03411016573585e-05,
+   "delta_token_f1_ci": [
+    -0.000571002358748246,
+    0.00047928146793150525
+   ],
+   "p_boot_token_f1": 0.8397160283971603,
+   "p_ar_token_f1": 0.8703129687031297,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "R6_calibration",
+   "kind": "ladder",
+   "description": "+ ConfidenceCalibrator (= replayed safe wrapper, full chain)",
+   "exact_span_f1": 0.672153024911032,
+   "exact_span_f1_ci": [
+    0.6485676454843784,
+    0.6955711063802879
+   ],
+   "exact_span_precision": 0.6772747646795159,
+   "exact_span_precision_ci": [
+    0.6522506619593998,
+    0.7019007881316643
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6406180965304753,
+    0.692538215657464
+   ],
+   "token_f1": 0.7878359998754114,
+   "token_f1_ci": [
+    0.7695565444832823,
+    0.8054191194268369
+   ],
+   "hard_skill_f1": 0.7293729372937293,
+   "hard_skill_f1_ci": [
+    0.6980033033168922,
+    0.7590940700951649
+   ],
+   "soft_skill_f1": 0.6052123552123552,
+   "soft_skill_f1_ci": [
+    0.5727047146401986,
+    0.6368772624604792
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5394964110027022,
+    0.6092956069940643
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.995818742437275,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 5.739514348785872,
+   "nwg_per_1000_gold_ci": [
+    0.8779534945359412,
+    11.111234622795314
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.022517812280285
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7472527472527473
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.082376526865263
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.0905077262693155,
+    10.864959469417832
+   ],
+   "tp": 1511,
+   "fp": 720,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2231,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 17,
+   "linking_coverage": 0.8897355445988346,
+   "delta_exact_span_f1": 0.0020842430162018033,
+   "delta_exact_span_f1_ci": [
+    -0.00016445558642663724,
+    0.004395344657293962
+   ],
+   "p_boot_exact_span_f1": 0.07039296070392961,
+   "p_ar_exact_span_f1": 0.061693830616938304,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.03411016573585e-05,
+   "delta_token_f1_ci": [
+    -0.0005752863681710519,
+    0.000471698109649235
+   ],
+   "p_boot_token_f1": 0.8545145485451455,
+   "p_ar_token_f1": 0.8767123287671232,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "alone_refiner",
+   "kind": "single",
+   "description": "boundary refiner alone on anchor",
+   "exact_span_f1": 0.671400044375416,
+   "exact_span_f1_ci": [
+    0.6464999863643918,
+    0.6952231761524955
+   ],
+   "exact_span_precision": 0.6748438893844781,
+   "exact_span_precision_ci": [
+    0.6496805442287502,
+    0.7001027089289352
+   ],
+   "exact_span_recall": 0.667991169977925,
+   "exact_span_recall_ci": [
+    0.6399426345019503,
+    0.6932625496817523
+   ],
+   "token_f1": 0.787999626156578,
+   "token_f1_ci": [
+    0.7695598321474068,
+    0.8063753645782253
+   ],
+   "hard_skill_f1": 0.7289181406828465,
+   "hard_skill_f1_ci": [
+    0.6976072835325824,
+    0.7582241360613071
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.5710160253022106,
+    0.6376064939789021
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5398624065797674,
+    0.6116463577809793
+   ],
+   "apr": 1.0,
+   "apr_ci": [
+    1.0,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 2.6490066225165565,
+   "nwg_per_1000_gold_ci": [
+    0.0,
+    6.167468833909638
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.083734416954819
+   ],
+   "destroyed_tp_per_1000_gold": 0.0,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 1.3245033112582782,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    3.083734416954819
+   ],
+   "tp": 1513,
+   "fp": 729,
+   "fn": 752,
+   "gained_tp": 3,
+   "destroyed_tp": 0,
+   "added_fp": 0,
+   "removed_fp": 3,
+   "anchor_tp": 1510,
+   "kept_tp": 1510,
+   "n_gold": 2265,
+   "n_pred": 2242,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 3,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.001331262480585793,
+   "delta_exact_span_f1_ci": [
+    0.0,
+    0.003101496486894986
+   ],
+   "p_boot_exact_span_f1": 0.06996501749125437,
+   "p_ar_exact_span_f1": 0.25,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.00011328517950925932,
+   "delta_token_f1_ci": [
+    0.0,
+    0.0002828424809420082
+   ],
+   "p_boot_token_f1": 0.06996501749125437,
+   "p_ar_token_f1": 0.25,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "alone_merger_dedupe",
+   "kind": "single",
+   "description": "CandidateMerger on anchor only (no new sources): grouping/subsumption",
+   "exact_span_f1": 0.6702222222222223,
+   "exact_span_f1_ci": [
+    0.6460658119031472,
+    0.693537675108652
+   ],
+   "exact_span_precision": 0.6747203579418345,
+   "exact_span_precision_ci": [
+    0.6498339983291033,
+    0.6993884834115455
+   ],
+   "exact_span_recall": 0.6657836644591612,
+   "exact_span_recall_ci": [
+    0.6384755718765969,
+    0.6915076224538974
+   ],
+   "token_f1": 0.7880500270079361,
+   "token_f1_ci": [
+    0.7700550418573227,
+    0.8051176194804562
+   ],
+   "hard_skill_f1": 0.726897689768977,
+   "hard_skill_f1_ci": [
+    0.6960122740364321,
+    0.7560245072260985
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.5722349869286869,
+    0.6355864189593972
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5403951456248998,
+    0.6090240408523777
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958448753462604,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 1.3245033112582782,
+   "nwg_per_1000_gold_ci": [
+    -1.76374633088414,
+    4.902124839226185
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.729785384404161
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 2.207505518763797,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    5.521530956725036
+   ],
+   "tp": 1508,
+   "fp": 727,
+   "fn": 757,
+   "gained_tp": 0,
+   "destroyed_tp": 2,
+   "added_fp": 0,
+   "removed_fp": 5,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2235,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 4,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.0001534403273920626,
+   "delta_exact_span_f1_ci": [
+    -0.0014685746552434958,
+    0.001541166446851881
+   ],
+   "p_boot_exact_span_f1": 0.8035982008995503,
+   "p_ar_exact_span_f1": 0.75,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.00016368603086736044,
+   "delta_token_f1_ci": [
+    0.0,
+    0.0005030000801864637
+   ],
+   "p_boot_token_f1": 0.7276361819090454,
+   "p_ar_token_f1": 1.0,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "alone_gliner",
+   "kind": "single",
+   "description": "merge(anchor + GLiNER)",
+   "exact_span_f1": 0.6702222222222223,
+   "exact_span_f1_ci": [
+    0.6463464336617605,
+    0.6934425471354876
+   ],
+   "exact_span_precision": 0.6747203579418345,
+   "exact_span_precision_ci": [
+    0.6493685754743121,
+    0.698739254534794
+   ],
+   "exact_span_recall": 0.6657836644591612,
+   "exact_span_recall_ci": [
+    0.6400112073102733,
+    0.6917759158999569
+   ],
+   "token_f1": 0.7880500270079361,
+   "token_f1_ci": [
+    0.7699975934758045,
+    0.805721660446079
+   ],
+   "hard_skill_f1": 0.726897689768977,
+   "hard_skill_f1_ci": [
+    0.6971654885751172,
+    0.7560473436047358
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.5712948963239805,
+    0.635019556603129
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5409492035620218,
+    0.6088530162758274
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.995937711577522,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 1.3245033112582782,
+   "nwg_per_1000_gold_ci": [
+    -1.7369215956502861,
+    4.87383425008375
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.6966595263115347
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 2.207505518763797,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    5.296854111143154
+   ],
+   "tp": 1508,
+   "fp": 727,
+   "fn": 757,
+   "gained_tp": 0,
+   "destroyed_tp": 2,
+   "added_fp": 0,
+   "removed_fp": 5,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2235,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 29,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 4,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.0001534403273920626,
+   "delta_exact_span_f1_ci": [
+    -0.0013396667884108566,
+    0.0015808292502930764
+   ],
+   "p_boot_exact_span_f1": 0.7776111944027986,
+   "p_ar_exact_span_f1": 0.7493250674932507,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.00016368603086736044,
+   "delta_token_f1_ci": [
+    0.0,
+    0.0004987406858780213
+   ],
+   "p_boot_token_f1": 0.7276361819090454,
+   "p_ar_token_f1": 1.0,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "alone_dictionary",
+   "kind": "single",
+   "description": "merge(anchor + dictionary)",
+   "exact_span_f1": 0.6702222222222223,
+   "exact_span_f1_ci": [
+    0.6465197936072821,
+    0.6934769048066947
+   ],
+   "exact_span_precision": 0.6747203579418345,
+   "exact_span_precision_ci": [
+    0.6493595403486887,
+    0.6990571368464081
+   ],
+   "exact_span_recall": 0.6657836644591612,
+   "exact_span_recall_ci": [
+    0.6399807223376457,
+    0.6911354820999691
+   ],
+   "token_f1": 0.7880500270079361,
+   "token_f1_ci": [
+    0.7700825717018823,
+    0.8056774728285447
+   ],
+   "hard_skill_f1": 0.726897689768977,
+   "hard_skill_f1_ci": [
+    0.6949558932541299,
+    0.7553628072067216
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.5718795744742525,
+    0.6367003186058117
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5394973070017953,
+    0.6110632946087836
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9950982801877832,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 1.3245033112582782,
+   "nwg_per_1000_gold_ci": [
+    -1.7670592854338436,
+    5.076843853031538
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    3.323769254001804
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 2.207505518763797,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    5.589456047444168
+   ],
+   "tp": 1508,
+   "fp": 727,
+   "fn": 757,
+   "gained_tp": 0,
+   "destroyed_tp": 2,
+   "added_fp": 0,
+   "removed_fp": 5,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2235,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 14,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 4,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.0001534403273920626,
+   "delta_exact_span_f1_ci": [
+    -0.0015173340042674594,
+    0.0016184805132673063
+   ],
+   "p_boot_exact_span_f1": 0.7716141929035483,
+   "p_ar_exact_span_f1": 0.7601239876012399,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.00016368603086736044,
+   "delta_token_f1_ci": [
+    0.0,
+    0.0005056313541204169
+   ],
+   "p_boot_token_f1": 0.6856571714142928,
+   "p_ar_token_f1": 1.0,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "alone_verifier",
+   "kind": "single",
+   "description": "SpanVerifier alone on anchor",
+   "exact_span_f1": 0.6711111111111111,
+   "exact_span_f1_ci": [
+    0.648150041440059,
+    0.6934872945416721
+   ],
+   "exact_span_precision": 0.6756152125279642,
+   "exact_span_precision_ci": [
+    0.6499282506961992,
+    0.6994150099905894
+   ],
+   "exact_span_recall": 0.6666666666666666,
+   "exact_span_recall_ci": [
+    0.6416451953052458,
+    0.6916410612159929
+   ],
+   "token_f1": 0.7878863409770688,
+   "token_f1_ci": [
+    0.7691560668924053,
+    0.8056945419800116
+   ],
+   "hard_skill_f1": 0.7270481679703582,
+   "hard_skill_f1_ci": [
+    0.696833501627917,
+    0.7564124350259895
+   ],
+   "soft_skill_f1": 0.6055045871559633,
+   "soft_skill_f1_ci": [
+    0.5715715018690903,
+    0.6357162669698848
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5389927053423138,
+    0.6081736488808669
+   ],
+   "apr": 1.0,
+   "apr_ci": [
+    1.0,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 3.0905077262693155,
+   "nwg_per_1000_gold_ci": [
+    1.2673870144871733,
+    5.691955973775596
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.0,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 3.0905077262693155,
+   "removed_fp_per_1000_gold_ci": [
+    1.2673870144871733,
+    5.691955973775596
+   ],
+   "tp": 1510,
+   "fp": 725,
+   "fn": 755,
+   "gained_tp": 0,
+   "destroyed_tp": 0,
+   "added_fp": 0,
+   "removed_fp": 7,
+   "anchor_tp": 1510,
+   "kept_tp": 1510,
+   "n_gold": 2265,
+   "n_pred": 2235,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 7,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.0010423292162808906,
+   "delta_exact_span_f1_ci": [
+    0.0004238941373659738,
+    0.0019025525820928002
+   ],
+   "p_boot_exact_span_f1": 0.001999000499750125,
+   "p_ar_exact_span_f1": 0.015625,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.0,
+   "delta_token_f1_ci": [
+    0.0,
+    0.0
+   ],
+   "p_boot_token_f1": 1.0,
+   "p_ar_token_f1": 1.0,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "alone_calibrator",
+   "kind": "single",
+   "description": "ConfidenceCalibrator alone on anchor",
+   "exact_span_f1": 0.6700687818948302,
+   "exact_span_f1_ci": [
+    0.6466760194772504,
+    0.6933649370918787
+   ],
+   "exact_span_precision": 0.6735057983942908,
+   "exact_span_precision_ci": [
+    0.6494600122277862,
+    0.6994665340094911
+   ],
+   "exact_span_recall": 0.6666666666666666,
+   "exact_span_recall_ci": [
+    0.6402800413562943,
+    0.6918010639447232
+   ],
+   "token_f1": 0.7878863409770688,
+   "token_f1_ci": [
+    0.7700576602607829,
+    0.80545907728641
+   ],
+   "hard_skill_f1": 0.7264500205676676,
+   "hard_skill_f1_ci": [
+    0.6963337925574384,
+    0.7558901944079078
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.5718630633256122,
+    0.6376411318625895
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5386063615477202,
+    0.6102665150492165
+   ],
+   "apr": 1.0,
+   "apr_ci": [
+    1.0,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 0.0,
+   "nwg_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.0,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 0.0,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "tp": 1510,
+   "fp": 732,
+   "fn": 755,
+   "gained_tp": 0,
+   "destroyed_tp": 0,
+   "added_fp": 0,
+   "removed_fp": 0,
+   "anchor_tp": 1510,
+   "kept_tp": 1510,
+   "n_gold": 2265,
+   "n_pred": 2242,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 0,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.0,
+   "delta_exact_span_f1_ci": [
+    0.0,
+    0.0
+   ],
+   "p_boot_exact_span_f1": 1.0,
+   "p_ar_exact_span_f1": 1.0,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.0,
+   "delta_token_f1_ci": [
+    0.0,
+    0.0
+   ],
+   "p_boot_token_f1": 1.0,
+   "p_ar_token_f1": 1.0,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "loo_minus_refine",
+   "kind": "leave_one_out",
+   "description": "full chain without refine",
+   "exact_span_f1": 0.6708185053380783,
+   "exact_span_f1_ci": [
+    0.6466154502129402,
+    0.6928341464943931
+   ],
+   "exact_span_precision": 0.6759300761990139,
+   "exact_span_precision_ci": [
+    0.650859070117075,
+    0.6987665966178345
+   ],
+   "exact_span_recall": 0.6657836644591612,
+   "exact_span_recall_ci": [
+    0.6404017423825239,
+    0.691571386406839
+   ],
+   "token_f1": 0.7877227229305976,
+   "token_f1_ci": [
+    0.7683731753922047,
+    0.8052128933909506
+   ],
+   "hard_skill_f1": 0.726897689768977,
+   "hard_skill_f1_ci": [
+    0.6946185384660417,
+    0.7556777425073175
+   ],
+   "soft_skill_f1": 0.6052123552123552,
+   "soft_skill_f1_ci": [
+    0.5731251983143282,
+    0.6369267816985547
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5393120400541235,
+    0.6099785630018677
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958446590837003,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 3.0905077262693155,
+   "nwg_per_1000_gold_ci": [
+    -0.9147270613355636,
+    7.349921230499145
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7285439944784233
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.1126678206753
+   ],
+   "removed_fp_per_1000_gold": 5.298013245033113,
+   "removed_fp_per_1000_gold_ci": [
+    2.1727800574025,
+    9.079609748531583
+   ],
+   "tp": 1508,
+   "fp": 723,
+   "fn": 757,
+   "gained_tp": 0,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 12,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2231,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 14,
+   "linking_coverage": 0.001344688480502017,
+   "delta_exact_span_f1": 0.0007497234432480848,
+   "delta_exact_span_f1_ci": [
+    -0.0011561163700153198,
+    0.0023946439779190666
+   ],
+   "p_boot_exact_span_f1": 0.37381309345327335,
+   "p_ar_exact_span_f1": 0.38236176382361764,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -0.00016361804647113676,
+   "delta_token_f1_ci": [
+    -0.0006924370536337737,
+    0.0003087470636722651
+   ],
+   "p_boot_token_f1": 0.5217391304347826,
+   "p_ar_token_f1": 0.6228377162283771,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "loo_minus_gliner",
+   "kind": "leave_one_out",
+   "description": "full chain without gliner",
+   "exact_span_f1": 0.6726018250612064,
+   "exact_span_f1_ci": [
+    0.6485208693854748,
+    0.69484582037655
+   ],
+   "exact_span_precision": 0.6781867145421903,
+   "exact_span_precision_ci": [
+    0.6528696706435394,
+    0.7026324093895328
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6399479781497099,
+    0.6921493308212058
+   ],
+   "token_f1": 0.7881633204192071,
+   "token_f1_ci": [
+    0.7698607331457911,
+    0.8046524095358103
+   ],
+   "hard_skill_f1": 0.7299752270850537,
+   "hard_skill_f1_ci": [
+    0.6977710054349358,
+    0.7589939914025772
+   ],
+   "soft_skill_f1": 0.6055045871559633,
+   "soft_skill_f1_ci": [
+    0.5712875170485108,
+    0.6344099408816347
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5376021421750298,
+    0.6085743313240723
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958647780569694,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 7.06401766004415,
+   "nwg_per_1000_gold_ci": [
+    2.2279661097443983,
+    12.550926117518504
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.1045238344393464
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7310901706105404
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.109694487470735,
+    11.014809231607748
+   ],
+   "tp": 1511,
+   "fp": 717,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 0,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2228,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 14,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 14,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.0025330431663761477,
+   "delta_exact_span_f1_ci": [
+    0.0002884600627127032,
+    0.00492277072800116
+   ],
+   "p_boot_exact_span_f1": 0.026986506746626688,
+   "p_ar_exact_span_f1": 0.0187981201879812,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.0002769794421383365,
+   "delta_token_f1_ci": [
+    1.2783913721187145e-05,
+    0.0006751441066013828
+   ],
+   "p_boot_token_f1": 0.028985507246376812,
+   "p_ar_token_f1": 0.12958704129587043,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "loo_minus_dictionary",
+   "kind": "leave_one_out",
+   "description": "full chain without dictionary",
+   "exact_span_f1": 0.6726018250612064,
+   "exact_span_f1_ci": [
+    0.6490537822856199,
+    0.6970329482014799
+   ],
+   "exact_span_precision": 0.6781867145421903,
+   "exact_span_precision_ci": [
+    0.65236328277441,
+    0.7039583320588038
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6411058436168448,
+    0.6941234166044941
+   ],
+   "token_f1": 0.7881633204192071,
+   "token_f1_ci": [
+    0.7696057151250697,
+    0.8053162597594038
+   ],
+   "hard_skill_f1": 0.7299752270850537,
+   "hard_skill_f1_ci": [
+    0.6976170217296448,
+    0.759725322888166
+   ],
+   "soft_skill_f1": 0.6055045871559633,
+   "soft_skill_f1_ci": [
+    0.5715628227194492,
+    0.6362071658698037
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5373930954432489,
+    0.6104270723351954
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958473180385264,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 7.06401766004415,
+   "nwg_per_1000_gold_ci": [
+    2.3648784016918025,
+    12.425169367552442
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0838024597315625
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7211501940767224
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.130555353411442,
+    10.777262744277767
+   ],
+   "tp": 1511,
+   "fp": 717,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 0,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2228,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 29,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 14,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.0025330431663761477,
+   "delta_exact_span_f1_ci": [
+    0.00030083217997762537,
+    0.004919048066385877
+   ],
+   "p_boot_exact_span_f1": 0.021989005497251374,
+   "p_ar_exact_span_f1": 0.015398460153984602,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.0002769794421383365,
+   "delta_token_f1_ci": [
+    1.2265790057794379e-05,
+    0.0006876745643635965
+   ],
+   "p_boot_token_f1": 0.04297851074462768,
+   "p_ar_token_f1": 0.13068693130686931,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "loo_minus_verify",
+   "kind": "leave_one_out",
+   "description": "full chain without verify",
+   "exact_span_f1": 0.6711081501221408,
+   "exact_span_f1_ci": [
+    0.6470174995911193,
+    0.69453968617311
+   ],
+   "exact_span_precision": 0.6751563896336015,
+   "exact_span_precision_ci": [
+    0.6500432669865825,
+    0.7013455958444088
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6401581336118842,
+    0.6931396789387713
+   ],
+   "token_f1": 0.7878359998754114,
+   "token_f1_ci": [
+    0.7697224887852111,
+    0.8059008337443229
+   ],
+   "hard_skill_f1": 0.7287716405605935,
+   "hard_skill_f1_ci": [
+    0.6980647739724204,
+    0.7579721995094031
+   ],
+   "soft_skill_f1": 0.6037554164660568,
+   "soft_skill_f1_ci": [
+    0.5708963323755607,
+    0.6347838938648002
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5367955782039042,
+    0.6111123032904149
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958245619646315,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 2.6490066225165565,
+   "nwg_per_1000_gold_ci": [
+    -1.8093829500642638,
+    7.802594684655395
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0541345488035354
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.751031636863824
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.055668415432044
+   ],
+   "removed_fp_per_1000_gold": 3.532008830022075,
+   "removed_fp_per_1000_gold_ci": [
+    0.8849459672084949,
+    7.168619509137374
+   ],
+   "tp": 1511,
+   "fp": 727,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 8,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2238,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 10,
+   "linking_coverage": 0.0013404825737265416,
+   "delta_exact_span_f1": 0.0010393682273105442,
+   "delta_exact_span_f1_ci": [
+    -0.0011813330675524813,
+    0.0033360013514469166
+   ],
+   "p_boot_exact_span_f1": 0.3428285857071464,
+   "p_ar_exact_span_f1": 0.36896310368963103,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.03411016573585e-05,
+   "delta_token_f1_ci": [
+    -0.0005703047879890344,
+    0.00046613737692428533
+   ],
+   "p_boot_token_f1": 0.8705647176411794,
+   "p_ar_token_f1": 0.8713128687131287,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "loo_minus_calibrate",
+   "kind": "leave_one_out",
+   "description": "full chain without calibrate",
+   "exact_span_f1": 0.672153024911032,
+   "exact_span_f1_ci": [
+    0.6485880384638801,
+    0.6963988075881177
+   ],
+   "exact_span_precision": 0.6772747646795159,
+   "exact_span_precision_ci": [
+    0.6523188035260028,
+    0.701800975445333
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6409679691510571,
+    0.6930865058543179
+   ],
+   "token_f1": 0.7878359998754114,
+   "token_f1_ci": [
+    0.7698319152776584,
+    0.8064925250928868
+   ],
+   "hard_skill_f1": 0.7293729372937293,
+   "hard_skill_f1_ci": [
+    0.6981262916559029,
+    0.759775406859207
+   ],
+   "soft_skill_f1": 0.6052123552123552,
+   "soft_skill_f1_ci": [
+    0.5732294199079613,
+    0.6367526096702183
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.539631033472497,
+    0.6105496738362388
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9959009346742734,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 5.739514348785872,
+   "nwg_per_1000_gold_ci": [
+    0.46247615487866606,
+    11.24102175847007
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0381944444444446
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7187768914612773
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.035823601653686
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.1332530083853167,
+    10.712030892518026
+   ],
+   "tp": 1511,
+   "fp": 720,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2231,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 17,
+   "linking_coverage": 0.001344688480502017,
+   "delta_exact_span_f1": 0.0020842430162018033,
+   "delta_exact_span_f1_ci": [
+    -0.00018790241804445552,
+    0.004415608690835981
+   ],
+   "p_boot_exact_span_f1": 0.07496251874062969,
+   "p_ar_exact_span_f1": 0.060693930606939304,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.03411016573585e-05,
+   "delta_token_f1_ci": [
+    -0.0005802401218968772,
+    0.00048740058077803014
+   ],
+   "p_boot_token_f1": 0.8785607196401799,
+   "p_ar_token_f1": 0.8726127387261274,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "policyoff_full",
+   "kind": "policy_off_counterfactual",
+   "description": "full chain, source-aware protection OFF everywhere, every boundary edit type forced (upper bound on harm)",
+   "exact_span_f1": 0.2900919305413687,
+   "exact_span_f1_ci": [
+    0.2645348597970297,
+    0.3165409456553263
+   ],
+   "exact_span_precision": 0.26996197718631176,
+   "exact_span_precision_ci": [
+    0.24502464537590304,
+    0.29593539344614056
+   ],
+   "exact_span_recall": 0.31346578366445915,
+   "exact_span_recall_ci": [
+    0.28651993568598527,
+    0.34076113577509665
+   ],
+   "token_f1": 0.5735973865777453,
+   "token_f1_ci": [
+    0.5534694834949279,
+    0.5927788384308773
+   ],
+   "hard_skill_f1": 0.4489471593166468,
+   "hard_skill_f1_ci": [
+    0.41113291448974626,
+    0.48682840554661705
+   ],
+   "soft_skill_f1": 0.12195121951219512,
+   "soft_skill_f1_ci": [
+    0.09954722504775845,
+    0.14392844228994078
+   ],
+   "soft_skill_recall": 0.13290559120073328,
+   "soft_skill_recall_ci": [
+    0.10830939720520977,
+    0.1573255839135472
+   ],
+   "apr": 0.4139072847682119,
+   "apr_ci": [
+    0.3793103448275862,
+    0.4485565734014603
+   ],
+   "soft_apr": 0.16267942583732056,
+   "soft_apr_ci": [
+    0.12517656706287575,
+    0.19898247760642718
+   ],
+   "nwg_per_1000_gold": -877.7041942604857,
+   "nwg_per_1000_gold_ci": [
+    -939.7041041100491,
+    -817.3522068862904
+   ],
+   "gained_tp_per_1000_gold": 37.52759381898454,
+   "gained_tp_per_1000_gold_ci": [
+    29.274811406707087,
+    45.88072221499188
+   ],
+   "destroyed_tp_per_1000_gold": 390.72847682119203,
+   "destroyed_tp_per_1000_gold_ci": [
+    365.63022848170846,
+    416.412193034742
+   ],
+   "added_fp_per_1000_gold": 774.39293598234,
+   "added_fp_per_1000_gold_ci": [
+    732.3477797549406,
+    817.7216566172934
+   ],
+   "removed_fp_per_1000_gold": 249.8896247240618,
+   "removed_fp_per_1000_gold_ci": [
+    225.73886635855402,
+    274.354600434375
+   ],
+   "tp": 710,
+   "fp": 1920,
+   "fn": 1555,
+   "gained_tp": 85,
+   "destroyed_tp": 885,
+   "added_fp": 1754,
+   "removed_fp": 566,
+   "anchor_tp": 1510,
+   "kept_tp": 625,
+   "n_gold": 2265,
+   "n_pred": 2630,
+   "verifier_rejected": 70,
+   "verifier_false_rej": 6,
+   "calib_rejected": 73,
+   "calib_false_rej": 4,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 11,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 102,
+   "docs_changed": 781,
+   "linking_coverage": 0.01652892561983471,
+   "delta_exact_span_f1": -0.3799768513534615,
+   "delta_exact_span_f1_ci": [
+    -0.40654789898167304,
+    -0.35444778469360816
+   ],
+   "p_boot_exact_span_f1": 0.0009995002498750624,
+   "p_ar_exact_span_f1": 9.999000099990002e-05,
+   "non_inferior_-0.005": false,
+   "delta_token_f1": -0.2142889543993235,
+   "delta_token_f1_ci": [
+    -0.23033919435749695,
+    -0.19787672535500936
+   ],
+   "p_boot_token_f1": 0.0009995002498750624,
+   "p_ar_token_f1": 9.999000099990002e-05,
+   "soft_recall_loss": 0.44179651695692024,
+   "soft_recall_loss_ci": [
+    0.4009088781795874,
+    0.4821448919130095
+   ]
+  },
+  {
+   "system": "policyoff_prefix_like",
+   "kind": "policy_off_counterfactual",
+   "description": "protection OFF, only filler-trim / conjunction-split edits forced (approximation of the pre-fix wrapper)",
+   "exact_span_f1": 0.5407812183768468,
+   "exact_span_f1_ci": [
+    0.5157759953378896,
+    0.5667744562487442
+   ],
+   "exact_span_precision": 0.4992526158445441,
+   "exact_span_precision_ci": [
+    0.473844428912575,
+    0.525724806637375
+   ],
+   "exact_span_recall": 0.5898454746136865,
+   "exact_span_recall_ci": [
+    0.5636574635151889,
+    0.61635805660337
+   ],
+   "token_f1": 0.7422505961079917,
+   "token_f1_ci": [
+    0.7223383042679103,
+    0.7607570508788746
+   ],
+   "hard_skill_f1": 0.6643220007815553,
+   "hard_skill_f1_ci": [
+    0.6314053918803519,
+    0.6945473703857101
+   ],
+   "soft_skill_f1": 0.4080604534005038,
+   "soft_skill_f1_ci": [
+    0.3766500730337223,
+    0.4390317901965427
+   ],
+   "soft_skill_recall": 0.4454628780934922,
+   "soft_skill_recall_ci": [
+    0.4120784652150823,
+    0.4782249915159986
+   ],
+   "apr": 0.8317880794701987,
+   "apr_ci": [
+    0.8103332320830289,
+    0.8516641687651229
+   ],
+   "soft_apr": 0.7017543859649122,
+   "soft_apr_ci": [
+    0.6610403086656441,
+    0.7387997522663247
+   ],
+   "nwg_per_1000_gold": -345.2538631346578,
+   "nwg_per_1000_gold_ci": [
+    -389.3299888923645,
+    -302.39977823831464
+   ],
+   "gained_tp_per_1000_gold": 35.32008830022075,
+   "gained_tp_per_1000_gold_ci": [
+    26.446481201841426,
+    45.18548554822834
+   ],
+   "destroyed_tp_per_1000_gold": 112.14128035320088,
+   "destroyed_tp_per_1000_gold_ci": [
+    98.8067683116736,
+    126.10689735476927
+   ],
+   "added_fp_per_1000_gold": 371.30242825607064,
+   "added_fp_per_1000_gold_ci": [
+    337.05243547332435,
+    405.0857981181544
+   ],
+   "removed_fp_per_1000_gold": 102.86975717439293,
+   "removed_fp_per_1000_gold_ci": [
+    89.98168522652836,
+    116.42333870531068
+   ],
+   "tp": 1336,
+   "fp": 1340,
+   "fn": 929,
+   "gained_tp": 80,
+   "destroyed_tp": 254,
+   "added_fp": 841,
+   "removed_fp": 233,
+   "anchor_tp": 1510,
+   "kept_tp": 1256,
+   "n_gold": 2265,
+   "n_pred": 2676,
+   "verifier_rejected": 112,
+   "verifier_false_rej": 23,
+   "calib_rejected": 87,
+   "calib_false_rej": 7,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 11,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 440,
+   "docs_changed": 478,
+   "linking_coverage": 0.016338655774229483,
+   "delta_exact_span_f1": -0.12928756351798343,
+   "delta_exact_span_f1_ci": [
+    -0.14697633770363644,
+    -0.11220238710530983
+   ],
+   "p_boot_exact_span_f1": 0.0009995002498750624,
+   "p_ar_exact_span_f1": 9.999000099990002e-05,
+   "non_inferior_-0.005": false,
+   "delta_token_f1": -0.045635744869077066,
+   "delta_token_f1_ci": [
+    -0.05661251833457542,
+    -0.0350684238940581
+   ],
+   "p_boot_token_f1": 0.0009995002498750624,
+   "p_ar_token_f1": 9.999000099990002e-05,
+   "soft_recall_loss": 0.12923923006416133,
+   "soft_recall_loss_ci": [
+    0.10149367767190696,
+    0.15845528964624322
+   ]
+  },
+  {
+   "system": "policyoff_refiner_only",
+   "kind": "policy_off_counterfactual",
+   "description": "full chain, only the boundary selector unconstrained",
+   "exact_span_f1": 0.2926320183677729,
+   "exact_span_f1_ci": [
+    0.26716896478469926,
+    0.31894764191039254
+   ],
+   "exact_span_precision": 0.277513855898654,
+   "exact_span_precision_ci": [
+    0.25203470105063386,
+    0.30361618102504057
+   ],
+   "exact_span_recall": 0.30949227373068433,
+   "exact_span_recall_ci": [
+    0.2822708553234247,
+    0.3365183091481318
+   ],
+   "token_f1": 0.5825084745762712,
+   "token_f1_ci": [
+    0.562696446901129,
+    0.6033618753911306
+   ],
+   "hard_skill_f1": 0.4492579221821099,
+   "hard_skill_f1_ci": [
+    0.41150023793133716,
+    0.48623167994520533
+   ],
+   "soft_skill_f1": 0.1227154046997389,
+   "soft_skill_f1_ci": [
+    0.09965254738231329,
+    0.14764167967225905
+   ],
+   "soft_skill_recall": 0.12923923006416133,
+   "soft_skill_recall_ci": [
+    0.10464026195388894,
+    0.1551308920474031
+   ],
+   "apr": 0.41258278145695365,
+   "apr_ci": [
+    0.3789856174206666,
+    0.44627063786080656
+   ],
+   "soft_apr": 0.16108452950558214,
+   "soft_apr_ci": [
+    0.12520045598775434,
+    0.1994243904802109
+   ],
+   "nwg_per_1000_gold": -839.7350993377484,
+   "nwg_per_1000_gold_ci": [
+    -900.1894419533625,
+    -782.4623427412728
+   ],
+   "gained_tp_per_1000_gold": 34.437086092715234,
+   "gained_tp_per_1000_gold_ci": [
+    26.661024121878967,
+    42.581632796643966
+   ],
+   "destroyed_tp_per_1000_gold": 391.6114790286976,
+   "destroyed_tp_per_1000_gold_ci": [
+    367.9196152774512,
+    416.3855372784439
+   ],
+   "added_fp_per_1000_gold": 732.008830022075,
+   "added_fp_per_1000_gold_ci": [
+    692.296201451131,
+    775.0972467070171
+   ],
+   "removed_fp_per_1000_gold": 249.44812362030905,
+   "removed_fp_per_1000_gold_ci": [
+    224.98633992698535,
+    273.5894712210502
+   ],
+   "tp": 701,
+   "fp": 1825,
+   "fn": 1564,
+   "gained_tp": 78,
+   "destroyed_tp": 887,
+   "added_fp": 1658,
+   "removed_fp": 565,
+   "anchor_tp": 1510,
+   "kept_tp": 623,
+   "n_gold": 2265,
+   "n_pred": 2526,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 101,
+   "docs_changed": 760,
+   "linking_coverage": 0.0011867088607594937,
+   "delta_exact_span_f1": -0.3774367635270573,
+   "delta_exact_span_f1_ci": [
+    -0.4040405568919605,
+    -0.35206914658213795
+   ],
+   "p_boot_exact_span_f1": 0.0009995002498750624,
+   "p_ar_exact_span_f1": 9.999000099990002e-05,
+   "non_inferior_-0.005": false,
+   "delta_token_f1": -0.20537786640079758,
+   "delta_token_f1_ci": [
+    -0.22164740556964938,
+    -0.19015017581143798
+   ],
+   "p_boot_token_f1": 0.0009995002498750624,
+   "p_ar_token_f1": 9.999000099990002e-05,
+   "soft_recall_loss": 0.4454628780934922,
+   "soft_recall_loss_ci": [
+    0.40666211113615863,
+    0.4859927132908499
+   ]
+  },
+  {
+   "system": "policyoff_merger_only",
+   "kind": "policy_off_counterfactual",
+   "description": "full chain, only the merger's add-only filter off",
+   "exact_span_f1": 0.6586672380544247,
+   "exact_span_f1_ci": [
+    0.635475158845788,
+    0.6808363621299159
+   ],
+   "exact_span_precision": 0.6398834304746045,
+   "exact_span_precision_ci": [
+    0.6149630865124561,
+    0.6636623213850124
+   ],
+   "exact_span_recall": 0.6785871964679911,
+   "exact_span_recall_ci": [
+    0.6530156683873345,
+    0.7046274785569265
+   ],
+   "token_f1": 0.7777472778845274,
+   "token_f1_ci": [
+    0.75992281071633,
+    0.7960266958347193
+   ],
+   "hard_skill_f1": 0.7252124645892352,
+   "hard_skill_f1_ci": [
+    0.6934057047965748,
+    0.7538385390555145
+   ],
+   "soft_skill_f1": 0.5837887067395264,
+   "soft_skill_f1_ci": [
+    0.5523717879793191,
+    0.613298592154808
+   ],
+   "soft_skill_recall": 0.5875343721356554,
+   "soft_skill_recall_ci": [
+    0.5522647045369062,
+    0.6216746889182636
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958872407001838,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": -46.799116997792495,
+   "nwg_per_1000_gold_ci": [
+    -60.87662041241532,
+    -32.73490065936332
+   ],
+   "gained_tp_per_1000_gold": 12.803532008830024,
+   "gained_tp_per_1000_gold_ci": [
+    8.151795689414394,
+    18.199986583500188
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.717391304347826
+   ],
+   "added_fp_per_1000_gold": 65.34216335540839,
+   "added_fp_per_1000_gold_ci": [
+    53.624940574986404,
+    77.36270051787292
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.0713880587519755,
+    10.81608789851003
+   ],
+   "tp": 1537,
+   "fp": 865,
+   "fn": 728,
+   "gained_tp": 29,
+   "destroyed_tp": 2,
+   "added_fp": 148,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2402,
+   "verifier_rejected": 12,
+   "verifier_false_rej": 0,
+   "calib_rejected": 86,
+   "calib_false_rej": 6,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 11,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 151,
+   "linking_coverage": 0.01828761429758936,
+   "delta_exact_span_f1": -0.011401543840405481,
+   "delta_exact_span_f1_ci": [
+    -0.016764591548440018,
+    -0.005572007493504261
+   ],
+   "p_boot_exact_span_f1": 0.001999000499750125,
+   "p_ar_exact_span_f1": 0.00029997000299970003,
+   "non_inferior_-0.005": false,
+   "delta_token_f1": -0.010139063092541423,
+   "delta_token_f1_ci": [
+    -0.013873158034427286,
+    -0.006318211144372776
+   ],
+   "p_boot_token_f1": 0.0009995002498750624,
+   "p_ar_token_f1": 9.999000099990002e-05,
+   "soft_recall_loss": -0.012832263978001857,
+   "soft_recall_loss_ci": [
+    -0.020428912258749994,
+    -0.006819550971230409
+   ]
+  },
+  {
+   "system": "policyoff_verifier_only",
+   "kind": "policy_off_counterfactual",
+   "description": "full chain, only the verifier's anchor protection off",
+   "exact_span_f1": 0.659634317862166,
+   "exact_span_f1_ci": [
+    0.6345253379266118,
+    0.6841750114611918
+   ],
+   "exact_span_precision": 0.7031484257871065,
+   "exact_span_precision_ci": [
+    0.6759572587655752,
+    0.728977693203466
+   ],
+   "exact_span_recall": 0.6211920529801325,
+   "exact_span_recall_ci": [
+    0.5927244325158575,
+    0.6492106938031176
+   ],
+   "token_f1": 0.6861673243311733,
+   "token_f1_ci": [
+    0.6621708739339345,
+    0.7092890629347475
+   ],
+   "hard_skill_f1": 0.7305289462723865,
+   "hard_skill_f1_ci": [
+    0.6982524935574753,
+    0.7598189810181586
+   ],
+   "soft_skill_f1": 0.5683646112600537,
+   "soft_skill_f1_ci": [
+    0.5331661757083075,
+    0.6032949632969976
+   ],
+   "soft_skill_recall": 0.4857928505957837,
+   "soft_skill_recall_ci": [
+    0.44908718742159404,
+    0.5230055160313417
+   ],
+   "apr": 0.9298013245033112,
+   "apr_ci": [
+    0.9157413455258001,
+    0.9425902725704287
+   ],
+   "soft_apr": 0.8452950558213717,
+   "soft_apr_ci": [
+    0.8155132972729322,
+    0.8753806866311227
+   ],
+   "nwg_per_1000_gold": 15.45253863134658,
+   "nwg_per_1000_gold_ci": [
+    0.4524725043435873,
+    30.0831383662441
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0225505086142976
+   ],
+   "destroyed_tp_per_1000_gold": 46.799116997792495,
+   "destroyed_tp_per_1000_gold_ci": [
+    38.46153846153847,
+    56.211428271040305
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.0987848929198285
+   ],
+   "removed_fp_per_1000_gold": 62.25165562913907,
+   "removed_fp_per_1000_gold_ci": [
+    51.71430077148229,
+    73.17369299520809
+   ],
+   "tp": 1407,
+   "fp": 594,
+   "fn": 858,
+   "gained_tp": 3,
+   "destroyed_tp": 106,
+   "added_fp": 3,
+   "removed_fp": 141,
+   "anchor_tp": 1510,
+   "kept_tp": 1404,
+   "n_gold": 2265,
+   "n_pred": 2001,
+   "verifier_rejected": 237,
+   "verifier_false_rej": 104,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 530,
+   "docs_changed": 223,
+   "linking_coverage": 0.0014992503748125937,
+   "delta_exact_span_f1": -0.010434464032664237,
+   "delta_exact_span_f1_ci": [
+    -0.018141608013254477,
+    -0.0032034831161666406
+   ],
+   "p_boot_exact_span_f1": 0.005997001499250375,
+   "p_ar_exact_span_f1": 0.005699430056994301,
+   "non_inferior_-0.005": false,
+   "delta_token_f1": -0.10171901664589544,
+   "delta_token_f1_ci": [
+    -0.12015274745367968,
+    -0.08408379761539106
+   ],
+   "p_boot_token_f1": 0.0009995002498750624,
+   "p_ar_token_f1": 9.999000099990002e-05,
+   "soft_recall_loss": 0.08890925756186985,
+   "soft_recall_loss_ci": [
+    0.07155959147719713,
+    0.10704547764932025
+   ]
+  },
+  {
+   "system": "policyoff_calibrator_only",
+   "kind": "policy_off_counterfactual",
+   "description": "full chain, only the calibrator's anchor protection off",
+   "exact_span_f1": 0.672153024911032,
+   "exact_span_f1_ci": [
+    0.6484411790290487,
+    0.695736642568952
+   ],
+   "exact_span_precision": 0.6772747646795159,
+   "exact_span_precision_ci": [
+    0.6526405311820458,
+    0.7025295990099252
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6418026993782592,
+    0.6936507736793874
+   ],
+   "token_f1": 0.7878359998754114,
+   "token_f1_ci": [
+    0.7702509065525307,
+    0.8058559542743169
+   ],
+   "hard_skill_f1": 0.7293729372937293,
+   "hard_skill_f1_ci": [
+    0.6987488151180848,
+    0.7592626877784926
+   ],
+   "soft_skill_f1": 0.6052123552123552,
+   "soft_skill_f1_ci": [
+    0.5748596227537147,
+    0.6361545040056307
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5412275897849772,
+    0.6094728008840419
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958245619646315,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 5.739514348785872,
+   "nwg_per_1000_gold_ci": [
+    0.8680461406362978,
+    11.19733058264566
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.040900162429645
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7323338790338854
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.0853323909415766
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.090439563328727,
+    10.767992057342115
+   ],
+   "tp": 1511,
+   "fp": 720,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2231,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 17,
+   "linking_coverage": 0.001344688480502017,
+   "delta_exact_span_f1": 0.0020842430162018033,
+   "delta_exact_span_f1_ci": [
+    -0.00012602274081535692,
+    0.00435356535429698
+   ],
+   "p_boot_exact_span_f1": 0.06196901549225387,
+   "p_ar_exact_span_f1": 0.059994000599940006,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.03411016573585e-05,
+   "delta_token_f1_ci": [
+    -0.0005912187769274935,
+    0.0004828664983723333
+   ],
+   "p_boot_token_f1": 0.8295852073963018,
+   "p_ar_token_f1": 0.877012298770123,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "leakage_no_test_mined_aliases",
+   "kind": "leakage_ablation",
+   "description": "full safe chain with the 76 test-mined alias rows removed",
+   "exact_span_f1": 0.672153024911032,
+   "exact_span_f1_ci": [
+    0.6477633217335871,
+    0.695439404168027
+   ],
+   "exact_span_precision": 0.6772747646795159,
+   "exact_span_precision_ci": [
+    0.651951258757769,
+    0.7015579538883739
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.6408090916865957,
+    0.6931205843172393
+   ],
+   "token_f1": 0.7878359998754114,
+   "token_f1_ci": [
+    0.7705109927214533,
+    0.8050164102500904
+   ],
+   "hard_skill_f1": 0.7293729372937293,
+   "hard_skill_f1_ci": [
+    0.6989867156358761,
+    0.7598108063919402
+   ],
+   "soft_skill_f1": 0.6052123552123552,
+   "soft_skill_f1_ci": [
+    0.5724341725091031,
+    0.6363237327342098
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5389651799687011,
+    0.6096168525908459
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958533465014121,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 5.739514348785872,
+   "nwg_per_1000_gold_ci": [
+    0.87583126437699,
+    11.1067931419023
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.081053778618849
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7498023720398352
+   ],
+   "added_fp_per_1000_gold": 1.3245033112582782,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    3.01867286580851
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.1083136437779033,
+    10.841621938403854
+   ],
+   "tp": 1511,
+   "fp": 720,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 3,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2231,
+   "verifier_rejected": 7,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 2,
+   "merger_gold_drop_new": 42,
+   "merger_dedupe_anchor_drop": 7,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 17,
+   "linking_coverage": 0.001344688480502017,
+   "delta_exact_span_f1": 0.0020842430162018033,
+   "delta_exact_span_f1_ci": [
+    -0.00026170506704564496,
+    0.004478219571453459
+   ],
+   "p_boot_exact_span_f1": 0.07796101949025487,
+   "p_ar_exact_span_f1": 0.06409359064093591,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.03411016573585e-05,
+   "delta_token_f1_ci": [
+    -0.0005706338112740183,
+    0.00045564935436453725
+   ],
+   "p_boot_token_f1": 0.8415792103948025,
+   "p_ar_token_f1": 0.8734126587341265,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "R7_safe_wrapper_stored",
+   "kind": "stored",
+   "description": "stored gated safe-wrapper output (final; = full_cag_graph variant, gate 'accept')",
+   "exact_span_f1": 0.6718541574032904,
+   "exact_span_f1_ci": [
+    0.6477292497762378,
+    0.6954499139718195
+   ],
+   "exact_span_precision": 0.6766681594267802,
+   "exact_span_precision_ci": [
+    0.6515833162533307,
+    0.7012417243507066
+   ],
+   "exact_span_recall": 0.6671081677704195,
+   "exact_span_recall_ci": [
+    0.640370126273143,
+    0.6927963867514898
+   ],
+   "token_f1": 0.7879423274546643,
+   "token_f1_ci": [
+    0.7695149748243735,
+    0.8057108095810753
+   ],
+   "hard_skill_f1": 0.7299752270850537,
+   "hard_skill_f1_ci": [
+    0.6980413767254651,
+    0.7591806766435776
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.572046137243176,
+    0.6365919306833359
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5399052426382309,
+    0.6103666933112631
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.995839040156464,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 4.856512141280353,
+   "nwg_per_1000_gold_ci": [
+    -0.4257585710018963,
+    10.457516339869281
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0581373901328024
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7372575099861076
+   ],
+   "added_fp_per_1000_gold": 2.207505518763797,
+   "added_fp_per_1000_gold_ci": [
+    0.44622936189201245,
+    4.280913623504829
+   ],
+   "removed_fp_per_1000_gold": 6.622516556291391,
+   "removed_fp_per_1000_gold_ci": [
+    3.0837004405286343,
+    10.874421335777273
+   ],
+   "tp": 1511,
+   "fp": 722,
+   "fn": 754,
+   "gained_tp": 3,
+   "destroyed_tp": 2,
+   "added_fp": 5,
+   "removed_fp": 15,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2233,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 19,
+   "linking_coverage": 0.8898343036274071,
+   "delta_exact_span_f1": 0.0017853755084601408,
+   "delta_exact_span_f1_ci": [
+    -0.0005551022058215615,
+    0.0041338426230089365
+   ],
+   "p_boot_exact_span_f1": 0.12998700129987,
+   "p_ar_exact_span_f1": 0.11848815118488151,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 5.598647759552655e-05,
+   "delta_token_f1_ci": [
+    -0.0005181033119491391,
+    0.0006911833144903371
+   ],
+   "p_boot_token_f1": 0.8695130486951305,
+   "p_ar_token_f1": 0.8538146185381462,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "stored_boundary_refiner",
+   "kind": "stored",
+   "description": "stored safe-wrapper variant boundary_refiner (refine+verify+calibrate)",
+   "exact_span_f1": 0.6724444444444444,
+   "exact_span_f1_ci": [
+    0.6488874782740119,
+    0.695352759049227
+   ],
+   "exact_span_precision": 0.6769574944071588,
+   "exact_span_precision_ci": [
+    0.6519432817920587,
+    0.7018716577540107
+   ],
+   "exact_span_recall": 0.667991169977925,
+   "exact_span_recall_ci": [
+    0.6419120219265921,
+    0.6937932014237734
+   ],
+   "token_f1": 0.787999626156578,
+   "token_f1_ci": [
+    0.7700491049641295,
+    0.8053541217685128
+   ],
+   "hard_skill_f1": 0.7295183202964183,
+   "hard_skill_f1_ci": [
+    0.6977561252976842,
+    0.7590705258866693
+   ],
+   "soft_skill_f1": 0.6055045871559633,
+   "soft_skill_f1_ci": [
+    0.5728629844918838,
+    0.636609746715786
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5391874779702616,
+    0.6092906798854109
+   ],
+   "apr": 1.0,
+   "apr_ci": [
+    1.0,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 5.739514348785872,
+   "nwg_per_1000_gold_ci": [
+    2.2809699146311435,
+    9.888428022677013
+   ],
+   "gained_tp_per_1000_gold": 1.3245033112582782,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    3.0581373901328024
+   ],
+   "destroyed_tp_per_1000_gold": 0.0,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 4.415011037527594,
+   "removed_fp_per_1000_gold_ci": [
+    1.8098934105951463,
+    7.40418118466899
+   ],
+   "tp": 1513,
+   "fp": 722,
+   "fn": 752,
+   "gained_tp": 3,
+   "destroyed_tp": 0,
+   "added_fp": 0,
+   "removed_fp": 10,
+   "anchor_tp": 1510,
+   "kept_tp": 1510,
+   "n_gold": 2265,
+   "n_pred": 2235,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 10,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.002375662549614188,
+   "delta_exact_span_f1_ci": [
+    0.000896857803675491,
+    0.004265898006236941
+   ],
+   "p_boot_exact_span_f1": 0.00039996000399960006,
+   "p_ar_exact_span_f1": 0.001953125,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.00011328517950925932,
+   "delta_token_f1_ci": [
+    0.0,
+    0.00027570555127887086
+   ],
+   "p_boot_token_f1": 0.09499050094990501,
+   "p_ar_token_f1": 0.25,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "stored_mistral_gliner_taxonomy",
+   "kind": "stored",
+   "description": "stored safe-wrapper variant mistral_gliner_taxonomy (merge+link)",
+   "exact_span_f1": 0.6694783573806882,
+   "exact_span_f1_ci": [
+    0.6458174971827673,
+    0.6927998831181016
+   ],
+   "exact_span_precision": 0.6732142857142858,
+   "exact_span_precision_ci": [
+    0.6482053980209718,
+    0.6978827547130937
+   ],
+   "exact_span_recall": 0.6657836644591612,
+   "exact_span_recall_ci": [
+    0.639188389668126,
+    0.6914297312971196
+   ],
+   "token_f1": 0.787829083963126,
+   "token_f1_ci": [
+    0.7696997020489589,
+    0.8055329093323043
+   ],
+   "hard_skill_f1": 0.726897689768977,
+   "hard_skill_f1_ci": [
+    0.6956184255842675,
+    0.7560353072384006
+   ],
+   "soft_skill_f1": 0.6025949062950504,
+   "soft_skill_f1_ci": [
+    0.5692081642236291,
+    0.6338099450893016
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5386817505421964,
+    0.6093477585239763
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958419958419958,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": -0.8830022075055187,
+   "nwg_per_1000_gold_ci": [
+    -4.762007922753157,
+    3.1181095951075695
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.733485193621868
+   ],
+   "added_fp_per_1000_gold": 2.207505518763797,
+   "added_fp_per_1000_gold_ci": [
+    0.4444395083666519,
+    4.332755632582322
+   ],
+   "removed_fp_per_1000_gold": 2.207505518763797,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    5.497308749427389
+   ],
+   "tp": 1508,
+   "fp": 732,
+   "fn": 757,
+   "gained_tp": 0,
+   "destroyed_tp": 2,
+   "added_fp": 5,
+   "removed_fp": 5,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2240,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 9,
+   "linking_coverage": 0.8897321428571429,
+   "delta_exact_span_f1": -0.0005904245141420406,
+   "delta_exact_span_f1_ci": [
+    -0.002371070060594202,
+    0.0009451811830626336
+   ],
+   "p_boot_exact_span_f1": 0.5201479852014799,
+   "p_ar_exact_span_f1": 0.61328125,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -5.725701394276861e-05,
+   "delta_token_f1_ci": [
+    -0.0006213527387683049,
+    0.0005671249796051352
+   ],
+   "p_boot_token_f1": 0.8301169883011699,
+   "p_ar_token_f1": 0.8125,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "legacy_full_cag_graph",
+   "kind": "legacy",
+   "description": "LEGACY ungated full pipeline, Mistral regenerated live (H2 comparator)",
+   "exact_span_f1": 0.6711022399645155,
+   "exact_span_f1_ci": [
+    0.6477863372424418,
+    0.6942562455899303
+   ],
+   "exact_span_precision": 0.6742424242424242,
+   "exact_span_precision_ci": [
+    0.6491445934573389,
+    0.699001458866559
+   ],
+   "exact_span_recall": 0.667991169977925,
+   "exact_span_recall_ci": [
+    0.6424860769832741,
+    0.6928826093148113
+   ],
+   "token_f1": 0.7875745475289114,
+   "token_f1_ci": [
+    0.7694883267155216,
+    0.8050945470662978
+   ],
+   "hard_skill_f1": 0.7286184210526315,
+   "hard_skill_f1_ci": [
+    0.6977114683082535,
+    0.7583928007734059
+   ],
+   "soft_skill_f1": 0.6037554164660568,
+   "soft_skill_f1_ci": [
+    0.571286624478279,
+    0.6350093266855609
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5393357131098538,
+    0.6089971902073523
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958649207443143,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 1.7660044150110374,
+   "nwg_per_1000_gold_ci": [
+    -3.6663611365719526,
+    7.450476356454047
+   ],
+   "gained_tp_per_1000_gold": 2.207505518763797,
+   "gained_tp_per_1000_gold_ci": [
+    0.4317742703737413,
+    4.807692307692308
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.7272727272727275
+   ],
+   "added_fp_per_1000_gold": 4.856512141280353,
+   "added_fp_per_1000_gold_ci": [
+    2.2016490455281224,
+    7.9190497140343155
+   ],
+   "removed_fp_per_1000_gold": 5.298013245033113,
+   "removed_fp_per_1000_gold_ci": [
+    2.1523659980306196,
+    9.308613836863705
+   ],
+   "tp": 1513,
+   "fp": 731,
+   "fn": 752,
+   "gained_tp": 5,
+   "destroyed_tp": 2,
+   "added_fp": 11,
+   "removed_fp": 12,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2244,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 25,
+   "linking_coverage": 0.8903743315508021,
+   "delta_exact_span_f1": 0.0010334580696852447,
+   "delta_exact_span_f1_ci": [
+    -0.0014760997466766012,
+    0.003600166454657341
+   ],
+   "p_boot_exact_span_f1": 0.42215778422157785,
+   "p_ar_exact_span_f1": 0.48175182481751827,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -0.0003117934481573492,
+   "delta_token_f1_ci": [
+    -0.0011408524226297456,
+    0.0005229780063115641
+   ],
+   "p_boot_token_f1": 0.45155484451554845,
+   "p_ar_token_f1": 0.46705329467053297,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "legacy_mistral_gliner_taxonomy",
+   "kind": "legacy",
+   "description": "LEGACY ungated merge+link stage, Mistral regenerated live (H2 comparator)",
+   "exact_span_f1": 0.6700620017714792,
+   "exact_span_f1_ci": [
+    0.6456900490265522,
+    0.6932801282252249
+   ],
+   "exact_span_precision": 0.6721457130164371,
+   "exact_span_precision_ci": [
+    0.6464905635300372,
+    0.696737469933081
+   ],
+   "exact_span_recall": 0.667991169977925,
+   "exact_span_recall_ci": [
+    0.6410242043926491,
+    0.6933652733235273
+   ],
+   "token_f1": 0.7875745475289114,
+   "token_f1_ci": [
+    0.7689651508125563,
+    0.8055031302356496
+   ],
+   "hard_skill_f1": 0.7280197206244864,
+   "hard_skill_f1_ci": [
+    0.6968582667897519,
+    0.757421648653415
+   ],
+   "soft_skill_f1": 0.6023054755043228,
+   "soft_skill_f1_ci": [
+    0.5699743962592307,
+    0.6335707168395757
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5395336667182972,
+    0.6093757063743219
+   ],
+   "apr": 0.9986754966887417,
+   "apr_ci": [
+    0.9958304378040306,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": -1.3245033112582782,
+   "nwg_per_1000_gold_ci": [
+    -6.148643716040756,
+    3.7769505189372268
+   ],
+   "gained_tp_per_1000_gold": 2.207505518763797,
+   "gained_tp_per_1000_gold_ci": [
+    0.4291799463473283,
+    4.85656576884375
+   ],
+   "destroyed_tp_per_1000_gold": 0.8830022075055187,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    2.74226169428959
+   ],
+   "added_fp_per_1000_gold": 4.856512141280353,
+   "added_fp_per_1000_gold_ci": [
+    2.21040882563579,
+    7.964778133989666
+   ],
+   "removed_fp_per_1000_gold": 2.207505518763797,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    5.667080904583013
+   ],
+   "tp": 1513,
+   "fp": 738,
+   "fn": 752,
+   "gained_tp": 5,
+   "destroyed_tp": 2,
+   "added_fp": 11,
+   "removed_fp": 5,
+   "anchor_tp": 1510,
+   "kept_tp": 1508,
+   "n_gold": 2265,
+   "n_pred": 2251,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 19,
+   "linking_coverage": 0.890270990670813,
+   "delta_exact_span_f1": -6.780123350980105e-06,
+   "delta_exact_span_f1_ci": [
+    -0.0023212317425101185,
+    0.0023858430184490126
+   ],
+   "p_boot_exact_span_f1": 0.9767023297670233,
+   "p_ar_exact_span_f1": 0.935006499350065,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": -0.0003117934481573492,
+   "delta_token_f1_ci": [
+    -0.0011234783331946219,
+    0.0004977317982258968
+   ],
+   "p_boot_token_f1": 0.46655334466553344,
+   "p_ar_token_f1": 0.46715328467153283,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "system": "legacy_mistral_boundary",
+   "kind": "legacy",
+   "description": "LEGACY boundary stage artefact (predates realign_word_boundary)",
+   "exact_span_f1": 0.6700687818948302,
+   "exact_span_f1_ci": [
+    0.645907084696937,
+    0.6941386222828761
+   ],
+   "exact_span_precision": 0.6735057983942908,
+   "exact_span_precision_ci": [
+    0.6475588783743108,
+    0.6994667586382359
+   ],
+   "exact_span_recall": 0.6666666666666666,
+   "exact_span_recall_ci": [
+    0.6404578648472582,
+    0.6931717400497381
+   ],
+   "token_f1": 0.7878863409770688,
+   "token_f1_ci": [
+    0.7696951141758934,
+    0.805644455012638
+   ],
+   "hard_skill_f1": 0.7264500205676676,
+   "hard_skill_f1_ci": [
+    0.695116000542313,
+    0.7566467953836464
+   ],
+   "soft_skill_f1": 0.6040462427745664,
+   "soft_skill_f1_ci": [
+    0.5711442035673818,
+    0.6350544386001664
+   ],
+   "soft_skill_recall": 0.5747021081576535,
+   "soft_skill_recall_ci": [
+    0.5384615384615384,
+    0.6088890948409021
+   ],
+   "apr": 1.0,
+   "apr_ci": [
+    1.0,
+    1.0
+   ],
+   "soft_apr": 1.0,
+   "soft_apr_ci": [
+    1.0,
+    1.0
+   ],
+   "nwg_per_1000_gold": 0.0,
+   "nwg_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "gained_tp_per_1000_gold": 0.0,
+   "gained_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "destroyed_tp_per_1000_gold": 0.0,
+   "destroyed_tp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "added_fp_per_1000_gold": 0.0,
+   "added_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "removed_fp_per_1000_gold": 0.0,
+   "removed_fp_per_1000_gold_ci": [
+    0.0,
+    0.0
+   ],
+   "tp": 1510,
+   "fp": 732,
+   "fn": 755,
+   "gained_tp": 0,
+   "destroyed_tp": 0,
+   "added_fp": 0,
+   "removed_fp": 0,
+   "anchor_tp": 1510,
+   "kept_tp": 1510,
+   "n_gold": 2265,
+   "n_pred": 2242,
+   "verifier_rejected": 0,
+   "verifier_false_rej": 0,
+   "calib_rejected": 0,
+   "calib_false_rej": 0,
+   "merger_gold_drop_anchor": 0,
+   "merger_gold_drop_new": 0,
+   "merger_dedupe_anchor_drop": 0,
+   "soft_anchor_tp": 627,
+   "soft_kept_tp": 627,
+   "docs_changed": 0,
+   "linking_coverage": null,
+   "delta_exact_span_f1": 0.0,
+   "delta_exact_span_f1_ci": [
+    0.0,
+    0.0
+   ],
+   "p_boot_exact_span_f1": 1.0,
+   "p_ar_exact_span_f1": 1.0,
+   "non_inferior_-0.005": true,
+   "delta_token_f1": 0.0,
+   "delta_token_f1_ci": [
+    0.0,
+    0.0
+   ],
+   "p_boot_token_f1": 1.0,
+   "p_ar_token_f1": 1.0,
+   "soft_recall_loss": 0.0,
+   "soft_recall_loss_ci": [
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "h2": {
+  "comparisons": [
+   {
+    "comparator": "legacy_full_cag_graph",
+    "delta_apr": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "p_boot": 1.0,
+    "p_ar": 1.0,
+    "apr_treatment": 0.9986754966887417,
+    "apr_comparator": 0.9986754966887417,
+    "n_units_differ": 0,
+    "p_holm": 1.0,
+    "ci_excludes_0_positive": false
+   },
+   {
+    "comparator": "legacy_mistral_gliner_taxonomy",
+    "delta_apr": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "p_boot": 1.0,
+    "p_ar": 1.0,
+    "apr_treatment": 0.9986754966887417,
+    "apr_comparator": 0.9986754966887417,
+    "n_units_differ": 0,
+    "p_holm": 1.0,
+    "ci_excludes_0_positive": false
+   }
+  ],
+  "treatment": "R7_safe_wrapper_stored",
+  "condition_i_apr_higher_vs_both_legacy": false,
+  "condition_ii_f1_noninferior": true,
+  "f1_delta_vs_anchor": 0.0017853755084601408,
+  "f1_ci": [
+   -0.000580673873034257,
+   0.00416310431527457
+  ],
+  "f1_p_boot": 0.13138686131386862,
+  "f1_p_ar": 0.12268773122687732,
+  "verdict": "NOT SUPPORTED",
+  "secondary_policy_off": {
+   "delta_apr_safe_replay_minus_policyoff": 0.16688741721854294,
+   "ci": [
+    0.1473903114541551,
+    0.1875412238797523
+   ],
+   "p": 0.00019998000199980003,
+   "apr_policyoff": 0.8317880794701987,
+   "apr_safe_replay": 0.9986754966887417,
+   "delta_f1": 0.13137180653418523,
+   "delta_f1_ci": [
+    0.11429596395462548,
+    0.1491050375355321
+   ],
+   "comparator": "policyoff_prefix_like",
+   "upper_bound_policyoff_full": {
+    "delta_apr": 0.5847682119205297,
+    "ci": [
+     0.5501996292863762,
+     0.6199338212467044
+    ],
+    "apr_policyoff_full": 0.4139072847682119
+   },
+   "label": "SECONDARY, post-hoc construct (not pre-registered)"
+  }
+ },
+ "edits": {
+  "R1_boundary": {
+   "realign_word_boundary": {
+    "n": 3,
+    "orig_was_gold": 0,
+    "new_is_gold": 3
+   }
+  },
+  "R6_calibration": {
+   "realign_word_boundary": {
+    "n": 3,
+    "orig_was_gold": 0,
+    "new_is_gold": 3
+   }
+  },
+  "R7_safe_wrapper_stored": {
+   "realign_word_boundary": {
+    "n": 3,
+    "orig_was_gold": 0,
+    "new_is_gold": 3
+   }
+  },
+  "policyoff_full": {
+   "realign_word_boundary": {
+    "n": 3,
+    "orig_was_gold": 0,
+    "new_is_gold": 3
+   },
+   "split_conjunction": {
+    "n": 547,
+    "orig_was_gold": 328,
+    "new_is_gold": 32
+   },
+   "head_skill": {
+    "n": 1175,
+    "orig_was_gold": 695,
+    "new_is_gold": 39
+   },
+   "trim_trailing_filler": {
+    "n": 67,
+    "orig_was_gold": 36,
+    "new_is_gold": 5
+   },
+   "trim_leading_filler": {
+    "n": 11,
+    "orig_was_gold": 5,
+    "new_is_gold": 2
+   },
+   "taxonomy_normalized": {
+    "n": 5,
+    "orig_was_gold": 0,
+    "new_is_gold": 1
+   }
+  },
+  "policyoff_prefix_like": {
+   "split_conjunction": {
+    "n": 701,
+    "orig_was_gold": 391,
+    "new_is_gold": 53
+   },
+   "trim_trailing_filler": {
+    "n": 75,
+    "orig_was_gold": 40,
+    "new_is_gold": 5
+   },
+   "trim_leading_filler": {
+    "n": 16,
+    "orig_was_gold": 5,
+    "new_is_gold": 4
+   }
+  },
+  "legacy_full_cag_graph": {}
+ },
+ "sources": {
+  "R3_dictionary": {
+   "boundary_edit_of_anchor": {
+    "n": 3,
+    "gold": 3
+   },
+   "dictionary+gliner": {
+    "n": 3,
+    "gold": 0
+   }
+  },
+  "R6_calibration": {
+   "boundary_edit_of_anchor": {
+    "n": 3,
+    "gold": 3
+   },
+   "dictionary+gliner": {
+    "n": 3,
+    "gold": 0
+   }
+  },
+  "R7_safe_wrapper_stored": {
+   "boundary_edit_of_anchor": {
+    "n": 3,
+    "gold": 3
+   },
+   "dictionary+gliner": {
+    "n": 5,
+    "gold": 0
+   }
+  },
+  "legacy_full_cag_graph": {
+   "dictionary": {
+    "n": 13,
+    "gold": 5
+   },
+   "dictionary+gliner": {
+    "n": 3,
+    "gold": 0
+   }
+  },
+  "legacy_mistral_gliner_taxonomy": {
+   "dictionary": {
+    "n": 13,
+    "gold": 5
+   },
+   "dictionary+gliner": {
+    "n": 3,
+    "gold": 0
+   }
+  },
+  "policyoff_full": {
+   "boundary_edit_of_anchor": {
+    "n": 1712,
+    "gold": 77
+   },
+   "dictionary": {
+    "n": 41,
+    "gold": 9
+   },
+   "gliner": {
+    "n": 111,
+    "gold": 4
+   },
+   "dictionary+gliner": {
+    "n": 3,
+    "gold": 0
+   }
+  },
+  "policyoff_prefix_like": {
+   "boundary_edit_of_anchor": {
+    "n": 766,
+    "gold": 57
+   },
+   "gliner": {
+    "n": 126,
+    "gold": 16
+   },
+   "dictionary": {
+    "n": 41,
+    "gold": 10
+   },
+   "dictionary+gliner": {
+    "n": 3,
+    "gold": 0
+   }
+  }
+ },
+ "replay_reproduction": {
+  "R6_calibration_vs_R7_safe_wrapper_stored": {
+   "docs_identical": 968,
+   "n_docs": 974,
+   "differing_doc_ids": [
+    "test-507",
+    "test-522",
+    "test-523",
+    "test-2435",
+    "test-3098",
+    "test-3188"
+   ]
+  },
+  "replay_refine_verify_calibrate_vs_stored_boundary_refiner": {
+   "docs_identical": 974,
+   "n_docs": 974,
+   "differing_doc_ids": []
+  },
+  "replay_merge_link_vs_stored_mistral_gliner_taxonomy": {
+   "docs_identical": 968,
+   "n_docs": 974,
+   "differing_doc_ids": [
+    "test-507",
+    "test-522",
+    "test-523",
+    "test-2435",
+    "test-3098",
+    "test-3188"
+   ]
+  }
+ }
+}

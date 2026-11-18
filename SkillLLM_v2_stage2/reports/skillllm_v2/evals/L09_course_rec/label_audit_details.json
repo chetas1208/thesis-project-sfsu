@@ -1,0 +1,42 @@
+{
+  "label_builder_imports": [
+    "__future__",
+    "argparse",
+    "collections",
+    "csv",
+    "json",
+    "pathlib",
+    "random",
+    "skillllm_v2.course.ingest_catalog",
+    "skillllm_v2.eval.benchmark_scenarios_spec"
+  ],
+  "label_builder_imports_system_code": [],
+  "mean_implicit_share_of_open_need_mass": 0.17504417899638489,
+  "n_pairs": 8208,
+  "agreement": {
+    "content_only": {
+      "kappa_rel_ge2": 0.8091652529807731,
+      "kappa_quadratic": 0.9073156699207907,
+      "spearman": 0.9219682465966963,
+      "exact_grade_agreement": 0.9767300194931774
+    },
+    "v_visible": {
+      "kappa_rel_ge2": 0.8975765135193642,
+      "kappa_quadratic": 0.9580637955212377,
+      "spearman": 0.9483241470902103,
+      "exact_grade_agreement": 0.9883040935672515
+    },
+    "v_text": {
+      "kappa_rel_ge2": 0.5855931640581764,
+      "kappa_quadratic": 0.6956540441001233,
+      "spearman": 0.6908119625784299,
+      "exact_grade_agreement": 0.9338450292397661
+    }
+  },
+  "shared_logic": [
+    "Need/coverage: labels = exact-string intersection of catalogue teaches_skills with the need set; every skill-aware system (skill overlap, gap greedy, Full's gap_coverage and graph TEACHES edges) scores the same intersection.",
+    "Prerequisite feasibility: labels give full grade only if P(c) \u2286 known \u222a weak and cap bridge-only courses at 1; the strict prerequisite mode (compat_basis='learner': prefer courses startable now), the '+ prereq filter' baselines and the violation metric implement the same catalogue rule.",
+    "Weights differ: labels 3/2/1 (required/implicit/preferred) vs systems 1.0/0.7 (GapEngine double-applies 0.7 to preferred \u2192 0.49).",
+    "Independence that does exist: implicit needs are hidden from systems; labels never read any system output; no shared code (AST imports)."
+  ]
+}

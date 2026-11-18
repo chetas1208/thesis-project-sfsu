@@ -1,0 +1,9 @@
+item_id,sentence,candidate_text,q1_is_skill,q2_type,q3_boundary,q4_corrected_span,notes
+T0-P1-01,Experience with ⟦Kubernetes⟧ and Terraform is required.,Kubernetes,,,,,
+T0-P1-02,You will ⟦mentor⟧ junior developers.,mentor,,,,,
+T0-P1-03,We are a ⟦fast-growing⟧ team based in a modern office.,fast-growing,,,,,
+T0-P1-04,Strong ⟦knowledge of SQL⟧ is a plus.,knowledge of SQL,,,,,
+T0-P1-05,Ability to ⟦work independently⟧ under tight deadlines.,work independently,,,,,
+T0-P1-06,A ⟦Bachelor's degree⟧ in Computer Science or equivalent.,Bachelor's degree,,,,,
+T0-P1-07,⟦Can prepare monthly reports⟧ for management.,Can prepare monthly reports,,,,,
+T0-P1-08,⟦Passion for automation⟧ is essential.,Passion for automation,,,,,

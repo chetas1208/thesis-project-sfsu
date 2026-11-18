@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "n_per_dataset": 300,
+  "datasets": {
+    "green": {
+      "source": "data/external/green_hf/test.json",
+      "source_sha256": "9fbb0da5e6c3da2c66d76de9f3e568c2489c2ac9e233c079659b97396ea7c5fc",
+      "n_rows": 335,
+      "n_sampled": 300,
+      "types": [
+        "DOMAIN",
+        "EXPERIENCE",
+        "OCCUPATION",
+        "QUALIFICATION",
+        "SKILL"
+      ]
+    },
+    "sayfullina": {
+      "source": "data/external/sayfullina_hf/test.json",
+      "source_sha256": "83079f348decd965efbfdc74dc54a9fa4350c40a7e2ed754c6d424830f5c4b7c",
+      "n_rows": 1851,
+      "n_sampled": 300,
+      "types": [
+        "SOFT"
+      ]
+    }
+  },
+  "xdata_docs_sha256": "67e5a2dc35ea6fa7a2da487d377770ae27c1725a542d36a48c8a7a760cd3b4c9",
+  "xdata_gold_sha256": "3fb588c96fdc3b4fd04ef39fe3ec9f69936c19a7a5dc87884f3da8b9c6a93007"
+}

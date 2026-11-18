@@ -1,0 +1,78 @@
+[
+ {
+  "date_utc": "2026-11-18T07:40:00+00:00",
+  "recorded_by": "B5",
+  "term": "SkillAnchorLM",
+  "source": "web_search",
+  "query": "\"SkillAnchorLM\" OR \"SkillAnchor LM\"",
+  "status": "ok",
+  "hit_count": 0,
+  "screening_risk": "none",
+  "final_risk": "low",
+  "rationale": "No exact hit (10 results). Nearest: Skill-LLM (same task) and SkillAdaptor (agents). The \"Anchor\" part names the anchor-preserving wrapper idea of the thesis.",
+  "relevant_hits": [
+   {
+    "title": "Skill-LLM: Repurposing General-Purpose LLMs for Skill Extraction",
+    "url": "https://arxiv.org/pdf/2410.12052v1"
+   },
+   {
+    "title": "SkillAdaptor: Self-Adapting Skills for LLM Agents from Trajectories (arXiv 2606.01311)",
+    "url": "https://www.opentrain.ai/papers/skilladaptor-self-adapting-skills-for-llm-agents-from-trajectories--arxiv-2606.01311/"
+   }
+  ]
+ },
+ {
+  "date_utc": "2026-11-18T07:40:00+00:00",
+  "recorded_by": "B5",
+  "term": "AnchorPathLM",
+  "source": "web_search",
+  "query": "\"AnchorPathLM\" OR \"AnchorPath LM\"",
+  "status": "ok",
+  "hit_count": 0,
+  "screening_risk": "none",
+  "final_risk": "low",
+  "rationale": "No exact hit. Nearest: AnLLM (anchor-based LLMs, ACL Findings 2024), an unrelated attention method, plus Qiskit/rust-analyzer \"anchored path\" code. \"Anchor\" + LM is a used research vocabulary, and the name says nothing about skills.",
+  "relevant_hits": [
+   {
+    "title": "Anchor-based Large Language Models (Pang et al., ACL Findings 2024, arXiv 2402.07616)",
+    "url": "https://arxiv.org/abs/2402.07616v3"
+   }
+  ]
+ },
+ {
+  "date_utc": "2026-11-18T07:40:00+00:00",
+  "recorded_by": "B5",
+  "term": "SkillTrellisLM",
+  "source": "web_search",
+  "query": "\"SkillTrellisLM\" OR \"SkillTrellis\" skills",
+  "status": "ok",
+  "hit_count": 0,
+  "screening_risk": "none",
+  "final_risk": "medium",
+  "rationale": "No exact hit for SkillTrellisLM or SkillTrellis. \"Trellis\" is an existing agent-skills product (mindfold-ai), so the stem is crowded in the agent-skills ecosystem.",
+  "relevant_hits": [
+   {
+    "title": "Trellis (mindfold-ai, agent skills tooling)",
+    "url": "https://tessl.io/registry/skills/github/mindfold-ai/Trellis"
+   }
+  ]
+ },
+ {
+  "date_utc": "2026-11-18T07:40:00+00:00",
+  "recorded_by": "B5",
+  "term": "GapGraphLM",
+  "source": "web_search",
+  "query": "\"GapGraphLM\" OR \"GapGraph LM\" OR \"GapGraph\" skill gap",
+  "status": "ok",
+  "hit_count": 0,
+  "screening_risk": "none",
+  "final_risk": "low",
+  "rationale": "No exact hit. The domain is dense with skill-gap / skills-graph work (JobCannon, LinkedIn, TechWolf, TD Commons disclosure) but none uses the name GapGraph.",
+  "relevant_hits": [
+   {
+    "title": "Graph Neural Network Structural Skill Gap Prediction via Link Prediction on Employee-Skill-Task Graphs (TD Commons, 2026)",
+    "url": "https://www.tdcommons.org/dpubs_series/9628"
+   }
+  ]
+ }
+]

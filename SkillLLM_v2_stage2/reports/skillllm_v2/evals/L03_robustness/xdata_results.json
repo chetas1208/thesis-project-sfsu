@@ -1,0 +1,952 @@
+[
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "exact_span_recall",
+    "value": 0.4412751677852349,
+    "ci": [
+      0.3912896308132201,
+      0.4937509704968944
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "partial_span_recall",
+    "value": 0.7046979865771812,
+    "ci": [
+      0.6534283515507198,
+      0.7556822808705953
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "exact_span_precision",
+    "value": 0.4888475836431227,
+    "ci": [
+      0.43790649359568695,
+      0.5463739326375712
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "exact_span_f1",
+    "value": 0.4638447971781305,
+    "ci": [
+      0.41592838565095774,
+      0.5124808413695217
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "partial_span_f1",
+    "value": 0.7407407407407407,
+    "ci": [
+      0.7032515111156643,
+      0.7775120175097674
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "exact_span_recall",
+    "value": 0.4247787610619469,
+    "ci": [
+      0.3744107950938837,
+      0.47725457257569837
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "partial_span_recall",
+    "value": 0.6740412979351033,
+    "ci": [
+      0.6183357432041643,
+      0.7254380380947639
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "exact_span_precision",
+    "value": 0.5353159851301115,
+    "ci": [
+      0.4824937817789615,
+      0.5904797150300553
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "exact_span_f1",
+    "value": 0.47368421052631576,
+    "ci": [
+      0.42553457196013966,
+      0.5229205931371785
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "anchor",
+    "metric": "partial_span_f1",
+    "value": 0.7516447368421053,
+    "ci": [
+      0.713921207270583,
+      0.788038036452128
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "exact_span_recall",
+    "value": 0.4395973154362416,
+    "ci": [
+      0.38869831766823315,
+      0.49346458453088077
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "partial_span_recall",
+    "value": 0.7030201342281879,
+    "ci": [
+      0.6520209942084941,
+      0.7532623336415906
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "exact_span_precision",
+    "value": 0.4915572232645403,
+    "ci": [
+      0.439546004842615,
+      0.5489868502124071
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "exact_span_f1",
+    "value": 0.4641275465013286,
+    "ci": [
+      0.4166649026248942,
+      0.5127342030167141
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "partial_span_f1",
+    "value": 0.7422497785651018,
+    "ci": [
+      0.7048979136398192,
+      0.7778838652482268
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "exact_span_recall",
+    "value": 0.42330383480825956,
+    "ci": [
+      0.3717065875410588,
+      0.4771367765302102
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "partial_span_recall",
+    "value": 0.672566371681416,
+    "ci": [
+      0.6168628684399712,
+      0.7248262461363023
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "exact_span_precision",
+    "value": 0.5384615384615384,
+    "ci": [
+      0.48418629355797965,
+      0.5940864633022005
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "exact_span_f1",
+    "value": 0.4739884393063584,
+    "ci": [
+      0.4238117354129778,
+      0.5235631261940527
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "safe_wrapper",
+    "metric": "partial_span_f1",
+    "value": 0.7530966143682907,
+    "ci": [
+      0.7154159607014351,
+      0.7891525373352721
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "exact_span_recall",
+    "value": 0.38422818791946306,
+    "ci": [
+      0.3360434371912297,
+      0.43530330882352936
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "partial_span_recall",
+    "value": 0.6728187919463087,
+    "ci": [
+      0.6188031914893617,
+      0.7243688925081433
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "exact_span_precision",
+    "value": 0.42407407407407405,
+    "ci": [
+      0.37407606080051337,
+      0.47940725576080745
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "exact_span_f1",
+    "value": 0.40316901408450695,
+    "ci": [
+      0.3576346320346321,
+      0.4505046628545113
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "partial_span_f1",
+    "value": 0.7059859154929576,
+    "ci": [
+      0.6666666666666667,
+      0.7435523357856904
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "exact_span_recall",
+    "value": 0.36578171091445427,
+    "ci": [
+      0.31955368895596603,
+      0.4122691759025568
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "partial_span_recall",
+    "value": 0.640117994100295,
+    "ci": [
+      0.5844127529447297,
+      0.69343306752548
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "exact_span_precision",
+    "value": 0.45925925925925926,
+    "ci": [
+      0.40949990295760186,
+      0.5116842308731919
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "exact_span_f1",
+    "value": 0.4072249589490969,
+    "ci": [
+      0.36346700985802916,
+      0.45145345305787904
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "bert_fair",
+    "metric": "partial_span_f1",
+    "value": 0.7126436781609194,
+    "ci": [
+      0.6734863510621639,
+      0.7490114862699963
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "exact_span_recall",
+    "value": 0.09228187919463088,
+    "ci": [
+      0.06166549295774648,
+      0.12834057971014487
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "partial_span_recall",
+    "value": 0.1610738255033557,
+    "ci": [
+      0.12091229109093302,
+      0.20387634346505504
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "exact_span_precision",
+    "value": 0.45081967213114754,
+    "ci": [
+      0.34020103092783505,
+      0.5597175759135357
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "exact_span_f1",
+    "value": 0.1532033426183844,
+    "ci": [
+      0.1054093567251462,
+      0.20671369218828467
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "partial_span_f1",
+    "value": 0.2674094707520891,
+    "ci": [
+      0.20803077323162275,
+      0.3267998135361128
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "exact_span_recall",
+    "value": 0.08112094395280237,
+    "ci": [
+      0.053595985291154544,
+      0.11288046776527706
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "partial_span_recall",
+    "value": 0.14601769911504425,
+    "ci": [
+      0.11032426427654475,
+      0.18553096201877525
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "exact_span_precision",
+    "value": 0.45081967213114754,
+    "ci": [
+      0.34020103092783505,
+      0.5597175759135357
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "exact_span_f1",
+    "value": 0.1375,
+    "ci": [
+      0.0934573539129614,
+      0.18725814974043664
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "partial_span_f1",
+    "value": 0.24750000000000003,
+    "ci": [
+      0.1924377439078648,
+      0.30445559499414515
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "exact_span_recall",
+    "value": 0.18624161073825504,
+    "ci": [
+      0.15194287298619016,
+      0.2227681203813608
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "partial_span_recall",
+    "value": 0.8489932885906041,
+    "ci": [
+      0.8149226091763405,
+      0.8812128695772312
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "exact_span_precision",
+    "value": 0.039181080127073775,
+    "ci": [
+      0.030801465726250827,
+      0.048763921808497084
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "exact_span_f1",
+    "value": 0.0647419072615923,
+    "ci": [
+      0.051493186053270384,
+      0.07943938610832213
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "primary",
+    "types": [
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "partial_span_f1",
+    "value": 0.2951297754447361,
+    "ci": [
+      0.2703799945091369,
+      0.32122066086168
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "exact_span_recall",
+    "value": 0.19174041297935104,
+    "ci": [
+      0.15713959059233448,
+      0.22551928783382788
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "partial_span_recall",
+    "value": 0.8348082595870207,
+    "ci": [
+      0.8008455604473501,
+      0.866974679170111
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "exact_span_precision",
+    "value": 0.04588775150017649,
+    "ci": [
+      0.03652871259132841,
+      0.05601252489658341
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "exact_span_f1",
+    "value": 0.07405297636001139,
+    "ci": [
+      0.05950882084716385,
+      0.08945548774712114
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "green",
+    "target": "secondary",
+    "types": [
+      "DOMAIN",
+      "QUALIFICATION",
+      "SKILL"
+    ],
+    "system": "token_lookup",
+    "metric": "partial_span_f1",
+    "value": 0.32241526630589573,
+    "ci": [
+      0.29824370210618084,
+      0.3465722494455806
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "anchor",
+    "metric": "exact_span_recall",
+    "value": 0.2026578073089701,
+    "ci": [
+      0.15614617940199335,
+      0.2483221476510067
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "anchor",
+    "metric": "partial_span_recall",
+    "value": 0.5681063122923588,
+    "ci": [
+      0.513420581655481,
+      0.6233333333333333
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "safe_wrapper",
+    "metric": "exact_span_recall",
+    "value": 0.2026578073089701,
+    "ci": [
+      0.15614617940199335,
+      0.2483221476510067
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "safe_wrapper",
+    "metric": "partial_span_recall",
+    "value": 0.5681063122923588,
+    "ci": [
+      0.513420581655481,
+      0.6233333333333333
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "bert_fair",
+    "metric": "exact_span_recall",
+    "value": 0.21262458471760798,
+    "ci": [
+      0.16611295681063123,
+      0.25666666666666665
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "bert_fair",
+    "metric": "partial_span_recall",
+    "value": 0.521594684385382,
+    "ci": [
+      0.46511627906976744,
+      0.5766666666666667
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "exact_span_recall",
+    "value": 0.07308970099667775,
+    "ci": [
+      0.043478260869565216,
+      0.10561930365221948
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "gliner_zeroshot",
+    "metric": "partial_span_recall",
+    "value": 0.19601328903654486,
+    "ci": [
+      0.15282392026578073,
+      0.2408026755852843
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "token_lookup",
+    "metric": "exact_span_recall",
+    "value": 0.16611295681063123,
+    "ci": [
+      0.12623539636091616,
+      0.2059800664451827
+    ],
+    "n_docs": 300
+  },
+  {
+    "dataset": "sayfullina",
+    "target": "primary",
+    "types": [
+      "SOFT"
+    ],
+    "system": "token_lookup",
+    "metric": "partial_span_recall",
+    "value": 0.9169435215946844,
+    "ci": [
+      0.8840963345140921,
+      0.9471990620114643
+    ],
+    "n_docs": 300
+  }
+]

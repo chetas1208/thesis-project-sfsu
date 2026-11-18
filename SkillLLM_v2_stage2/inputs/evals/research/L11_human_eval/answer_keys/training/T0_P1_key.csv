@@ -1,0 +1,9 @@
+item_id,q1_is_skill,q2_type,q3_boundary,q4_corrected_span,rationale
+T0-P1-01,yes,KNOWLEDGE,exact,,Something one possesses rather than executes -> KNOWLEDGE (B.2.1); the trigger 'Experience with' is excluded (B.3.6).
+T0-P1-02,yes,SKILL,too_short,mentor junior developers,A skill starts with a verb and includes its object (B.1.1); the bare verb is too short; 'will' is not tagged (B.1.1.1).
+T0-P1-03,no,,,,"Describes the company, not a competence asked of the candidate."
+T0-P1-04,yes,KNOWLEDGE,too_long,SQL,Fluff and triggers such as 'knowledge of' are excluded (B.3.6).
+T0-P1-05,yes,SKILL,exact,,Manner adverbials are part of the skill (B.1.6); the trailing circumstance is excluded (B.3.5).
+T0-P1-06,yes,KNOWLEDGE,exact,,SkillSpan tags degrees and their fields as separate KNOWLEDGE components (B.2.8); 'Computer Science' would be a second span.
+T0-P1-07,yes,SKILL,too_long,prepare monthly reports,Modal verbs are not tagged (B.1.1.1).
+T0-P1-08,yes,KNOWLEDGE,too_long,automation,An attitude that contains a knowledge component: only the component is tagged (B.1.8).

@@ -1,0 +1,73 @@
+{
+ "decision_rule": "adopt = no exact-name collision AND no same-field near-name (shared 'SkillGraph' stem) found; adopt_with_caveat = no exact-name collision in any source but the stem or a near-name is used in the same field, so the name is usable only with an explicit disambiguation; pick_alternative = an exact collision in the same task/field, or a registered mark that would block use. Final risk may exceed the screening risk, never fall below it without an override_reason.",
+ "sources_unreachable": [
+  "DBLP (HTML bot challenge from this host, all queries)",
+  "Google Scholar (sign-in/consent redirect)",
+  "USPTO tmsearch, EUIPO eSearch, WIPO Global Brand Database (JS apps; Justia aggregator returns HTTP 403)",
+  "Semantic Scholar: HTTP 429 for some terms even after retries (see retry rows)"
+ ],
+ "verdict": {
+  "recommendation": "ADOPT WITH CAVEAT",
+  "summary": "The exact string 'SkillGraphLM' (and 'SkillGraph-LM' / 'SkillGraph LM') appears nowhere: no paper title, repository, PyPI/npm package, Hugging Face model/dataset/space, or web page uses it (arXiv, OpenAlex, Crossref, ACL Anthology, GitHub, PyPI, npm, Hugging Face, and general web searches run by two agents on two dates). The stem 'SkillGraph' is however heavily used: several 2026 arXiv papers titled 'SkillGraph' (RL for agents 2605.12039, multi-agent 2604.17503, tool sequencing, dependency-aware retrieval), SkillGraph-Service (arXiv 2605.01582, ESCO/O*NET skill graph for competency-based education, the closest in domain), PyPI and GitHub projects, a Product Hunt career-strategy product 'Skillgraph' (same skill-gap-to-learning problem), and the generic HR-tech term 'skills graph'. The internal name 'SkillLLM' is NOT usable: it resolves to Skill-LLM (Herandi et al. 2024, arXiv 2410.12052), the same task on the same SkillSpan data. A trademark search could not be performed from this host.",
+  "caveats": [
+   "Use the full title 'SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence' (no source uses 'Non-Regressive Skill Extraction') on the cover, abstract and in citations, and keep the descriptive subtitle on every public artefact.",
+   "Add one disambiguation sentence in the thesis: SkillGraphLM is unrelated to SkillGraph (Li et al., 2026, RL for LLM agents), SkillGraph-Service (Le, Abel & Laforge, 2026) and Skill-LLM (Herandi et al., 2024); cite the last two as related work.",
+   "Do not publish a PyPI/npm package or Hugging Face repo named plain 'skillgraph' (taken or near-taken); register skillgraphlm early if public release is planned (the exact name is free on PyPI/npm/HF/GitHub on the audit date).",
+   "Run a formal trademark search (USPTO tmsearch, EUIPO eSearch, WIPO) before any commercial use: an unverified aggregator listing shows a pending USPTO application SKILLGRAPHS (serial 99842770, class 35); this audit could not confirm it.",
+   "Keep the internal repository/package name SkillLLM_v2 only as an internal label; do not use 'SkillLLM' in titles or the abstract.",
+   "If the author wants a name with no near-duplicates in the skill-graph field, the lighter alternative audit found no exact or near-name hit for SkillAnchorLM, AnchorPathLM or GapGraphLM; SkillTrellisLM has a crowded stem (Trellis agent-skills tooling). These are candidates only, not endorsed."
+  ]
+ },
+ "terms": {
+  "SkillGraphLM": {
+   "final_risk": "medium",
+   "why": "Exact string free everywhere checked; stem 'SkillGraph' occupied by several same-field works, so confusability is medium."
+  },
+  "SkillGraph-LM": {
+   "final_risk": "low",
+   "why": "No exact hit in any source; same stem issue as SkillGraphLM."
+  },
+  "SkillGraph LM": {
+   "final_risk": "low",
+   "why": "Same query/result as SkillGraph-LM."
+  },
+  "SkillGraph": {
+   "final_risk": "high",
+   "why": "Many exact uses: arXiv papers, GitHub (996 repository hits), PyPI skillgraph, npm package, a Product Hunt product, HR-tech usage; plausible trademark interest."
+  },
+  "Skill-LLM": {
+   "final_risk": "high",
+   "why": "Herandi et al. 2024 (arXiv 2410.12052): same task, same dataset (SkillSpan); also a Hugging Face model and npm package."
+  },
+  "SkillLLM": {
+   "final_risk": "high",
+   "why": "Unhyphenated form resolves to Skill-LLM; GitHub and Hugging Face have same-name items; the author's own repository also carries the name."
+  },
+  "SkillGPT": {
+   "final_risk": "high",
+   "why": "Li, Kang & De Bie 2023 (arXiv 2304.11060, github aida-ugent/SkillGPT): same task (skill extraction/standardization) plus several GitHub repos and an HF Space."
+  },
+  "SkillGraphLM: Non-Regressive Skill Extraction and Graph-Augmented Learning-Path Intelligence": {
+   "final_risk": "low",
+   "why": "No source uses the phrase 'Non-Regressive Skill Extraction'; title as a whole is distinctive, but it contains the SkillGraphLM name (screening none, adjudicated low)."
+  }
+ },
+ "alternatives": {
+  "SkillAnchorLM": {
+   "final_risk": "low",
+   "why": "No exact or near-name hit in 12 automated sources or in web search; 'Anchor' echoes the anchor-preservation idea. Semantic Scholar/DBLP unreachable."
+  },
+  "AnchorPathLM": {
+   "final_risk": "low",
+   "why": "No exact hit; stem 'Anchor...LM' is used (AnLLM, ACL Findings 2024) and the name does not say 'skill'."
+  },
+  "SkillTrellisLM": {
+   "final_risk": "medium",
+   "why": "No exact hit, but 'Trellis' is an existing agent-skills product (mindfold-ai/Trellis)."
+  },
+  "GapGraphLM": {
+   "final_risk": "low",
+   "why": "No exact hit; domain terms are generic (skill gap, skills graph); no GapGraph product or paper found."
+  }
+ }
+}

@@ -1,0 +1,1376 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "utc": "2026-11-18T08:25:23+00:00",
+    "git": {
+      "commit": "54aab906d548d871ad855bdbb09b7eea18ddf0d5",
+      "branch": "main",
+      "dirty": true
+    },
+    "seed": 42,
+    "argv": [
+      "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/human_eval_samples.py",
+      "--seed",
+      "42",
+      "--n-boot",
+      "2000"
+    ],
+    "python": "3.13.12",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "host": "srva",
+    "pid": 2575119,
+    "layer": "L11_human_eval",
+    "smoke": false,
+    "packet_manifest": "reports/skillllm_v2/evals/L11_human_eval/packet_manifest.json",
+    "sample_size_table": [
+      {
+        "target": "proportion within one P1 stratum (n=50)",
+        "halfwidth": 0.139,
+        "n_required": 50,
+        "basis": "Wald, p=0.5 worst case"
+      },
+      {
+        "target": "pooled proportion",
+        "halfwidth": 0.1,
+        "n_required": 97,
+        "basis": "Wald, p=0.5 worst case"
+      },
+      {
+        "target": "pooled proportion",
+        "halfwidth": 0.07,
+        "n_required": 196,
+        "basis": "Wald, p=0.5 worst case"
+      },
+      {
+        "target": "pooled proportion",
+        "halfwidth": 0.05,
+        "n_required": 385,
+        "basis": "Wald, p=0.5 worst case"
+      },
+      {
+        "target": "Cohen kappa (expected 0.6, prevalence 0.5)",
+        "halfwidth": 0.1,
+        "n_required": 246,
+        "basis": "Cohen (1960) large-sample SE"
+      },
+      {
+        "target": "Cohen kappa simulated at n=100 (kappa 0.6, prev 0.5)",
+        "halfwidth": 0.158,
+        "n_required": 100,
+        "basis": "Monte-Carlo, 2000 draws, seed 42"
+      },
+      {
+        "target": "Cohen kappa simulated at n=150 (kappa 0.6, prev 0.5)",
+        "halfwidth": 0.128,
+        "n_required": 150,
+        "basis": "Monte-Carlo, 2000 draws, seed 42"
+      },
+      {
+        "target": "Cohen kappa simulated at n=200 (kappa 0.6, prev 0.5)",
+        "halfwidth": 0.116,
+        "n_required": 200,
+        "basis": "Monte-Carlo, 2000 draws, seed 42"
+      },
+      {
+        "target": "mean relevance 0-3 (sd 1.0)",
+        "halfwidth": 0.15,
+        "n_required": 171,
+        "basis": "normal approx."
+      }
+    ]
+  },
+  "records": [
+    {
+      "layer": "L11_human_eval",
+      "system": "annotation_design",
+      "metric": "items_in_packet",
+      "value": 201.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "inputs/evals/research/L11_human_eval/answer_keys/P1_key.csv",
+          "sha256": "9c2ed4aacfd98c9ce9a2aad3143fe566d6faca8f7b28f2c83f889c3efe133b31",
+          "bytes": 21486
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "origin": "",
+        "packet_files": [
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P1__A.csv",
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P1__B.csv"
+        ]
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_is_skill_cohen_kappa",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "annotated item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/201, B=0/201 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P1__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_is_skill_krippendorff_alpha_nominal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "annotated item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/201, B=0/201 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P1__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q2_type_cohen_kappa",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "annotated item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/201, B=0/201 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P1__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q2_type_krippendorff_alpha_nominal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "annotated item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/201, B=0/201 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P1__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q3_boundary_cohen_kappa",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "annotated item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/201, B=0/201 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P1__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q3_boundary_krippendorff_alpha_nominal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "annotated item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/201, B=0/201 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P1__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "annotation_design",
+      "metric": "items_in_packet",
+      "value": 100.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 100,
+      "unit": "item",
+      "split": "L11 packet P2",
+      "dataset": "Extraction: full-sentence span annotation",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "inputs/evals/research/L11_human_eval/answer_keys/P2_key.csv",
+          "sha256": "19daf938eedca767ec65d260ba08101351bf1b8ecc6dcf0f16f314bf99433e27",
+          "bytes": 7919
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "origin": "",
+        "packet_files": [
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P2__A.csv",
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P2__B.csv"
+        ]
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "span_iaa_f1_exact",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 100,
+      "unit": "annotated item",
+      "split": "L11 packet P2",
+      "dataset": "Extraction: full-sentence span annotation",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/100, B=0/100 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P2__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P2"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "span_iaa_f1_overlap",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 100,
+      "unit": "annotated item",
+      "split": "L11 packet P2",
+      "dataset": "Extraction: full-sentence span annotation",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/100, B=0/100 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P2__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P2"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q_headline_cohen_kappa",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 100,
+      "unit": "annotated item",
+      "split": "L11 packet P2",
+      "dataset": "Extraction: full-sentence span annotation",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/100, B=0/100 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P2__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P2"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q_headline_krippendorff_alpha_nominal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 100,
+      "unit": "annotated item",
+      "split": "L11 packet P2",
+      "dataset": "Extraction: full-sentence span annotation",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/100, B=0/100 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P2__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P2"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "annotation_design",
+      "metric": "items_in_packet",
+      "value": 150.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 150,
+      "unit": "item",
+      "split": "L11 packet P3",
+      "dataset": "Normalization / taxonomy linking",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "inputs/evals/research/L11_human_eval/answer_keys/P3_key.csv",
+          "sha256": "e44b537821a00c7b07203943a115f711fea7975f6cacb35f6b607b59bd7c5725",
+          "bytes": 123028
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "origin": "reports/skillllm_v2/evals/L06_linking/annotation_sample.csv",
+        "packet_files": [
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P3__A.csv",
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P3__B.csv"
+        ]
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_choice_cohen_kappa",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 150,
+      "unit": "annotated item",
+      "split": "L11 packet P3",
+      "dataset": "Normalization / taxonomy linking",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/150, B=0/150 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P3__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P3"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_choice_krippendorff_alpha_nominal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 150,
+      "unit": "annotated item",
+      "split": "L11 packet P3",
+      "dataset": "Normalization / taxonomy linking",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/150, B=0/150 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P3__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P3"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "annotation_design",
+      "metric": "items_in_packet",
+      "value": 80.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 80,
+      "unit": "item",
+      "split": "L11 packet P4a",
+      "dataset": "Graph: prerequisite edge validity",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "inputs/evals/research/L11_human_eval/answer_keys/P4a_key.csv",
+          "sha256": "f0052e8c07acc11bdbc27886b5c6eb60e97de7501a4e7e2460ead81be5b6dbf2",
+          "bytes": 2393
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "origin": "inputs/courses/course_catalog_large.jsonl (synthetic, project-authored catalogue)",
+        "packet_files": [
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P4a__A.csv",
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P4a__B.csv"
+        ]
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_edge_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 80,
+      "unit": "annotated item",
+      "split": "L11 packet P4a",
+      "dataset": "Graph: prerequisite edge validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/80, B=0/80 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P4a__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P4a"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_edge_krippendorff_alpha_ordinal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 80,
+      "unit": "annotated item",
+      "split": "L11 packet P4a",
+      "dataset": "Graph: prerequisite edge validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/80, B=0/80 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P4a__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P4a"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "annotation_design",
+      "metric": "items_in_packet",
+      "value": 60.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 60,
+      "unit": "item",
+      "split": "L11 packet P4b",
+      "dataset": "Graph: learning-path pedagogical validity",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "inputs/evals/research/L11_human_eval/answer_keys/P4b_key.csv",
+          "sha256": "05e9027ef91fa32151b711e74e7412f44f5a321cea1ba7fb04a5bce4b3d1f784",
+          "bytes": 13196
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "origin": "reports/skillllm_v2/evals/L08_graph_retrieval/paths_for_human_eval.jsonl",
+        "packet_files": [
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P4b__A.csv",
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P4b__B.csv"
+        ]
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_all_edges_valid_cohen_kappa",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 60,
+      "unit": "annotated item",
+      "split": "L11 packet P4b",
+      "dataset": "Graph: learning-path pedagogical validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/60, B=0/60 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P4b__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P4b"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_all_edges_valid_krippendorff_alpha_nominal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 60,
+      "unit": "annotated item",
+      "split": "L11 packet P4b",
+      "dataset": "Graph: learning-path pedagogical validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/60, B=0/60 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P4b__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P4b"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q2_pedagogical_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 60,
+      "unit": "annotated item",
+      "split": "L11 packet P4b",
+      "dataset": "Graph: learning-path pedagogical validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/60, B=0/60 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P4b__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P4b"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q2_pedagogical_krippendorff_alpha_ordinal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 60,
+      "unit": "annotated item",
+      "split": "L11 packet P4b",
+      "dataset": "Graph: learning-path pedagogical validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/60, B=0/60 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P4b__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P4b"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "annotation_design",
+      "metric": "items_in_packet",
+      "value": 213.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "inputs/evals/research/L11_human_eval/answer_keys/P5_key.csv",
+          "sha256": "3c94ffe10deda383a90df0f2231c3cf0bdbd68e8132c98e925c17530ac6bf096",
+          "bytes": 49576
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "origin": "cached re-run of the frozen DEFAULT_CONFIG recommender inputs/evals/research/L11_human_eval/cache/full_tuned_heldout_recs.json (sha256 eb514b244779); top-10 identical to stored benchmark-v2 rankings for 24/24 held-out scenarios",
+        "packet_files": [
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P5__A.csv",
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P5__B.csv"
+        ]
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_relevance_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "annotated item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/213, B=0/213 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P5__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P5"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_relevance_krippendorff_alpha_ordinal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "annotated item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/213, B=0/213 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P5__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P5"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q2_gap_closure_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "annotated item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/213, B=0/213 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P5__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P5"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q2_gap_closure_krippendorff_alpha_ordinal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "annotated item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/213, B=0/213 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P5__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P5"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q3_prereq_ready_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "annotated item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/213, B=0/213 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P5__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P5"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q3_prereq_ready_krippendorff_alpha_ordinal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "annotated item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/213, B=0/213 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P5__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P5"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "annotation_design",
+      "metric": "items_in_packet",
+      "value": 120.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 120,
+      "unit": "item",
+      "split": "L11 packet P6",
+      "dataset": "Course recommendation: explanation faithfulness",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "inputs/evals/research/L11_human_eval/answer_keys/P6_key.csv",
+          "sha256": "2d1adf2cbd35f6318a5bb8c3980391288defa665b6e93e7264e13443f05f0d9e",
+          "bytes": 3132
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "origin": "cached re-run of the frozen DEFAULT_CONFIG recommender inputs/evals/research/L11_human_eval/cache/full_tuned_heldout_recs.json (sha256 eb514b244779); top-10 identical to stored benchmark-v2 rankings for 24/24 held-out scenarios",
+        "packet_files": [
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P6__A.csv",
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P6__B.csv"
+        ]
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_faithful_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 120,
+      "unit": "annotated item",
+      "split": "L11 packet P6",
+      "dataset": "Course recommendation: explanation faithfulness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/120, B=0/120 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P6__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P6"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_faithful_krippendorff_alpha_ordinal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 120,
+      "unit": "annotated item",
+      "split": "L11 packet P6",
+      "dataset": "Course recommendation: explanation faithfulness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/120, B=0/120 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P6__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P6"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q3_helpful_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 120,
+      "unit": "annotated item",
+      "split": "L11 packet P6",
+      "dataset": "Course recommendation: explanation faithfulness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/120, B=0/120 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P6__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P6"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q3_helpful_krippendorff_alpha_interval",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 120,
+      "unit": "annotated item",
+      "split": "L11 packet P6",
+      "dataset": "Course recommendation: explanation faithfulness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/120, B=0/120 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P6__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P6"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "annotation_design",
+      "metric": "items_in_packet",
+      "value": 50.0,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 50,
+      "unit": "item",
+      "split": "L11 packet P7",
+      "dataset": "Robustness: perturbation validity",
+      "direction": "none",
+      "status": "measured",
+      "reason": "",
+      "provenance": [
+        {
+          "path": "inputs/evals/research/L11_human_eval/answer_keys/P7_key.csv",
+          "sha256": "72fc86c020ac4cc5f5013b0f7c2c1064568060889285c02d5972d6f30b6c4753",
+          "bytes": 22832
+        }
+      ],
+      "caveats": [],
+      "details": {
+        "origin": "reports/skillllm_v2/evals/L03_robustness/perturbation_validity_sample.csv",
+        "packet_files": [
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P7__A.csv",
+          "reports/skillllm_v2/evals/L11_human_eval/packets/P7__B.csv"
+        ]
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_meaning_preserved_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 50,
+      "unit": "annotated item",
+      "split": "L11 packet P7",
+      "dataset": "Robustness: perturbation validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/50, B=0/50 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P7__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P7"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q1_meaning_preserved_krippendorff_alpha_ordinal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 50,
+      "unit": "annotated item",
+      "split": "L11 packet P7",
+      "dataset": "Robustness: perturbation validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/50, B=0/50 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P7__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P7"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q2_skills_recoverable_cohen_kappa",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 50,
+      "unit": "annotated item",
+      "split": "L11 packet P7",
+      "dataset": "Robustness: perturbation validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/50, B=0/50 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P7__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P7"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q2_skills_recoverable_krippendorff_alpha_nominal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 50,
+      "unit": "annotated item",
+      "split": "L11 packet P7",
+      "dataset": "Robustness: perturbation validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/50, B=0/50 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P7__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P7"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q3_fluency_cohen_kappa_quadratic",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 50,
+      "unit": "annotated item",
+      "split": "L11 packet P7",
+      "dataset": "Robustness: perturbation validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/50, B=0/50 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P7__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P7"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "human_annotators",
+      "metric": "q3_fluency_krippendorff_alpha_ordinal",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 50,
+      "unit": "annotated item",
+      "split": "L11 packet P7",
+      "dataset": "Robustness: perturbation validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "awaiting human annotation: annotator completion A=0/50, B=0/50 (need >= 90% from both); drop files into reports/skillllm_v2/evals/L11_human_eval/annotations/P7__A.csv and __B.csv",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "packet": "P7"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "anchor_fp_judged_valid_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "none",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "share of anchor 'false positives' (vs SkillSpan gold) that adjudicated humans judge to be valid skill spans (gold incompleteness)",
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "wrapper_added_span_valid_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "share of spans added by wrapper stages (not in gold, not by the anchor) judged valid",
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "baseline_only_span_valid_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "none",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "share of spans proposed only by the token-lookup / zero-shot GLiNER baselines (not in gold) judged valid",
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "anchor_fn_confirmed_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "none",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "share of gold spans missed by the anchor that humans confirm as skills",
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "control_tp_valid_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 201,
+      "unit": "item",
+      "split": "L11 packet P1",
+      "dataset": "Extraction: candidate span validity, type and boundary",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "agreed true positives judged valid (annotator calibration check; expected near 1)",
+        "packet": "P1"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "human_vs_gold_exact_f1",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 100,
+      "unit": "item",
+      "split": "L11 packet P2",
+      "dataset": "Extraction: full-sentence span annotation",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "adjudicated human spans vs SkillSpan gold, exact span F1 (human ceiling)",
+        "packet": "P2"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "gold_free_sentences_with_skill_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 100,
+      "unit": "item",
+      "split": "L11 packet P2",
+      "dataset": "Extraction: full-sentence span annotation",
+      "direction": "none",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "share of gold-free test sentences in which the adjudicated annotation has >= 1 skill span",
+        "packet": "P2"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "human_choice_matches_decorte_gold_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 150,
+      "unit": "item",
+      "split": "L11 packet P3",
+      "dataset": "Normalization / taxonomy linking",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "candidate-choice mode: share of control items (Decorte ESCO gold present among the candidates) where the adjudicated human choice is the gold concept",
+        "packet": "P3"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "linker_top1_matches_adjudicated_human_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 150,
+      "unit": "item",
+      "split": "L11 packet P3",
+      "dataset": "Normalization / taxonomy linking",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "candidate-choice mode: per linker, share of items whose top-ranked candidate equals the adjudicated human choice (independent ESCO linking gold; the key maps letters back to linker ranks)",
+        "packet": "P3"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "prerequisite_edge_validity_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 80,
+      "unit": "item",
+      "split": "L11 packet P4a",
+      "dataset": "Graph: prerequisite edge validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "adjudicated catalogue prerequisite edges judged valid",
+        "packet": "P4a"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "path_pedagogical_validity_mean",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 60,
+      "unit": "item",
+      "split": "L11 packet P4b",
+      "dataset": "Graph: learning-path pedagogical validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "mean adjudicated pedagogical validity (0-2) of learning paths",
+        "packet": "P4b"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "human_vs_rule_label_weighted_kappa",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "quadratic-weighted kappa between adjudicated human relevance and rule labels v1 (label validity)",
+        "packet": "P5"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "human_precision_at_5_full_minus_baseline",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 213,
+      "unit": "item",
+      "split": "L11 packet P5",
+      "dataset": "Course recommendation: relevance, gap closure, readiness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "paired difference in human-judged P@5 (relevance >= 2) between the tuned Full recommender and the pre-specified baseline",
+        "packet": "P5"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "explanation_faithfulness_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 120,
+      "unit": "item",
+      "split": "L11 packet P6",
+      "dataset": "Course recommendation: explanation faithfulness",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "share of explanations adjudicated faithful (every claim supported by course record / profile / job)",
+        "packet": "P6"
+      }
+    },
+    {
+      "layer": "L11_human_eval",
+      "system": "adjudicated_humans",
+      "metric": "perturbation_meaning_preserved_rate",
+      "value": null,
+      "ci_low": null,
+      "ci_high": null,
+      "ci_method": "",
+      "n_units": 50,
+      "unit": "item",
+      "split": "L11 packet P7",
+      "dataset": "Robustness: perturbation validity",
+      "direction": "higher",
+      "status": "pending_human",
+      "reason": "no annotation files returned yet",
+      "provenance": [],
+      "caveats": [],
+      "details": {
+        "definition": "share of perturbed sentences adjudicated meaning-preserving",
+        "packet": "P7"
+      }
+    }
+  ]
+}

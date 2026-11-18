@@ -1,0 +1,5 @@
+item_id,spans,q_headline,rationale
+T0-P2-01,Java|KNOWLEDGE; German|KNOWLEDGE,no,"Listed knowledge components are tagged separately, triggers excluded (B.2.8, B.3.6)."
+T0-P2-02,curious|SKILL; self-driven|SKILL,no,"Coordinated adjectives without a verb are split; attitudes are annotated as SKILL (B.1.2.3, B.1.7)."
+T0-P2-03,,yes,Components in the posting's top headline/title are not tagged (B.3.4): leave spans empty and mark headline.
+T0-P2-04,,no,No skill: leave the cell empty and put 'y' in completed (an empty cell on a completed row means 'no spans').

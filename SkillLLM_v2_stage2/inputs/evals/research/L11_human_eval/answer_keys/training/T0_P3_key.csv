@@ -1,0 +1,5 @@
+item_id,q1_choice,q2_note,rationale
+T0-P3-01,A,,k8s is the common abbreviation of Kubernetes.
+T0-P3-02,B,A is also acceptable but broader,Two defensible candidates: choose the more specific one and mention the other.
+T0-P3-03,NONE_OF_THESE,,"A real skill, but no listed concept denotes it: NONE_OF_THESE."
+T0-P3-04,NOT_A_SKILL,,"Describes the company, not a competence asked of the candidate."

@@ -1,0 +1,682 @@
+{
+  "node_types": {
+    "Course": 171,
+    "Skill": 208
+  },
+  "edge_types": {
+    "TEACHES": 310,
+    "REQUIRES_PREREQUISITE": 124
+  },
+  "enrichment": {
+    "enriched_teaches_pairs": 313,
+    "enriched_prereq_pairs": 124,
+    "share_enriched_teaches_in_graph": 0.597444089456869,
+    "share_enriched_prereq_in_graph": 0.8306451612903226,
+    "enrichment_only_pairs": 147,
+    "share_enrichment_only_pairs_in_graph": 0.0,
+    "enriched_teaches_not_in_graph_examples": [
+      [
+        "cloud-003",
+        "cloud"
+      ],
+      [
+        "cloud-004",
+        "amazon web services"
+      ],
+      [
+        "cloud-004",
+        "lambda"
+      ],
+      [
+        "cloud-005",
+        "cloud"
+      ],
+      [
+        "cloud-005",
+        "security"
+      ],
+      [
+        "cloud-007",
+        "cloud"
+      ],
+      [
+        "cloud-009",
+        "deployment"
+      ],
+      [
+        "cloud-012",
+        "networking"
+      ],
+      [
+        "cloud-013",
+        "cloud"
+      ],
+      [
+        "cloud-014",
+        "high speed separators"
+      ],
+      [
+        "cloud-015",
+        "management"
+      ],
+      [
+        "cloud-015",
+        "security"
+      ],
+      [
+        "cloud-016",
+        "networking"
+      ],
+      [
+        "data-001",
+        "structured query language"
+      ],
+      [
+        "data-002",
+        "structured query language"
+      ]
+    ],
+    "teaches_edges_with_course_title_as_evidence": 310,
+    "teaches_edges_total": 310
+  },
+  "linker_id_drift": [
+    {
+      "course": "data-024",
+      "authored": "A/B Testing",
+      "canonical_id": "testing",
+      "canonical_name": "testing"
+    },
+    {
+      "course": "web-009",
+      "authored": "API Design",
+      "canonical_id": "api",
+      "canonical_name": "API"
+    },
+    {
+      "course": "cloud-004",
+      "authored": "AWS Lambda",
+      "canonical_id": "lambda",
+      "canonical_name": "Lambda"
+    },
+    {
+      "course": "prog-005",
+      "authored": "Algorithms",
+      "canonical_id": "algorithm",
+      "canonical_name": "algorithm"
+    },
+    {
+      "course": "data-011",
+      "authored": "Apache Airflow",
+      "canonical_id": "apache",
+      "canonical_name": "Apache"
+    },
+    {
+      "course": "data-014",
+      "authored": "Apache Kafka",
+      "canonical_id": "apache",
+      "canonical_name": "Apache"
+    },
+    {
+      "course": "data-013",
+      "authored": "Apache Spark",
+      "canonical_id": "apache",
+      "canonical_name": "Apache"
+    },
+    {
+      "course": "sec-003",
+      "authored": "Application Security",
+      "canonical_id": "security",
+      "canonical_name": "security"
+    },
+    {
+      "course": "web-022",
+      "authored": "Backend Development",
+      "canonical_id": "backend",
+      "canonical_name": "backend"
+    },
+    {
+      "course": "prog-015",
+      "authored": "Bash Scripting",
+      "canonical_id": "bash",
+      "canonical_name": "Bash"
+    },
+    {
+      "course": "data-027",
+      "authored": "Business Intelligence",
+      "canonical_id": "artificial-intelligence",
+      "canonical_name": "Artificial Intelligence"
+    },
+    {
+      "course": "devops-018",
+      "authored": "CI/CD",
+      "canonical_id": "continuous-integration-continuous-deployment",
+      "canonical_name": "continuous integration/continuous deployment"
+    },
+    {
+      "course": "devops-015",
+      "authored": "Chaos Engineering",
+      "canonical_id": "engineering",
+      "canonical_name": "engineering"
+    },
+    {
+      "course": "sec-010",
+      "authored": "Cloud Architecture",
+      "canonical_id": "cloud",
+      "canonical_name": "cloud"
+    },
+    {
+      "course": "cloud-013",
+      "authored": "Cloud Cost Optimization",
+      "canonical_id": "cloud",
+      "canonical_name": "cloud"
+    },
+    {
+      "course": "cloud-016",
+      "authored": "Cloud Networking",
+      "canonical_id": "networking",
+      "canonical_name": "networking"
+    },
+    {
+      "course": "sec-010",
+      "authored": "Cloud Security",
+      "canonical_id": "security",
+      "canonical_name": "security"
+    },
+    {
+      "course": "prog-023",
+      "authored": "Computer Networking",
+      "canonical_id": "networking",
+      "canonical_name": "networking"
+    },
+    {
+      "course": "ml-012",
+      "authored": "Computer Vision",
+      "canonical_id": "computer-software",
+      "canonical_name": "Computer Software"
+    },
+    {
+      "course": "sec-014",
+      "authored": "Container Security",
+      "canonical_id": "security",
+      "canonical_name": "security"
+    },
+    {
+      "course": "data-016",
+      "authored": "Data Cleaning",
+      "canonical_id": "data",
+      "canonical_name": "data"
+    },
+    {
+      "course": "data-028",
+      "authored": "Data Governance",
+      "canonical_id": "data",
+      "canonical_name": "data"
+    },
+    {
+      "course": "data-026",
+      "authored": "Data Pipelines",
+      "canonical_id": "ci-cd-pipelines",
+      "canonical_name": "CI/CD pipelines"
+    },
+    {
+      "course": "data-028",
+      "authored": "Data Quality",
+      "canonical_id": "quality",
+      "canonical_name": "quality"
+    },
+    {
+      "course": "soft-004",
+      "authored": "Data Storytelling",
+      "canonical_id": "data",
+      "canonical_name": "data"
+    },
+    {
+      "course": "data-019",
+      "authored": "Data Visualization",
+      "canonical_id": "data",
+      "canonical_name": "data"
+    },
+    {
+      "course": "data-026",
+      "authored": "Data Warehousing",
+      "canonical_id": "data",
+      "canonical_name": "data"
+    },
+    {
+      "course": "data-004",
+      "authored": "Database Administration",
+      "canonical_id": "database",
+      "canonical_name": "database"
+    },
+    {
+      "course": "data-003",
+      "authored": "Database Design",
+      "canonical_id": "database",
+      "canonical_name": "database"
+    },
+    {
+      "course": "devops-017",
+      "authored": "Deployment Strategies",
+      "canonical_id": "deployment",
+      "canonical_name": "deployment"
+    },
+    {
+      "course": "sec-009",
+      "authored": "Digital Forensics",
+      "canonical_id": "digital-marketing",
+      "canonical_name": "Digital Marketing"
+    },
+    {
+      "course": "prog-004",
+      "authored": "Dynamic Programming",
+      "canonical_id": "dynamic",
+      "canonical_name": "dynamic"
+    },
+    {
+      "course": "ml-006",
+      "authored": "Ensemble Methods",
+      "canonical_id": "design-and-implement-useful-api-methods",
+      "canonical_name": "design and implement useful API methods"
+    },
+    {
+      "course": "data-025",
+      "authored": "Exploratory Data Analysis",
+      "canonical_id": "data-analysis",
+      "canonical_name": "data analysis"
+    },
+    {
+      "course": "ml-005",
+      "authored": "Feature Engineering",
+      "canonical_id": "engineering",
+      "canonical_name": "engineering"
+    },
+    {
+      "course": "web-021",
+      "authored": "Frontend Development",
+      "canonical_id": "front-end-development",
+      "canonical_name": "front-end development"
+    },
+    {
+      "course": "ml-027",
+      "authored": "Generative AI",
+      "canonical_id": "applied-ai",
+      "canonical_name": "Applied AI"
+    },
+    {
+      "course": "devops-006",
+      "authored": "GitHub Actions",
+      "canonical_id": "github",
+      "canonical_name": "GitHub )"
+    },
+    {
+      "course": "cloud-014",
+      "authored": "High Availability",
+      "canonical_id": "high-speed-separators",
+      "canonical_name": "high-speed separators"
+    },
+    {
+      "course": "data-023",
+      "authored": "Hypothesis Testing",
+      "canonical_id": "testing",
+      "canonical_name": "testing"
+    },
+    {
+      "course": "sec-015",
+      "authored": "Identity and Access Management",
+      "canonical_id": "management",
+      "canonical_name": "management"
+    },
+    {
+      "course": "devops-012",
+      "authored": "Incident Management",
+      "canonical_id": "management",
+      "canonical_name": "management"
+    },
+    {
+      "course": "ml-018",
+      "authored": "Large Language Models",
+      "canonical_id": "natural-language-processing",
+      "canonical_name": "natural language processing"
+    },
+    {
+      "course": "prog-015",
+      "authored": "Linux System Administration",
+      "canonical_id": "linux",
+      "canonical_name": "linux"
+    },
+    {
+      "course": "web-018",
+      "authored": "Mobile Development",
+      "canonical_id": "mobile",
+      "canonical_name": "mobile"
+    },
+    {
+      "course": "cloud-009",
+      "authored": "Model Deployment",
+      "canonical_id": "deployment",
+      "canonical_name": "deployment"
+    },
+    {
+      "course": "ml-005",
+      "authored": "Model Evaluation",
+      "canonical_id": "model-rules",
+      "canonical_name": "model rules"
+    },
+    {
+      "course": "ml-021",
+      "authored": "Model Monitoring",
+      "canonical_id": "monitoring",
+      "canonical_name": "monitoring"
+    },
+    {
+      "course": "sec-016",
+      "authored": "Network Security",
+      "canonical_id": "network-automation",
+      "canonical_name": "network automation"
+    },
+    {
+      "course": "prog-006",
+      "authored": "Object-Oriented Programming",
+      "canonical_id": "programming",
+      "canonical_name": "programming"
+    },
+    {
+      "course": "sec-006",
+      "authored": "Penetration Testing",
+      "canonical_id": "testing",
+      "canonical_name": "testing"
+    },
+    {
+      "course": "prog-025",
+      "authored": "Performance Profiling",
+      "canonical_id": "performance",
+      "canonical_name": "performance"
+    },
+    {
+      "course": "devops-016",
+      "authored": "Platform Engineering",
+      "canonical_id": "platform-solutions",
+      "canonical_name": "platform solutions"
+    },
+    {
+      "course": "data-020",
+      "authored": "Power BI",
+      "canonical_id": "powerbi",
+      "canonical_name": "powerbi"
+    },
+    {
+      "course": "soft-004",
+      "authored": "Presentation Skills",
+      "canonical_id": "communication-and-presentation-skills",
+      "canonical_name": "communication and presentation skills"
+    },
+    {
+      "course": "ml-016",
+      "authored": "Prompt Engineering",
+      "canonical_id": "engineering",
+      "canonical_name": "engineering"
+    },
+    {
+      "course": "data-005",
+      "authored": "Query Optimization",
+      "canonical_id": "structured-query-language",
+      "canonical_name": "structured query language"
+    },
+    {
+      "course": "ml-019",
+      "authored": "Recommender Systems",
+      "canonical_id": "storage-systems",
+      "canonical_name": "storage systems )"
+    },
+    {
+      "course": "ml-020",
+      "authored": "Reinforcement Learning",
+      "canonical_id": "machine-learning",
+      "canonical_name": "machine learning"
+    },
+    {
+      "course": "soft-011",
+      "authored": "Requirements Engineering",
+      "canonical_id": "engineering",
+      "canonical_name": "engineering"
+    },
+    {
+      "course": "ml-024",
+      "authored": "Responsible AI",
+      "canonical_id": "responsible",
+      "canonical_name": "responsible"
+    },
+    {
+      "course": "web-002",
+      "authored": "Responsive Design",
+      "canonical_id": "design",
+      "canonical_name": "design"
+    },
+    {
+      "course": "web-022",
+      "authored": "SQL",
+      "canonical_id": "structured-query-language",
+      "canonical_name": "structured query language"
+    },
+    {
+      "course": "ml-004",
+      "authored": "Scikit-Learn",
+      "canonical_id": "learn",
+      "canonical_name": "learn"
+    },
+    {
+      "course": "sec-004",
+      "authored": "Secure Coding",
+      "canonical_id": "coding",
+      "canonical_name": "coding"
+    },
+    {
+      "course": "sec-016",
+      "authored": "Security Operations",
+      "canonical_id": "security",
+      "canonical_name": "security"
+    },
+    {
+      "course": "devops-014",
+      "authored": "Service Mesh",
+      "canonical_id": "service-topology",
+      "canonical_name": "service topology"
+    },
+    {
+      "course": "devops-012",
+      "authored": "Site Reliability Engineering",
+      "canonical_id": "engineering",
+      "canonical_name": "engineering"
+    },
+    {
+      "course": "prog-019",
+      "authored": "Software Testing",
+      "canonical_id": "testing",
+      "canonical_name": "testing"
+    },
+    {
+      "course": "web-004",
+      "authored": "State Management",
+      "canonical_id": "management",
+      "canonical_name": "management"
+    },
+    {
+      "course": "data-014",
+      "authored": "Stream Processing",
+      "canonical_id": "predictive-processing",
+      "canonical_name": "predictive processing"
+    },
+    {
+      "course": "soft-002",
+      "authored": "Technical Writing",
+      "canonical_id": "writing-software",
+      "canonical_name": "writing software"
+    },
+    {
+      "course": "sec-007",
+      "authored": "Threat Modeling",
+      "canonical_id": "data-modeling",
+      "canonical_name": "data-modeling"
+    },
+    {
+      "course": "soft-014",
+      "authored": "Time Management",
+      "canonical_id": "management",
+      "canonical_name": "management"
+    },
+    {
+      "course": "data-030",
+      "authored": "Time Series Analysis",
+      "canonical_id": "analysis",
+      "canonical_name": "analysis"
+    },
+    {
+      "course": "web-017",
+      "authored": "UX Design",
+      "canonical_id": "ux",
+      "canonical_name": "UX"
+    },
+    {
+      "course": "ml-007",
+      "authored": "Unsupervised Learning",
+      "canonical_id": "machine-learning",
+      "canonical_name": "machine learning"
+    },
+    {
+      "course": "ml-018",
+      "authored": "Vector Databases",
+      "canonical_id": "databases",
+      "canonical_name": "databases"
+    },
+    {
+      "course": "sec-012",
+      "authored": "Vulnerability Management",
+      "canonical_id": "management",
+      "canonical_name": "management"
+    },
+    {
+      "course": "web-016",
+      "authored": "Web Accessibility",
+      "canonical_id": "web",
+      "canonical_name": "Web"
+    },
+    {
+      "course": "web-015",
+      "authored": "Web Performance",
+      "canonical_id": "performance",
+      "canonical_name": "performance"
+    }
+  ],
+  "linker_over_merges": {
+    "linux": [
+      "Linux",
+      "Linux System Administration"
+    ],
+    "testing": [
+      "A/B Testing",
+      "Hypothesis Testing",
+      "Penetration Testing",
+      "Software Testing"
+    ],
+    "networking": [
+      "Cloud Networking",
+      "Computer Networking"
+    ],
+    "performance": [
+      "Performance Profiling",
+      "Web Performance"
+    ],
+    "structured query language": [
+      "Query Optimization",
+      "SQL"
+    ],
+    "data analysis": [
+      "Data Analysis",
+      "Exploratory Data Analysis"
+    ],
+    "database": [
+      "Database Administration",
+      "Database Design"
+    ],
+    "data modeling": [
+      "Data Modeling",
+      "Threat Modeling"
+    ],
+    "data": [
+      "Data Cleaning",
+      "Data Governance",
+      "Data Storytelling",
+      "Data Visualization",
+      "Data Warehousing"
+    ],
+    "apache": [
+      "Apache Airflow",
+      "Apache Kafka",
+      "Apache Spark"
+    ],
+    "artificial intelligence": [
+      "Artificial Intelligence",
+      "Business Intelligence"
+    ],
+    "machine learning": [
+      "Machine Learning",
+      "Reinforcement Learning",
+      "Unsupervised Learning"
+    ],
+    "engineering": [
+      "Chaos Engineering",
+      "Feature Engineering",
+      "Prompt Engineering",
+      "Requirements Engineering",
+      "Site Reliability Engineering"
+    ],
+    "natural language processing": [
+      "Large Language Models",
+      "Natural Language Processing"
+    ],
+    "deployment": [
+      "Deployment Strategies",
+      "Model Deployment"
+    ],
+    "monitoring": [
+      "Model Monitoring",
+      "Monitoring"
+    ],
+    "cloud": [
+      "Cloud Architecture",
+      "Cloud Cost Optimization"
+    ],
+    "security": [
+      "Application Security",
+      "Cloud Security",
+      "Container Security",
+      "Security Operations"
+    ],
+    "management": [
+      "Identity and Access Management",
+      "Incident Management",
+      "State Management",
+      "Time Management",
+      "Vulnerability Management"
+    ]
+  },
+  "duplicates": {
+    "over_merged_ids": {},
+    "alias_collisions_between_nodes": [
+      [
+        "software architecture",
+        "system design"
+      ]
+    ]
+  },
+  "structure": {
+    "orphan_nodes": [],
+    "courses_without_teaches": [],
+    "dangling_prereqs": [],
+    "infeasible_courses_from_empty_profile": [],
+    "skill_prereq_pairs": 198,
+    "nontrivial_sccs": [],
+    "courses_teaching_own_prereq": [],
+    "longest_prereq_chain_skills": 5
+  }
+}

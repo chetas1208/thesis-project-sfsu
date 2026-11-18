@@ -1,0 +1,427 @@
+{"base_id": "test-30", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-30", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-30", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-30", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-31", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-31", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-31", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-79", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-79", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-79", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-79", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-127", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-131", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-131", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-134", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-134", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-138", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-138", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-138", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-138", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-179", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-179", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-179", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-179", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-179", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-179", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-192", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-192", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-192", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-192", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-192", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-273", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-273", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-273", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-273", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-273", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-273", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-273", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-348", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-348", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-348", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-348", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-348", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-348", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-348", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-415", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-415", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-415", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-415", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-439", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-439", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-439", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-439", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-439", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-439", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-450", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-450", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-450", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-450", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-450", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-450", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-520", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-520", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-520", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-522", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-522", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-522", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-522", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-588", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-588", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-588", "family": "case_title", "reason": "already title-case"}
+{"base_id": "test-588", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-588", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-588", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-588", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-778", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-799", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-799", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-799", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-799", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-799", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-889", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-889", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-889", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-893", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-893", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-947", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-947", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-947", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-947", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-947", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-947", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-947", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-971", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-971", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-971", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-971", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-971", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-971", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-978", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-978", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-982", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-982", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-982", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-982", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1046", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1046", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1046", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1046", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1083", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1083", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1083", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-1083", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1083", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1083", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1099", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1099", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1104", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1104", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1104", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1104", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1104", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1155", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1155", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1155", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-1155", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1155", "family": "typo_inside", "reason": "no span word of length >= 4"}
+{"base_id": "test-1155", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1155", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1155", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1168", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1168", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1168", "family": "case_title", "reason": "already title-case"}
+{"base_id": "test-1168", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1168", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1168", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1168", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1179", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1179", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1190", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1190", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1190", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1190", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1190", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1190", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1197", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1197", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1197", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1197", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1197", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1230", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1230", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1230", "family": "case_title", "reason": "already title-case"}
+{"base_id": "test-1230", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1230", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1230", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1241", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1241", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1241", "family": "case_title", "reason": "already title-case"}
+{"base_id": "test-1241", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1241", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1241", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1253", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1253", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1253", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-1253", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1253", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1253", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1267", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1267", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1267", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1267", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1337", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1337", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1337", "family": "case_title", "reason": "already title-case"}
+{"base_id": "test-1337", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1337", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1337", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1337", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1394", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1394", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1394", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1399", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-1399", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1399", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1399", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1402", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1402", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1402", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1408", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1408", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1549", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1549", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1549", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1549", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1549", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1553", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1553", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1553", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1553", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1557", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1557", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1561", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1561", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1563", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1563", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1564", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1564", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1564", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1601", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1601", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1601", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-1601", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1601", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1601", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1601", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1608", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1608", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1608", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-1608", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1608", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1608", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1608", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1611", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1611", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1627", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1627", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1627", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1627", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1659", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1659", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1659", "family": "case_title", "reason": "already title-case"}
+{"base_id": "test-1659", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1659", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1659", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1682", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1682", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1687", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1687", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1687", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1687", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1717", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1717", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-1717", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1717", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1717", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1717", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1739", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1739", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1865", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1865", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-1931", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1931", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1931", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-1936", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1936", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1976", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-1976", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-1976", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-1976", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-1976", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-1976", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2051", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2051", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2051", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-2051", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-2051", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2051", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2051", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2082", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2082", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2082", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2093", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2093", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2093", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2093", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2204", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2258", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2258", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2258", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2324", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2324", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2324", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2325", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2325", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2325", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2325", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2349", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2349", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2430", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2430", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2430", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2430", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2430", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2438", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2438", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2438", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2438", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2438", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2440", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2440", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2440", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-2440", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2440", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2466", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2466", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2466", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2466", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2466", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2490", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2549", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2549", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2549", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2549", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2574", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2574", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2784", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2810", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2819", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2819", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2848", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2848", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2848", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2848", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2865", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2865", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2866", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2866", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2879", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2879", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2879", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2910", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-2910", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-2910", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-2910", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2910", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2918", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2918", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2948", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2967", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2967", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2967", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2968", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2968", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-2968", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2988", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2988", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-2995", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-2995", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3045", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3045", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3045", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3084", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3084", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3094", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3110", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-3110", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3110", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3112", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-3112", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3112", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3112", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3142", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3142", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3142", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3182", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3182", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3196", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3196", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3198", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3198", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3205", "family": "case_lower", "reason": "already lower-case"}
+{"base_id": "test-3205", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3205", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3205", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3207", "family": "case_title", "reason": "already title-case"}
+{"base_id": "test-3207", "family": "typo_outside", "reason": "no context word of length >= 4 outside spans"}
+{"base_id": "test-3207", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3207", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3207", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3212", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3212", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3215", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3215", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3215", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3247", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-3247", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-3247", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3247", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3247", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3284", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3284", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3291", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3291", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3305", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3306", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3306", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3364", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-3364", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-3364", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3395", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-3395", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-3395", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3395", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3396", "family": "punct_detok", "reason": "no punctuation token outside spans"}
+{"base_id": "test-3396", "family": "punct_strip", "reason": "no removable punctuation token outside spans"}
+{"base_id": "test-3396", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3396", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3396", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3415", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3415", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3424", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3443", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3443", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3454", "family": "typo_inside", "reason": "no span word of length >= 4"}
+{"base_id": "test-3454", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3454", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3454", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3455", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3455", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3455", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3501", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3523", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3523", "family": "paraphrase_context", "reason": "no paraphrasable context word"}
+{"base_id": "test-3523", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}
+{"base_id": "test-3543", "family": "alias_sub", "reason": "no gold span with a taxonomy alias"}
+{"base_id": "test-3543", "family": "reorder_clauses", "reason": "single section and no 'A and/or B' coordination of two gold spans"}

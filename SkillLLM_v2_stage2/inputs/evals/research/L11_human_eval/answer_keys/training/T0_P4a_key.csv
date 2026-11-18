@@ -1,0 +1,4 @@
+item_id,q1_edge,rationale
+T0-P4a-01,valid,Standard prerequisite.
+T0-P4a-02,invalid,Unrelated; would block learners for no reason.
+T0-P4a-03,questionable,Helpful for some content but not required.

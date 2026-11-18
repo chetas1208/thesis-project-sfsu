@@ -1,0 +1,374 @@
+{
+  "E1_cpr": {
+    "n_courses": 654,
+    "n_course_edges": 861,
+    "n_annotated_pairs": 3544,
+    "n_pairs_with_majority": 3344,
+    "n_directed_instances": 5267,
+    "n_positive_instances": 1240,
+    "majority_vote_reproduces_cs_preqs": 0.997020854021847,
+    "n_conflicting_duplicate_instances_dropped": 135,
+    "concepts_matched_in_any_description": 0.7129094412331407,
+    "mean_concepts_per_course": 4.790519877675841,
+    "systems": {
+      "graph_rule(repo semantics)": {
+        "ap": 0.2787019536027895,
+        "ap_ci": [
+          0.2477139787501763,
+          0.3107351868921197
+        ],
+        "precision": 0.3000712758374911,
+        "recall": 0.3395161290322581,
+        "f1": 0.3185773741959894,
+        "tp": 421,
+        "fp": 982,
+        "fn": 819,
+        "ci_p": [
+          0.26258937206800864,
+          0.33821322583029456
+        ],
+        "ci_r": [
+          0.28048632056427675,
+          0.3973540221278925
+        ],
+        "ci_f": [
+          0.2744575400696934,
+          0.36109513152767914
+        ]
+      },
+      "graph_rule_minus_cotaught": {
+        "ap": 0.25792016955184716,
+        "ap_ci": [
+          0.23102512444091974,
+          0.2872697049452535
+        ],
+        "precision": 0.27161500815660683,
+        "recall": 0.2685483870967742,
+        "f1": 0.27007299270072993,
+        "tp": 333,
+        "fp": 893,
+        "fn": 907,
+        "ci_p": [
+          0.23440706330428762,
+          0.30775036258227095
+        ],
+        "ci_r": [
+          0.2206632131664493,
+          0.31019417846707126
+        ],
+        "ci_f": [
+          0.2306138408129667,
+          0.3041724538064218
+        ]
+      },
+      "graph_rule_reversed(sanity)": {
+        "ap": 0.2476763445006773,
+        "ap_ci": [
+          0.22365500078100642,
+          0.27082142681584076
+        ],
+        "precision": 0.23525230987917556,
+        "recall": 0.2669354838709677,
+        "f1": 0.2500944465432565,
+        "tp": 331,
+        "fp": 1076,
+        "fn": 909,
+        "ci_p": [
+          0.2049659031497483,
+          0.26440824053395573
+        ],
+        "ci_r": [
+          0.21758220910930087,
+          0.31387890699170495
+        ],
+        "ci_f": [
+          0.2138545785973079,
+          0.2851631514736833
+        ]
+      },
+      "frequency_direction": {
+        "ap": 0.4437484769353218,
+        "ap_ci": [
+          0.3591317787055693,
+          0.5219832163898044
+        ],
+        "precision": 0.3333333333333333,
+        "recall": 0.6524193548387097,
+        "f1": 0.4412326152167984,
+        "tp": 809,
+        "fp": 1618,
+        "fn": 431,
+        "ci_p": [
+          0.2878684666831806,
+          0.38436788746593353
+        ],
+        "ci_r": [
+          0.5926268526905596,
+          0.7060484322905848
+        ],
+        "ci_f": [
+          0.3875292655223965,
+          0.49582707240350976
+        ]
+      },
+      "random(prior)": {
+        "ap": 0.2538992483451103,
+        "ap_ci": [
+          0.22388551165463907,
+          0.28800783733689805
+        ]
+      },
+      "minilm_similarity\u00d7frequency_direction": {
+        "ap": 0.4350476221228485,
+        "ap_ci": [
+          0.3886214036076147,
+          0.48592917665394464
+        ]
+      }
+    },
+    "paired_f1": {
+      "graph_rule_reversed(sanity)": {
+        "delta": 0.0684829276527329,
+        "ci": [
+          0.034079670191231315,
+          0.10008604388664578
+        ],
+        "p": 0.001998001998001998
+      },
+      "frequency_direction": {
+        "delta": -0.12265524102080899,
+        "ci": [
+          -0.16518071044888097,
+          -0.081859180952197
+        ],
+        "p": 0.001998001998001998
+      }
+    }
+  },
+  "E2_overlap": {
+    "CPR-Recover": {
+      "overlap_concepts": 36,
+      "synthetic_pairs_in_vocab": 16,
+      "agree": [
+        [
+          "machine learning",
+          "statistics"
+        ],
+        [
+          "natural language processing",
+          "machine learning"
+        ],
+        [
+          "query optimization",
+          "sql"
+        ],
+        [
+          "unsupervised learning",
+          "machine learning"
+        ]
+      ],
+      "contradict": [
+        [
+          "calculus",
+          "linear algebra"
+        ],
+        [
+          "data analysis",
+          "machine learning"
+        ],
+        [
+          "object oriented programming",
+          "python"
+        ],
+        [
+          "statistics",
+          "probability"
+        ]
+      ],
+      "unannotated": 8,
+      "external_positive_pairs_in_overlap": [
+        [
+          "artificial intelligence",
+          "probability"
+        ],
+        [
+          "authentication",
+          "network security"
+        ],
+        [
+          "c++",
+          "object oriented programming"
+        ],
+        [
+          "computer vision",
+          "artificial intelligence"
+        ],
+        [
+          "cryptography",
+          "authentication"
+        ],
+        [
+          "data analysis",
+          "problem solving"
+        ],
+        [
+          "java",
+          "object oriented programming"
+        ],
+        [
+          "machine learning",
+          "artificial intelligence"
+        ],
+        [
+          "machine learning",
+          "data analysis"
+        ],
+        [
+          "machine learning",
+          "probability"
+        ],
+        [
+          "machine learning",
+          "statistics"
+        ],
+        [
+          "natural language processing",
+          "artificial intelligence"
+        ],
+        [
+          "natural language processing",
+          "machine learning"
+        ],
+        [
+          "natural language processing",
+          "unsupervised learning"
+        ],
+        [
+          "probability",
+          "statistics"
+        ],
+        [
+          "python",
+          "object oriented programming"
+        ],
+        [
+          "query optimization",
+          "sql"
+        ],
+        [
+          "reinforcement learning",
+          "artificial intelligence"
+        ],
+        [
+          "reinforcement learning",
+          "machine learning"
+        ],
+        [
+          "reinforcement learning",
+          "statistics"
+        ],
+        [
+          "unsupervised learning",
+          "artificial intelligence"
+        ],
+        [
+          "unsupervised learning",
+          "machine learning"
+        ]
+      ],
+      "external_positives_implied_by_synthetic": [
+        [
+          "machine learning",
+          "statistics"
+        ],
+        [
+          "natural language processing",
+          "machine learning"
+        ],
+        [
+          "query optimization",
+          "sql"
+        ],
+        [
+          "unsupervised learning",
+          "machine learning"
+        ]
+      ]
+    },
+    "AL-CPL": {
+      "overlap_concepts": 5,
+      "synthetic_pairs_in_vocab": 2,
+      "agree": [],
+      "contradict": [],
+      "unannotated": 2,
+      "external_positive_pairs_in_overlap": [
+        [
+          "anomaly detection",
+          "data analysis"
+        ]
+      ],
+      "external_positives_implied_by_synthetic": []
+    },
+    "LectureBank1": {
+      "overlap_concepts": 5,
+      "synthetic_pairs_in_vocab": 0,
+      "agree": [],
+      "contradict": [],
+      "unannotated": 0,
+      "external_positive_pairs_in_overlap": [
+        [
+          "computer vision",
+          "linear algebra"
+        ],
+        [
+          "computer vision",
+          "probability"
+        ],
+        [
+          "dynamic programming",
+          "linear algebra"
+        ],
+        [
+          "reinforcement learning",
+          "linear algebra"
+        ],
+        [
+          "reinforcement learning",
+          "probability"
+        ]
+      ],
+      "external_positives_implied_by_synthetic": []
+    },
+    "LectureBank2": {
+      "overlap_concepts": 10,
+      "synthetic_pairs_in_vocab": 5,
+      "agree": [],
+      "contradict": [
+        [
+          "calculus",
+          "linear algebra"
+        ],
+        [
+          "data structures",
+          "python"
+        ],
+        [
+          "neural networks",
+          "python"
+        ]
+      ],
+      "unannotated": 2,
+      "external_positive_pairs_in_overlap": [
+        [
+          "neural networks",
+          "unsupervised learning"
+        ],
+        [
+          "reinforcement learning",
+          "unsupervised learning"
+        ]
+      ],
+      "external_positives_implied_by_synthetic": []
+    }
+  }
+}

@@ -1,0 +1,776 @@
+{
+  "generated_utc": "2026-11-18T08:28:41+00:00",
+  "git": {
+    "commit": "54aab906d548d871ad855bdbb09b7eea18ddf0d5",
+    "branch": "main",
+    "dirty": true
+  },
+  "smoke": false,
+  "layers": [
+    {
+      "layer": "L01_extraction",
+      "title": "Span extraction (SkillSpan test)",
+      "owner": "A1",
+      "status": "measured",
+      "counts": {
+        "measured": 1370
+      },
+      "n_records": 1370,
+      "utc": "2026-11-18T06:54:54+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/extraction_full.py"
+      ]
+    },
+    {
+      "layer": "L02_generalization",
+      "title": "Unseen-skill generalization",
+      "owner": "A1",
+      "status": "measured",
+      "counts": {
+        "measured": 747
+      },
+      "n_records": 747,
+      "utc": "2026-11-18T06:58:38+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/generalization.py"
+      ]
+    },
+    {
+      "layer": "L03_robustness",
+      "title": "Robustness to perturbations",
+      "owner": "A3",
+      "status": "measured + not_available",
+      "counts": {
+        "measured": 324,
+        "not_available": 5
+      },
+      "n_records": 329,
+      "utc": "2026-11-18T07:35:14+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/robustness.py"
+      ]
+    },
+    {
+      "layer": "L04_calibration",
+      "title": "Calibration and selective prediction",
+      "owner": "A2",
+      "status": "measured",
+      "counts": {
+        "measured": 1409
+      },
+      "n_records": 1409,
+      "utc": "2026-11-18T07:08:45+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/calibration_selective.py"
+      ]
+    },
+    {
+      "layer": "L05_wrapper",
+      "title": "Safe-wrapper contribution",
+      "owner": "A2",
+      "status": "measured",
+      "counts": {
+        "measured": 826
+      },
+      "n_records": 826,
+      "utc": "2026-11-17T21:26:54+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/wrapper_contribution.py"
+      ]
+    },
+    {
+      "layer": "L06_linking",
+      "title": "Taxonomy linking / normalization",
+      "owner": "A4",
+      "status": "measured + pending_human",
+      "counts": {
+        "measured": 827,
+        "pending_human": 1
+      },
+      "n_records": 828,
+      "utc": "2026-11-18T08:23:32+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/linking_eval.py",
+        "--seed",
+        "42",
+        "--n-boot",
+        "2000"
+      ]
+    },
+    {
+      "layer": "L07_compaction",
+      "title": "Profile compaction",
+      "owner": "A4",
+      "status": "measured",
+      "counts": {
+        "measured": 560
+      },
+      "n_records": 560,
+      "utc": "2026-11-17T21:16:49+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/compaction.py",
+        "--seed",
+        "42",
+        "--n-boot",
+        "2000",
+        "--n-profiles",
+        "120"
+      ]
+    },
+    {
+      "layer": "L08_graph_retrieval",
+      "title": "Graph-augmented retrieval",
+      "owner": "A5",
+      "status": "measured + not_available",
+      "counts": {
+        "measured": 169,
+        "not_available": 5
+      },
+      "n_records": 174,
+      "utc": "2026-11-18T07:08:07+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/graph_retrieval.py",
+        "--seed",
+        "42",
+        "--n-boot",
+        "2000"
+      ]
+    },
+    {
+      "layer": "L09_course_rec",
+      "title": "Course recommendation",
+      "owner": "A5",
+      "status": "measured",
+      "counts": {
+        "measured": 385
+      },
+      "n_records": 385,
+      "utc": "2026-11-18T07:14:29+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/course_rec.py",
+        "--seed",
+        "42",
+        "--n-boot",
+        "2000"
+      ]
+    },
+    {
+      "layer": "L10_significance",
+      "title": "Central significance testing",
+      "owner": "A2",
+      "status": "measured",
+      "counts": {
+        "measured": 1056
+      },
+      "n_records": 1056,
+      "utc": "2026-11-18T08:28:22+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/significance.py"
+      ]
+    },
+    {
+      "layer": "L11_human_eval",
+      "title": "Human evaluation",
+      "owner": "A6",
+      "status": "measured + pending_human",
+      "counts": {
+        "measured": 8,
+        "pending_human": 49
+      },
+      "n_records": 57,
+      "utc": "2026-11-18T08:25:23+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/human_eval_samples.py",
+        "--seed",
+        "42",
+        "--n-boot",
+        "2000"
+      ]
+    },
+    {
+      "layer": "L12_systems",
+      "title": "Systems: latency, memory",
+      "owner": "A3",
+      "status": "measured + not_available",
+      "counts": {
+        "measured": 45,
+        "not_available": 3
+      },
+      "n_records": 48,
+      "utc": "2026-11-18T07:42:00+00:00",
+      "smoke": false,
+      "git": "54aab906d548",
+      "argv": [
+        "/home/923873155/Sem 4 Research/SkillLLM_v2_stage2/src/skillllm_v2/evals/research/systems.py"
+      ]
+    }
+  ],
+  "headline": [
+    {
+      "layer": "L01_extraction",
+      "system": "mistral_lora",
+      "metric": "exact_span_f1",
+      "value": 0.6700687818948303,
+      "ci": "[0.6465, 0.6938]",
+      "n": 974,
+      "unit": "sentence",
+      "split": "test[974 sentences with >=1 gold span]",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl@ac5917d026 (+1)"
+    },
+    {
+      "layer": "L01_extraction",
+      "system": "mistral_lora",
+      "metric": "token_f1",
+      "value": 0.7878863409770688,
+      "ci": "[0.7701, 0.8053]",
+      "n": 974,
+      "unit": "sentence",
+      "split": "test[974 sentences with >=1 gold span]",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl@ac5917d026 (+1)"
+    },
+    {
+      "layer": "L02_generalization",
+      "system": "mistral_lora",
+      "metric": "unseen_exact_f1",
+      "value": 0.5873660879202068,
+      "ci": "[0.5589, 0.6157]",
+      "n": 974,
+      "unit": "sentence",
+      "split": "test[974 sentences with >=1 gold span]",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/mistral_lora/predictions.jsonl@ac5917d026 (+5)"
+    },
+    {
+      "layer": "L03_robustness",
+      "system": "anchor",
+      "metric": "mean_degradation_exact_f1",
+      "value": 0.02233996491877005,
+      "ci": "[0.0035, 0.0417]",
+      "n": 120,
+      "unit": "document",
+      "split": "test",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": "inputs/evals/research/L03_robustness/perturbed_docs.jsonl@d5935c230d (+2)"
+    },
+    {
+      "layer": "L04_calibration",
+      "system": "anchor_logprob:primary[sum_lp]_platt",
+      "metric": "sel_risk@80",
+      "value": 0.2664437012263099,
+      "ci": "[0.2394, 0.2950]",
+      "n": 974,
+      "unit": "document (cluster of spans)",
+      "split": "test",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl@b4c75aa87b (+3)"
+    },
+    {
+      "layer": "L04_calibration",
+      "system": "anchor_logprob:primary[sum_lp]_platt",
+      "metric": "ece_w10",
+      "value": 0.018699238315893457,
+      "ci": "[0.0133, 0.0422]",
+      "n": 974,
+      "unit": "document (cluster of spans)",
+      "split": "test",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl@b4c75aa87b (+3)"
+    },
+    {
+      "layer": "L05_wrapper",
+      "system": "R7_safe_wrapper_stored",
+      "metric": "exact_span_f1",
+      "value": 0.6718541574032904,
+      "ci": "[0.6477, 0.6954]",
+      "n": 974,
+      "unit": "document",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "data/source/skillspan_hf/test.json@8438eda349 (+2)"
+    },
+    {
+      "layer": "L05_wrapper",
+      "system": "R7_safe_wrapper_stored",
+      "metric": "apr",
+      "value": 0.9986754966887417,
+      "ci": "[0.9958, 1.0000]",
+      "n": 974,
+      "unit": "document",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "data/source/skillspan_hf/test.json@8438eda349 (+2)"
+    },
+    {
+      "layer": "L06_linking",
+      "system": "shipped_bridge",
+      "metric": "top1_acc_linkable",
+      "value": 0.15725047080979285,
+      "ci": "[0.1258, 0.1903]",
+      "n": 55,
+      "unit": "posting (cluster); mentions in details",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "data/external/decorte_skill_extraction/tech/validation.csv@7efcc66c27 (+4)"
+    },
+    {
+      "layer": "L06_linking",
+      "system": "shipped_bridge",
+      "metric": "recall@5",
+      "value": 0.16195856873822975,
+      "ci": "[0.1295, 0.1968]",
+      "n": 55,
+      "unit": "posting (cluster); mentions in details",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "data/external/decorte_skill_extraction/tech/validation.csv@7efcc66c27 (+4)"
+    },
+    {
+      "layer": "L06_linking",
+      "system": "shipped_bridge",
+      "metric": "mrr@10",
+      "value": 0.1594475831763967,
+      "ci": "[0.1280, 0.1930]",
+      "n": 55,
+      "unit": "posting (cluster); mentions in details",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "data/external/decorte_skill_extraction/tech/validation.csv@7efcc66c27 (+4)"
+    },
+    {
+      "layer": "L06_linking",
+      "system": "cascade_esco@tau_val",
+      "metric": "top1_acc_linkable",
+      "value": 0.3239171374764595,
+      "ci": "[0.2856, 0.3599]",
+      "n": 55,
+      "unit": "posting (cluster); mentions in details",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "data/external/decorte_skill_extraction/tech/validation.csv@7efcc66c27 (+4)"
+    },
+    {
+      "layer": "L06_linking",
+      "system": "cascade_esco@tau_val",
+      "metric": "recall@5",
+      "value": 0.5056497175141242,
+      "ci": "[0.4604, 0.5505]",
+      "n": 55,
+      "unit": "posting (cluster); mentions in details",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "data/external/decorte_skill_extraction/tech/validation.csv@7efcc66c27 (+4)"
+    },
+    {
+      "layer": "L06_linking",
+      "system": "cascade_esco@tau_val",
+      "metric": "mrr@10",
+      "value": 0.3998557677936208,
+      "ci": "[0.3619, 0.4380]",
+      "n": 55,
+      "unit": "posting (cluster); mentions in details",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "data/external/decorte_skill_extraction/tech/validation.csv@7efcc66c27 (+4)"
+    },
+    {
+      "layer": "L07_compaction",
+      "system": "compact@0.5[informative]",
+      "metric": "token_reduction_vs_full",
+      "value": 0.09283727054314132,
+      "ci": "[0.0110, 0.1674]",
+      "n": 120,
+      "unit": "profile",
+      "split": "synthetic",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/mistral_lora/model/tokenizer.json@260c7a2c57 (+6)"
+    },
+    {
+      "layer": "L07_compaction",
+      "system": "compact@0.5[informative]",
+      "metric": "job_ndcg10",
+      "value": 0.24873573677065997,
+      "ci": "[0.2007, 0.2993]",
+      "n": 119,
+      "unit": "profile",
+      "split": "synthetic",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/mistral_lora/model/tokenizer.json@260c7a2c57 (+6)"
+    },
+    {
+      "layer": "L07_compaction",
+      "system": "compact@0.5[informative]",
+      "metric": "course_ndcg10",
+      "value": 0.7284313764508878,
+      "ci": "[0.6939, 0.7604]",
+      "n": 117,
+      "unit": "profile",
+      "split": "synthetic",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/mistral_lora/model/tokenizer.json@260c7a2c57 (+6)"
+    },
+    {
+      "layer": "L07_compaction",
+      "system": "compact@0.5[informative]",
+      "metric": "gap_jaccard_vs_full",
+      "value": 0.3482936507936509,
+      "ci": "[0.2961, 0.4014]",
+      "n": 120,
+      "unit": "profile",
+      "split": "synthetic",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/mistral_lora/model/tokenizer.json@260c7a2c57 (+6)"
+    },
+    {
+      "layer": "L08_graph_retrieval",
+      "system": "hybrid+graph",
+      "metric": "recall@10",
+      "value": 0.8424272486772487,
+      "ci": "[0.7578, 0.9199]",
+      "n": 24,
+      "unit": "scenario",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "inputs/courses/course_catalog_large.jsonl@1b42b903e7 (+3)"
+    },
+    {
+      "layer": "L08_graph_retrieval",
+      "system": "hybrid+graph",
+      "metric": "ndcg@10",
+      "value": 0.8244428306454564,
+      "ci": "[0.7777, 0.8691]",
+      "n": 24,
+      "unit": "scenario",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "inputs/courses/course_catalog_large.jsonl@1b42b903e7 (+3)"
+    },
+    {
+      "layer": "L08_graph_retrieval",
+      "system": "SkillLLM_v2 Full recommender (explanation paths)",
+      "metric": "path_validity",
+      "value": 1.0,
+      "ci": "[1.0000, 1.0000]",
+      "n": 24,
+      "unit": "scenario",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "inputs/courses/course_catalog_large.jsonl@1b42b903e7 (+3)"
+    },
+    {
+      "layer": "L09_course_rec",
+      "system": "SkillLLM_v2 Full",
+      "metric": "precision@5",
+      "value": 0.6083333333333334,
+      "ci": "[0.5333, 0.6833]",
+      "n": 24,
+      "unit": "scenario",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "inputs/courses/course_catalog_large.jsonl@1b42b903e7 (+3)"
+    },
+    {
+      "layer": "L09_course_rec",
+      "system": "SkillLLM_v2 Full",
+      "metric": "ndcg@10",
+      "value": 0.8853650114258468,
+      "ci": "[0.8514, 0.9160]",
+      "n": 24,
+      "unit": "scenario",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "inputs/courses/course_catalog_large.jsonl@1b42b903e7 (+3)"
+    },
+    {
+      "layer": "L09_course_rec",
+      "system": "SkillLLM_v2 Full",
+      "metric": "wsgc@5",
+      "value": 0.8382169641360817,
+      "ci": "[0.7735, 0.8994]",
+      "n": 24,
+      "unit": "scenario",
+      "split": "test",
+      "direction": "higher",
+      "status": "measured",
+      "reason": "",
+      "provenance": "inputs/courses/course_catalog_large.jsonl@1b42b903e7 (+3)"
+    },
+    {
+      "layer": "L09_course_rec",
+      "system": "SkillLLM_v2 Full",
+      "metric": "prereq_violation_rate",
+      "value": 0.0,
+      "ci": "[0.0000, 0.0000]",
+      "n": 24,
+      "unit": "scenario",
+      "split": "test",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": "inputs/courses/course_catalog_large.jsonl@1b42b903e7 (+3)"
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "latency_p95",
+      "value": 16.66135635094249,
+      "ci": "[15.1548, 18.3863]",
+      "n": 974,
+      "unit": "document",
+      "split": "test",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl@b4c75aa87b (+1)"
+    },
+    {
+      "layer": "L12_systems",
+      "system": "anchor",
+      "metric": "peak_vram_gb",
+      "value": 18.484297728,
+      "ci": "-",
+      "n": 974,
+      "unit": "document",
+      "split": "test",
+      "direction": "lower",
+      "status": "measured",
+      "reason": "",
+      "provenance": "artifacts/skillllm_v2/evals_gpu/anchor_test_logprobs/predictions.jsonl@b4c75aa87b (+1)"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "H1",
+      "owner_layer": "L01_extraction",
+      "verdict": "NOT SUPPORTED",
+      "delta": 0.03695331348524411,
+      "ci": "[0.0165, 0.0573]",
+      "p_raw": 0.00039996000399960006,
+      "p_holm": 0.00039996000399960006,
+      "family": "H1_anchor_vs_baselines",
+      "status": "measured",
+      "reason": "",
+      "rule": "H1 SUPPORTED iff anchor exact-span F1 minus baseline >= 0.10 AND Holm-adjusted p < 0.05 against EVERY baseline in family H1_anchor_vs_baselines (paired, 974 test sentences; p = approximate randomization, 10,000 shuffles; CI = paired bootstrap, 10,000 resamples).",
+      "system": "mistral_lora",
+      "caveat": ""
+    },
+    {
+      "hypothesis": "H2",
+      "owner_layer": "L05_wrapper",
+      "verdict": "NOT SUPPORTED",
+      "delta": 0.0,
+      "ci": "[0.0000, 0.0000]",
+      "p_raw": 1.0,
+      "p_holm": 1.0,
+      "family": "H2",
+      "status": "measured",
+      "reason": "",
+      "rule": "H2: APR(safe) - APR(legacy) 95% CI lower bound > 0 against BOTH legacy full_cag_graph and legacy mistral_gliner_taxonomy, AND exact-F1(safe) - exact-F1(anchor) lower 95% CI bound > -0.005 (D-A2-02).",
+      "system": "R7_safe_wrapper_stored",
+      "caveat": "Single training run of the anchor and one test split: CIs reflect document sampling only.; SOFT_SKILL = SkillSpan 'skill' component (tags_skill), HARD_SKILL = 'knowledge' (tags_knowledge).; 974-doc subset with >=1 gold s"
+    },
+    {
+      "hypothesis": "H3",
+      "owner_layer": "L02_generalization",
+      "verdict": "SUPPORTED",
+      "delta": 0.206284705730587,
+      "ci": "[0.1704, 0.2415]",
+      "p_raw": 0.00019998000199980003,
+      "p_holm": 0.00019998000199980003,
+      "family": "H3_seen_vs_unseen (single test; Holm = raw)",
+      "status": "measured",
+      "reason": "",
+      "rule": "H3 SUPPORTED iff, for the anchor, exact F1 on seen mentions (S1 exact_seen + S2 normalized_seen) minus exact F1 on fully unseen mentions (S4) is >= 0.05 AND its 95% paired sentence-bootstrap CI (10,000) excludes 0. S3 is reported separately.",
+      "system": "mistral_lora",
+      "caveat": "Single SkillSpan test split and one training run per system: CIs reflect sentence sampling only, not seed/training variance.; Primary population = the 974 test sentences that contain gold spans; false positives on the 2,"
+    },
+    {
+      "hypothesis": "H4",
+      "owner_layer": "L04_calibration",
+      "verdict": "SUPPORTED",
+      "delta": 0.05871240938921196,
+      "ci": "[0.0477, 0.0682]",
+      "p_raw": 0.00019998000199980003,
+      "p_holm": 0.0005999400059994001,
+      "family": "H4",
+      "status": "measured",
+      "reason": "",
+      "rule": "H4: selective precision@80% and @50% minus precision@100% > 0 (CI excl. 0) AND AURC(primary) - AURC(constant 0.86) < 0 (CI excl. 0); score + calibrator selected/fit on dev only (D-A2-03).",
+      "system": "anchor_logprob",
+      "caveat": "Primary effect = selective precision@80% minus precision@100% under the dev-selected score."
+    },
+    {
+      "hypothesis": "H5",
+      "owner_layer": "L08_graph_retrieval",
+      "verdict": "SUPPORTED",
+      "delta": 0.0855294560504873,
+      "ci": "[0.0478, 0.1204]",
+      "p_raw": 0.00019998000199980003,
+      "p_holm": 0.0005999400059994001,
+      "family": "H5",
+      "status": "measured",
+      "reason": "",
+      "rule": "H5: hybrid+graph vs hybrid (no graph) nDCG@10 on multi-gap (\u22652 gaps) held-out queries: \u0394 > 0 with Holm p < 0.05",
+      "system": "hybrid+graph vs hybrid(bm25+dense)",
+      "caveat": "All 24 test scenarios have \u22654 system-visible gaps: the 1-gap stratum is empty on the original benchmark.; Graph hop 1 equals flat skill overlap here because the KG's TEACHES edges are a 1:1 projection of the catalogue fi"
+    },
+    {
+      "hypothesis": "H6",
+      "owner_layer": "L09_course_rec",
+      "verdict": "SUPPORTED",
+      "delta": -0.18333333333333335,
+      "ci": "[-0.2583, -0.1167]",
+      "p_raw": 0.00039996000399960006,
+      "p_holm": 0.0014998500149985001,
+      "family": "H6",
+      "status": "measured",
+      "reason": "",
+      "rule": "H6: prerequisite-aware vs same ranker without prerequisite constraints: violation rate lower with CI excluding 0, AND nDCG@10 non-inferior (lower CI bound of \u0394 > \u22120.02)",
+      "system": "SkillLLM_v2 Full vs Full-noPrereq (ablation)",
+      "caveat": "The violation criterion is satisfied by construction when the strict mode enforces the same rule the metric checks; nDCG non-inferiority is the informative half."
+    },
+    {
+      "hypothesis": "H7",
+      "owner_layer": "L07_compaction",
+      "verdict": "NOT SUPPORTED",
+      "delta": 0.16146137034774743,
+      "ci": "[0.1004, 0.2241]",
+      "p_raw": 0.0004997501249375312,
+      "p_holm": 0.0009995002498750624,
+      "family": "H7[informative][compact@0.5]",
+      "status": "measured",
+      "reason": "",
+      "rule": "token reduction (mean, Mistral tokens) >= 0.50 AND job nDCG@10 and course nDCG@10 non-inferior to full (lower 95% CI of delta > -0.02, Holm over the two) AND mean gap Jaccard vs full >= 0.9",
+      "system": "compact@0.5[informative]",
+      "caveat": ""
+    },
+    {
+      "hypothesis": "H7",
+      "owner_layer": "L07_compaction",
+      "verdict": "NOT SUPPORTED",
+      "delta": 0.0,
+      "ci": "[0.0000, 0.0000]",
+      "p_raw": 0.0004997501249375312,
+      "p_holm": 0.0009995002498750624,
+      "family": "H7[informative][compact@shipped]",
+      "status": "measured",
+      "reason": "",
+      "rule": "token reduction (mean, Mistral tokens) >= 0.50 AND job nDCG@10 and course nDCG@10 non-inferior to full (lower 95% CI of delta > -0.02, Holm over the two) AND mean gap Jaccard vs full >= 0.9",
+      "system": "compact@shipped[informative]",
+      "caveat": ""
+    },
+    {
+      "hypothesis": "H7",
+      "owner_layer": "L07_compaction",
+      "verdict": "NOT SUPPORTED",
+      "delta": 0.16146137034774743,
+      "ci": "[0.1004, 0.2241]",
+      "p_raw": 0.0004997501249375312,
+      "p_holm": 0.0009995002498750624,
+      "family": "H7[uninformative][compact@0.5]",
+      "status": "measured",
+      "reason": "",
+      "rule": "token reduction (mean, Mistral tokens) >= 0.50 AND job nDCG@10 and course nDCG@10 non-inferior to full (lower 95% CI of delta > -0.02, Holm over the two) AND mean gap Jaccard vs full >= 0.9",
+      "system": "compact@0.5[uninformative]",
+      "caveat": ""
+    },
+    {
+      "hypothesis": "H7",
+      "owner_layer": "L07_compaction",
+      "verdict": "NOT SUPPORTED",
+      "delta": 0.0,
+      "ci": "[0.0000, 0.0000]",
+      "p_raw": 0.0004997501249375312,
+      "p_holm": 0.0009995002498750624,
+      "family": "H7[uninformative][compact@shipped]",
+      "status": "measured",
+      "reason": "",
+      "rule": "token reduction (mean, Mistral tokens) >= 0.50 AND job nDCG@10 and course nDCG@10 non-inferior to full (lower 95% CI of delta > -0.02, Holm over the two) AND mean gap Jaccard vs full >= 0.9",
+      "system": "compact@shipped[uninformative]",
+      "caveat": ""
+    }
+  ],
+  "integrity_flags": [
+    "2026-11-17T20:56Z | A2 | integrity-flag | minor: src/skillllm_v2/evals/extraction_evals.py::paired_boot p-value = 2*min(P(d<=0), 1-P(d<=0)) returns p=0 when all bootstrap deltas are exactly 0 (identical systems) and under-counts ties at 0; not edited (read-only). stats.paired_bootstrap counts ties on both sides with +1 smoothing. Affects only near-degenerate comparisons (e.g. wrapper variants differing on <20 docs) \u2014 L10 recomputes them.",
+    "2026-11-17T21:03Z | A3 | integrity-flag | The stored \"BERT baseline\" (artifacts/skillllm_v2/bert_baseline, exact F1 0.059) is NOT a neural BERT: src/skillllm_v2/baselines/bert_baseline.py memorises the most frequent BIO tag per lower-cased training token and tags by lookup (model.json training_mode \"token_classification_memorized_baseline\"; configs name bert-base-uncased but it is never loaded). It must be labelled \"token-lookup baseline\" in any table; H1 against it is a straw man. GLiNER baseline is zero-shot (urchade/gliner_medium-v2.1, not fine-tuned on SkillSpan; metrics.json training_mode \"zero_shot\").",
+    "2026-11-17T21:03Z | A3 | integrity-flag | Offset code drift: anchor predictions (artifacts/skillllm_v2/mistral_lora/predictions.jsonl, Jul 13) were aligned with the OLD schema.find_offsets (first plain substring match), the current code (commit 1f8bd68) uses word-boundary matching first. E.g. test-12 \"javascript reactjs java\": stored span \"java\" at 0-4 (inside \"javascript\"), current code gives 19-23. Re-running the anchor today therefore cannot reproduce stored offsets byte-for-byte even with identical model output; J1 reproduction check reports model-output identity and offset-code effects separately.",
+    "2026-11-17T21:11Z | A5 | integrity-flag | src/skillllm_v2/evals/contract.py::paired_bootstrap has the same p=0-for-identical-systems defect A2 flagged in extraction_evals.paired_boot (p = 2*min(below, 1-below) with ties counted only in 'below'); A5 uses its own +1-smoothed bootstrap p plus a sign-flip permutation p. Not edited.",
+    "2026-11-17T21:27Z | A4 | integrity-flag | The money-table \"Linking Accuracy\" (0.890374 Full CAG/Graph, 0.890271 Mistral+GLiNER+Taxonomy, 0.889834/0.889732 safe wrapper) is NOT an accuracy: pipeline/smoke_runner.py sets linking_accuracy = linked_count/total over PREDICTED spans (share with any non-null canonical id); no gold link is compared (none existed). It is also partly circular: the 711-row alias table it links into = 601 SkillSpan train/dev gold surfaces + 76 aliases mined from anchor predictions on the SAME test split + 34 manual, and the BM25 fallback links almost any string sharing a token. linker_{train,dev}.jsonl are 2 toy rows; the taxonomy reranker is a placeholder; linking_eval.csv's 0.0 = \"reranker labels unavailable\". Must be relabelled \"linking coverage (diagnostic)\" everywhere; real accuracy against public ESCO gold is in L06_linking.",
+    "2026-11-17T21:16Z | A1 | integrity-flag | money_table compares different populations: stored BERT/GLiNER metrics (0.059150 / 0.075833) are over all 3,569 test sentences, the anchor 0.670069 over the 974 with gold spans. Same 974 sentences: lookup baseline 0.1376, GLiNER 0.0814. Anchor's own full-test F1 is unmeasured until A3's anchor_test_nospan (pending_gpu)",
+    "2026-11-17T21:16Z | A1 | integrity-flag | claims vs artifacts (L01_extraction/claims_reconciliation.csv): 0.675034 (20 occurrences; run-1 anchor exact F1, used as wrapper-gate target) and 0.670222 / 0.672602 (significance_f1.md) match no stored predictions; reports/skillllm_v2/wrapper_error_analysis.md (12 anchor/wrapper values, old run) and extraction_ablation.md (15 values, stub ablation on 20 dev docs) are not reproducible from artifacts. 0.670069 / 0.669478 / 0.671854 / 0.672444 / 0.671102 reproduce exactly",
+    "2026-11-17T21:16Z | A1 | integrity-flag | data/skillllm_v2/taxonomy/skill_aliases.jsonl contains 76 rows (source mistral_high_confidence) mined from the anchor's TEST predictions (normalize/skill_alias_builder.py) = transductive test use; 0 of the stored wrapper outputs' dictionary-sourced spans trace to those rows (121 in safe_wrapper: 81 manual, 40 train/dev gold), so no measured effect; excluded from L02 S3. scripts/build_offline_aliases.py itself uses no test data",
+    "2026-11-17T21:18Z | A2 | integrity-flag | wrapper tuning provenance (confirms docs/INFERENCE_AND_EVALS.md I10/I12): candidate_merger/tuned_config.yaml values are outside the tuner grid, boundary YAML == DEFAULT_CONFIG, no dev predictions/tuning CSVs on disk, calibrator untuned -> NO wrapper component is verifiably dev-tuned; the non-regression gate that chose the shipped variant ran on the TEST subset (test-set selection); anchor-protection/realign designs followed a TEST-split error analysis; 76 alias rows come from TEST predictions (measured effect on spans: 0). Wrapper gains are therefore not clean held-out improvements (they are also not significant).",
+    "2026-11-18T07:15Z | B3 | integrity-flag | L06 circularity audit (label-free diagnostics): legacy 0.890374 reproduced exactly from full_cag_graph/linked_skills.jsonl = coverage. Coverage on predicted spans that match a gold span 0.895 vs 0.879 on non-gold spans (no discrimination); 52% of links come from the BM25 fallback; 76% of linked spans carry taxonomy tag SKILLSPAN_GOLD; shipped linker links 66% of random non-gold n-grams; 67/76 'mistral_high_confidence' alias rows (mined from anchor test predictions) are test gold surfaces (152 test gold mentions match them). Verdict: not an accuracy, circular (dictionary-derived score), test-contaminated.",
+    "2026-11-18T07:16Z | B4 | integrity-flag | L09: existing Explanation Completeness@5 = 1.000 for Full, for random courses with placeholder fields and for Full packets attached to the WRONG courses -> tautological (field presence only). Claim-level faithfulness of Full 0.925 lenient (145 unsupported of 1922 claims, ALL are 'quoted learning outcome does not mention the skill': 119/264 supported), strict-field covers_gap_skill 230/300; wrong-course probe 0.650.",
+    "2026-11-18T07:16Z | B4 | integrity-flag | L09 label independence: label builder imports no system code, but labels' need/coverage and prerequisite-feasibility rules are the same catalogue-field logic skill-aware systems and the strict prereq mode implement: an oracle applying the v1 rule to system-VISIBLE inputs scores nDCG@10 0.958 [0.929,0.979] vs gold (kappa v1 vs v_visible 0.898); text-only labels kappa 0.586. Violation-rate zeros for Full/filter systems are by construction. System ordering Kendall tau v1 vs content_only 0.462, vs v_text 0.487."
+  ]
+}

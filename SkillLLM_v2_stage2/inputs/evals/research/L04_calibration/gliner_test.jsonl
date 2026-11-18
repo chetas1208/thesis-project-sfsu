@@ -1,0 +1,974 @@
+{"id": "test-12", "predictions": []}
+{"id": "test-19", "predictions": []}
+{"id": "test-21", "predictions": [{"surface_form": "innovation", "label": "SOFT_SKILL", "start": 162, "end": 172, "source": "gliner", "confidence": 0.37992289662361145, "evidence": "innovation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "engineering practices", "label": "SOFT_SKILL", "start": 177, "end": 198, "source": "gliner", "confidence": 0.5211737751960754, "evidence": "engineering practices", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-22", "predictions": []}
+{"id": "test-25", "predictions": []}
+{"id": "test-29", "predictions": []}
+{"id": "test-30", "predictions": []}
+{"id": "test-31", "predictions": []}
+{"id": "test-32", "predictions": []}
+{"id": "test-33", "predictions": []}
+{"id": "test-34", "predictions": []}
+{"id": "test-35", "predictions": [{"surface_form": "Proficiency", "label": "SOFT_SKILL", "start": 4, "end": 15, "source": "gliner", "confidence": 0.35756757855415344, "evidence": "Proficiency", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-36", "predictions": [{"surface_form": "software improvement", "label": "SOFT_SKILL", "start": 91, "end": 111, "source": "gliner", "confidence": 0.4521085321903229, "evidence": "software improvement", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-37", "predictions": []}
+{"id": "test-38", "predictions": []}
+{"id": "test-39", "predictions": []}
+{"id": "test-62", "predictions": []}
+{"id": "test-67", "predictions": []}
+{"id": "test-69", "predictions": [{"surface_form": "innovation", "label": "SOFT_SKILL", "start": 162, "end": 172, "source": "gliner", "confidence": 0.37992289662361145, "evidence": "innovation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "engineering practices", "label": "SOFT_SKILL", "start": 177, "end": 198, "source": "gliner", "confidence": 0.5211737751960754, "evidence": "engineering practices", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-70", "predictions": []}
+{"id": "test-74", "predictions": []}
+{"id": "test-75", "predictions": []}
+{"id": "test-76", "predictions": []}
+{"id": "test-77", "predictions": []}
+{"id": "test-78", "predictions": []}
+{"id": "test-79", "predictions": []}
+{"id": "test-80", "predictions": []}
+{"id": "test-81", "predictions": []}
+{"id": "test-83", "predictions": []}
+{"id": "test-84", "predictions": [{"surface_form": "software improvement", "label": "SOFT_SKILL", "start": 89, "end": 109, "source": "gliner", "confidence": 0.4469015300273895, "evidence": "software improvement", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-102", "predictions": []}
+{"id": "test-106", "predictions": []}
+{"id": "test-117", "predictions": []}
+{"id": "test-123", "predictions": []}
+{"id": "test-127", "predictions": []}
+{"id": "test-129", "predictions": []}
+{"id": "test-130", "predictions": []}
+{"id": "test-131", "predictions": []}
+{"id": "test-132", "predictions": []}
+{"id": "test-133", "predictions": []}
+{"id": "test-134", "predictions": []}
+{"id": "test-135", "predictions": [{"surface_form": "PowerShell", "label": "HARD_SKILL", "start": 40, "end": 50, "source": "gliner", "confidence": 0.36760061979293823, "evidence": "PowerShell", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-136", "predictions": []}
+{"id": "test-137", "predictions": []}
+{"id": "test-138", "predictions": []}
+{"id": "test-139", "predictions": []}
+{"id": "test-140", "predictions": []}
+{"id": "test-141", "predictions": []}
+{"id": "test-164", "predictions": []}
+{"id": "test-168", "predictions": []}
+{"id": "test-173", "predictions": []}
+{"id": "test-179", "predictions": []}
+{"id": "test-182", "predictions": [{"surface_form": "innovation & engineering practices", "label": "SOFT_SKILL", "start": 207, "end": 241, "source": "gliner", "confidence": 0.4560101628303528, "evidence": "innovation & engineering practices", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-183", "predictions": []}
+{"id": "test-189", "predictions": []}
+{"id": "test-190", "predictions": []}
+{"id": "test-191", "predictions": []}
+{"id": "test-192", "predictions": []}
+{"id": "test-193", "predictions": []}
+{"id": "test-194", "predictions": []}
+{"id": "test-195", "predictions": [{"surface_form": "Ability to work in a co-located team", "label": "SOFT_SKILL", "start": 2, "end": 38, "source": "gliner", "confidence": 0.40344685316085815, "evidence": "Ability to work in a co-located team", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-196", "predictions": [{"surface_form": "software improvement", "label": "SOFT_SKILL", "start": 89, "end": 109, "source": "gliner", "confidence": 0.446199506521225, "evidence": "software improvement", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-197", "predictions": []}
+{"id": "test-199", "predictions": []}
+{"id": "test-200", "predictions": []}
+{"id": "test-201", "predictions": [{"surface_form": "DevOps", "label": "HARD_SKILL", "start": 40, "end": 46, "source": "gliner", "confidence": 0.4384600818157196, "evidence": "DevOps", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-202", "predictions": []}
+{"id": "test-203", "predictions": [{"surface_form": "Resource management", "label": "SOFT_SKILL", "start": 2, "end": 21, "source": "gliner", "confidence": 0.5806606411933899, "evidence": "Resource management", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-256", "predictions": [{"surface_form": "Artificial Intelligence", "label": "HARD_SKILL", "start": 10, "end": 33, "source": "gliner", "confidence": 0.37720024585723877, "evidence": "Artificial Intelligence", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-260", "predictions": []}
+{"id": "test-267", "predictions": []}
+{"id": "test-273", "predictions": []}
+{"id": "test-277", "predictions": [{"surface_form": "computer vision", "label": "HARD_SKILL", "start": 154, "end": 169, "source": "gliner", "confidence": 0.3528469204902649, "evidence": "computer vision", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-283", "predictions": []}
+{"id": "test-284", "predictions": []}
+{"id": "test-285", "predictions": []}
+{"id": "test-286", "predictions": [{"surface_form": "good communicator", "label": "SOFT_SKILL", "start": 10, "end": 27, "source": "gliner", "confidence": 0.46673184633255005, "evidence": "good communicator", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-287", "predictions": [{"surface_form": "Multithreading", "label": "SOFT_SKILL", "start": 102, "end": 116, "source": "gliner", "confidence": 0.40332406759262085, "evidence": "Multithreading", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "Computer Vision", "label": "SOFT_SKILL", "start": 153, "end": 168, "source": "gliner", "confidence": 0.3789597153663635, "evidence": "Computer Vision", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-316", "predictions": []}
+{"id": "test-325", "predictions": []}
+{"id": "test-343", "predictions": []}
+{"id": "test-344", "predictions": []}
+{"id": "test-346", "predictions": []}
+{"id": "test-348", "predictions": []}
+{"id": "test-350", "predictions": []}
+{"id": "test-351", "predictions": [{"surface_form": "pair programming", "label": "SOFT_SKILL", "start": 33, "end": 49, "source": "gliner", "confidence": 0.4158841669559479, "evidence": "pair programming", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-404", "predictions": []}
+{"id": "test-405", "predictions": []}
+{"id": "test-406", "predictions": []}
+{"id": "test-407", "predictions": []}
+{"id": "test-408", "predictions": []}
+{"id": "test-409", "predictions": []}
+{"id": "test-410", "predictions": []}
+{"id": "test-411", "predictions": []}
+{"id": "test-412", "predictions": []}
+{"id": "test-414", "predictions": []}
+{"id": "test-415", "predictions": []}
+{"id": "test-416", "predictions": []}
+{"id": "test-417", "predictions": []}
+{"id": "test-418", "predictions": []}
+{"id": "test-419", "predictions": []}
+{"id": "test-435", "predictions": []}
+{"id": "test-439", "predictions": []}
+{"id": "test-444", "predictions": []}
+{"id": "test-450", "predictions": []}
+{"id": "test-454", "predictions": []}
+{"id": "test-455", "predictions": []}
+{"id": "test-456", "predictions": [{"surface_form": "front-end", "label": "SOFT_SKILL", "start": 21, "end": 30, "source": "gliner", "confidence": 0.3570646345615387, "evidence": "front-end", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-458", "predictions": []}
+{"id": "test-459", "predictions": []}
+{"id": "test-460", "predictions": [{"surface_form": "Data warehousing/ETL experience", "label": "SOFT_SKILL", "start": 4, "end": 35, "source": "gliner", "confidence": 0.391499400138855, "evidence": "Data warehousing/ETL experience", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-461", "predictions": []}
+{"id": "test-494", "predictions": []}
+{"id": "test-503", "predictions": []}
+{"id": "test-505", "predictions": []}
+{"id": "test-506", "predictions": []}
+{"id": "test-507", "predictions": [{"surface_form": "frontend development", "label": "SOFT_SKILL", "start": 79, "end": 99, "source": "gliner", "confidence": 0.6044791340827942, "evidence": "frontend development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "machine learning", "label": "HARD_SKILL", "start": 100, "end": 116, "source": "gliner", "confidence": 0.45856326818466187, "evidence": "machine learning", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "data engineering", "label": "SOFT_SKILL", "start": 121, "end": 137, "source": "gliner", "confidence": 0.5245910882949829, "evidence": "data engineering", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-513", "predictions": [{"surface_form": "backend engineer", "label": "HARD_SKILL", "start": 5, "end": 21, "source": "gliner", "confidence": 0.8313941955566406, "evidence": "backend engineer", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-517", "predictions": []}
+{"id": "test-520", "predictions": []}
+{"id": "test-522", "predictions": [{"surface_form": "machine learning", "label": "HARD_SKILL", "start": 31, "end": 47, "source": "gliner", "confidence": 0.5052583813667297, "evidence": "machine learning", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "frontend", "label": "SOFT_SKILL", "start": 54, "end": 62, "source": "gliner", "confidence": 0.3566872179508209, "evidence": "frontend", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-523", "predictions": [{"surface_form": "effective communication", "label": "SOFT_SKILL", "start": 23, "end": 46, "source": "gliner", "confidence": 0.38493970036506653, "evidence": "effective communication", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "documentation", "label": "SOFT_SKILL", "start": 51, "end": 64, "source": "gliner", "confidence": 0.5358408093452454, "evidence": "documentation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-525", "predictions": [{"surface_form": "writing software", "label": "SOFT_SKILL", "start": 21, "end": 37, "source": "gliner", "confidence": 0.39507392048835754, "evidence": "writing software", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "automation", "label": "SOFT_SKILL", "start": 79, "end": 89, "source": "gliner", "confidence": 0.5601227879524231, "evidence": "automation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-526", "predictions": [{"surface_form": "backend development", "label": "HARD_SKILL", "start": 40, "end": 59, "source": "gliner", "confidence": 0.6267852783203125, "evidence": "backend development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-527", "predictions": [{"surface_form": "Linux administration", "label": "HARD_SKILL", "start": 26, "end": 46, "source": "gliner", "confidence": 0.423644483089447, "evidence": "Linux administration", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-528", "predictions": []}
+{"id": "test-529", "predictions": [{"surface_form": "English", "label": "SOFT_SKILL", "start": 11, "end": 18, "source": "gliner", "confidence": 0.409091591835022, "evidence": "English", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-531", "predictions": []}
+{"id": "test-551", "predictions": []}
+{"id": "test-555", "predictions": []}
+{"id": "test-562", "predictions": [{"surface_form": "Digital Marketing", "label": "SOFT_SKILL", "start": 31, "end": 48, "source": "gliner", "confidence": 0.3657849431037903, "evidence": "Digital Marketing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-568", "predictions": []}
+{"id": "test-573", "predictions": [{"surface_form": "front-end layer", "label": "HARD_SKILL", "start": 50, "end": 65, "source": "gliner", "confidence": 0.4921497702598572, "evidence": "front-end layer", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-577", "predictions": []}
+{"id": "test-578", "predictions": []}
+{"id": "test-579", "predictions": []}
+{"id": "test-583", "predictions": []}
+{"id": "test-585", "predictions": []}
+{"id": "test-588", "predictions": []}
+{"id": "test-590", "predictions": []}
+{"id": "test-594", "predictions": []}
+{"id": "test-596", "predictions": []}
+{"id": "test-598", "predictions": [{"surface_form": "English proficiency", "label": "HARD_SKILL", "start": 0, "end": 19, "source": "gliner", "confidence": 0.36571574211120605, "evidence": "English proficiency", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-601", "predictions": []}
+{"id": "test-638", "predictions": [{"surface_form": "Agile Software Development", "label": "SOFT_SKILL", "start": 10, "end": 36, "source": "gliner", "confidence": 0.4723530113697052, "evidence": "Agile Software Development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-642", "predictions": []}
+{"id": "test-649", "predictions": []}
+{"id": "test-655", "predictions": []}
+{"id": "test-667", "predictions": []}
+{"id": "test-675", "predictions": []}
+{"id": "test-676", "predictions": []}
+{"id": "test-677", "predictions": [{"surface_form": "technical orientation", "label": "HARD_SKILL", "start": 44, "end": 65, "source": "gliner", "confidence": 0.4021896421909332, "evidence": "technical orientation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-679", "predictions": []}
+{"id": "test-683", "predictions": [{"surface_form": "System Architect", "label": "HARD_SKILL", "start": 4, "end": 20, "source": "gliner", "confidence": 0.6451701521873474, "evidence": "System Architect", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-684", "predictions": [{"surface_form": "System Architect", "label": "HARD_SKILL", "start": 19, "end": 35, "source": "gliner", "confidence": 0.7335758805274963, "evidence": "System Architect", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "domain architect", "label": "HARD_SKILL", "start": 105, "end": 121, "source": "gliner", "confidence": 0.5339293479919434, "evidence": "domain architect", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-687", "predictions": []}
+{"id": "test-688", "predictions": [{"surface_form": "Design Modelling Documentation", "label": "HARD_SKILL", "start": 28, "end": 58, "source": "gliner", "confidence": 0.3796379566192627, "evidence": "Design Modelling Documentation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "Solution architecture", "label": "SOFT_SKILL", "start": 60, "end": 81, "source": "gliner", "confidence": 0.504149854183197, "evidence": "Solution architecture", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-689", "predictions": []}
+{"id": "test-690", "predictions": []}
+{"id": "test-692", "predictions": [{"surface_form": "IT", "label": "SOFT_SKILL", "start": 0, "end": 2, "source": "gliner", "confidence": 0.40360403060913086, "evidence": "IT", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-693", "predictions": []}
+{"id": "test-695", "predictions": [{"surface_form": "Problem analysis & judgement", "label": "SOFT_SKILL", "start": 0, "end": 28, "source": "gliner", "confidence": 0.4302520155906677, "evidence": "Problem analysis & judgement", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "Good analytical and problem-solving skills", "label": "SOFT_SKILL", "start": 30, "end": 72, "source": "gliner", "confidence": 0.4266037344932556, "evidence": "Good analytical and problem-solving skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-696", "predictions": [{"surface_form": "Ability to persuade others", "label": "SOFT_SKILL", "start": 41, "end": 67, "source": "gliner", "confidence": 0.6211769580841064, "evidence": "Ability to persuade others", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-697", "predictions": [{"surface_form": "Teamwork", "label": "SOFT_SKILL", "start": 0, "end": 8, "source": "gliner", "confidence": 0.43625518679618835, "evidence": "Teamwork", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "group decision-making", "label": "SOFT_SKILL", "start": 60, "end": 81, "source": "gliner", "confidence": 0.35921815037727356, "evidence": "group decision-making", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-698", "predictions": [{"surface_form": "Presentation skills", "label": "SOFT_SKILL", "start": 0, "end": 19, "source": "gliner", "confidence": 0.3555639386177063, "evidence": "Presentation skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-699", "predictions": [{"surface_form": "Assertive", "label": "SOFT_SKILL", "start": 0, "end": 9, "source": "gliner", "confidence": 0.4787794053554535, "evidence": "Assertive", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-700", "predictions": [{"surface_form": "Personal efficiency", "label": "SOFT_SKILL", "start": 0, "end": 19, "source": "gliner", "confidence": 0.4059527814388275, "evidence": "Personal efficiency", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-727", "predictions": []}
+{"id": "test-731", "predictions": [{"surface_form": "typescript", "label": "HARD_SKILL", "start": 6, "end": 16, "source": "gliner", "confidence": 0.35102084279060364, "evidence": "typescript", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-742", "predictions": []}
+{"id": "test-748", "predictions": [{"surface_form": "typescript", "label": "HARD_SKILL", "start": 6, "end": 16, "source": "gliner", "confidence": 0.35102084279060364, "evidence": "typescript", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-762", "predictions": []}
+{"id": "test-764", "predictions": []}
+{"id": "test-767", "predictions": [{"surface_form": "producing cloud native software", "label": "SOFT_SKILL", "start": 86, "end": 117, "source": "gliner", "confidence": 0.5116625428199768, "evidence": "producing cloud native software", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-770", "predictions": [{"surface_form": "continuous integration", "label": "SOFT_SKILL", "start": 14, "end": 36, "source": "gliner", "confidence": 0.5144217610359192, "evidence": "continuous integration", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "automated testing", "label": "SOFT_SKILL", "start": 41, "end": 58, "source": "gliner", "confidence": 0.5111120939254761, "evidence": "automated testing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-771", "predictions": [{"surface_form": "domain modelling", "label": "HARD_SKILL", "start": 14, "end": 30, "source": "gliner", "confidence": 0.4818747043609619, "evidence": "domain modelling", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "ubiquitous language", "label": "HARD_SKILL", "start": 35, "end": 54, "source": "gliner", "confidence": 0.4768185615539551, "evidence": "ubiquitous language", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-772", "predictions": [{"surface_form": "logging monitoring", "label": "HARD_SKILL", "start": 14, "end": 32, "source": "gliner", "confidence": 0.41886818408966064, "evidence": "logging monitoring", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-773", "predictions": []}
+{"id": "test-774", "predictions": []}
+{"id": "test-778", "predictions": [{"surface_form": "C# F#", "label": "HARD_SKILL", "start": 19, "end": 24, "source": "gliner", "confidence": 0.38077330589294434, "evidence": "C# F#", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "TypeScript", "label": "HARD_SKILL", "start": 29, "end": 39, "source": "gliner", "confidence": 0.3997155427932739, "evidence": "TypeScript", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-780", "predictions": []}
+{"id": "test-782", "predictions": [{"surface_form": "functional programming", "label": "HARD_SKILL", "start": 27, "end": 49, "source": "gliner", "confidence": 0.595077633857727, "evidence": "functional programming", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-786", "predictions": []}
+{"id": "test-788", "predictions": []}
+{"id": "test-789", "predictions": []}
+{"id": "test-796", "predictions": [{"surface_form": "C# F#", "label": "HARD_SKILL", "start": 37, "end": 42, "source": "gliner", "confidence": 0.37135863304138184, "evidence": "C# F#", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "Typescript", "label": "HARD_SKILL", "start": 50, "end": 60, "source": "gliner", "confidence": 0.5255748629570007, "evidence": "Typescript", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-797", "predictions": [{"surface_form": "problem solver", "label": "SOFT_SKILL", "start": 9, "end": 23, "source": "gliner", "confidence": 0.6513869762420654, "evidence": "problem solver", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-798", "predictions": [{"surface_form": "functional programming", "label": "HARD_SKILL", "start": 73, "end": 95, "source": "gliner", "confidence": 0.7364700436592102, "evidence": "functional programming", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-799", "predictions": []}
+{"id": "test-801", "predictions": []}
+{"id": "test-802", "predictions": [{"surface_form": "good listener", "label": "SOFT_SKILL", "start": 14, "end": 27, "source": "gliner", "confidence": 0.5204853415489197, "evidence": "good listener", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-803", "predictions": []}
+{"id": "test-804", "predictions": []}
+{"id": "test-805", "predictions": [{"surface_form": "compiler", "label": "HARD_SKILL", "start": 96, "end": 104, "source": "gliner", "confidence": 0.39980348944664, "evidence": "compiler", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-806", "predictions": [{"surface_form": "learning", "label": "SOFT_SKILL", "start": 139, "end": 147, "source": "gliner", "confidence": 0.5732105374336243, "evidence": "learning", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-807", "predictions": [{"surface_form": "pragmatist", "label": "SOFT_SKILL", "start": 19, "end": 29, "source": "gliner", "confidence": 0.7135586738586426, "evidence": "pragmatist", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-864", "predictions": []}
+{"id": "test-875", "predictions": []}
+{"id": "test-878", "predictions": []}
+{"id": "test-880", "predictions": [{"surface_form": "QA tester", "label": "SOFT_SKILL", "start": 5, "end": 14, "source": "gliner", "confidence": 0.8584627509117126, "evidence": "QA tester", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-881", "predictions": []}
+{"id": "test-883", "predictions": [{"surface_form": "engineers", "label": "HARD_SKILL", "start": 70, "end": 79, "source": "gliner", "confidence": 0.44254598021507263, "evidence": "engineers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "developers", "label": "HARD_SKILL", "start": 84, "end": 94, "source": "gliner", "confidence": 0.49231699109077454, "evidence": "developers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-884", "predictions": [{"surface_form": "expert knowledge", "label": "HARD_SKILL", "start": 15, "end": 31, "source": "gliner", "confidence": 0.36061692237854004, "evidence": "expert knowledge", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-885", "predictions": []}
+{"id": "test-886", "predictions": []}
+{"id": "test-887", "predictions": []}
+{"id": "test-888", "predictions": []}
+{"id": "test-889", "predictions": [{"surface_form": "track bugs", "label": "SOFT_SKILL", "start": 49, "end": 59, "source": "gliner", "confidence": 0.4576813578605652, "evidence": "track bugs", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-890", "predictions": []}
+{"id": "test-891", "predictions": []}
+{"id": "test-893", "predictions": [{"surface_form": "quality assurance", "label": "HARD_SKILL", "start": 14, "end": 31, "source": "gliner", "confidence": 0.46666544675827026, "evidence": "quality assurance", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-894", "predictions": []}
+{"id": "test-895", "predictions": []}
+{"id": "test-896", "predictions": [{"surface_form": "Cypress", "label": "SOFT_SKILL", "start": 2, "end": 9, "source": "gliner", "confidence": 0.3800332844257355, "evidence": "Cypress", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-897", "predictions": [{"surface_form": "Coding/scripting", "label": "SOFT_SKILL", "start": 0, "end": 16, "source": "gliner", "confidence": 0.4131384789943695, "evidence": "Coding/scripting", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-898", "predictions": []}
+{"id": "test-899", "predictions": []}
+{"id": "test-943", "predictions": []}
+{"id": "test-947", "predictions": []}
+{"id": "test-956", "predictions": []}
+{"id": "test-962", "predictions": []}
+{"id": "test-969", "predictions": []}
+{"id": "test-970", "predictions": []}
+{"id": "test-971", "predictions": []}
+{"id": "test-972", "predictions": []}
+{"id": "test-973", "predictions": []}
+{"id": "test-974", "predictions": []}
+{"id": "test-976", "predictions": []}
+{"id": "test-977", "predictions": []}
+{"id": "test-978", "predictions": []}
+{"id": "test-979", "predictions": []}
+{"id": "test-980", "predictions": []}
+{"id": "test-981", "predictions": [{"surface_form": "A good eye for details", "label": "SOFT_SKILL", "start": 0, "end": 22, "source": "gliner", "confidence": 0.533941924571991, "evidence": "A good eye for details", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-982", "predictions": []}
+{"id": "test-983", "predictions": [{"surface_form": "social competence", "label": "SOFT_SKILL", "start": 12, "end": 29, "source": "gliner", "confidence": 0.6011755466461182, "evidence": "social competence", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1022", "predictions": []}
+{"id": "test-1030", "predictions": []}
+{"id": "test-1036", "predictions": []}
+{"id": "test-1037", "predictions": []}
+{"id": "test-1041", "predictions": []}
+{"id": "test-1042", "predictions": []}
+{"id": "test-1043", "predictions": []}
+{"id": "test-1044", "predictions": []}
+{"id": "test-1045", "predictions": []}
+{"id": "test-1046", "predictions": []}
+{"id": "test-1047", "predictions": []}
+{"id": "test-1049", "predictions": []}
+{"id": "test-1083", "predictions": []}
+{"id": "test-1090", "predictions": []}
+{"id": "test-1093", "predictions": [{"surface_form": "innovation & engineering practices", "label": "SOFT_SKILL", "start": 157, "end": 191, "source": "gliner", "confidence": 0.40274402499198914, "evidence": "innovation & engineering practices", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1094", "predictions": []}
+{"id": "test-1097", "predictions": [{"surface_form": "energetic intelligent self-starter", "label": "SOFT_SKILL", "start": 53, "end": 87, "source": "gliner", "confidence": 0.40952205657958984, "evidence": "energetic intelligent self-starter", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1099", "predictions": []}
+{"id": "test-1101", "predictions": []}
+{"id": "test-1102", "predictions": []}
+{"id": "test-1104", "predictions": []}
+{"id": "test-1105", "predictions": [{"surface_form": "Work collaboratively", "label": "SOFT_SKILL", "start": 2, "end": 22, "source": "gliner", "confidence": 0.3846202790737152, "evidence": "Work collaboratively", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1107", "predictions": []}
+{"id": "test-1108", "predictions": []}
+{"id": "test-1109", "predictions": []}
+{"id": "test-1110", "predictions": []}
+{"id": "test-1111", "predictions": []}
+{"id": "test-1113", "predictions": []}
+{"id": "test-1114", "predictions": []}
+{"id": "test-1115", "predictions": []}
+{"id": "test-1116", "predictions": []}
+{"id": "test-1117", "predictions": []}
+{"id": "test-1118", "predictions": []}
+{"id": "test-1151", "predictions": []}
+{"id": "test-1155", "predictions": []}
+{"id": "test-1168", "predictions": []}
+{"id": "test-1174", "predictions": []}
+{"id": "test-1176", "predictions": [{"surface_form": "flair for gameplay", "label": "SOFT_SKILL", "start": 43, "end": 61, "source": "gliner", "confidence": 0.4771338701248169, "evidence": "flair for gameplay", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "good aesthetic know-how", "label": "SOFT_SKILL", "start": 68, "end": 91, "source": "gliner", "confidence": 0.35433968901634216, "evidence": "good aesthetic know-how", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1179", "predictions": []}
+{"id": "test-1180", "predictions": []}
+{"id": "test-1181", "predictions": []}
+{"id": "test-1182", "predictions": []}
+{"id": "test-1184", "predictions": [{"surface_form": "self-driven", "label": "SOFT_SKILL", "start": 59, "end": 70, "source": "gliner", "confidence": 0.47257229685783386, "evidence": "self-driven", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "open-minded", "label": "SOFT_SKILL", "start": 75, "end": 86, "source": "gliner", "confidence": 0.5773442983627319, "evidence": "open-minded", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1187", "predictions": []}
+{"id": "test-1188", "predictions": []}
+{"id": "test-1189", "predictions": []}
+{"id": "test-1190", "predictions": []}
+{"id": "test-1191", "predictions": []}
+{"id": "test-1193", "predictions": []}
+{"id": "test-1194", "predictions": [{"surface_form": "UX", "label": "SOFT_SKILL", "start": 14, "end": 16, "source": "gliner", "confidence": 0.49093976616859436, "evidence": "UX", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1195", "predictions": [{"surface_form": "dynamic skills", "label": "SOFT_SKILL", "start": 59, "end": 73, "source": "gliner", "confidence": 0.3703189790248871, "evidence": "dynamic skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1196", "predictions": []}
+{"id": "test-1197", "predictions": []}
+{"id": "test-1199", "predictions": [{"surface_form": "good sense of F2P game design", "label": "SOFT_SKILL", "start": 95, "end": 124, "source": "gliner", "confidence": 0.35467761754989624, "evidence": "good sense of F2P game design", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1200", "predictions": []}
+{"id": "test-1230", "predictions": []}
+{"id": "test-1234", "predictions": []}
+{"id": "test-1241", "predictions": []}
+{"id": "test-1247", "predictions": []}
+{"id": "test-1249", "predictions": [{"surface_form": "backend engineer", "label": "SOFT_SKILL", "start": 40, "end": 56, "source": "gliner", "confidence": 0.46937814354896545, "evidence": "backend engineer", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1253", "predictions": []}
+{"id": "test-1254", "predictions": []}
+{"id": "test-1255", "predictions": []}
+{"id": "test-1256", "predictions": []}
+{"id": "test-1257", "predictions": []}
+{"id": "test-1260", "predictions": []}
+{"id": "test-1261", "predictions": []}
+{"id": "test-1262", "predictions": []}
+{"id": "test-1263", "predictions": []}
+{"id": "test-1264", "predictions": [{"surface_form": "troubleshooting skills", "label": "SOFT_SKILL", "start": 16, "end": 38, "source": "gliner", "confidence": 0.42761141061782837, "evidence": "troubleshooting skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1265", "predictions": []}
+{"id": "test-1267", "predictions": []}
+{"id": "test-1268", "predictions": [{"surface_form": "code quality", "label": "HARD_SKILL", "start": 15, "end": 27, "source": "gliner", "confidence": 0.5182185173034668, "evidence": "code quality", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1269", "predictions": [{"surface_form": "superior communication skills", "label": "HARD_SKILL", "start": 9, "end": 38, "source": "gliner", "confidence": 0.4605543613433838, "evidence": "superior communication skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "sense of humor", "label": "SOFT_SKILL", "start": 45, "end": 59, "source": "gliner", "confidence": 0.5657134652137756, "evidence": "sense of humor", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1301", "predictions": []}
+{"id": "test-1305", "predictions": []}
+{"id": "test-1316", "predictions": []}
+{"id": "test-1322", "predictions": []}
+{"id": "test-1325", "predictions": []}
+{"id": "test-1326", "predictions": []}
+{"id": "test-1327", "predictions": []}
+{"id": "test-1329", "predictions": []}
+{"id": "test-1333", "predictions": []}
+{"id": "test-1334", "predictions": []}
+{"id": "test-1335", "predictions": []}
+{"id": "test-1336", "predictions": []}
+{"id": "test-1337", "predictions": []}
+{"id": "test-1338", "predictions": []}
+{"id": "test-1369", "predictions": []}
+{"id": "test-1373", "predictions": []}
+{"id": "test-1382", "predictions": []}
+{"id": "test-1388", "predictions": []}
+{"id": "test-1391", "predictions": [{"surface_form": "developer", "label": "HARD_SKILL", "start": 5, "end": 14, "source": "gliner", "confidence": 0.7197599411010742, "evidence": "developer", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1394", "predictions": []}
+{"id": "test-1396", "predictions": [{"surface_form": "professional advice", "label": "HARD_SKILL", "start": 177, "end": 196, "source": "gliner", "confidence": 0.3644476532936096, "evidence": "professional advice", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1397", "predictions": []}
+{"id": "test-1399", "predictions": []}
+{"id": "test-1401", "predictions": [{"surface_form": "software development", "label": "HARD_SKILL", "start": 47, "end": 67, "source": "gliner", "confidence": 0.6638100147247314, "evidence": "software development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1402", "predictions": [{"surface_form": "Software development", "label": "HARD_SKILL", "start": 0, "end": 20, "source": "gliner", "confidence": 0.4177996814250946, "evidence": "Software development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1403", "predictions": [{"surface_form": "testing", "label": "HARD_SKILL", "start": 122, "end": 129, "source": "gliner", "confidence": 0.5236665606498718, "evidence": "testing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "test automation", "label": "SOFT_SKILL", "start": 176, "end": 191, "source": "gliner", "confidence": 0.74444979429245, "evidence": "test automation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1404", "predictions": []}
+{"id": "test-1405", "predictions": []}
+{"id": "test-1406", "predictions": [{"surface_form": "DevOps", "label": "SOFT_SKILL", "start": 9, "end": 15, "source": "gliner", "confidence": 0.4680492877960205, "evidence": "DevOps", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1407", "predictions": [{"surface_form": "architecture concepts", "label": "HARD_SKILL", "start": 27, "end": 48, "source": "gliner", "confidence": 0.4464256763458252, "evidence": "architecture concepts", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "design patterns", "label": "HARD_SKILL", "start": 53, "end": 68, "source": "gliner", "confidence": 0.47787395119667053, "evidence": "design patterns", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1408", "predictions": [{"surface_form": "proficiency in German", "label": "SOFT_SKILL", "start": 33, "end": 54, "source": "gliner", "confidence": 0.5909395813941956, "evidence": "proficiency in German", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1453", "predictions": [{"surface_form": "User Experience", "label": "SOFT_SKILL", "start": 60, "end": 75, "source": "gliner", "confidence": 0.7358276844024658, "evidence": "User Experience", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1457", "predictions": []}
+{"id": "test-1468", "predictions": [{"surface_form": "User Experience", "label": "SOFT_SKILL", "start": 50, "end": 65, "source": "gliner", "confidence": 0.46468836069107056, "evidence": "User Experience", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1474", "predictions": []}
+{"id": "test-1477", "predictions": [{"surface_form": "frontend developers", "label": "HARD_SKILL", "start": 4, "end": 23, "source": "gliner", "confidence": 0.5132780075073242, "evidence": "frontend developers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "UX designers", "label": "SOFT_SKILL", "start": 34, "end": 46, "source": "gliner", "confidence": 0.7320558428764343, "evidence": "UX designers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1479", "predictions": []}
+{"id": "test-1480", "predictions": []}
+{"id": "test-1481", "predictions": []}
+{"id": "test-1482", "predictions": []}
+{"id": "test-1483", "predictions": []}
+{"id": "test-1484", "predictions": []}
+{"id": "test-1486", "predictions": []}
+{"id": "test-1488", "predictions": []}
+{"id": "test-1489", "predictions": []}
+{"id": "test-1490", "predictions": [{"surface_form": "usability", "label": "SOFT_SKILL", "start": 14, "end": 23, "source": "gliner", "confidence": 0.5325906276702881, "evidence": "usability", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1491", "predictions": []}
+{"id": "test-1493", "predictions": []}
+{"id": "test-1494", "predictions": [{"surface_form": "faithful implementation", "label": "SOFT_SKILL", "start": 33, "end": 56, "source": "gliner", "confidence": 0.4018211364746094, "evidence": "faithful implementation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1495", "predictions": []}
+{"id": "test-1519", "predictions": []}
+{"id": "test-1523", "predictions": []}
+{"id": "test-1532", "predictions": []}
+{"id": "test-1538", "predictions": []}
+{"id": "test-1544", "predictions": [{"surface_form": "Developers", "label": "HARD_SKILL", "start": 49, "end": 59, "source": "gliner", "confidence": 0.4720410704612732, "evidence": "Developers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1545", "predictions": []}
+{"id": "test-1548", "predictions": []}
+{"id": "test-1549", "predictions": [{"surface_form": "Design", "label": "HARD_SKILL", "start": 0, "end": 6, "source": "gliner", "confidence": 0.547365128993988, "evidence": "Design", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1550", "predictions": [{"surface_form": "Writing software", "label": "SOFT_SKILL", "start": 0, "end": 16, "source": "gliner", "confidence": 0.39912712574005127, "evidence": "Writing software", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1551", "predictions": []}
+{"id": "test-1552", "predictions": []}
+{"id": "test-1553", "predictions": []}
+{"id": "test-1555", "predictions": []}
+{"id": "test-1556", "predictions": []}
+{"id": "test-1557", "predictions": []}
+{"id": "test-1558", "predictions": []}
+{"id": "test-1559", "predictions": []}
+{"id": "test-1560", "predictions": []}
+{"id": "test-1561", "predictions": []}
+{"id": "test-1563", "predictions": []}
+{"id": "test-1564", "predictions": []}
+{"id": "test-1566", "predictions": []}
+{"id": "test-1567", "predictions": [{"surface_form": "Excellent communication skills", "label": "SOFT_SKILL", "start": 58, "end": 88, "source": "gliner", "confidence": 0.7009158730506897, "evidence": "Excellent communication skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1601", "predictions": []}
+{"id": "test-1608", "predictions": []}
+{"id": "test-1610", "predictions": []}
+{"id": "test-1611", "predictions": []}
+{"id": "test-1614", "predictions": [{"surface_form": "Reference Data Engineering", "label": "SOFT_SKILL", "start": 67, "end": 93, "source": "gliner", "confidence": 0.5653302669525146, "evidence": "Reference Data Engineering", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1615", "predictions": []}
+{"id": "test-1617", "predictions": []}
+{"id": "test-1618", "predictions": []}
+{"id": "test-1619", "predictions": []}
+{"id": "test-1620", "predictions": []}
+{"id": "test-1621", "predictions": []}
+{"id": "test-1623", "predictions": []}
+{"id": "test-1624", "predictions": []}
+{"id": "test-1625", "predictions": []}
+{"id": "test-1626", "predictions": []}
+{"id": "test-1627", "predictions": [{"surface_form": "application delivery", "label": "SOFT_SKILL", "start": 25, "end": 45, "source": "gliner", "confidence": 0.515722393989563, "evidence": "application delivery", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "stakeholder management", "label": "SOFT_SKILL", "start": 50, "end": 72, "source": "gliner", "confidence": 0.5447115898132324, "evidence": "stakeholder management", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1628", "predictions": []}
+{"id": "test-1648", "predictions": []}
+{"id": "test-1652", "predictions": []}
+{"id": "test-1659", "predictions": []}
+{"id": "test-1665", "predictions": []}
+{"id": "test-1679", "predictions": []}
+{"id": "test-1681", "predictions": []}
+{"id": "test-1682", "predictions": []}
+{"id": "test-1683", "predictions": [{"surface_form": "PMs", "label": "SOFT_SKILL", "start": 87, "end": 90, "source": "gliner", "confidence": 0.5403048396110535, "evidence": "PMs", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "Business Analysts", "label": "SOFT_SKILL", "start": 91, "end": 108, "source": "gliner", "confidence": 0.4212906062602997, "evidence": "Business Analysts", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1685", "predictions": []}
+{"id": "test-1686", "predictions": []}
+{"id": "test-1687", "predictions": [{"surface_form": "problem-solving", "label": "SOFT_SKILL", "start": 100, "end": 115, "source": "gliner", "confidence": 0.3992026448249817, "evidence": "problem-solving", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1688", "predictions": []}
+{"id": "test-1689", "predictions": []}
+{"id": "test-1690", "predictions": []}
+{"id": "test-1713", "predictions": []}
+{"id": "test-1717", "predictions": []}
+{"id": "test-1726", "predictions": []}
+{"id": "test-1732", "predictions": []}
+{"id": "test-1735", "predictions": [{"surface_form": "unit tests", "label": "HARD_SKILL", "start": 160, "end": 170, "source": "gliner", "confidence": 0.44584572315216064, "evidence": "unit tests", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1737", "predictions": []}
+{"id": "test-1739", "predictions": []}
+{"id": "test-1741", "predictions": []}
+{"id": "test-1743", "predictions": []}
+{"id": "test-1745", "predictions": [{"surface_form": "Computer Science Engineering", "label": "HARD_SKILL", "start": 34, "end": 62, "source": "gliner", "confidence": 0.6020214557647705, "evidence": "Computer Science Engineering", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1746", "predictions": [{"surface_form": "good attention to detail", "label": "SOFT_SKILL", "start": 9, "end": 33, "source": "gliner", "confidence": 0.5143430233001709, "evidence": "good attention to detail", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "resourceful", "label": "SOFT_SKILL", "start": 34, "end": 45, "source": "gliner", "confidence": 0.44762304425239563, "evidence": "resourceful", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "a knack for problem solving", "label": "SOFT_SKILL", "start": 46, "end": 73, "source": "gliner", "confidence": 0.36658230423927307, "evidence": "a knack for problem solving", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "good communication skills", "label": "SOFT_SKILL", "start": 78, "end": 103, "source": "gliner", "confidence": 0.5282595157623291, "evidence": "good communication skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1747", "predictions": []}
+{"id": "test-1777", "predictions": []}
+{"id": "test-1786", "predictions": []}
+{"id": "test-1789", "predictions": []}
+{"id": "test-1791", "predictions": []}
+{"id": "test-1793", "predictions": []}
+{"id": "test-1794", "predictions": []}
+{"id": "test-1795", "predictions": []}
+{"id": "test-1796", "predictions": []}
+{"id": "test-1799", "predictions": [{"surface_form": "strong communicator", "label": "SOFT_SKILL", "start": 17, "end": 36, "source": "gliner", "confidence": 0.4154561460018158, "evidence": "strong communicator", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1800", "predictions": []}
+{"id": "test-1801", "predictions": []}
+{"id": "test-1803", "predictions": []}
+{"id": "test-1804", "predictions": []}
+{"id": "test-1805", "predictions": []}
+{"id": "test-1806", "predictions": []}
+{"id": "test-1829", "predictions": []}
+{"id": "test-1833", "predictions": []}
+{"id": "test-1840", "predictions": []}
+{"id": "test-1846", "predictions": []}
+{"id": "test-1848", "predictions": [{"surface_form": "Automation", "label": "HARD_SKILL", "start": 44, "end": 54, "source": "gliner", "confidence": 0.3872089982032776, "evidence": "Automation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "Functional Testing", "label": "HARD_SKILL", "start": 59, "end": 77, "source": "gliner", "confidence": 0.3521765172481537, "evidence": "Functional Testing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1849", "predictions": []}
+{"id": "test-1850", "predictions": [{"surface_form": "End to end automated testing", "label": "HARD_SKILL", "start": 18, "end": 46, "source": "gliner", "confidence": 0.3650665283203125, "evidence": "End to end automated testing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "data integrity performance", "label": "SOFT_SKILL", "start": 72, "end": 98, "source": "gliner", "confidence": 0.3906668722629547, "evidence": "data integrity performance", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "presentation quality", "label": "SOFT_SKILL", "start": 103, "end": 123, "source": "gliner", "confidence": 0.6876240968704224, "evidence": "presentation quality", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1851", "predictions": []}
+{"id": "test-1852", "predictions": []}
+{"id": "test-1853", "predictions": [{"surface_form": "regression cycles", "label": "HARD_SKILL", "start": 23, "end": 40, "source": "gliner", "confidence": 0.43499892950057983, "evidence": "regression cycles", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1854", "predictions": []}
+{"id": "test-1855", "predictions": []}
+{"id": "test-1856", "predictions": []}
+{"id": "test-1857", "predictions": [{"surface_form": "regular view of test coverage", "label": "SOFT_SKILL", "start": 60, "end": 89, "source": "gliner", "confidence": 0.35446473956108093, "evidence": "regular view of test coverage", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1859", "predictions": []}
+{"id": "test-1860", "predictions": []}
+{"id": "test-1861", "predictions": []}
+{"id": "test-1863", "predictions": []}
+{"id": "test-1865", "predictions": [{"surface_form": "Knowledge in testing", "label": "SOFT_SKILL", "start": 2, "end": 22, "source": "gliner", "confidence": 0.38480937480926514, "evidence": "Knowledge in testing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1866", "predictions": []}
+{"id": "test-1867", "predictions": [{"surface_form": "Must have excellent verbal and written skills", "label": "SOFT_SKILL", "start": 2, "end": 47, "source": "gliner", "confidence": 0.3865310549736023, "evidence": "Must have excellent verbal and written skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1868", "predictions": [{"surface_form": "Ability to work under pressure", "label": "SOFT_SKILL", "start": 2, "end": 32, "source": "gliner", "confidence": 0.37676048278808594, "evidence": "Ability to work under pressure", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1869", "predictions": [{"surface_form": "detail oriented", "label": "SOFT_SKILL", "start": 40, "end": 55, "source": "gliner", "confidence": 0.5131247043609619, "evidence": "detail oriented", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1871", "predictions": []}
+{"id": "test-1872", "predictions": []}
+{"id": "test-1873", "predictions": [{"surface_form": "SQL knowledge", "label": "SOFT_SKILL", "start": 2, "end": 15, "source": "gliner", "confidence": 0.5017157196998596, "evidence": "SQL knowledge", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1874", "predictions": [{"surface_form": "Continuous Integration", "label": "HARD_SKILL", "start": 2, "end": 24, "source": "gliner", "confidence": 0.3883759379386902, "evidence": "Continuous Integration", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1875", "predictions": []}
+{"id": "test-1876", "predictions": []}
+{"id": "test-1906", "predictions": []}
+{"id": "test-1910", "predictions": []}
+{"id": "test-1917", "predictions": []}
+{"id": "test-1923", "predictions": []}
+{"id": "test-1925", "predictions": [{"surface_form": "innovation", "label": "SOFT_SKILL", "start": 161, "end": 171, "source": "gliner", "confidence": 0.3812788724899292, "evidence": "innovation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "engineering practices", "label": "SOFT_SKILL", "start": 176, "end": 197, "source": "gliner", "confidence": 0.5291472673416138, "evidence": "engineering practices", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1926", "predictions": []}
+{"id": "test-1930", "predictions": []}
+{"id": "test-1931", "predictions": []}
+{"id": "test-1932", "predictions": []}
+{"id": "test-1933", "predictions": []}
+{"id": "test-1935", "predictions": []}
+{"id": "test-1936", "predictions": []}
+{"id": "test-1938", "predictions": []}
+{"id": "test-1939", "predictions": []}
+{"id": "test-1940", "predictions": []}
+{"id": "test-1941", "predictions": []}
+{"id": "test-1943", "predictions": [{"surface_form": "software improvement", "label": "SOFT_SKILL", "start": 89, "end": 109, "source": "gliner", "confidence": 0.4469015300273895, "evidence": "software improvement", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-1972", "predictions": [{"surface_form": "Translation", "label": "HARD_SKILL", "start": 51, "end": 62, "source": "gliner", "confidence": 0.3983438313007355, "evidence": "Translation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-1976", "predictions": []}
+{"id": "test-1987", "predictions": []}
+{"id": "test-1993", "predictions": []}
+{"id": "test-1997", "predictions": []}
+{"id": "test-1999", "predictions": []}
+{"id": "test-2000", "predictions": [{"surface_form": "front-end engineers", "label": "SOFT_SKILL", "start": 172, "end": 191, "source": "gliner", "confidence": 0.6498400568962097, "evidence": "front-end engineers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2001", "predictions": [{"surface_form": "scalability", "label": "SOFT_SKILL", "start": 84, "end": 95, "source": "gliner", "confidence": 0.4538770318031311, "evidence": "scalability", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "maintainability", "label": "SOFT_SKILL", "start": 109, "end": 124, "source": "gliner", "confidence": 0.60126793384552, "evidence": "maintainability", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "flexibility", "label": "SOFT_SKILL", "start": 129, "end": 140, "source": "gliner", "confidence": 0.7007575035095215, "evidence": "flexibility", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2002", "predictions": []}
+{"id": "test-2004", "predictions": [{"surface_form": "code reviews", "label": "SOFT_SKILL", "start": 70, "end": 82, "source": "gliner", "confidence": 0.5899547338485718, "evidence": "code reviews", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "participation in interviews", "label": "SOFT_SKILL", "start": 87, "end": 114, "source": "gliner", "confidence": 0.5215581059455872, "evidence": "participation in interviews", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2005", "predictions": []}
+{"id": "test-2008", "predictions": [{"surface_form": "software engineer", "label": "SOFT_SKILL", "start": 46, "end": 63, "source": "gliner", "confidence": 0.601979672908783, "evidence": "software engineer", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2009", "predictions": []}
+{"id": "test-2010", "predictions": []}
+{"id": "test-2011", "predictions": []}
+{"id": "test-2051", "predictions": []}
+{"id": "test-2058", "predictions": []}
+{"id": "test-2082", "predictions": []}
+{"id": "test-2084", "predictions": []}
+{"id": "test-2086", "predictions": []}
+{"id": "test-2087", "predictions": []}
+{"id": "test-2088", "predictions": []}
+{"id": "test-2089", "predictions": []}
+{"id": "test-2091", "predictions": [{"surface_form": "broad back-end programming skills", "label": "SOFT_SKILL", "start": 73, "end": 106, "source": "gliner", "confidence": 0.4605269134044647, "evidence": "broad back-end programming skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2092", "predictions": []}
+{"id": "test-2093", "predictions": []}
+{"id": "test-2094", "predictions": [{"surface_form": "docker", "label": "SOFT_SKILL", "start": 18, "end": 24, "source": "gliner", "confidence": 0.43792393803596497, "evidence": "docker", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2095", "predictions": [{"surface_form": "Computer Engineering", "label": "HARD_SKILL", "start": 32, "end": 52, "source": "gliner", "confidence": 0.5781661868095398, "evidence": "Computer Engineering", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2097", "predictions": []}
+{"id": "test-2098", "predictions": []}
+{"id": "test-2099", "predictions": []}
+{"id": "test-2101", "predictions": []}
+{"id": "test-2102", "predictions": []}
+{"id": "test-2103", "predictions": [{"surface_form": "Openness", "label": "SOFT_SKILL", "start": 0, "end": 8, "source": "gliner", "confidence": 0.6141940355300903, "evidence": "Openness", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2104", "predictions": []}
+{"id": "test-2106", "predictions": []}
+{"id": "test-2176", "predictions": []}
+{"id": "test-2180", "predictions": []}
+{"id": "test-2189", "predictions": []}
+{"id": "test-2195", "predictions": []}
+{"id": "test-2197", "predictions": []}
+{"id": "test-2198", "predictions": []}
+{"id": "test-2199", "predictions": [{"surface_form": "senior software engineer", "label": "SOFT_SKILL", "start": 16, "end": 40, "source": "gliner", "confidence": 0.5572009086608887, "evidence": "senior software engineer", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2200", "predictions": []}
+{"id": "test-2201", "predictions": []}
+{"id": "test-2202", "predictions": []}
+{"id": "test-2204", "predictions": [{"surface_form": "machine learning", "label": "HARD_SKILL", "start": 64, "end": 80, "source": "gliner", "confidence": 0.40722525119781494, "evidence": "machine learning", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2205", "predictions": []}
+{"id": "test-2206", "predictions": []}
+{"id": "test-2207", "predictions": []}
+{"id": "test-2208", "predictions": []}
+{"id": "test-2234", "predictions": []}
+{"id": "test-2238", "predictions": []}
+{"id": "test-2243", "predictions": [{"surface_form": "architect", "label": "SOFT_SKILL", "start": 4, "end": 13, "source": "gliner", "confidence": 0.6289570927619934, "evidence": "architect", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2244", "predictions": []}
+{"id": "test-2246", "predictions": []}
+{"id": "test-2247", "predictions": []}
+{"id": "test-2250", "predictions": []}
+{"id": "test-2251", "predictions": []}
+{"id": "test-2252", "predictions": []}
+{"id": "test-2253", "predictions": []}
+{"id": "test-2255", "predictions": []}
+{"id": "test-2256", "predictions": [{"surface_form": "rock-solid coding skills", "label": "SOFT_SKILL", "start": 42, "end": 66, "source": "gliner", "confidence": 0.4807165265083313, "evidence": "rock-solid coding skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2257", "predictions": []}
+{"id": "test-2258", "predictions": [{"surface_form": "backend development", "label": "HARD_SKILL", "start": 27, "end": 46, "source": "gliner", "confidence": 0.3605733811855316, "evidence": "backend development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2259", "predictions": []}
+{"id": "test-2260", "predictions": []}
+{"id": "test-2261", "predictions": []}
+{"id": "test-2297", "predictions": []}
+{"id": "test-2301", "predictions": []}
+{"id": "test-2313", "predictions": []}
+{"id": "test-2314", "predictions": []}
+{"id": "test-2315", "predictions": []}
+{"id": "test-2316", "predictions": [{"surface_form": "technical debt", "label": "HARD_SKILL", "start": 93, "end": 107, "source": "gliner", "confidence": 0.3723337650299072, "evidence": "technical debt", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2318", "predictions": []}
+{"id": "test-2321", "predictions": []}
+{"id": "test-2322", "predictions": []}
+{"id": "test-2323", "predictions": [{"surface_form": "Able to frame problems", "label": "SOFT_SKILL", "start": 0, "end": 22, "source": "gliner", "confidence": 0.3718853294849396, "evidence": "Able to frame problems", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2324", "predictions": [{"surface_form": "continuous deployment", "label": "SOFT_SKILL", "start": 61, "end": 82, "source": "gliner", "confidence": 0.3919595181941986, "evidence": "continuous deployment", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2325", "predictions": []}
+{"id": "test-2326", "predictions": [{"surface_form": "quality assurance", "label": "HARD_SKILL", "start": 15, "end": 32, "source": "gliner", "confidence": 0.6598169207572937, "evidence": "quality assurance", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2327", "predictions": []}
+{"id": "test-2328", "predictions": []}
+{"id": "test-2329", "predictions": []}
+{"id": "test-2349", "predictions": [{"surface_form": "UI", "label": "SOFT_SKILL", "start": 114, "end": 116, "source": "gliner", "confidence": 0.4903298318386078, "evidence": "UI", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2354", "predictions": []}
+{"id": "test-2355", "predictions": []}
+{"id": "test-2356", "predictions": []}
+{"id": "test-2357", "predictions": []}
+{"id": "test-2358", "predictions": []}
+{"id": "test-2359", "predictions": [{"surface_form": "SQL experience", "label": "SOFT_SKILL", "start": 0, "end": 14, "source": "gliner", "confidence": 0.43108636140823364, "evidence": "SQL experience", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2361", "predictions": [{"surface_form": "Great technical communication skills", "label": "SOFT_SKILL", "start": 85, "end": 121, "source": "gliner", "confidence": 0.5389258861541748, "evidence": "Great technical communication skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2390", "predictions": []}
+{"id": "test-2391", "predictions": []}
+{"id": "test-2396", "predictions": []}
+{"id": "test-2397", "predictions": []}
+{"id": "test-2399", "predictions": []}
+{"id": "test-2400", "predictions": []}
+{"id": "test-2402", "predictions": [{"surface_form": "Fluency in English", "label": "SOFT_SKILL", "start": 0, "end": 18, "source": "gliner", "confidence": 0.5678514838218689, "evidence": "Fluency in English", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "excellent communication and collaborations skills", "label": "SOFT_SKILL", "start": 19, "end": 68, "source": "gliner", "confidence": 0.47051379084587097, "evidence": "excellent communication and collaborations skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "independence in paper and project writing", "label": "SOFT_SKILL", "start": 80, "end": 121, "source": "gliner", "confidence": 0.4778834879398346, "evidence": "independence in paper and project writing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2429", "predictions": []}
+{"id": "test-2430", "predictions": []}
+{"id": "test-2434", "predictions": []}
+{"id": "test-2435", "predictions": [{"surface_form": "design", "label": "SOFT_SKILL", "start": 246, "end": 252, "source": "gliner", "confidence": 0.42189842462539673, "evidence": "design", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "design", "label": "SOFT_SKILL", "start": 311, "end": 317, "source": "gliner", "confidence": 0.5060446858406067, "evidence": "design", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2436", "predictions": []}
+{"id": "test-2437", "predictions": []}
+{"id": "test-2438", "predictions": []}
+{"id": "test-2440", "predictions": []}
+{"id": "test-2441", "predictions": []}
+{"id": "test-2442", "predictions": []}
+{"id": "test-2443", "predictions": []}
+{"id": "test-2444", "predictions": []}
+{"id": "test-2445", "predictions": []}
+{"id": "test-2446", "predictions": []}
+{"id": "test-2447", "predictions": [{"surface_form": "proactive mindset", "label": "SOFT_SKILL", "start": 11, "end": 28, "source": "gliner", "confidence": 0.42198696732521057, "evidence": "proactive mindset", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2448", "predictions": [{"surface_form": "project management skills", "label": "SOFT_SKILL", "start": 63, "end": 88, "source": "gliner", "confidence": 0.465082585811615, "evidence": "project management skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2464", "predictions": []}
+{"id": "test-2465", "predictions": []}
+{"id": "test-2466", "predictions": []}
+{"id": "test-2475", "predictions": [{"surface_form": "Pricing Specialist", "label": "SOFT_SKILL", "start": 19, "end": 37, "source": "gliner", "confidence": 0.7450949549674988, "evidence": "Pricing Specialist", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2478", "predictions": []}
+{"id": "test-2483", "predictions": [{"surface_form": "analytical", "label": "SOFT_SKILL", "start": 17, "end": 27, "source": "gliner", "confidence": 0.390998899936676, "evidence": "analytical", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "high-quality mindset", "label": "SOFT_SKILL", "start": 70, "end": 90, "source": "gliner", "confidence": 0.5946251153945923, "evidence": "high-quality mindset", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2484", "predictions": [{"surface_form": "highly numerate", "label": "SOFT_SKILL", "start": 12, "end": 27, "source": "gliner", "confidence": 0.5998753905296326, "evidence": "highly numerate", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "strong communicative skills", "label": "SOFT_SKILL", "start": 40, "end": 67, "source": "gliner", "confidence": 0.5475097298622131, "evidence": "strong communicative skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2485", "predictions": []}
+{"id": "test-2486", "predictions": [{"surface_form": "innovative", "label": "SOFT_SKILL", "start": 20, "end": 30, "source": "gliner", "confidence": 0.4842895567417145, "evidence": "innovative", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "solution-oriented", "label": "SOFT_SKILL", "start": 35, "end": 52, "source": "gliner", "confidence": 0.644740641117096, "evidence": "solution-oriented", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2487", "predictions": [{"surface_form": "Pricing Specialist", "label": "SOFT_SKILL", "start": 25, "end": 43, "source": "gliner", "confidence": 0.586081326007843, "evidence": "Pricing Specialist", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2488", "predictions": []}
+{"id": "test-2489", "predictions": []}
+{"id": "test-2490", "predictions": []}
+{"id": "test-2504", "predictions": []}
+{"id": "test-2506", "predictions": [{"surface_form": "feeding", "label": "HARD_SKILL", "start": 17, "end": 24, "source": "gliner", "confidence": 0.4314335584640503, "evidence": "feeding", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "monitoring", "label": "SOFT_SKILL", "start": 56, "end": 66, "source": "gliner", "confidence": 0.39890536665916443, "evidence": "monitoring", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2513", "predictions": []}
+{"id": "test-2518", "predictions": [{"surface_form": "developers", "label": "SOFT_SKILL", "start": 38, "end": 48, "source": "gliner", "confidence": 0.5116661787033081, "evidence": "developers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "designers", "label": "SOFT_SKILL", "start": 49, "end": 58, "source": "gliner", "confidence": 0.5118436813354492, "evidence": "designers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "marketers", "label": "SOFT_SKILL", "start": 63, "end": 72, "source": "gliner", "confidence": 0.5361998081207275, "evidence": "marketers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2519", "predictions": []}
+{"id": "test-2520", "predictions": [{"surface_form": "designers", "label": "SOFT_SKILL", "start": 81, "end": 90, "source": "gliner", "confidence": 0.4131684899330139, "evidence": "designers", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "copywriters", "label": "SOFT_SKILL", "start": 95, "end": 106, "source": "gliner", "confidence": 0.5459359884262085, "evidence": "copywriters", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2521", "predictions": []}
+{"id": "test-2522", "predictions": [{"surface_form": "JavaScript", "label": "HARD_SKILL", "start": 573, "end": 583, "source": "gliner", "confidence": 0.4169834554195404, "evidence": "JavaScript", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "JavaScript", "label": "HARD_SKILL", "start": 718, "end": 728, "source": "gliner", "confidence": 0.4106820821762085, "evidence": "JavaScript", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2523", "predictions": []}
+{"id": "test-2524", "predictions": []}
+{"id": "test-2543", "predictions": []}
+{"id": "test-2544", "predictions": []}
+{"id": "test-2547", "predictions": [{"surface_form": "project leadership", "label": "SOFT_SKILL", "start": 172, "end": 190, "source": "gliner", "confidence": 0.5216799378395081, "evidence": "project leadership", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2548", "predictions": [{"surface_form": "commercial insight", "label": "HARD_SKILL", "start": 12, "end": 30, "source": "gliner", "confidence": 0.431805282831192, "evidence": "commercial insight", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "production knowledge", "label": "HARD_SKILL", "start": 34, "end": 54, "source": "gliner", "confidence": 0.373235821723938, "evidence": "production knowledge", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2549", "predictions": []}
+{"id": "test-2550", "predictions": [{"surface_form": "good communication skills", "label": "SOFT_SKILL", "start": 45, "end": 70, "source": "gliner", "confidence": 0.35113075375556946, "evidence": "good communication skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2551", "predictions": [{"surface_form": "people management", "label": "SOFT_SKILL", "start": 21, "end": 38, "source": "gliner", "confidence": 0.4591887891292572, "evidence": "people management", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2569", "predictions": []}
+{"id": "test-2570", "predictions": []}
+{"id": "test-2571", "predictions": []}
+{"id": "test-2574", "predictions": []}
+{"id": "test-2575", "predictions": []}
+{"id": "test-2576", "predictions": [{"surface_form": "benchmarking", "label": "HARD_SKILL", "start": 8, "end": 20, "source": "gliner", "confidence": 0.38414591550827026, "evidence": "benchmarking", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2577", "predictions": []}
+{"id": "test-2578", "predictions": []}
+{"id": "test-2579", "predictions": []}
+{"id": "test-2580", "predictions": []}
+{"id": "test-2581", "predictions": [{"surface_form": "Rewards Specialist", "label": "SOFT_SKILL", "start": 25, "end": 43, "source": "gliner", "confidence": 0.5382058620452881, "evidence": "Rewards Specialist", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2582", "predictions": []}
+{"id": "test-2583", "predictions": []}
+{"id": "test-2584", "predictions": [{"surface_form": "You understand the importance of having a strong focus on details", "label": "SOFT_SKILL", "start": 0, "end": 65, "source": "gliner", "confidence": 0.4056980609893799, "evidence": "You understand the importance of having a strong focus on details", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2585", "predictions": []}
+{"id": "test-2593", "predictions": [{"surface_form": "registered surgeon", "label": "HARD_SKILL", "start": 23, "end": 41, "source": "gliner", "confidence": 0.5312771201133728, "evidence": "registered surgeon", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2594", "predictions": []}
+{"id": "test-2595", "predictions": []}
+{"id": "test-2598", "predictions": []}
+{"id": "test-2599", "predictions": [{"surface_form": "flexible", "label": "SOFT_SKILL", "start": 37, "end": 45, "source": "gliner", "confidence": 0.37669065594673157, "evidence": "flexible", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2693", "predictions": [{"surface_form": "promotor", "label": "SOFT_SKILL", "start": 5, "end": 13, "source": "gliner", "confidence": 0.5081407427787781, "evidence": "promotor", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2705", "predictions": [{"surface_form": "Extroverted", "label": "SOFT_SKILL", "start": 9, "end": 20, "source": "gliner", "confidence": 0.6084704995155334, "evidence": "Extroverted", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "energetic", "label": "SOFT_SKILL", "start": 25, "end": 34, "source": "gliner", "confidence": 0.4332866370677948, "evidence": "energetic", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2706", "predictions": [{"surface_form": "Result oriented", "label": "SOFT_SKILL", "start": 0, "end": 15, "source": "gliner", "confidence": 0.4670797288417816, "evidence": "Result oriented", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2707", "predictions": []}
+{"id": "test-2708", "predictions": []}
+{"id": "test-2723", "predictions": [{"surface_form": "Danish skills", "label": "HARD_SKILL", "start": 0, "end": 13, "source": "gliner", "confidence": 0.492918998003006, "evidence": "Danish skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2724", "predictions": []}
+{"id": "test-2734", "predictions": []}
+{"id": "test-2737", "predictions": []}
+{"id": "test-2739", "predictions": []}
+{"id": "test-2740", "predictions": []}
+{"id": "test-2741", "predictions": []}
+{"id": "test-2742", "predictions": []}
+{"id": "test-2743", "predictions": []}
+{"id": "test-2744", "predictions": [{"surface_form": "register", "label": "SOFT_SKILL", "start": 54, "end": 62, "source": "gliner", "confidence": 0.39437463879585266, "evidence": "register", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2746", "predictions": []}
+{"id": "test-2747", "predictions": []}
+{"id": "test-2748", "predictions": []}
+{"id": "test-2749", "predictions": []}
+{"id": "test-2750", "predictions": []}
+{"id": "test-2762", "predictions": []}
+{"id": "test-2766", "predictions": []}
+{"id": "test-2767", "predictions": []}
+{"id": "test-2769", "predictions": []}
+{"id": "test-2770", "predictions": [{"surface_form": "agile program management", "label": "SOFT_SKILL", "start": 117, "end": 141, "source": "gliner", "confidence": 0.5754274129867554, "evidence": "agile program management", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "subject matter expertise", "label": "HARD_SKILL", "start": 142, "end": 166, "source": "gliner", "confidence": 0.4502941071987152, "evidence": "subject matter expertise", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2771", "predictions": []}
+{"id": "test-2773", "predictions": []}
+{"id": "test-2774", "predictions": []}
+{"id": "test-2775", "predictions": [{"surface_form": "Excellent communication", "label": "SOFT_SKILL", "start": 167, "end": 190, "source": "gliner", "confidence": 0.4634409248828888, "evidence": "Excellent communication", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "Well-structured and independent working style", "label": "SOFT_SKILL", "start": 228, "end": 273, "source": "gliner", "confidence": 0.43614333868026733, "evidence": "Well-structured and independent working style", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2782", "predictions": []}
+{"id": "test-2783", "predictions": []}
+{"id": "test-2784", "predictions": [{"surface_form": "are proactive", "label": "SOFT_SKILL", "start": 189, "end": 202, "source": "gliner", "confidence": 0.37820902466773987, "evidence": "are proactive", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "commercially astute", "label": "SOFT_SKILL", "start": 203, "end": 222, "source": "gliner", "confidence": 0.619738757610321, "evidence": "commercially astute", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "team player", "label": "SOFT_SKILL", "start": 265, "end": 276, "source": "gliner", "confidence": 0.5713188052177429, "evidence": "team player", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "are a good communicator", "label": "SOFT_SKILL", "start": 320, "end": 343, "source": "gliner", "confidence": 0.4785439372062683, "evidence": "are a good communicator", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2785", "predictions": [{"surface_form": "self-starter", "label": "SOFT_SKILL", "start": 39, "end": 51, "source": "gliner", "confidence": 0.7491787075996399, "evidence": "self-starter", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2798", "predictions": [{"surface_form": "market analysis", "label": "HARD_SKILL", "start": 57, "end": 72, "source": "gliner", "confidence": 0.5111986398696899, "evidence": "market analysis", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "analytical skills", "label": "HARD_SKILL", "start": 115, "end": 132, "source": "gliner", "confidence": 0.3851214051246643, "evidence": "analytical skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2804", "predictions": [{"surface_form": "Creation/ optimization of PPT", "label": "SOFT_SKILL", "start": 52, "end": 81, "source": "gliner", "confidence": 0.4072326123714447, "evidence": "Creation/ optimization of PPT", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2805", "predictions": []}
+{"id": "test-2806", "predictions": [{"surface_form": "Working with multiple data sources", "label": "HARD_SKILL", "start": 2, "end": 36, "source": "gliner", "confidence": 0.36020907759666443, "evidence": "Working with multiple data sources", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2807", "predictions": []}
+{"id": "test-2810", "predictions": [{"surface_form": "marketing", "label": "SOFT_SKILL", "start": 33, "end": 42, "source": "gliner", "confidence": 0.7003577351570129, "evidence": "marketing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "marketing", "label": "SOFT_SKILL", "start": 102, "end": 111, "source": "gliner", "confidence": 0.6343016028404236, "evidence": "marketing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2811", "predictions": []}
+{"id": "test-2812", "predictions": [{"surface_form": "thinking", "label": "SOFT_SKILL", "start": 16, "end": 24, "source": "gliner", "confidence": 0.37592071294784546, "evidence": "thinking", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2813", "predictions": [{"surface_form": "goal oriented", "label": "SOFT_SKILL", "start": 18, "end": 31, "source": "gliner", "confidence": 0.4743276536464691, "evidence": "goal oriented", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "show engagement", "label": "SOFT_SKILL", "start": 32, "end": 47, "source": "gliner", "confidence": 0.36611607670783997, "evidence": "show engagement", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "positive thinking", "label": "SOFT_SKILL", "start": 64, "end": 81, "source": "gliner", "confidence": 0.5108034014701843, "evidence": "positive thinking", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "can-do attitude", "label": "SOFT_SKILL", "start": 88, "end": 103, "source": "gliner", "confidence": 0.4361436069011688, "evidence": "can-do attitude", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2814", "predictions": []}
+{"id": "test-2815", "predictions": [{"surface_form": "strategic analytical", "label": "SOFT_SKILL", "start": 48, "end": 68, "source": "gliner", "confidence": 0.3685244917869568, "evidence": "strategic analytical", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "communicative", "label": "SOFT_SKILL", "start": 73, "end": 86, "source": "gliner", "confidence": 0.48789986968040466, "evidence": "communicative", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2816", "predictions": [{"surface_form": "analyze them", "label": "SOFT_SKILL", "start": 34, "end": 46, "source": "gliner", "confidence": 0.3780013620853424, "evidence": "analyze them", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2817", "predictions": [{"surface_form": "super user", "label": "SOFT_SKILL", "start": 30, "end": 40, "source": "gliner", "confidence": 0.6298976540565491, "evidence": "super user", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2818", "predictions": []}
+{"id": "test-2819", "predictions": [{"surface_form": "structured working style", "label": "SOFT_SKILL", "start": 50, "end": 74, "source": "gliner", "confidence": 0.5441345572471619, "evidence": "structured working style", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "task responsibilities", "label": "SOFT_SKILL", "start": 104, "end": 125, "source": "gliner", "confidence": 0.3744312822818756, "evidence": "task responsibilities", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2820", "predictions": [{"surface_form": "Strong English skills", "label": "SOFT_SKILL", "start": 0, "end": 21, "source": "gliner", "confidence": 0.5877705812454224, "evidence": "Strong English skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2839", "predictions": [{"surface_form": "Picking and packing", "label": "HARD_SKILL", "start": 57, "end": 76, "source": "gliner", "confidence": 0.38151815533638, "evidence": "Picking and packing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2840", "predictions": [{"surface_form": "warehouse worker", "label": "HARD_SKILL", "start": 5, "end": 21, "source": "gliner", "confidence": 0.39774543046951294, "evidence": "warehouse worker", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "hand scanner", "label": "HARD_SKILL", "start": 78, "end": 90, "source": "gliner", "confidence": 0.48074010014533997, "evidence": "hand scanner", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2843", "predictions": []}
+{"id": "test-2847", "predictions": [{"surface_form": "manual work", "label": "HARD_SKILL", "start": 108, "end": 119, "source": "gliner", "confidence": 0.6608351469039917, "evidence": "manual work", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2848", "predictions": []}
+{"id": "test-2849", "predictions": []}
+{"id": "test-2861", "predictions": [{"surface_form": "people management", "label": "SOFT_SKILL", "start": 25, "end": 42, "source": "gliner", "confidence": 0.5423151850700378, "evidence": "people management", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2862", "predictions": []}
+{"id": "test-2865", "predictions": []}
+{"id": "test-2866", "predictions": []}
+{"id": "test-2874", "predictions": []}
+{"id": "test-2875", "predictions": []}
+{"id": "test-2878", "predictions": []}
+{"id": "test-2879", "predictions": [{"surface_form": "systematic problem solving", "label": "SOFT_SKILL", "start": 123, "end": 149, "source": "gliner", "confidence": 0.6833800077438354, "evidence": "systematic problem solving", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2883", "predictions": [{"surface_form": "pharmaceutical production", "label": "HARD_SKILL", "start": 68, "end": 93, "source": "gliner", "confidence": 0.3789827525615692, "evidence": "pharmaceutical production", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2884", "predictions": [{"surface_form": "managing people", "label": "SOFT_SKILL", "start": 31, "end": 46, "source": "gliner", "confidence": 0.44844284653663635, "evidence": "managing people", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2885", "predictions": []}
+{"id": "test-2886", "predictions": [{"surface_form": "structured", "label": "SOFT_SKILL", "start": 8, "end": 18, "source": "gliner", "confidence": 0.4505830407142639, "evidence": "structured", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2887", "predictions": [{"surface_form": "your ability to prioritize", "label": "SOFT_SKILL", "start": 14, "end": 40, "source": "gliner", "confidence": 0.43724629282951355, "evidence": "your ability to prioritize", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2888", "predictions": []}
+{"id": "test-2889", "predictions": [{"surface_form": "GMP", "label": "HARD_SKILL", "start": 0, "end": 3, "source": "gliner", "confidence": 0.6040353178977966, "evidence": "GMP", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "LEAN", "label": "HARD_SKILL", "start": 8, "end": 12, "source": "gliner", "confidence": 0.5396521687507629, "evidence": "LEAN", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2890", "predictions": []}
+{"id": "test-2891", "predictions": []}
+{"id": "test-2901", "predictions": []}
+{"id": "test-2908", "predictions": [{"surface_form": "Laboratory Technician", "label": "SOFT_SKILL", "start": 34, "end": 55, "source": "gliner", "confidence": 0.7535894513130188, "evidence": "Laboratory Technician", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "Medical Laboratory Technologist", "label": "SOFT_SKILL", "start": 56, "end": 87, "source": "gliner", "confidence": 0.6824542284011841, "evidence": "Medical Laboratory Technologist", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2909", "predictions": []}
+{"id": "test-2910", "predictions": []}
+{"id": "test-2912", "predictions": []}
+{"id": "test-2913", "predictions": [{"surface_form": "Laboratory Technician", "label": "SOFT_SKILL", "start": 4, "end": 25, "source": "gliner", "confidence": 0.6221225261688232, "evidence": "Laboratory Technician", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "Medical Laboratory Technologist", "label": "SOFT_SKILL", "start": 26, "end": 57, "source": "gliner", "confidence": 0.5382776260375977, "evidence": "Medical Laboratory Technologist", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2914", "predictions": [{"surface_form": "tissue culture techniques", "label": "HARD_SKILL", "start": 161, "end": 186, "source": "gliner", "confidence": 0.4972755014896393, "evidence": "tissue culture techniques", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "cell sorting", "label": "HARD_SKILL", "start": 191, "end": 203, "source": "gliner", "confidence": 0.670891523361206, "evidence": "cell sorting", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2915", "predictions": [{"surface_form": "working independently", "label": "SOFT_SKILL", "start": 20, "end": 41, "source": "gliner", "confidence": 0.3883664011955261, "evidence": "working independently", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "organized", "label": "SOFT_SKILL", "start": 46, "end": 55, "source": "gliner", "confidence": 0.5475359559059143, "evidence": "organized", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "self-motivated", "label": "SOFT_SKILL", "start": 63, "end": 77, "source": "gliner", "confidence": 0.4337070882320404, "evidence": "self-motivated", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2916", "predictions": []}
+{"id": "test-2917", "predictions": [{"surface_form": "basic molecular biology technique", "label": "HARD_SKILL", "start": 58, "end": 91, "source": "gliner", "confidence": 0.4887368083000183, "evidence": "basic molecular biology technique", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2918", "predictions": []}
+{"id": "test-2938", "predictions": []}
+{"id": "test-2939", "predictions": []}
+{"id": "test-2940", "predictions": []}
+{"id": "test-2942", "predictions": []}
+{"id": "test-2943", "predictions": [{"surface_form": "IT Support Assistant", "label": "SOFT_SKILL", "start": 6, "end": 26, "source": "gliner", "confidence": 0.749087393283844, "evidence": "IT Support Assistant", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2945", "predictions": [{"surface_form": "service skills", "label": "SOFT_SKILL", "start": 95, "end": 109, "source": "gliner", "confidence": 0.7002273797988892, "evidence": "service skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2948", "predictions": []}
+{"id": "test-2951", "predictions": []}
+{"id": "test-2959", "predictions": [{"surface_form": "close co-operation", "label": "HARD_SKILL", "start": 48, "end": 66, "source": "gliner", "confidence": 0.3821789026260376, "evidence": "close co-operation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2960", "predictions": []}
+{"id": "test-2961", "predictions": [{"surface_form": "IT support", "label": "SOFT_SKILL", "start": 46, "end": 56, "source": "gliner", "confidence": 0.6100978851318359, "evidence": "IT support", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "IT Support", "label": "SOFT_SKILL", "start": 112, "end": 122, "source": "gliner", "confidence": 0.6119089126586914, "evidence": "IT Support", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2962", "predictions": []}
+{"id": "test-2963", "predictions": []}
+{"id": "test-2964", "predictions": []}
+{"id": "test-2965", "predictions": []}
+{"id": "test-2966", "predictions": [{"surface_form": "patience", "label": "SOFT_SKILL", "start": 72, "end": 80, "source": "gliner", "confidence": 0.4396081566810608, "evidence": "patience", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "attentiveness", "label": "SOFT_SKILL", "start": 85, "end": 98, "source": "gliner", "confidence": 0.5481823682785034, "evidence": "attentiveness", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2967", "predictions": []}
+{"id": "test-2968", "predictions": []}
+{"id": "test-2969", "predictions": [{"surface_form": "security clearance", "label": "HARD_SKILL", "start": 102, "end": 120, "source": "gliner", "confidence": 0.5817900896072388, "evidence": "security clearance", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2988", "predictions": []}
+{"id": "test-2989", "predictions": [{"surface_form": "technical and business skills", "label": "SOFT_SKILL", "start": 142, "end": 171, "source": "gliner", "confidence": 0.41809985041618347, "evidence": "technical and business skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2990", "predictions": [{"surface_form": "UX and development", "label": "HARD_SKILL", "start": 53, "end": 71, "source": "gliner", "confidence": 0.36246415972709656, "evidence": "UX and development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-2993", "predictions": []}
+{"id": "test-2994", "predictions": [{"surface_form": "Product manager", "label": "SOFT_SKILL", "start": 0, "end": 15, "source": "gliner", "confidence": 0.4281049072742462, "evidence": "Product manager", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2995", "predictions": [{"surface_form": "ability to challenge outcomes", "label": "SOFT_SKILL", "start": 86, "end": 115, "source": "gliner", "confidence": 0.6886084079742432, "evidence": "ability to challenge outcomes", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-2996", "predictions": []}
+{"id": "test-2997", "predictions": []}
+{"id": "test-2998", "predictions": []}
+{"id": "test-2999", "predictions": []}
+{"id": "test-3000", "predictions": []}
+{"id": "test-3002", "predictions": [{"surface_form": "Excellent communication skills", "label": "SOFT_SKILL", "start": 0, "end": 30, "source": "gliner", "confidence": 0.4471299648284912, "evidence": "Excellent communication skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3003", "predictions": [{"surface_form": "The ability to think outside the box", "label": "SOFT_SKILL", "start": 62, "end": 98, "source": "gliner", "confidence": 0.5435425043106079, "evidence": "The ability to think outside the box", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "The ability to clearly and professionally present information", "label": "SOFT_SKILL", "start": 99, "end": 160, "source": "gliner", "confidence": 0.6077912449836731, "evidence": "The ability to clearly and professionally present information", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3027", "predictions": []}
+{"id": "test-3028", "predictions": []}
+{"id": "test-3029", "predictions": [{"surface_form": "international sales", "label": "SOFT_SKILL", "start": 132, "end": 151, "source": "gliner", "confidence": 0.3583586812019348, "evidence": "international sales", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3030", "predictions": []}
+{"id": "test-3031", "predictions": []}
+{"id": "test-3032", "predictions": [{"surface_form": "sales canvassing", "label": "SOFT_SKILL", "start": 85, "end": 101, "source": "gliner", "confidence": 0.5929750204086304, "evidence": "sales canvassing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3033", "predictions": [{"surface_form": "sales", "label": "HARD_SKILL", "start": 29, "end": 34, "source": "gliner", "confidence": 0.3861781358718872, "evidence": "sales", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3034", "predictions": []}
+{"id": "test-3035", "predictions": []}
+{"id": "test-3036", "predictions": []}
+{"id": "test-3037", "predictions": []}
+{"id": "test-3038", "predictions": []}
+{"id": "test-3039", "predictions": []}
+{"id": "test-3043", "predictions": [{"surface_form": "persuasive", "label": "SOFT_SKILL", "start": 45, "end": 55, "source": "gliner", "confidence": 0.5634750127792358, "evidence": "persuasive", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "convincing", "label": "SOFT_SKILL", "start": 60, "end": 70, "source": "gliner", "confidence": 0.4378831386566162, "evidence": "convincing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3044", "predictions": [{"surface_form": "sales canvassing", "label": "SOFT_SKILL", "start": 16, "end": 32, "source": "gliner", "confidence": 0.4136703610420227, "evidence": "sales canvassing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "cold calling", "label": "SOFT_SKILL", "start": 33, "end": 45, "source": "gliner", "confidence": 0.5096224546432495, "evidence": "cold calling", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "booking meetings", "label": "SOFT_SKILL", "start": 50, "end": 66, "source": "gliner", "confidence": 0.4029407799243927, "evidence": "booking meetings", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3045", "predictions": [{"surface_form": "energetic", "label": "SOFT_SKILL", "start": 17, "end": 26, "source": "gliner", "confidence": 0.3953639268875122, "evidence": "energetic", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3046", "predictions": [{"surface_form": "persistent", "label": "HARD_SKILL", "start": 8, "end": 18, "source": "gliner", "confidence": 0.36048367619514465, "evidence": "persistent", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3049", "predictions": []}
+{"id": "test-3052", "predictions": []}
+{"id": "test-3066", "predictions": [{"surface_form": "strong Java skills", "label": "SOFT_SKILL", "start": 54, "end": 72, "source": "gliner", "confidence": 0.5118586421012878, "evidence": "strong Java skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3067", "predictions": []}
+{"id": "test-3068", "predictions": []}
+{"id": "test-3069", "predictions": []}
+{"id": "test-3070", "predictions": []}
+{"id": "test-3071", "predictions": [{"surface_form": "Actively refactoring code", "label": "SOFT_SKILL", "start": 0, "end": 25, "source": "gliner", "confidence": 0.3864666521549225, "evidence": "Actively refactoring code", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3072", "predictions": []}
+{"id": "test-3077", "predictions": []}
+{"id": "test-3084", "predictions": []}
+{"id": "test-3085", "predictions": []}
+{"id": "test-3086", "predictions": []}
+{"id": "test-3087", "predictions": [{"surface_form": "team capability", "label": "SOFT_SKILL", "start": 165, "end": 180, "source": "gliner", "confidence": 0.4609406292438507, "evidence": "team capability", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3088", "predictions": []}
+{"id": "test-3089", "predictions": []}
+{"id": "test-3090", "predictions": []}
+{"id": "test-3091", "predictions": []}
+{"id": "test-3094", "predictions": []}
+{"id": "test-3095", "predictions": []}
+{"id": "test-3096", "predictions": [{"surface_form": "Good verbal communication skills", "label": "SOFT_SKILL", "start": 79, "end": 111, "source": "gliner", "confidence": 0.5787846446037292, "evidence": "Good verbal communication skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3097", "predictions": []}
+{"id": "test-3098", "predictions": []}
+{"id": "test-3099", "predictions": []}
+{"id": "test-3100", "predictions": []}
+{"id": "test-3103", "predictions": [{"surface_form": "mechanical understanding", "label": "SOFT_SKILL", "start": 34, "end": 58, "source": "gliner", "confidence": 0.47004735469818115, "evidence": "mechanical understanding", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "solid working knowledge", "label": "SOFT_SKILL", "start": 65, "end": 88, "source": "gliner", "confidence": 0.4934748113155365, "evidence": "solid working knowledge", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3104", "predictions": [{"surface_form": "problem-solving", "label": "HARD_SKILL", "start": 28, "end": 43, "source": "gliner", "confidence": 0.43788743019104004, "evidence": "problem-solving", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3105", "predictions": []}
+{"id": "test-3106", "predictions": []}
+{"id": "test-3107", "predictions": []}
+{"id": "test-3108", "predictions": []}
+{"id": "test-3109", "predictions": []}
+{"id": "test-3110", "predictions": []}
+{"id": "test-3111", "predictions": []}
+{"id": "test-3112", "predictions": []}
+{"id": "test-3117", "predictions": []}
+{"id": "test-3118", "predictions": []}
+{"id": "test-3119", "predictions": [{"surface_form": "mechanical understanding", "label": "HARD_SKILL", "start": 21, "end": 45, "source": "gliner", "confidence": 0.40260446071624756, "evidence": "mechanical understanding", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3120", "predictions": [{"surface_form": "automation and control systems", "label": "HARD_SKILL", "start": 42, "end": 72, "source": "gliner", "confidence": 0.42112576961517334, "evidence": "automation and control systems", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3121", "predictions": [{"surface_form": "Microsoft Office", "label": "HARD_SKILL", "start": 22, "end": 38, "source": "gliner", "confidence": 0.4235630929470062, "evidence": "Microsoft Office", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3122", "predictions": []}
+{"id": "test-3139", "predictions": [{"surface_form": "Senior Data Engineer", "label": "SOFT_SKILL", "start": 19, "end": 39, "source": "gliner", "confidence": 0.43685227632522583, "evidence": "Senior Data Engineer", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "Advanced Analytics", "label": "HARD_SKILL", "start": 43, "end": 61, "source": "gliner", "confidence": 0.5782238245010376, "evidence": "Advanced Analytics", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3141", "predictions": [{"surface_form": "contemporary analytics", "label": "HARD_SKILL", "start": 119, "end": 141, "source": "gliner", "confidence": 0.35389474034309387, "evidence": "contemporary analytics", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3142", "predictions": []}
+{"id": "test-3143", "predictions": []}
+{"id": "test-3144", "predictions": []}
+{"id": "test-3145", "predictions": [{"surface_form": "a willingness to learn", "label": "SOFT_SKILL", "start": 8, "end": 30, "source": "gliner", "confidence": 0.3996841311454773, "evidence": "a willingness to learn", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3151", "predictions": []}
+{"id": "test-3152", "predictions": []}
+{"id": "test-3161", "predictions": [{"surface_form": "Registering and controlling goods", "label": "HARD_SKILL", "start": 44, "end": 77, "source": "gliner", "confidence": 0.4446481168270111, "evidence": "Registering and controlling goods", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "Preparing pallets", "label": "HARD_SKILL", "start": 98, "end": 115, "source": "gliner", "confidence": 0.3715130090713501, "evidence": "Preparing pallets", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3162", "predictions": [{"surface_form": "forklift", "label": "HARD_SKILL", "start": 42, "end": 50, "source": "gliner", "confidence": 0.444369375705719, "evidence": "forklift", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3166", "predictions": []}
+{"id": "test-3182", "predictions": []}
+{"id": "test-3186", "predictions": [{"surface_form": "research strategies", "label": "SOFT_SKILL", "start": 107, "end": 126, "source": "gliner", "confidence": 0.35308703780174255, "evidence": "research strategies", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "teaching and learning", "label": "SOFT_SKILL", "start": 156, "end": 177, "source": "gliner", "confidence": 0.4091496169567108, "evidence": "teaching and learning", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3187", "predictions": []}
+{"id": "test-3188", "predictions": []}
+{"id": "test-3191", "predictions": []}
+{"id": "test-3194", "predictions": [{"surface_form": "microscope", "label": "HARD_SKILL", "start": 47, "end": 57, "source": "gliner", "confidence": 0.5181148648262024, "evidence": "microscope", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3195", "predictions": []}
+{"id": "test-3196", "predictions": [{"surface_form": "hardware/software development", "label": "HARD_SKILL", "start": 35, "end": 64, "source": "gliner", "confidence": 0.3687504827976227, "evidence": "hardware/software development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3197", "predictions": []}
+{"id": "test-3198", "predictions": []}
+{"id": "test-3200", "predictions": []}
+{"id": "test-3201", "predictions": [{"surface_form": "Work independently", "label": "SOFT_SKILL", "start": 45, "end": 63, "source": "gliner", "confidence": 0.5630707144737244, "evidence": "Work independently", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "prioritize tasks", "label": "SOFT_SKILL", "start": 68, "end": 84, "source": "gliner", "confidence": 0.3562380373477936, "evidence": "prioritize tasks", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3202", "predictions": []}
+{"id": "test-3203", "predictions": []}
+{"id": "test-3204", "predictions": []}
+{"id": "test-3205", "predictions": [{"surface_form": "analyse", "label": "SOFT_SKILL", "start": 0, "end": 7, "source": "gliner", "confidence": 0.3975735306739807, "evidence": "analyse", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3206", "predictions": []}
+{"id": "test-3207", "predictions": []}
+{"id": "test-3208", "predictions": [{"surface_form": "data simulation", "label": "SOFT_SKILL", "start": 17, "end": 32, "source": "gliner", "confidence": 0.3532719612121582, "evidence": "data simulation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "basic image analysis", "label": "SOFT_SKILL", "start": 37, "end": 57, "source": "gliner", "confidence": 0.3828578293323517, "evidence": "basic image analysis", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3209", "predictions": []}
+{"id": "test-3210", "predictions": []}
+{"id": "test-3211", "predictions": []}
+{"id": "test-3212", "predictions": []}
+{"id": "test-3213", "predictions": []}
+{"id": "test-3214", "predictions": []}
+{"id": "test-3215", "predictions": [{"surface_form": "software/hardware development", "label": "HARD_SKILL", "start": 38, "end": 67, "source": "gliner", "confidence": 0.5092353820800781, "evidence": "software/hardware development", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3247", "predictions": []}
+{"id": "test-3271", "predictions": []}
+{"id": "test-3272", "predictions": []}
+{"id": "test-3273", "predictions": []}
+{"id": "test-3275", "predictions": [{"surface_form": "research management", "label": "SOFT_SKILL", "start": 51, "end": 70, "source": "gliner", "confidence": 0.6272146701812744, "evidence": "research management", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "successful teaching experience", "label": "SOFT_SKILL", "start": 82, "end": 112, "source": "gliner", "confidence": 0.3721879720687866, "evidence": "successful teaching experience", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3276", "predictions": []}
+{"id": "test-3284", "predictions": []}
+{"id": "test-3285", "predictions": []}
+{"id": "test-3286", "predictions": []}
+{"id": "test-3287", "predictions": [{"surface_form": "journal editorship", "label": "HARD_SKILL", "start": 45, "end": 63, "source": "gliner", "confidence": 0.37653106451034546, "evidence": "journal editorship", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "reviewing", "label": "SOFT_SKILL", "start": 71, "end": 80, "source": "gliner", "confidence": 0.37613892555236816, "evidence": "reviewing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3288", "predictions": []}
+{"id": "test-3289", "predictions": []}
+{"id": "test-3290", "predictions": [{"surface_form": "business research", "label": "HARD_SKILL", "start": 46, "end": 63, "source": "gliner", "confidence": 0.4515014588832855, "evidence": "business research", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3291", "predictions": []}
+{"id": "test-3293", "predictions": []}
+{"id": "test-3294", "predictions": []}
+{"id": "test-3295", "predictions": []}
+{"id": "test-3296", "predictions": []}
+{"id": "test-3297", "predictions": []}
+{"id": "test-3298", "predictions": []}
+{"id": "test-3299", "predictions": []}
+{"id": "test-3302", "predictions": [{"surface_form": "research management", "label": "SOFT_SKILL", "start": 76, "end": 95, "source": "gliner", "confidence": 0.609528660774231, "evidence": "research management", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3304", "predictions": []}
+{"id": "test-3305", "predictions": []}
+{"id": "test-3306", "predictions": []}
+{"id": "test-3310", "predictions": [{"surface_form": "marketing", "label": "HARD_SKILL", "start": 160, "end": 169, "source": "gliner", "confidence": 0.3658781349658966, "evidence": "marketing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3311", "predictions": []}
+{"id": "test-3328", "predictions": []}
+{"id": "test-3357", "predictions": [{"surface_form": "Segway Guide", "label": "SOFT_SKILL", "start": 505, "end": 517, "source": "gliner", "confidence": 0.4174959659576416, "evidence": "Segway Guide", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3358", "predictions": []}
+{"id": "test-3360", "predictions": []}
+{"id": "test-3361", "predictions": []}
+{"id": "test-3362", "predictions": [{"surface_form": "Strong leadership skills", "label": "SOFT_SKILL", "start": 0, "end": 24, "source": "gliner", "confidence": 0.5324102640151978, "evidence": "Strong leadership skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3363", "predictions": []}
+{"id": "test-3364", "predictions": [{"surface_form": "Be meticulous", "label": "SOFT_SKILL", "start": 0, "end": 13, "source": "gliner", "confidence": 0.38625040650367737, "evidence": "Be meticulous", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "detail-oriented", "label": "SOFT_SKILL", "start": 18, "end": 33, "source": "gliner", "confidence": 0.4936499297618866, "evidence": "detail-oriented", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3365", "predictions": [{"surface_form": "dusting", "label": "SOFT_SKILL", "start": 94, "end": 101, "source": "gliner", "confidence": 0.4955429136753082, "evidence": "dusting", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "vacuuming", "label": "HARD_SKILL", "start": 102, "end": 111, "source": "gliner", "confidence": 0.35448673367500305, "evidence": "vacuuming", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3366", "predictions": [{"surface_form": "independent work approach", "label": "HARD_SKILL", "start": 75, "end": 100, "source": "gliner", "confidence": 0.40035828948020935, "evidence": "independent work approach", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3370", "predictions": []}
+{"id": "test-3371", "predictions": []}
+{"id": "test-3372", "predictions": [{"surface_form": "Fluent in English", "label": "SOFT_SKILL", "start": 47, "end": 64, "source": "gliner", "confidence": 0.5698899030685425, "evidence": "Fluent in English", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3373", "predictions": []}
+{"id": "test-3374", "predictions": []}
+{"id": "test-3375", "predictions": []}
+{"id": "test-3376", "predictions": [{"surface_form": "public speaking", "label": "SOFT_SKILL", "start": 32, "end": 47, "source": "gliner", "confidence": 0.6460939049720764, "evidence": "public speaking", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3378", "predictions": []}
+{"id": "test-3379", "predictions": [{"surface_form": "leadership abilities", "label": "SOFT_SKILL", "start": 74, "end": 94, "source": "gliner", "confidence": 0.5685992240905762, "evidence": "leadership abilities", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3381", "predictions": []}
+{"id": "test-3382", "predictions": []}
+{"id": "test-3383", "predictions": []}
+{"id": "test-3385", "predictions": []}
+{"id": "test-3386", "predictions": []}
+{"id": "test-3391", "predictions": []}
+{"id": "test-3392", "predictions": []}
+{"id": "test-3393", "predictions": [{"surface_form": "social media marketing", "label": "SOFT_SKILL", "start": 25, "end": 47, "source": "gliner", "confidence": 0.4887867569923401, "evidence": "social media marketing", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3394", "predictions": [{"surface_form": "sales experience", "label": "SOFT_SKILL", "start": 9, "end": 25, "source": "gliner", "confidence": 0.41067802906036377, "evidence": "sales experience", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3395", "predictions": []}
+{"id": "test-3396", "predictions": [{"surface_form": "first-aid skills", "label": "SOFT_SKILL", "start": 9, "end": 25, "source": "gliner", "confidence": 0.5641099810600281, "evidence": "first-aid skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3403", "predictions": []}
+{"id": "test-3413", "predictions": [{"surface_form": "Supply Chain experience", "label": "HARD_SKILL", "start": 19, "end": 42, "source": "gliner", "confidence": 0.5020102858543396, "evidence": "Supply Chain experience", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "personal impact", "label": "SOFT_SKILL", "start": 137, "end": 152, "source": "gliner", "confidence": 0.4197169840335846, "evidence": "personal impact", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3415", "predictions": [{"surface_form": "business acumen", "label": "SOFT_SKILL", "start": 130, "end": 145, "source": "gliner", "confidence": 0.6688708066940308, "evidence": "business acumen", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "good ideas", "label": "SOFT_SKILL", "start": 166, "end": 176, "source": "gliner", "confidence": 0.4512946307659149, "evidence": "good ideas", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3416", "predictions": []}
+{"id": "test-3417", "predictions": []}
+{"id": "test-3418", "predictions": []}
+{"id": "test-3420", "predictions": []}
+{"id": "test-3421", "predictions": []}
+{"id": "test-3422", "predictions": []}
+{"id": "test-3423", "predictions": []}
+{"id": "test-3424", "predictions": [{"surface_form": "Business Engineering", "label": "SOFT_SKILL", "start": 0, "end": 20, "source": "gliner", "confidence": 0.4621994197368622, "evidence": "Business Engineering", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "Supply Chain Management", "label": "SOFT_SKILL", "start": 24, "end": 47, "source": "gliner", "confidence": 0.5971470475196838, "evidence": "Supply Chain Management", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3425", "predictions": [{"surface_form": "complex coordination", "label": "SOFT_SKILL", "start": 148, "end": 168, "source": "gliner", "confidence": 0.5459240674972534, "evidence": "complex coordination", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3426", "predictions": [{"surface_form": "overview", "label": "SOFT_SKILL", "start": 76, "end": 84, "source": "gliner", "confidence": 0.5745685696601868, "evidence": "overview", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "sense of detail", "label": "SOFT_SKILL", "start": 89, "end": 104, "source": "gliner", "confidence": 0.7118547558784485, "evidence": "sense of detail", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3427", "predictions": [{"surface_form": "open-minded approach", "label": "SOFT_SKILL", "start": 34, "end": 54, "source": "gliner", "confidence": 0.35480451583862305, "evidence": "open-minded approach", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3428", "predictions": []}
+{"id": "test-3443", "predictions": [{"surface_form": "advanced electron microscopy", "label": "HARD_SKILL", "start": 81, "end": 109, "source": "gliner", "confidence": 0.6384166479110718, "evidence": "advanced electron microscopy", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3445", "predictions": []}
+{"id": "test-3446", "predictions": [{"surface_form": "in situ transmission electron microscopy", "label": "HARD_SKILL", "start": 154, "end": 194, "source": "gliner", "confidence": 0.3646211624145508, "evidence": "in situ transmission electron microscopy", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3447", "predictions": []}
+{"id": "test-3448", "predictions": []}
+{"id": "test-3449", "predictions": []}
+{"id": "test-3450", "predictions": []}
+{"id": "test-3451", "predictions": []}
+{"id": "test-3452", "predictions": [{"surface_form": "excellent skills", "label": "HARD_SKILL", "start": 155, "end": 171, "source": "gliner", "confidence": 0.40724655985832214, "evidence": "excellent skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3454", "predictions": []}
+{"id": "test-3455", "predictions": []}
+{"id": "test-3467", "predictions": []}
+{"id": "test-3468", "predictions": [{"surface_form": "acoustic design algorithm trimming", "label": "SOFT_SKILL", "start": 69, "end": 103, "source": "gliner", "confidence": 0.543540358543396, "evidence": "acoustic design algorithm trimming", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "general sound quality evaluation", "label": "SOFT_SKILL", "start": 108, "end": 140, "source": "gliner", "confidence": 0.5822071433067322, "evidence": "general sound quality evaluation", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3469", "predictions": [{"surface_form": "passion", "label": "SOFT_SKILL", "start": 29, "end": 36, "source": "gliner", "confidence": 0.4095553159713745, "evidence": "passion", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}, {"surface_form": "creativity", "label": "SOFT_SKILL", "start": 41, "end": 51, "source": "gliner", "confidence": 0.6428722143173218, "evidence": "creativity", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3470", "predictions": [{"surface_form": "directionality", "label": "HARD_SKILL", "start": 82, "end": 96, "source": "gliner", "confidence": 0.5839573740959167, "evidence": "directionality", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "beam-forming", "label": "HARD_SKILL", "start": 97, "end": 109, "source": "gliner", "confidence": 0.7097314596176147, "evidence": "beam-forming", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "trimming", "label": "SOFT_SKILL", "start": 125, "end": 133, "source": "gliner", "confidence": 0.3738991320133209, "evidence": "trimming", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3475", "predictions": [{"surface_form": "audio engineering", "label": "HARD_SKILL", "start": 41, "end": 58, "source": "gliner", "confidence": 0.4547306001186371, "evidence": "audio engineering", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3476", "predictions": []}
+{"id": "test-3478", "predictions": []}
+{"id": "test-3479", "predictions": [{"surface_form": "Your way of working", "label": "SOFT_SKILL", "start": 0, "end": 19, "source": "gliner", "confidence": 0.4637060761451721, "evidence": "Your way of working", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3480", "predictions": []}
+{"id": "test-3481", "predictions": [{"surface_form": "audio engineering", "label": "HARD_SKILL", "start": 47, "end": 64, "source": "gliner", "confidence": 0.35424888134002686, "evidence": "audio engineering", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3482", "predictions": []}
+{"id": "test-3501", "predictions": []}
+{"id": "test-3502", "predictions": [{"surface_form": "Native speaking Italian", "label": "SOFT_SKILL", "start": 263, "end": 286, "source": "gliner", "confidence": 0.45296743512153625, "evidence": "Native speaking Italian", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3516", "predictions": [{"surface_form": "The Architect", "label": "SOFT_SKILL", "start": 0, "end": 13, "source": "gliner", "confidence": 0.4714920222759247, "evidence": "The Architect", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3517", "predictions": []}
+{"id": "test-3518", "predictions": []}
+{"id": "test-3520", "predictions": [{"surface_form": "open mind", "label": "SOFT_SKILL", "start": 117, "end": 126, "source": "gliner", "confidence": 0.39985114336013794, "evidence": "open mind", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3521", "predictions": []}
+{"id": "test-3522", "predictions": []}
+{"id": "test-3523", "predictions": [{"surface_form": "solution architect", "label": "HARD_SKILL", "start": 47, "end": 65, "source": "gliner", "confidence": 0.36415359377861023, "evidence": "solution architect", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3524", "predictions": []}
+{"id": "test-3526", "predictions": [{"surface_form": "strategic fit", "label": "SOFT_SKILL", "start": 50, "end": 63, "source": "gliner", "confidence": 0.4471490681171417, "evidence": "strategic fit", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3527", "predictions": [{"surface_form": "lead consultant", "label": "SOFT_SKILL", "start": 111, "end": 126, "source": "gliner", "confidence": 0.3639765977859497, "evidence": "lead consultant", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3528", "predictions": []}
+{"id": "test-3529", "predictions": [{"surface_form": "excellent and persuasive communicator", "label": "SOFT_SKILL", "start": 123, "end": 160, "source": "gliner", "confidence": 0.4604682922363281, "evidence": "excellent and persuasive communicator", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}
+{"id": "test-3540", "predictions": []}
+{"id": "test-3541", "predictions": []}
+{"id": "test-3542", "predictions": []}
+{"id": "test-3543", "predictions": [{"surface_form": "research", "label": "HARD_SKILL", "start": 73, "end": 81, "source": "gliner", "confidence": 0.3876279294490814, "evidence": "research", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}]}
+{"id": "test-3547", "predictions": [{"surface_form": "enterprising", "label": "HARD_SKILL", "start": 214, "end": 226, "source": "gliner", "confidence": 0.4674430787563324, "evidence": "enterprising", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "hard skill", "device": "cpu"}}, {"surface_form": "good interpersonal skills", "label": "SOFT_SKILL", "start": 242, "end": 267, "source": "gliner", "confidence": 0.6039355397224426, "evidence": "good interpersonal skills", "canonical_skill_id": null, "canonical_skill_name": null, "metadata": {"gliner_label": "soft skill", "device": "cpu"}}]}

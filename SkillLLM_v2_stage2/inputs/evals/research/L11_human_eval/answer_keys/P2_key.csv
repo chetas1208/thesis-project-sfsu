@@ -1,0 +1,101 @@
+item_id,doc_id,gold_spans,in_anchor_subset,source,stratum
+P2-0001,test-3448,"[[22, 43, ""SOFT_SKILL""], [59, 72, ""HARD_SKILL""]]",True,house,gold_bearing
+P2-0002,test-1483,"[[0, 34, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0003,test-1047,"[[13, 46, ""SOFT_SKILL""], [50, 78, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0004,test-3472,[],False,house,gold_free
+P2-0005,test-3471,[],False,house,gold_free
+P2-0006,test-509,[],False,tech,gold_free
+P2-0007,test-3382,"[[38, 72, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0008,test-1117,"[[15, 18, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0009,test-1397,"[[28, 48, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0010,test-2548,"[[12, 30, ""SOFT_SKILL""], [34, 44, ""HARD_SKILL""]]",True,house,gold_bearing
+P2-0011,test-1544,"[[60, 86, ""SOFT_SKILL""], [102, 122, ""SOFT_SKILL""], [123, 163, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0012,test-1382,"[[0, 12, ""HARD_SKILL""], [13, 24, ""HARD_SKILL""], [25, 59, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0013,test-2674,[],False,house,gold_free
+P2-0014,test-1200,"[[16, 47, ""HARD_SKILL""], [120, 131, ""HARD_SKILL""], [136, 140, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0015,test-2585,"[[15, 39, ""SOFT_SKILL""], [143, 150, ""HARD_SKILL""]]",True,house,gold_bearing
+P2-0016,test-3206,"[[0, 35, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0017,test-2241,[],False,house,gold_free
+P2-0018,test-2726,[],False,house,gold_free
+P2-0019,test-766,[],False,tech,gold_free
+P2-0020,test-2638,[],False,house,gold_free
+P2-0021,test-3097,"[[25, 38, ""SOFT_SKILL""], [96, 114, ""SOFT_SKILL""], [119, 134, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0022,test-2010,"[[4, 21, ""SOFT_SKILL""], [26, 57, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0023,test-3422,"[[6, 14, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0024,test-2326,"[[15, 32, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0025,test-1795,"[[0, 38, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0026,test-3367,[],False,house,gold_free
+P2-0027,test-573,"[[41, 65, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0028,test-1406,"[[9, 15, ""HARD_SKILL""], [47, 83, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0029,test-3037,"[[0, 60, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0030,test-2077,[],False,tech,gold_free
+P2-0031,test-1305,"[[0, 5, ""HARD_SKILL""], [6, 11, ""HARD_SKILL""], [12, 16, ""HARD_SKILL""], [17, 30, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0032,test-1148,[],False,tech,gold_free
+P2-0033,test-797,"[[9, 23, ""SOFT_SKILL""], [30, 58, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0034,test-2301,"[[0, 4, ""HARD_SKILL""], [5, 11, ""HARD_SKILL""], [12, 19, ""HARD_SKILL""], [20, 27, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0035,test-2091,"[[0, 6, ""HARD_SKILL""], [79, 99, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0036,test-614,[],False,tech,gold_free
+P2-0037,test-468,[],False,tech,gold_free
+P2-0038,test-3147,[],False,house,gold_free
+P2-0039,test-3177,[],False,house,gold_free
+P2-0040,test-3287,"[[9, 44, ""SOFT_SKILL""], [45, 63, ""SOFT_SKILL""], [71, 102, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0041,test-2878,"[[23, 73, ""SOFT_SKILL""], [70, 73, ""HARD_SKILL""]]",True,house,gold_bearing
+P2-0042,test-1674,[],False,tech,gold_free
+P2-0043,test-3321,[],False,house,gold_free
+P2-0044,test-2677,[],False,house,gold_free
+P2-0045,test-515,[],False,tech,gold_free
+P2-0046,test-2405,[],False,house,gold_free
+P2-0047,test-3427,"[[34, 45, ""SOFT_SKILL""], [69, 112, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0048,test-1997,"[[19, 66, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0049,test-575,[],False,tech,gold_free
+P2-0050,test-1191,"[[0, 25, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0051,test-884,"[[9, 31, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0052,test-3325,[],False,house,gold_free
+P2-0053,test-1202,[],False,tech,gold_free
+P2-0054,test-2520,"[[122, 165, ""SOFT_SKILL""], [177, 204, ""HARD_SKILL""]]",True,house,gold_bearing
+P2-0055,test-3122,"[[20, 26, ""HARD_SKILL""], [31, 38, ""HARD_SKILL""]]",True,house,gold_bearing
+P2-0056,test-2875,"[[9, 26, ""SOFT_SKILL""], [27, 54, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0057,test-3384,[],False,house,gold_free
+P2-0058,test-139,"[[23, 56, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0059,test-2106,"[[0, 36, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0060,test-972,"[[0, 30, ""SOFT_SKILL""], [35, 84, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0061,test-2966,"[[10, 45, ""SOFT_SKILL""], [46, 71, ""SOFT_SKILL""], [72, 80, ""SOFT_SKILL""], [85, 98, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0062,test-997,[],False,tech,gold_free
+P2-0063,test-2391,"[[13, 75, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0064,test-3474,[],False,house,gold_free
+P2-0065,test-431,[],False,tech,gold_free
+P2-0066,test-523,"[[23, 46, ""SOFT_SKILL""], [51, 64, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0067,test-2469,[],False,house,gold_free
+P2-0068,test-1453,"[[10, 24, ""HARD_SKILL""], [25, 59, ""HARD_SKILL""], [60, 75, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0069,test-303,[],False,tech,gold_free
+P2-0070,test-2038,[],False,tech,gold_free
+P2-0071,test-2199,"[[71, 81, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0072,test-1625,"[[16, 56, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0073,test-191,"[[26, 38, ""HARD_SKILL""], [43, 49, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0074,test-127,"[[0, 26, ""SOFT_SKILL""], [44, 54, ""HARD_SKILL""], [82, 92, ""HARD_SKILL""], [93, 106, ""HARD_SKILL""], [107, 112, ""HARD_SKILL""], [113, 123, ""HARD_SKILL""], [128, 134, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0075,test-2598,"[[0, 37, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0076,test-3142,"[[26, 59, ""SOFT_SKILL""], [64, 89, ""SOFT_SKILL""], [90, 156, ""SOFT_SKILL""], [157, 191, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0077,test-2250,"[[0, 26, ""SOFT_SKILL""], [48, 68, ""HARD_SKILL""]]",True,house,gold_bearing
+P2-0078,test-562,"[[0, 13, ""HARD_SKILL""], [14, 30, ""HARD_SKILL""], [31, 48, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0079,test-3307,[],False,house,gold_free
+P2-0080,test-1717,"[[0, 5, ""HARD_SKILL""], [6, 11, ""HARD_SKILL""], [12, 14, ""HARD_SKILL""], [15, 29, ""HARD_SKILL""], [30, 34, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0081,test-410,"[[10, 38, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0082,test-2521,"[[89, 142, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0083,test-1055,[],False,tech,gold_free
+P2-0084,test-2447,"[[11, 28, ""SOFT_SKILL""], [48, 87, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0085,test-4,[],False,tech,gold_free
+P2-0086,test-325,"[[0, 10, ""HARD_SKILL""], [11, 22, ""HARD_SKILL""], [23, 36, ""HARD_SKILL""], [37, 40, ""HARD_SKILL""], [41, 47, ""HARD_SKILL""]]",True,tech,gold_bearing
+P2-0087,test-2429,"[[25, 88, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0088,test-1623,"[[53, 72, ""HARD_SKILL""], [73, 85, ""HARD_SKILL""], [86, 105, ""HARD_SKILL""], [106, 136, ""HARD_SKILL""], [137, 155, ""HARD_SKILL""], [156, 180, ""HARD_SKILL""], [200, 222, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0089,test-1799,"[[24, 36, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0090,test-3424,"[[9, 20, ""HARD_SKILL""], [24, 49, ""HARD_SKILL""], [78, 90, ""HARD_SKILL""], [185, 192, ""HARD_SKILL""]]",True,house,gold_bearing
+P2-0091,test-3260,[],False,house,gold_free
+P2-0092,test-1179,"[[61, 118, ""SOFT_SKILL""]]",True,tech,gold_bearing
+P2-0093,test-2963,"[[64, 82, ""SOFT_SKILL""], [87, 124, ""SOFT_SKILL""]]",True,house,gold_bearing
+P2-0094,test-3338,[],False,house,gold_free
+P2-0095,test-621,[],False,tech,gold_free
+P2-0096,test-2872,[],False,house,gold_free
+P2-0097,test-2703,[],False,house,gold_free
+P2-0098,test-1709,[],False,tech,gold_free
+P2-0099,test-2373,[],False,house,gold_free
+P2-0100,test-2990,"[[23, 41, ""HARD_SKILL""], [42, 52, ""HARD_SKILL""], [53, 55, ""HARD_SKILL""], [60, 71, ""HARD_SKILL""]]",True,house,gold_bearing

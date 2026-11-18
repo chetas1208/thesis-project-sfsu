@@ -62,3 +62,6 @@ SkillLLM_v2/Extract_jobDesc/=[0-9]*
 # Editor and OS metadata.
 .DS_Store
 .idea/
+
+# Public datasets downloaded for the evaluation program (licensed separately; never committed).
+SkillLLM_v2_stage2/data/external

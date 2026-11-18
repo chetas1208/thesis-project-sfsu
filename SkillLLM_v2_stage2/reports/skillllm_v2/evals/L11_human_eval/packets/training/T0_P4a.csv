@@ -1,0 +1,4 @@
+item_id,course_title,claimed_prerequisite_skill,q1_edge,notes
+T0-P4a-01,Deep Learning with PyTorch,Python,,
+T0-P4a-02,Introduction to Spreadsheets,Kubernetes,,
+T0-P4a-03,Advanced SQL Optimisation,Statistics,,

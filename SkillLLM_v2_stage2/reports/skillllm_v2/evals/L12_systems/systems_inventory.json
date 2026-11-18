@@ -1,0 +1,774 @@
+{
+  "params": {
+    "base": {
+      "language_model": 23572403200,
+      "multi_modal_projector": 35652608,
+      "vision_tower": 403305472,
+      "total": 24011361280
+    },
+    "lora": {
+      "language_model": 92405760,
+      "total": 92405760
+    }
+  },
+  "disk_bytes": {
+    "base_model_hf_shards": 48022800560,
+    "base_model_dir_total": 96077777512,
+    "lora_adapter": 369706976,
+    "span_verifier_joblib": 1281060,
+    "token_lookup_table": 102035,
+    "bert_fair_model_pt": 433312190,
+    "gliner_medium_v2.1_cache": 1561548538
+  },
+  "anchor_jobs": {
+    "anchor_test_logprobs": {
+      "per_doc": {
+        "n": 974,
+        "mean": 7.0395538951088605,
+        "p50": 5.7545747072435915,
+        "p95": 16.66135635094249,
+        "p99": 28.508199134380526,
+        "max": 62.09135702997446,
+        "sum": 6856.52549383603
+      },
+      "per_predicted_span_doclevel": {
+        "n": 901,
+        "mean": 3.3196564050177484,
+        "p50": 3.2289764129091054,
+        "p95": 4.574893196579069,
+        "p99": 5.0564914317801595,
+        "max": 6.401316674891859,
+        "sum": 2991.0104209209912
+      },
+      "seconds_per_predicted_span_aggregate": 3.0582183290972482,
+      "throughput_docs_per_hour": 511.3960420846141,
+      "gen_tokens": {
+        "n": 974,
+        "mean": 41.596509240246405,
+        "p50": 34.0,
+        "p95": 98.0,
+        "p99": 169.88999999999987,
+        "max": 355.0,
+        "sum": 40515.0
+      },
+      "gen_tokens_per_second": {
+        "n": 974,
+        "mean": 5.816923602545282,
+        "p50": 5.818540630663559,
+        "p95": 6.480639256182522,
+        "p99": 6.795340170172593,
+        "max": 7.058913159964811,
+        "sum": 5665.683588879105
+      },
+      "prompt_tokens": {
+        "n": 974,
+        "mean": 317.69404517453796,
+        "p50": 313.0,
+        "p95": 345.0,
+        "p99": 373.3499999999999,
+        "max": 472.0,
+        "sum": 309434.0
+      },
+      "gpu_sampled_docs": 39,
+      "gpu_sampled_docs_shared": 0,
+      "host_loadavg_1m": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "p99": null
+      },
+      "gpu_util_pct": {
+        "n": 39,
+        "mean": 20.28205128205128,
+        "p50": 20.0,
+        "p95": 22.0,
+        "p99": 22.619999999999997,
+        "max": 23.0,
+        "sum": 791.0
+      },
+      "peak_alloc_gb": 16.3162112,
+      "peak_reserved_gb": 18.484297728,
+      "load_seconds": [
+        31.16575632803142
+      ],
+      "alloc_after_load_gb": [
+        15.813356032
+      ],
+      "status_counts": {
+        "ok": 974
+      },
+      "process_peak_rss_gb": null,
+      "gpu": "NVIDIA GeForce RTX 3090"
+    },
+    "anchor_dev_logprobs": {
+      "per_doc": {
+        "n": 914,
+        "mean": 7.084161887198577,
+        "p50": 6.265865735476837,
+        "p95": 15.628947551595035,
+        "p99": 24.556666318923234,
+        "max": 38.94218788435683,
+        "sum": 6474.923964899499
+      },
+      "per_predicted_span_doclevel": {
+        "n": 828,
+        "mean": 3.2812788528596424,
+        "p50": 3.190689143569519,
+        "p95": 4.486860207631253,
+        "p99": 5.023070962899364,
+        "max": 7.284286712296307,
+        "sum": 2716.898890167784
+      },
+      "seconds_per_predicted_span_aggregate": 3.0832971261426185,
+      "throughput_docs_per_hour": 508.1758516142007,
+      "gen_tokens": {
+        "n": 914,
+        "mean": 42.13566739606127,
+        "p50": 37.0,
+        "p95": 92.0,
+        "p99": 151.74,
+        "max": 230.0,
+        "sum": 38512.0
+      },
+      "gen_tokens_per_second": {
+        "n": 914,
+        "mean": 5.85402021450647,
+        "p50": 5.855924206747446,
+        "p95": 6.4606207193498975,
+        "p99": 6.815664220808331,
+        "max": 7.311328062731613,
+        "sum": 5350.574476058913
+      },
+      "prompt_tokens": {
+        "n": 914,
+        "mean": 319.35448577680523,
+        "p50": 317.0,
+        "p95": 344.3499999999999,
+        "p99": 369.0,
+        "max": 411.0,
+        "sum": 291890.0
+      },
+      "gpu_sampled_docs": 37,
+      "gpu_sampled_docs_shared": 0,
+      "host_loadavg_1m": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "p99": null
+      },
+      "gpu_util_pct": {
+        "n": 37,
+        "mean": 20.243243243243242,
+        "p50": 20.0,
+        "p95": 23.0,
+        "p99": 23.64,
+        "max": 24.0,
+        "sum": 749.0
+      },
+      "peak_alloc_gb": 16.29569024,
+      "peak_reserved_gb": 18.482200576,
+      "load_seconds": [
+        31.107715470716357
+      ],
+      "alloc_after_load_gb": [
+        15.813356032
+      ],
+      "status_counts": {
+        "ok": 914
+      },
+      "process_peak_rss_gb": null,
+      "gpu": "NVIDIA GeForce RTX 3090"
+    },
+    "anchor_test_nospan": {
+      "per_doc": {
+        "n": 2595,
+        "mean": 1.402999202751865,
+        "p50": 1.2355534839443862,
+        "p95": 1.3261465795803815,
+        "p99": 6.493293443601573,
+        "max": 13.9723039153032,
+        "sum": 3640.7829311410896
+      },
+      "per_predicted_span_doclevel": {
+        "n": 105,
+        "mean": 3.685123389575867,
+        "p50": 3.6486931070685387,
+        "p95": 4.892482532002032,
+        "p99": 5.590216099424284,
+        "max": 6.468374750576913,
+        "sum": 386.937955905466
+      },
+      "seconds_per_predicted_span_aggregate": 22.473968710747467,
+      "throughput_docs_per_hour": 2565.931607757797,
+      "gen_tokens": {
+        "n": 2595,
+        "mean": 6.996531791907515,
+        "p50": 6.0,
+        "p95": 6.0,
+        "p99": 37.0,
+        "max": 82.0,
+        "sum": 18156.0
+      },
+      "gen_tokens_per_second": {
+        "n": 2595,
+        "mean": 4.892139720206794,
+        "p50": 4.867543156946554,
+        "p95": 5.1399290942160585,
+        "p99": 5.794563284755898,
+        "max": 6.395399824697703,
+        "sum": 12695.10257393663
+      },
+      "prompt_tokens": {
+        "n": 2595,
+        "mean": 314.4,
+        "p50": 310.0,
+        "p95": 341.0,
+        "p99": 362.17999999999984,
+        "max": 440.0,
+        "sum": 815868.0
+      },
+      "gpu_sampled_docs": 104,
+      "gpu_sampled_docs_shared": 0,
+      "host_loadavg_1m": {
+        "n": 104,
+        "mean": 35.4311288686899,
+        "p50": 35.41650390625,
+        "p95": 35.8382080078125,
+        "p99": 35.937802734375,
+        "max": 35.9814453125,
+        "sum": 3684.83740234375
+      },
+      "gpu_util_pct": {
+        "n": 104,
+        "mean": 18.78846153846154,
+        "p50": 19.0,
+        "p95": 20.0,
+        "p99": 20.97,
+        "max": 21.0,
+        "sum": 1954.0
+      },
+      "peak_alloc_gb": 16.305444864,
+      "peak_reserved_gb": 18.417188864,
+      "load_seconds": [
+        30.57228462724015,
+        31.41500372905284
+      ],
+      "alloc_after_load_gb": [
+        15.813356032,
+        15.813356032
+      ],
+      "status_counts": {
+        "ok": 2595
+      },
+      "process_peak_rss_gb": 49.095573504,
+      "gpu": "NVIDIA GeForce RTX 3090"
+    },
+    "robustness_anchor": {
+      "per_doc": {
+        "n": 1373,
+        "mean": 7.471140932832361,
+        "p50": 5.888261376880109,
+        "p95": 17.706581582594655,
+        "p99": 27.67318483971059,
+        "max": 32.33545409794897,
+        "sum": 10257.876500778832
+      },
+      "per_predicted_span_doclevel": {
+        "n": 1302,
+        "mean": 3.546868001184272,
+        "p50": 3.340900676557794,
+        "p95": 5.0251290103886275,
+        "p99": 6.131413713742513,
+        "max": 8.448517407756299,
+        "sum": 4618.022137541922
+      },
+      "seconds_per_predicted_span_aggregate": 3.2136204576374787,
+      "throughput_docs_per_hour": 481.85411470148983,
+      "gen_tokens": {
+        "n": 1373,
+        "mean": 43.45957756737072,
+        "p50": 34.0,
+        "p95": 104.0,
+        "p99": 165.0,
+        "max": 195.0,
+        "sum": 59670.0
+      },
+      "gen_tokens_per_second": {
+        "n": 1373,
+        "mean": 5.73197638363203,
+        "p50": 5.771788899136851,
+        "p95": 6.051368893736862,
+        "p99": 6.206274295429262,
+        "max": 6.743813024663094,
+        "sum": 7870.003574726777
+      },
+      "prompt_tokens": {
+        "n": 1373,
+        "mean": 322.9388201019665,
+        "p50": 318.0,
+        "p95": 353.39999999999986,
+        "p99": 378.0,
+        "max": 451.0,
+        "sum": 443395.0
+      },
+      "gpu_sampled_docs": 56,
+      "gpu_sampled_docs_shared": 0,
+      "host_loadavg_1m": {
+        "n": 56,
+        "mean": 35.135428292410715,
+        "p50": 35.262939453125,
+        "p95": 35.7982177734375,
+        "p99": 35.922412109375,
+        "max": 35.9755859375,
+        "sum": 1967.583984375
+      },
+      "gpu_util_pct": {
+        "n": 56,
+        "mean": 19.410714285714285,
+        "p50": 20.0,
+        "p95": 21.0,
+        "p99": 22.0,
+        "max": 22.0,
+        "sum": 1087.0
+      },
+      "peak_alloc_gb": 16.309147648,
+      "peak_reserved_gb": 18.484297728,
+      "load_seconds": [
+        29.816462125163525,
+        30.183848819229752
+      ],
+      "alloc_after_load_gb": [
+        15.813356032,
+        15.813356032
+      ],
+      "status_counts": {
+        "ok": 1372,
+        "parse_error": 1
+      },
+      "process_peak_rss_gb": 49.095979008,
+      "gpu": "NVIDIA GeForce RTX 3090"
+    },
+    "xdata_anchor": {
+      "per_doc": {
+        "n": 600,
+        "mean": 5.7333323176259485,
+        "p50": 4.040348096052185,
+        "p95": 15.30249247897882,
+        "p99": 26.140674947723742,
+        "max": 52.35913818888366,
+        "sum": 3439.999390575569
+      },
+      "per_predicted_span_doclevel": {
+        "n": 353,
+        "mean": 3.140166690444221,
+        "p50": 2.9689012110854187,
+        "p95": 4.300485330820083,
+        "p99": 5.090589395090938,
+        "max": 5.588768730871379,
+        "sum": 1108.47884172681
+      },
+      "seconds_per_predicted_span_aggregate": 3.17636139480662,
+      "throughput_docs_per_hour": 627.9070879831162,
+      "gen_tokens": {
+        "n": 600,
+        "mean": 33.44833333333333,
+        "p50": 23.0,
+        "p95": 91.0,
+        "p99": 160.03999999999996,
+        "max": 313.0,
+        "sum": 20069.0
+      },
+      "gen_tokens_per_second": {
+        "n": 600,
+        "mean": 5.481539721814415,
+        "p50": 5.698947649547659,
+        "p95": 6.070616398803765,
+        "p99": 6.1649985256775,
+        "max": 6.748429457699714,
+        "sum": 3288.923833088649
+      },
+      "prompt_tokens": {
+        "n": 600,
+        "mean": 320.2133333333333,
+        "p50": 317.0,
+        "p95": 341.0,
+        "p99": 370.0999999999999,
+        "max": 443.0,
+        "sum": 192128.0
+      },
+      "gpu_sampled_docs": 24,
+      "gpu_sampled_docs_shared": 0,
+      "host_loadavg_1m": {
+        "n": 24,
+        "mean": 35.0054931640625,
+        "p50": 34.9169921875,
+        "p95": 36.1279296875,
+        "p99": 36.22607421875,
+        "max": 36.22607421875,
+        "sum": 840.1318359375
+      },
+      "gpu_util_pct": {
+        "n": 24,
+        "mean": 19.666666666666668,
+        "p50": 20.0,
+        "p95": 21.0,
+        "p99": 21.0,
+        "max": 21.0,
+        "sum": 472.0
+      },
+      "peak_alloc_gb": 16.306454528,
+      "peak_reserved_gb": 18.490589184,
+      "load_seconds": [
+        29.51322041125968,
+        29.327318287920207
+      ],
+      "alloc_after_load_gb": [
+        15.813356032,
+        15.813356032
+      ],
+      "status_counts": {
+        "ok": 600
+      },
+      "process_peak_rss_gb": 49.095135232,
+      "gpu": "NVIDIA GeForce RTX 3090"
+    }
+  },
+  "latency_model": {
+    "intercept_s": 0.0970999610335063,
+    "seconds_per_generated_token": 0.16689991686509664,
+    "r2": 0.9936889993946001
+  },
+  "cpu_systems": {
+    "token_lookup": {
+      "lat": {
+        "per_doc": {
+          "n": 974,
+          "mean": 7.649627609801856e-05,
+          "p50": 5.6432560086250305e-05,
+          "p95": 0.00018068663775920867,
+          "p99": 0.00031413277145475105,
+          "max": 0.0027549550868570805,
+          "sum": 0.07450737291947007
+        },
+        "per_predicted_span_doclevel": {
+          "n": 972,
+          "mean": 1.1406529963552986e-05,
+          "p50": 1.0379881132394075e-05,
+          "p95": 1.4846632257103919e-05,
+          "p99": 2.1564606926403915e-05,
+          "max": 0.00045915918114284676,
+          "sum": 0.011087147124573503
+        },
+        "seconds_per_predicted_span_aggregate": 1.0973103522749643e-05,
+        "throughput_docs_per_hour": 47061114.391857944,
+        "gen_tokens": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gen_tokens_per_second": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_tokens": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gpu_sampled_docs": 0,
+        "gpu_sampled_docs_shared": 0,
+        "host_loadavg_1m": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gpu_util_pct": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "done": {
+        "n_params": null,
+        "device": null,
+        "model": "artifacts/skillllm_v2/bert_baseline/model/model.json (token-lookup baseline, memorised BIO tags)",
+        "process_peak_rss_gb_so_far": 0.04182016,
+        "load_seconds": null
+      }
+    },
+    "gliner_zeroshot": {
+      "lat": {
+        "per_doc": {
+          "n": 974,
+          "mean": 1.0812156595967641,
+          "p50": 0.9298462390433997,
+          "p95": 2.0842811935115604,
+          "p99": 2.7563152868254033,
+          "max": 4.464910987298936,
+          "sum": 1053.1040524472483
+        },
+        "per_predicted_span_doclevel": {
+          "n": 272,
+          "mean": 0.9644776784129242,
+          "p50": 0.8189845154993236,
+          "p95": 2.1054523504571985,
+          "p99": 2.662713536955428,
+          "max": 3.766030150000006,
+          "sum": 262.3379285283154
+        },
+        "seconds_per_predicted_span_aggregate": 2.893143001228704,
+        "throughput_docs_per_hour": 3329.585516124145,
+        "gen_tokens": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gen_tokens_per_second": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_tokens": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gpu_sampled_docs": 0,
+        "gpu_sampled_docs_shared": 0,
+        "host_loadavg_1m": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gpu_util_pct": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "done": {
+        "n_params": 195175936,
+        "device": "cpu",
+        "model": "urchade/gliner_medium-v2.1",
+        "process_peak_rss_gb_so_far": 2.407677952,
+        "load_seconds": 32.71739052888006
+      }
+    },
+    "bert_fair": {
+      "lat": {
+        "per_doc": {
+          "n": 974,
+          "mean": 0.20975027276772923,
+          "p50": 0.19779718620702624,
+          "p95": 0.3394159665796903,
+          "p99": 0.4744603013712911,
+          "max": 0.7374248499982059,
+          "sum": 204.29676567576826
+        },
+        "per_predicted_span_doclevel": {
+          "n": 904,
+          "mean": 0.1193543603295632,
+          "p50": 0.09839902212843299,
+          "p95": 0.24456339520402243,
+          "p99": 0.3437995492294433,
+          "max": 0.6298061818815768,
+          "sum": 107.89634173792514
+        },
+        "seconds_per_predicted_span_aggregate": 0.08786957663473903,
+        "throughput_docs_per_hour": 17163.26731067723,
+        "gen_tokens": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gen_tokens_per_second": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_tokens": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gpu_sampled_docs": 0,
+        "gpu_sampled_docs_shared": 0,
+        "host_loadavg_1m": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gpu_util_pct": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "done": {
+        "n_params": 108314886,
+        "device": "cpu",
+        "model": "jjzha/jobbert-base-cased",
+        "process_peak_rss_gb_so_far": 1.56583936,
+        "load_seconds": null
+      }
+    },
+    "safe_wrapper": {
+      "lat": {
+        "per_doc": {
+          "n": 974,
+          "mean": 0.8862225472371551,
+          "p50": 0.8063344950787723,
+          "p95": 1.4430592761375007,
+          "p99": 2.049601837289519,
+          "max": 3.276976109482348,
+          "sum": 863.1807610089891
+        },
+        "per_predicted_span_doclevel": {
+          "n": 901,
+          "mean": 0.5242277300905439,
+          "p50": 0.42505980655550957,
+          "p95": 1.123121612239629,
+          "p99": 1.5030483016744256,
+          "max": 3.064428555313498,
+          "sum": 472.32918481158003
+        },
+        "seconds_per_predicted_span_aggregate": 0.3869030753065841,
+        "throughput_docs_per_hour": 4062.1850699050565,
+        "gen_tokens": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gen_tokens_per_second": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_tokens": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gpu_sampled_docs": 0,
+        "gpu_sampled_docs_shared": 0,
+        "host_loadavg_1m": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "gpu_util_pct": {
+          "n": 0,
+          "mean": null,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "done": {
+        "n_params": null,
+        "device": null,
+        "model": null,
+        "process_peak_rss_gb_so_far": 2.410029056,
+        "load_seconds": null
+      }
+    }
+  },
+  "pareto": [
+    {
+      "system": "anchor",
+      "exact_f1": 0.6700687818948303,
+      "exact_f1_ci": [
+        0.6464036907359888,
+        0.6944333668307777
+      ],
+      "latency_p95_s": 16.66135635094249,
+      "memory_gb": 18.484297728,
+      "memory_kind": "GPU VRAM (reserved)"
+    },
+    {
+      "system": "safe_wrapper",
+      "exact_f1": 0.6718541574032904,
+      "exact_f1_ci": [
+        0.6477254649369014,
+        0.696161417099514
+      ],
+      "latency_p95_s": 17.84368263802023,
+      "memory_gb": 18.484297728,
+      "memory_kind": "GPU VRAM (anchor) + CPU wrapper"
+    },
+    {
+      "system": "gliner_zeroshot",
+      "exact_f1": 0.0813997717763408,
+      "exact_f1_ci": [
+        0.06560654160122115,
+        0.09784884050307813
+      ],
+      "latency_p95_s": 2.0842811935115604,
+      "memory_gb": 2.407677952,
+      "memory_kind": "CPU RSS (process)"
+    },
+    {
+      "system": "token_lookup",
+      "exact_f1": 0.1376035339591386,
+      "exact_f1_ci": [
+        0.12455695998901962,
+        0.15112457935408416
+      ],
+      "latency_p95_s": 0.00018068663775920867,
+      "memory_gb": 0.04182016,
+      "memory_kind": "CPU RSS (process)"
+    },
+    {
+      "system": "bert_fair",
+      "exact_f1": 0.633115468409586,
+      "exact_f1_ci": [
+        0.6099233941615464,
+        0.6557840505042493
+      ],
+      "latency_p95_s": 0.3394159665796903,
+      "memory_gb": 1.56583936,
+      "memory_kind": "CPU RSS (process)"
+    }
+  ]
+}

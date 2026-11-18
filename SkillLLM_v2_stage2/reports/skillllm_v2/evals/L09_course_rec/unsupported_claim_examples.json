@@ -1,0 +1,242 @@
+[
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Docker: Able to build, tag and run container images with Dockerfiles",
+    "course": "ml-028"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Amazon Web Services: Able to provision and operate core AWS services such as EC2,",
+    "course": "cloud-002"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for CI/CD: Able to design automated build, test and deployment pipeline",
+    "course": "devops-006"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Amazon Web Services: Able to provision and operate core AWS services such as EC2,",
+    "course": "cloud-016"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Docker: Able to build, tag and run container images with Dockerfiles",
+    "course": "web-022"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for CI/CD: Able to build declarative Jenkins pipelines and agents",
+    "course": "devops-007"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "ml-001 covers Machine Learning (enabling_prerequisite)",
+    "course": "ml-001"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for prerequisite linear algebra: Able to compute with vectors, matrices, eigendecompositions ",
+    "course": "ml-001"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "data-022 covers Machine Learning (enabling_prerequisite)",
+    "course": "data-022"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "ml-004 covers Deep Learning (enabling_prerequisite)",
+    "course": "ml-004"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "ml-004 covers Natural Language Processing (enabling_prerequisite)",
+    "course": "ml-004"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "ml-004 covers PyTorch (enabling_prerequisite)",
+    "course": "ml-004"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Deep Learning: Able to train deep neural networks with backpropagation and ",
+    "course": "ml-009"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Deep Learning: Able to train deep neural networks with backpropagation and ",
+    "course": "ml-011"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Natural Language Processing: Able to tokenise, embed and classify text with NLP pipelines",
+    "course": "ml-013"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Deep Learning: Able to train deep neural networks with backpropagation and ",
+    "course": "ml-010"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Natural Language Processing: Able to implement self-attention and transformer encoder-dec",
+    "course": "ml-014"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Transformers: Able to implement self-attention and transformer encoder-dec",
+    "course": "ml-014"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "ml-028 covers Deep Learning (text_mention_only)",
+    "course": "ml-028"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Business Intelligence: Able to model data and publish interactive Power BI reports",
+    "course": "data-020"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Data Storytelling: Able to turn analysis into a narrative that drives decisions",
+    "course": "soft-004"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Business Intelligence: Able to define KPIs and deliver self-service reporting",
+    "course": "data-027"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Data Storytelling: Able to define KPIs and deliver self-service reporting",
+    "course": "data-027"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "data-021 covers Data Storytelling (text_mention_only)",
+    "course": "data-021"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "soft-011 covers Business Intelligence (text_mention_only)",
+    "course": "soft-011"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "data-028 covers Data Storytelling (text_mention_only)",
+    "course": "data-028"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Docker: Able to build, tag and run container images with Dockerfiles",
+    "course": "ml-028"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for MLOps: Able to train, tune and validate supervised machine learning",
+    "course": "ml-028"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Model Deployment: Able to train, tune and validate supervised machine learning",
+    "course": "ml-028"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for CI/CD: Able to build, tag and run container images with Dockerfiles",
+    "course": "devops-018"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Docker: Able to build, tag and run container images with Dockerfiles",
+    "course": "devops-018"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Kubernetes: Able to build, tag and run container images with Dockerfiles",
+    "course": "devops-018"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Experiment Tracking: Able to automate training, testing and release of machine le",
+    "course": "ml-022"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for MLOps: Able to automate training, testing and release of machine le",
+    "course": "ml-022"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Model Deployment: Able to package and serve models behind REST endpoints",
+    "course": "ml-023"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "cloud-008 covers Model Deployment (enabling_prerequisite)",
+    "course": "cloud-008"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for prerequisite google cloud platform: Able to provision and operate core Google Cloud services",
+    "course": "cloud-008"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for Docker: Able to build, tag and run container images with Dockerfiles",
+    "course": "web-022"
+  },
+  {
+    "type": "covers_gap_skill[strict field semantics]",
+    "supported": false,
+    "detail": "prog-016 covers CI/CD (enabling_prerequisite)",
+    "course": "prog-016"
+  },
+  {
+    "type": "outcome_quote_mentions_skill",
+    "supported": false,
+    "detail": "quote for prerequisite git: Able to manage source code with branches, merges, rebases an",
+    "course": "prog-016"
+  }
+]

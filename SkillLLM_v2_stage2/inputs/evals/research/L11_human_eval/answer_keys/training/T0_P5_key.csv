@@ -1,0 +1,3 @@
+item_id,q1_relevance,q2_gap_closure,q3_prereq_ready,rationale
+T0-P5-01,3,substantial,yes,Directly teaches a central missing requirement; prerequisites met.
+T0-P5-02,0,none,yes,Teaches only what the learner already knows.

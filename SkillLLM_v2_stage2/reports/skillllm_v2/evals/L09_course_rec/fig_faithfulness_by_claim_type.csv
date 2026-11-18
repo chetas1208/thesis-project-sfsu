@@ -1,0 +1,17 @@
+name,mean,lo,hi,n
+covers_gap_skill[lenient: enables via bridge],1.0,1.0,1.0,28
+covers_gap_skill[lenient: teaches],1.0,1.0,1.0,230
+covers_gap_skill[lenient: text-related],1.0,1.0,1.0,42
+job_requires_skill,1.0,1.0,1.0,306
+limitation_bridge,1.0,1.0,1.0,19
+limitation_overlap,1.0,1.0,1.0,106
+limitation_workload,1.0,1.0,1.0,42
+outcome_quote_mentions_skill,0.45075757575757575,0.45075757575757575,0.45075757575757575,264
+prerequisite_all_satisfied_claim,1.0,1.0,1.0,93
+prerequisite_satisfied_claim,1.0,1.0,1.0,120
+prerequisite_status,1.0,1.0,1.0,144
+unlock_placement,1.0,1.0,1.0,74
+unlock_requires_prereq,1.0,1.0,1.0,74
+unlock_this_teaches_prereq,1.0,1.0,1.0,74
+user_gap_classification,1.0,1.0,1.0,306
+covers_gap_skill[strict field semantics],0.7666666666666667,0.7666666666666667,0.7666666666666667,300

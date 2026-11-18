@@ -1,0 +1,30 @@
+Extract all skill spans from the text below.
+
+Rules:
+- Extract exact surface spans from the input text.
+- Do not paraphrase.
+- Do not normalize names unless a separate normalized field is requested.
+- Do not invent missing skills.
+- Include technical skills, tools, programming languages, frameworks, libraries, platforms, methodologies, domain skills, and soft skills only when explicitly mentioned.
+- Ignore job titles, company names, degrees, dates, locations, and generic responsibilities unless they are explicitly skill mentions.
+- If no skills are present, return an empty list.
+- Return valid JSON only.
+
+Text:
+{text}
+
+Output JSON schema:
+{{
+  "skills": [
+    {{
+      "text": "exact skill span from input",
+      "label": "HARD_SKILL or SOFT_SKILL or SKILL"
+    }}
+  ]
+}}
+
+Important:
+- The "text" value must exactly match a substring from the input.
+- Use "HARD_SKILL" for technical/domain/tool skills.
+- Use "SOFT_SKILL" for interpersonal or behavioral skills.
+- Use "SKILL" only if the dataset does not distinguish hard and soft skills.

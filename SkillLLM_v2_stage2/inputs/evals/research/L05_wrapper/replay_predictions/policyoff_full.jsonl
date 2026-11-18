@@ -1,0 +1,974 @@
+{"id": "test-12", "spans": [[19, 23, "HARD_SKILL", ["dictionary", "mistral"], "realign_word_boundary"], [0, 10, "HARD_SKILL", ["dictionary", "mistral"], "original"], [11, 18, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-19", "spans": [[19, 23, "HARD_SKILL", ["dictionary", "mistral"], "realign_word_boundary"], [0, 10, "HARD_SKILL", ["dictionary", "mistral"], "original"], [11, 18, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-21", "spans": [[128, 172, "SOFT_SKILL", ["mistral"], "split_conjunction"], [177, 198, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-22", "spans": [[22, 51, "SOFT_SKILL", ["mistral"], "split_conjunction"], [56, 65, "SOFT_SKILL", ["mistral"], "split_conjunction"], [130, 137, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-25", "spans": [[35, 44, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-29", "spans": [[4, 6, "HARD_SKILL", ["mistral"], "split_conjunction"], [7, 16, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-30", "spans": [[26, 37, "HARD_SKILL", ["mistral"], "original"], [38, 42, "HARD_SKILL", ["mistral"], "original"], [47, 61, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-31", "spans": [[21, 33, "HARD_SKILL", ["mistral"], "original"], [38, 44, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-32", "spans": [[27, 40, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-33", "spans": [[17, 52, "HARD_SKILL", ["mistral"], "split_conjunction"], [57, 71, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-34", "spans": [[15, 19, "SOFT_SKILL", ["mistral"], "head_skill"], [52, 59, "SOFT_SKILL", ["mistral"], "head_skill"], [102, 110, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-35", "spans": [[31, 37, "HARD_SKILL", ["mistral"], "head_skill"], [62, 66, "HARD_SKILL", ["dictionary", "mistral"], "original"], [71, 81, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-36", "spans": [[45, 53, "HARD_SKILL", ["mistral"], "head_skill"], [63, 74, "HARD_SKILL", ["mistral"], "original"], [75, 86, "HARD_SKILL", ["mistral"], "original"], [91, 99, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-37", "spans": [[13, 18, "HARD_SKILL", ["mistral"], "original"], [21, 31, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-38", "spans": [[19, 29, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-39", "spans": [[4, 8, "HARD_SKILL", ["mistral"], "head_skill"], [14, 25, "HARD_SKILL", ["mistral"], "split_conjunction"], [30, 39, "HARD_SKILL", ["mistral"], "split_conjunction"], [44, 49, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-62", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 11, "HARD_SKILL", ["mistral"], "original"], [12, 19, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-67", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 11, "HARD_SKILL", ["mistral"], "original"], [12, 19, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-69", "spans": [[128, 172, "SOFT_SKILL", ["mistral"], "split_conjunction"], [177, 198, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-70", "spans": [[22, 51, "SOFT_SKILL", ["mistral"], "split_conjunction"], [56, 65, "SOFT_SKILL", ["mistral"], "split_conjunction"], [130, 137, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-74", "spans": [[2, 4, "HARD_SKILL", ["mistral"], "split_conjunction"], [5, 14, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-75", "spans": [[2, 6, "HARD_SKILL", ["dictionary", "mistral"], "original"], [7, 13, "HARD_SKILL", ["mistral"], "head_skill"], [19, 24, "HARD_SKILL", ["mistral"], "original"], [25, 32, "HARD_SKILL", ["mistral"], "original"], [33, 38, "HARD_SKILL", ["mistral"], "original"], [39, 41, "HARD_SKILL", ["mistral"], "split_conjunction"], [42, 44, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-76", "spans": [[24, 35, "HARD_SKILL", ["mistral"], "original"], [36, 40, "HARD_SKILL", ["mistral"], "original"], [45, 59, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-77", "spans": [[19, 31, "HARD_SKILL", ["mistral"], "original"], [36, 42, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-78", "spans": [[25, 38, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-79", "spans": [[15, 46, "HARD_SKILL", ["mistral"], "split_conjunction"], [51, 65, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-80", "spans": [[13, 17, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-81", "spans": [[19, 27, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-83", "spans": [[27, 33, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-84", "spans": [[43, 51, "HARD_SKILL", ["mistral"], "head_skill"], [61, 72, "HARD_SKILL", ["mistral"], "original"], [73, 84, "HARD_SKILL", ["mistral"], "original"], [89, 97, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-102", "spans": []}
+{"id": "test-106", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 11, "HARD_SKILL", ["mistral"], "original"], [12, 27, "HARD_SKILL", ["mistral"], "original"], [28, 38, "HARD_SKILL", ["mistral"], "original"], [39, 47, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-117", "spans": [[0, 9, "HARD_SKILL", ["mistral"], "head_skill"], [21, 25, "HARD_SKILL", ["mistral"], "original"], [26, 36, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-123", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 11, "HARD_SKILL", ["mistral"], "original"], [12, 27, "HARD_SKILL", ["mistral"], "original"], [28, 38, "HARD_SKILL", ["mistral"], "original"], [39, 47, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-127", "spans": [[0, 4, "SOFT_SKILL", ["mistral"], "head_skill"], [44, 54, "HARD_SKILL", ["mistral"], "original"], [82, 87, "HARD_SKILL", ["mistral"], "head_skill"], [93, 106, "HARD_SKILL", ["mistral"], "original"], [107, 112, "HARD_SKILL", ["mistral"], "original"], [113, 123, "HARD_SKILL", ["mistral"], "original"], [128, 130, "HARD_SKILL", ["mistral"], "head_skill"], [144, 150, "SOFT_SKILL", ["mistral"], "head_skill"], [218, 226, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-129", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "split_conjunction"], [12, 48, "SOFT_SKILL", ["mistral"], "split_conjunction"], [53, 76, "SOFT_SKILL", ["mistral"], "split_conjunction"], [21, 23, "HARD_SKILL", ["mistral"], "head_skill"], [53, 58, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-130", "spans": [[0, 22, "SOFT_SKILL", ["mistral"], "split_conjunction"], [27, 49, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-131", "spans": [[0, 12, "SOFT_SKILL", ["mistral"], "split_conjunction"], [17, 39, "SOFT_SKILL", ["mistral"], "split_conjunction"], [24, 29, "HARD_SKILL", ["mistral"], "original"], [48, 61, "HARD_SKILL", ["mistral"], "original"], [62, 70, "HARD_SKILL", ["mistral"], "head_skill"], [88, 94, "HARD_SKILL", ["mistral"], "original"], [112, 118, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-132", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [59, 95, "SOFT_SKILL", ["mistral"], "split_conjunction"], [96, 116, "SOFT_SKILL", ["mistral"], "split_conjunction"], [117, 124, "SOFT_SKILL", ["mistral"], "head_skill"], [164, 179, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [188, 197, "HARD_SKILL", ["mistral"], "original"], [198, 213, "HARD_SKILL", ["mistral"], "original"], [214, 220, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-133", "spans": [[21, 29, "SOFT_SKILL", ["mistral"], "split_conjunction"], [34, 51, "SOFT_SKILL", ["mistral"], "split_conjunction"], [56, 76, "SOFT_SKILL", ["mistral"], "split_conjunction"], [81, 84, "HARD_SKILL", ["mistral"], "head_skill"], [130, 133, "HARD_SKILL", ["mistral"], "head_skill"], [140, 143, "HARD_SKILL", ["dictionary"], "original"], [140, 143, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-134", "spans": [[11, 56, "SOFT_SKILL", ["mistral"], "split_conjunction"], [61, 69, "SOFT_SKILL", ["mistral"], "split_conjunction"], [72, 108, "SOFT_SKILL", ["mistral"], "split_conjunction"], [109, 128, "SOFT_SKILL", ["mistral"], "split_conjunction"], [140, 162, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-135", "spans": [[21, 31, "HARD_SKILL", ["mistral"], "original"], [40, 50, "HARD_SKILL", ["gliner", "mistral"], "original"], [51, 56, "HARD_SKILL", ["mistral"], "head_skill"], [61, 65, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-136", "spans": [[6, 10, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-137", "spans": [[0, 17, "HARD_SKILL", ["mistral"], "original"], [56, 61, "HARD_SKILL", ["mistral"], "original"], [143, 154, "HARD_SKILL", ["mistral"], "original"], [155, 160, "HARD_SKILL", ["mistral"], "original"], [161, 171, "HARD_SKILL", ["mistral"], "original"], [172, 175, "HARD_SKILL", ["mistral"], "original"], [176, 186, "HARD_SKILL", ["mistral"], "original"], [187, 195, "HARD_SKILL", ["mistral"], "original"], [196, 204, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-138", "spans": [[19, 24, "HARD_SKILL", ["mistral"], "head_skill"], [49, 52, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-139", "spans": [[23, 28, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-140", "spans": [[30, 36, "HARD_SKILL", ["dictionary"], "original"], [30, 36, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-141", "spans": [[29, 36, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-164", "spans": []}
+{"id": "test-168", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 12, "HARD_SKILL", ["dictionary", "mistral"], "original"], [13, 25, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-173", "spans": [[0, 9, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-179", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 12, "HARD_SKILL", ["dictionary", "mistral"], "original"], [13, 25, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-182", "spans": [[173, 180, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-183", "spans": [[24, 53, "SOFT_SKILL", ["mistral"], "split_conjunction"], [58, 67, "SOFT_SKILL", ["mistral"], "split_conjunction"], [90, 98, "HARD_SKILL", ["mistral"], "head_skill"], [132, 139, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-189", "spans": [[2, 4, "HARD_SKILL", ["mistral"], "split_conjunction"], [5, 14, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-190", "spans": [[22, 38, "HARD_SKILL", ["mistral"], "split_conjunction"], [43, 70, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-191", "spans": [[26, 38, "HARD_SKILL", ["mistral"], "split_conjunction"], [43, 68, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-192", "spans": [[29, 37, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-193", "spans": [[25, 38, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-194", "spans": [[15, 50, "HARD_SKILL", ["mistral"], "split_conjunction"], [55, 69, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-195", "spans": [[13, 17, "SOFT_SKILL", ["mistral"], "head_skill"], [42, 49, "SOFT_SKILL", ["mistral"], "head_skill"], [92, 100, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-196", "spans": [[43, 51, "HARD_SKILL", ["mistral"], "head_skill"], [61, 72, "HARD_SKILL", ["mistral"], "original"], [73, 84, "HARD_SKILL", ["mistral"], "original"], [89, 97, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-197", "spans": [[21, 28, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-199", "spans": [[0, 4, "HARD_SKILL", ["dictionary"], "original"], [0, 4, "HARD_SKILL", ["mistral"], "split_conjunction"], [5, 9, "HARD_SKILL", ["mistral"], "split_conjunction"], [10, 16, "HARD_SKILL", ["dictionary", "mistral"], "original"], [17, 19, "HARD_SKILL", ["mistral"], "original"], [20, 25, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-200", "spans": [[16, 21, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [45, 48, "HARD_SKILL", ["dictionary", "mistral"], "original"], [49, 59, "HARD_SKILL", ["mistral"], "original"], [64, 74, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-201", "spans": [[29, 39, "SOFT_SKILL", ["mistral"], "head_skill"], [40, 46, "HARD_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-202", "spans": [[18, 27, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-203", "spans": [[2, 10, "HARD_SKILL", ["mistral"], "head_skill"], [2, 10, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-256", "spans": [[10, 20, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [34, 42, "HARD_SKILL", ["mistral"], "head_skill"], [52, 60, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-260", "spans": [[0, 6, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-267", "spans": [[0, 10, "HARD_SKILL", ["mistral"], "head_skill"], [24, 32, "HARD_SKILL", ["mistral"], "head_skill"], [42, 50, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-273", "spans": [[0, 6, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-277", "spans": [[174, 181, "HARD_SKILL", ["dictionary"], "head_skill"]]}
+{"id": "test-283", "spans": []}
+{"id": "test-284", "spans": [[12, 17, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-285", "spans": [[22, 28, "HARD_SKILL", ["dictionary", "mistral"], "original"], [33, 40, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-286", "spans": [[10, 14, "SOFT_SKILL", ["gliner"], "head_skill"], [15, 27, "SOFT_SKILL", ["mistral"], "original"], [38, 45, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-287", "spans": [[37, 47, "HARD_SKILL", ["mistral"], "original"], [50, 56, "HARD_SKILL", ["mistral"], "original"], [59, 66, "HARD_SKILL", ["mistral"], "original"], [69, 75, "HARD_SKILL", ["mistral"], "original"], [78, 83, "HARD_SKILL", ["mistral"], "original"], [86, 93, "HARD_SKILL", ["mistral"], "original"], [121, 136, "HARD_SKILL", ["mistral"], "original"], [137, 140, "HARD_SKILL", ["dictionary"], "original"], [137, 140, "HARD_SKILL", ["mistral"], "split_conjunction"], [141, 146, "HARD_SKILL", ["mistral"], "split_conjunction"], [153, 161, "HARD_SKILL", ["mistral"], "head_skill"], [171, 178, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"]]}
+{"id": "test-316", "spans": [[0, 10, "HARD_SKILL", ["mistral"], "original"], [11, 22, "HARD_SKILL", ["mistral"], "original"], [23, 36, "HARD_SKILL", ["mistral"], "original"], [37, 40, "HARD_SKILL", ["dictionary", "mistral"], "original"], [41, 47, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-325", "spans": [[0, 10, "HARD_SKILL", ["mistral"], "original"], [11, 22, "HARD_SKILL", ["mistral"], "original"], [23, 36, "HARD_SKILL", ["mistral"], "original"], [37, 40, "HARD_SKILL", ["dictionary", "mistral"], "original"], [41, 47, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-343", "spans": [[3, 9, "SOFT_SKILL", ["mistral"], "head_skill"], [33, 42, "SOFT_SKILL", ["mistral"], "head_skill"], [53, 61, "SOFT_SKILL", ["mistral"], "head_skill"], [72, 79, "SOFT_SKILL", ["mistral"], "split_conjunction"], [84, 112, "SOFT_SKILL", ["mistral"], "split_conjunction"], [113, 124, "SOFT_SKILL", ["mistral"], "original"], [129, 140, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-344", "spans": []}
+{"id": "test-346", "spans": [[0, 3, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-348", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-350", "spans": [[0, 8, "SOFT_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-351", "spans": [[2, 11, "HARD_SKILL", ["mistral"], "head_skill"], [20, 24, "HARD_SKILL", ["mistral"], "head_skill"], [33, 37, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [50, 62, "HARD_SKILL", ["mistral"], "head_skill"], [70, 72, "HARD_SKILL", ["mistral"], "head_skill"], [122, 129, "SOFT_SKILL", ["mistral"], "head_skill"], [145, 150, "HARD_SKILL", ["mistral"], "original"], [154, 158, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-404", "spans": [[13, 17, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-405", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"], [9, 12, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-406", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "head_skill"], [15, 21, "HARD_SKILL", ["mistral"], "original"], [29, 32, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-407", "spans": [[14, 17, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-408", "spans": [[0, 11, "SOFT_SKILL", ["mistral"], "head_skill"], [24, 31, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-409", "spans": [[0, 4, "SOFT_SKILL", ["mistral"], "head_skill"], [8, 13, "HARD_SKILL", ["mistral"], "split_conjunction"], [14, 19, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-410", "spans": [[10, 17, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-411", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-412", "spans": [[5, 11, "HARD_SKILL", ["dictionary"], "original"], [5, 11, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-414", "spans": []}
+{"id": "test-415", "spans": [[11, 18, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-416", "spans": [[17, 21, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-417", "spans": [[0, 10, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-418", "spans": [[17, 30, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-419", "spans": [[17, 27, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-435", "spans": []}
+{"id": "test-439", "spans": [[0, 7, "HARD_SKILL", ["dictionary", "mistral"], "original"], [8, 13, "HARD_SKILL", ["mistral"], "original"], [14, 20, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-444", "spans": [[0, 9, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-450", "spans": [[0, 7, "HARD_SKILL", ["dictionary", "mistral"], "original"], [8, 13, "HARD_SKILL", ["mistral"], "original"], [14, 20, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-454", "spans": [[4, 11, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-455", "spans": [[34, 45, "SOFT_SKILL", ["mistral"], "split_conjunction"], [50, 75, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-456", "spans": [[21, 30, "HARD_SKILL", ["mistral"], "original"], [31, 39, "HARD_SKILL", ["mistral"], "original"], [44, 49, "HARD_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-458", "spans": [[20, 27, "SOFT_SKILL", ["mistral"], "head_skill"], [60, 64, "HARD_SKILL", ["dictionary", "mistral"], "original"], [65, 71, "HARD_SKILL", ["dictionary", "mistral"], "original"], [72, 77, "HARD_SKILL", ["mistral"], "head_skill"], [81, 86, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-459", "spans": [[17, 23, "HARD_SKILL", ["mistral"], "split_conjunction"], [28, 51, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-460", "spans": [[4, 8, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-461", "spans": [[17, 22, "HARD_SKILL", ["mistral"], "head_skill"], [46, 55, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-494", "spans": [[0, 6, "HARD_SKILL", ["mistral"], "original"], [7, 17, "HARD_SKILL", ["mistral"], "original"], [18, 23, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-503", "spans": [[0, 6, "HARD_SKILL", ["mistral"], "original"], [7, 17, "HARD_SKILL", ["mistral"], "original"], [18, 23, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-505", "spans": [[34, 39, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-506", "spans": [[32, 37, "SOFT_SKILL", ["mistral"], "split_conjunction"], [42, 82, "SOFT_SKILL", ["mistral"], "split_conjunction"], [53, 63, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-507", "spans": [[79, 87, "SOFT_SKILL", ["gliner"], "head_skill"], [100, 107, "HARD_SKILL", ["dictionary", "gliner"], "head_skill"], [121, 125, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-513", "spans": [[5, 12, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [141, 146, "SOFT_SKILL", ["mistral"], "split_conjunction"], [155, 165, "HARD_SKILL", ["mistral"], "head_skill"], [196, 210, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-517", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"], [18, 21, "SOFT_SKILL", ["mistral"], "head_skill"], [38, 44, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-520", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [22, 25, "HARD_SKILL", ["mistral"], "original"], [30, 33, "HARD_SKILL", ["mistral"], "original"], [57, 61, "SOFT_SKILL", ["mistral"], "head_skill"], [65, 68, "HARD_SKILL", ["mistral"], "head_skill"], [82, 91, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-522", "spans": [[0, 4, "SOFT_SKILL", ["mistral"], "head_skill"], [31, 38, "HARD_SKILL", ["dictionary", "gliner"], "head_skill"]]}
+{"id": "test-523", "spans": [[33, 46, "SOFT_SKILL", ["dictionary"], "original"], [51, 64, "SOFT_SKILL", ["gliner"], "original"]]}
+{"id": "test-525", "spans": [[21, 28, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [55, 62, "HARD_SKILL", ["mistral"], "original"], [63, 74, "HARD_SKILL", ["mistral"], "original"], [79, 89, "HARD_SKILL", ["mistral"], "original"], [79, 89, "SOFT_SKILL", ["gliner"], "original"]]}
+{"id": "test-526", "spans": [[40, 47, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [77, 83, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-527", "spans": [[26, 31, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [47, 53, "HARD_SKILL", ["dictionary", "mistral"], "original"], [54, 61, "HARD_SKILL", ["mistral"], "original"], [62, 65, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-528", "spans": [[15, 21, "HARD_SKILL", ["mistral"], "original"], [22, 28, "HARD_SKILL", ["mistral"], "original"], [29, 35, "HARD_SKILL", ["mistral"], "original"], [29, 35, "HARD_SKILL", ["mistral"], "head_skill"], [45, 51, "HARD_SKILL", ["mistral"], "head_skill"], [67, 72, "HARD_SKILL", ["mistral"], "original"], [73, 78, "HARD_SKILL", ["mistral"], "original"], [79, 85, "HARD_SKILL", ["mistral"], "head_skill"], [89, 99, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-529", "spans": [[11, 18, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-531", "spans": [[11, 17, "SOFT_SKILL", ["mistral"], "original"], [18, 29, "SOFT_SKILL", ["mistral"], "original"], [42, 54, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-551", "spans": [[10, 23, "HARD_SKILL", ["mistral"], "original"], [24, 28, "HARD_SKILL", ["mistral"], "head_skill"], [41, 48, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-555", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 11, "HARD_SKILL", ["mistral"], "original"], [12, 17, "HARD_SKILL", ["mistral"], "head_skill"], [32, 55, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-562", "spans": [[0, 13, "HARD_SKILL", ["mistral"], "original"], [14, 18, "HARD_SKILL", ["mistral"], "head_skill"], [31, 38, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-568", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 11, "HARD_SKILL", ["mistral"], "original"], [12, 17, "HARD_SKILL", ["mistral"], "head_skill"], [32, 55, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-573", "spans": [[41, 49, "SOFT_SKILL", ["mistral"], "head_skill"], [50, 59, "HARD_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-577", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "head_skill"], [29, 31, "HARD_SKILL", ["mistral"], "head_skill"], [76, 81, "HARD_SKILL", ["mistral"], "head_skill"], [93, 96, "HARD_SKILL", ["mistral"], "head_skill"], [105, 128, "HARD_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-578", "spans": [[0, 12, "SOFT_SKILL", ["mistral"], "head_skill"], [20, 29, "SOFT_SKILL", ["mistral"], "head_skill"], [44, 57, "SOFT_SKILL", ["mistral"], "split_conjunction"], [60, 90, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-579", "spans": [[15, 20, "HARD_SKILL", ["mistral"], "original"], [30, 36, "HARD_SKILL", ["mistral"], "head_skill"], [46, 50, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-583", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-585", "spans": []}
+{"id": "test-588", "spans": [[0, 4, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-590", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-594", "spans": []}
+{"id": "test-596", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-598", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [35, 45, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-601", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-638", "spans": [[10, 15, "HARD_SKILL", ["mistral"], "head_skill"], [10, 15, "SOFT_SKILL", ["gliner"], "head_skill"], [37, 46, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-642", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 18, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-649", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"], [27, 36, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-655", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 18, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-667", "spans": [[16, 22, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-675", "spans": [[78, 98, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-676", "spans": [[16, 26, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-677", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "head_skill"], [106, 114, "SOFT_SKILL", ["mistral"], "head_skill"], [156, 160, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-679", "spans": [[25, 47, "HARD_SKILL", ["mistral"], "split_conjunction"], [52, 62, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-683", "spans": [[4, 10, "HARD_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-684", "spans": [[19, 25, "HARD_SKILL", ["gliner"], "head_skill"], [55, 63, "SOFT_SKILL", ["mistral"], "head_skill"], [105, 111, "HARD_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-687", "spans": [[38, 53, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-688", "spans": [[28, 34, "HARD_SKILL", ["mistral"], "original"], [35, 44, "HARD_SKILL", ["mistral"], "original"], [45, 59, "HARD_SKILL", ["mistral"], "original"], [60, 68, "HARD_SKILL", ["mistral"], "head_skill"], [60, 68, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-689", "spans": [[32, 43, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-690", "spans": [[14, 23, "SOFT_SKILL", ["mistral"], "head_skill"], [49, 57, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-692", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [6, 17, "HARD_SKILL", ["mistral"], "original"], [18, 26, "HARD_SKILL", ["mistral"], "split_conjunction"], [29, 42, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-693", "spans": [[0, 6, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-695", "spans": [[35, 45, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-696", "spans": [[11, 24, "SOFT_SKILL", ["dictionary", "mistral"], "original"], [29, 40, "SOFT_SKILL", ["mistral"], "original"], [41, 48, "SOFT_SKILL", ["gliner"], "head_skill"], [52, 60, "SOFT_SKILL", ["mistral"], "head_skill"], [68, 73, "SOFT_SKILL", ["mistral"], "split_conjunction"], [78, 95, "SOFT_SKILL", ["mistral"], "split_conjunction"], [100, 125, "SOFT_SKILL", ["mistral"], "split_conjunction"], [173, 186, "HARD_SKILL", ["mistral"], "original"], [191, 198, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-697", "spans": [[0, 8, "SOFT_SKILL", ["dictionary", "gliner"], "original"], [18, 23, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [34, 55, "SOFT_SKILL", ["mistral"], "split_conjunction"], [60, 81, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-698", "spans": [[0, 12, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-699", "spans": [[0, 9, "SOFT_SKILL", ["gliner", "mistral"], "original"], [14, 25, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-700", "spans": []}
+{"id": "test-727", "spans": []}
+{"id": "test-731", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 5, "HARD_SKILL", ["mistral"], "original"], [6, 16, "HARD_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-742", "spans": [[0, 9, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-748", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 5, "HARD_SKILL", ["mistral"], "original"], [6, 16, "HARD_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-762", "spans": [[11, 27, "HARD_SKILL", ["mistral"], "split_conjunction"], [32, 39, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-764", "spans": [[24, 32, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-767", "spans": [[45, 48, "HARD_SKILL", ["dictionary"], "original"], [45, 48, "HARD_SKILL", ["mistral"], "head_skill"], [86, 95, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-770", "spans": [[14, 24, "SOFT_SKILL", ["gliner"], "head_skill"], [41, 50, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-771", "spans": []}
+{"id": "test-772", "spans": []}
+{"id": "test-773", "spans": []}
+{"id": "test-774", "spans": []}
+{"id": "test-778", "spans": [[19, 21, "HARD_SKILL", ["mistral"], "original"], [22, 24, "HARD_SKILL", ["mistral"], "original"], [29, 39, "HARD_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-780", "spans": [[10, 20, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-782", "spans": [[27, 37, "HARD_SKILL", ["gliner"], "trim_trailing_filler"]]}
+{"id": "test-786", "spans": []}
+{"id": "test-788", "spans": [[48, 51, "HARD_SKILL", ["dictionary"], "original"]]}
+{"id": "test-789", "spans": []}
+{"id": "test-796", "spans": [[37, 39, "HARD_SKILL", ["mistral"], "original"], [40, 42, "HARD_SKILL", ["mistral"], "original"], [50, 60, "HARD_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-797", "spans": [[9, 16, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [30, 37, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-798", "spans": [[73, 83, "HARD_SKILL", ["gliner", "mistral"], "trim_trailing_filler"]]}
+{"id": "test-799", "spans": [[20, 29, "HARD_SKILL", ["mistral"], "head_skill"], [55, 60, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-801", "spans": [[19, 24, "SOFT_SKILL", ["mistral"], "head_skill"], [52, 57, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-802", "spans": [[14, 18, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [40, 47, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-803", "spans": [[20, 29, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-804", "spans": [[15, 38, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-805", "spans": [[7, 11, "SOFT_SKILL", ["mistral"], "original"], [16, 21, "SOFT_SKILL", ["mistral"], "head_skill"], [67, 76, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-806", "spans": [[94, 98, "SOFT_SKILL", ["mistral"], "head_skill"], [118, 126, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-807", "spans": [[19, 29, "SOFT_SKILL", ["gliner", "mistral"], "original"], [47, 56, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-864", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "head_skill"], [11, 18, "HARD_SKILL", ["mistral"], "original"], [19, 27, "HARD_SKILL", ["mistral"], "original"], [28, 32, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-875", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "head_skill"], [11, 18, "HARD_SKILL", ["mistral"], "original"], [19, 27, "HARD_SKILL", ["mistral"], "original"], [28, 32, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-878", "spans": [[39, 48, "SOFT_SKILL", ["mistral"], "split_conjunction"], [53, 83, "SOFT_SKILL", ["mistral"], "split_conjunction"], [88, 105, "SOFT_SKILL", ["mistral"], "split_conjunction"], [106, 116, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-880", "spans": [[5, 7, "SOFT_SKILL", ["gliner"], "head_skill"], [39, 46, "HARD_SKILL", ["mistral"], "head_skill"], [73, 77, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-881", "spans": [[4, 14, "SOFT_SKILL", ["mistral"], "split_conjunction"], [19, 54, "SOFT_SKILL", ["mistral"], "split_conjunction"], [59, 71, "SOFT_SKILL", ["mistral"], "split_conjunction"], [114, 121, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-883", "spans": [[30, 40, "HARD_SKILL", ["mistral"], "head_skill"], [84, 94, "HARD_SKILL", ["gliner"], "original"]]}
+{"id": "test-884", "spans": []}
+{"id": "test-885", "spans": [[9, 33, "SOFT_SKILL", ["mistral"], "split_conjunction"], [38, 48, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-886", "spans": [[9, 38, "SOFT_SKILL", ["mistral"], "split_conjunction"], [43, 69, "SOFT_SKILL", ["mistral"], "split_conjunction"], [74, 84, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-887", "spans": [[9, 15, "SOFT_SKILL", ["mistral"], "head_skill"], [36, 45, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-888", "spans": [[9, 16, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-889", "spans": [[9, 17, "SOFT_SKILL", ["mistral"], "head_skill"], [49, 54, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-890", "spans": [[47, 51, "SOFT_SKILL", ["mistral"], "head_skill"], [74, 81, "SOFT_SKILL", ["mistral"], "head_skill"], [94, 100, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-891", "spans": [[9, 19, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-893", "spans": [[14, 21, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-894", "spans": [[20, 51, "HARD_SKILL", ["mistral"], "split_conjunction"], [56, 65, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-895", "spans": [[25, 42, "HARD_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-896", "spans": [[2, 9, "HARD_SKILL", ["mistral"], "original"], [14, 22, "HARD_SKILL", ["mistral"], "original"], [49, 56, "HARD_SKILL", ["mistral"], "original"], [61, 68, "HARD_SKILL", ["mistral"], "original"], [73, 81, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-897", "spans": [[0, 6, "SOFT_SKILL", ["gliner", "mistral"], "split_conjunction"], [7, 16, "SOFT_SKILL", ["gliner", "mistral"], "split_conjunction"], [27, 33, "HARD_SKILL", ["mistral"], "original"], [44, 49, "SOFT_SKILL", ["mistral"], "head_skill"], [77, 85, "HARD_SKILL", ["mistral"], "original"], [86, 93, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-898", "spans": [[13, 17, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-899", "spans": [[7, 14, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-943", "spans": [[10, 23, "SOFT_SKILL", ["dictionary"], "original"], [10, 23, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [30, 38, "HARD_SKILL", ["mistral"], "head_skill"], [48, 59, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-947", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 10, "HARD_SKILL", ["mistral"], "original"], [11, 21, "HARD_SKILL", ["mistral"], "original"], [22, 38, "HARD_SKILL", ["mistral"], "original"], [39, 54, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-956", "spans": [[0, 13, "SOFT_SKILL", ["dictionary"], "original"], [0, 13, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [20, 28, "HARD_SKILL", ["mistral"], "head_skill"], [38, 49, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-962", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 10, "HARD_SKILL", ["mistral"], "original"], [11, 21, "HARD_SKILL", ["mistral"], "original"], [22, 38, "HARD_SKILL", ["mistral"], "original"], [39, 54, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-969", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-970", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-971", "spans": [[0, 30, "SOFT_SKILL", ["mistral"], "split_conjunction"], [35, 71, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-972", "spans": [[0, 13, "SOFT_SKILL", ["dictionary"], "original"], [0, 13, "SOFT_SKILL", ["mistral"], "head_skill"], [35, 48, "SOFT_SKILL", ["dictionary"], "original"], [35, 48, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-973", "spans": []}
+{"id": "test-974", "spans": [[0, 17, "SOFT_SKILL", ["mistral"], "split_conjunction"], [22, 49, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-976", "spans": [[9, 17, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-977", "spans": [[16, 21, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-978", "spans": [[13, 29, "HARD_SKILL", ["mistral"], "split_conjunction"], [34, 75, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-979", "spans": [[40, 69, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [90, 100, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-980", "spans": [[12, 20, "SOFT_SKILL", ["mistral"], "split_conjunction"], [25, 69, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-981", "spans": [[0, 22, "SOFT_SKILL", ["gliner"], "original"], [7, 10, "SOFT_SKILL", ["mistral"], "head_skill"], [23, 27, "HARD_SKILL", ["mistral"], "head_skill"], [45, 54, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-982", "spans": [[0, 10, "SOFT_SKILL", ["mistral"], "original"], [15, 30, "SOFT_SKILL", ["mistral"], "original"], [72, 77, "SOFT_SKILL", ["mistral"], "original"], [85, 98, "SOFT_SKILL", ["dictionary", "mistral"], "original"], [103, 114, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-983", "spans": [[5, 11, "SOFT_SKILL", ["mistral"], "trim_leading_filler"], [12, 18, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [55, 61, "HARD_SKILL", ["mistral"], "original"], [66, 73, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1022", "spans": []}
+{"id": "test-1030", "spans": [[0, 9, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1036", "spans": [[123, 167, "SOFT_SKILL", ["mistral"], "split_conjunction"], [172, 193, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1037", "spans": [[22, 51, "SOFT_SKILL", ["mistral"], "split_conjunction"], [56, 65, "SOFT_SKILL", ["mistral"], "split_conjunction"], [130, 137, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1041", "spans": [[2, 4, "HARD_SKILL", ["mistral"], "split_conjunction"], [5, 14, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1042", "spans": [[15, 31, "HARD_SKILL", ["mistral"], "split_conjunction"], [36, 63, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1043", "spans": [[24, 36, "HARD_SKILL", ["mistral"], "split_conjunction"], [41, 66, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1044", "spans": [[26, 32, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1045", "spans": [[15, 46, "HARD_SKILL", ["mistral"], "split_conjunction"], [51, 65, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1046", "spans": [[24, 33, "HARD_SKILL", ["mistral"], "head_skill"], [46, 52, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1047", "spans": [[13, 17, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1049", "spans": [[17, 25, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1083", "spans": [[2, 6, "HARD_SKILL", ["dictionary", "mistral"], "original"], [7, 12, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1090", "spans": [[2, 6, "HARD_SKILL", ["dictionary", "mistral"], "original"], [7, 12, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1093", "spans": [[123, 130, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1094", "spans": [[24, 53, "SOFT_SKILL", ["mistral"], "split_conjunction"], [58, 67, "SOFT_SKILL", ["mistral"], "split_conjunction"], [90, 98, "HARD_SKILL", ["mistral"], "head_skill"], [132, 139, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1097", "spans": [[53, 62, "SOFT_SKILL", ["mistral"], "original"], [63, 74, "SOFT_SKILL", ["mistral"], "original"], [75, 87, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-1099", "spans": [[49, 53, "HARD_SKILL", ["dictionary", "mistral"], "original"], [83, 84, "HARD_SKILL", ["mistral"], "realign_word_boundary"], [65, 69, "HARD_SKILL", ["mistral"], "original"], [70, 73, "HARD_SKILL", ["mistral"], "head_skill"], [85, 92, "HARD_SKILL", ["mistral"], "original"], [93, 99, "HARD_SKILL", ["mistral"], "original"], [104, 109, "HARD_SKILL", ["mistral"], "original"], [116, 121, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1101", "spans": []}
+{"id": "test-1102", "spans": [[34, 39, "HARD_SKILL", ["mistral"], "head_skill"], [49, 56, "HARD_SKILL", ["mistral"], "head_skill"], [65, 75, "HARD_SKILL", ["mistral"], "original"], [80, 86, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1104", "spans": [[2, 39, "SOFT_SKILL", ["mistral"], "split_conjunction"], [44, 68, "SOFT_SKILL", ["mistral"], "split_conjunction"], [73, 95, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1105", "spans": [[2, 6, "SOFT_SKILL", ["mistral"], "head_skill"], [36, 43, "SOFT_SKILL", ["mistral"], "head_skill"], [72, 79, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1107", "spans": [[15, 26, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1108", "spans": [[13, 20, "SOFT_SKILL", ["mistral"], "head_skill"], [38, 46, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1109", "spans": [[15, 20, "HARD_SKILL", ["mistral"], "original"], [21, 34, "HARD_SKILL", ["mistral"], "original"], [39, 48, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1110", "spans": [[2, 9, "HARD_SKILL", ["mistral"], "original"], [10, 12, "HARD_SKILL", ["mistral"], "original"], [15, 24, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1111", "spans": [[13, 17, "SOFT_SKILL", ["mistral"], "head_skill"], [50, 57, "SOFT_SKILL", ["mistral"], "head_skill"], [100, 108, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1113", "spans": [[24, 30, "HARD_SKILL", ["mistral"], "head_skill"], [53, 57, "HARD_SKILL", ["dictionary", "mistral"], "original"], [58, 59, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1114", "spans": [[16, 25, "HARD_SKILL", ["mistral"], "original"], [30, 33, "HARD_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-1115", "spans": [[15, 16, "HARD_SKILL", ["mistral"], "original"], [20, 26, "HARD_SKILL", ["dictionary", "mistral"], "original"], [32, 39, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"], [51, 55, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1116", "spans": [[15, 24, "HARD_SKILL", ["mistral"], "head_skill"], [41, 45, "HARD_SKILL", ["mistral"], "split_conjunction"], [46, 48, "HARD_SKILL", ["mistral"], "split_conjunction"], [49, 54, "HARD_SKILL", ["mistral"], "original"], [55, 63, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1117", "spans": [[15, 18, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1118", "spans": [[15, 24, "HARD_SKILL", ["mistral"], "head_skill"], [60, 71, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1151", "spans": [[10, 23, "HARD_SKILL", ["mistral"], "original"], [24, 30, "HARD_SKILL", ["mistral"], "original"], [31, 37, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1155", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 10, "HARD_SKILL", ["mistral"], "original"], [11, 26, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1168", "spans": [[0, 13, "HARD_SKILL", ["mistral"], "original"], [14, 20, "HARD_SKILL", ["mistral"], "original"], [21, 27, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1174", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 10, "HARD_SKILL", ["mistral"], "original"], [11, 26, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1176", "spans": [[10, 20, "SOFT_SKILL", ["mistral"], "original"], [43, 48, "SOFT_SKILL", ["gliner"], "head_skill"], [53, 61, "HARD_SKILL", ["mistral"], "original"], [73, 82, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1179", "spans": [[61, 106, "SOFT_SKILL", ["mistral"], "split_conjunction"], [111, 118, "SOFT_SKILL", ["mistral"], "split_conjunction"], [122, 129, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1180", "spans": [[61, 73, "SOFT_SKILL", ["mistral"], "split_conjunction"], [78, 107, "SOFT_SKILL", ["mistral"], "split_conjunction"], [112, 119, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1181", "spans": [[30, 35, "HARD_SKILL", ["mistral"], "original"], [96, 102, "HARD_SKILL", ["mistral"], "head_skill"], [123, 130, "HARD_SKILL", ["mistral"], "original"], [135, 137, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1182", "spans": [[42, 47, "HARD_SKILL", ["mistral"], "original"], [51, 60, "SOFT_SKILL", ["mistral"], "head_skill"], [87, 101, "HARD_SKILL", ["mistral"], "head_skill"], [115, 121, "HARD_SKILL", ["mistral"], "head_skill"], [133, 144, "HARD_SKILL", ["mistral"], "original"], [173, 202, "SOFT_SKILL", ["mistral"], "split_conjunction"], [207, 213, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1184", "spans": [[59, 70, "SOFT_SKILL", ["gliner", "mistral"], "original"], [75, 86, "SOFT_SKILL", ["gliner", "mistral"], "original"], [126, 134, "SOFT_SKILL", ["mistral"], "original"], [178, 189, "SOFT_SKILL", ["mistral"], "head_skill"], [214, 218, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1187", "spans": [[0, 34, "SOFT_SKILL", ["mistral"], "split_conjunction"], [39, 76, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1188", "spans": [[0, 15, "SOFT_SKILL", ["mistral"], "split_conjunction"], [20, 54, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1189", "spans": [[21, 32, "SOFT_SKILL", ["mistral"], "head_skill"], [53, 63, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1190", "spans": [[21, 32, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1191", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1193", "spans": [[47, 53, "HARD_SKILL", ["mistral"], "head_skill"], [63, 70, "HARD_SKILL", ["mistral"], "original"], [73, 76, "HARD_SKILL", ["mistral"], "original"], [84, 91, "HARD_SKILL", ["mistral"], "head_skill"], [114, 116, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1194", "spans": [[14, 16, "HARD_SKILL", ["mistral"], "original"], [14, 16, "SOFT_SKILL", ["gliner"], "original"], [28, 34, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1195", "spans": [[10, 12, "HARD_SKILL", ["mistral"], "head_skill"], [50, 54, "HARD_SKILL", ["mistral"], "original"], [59, 66, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1196", "spans": [[5, 14, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1197", "spans": [[6, 12, "SOFT_SKILL", ["mistral"], "split_conjunction"], [17, 39, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1199", "spans": [[25, 35, "SOFT_SKILL", ["mistral"], "head_skill"], [109, 112, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1200", "spans": [[16, 19, "HARD_SKILL", ["mistral"], "head_skill"], [67, 76, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [87, 98, "HARD_SKILL", ["mistral"], "head_skill"], [120, 129, "HARD_SKILL", ["mistral"], "head_skill"], [136, 140, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-1230", "spans": [[10, 18, "HARD_SKILL", ["mistral"], "head_skill"], [28, 37, "HARD_SKILL", ["mistral"], "original"], [38, 49, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"]]}
+{"id": "test-1234", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 14, "HARD_SKILL", ["mistral"], "original"], [15, 23, "HARD_SKILL", ["mistral"], "original"], [24, 38, "HARD_SKILL", ["mistral"], "original"], [39, 50, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1241", "spans": [[0, 8, "HARD_SKILL", ["mistral"], "head_skill"], [18, 27, "HARD_SKILL", ["mistral"], "original"], [28, 39, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"]]}
+{"id": "test-1247", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 14, "HARD_SKILL", ["mistral"], "original"], [15, 23, "HARD_SKILL", ["mistral"], "original"], [24, 38, "HARD_SKILL", ["mistral"], "original"], [39, 50, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1249", "spans": [[40, 47, "SOFT_SKILL", ["gliner"], "head_skill"], [73, 78, "SOFT_SKILL", ["mistral"], "head_skill"], [100, 107, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1253", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "split_conjunction"], [10, 40, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1254", "spans": [[0, 27, "SOFT_SKILL", ["mistral"], "split_conjunction"], [32, 46, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1255", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [18, 58, "SOFT_SKILL", ["mistral"], "split_conjunction"], [63, 85, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1256", "spans": [[0, 31, "SOFT_SKILL", ["mistral"], "split_conjunction"], [36, 71, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1257", "spans": [[0, 31, "SOFT_SKILL", ["mistral"], "split_conjunction"], [36, 47, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1260", "spans": [[32, 42, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1261", "spans": [[20, 52, "SOFT_SKILL", ["mistral"], "split_conjunction"], [57, 67, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1262", "spans": [[33, 39, "HARD_SKILL", ["mistral"], "head_skill"], [47, 51, "HARD_SKILL", ["mistral"], "head_skill"], [67, 77, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1263", "spans": [[18, 22, "HARD_SKILL", ["dictionary", "mistral"], "original"], [51, 62, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1264", "spans": [[16, 31, "SOFT_SKILL", ["gliner", "mistral"], "trim_trailing_filler"]]}
+{"id": "test-1265", "spans": [[25, 36, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1267", "spans": [[20, 27, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1268", "spans": [[15, 19, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-1269", "spans": [[18, 31, "SOFT_SKILL", ["dictionary"], "original"], [18, 31, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [45, 50, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-1301", "spans": []}
+{"id": "test-1305", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 11, "HARD_SKILL", ["mistral"], "original"], [12, 16, "HARD_SKILL", ["mistral"], "original"], [17, 30, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1316", "spans": []}
+{"id": "test-1322", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 11, "HARD_SKILL", ["mistral"], "original"], [12, 16, "HARD_SKILL", ["mistral"], "original"], [17, 30, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1325", "spans": [[0, 11, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1326", "spans": [[0, 10, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1327", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1329", "spans": [[0, 10, "HARD_SKILL", ["mistral"], "head_skill"], [27, 37, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1333", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1334", "spans": [[0, 8, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1335", "spans": [[0, 11, "SOFT_SKILL", ["mistral"], "head_skill"], [34, 38, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1336", "spans": [[14, 17, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1337", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1338", "spans": [[29, 36, "HARD_SKILL", ["mistral"], "original"], [54, 60, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1369", "spans": [[10, 14, "HARD_SKILL", ["mistral"], "head_skill"], [23, 25, "HARD_SKILL", ["mistral"], "head_skill"], [35, 55, "HARD_SKILL", ["mistral"], "split_conjunction"], [58, 69, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1373", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 9, "HARD_SKILL", ["mistral"], "original"], [10, 15, "HARD_SKILL", ["mistral"], "original"], [16, 22, "HARD_SKILL", ["mistral"], "original"], [23, 38, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1382", "spans": [[0, 4, "HARD_SKILL", ["mistral"], "head_skill"], [13, 15, "HARD_SKILL", ["mistral"], "head_skill"], [25, 45, "HARD_SKILL", ["mistral"], "split_conjunction"], [48, 59, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1388", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 9, "HARD_SKILL", ["mistral"], "original"], [10, 15, "HARD_SKILL", ["mistral"], "original"], [16, 22, "HARD_SKILL", ["mistral"], "original"], [23, 38, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1391", "spans": [[5, 14, "HARD_SKILL", ["gliner"], "original"], [20, 30, "SOFT_SKILL", ["mistral"], "head_skill"], [46, 58, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1394", "spans": [[4, 45, "SOFT_SKILL", ["mistral"], "split_conjunction"], [50, 60, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1396", "spans": [[4, 11, "SOFT_SKILL", ["mistral"], "head_skill"], [118, 123, "SOFT_SKILL", ["mistral"], "head_skill"], [166, 171, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1397", "spans": [[28, 38, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-1399", "spans": [[34, 42, "SOFT_SKILL", ["mistral"], "head_skill"], [78, 84, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1401", "spans": [[47, 55, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [102, 107, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1402", "spans": [[0, 8, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [44, 48, "HARD_SKILL", ["dictionary"], "original"], [44, 48, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1403", "spans": [[69, 76, "HARD_SKILL", ["mistral"], "original"], [122, 129, "HARD_SKILL", ["gliner"], "original"], [122, 129, "SOFT_SKILL", ["mistral"], "head_skill"], [176, 180, "HARD_SKILL", ["mistral"], "head_skill"], [176, 180, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-1404", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1405", "spans": [[99, 103, "HARD_SKILL", ["mistral"], "head_skill"], [120, 129, "HARD_SKILL", ["mistral"], "original"], [130, 135, "HARD_SKILL", ["mistral"], "head_skill"], [146, 153, "HARD_SKILL", ["mistral"], "head_skill"], [162, 165, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1406", "spans": [[9, 15, "HARD_SKILL", ["mistral"], "original"], [9, 15, "SOFT_SKILL", ["gliner"], "original"], [47, 62, "SOFT_SKILL", ["mistral"], "split_conjunction"], [67, 83, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1407", "spans": [[27, 39, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [53, 59, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-1408", "spans": [[48, 54, "SOFT_SKILL", ["gliner"], "trim_leading_filler"], [48, 54, "HARD_SKILL", ["mistral"], "original"], [82, 89, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1453", "spans": [[10, 17, "HARD_SKILL", ["mistral"], "head_skill"], [25, 45, "HARD_SKILL", ["mistral"], "split_conjunction"], [48, 59, "HARD_SKILL", ["mistral"], "split_conjunction"], [60, 64, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [60, 64, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"]]}
+{"id": "test-1457", "spans": [[0, 10, "HARD_SKILL", ["dictionary", "mistral"], "original"], [11, 18, "HARD_SKILL", ["mistral"], "original"], [19, 26, "HARD_SKILL", ["dictionary", "mistral"], "original"], [27, 33, "HARD_SKILL", ["mistral"], "original"], [34, 44, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1468", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "head_skill"], [15, 35, "HARD_SKILL", ["mistral"], "split_conjunction"], [38, 49, "HARD_SKILL", ["mistral"], "split_conjunction"], [50, 54, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [50, 54, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"]]}
+{"id": "test-1474", "spans": [[0, 10, "HARD_SKILL", ["dictionary", "mistral"], "original"], [11, 18, "HARD_SKILL", ["mistral"], "original"], [19, 26, "HARD_SKILL", ["dictionary", "mistral"], "original"], [27, 33, "HARD_SKILL", ["mistral"], "original"], [34, 44, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1477", "spans": [[4, 12, "HARD_SKILL", ["gliner"], "head_skill"], [34, 36, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-1479", "spans": [[0, 11, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1480", "spans": [[0, 3, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1481", "spans": [[0, 14, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1482", "spans": []}
+{"id": "test-1483", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1484", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "split_conjunction"], [13, 39, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1486", "spans": [[25, 29, "SOFT_SKILL", ["mistral"], "head_skill"], [57, 65, "SOFT_SKILL", ["mistral"], "head_skill"], [107, 114, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1488", "spans": [[87, 97, "HARD_SKILL", ["dictionary"], "original"], [87, 97, "HARD_SKILL", ["mistral"], "split_conjunction"], [98, 108, "HARD_SKILL", ["mistral"], "split_conjunction"], [132, 139, "HARD_SKILL", ["mistral"], "original"], [140, 145, "HARD_SKILL", ["mistral"], "original"], [149, 152, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1489", "spans": [[27, 39, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1490", "spans": [[0, 13, "HARD_SKILL", ["mistral"], "original"], [14, 23, "HARD_SKILL", ["mistral"], "original"], [14, 23, "SOFT_SKILL", ["gliner"], "original"], [32, 39, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1491", "spans": [[20, 24, "HARD_SKILL", ["mistral"], "head_skill"], [37, 42, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1493", "spans": [[5, 14, "SOFT_SKILL", ["mistral"], "head_skill"], [30, 44, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-1494", "spans": [[3, 28, "SOFT_SKILL", ["mistral"], "split_conjunction"], [33, 56, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1495", "spans": [[18, 24, "SOFT_SKILL", ["mistral"], "original"], [29, 36, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-1519", "spans": [[10, 19, "HARD_SKILL", ["mistral"], "head_skill"], [29, 38, "HARD_SKILL", ["mistral"], "head_skill"], [50, 60, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1523", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 13, "HARD_SKILL", ["mistral"], "original"], [14, 24, "HARD_SKILL", ["mistral"], "original"], [25, 29, "HARD_SKILL", ["mistral"], "original"], [30, 33, "HARD_SKILL", ["dictionary"], "original"], [30, 40, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1532", "spans": [[0, 9, "HARD_SKILL", ["mistral"], "head_skill"], [19, 28, "HARD_SKILL", ["mistral"], "head_skill"], [40, 50, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1538", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 13, "HARD_SKILL", ["mistral"], "original"], [14, 24, "HARD_SKILL", ["mistral"], "original"], [25, 29, "HARD_SKILL", ["mistral"], "original"], [30, 33, "HARD_SKILL", ["dictionary"], "original"], [30, 40, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1544", "spans": [[49, 59, "HARD_SKILL", ["gliner"], "original"], [60, 67, "SOFT_SKILL", ["mistral"], "head_skill"], [102, 110, "SOFT_SKILL", ["mistral"], "head_skill"], [123, 150, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1545", "spans": [[20, 27, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1548", "spans": [[0, 12, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1549", "spans": [[0, 6, "HARD_SKILL", ["gliner"], "original"], [0, 6, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1550", "spans": [[0, 7, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [24, 35, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1551", "spans": [[0, 15, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1552", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1553", "spans": []}
+{"id": "test-1555", "spans": [[42, 51, "HARD_SKILL", ["mistral"], "split_conjunction"], [54, 81, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1556", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 13, "HARD_SKILL", ["mistral"], "original"], [14, 29, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1557", "spans": [[0, 3, "HARD_SKILL", ["dictionary", "mistral"], "original"], [6, 9, "HARD_SKILL", ["mistral"], "head_skill"], [30, 40, "HARD_SKILL", ["mistral"], "original"], [43, 53, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-1558", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 14, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1559", "spans": [[12, 22, "HARD_SKILL", ["dictionary", "mistral"], "original"], [41, 47, "HARD_SKILL", ["mistral"], "original"], [48, 55, "HARD_SKILL", ["mistral"], "original"], [56, 61, "HARD_SKILL", ["mistral"], "original"], [65, 68, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1560", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 9, "HARD_SKILL", ["mistral"], "original"], [12, 17, "HARD_SKILL", ["mistral"], "original"], [18, 27, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1561", "spans": [[14, 29, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1563", "spans": [[22, 37, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1564", "spans": [[9, 18, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1566", "spans": [[19, 29, "SOFT_SKILL", ["mistral"], "original"], [34, 42, "SOFT_SKILL", ["mistral"], "original"], [55, 62, "SOFT_SKILL", ["dictionary", "mistral"], "head_skill"]]}
+{"id": "test-1567", "spans": [[16, 25, "HARD_SKILL", ["mistral"], "head_skill"], [68, 81, "SOFT_SKILL", ["gliner"], "taxonomy_normalized"], [68, 81, "SOFT_SKILL", ["dictionary"], "original"], [68, 81, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-1601", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 12, "HARD_SKILL", ["mistral"], "original"], [13, 25, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1608", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 12, "HARD_SKILL", ["mistral"], "original"], [13, 25, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1610", "spans": [[7, 11, "HARD_SKILL", ["dictionary"], "original"], [165, 172, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1611", "spans": [[24, 53, "SOFT_SKILL", ["mistral"], "split_conjunction"], [58, 67, "SOFT_SKILL", ["mistral"], "split_conjunction"], [90, 98, "HARD_SKILL", ["mistral"], "head_skill"], [132, 139, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1614", "spans": [[67, 76, "SOFT_SKILL", ["gliner"], "head_skill"], [154, 162, "SOFT_SKILL", ["mistral"], "head_skill"], [182, 188, "SOFT_SKILL", ["mistral"], "head_skill"], [212, 245, "SOFT_SKILL", ["mistral"], "split_conjunction"], [250, 271, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1615", "spans": [[9, 13, "SOFT_SKILL", ["mistral"], "head_skill"], [58, 84, "SOFT_SKILL", ["mistral"], "split_conjunction"], [89, 116, "SOFT_SKILL", ["mistral"], "split_conjunction"], [131, 136, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1617", "spans": [[2, 4, "HARD_SKILL", ["mistral"], "split_conjunction"], [5, 14, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1618", "spans": [[15, 25, "HARD_SKILL", ["mistral"], "head_skill"], [37, 51, "HARD_SKILL", ["mistral"], "original"], [56, 66, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1619", "spans": [[15, 50, "HARD_SKILL", ["mistral"], "split_conjunction"], [55, 69, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1620", "spans": [[13, 17, "SOFT_SKILL", ["mistral"], "head_skill"], [50, 57, "SOFT_SKILL", ["mistral"], "head_skill"], [100, 108, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1621", "spans": [[23, 27, "HARD_SKILL", ["dictionary", "mistral"], "original"], [64, 70, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1623", "spans": [[25, 31, "HARD_SKILL", ["mistral"], "head_skill"], [53, 64, "HARD_SKILL", ["mistral"], "head_skill"], [73, 77, "HARD_SKILL", ["mistral"], "head_skill"], [86, 97, "HARD_SKILL", ["mistral"], "head_skill"], [106, 117, "HARD_SKILL", ["mistral"], "head_skill"], [137, 144, "HARD_SKILL", ["mistral"], "head_skill"], [156, 166, "HARD_SKILL", ["mistral"], "head_skill"], [200, 209, "SOFT_SKILL", ["mistral"], "head_skill"], [236, 242, "HARD_SKILL", ["mistral"], "head_skill"], [256, 267, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1624", "spans": [[13, 20, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1625", "spans": [[16, 25, "SOFT_SKILL", ["mistral"], "split_conjunction"], [30, 56, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1626", "spans": [[13, 20, "SOFT_SKILL", ["mistral"], "head_skill"], [49, 56, "SOFT_SKILL", ["mistral"], "original"], [57, 67, "SOFT_SKILL", ["mistral"], "original"], [72, 80, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1627", "spans": [[25, 36, "HARD_SKILL", ["mistral"], "head_skill"], [25, 36, "SOFT_SKILL", ["gliner"], "head_skill"], [50, 61, "HARD_SKILL", ["mistral"], "head_skill"], [50, 61, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-1628", "spans": [[41, 47, "HARD_SKILL", ["mistral"], "original"], [62, 72, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1648", "spans": [[10, 15, "HARD_SKILL", ["mistral"], "head_skill"], [25, 36, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"], [48, 58, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1652", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 24, "HARD_SKILL", ["mistral"], "original"], [25, 37, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1659", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"], [15, 26, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"], [38, 48, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1665", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 24, "HARD_SKILL", ["mistral"], "original"], [25, 37, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1679", "spans": [[104, 114, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1681", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [38, 46, "HARD_SKILL", ["mistral"], "head_skill"], [174, 187, "HARD_SKILL", ["mistral"], "original"], [192, 205, "HARD_SKILL", ["mistral"], "original"], [217, 228, "SOFT_SKILL", ["mistral"], "head_skill"], [278, 280, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1682", "spans": [[0, 33, "SOFT_SKILL", ["mistral"], "split_conjunction"], [38, 55, "SOFT_SKILL", ["mistral"], "split_conjunction"], [59, 65, "SOFT_SKILL", ["mistral"], "head_skill"], [81, 87, "SOFT_SKILL", ["mistral"], "head_skill"], [151, 159, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1683", "spans": [[0, 11, "SOFT_SKILL", ["mistral"], "head_skill"], [54, 62, "HARD_SKILL", ["mistral"], "head_skill"], [87, 90, "HARD_SKILL", ["mistral"], "original"], [87, 90, "SOFT_SKILL", ["gliner"], "original"], [91, 99, "HARD_SKILL", ["mistral"], "head_skill"], [109, 116, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1685", "spans": [[14, 20, "HARD_SKILL", ["mistral"], "head_skill"], [68, 76, "HARD_SKILL", ["mistral"], "head_skill"], [106, 114, "HARD_SKILL", ["mistral"], "head_skill"], [149, 187, "HARD_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-1686", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [39, 41, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1687", "spans": [[36, 45, "SOFT_SKILL", ["mistral"], "head_skill"], [100, 115, "SOFT_SKILL", ["gliner", "mistral"], "original"], [120, 137, "SOFT_SKILL", ["mistral"], "split_conjunction"], [142, 163, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1688", "spans": [[36, 41, "HARD_SKILL", ["mistral"], "head_skill"], [82, 90, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1689", "spans": [[16, 27, "HARD_SKILL", ["mistral"], "head_skill"], [41, 52, "HARD_SKILL", ["mistral"], "head_skill"], [55, 57, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1690", "spans": [[12, 17, "HARD_SKILL", ["mistral"], "original"], [18, 24, "HARD_SKILL", ["mistral"], "original"], [29, 39, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1713", "spans": []}
+{"id": "test-1717", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 11, "HARD_SKILL", ["mistral"], "original"], [12, 14, "HARD_SKILL", ["mistral"], "original"], [15, 29, "HARD_SKILL", ["mistral"], "original"], [30, 34, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1726", "spans": []}
+{"id": "test-1732", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 11, "HARD_SKILL", ["mistral"], "original"], [12, 14, "HARD_SKILL", ["mistral"], "original"], [15, 29, "HARD_SKILL", ["mistral"], "original"], [30, 34, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1735", "spans": [[47, 58, "HARD_SKILL", ["mistral"], "head_skill"], [75, 84, "SOFT_SKILL", ["mistral"], "original"], [85, 93, "SOFT_SKILL", ["mistral"], "head_skill"], [112, 117, "SOFT_SKILL", ["mistral"], "head_skill"], [140, 146, "HARD_SKILL", ["mistral"], "head_skill"], [160, 164, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-1737", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "head_skill"], [29, 34, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1739", "spans": [[10, 18, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1741", "spans": [[13, 15, "HARD_SKILL", ["mistral"], "original"], [16, 31, "HARD_SKILL", ["mistral"], "original"], [36, 46, "HARD_SKILL", ["mistral"], "original"], [47, 52, "HARD_SKILL", ["mistral"], "original"], [55, 57, "HARD_SKILL", ["mistral"], "head_skill"], [70, 85, "HARD_SKILL", ["mistral"], "head_skill"], [93, 100, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1743", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"], [14, 19, "HARD_SKILL", ["mistral"], "head_skill"], [29, 34, "HARD_SKILL", ["mistral"], "head_skill"], [45, 50, "HARD_SKILL", ["mistral"], "head_skill"], [61, 66, "HARD_SKILL", ["mistral"], "head_skill"], [76, 84, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1745", "spans": [[34, 42, "HARD_SKILL", ["mistral"], "head_skill"], [34, 42, "HARD_SKILL", ["gliner"], "head_skill"], [51, 62, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1746", "spans": [[0, 8, "SOFT_SKILL", ["dictionary", "mistral"], "original"], [9, 13, "SOFT_SKILL", ["gliner"], "head_skill"], [14, 23, "SOFT_SKILL", ["mistral"], "head_skill"], [34, 45, "SOFT_SKILL", ["gliner", "mistral"], "original"], [58, 65, "SOFT_SKILL", ["dictionary", "mistral"], "head_skill"], [78, 96, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"], [83, 96, "SOFT_SKILL", ["dictionary"], "original"], [83, 96, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-1747", "spans": [[19, 26, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1777", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 13, "HARD_SKILL", ["mistral"], "original"], [14, 21, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1786", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 13, "HARD_SKILL", ["mistral"], "original"], [14, 21, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1789", "spans": []}
+{"id": "test-1791", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1793", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1794", "spans": [[0, 13, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1795", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1796", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1799", "spans": [[24, 36, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-1800", "spans": [[8, 15, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1801", "spans": [[10, 20, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1803", "spans": [[22, 29, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1804", "spans": [[19, 29, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1805", "spans": [[12, 19, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1806", "spans": [[8, 12, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-1829", "spans": []}
+{"id": "test-1833", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 9, "HARD_SKILL", ["dictionary", "mistral"], "original"], [10, 20, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1840", "spans": [[0, 9, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1846", "spans": [[0, 2, "HARD_SKILL", ["mistral"], "original"], [3, 9, "HARD_SKILL", ["dictionary", "mistral"], "original"], [10, 20, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1848", "spans": [[44, 54, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1849", "spans": [[17, 27, "HARD_SKILL", ["mistral"], "split_conjunction"], [28, 42, "HARD_SKILL", ["mistral"], "split_conjunction"], [47, 50, "SOFT_SKILL", ["mistral"], "head_skill"], [95, 105, "HARD_SKILL", ["mistral"], "head_skill"], [119, 126, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1850", "spans": [[18, 21, "SOFT_SKILL", ["mistral"], "head_skill"], [72, 76, "HARD_SKILL", ["mistral"], "head_skill"], [103, 115, "HARD_SKILL", ["mistral"], "head_skill"], [103, 115, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-1851", "spans": [[52, 60, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1852", "spans": [[13, 21, "SOFT_SKILL", ["mistral"], "head_skill"], [57, 61, "HARD_SKILL", ["dictionary"], "original"], [57, 61, "HARD_SKILL", ["mistral"], "split_conjunction"], [62, 68, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1853", "spans": [[2, 10, "SOFT_SKILL", ["mistral"], "split_conjunction"], [15, 46, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1854", "spans": [[2, 11, "SOFT_SKILL", ["mistral"], "head_skill"], [52, 73, "SOFT_SKILL", ["mistral"], "split_conjunction"], [78, 103, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1855", "spans": [[13, 24, "HARD_SKILL", ["mistral"], "head_skill"], [47, 54, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1856", "spans": [[30, 35, "HARD_SKILL", ["mistral"], "original"], [65, 71, "HARD_SKILL", ["mistral"], "head_skill"], [81, 88, "HARD_SKILL", ["mistral"], "head_skill"], [104, 118, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1857", "spans": [[13, 23, "SOFT_SKILL", ["mistral"], "split_conjunction"], [28, 59, "SOFT_SKILL", ["mistral"], "split_conjunction"], [42, 48, "HARD_SKILL", ["mistral"], "head_skill"], [93, 101, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1859", "spans": [[23, 33, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1860", "spans": [[2, 12, "HARD_SKILL", ["mistral"], "head_skill"], [136, 143, "HARD_SKILL", ["mistral"], "head_skill"], [156, 163, "HARD_SKILL", ["mistral"], "original"], [194, 201, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1861", "spans": [[2, 11, "HARD_SKILL", ["mistral"], "head_skill"], [27, 34, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1863", "spans": [[21, 30, "HARD_SKILL", ["mistral"], "head_skill"], [45, 49, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-1865", "spans": [[15, 22, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1866", "spans": [[29, 33, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1867", "spans": [[22, 40, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [62, 105, "SOFT_SKILL", ["mistral"], "split_conjunction"], [110, 124, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1868", "spans": [[13, 17, "SOFT_SKILL", ["mistral"], "head_skill"], [36, 43, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1869", "spans": [[22, 26, "SOFT_SKILL", ["mistral"], "head_skill"], [40, 46, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [71, 75, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1871", "spans": [[2, 6, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1872", "spans": [[8, 12, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1873", "spans": [[2, 5, "HARD_SKILL", ["dictionary", "mistral"], "original"], [2, 5, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"]]}
+{"id": "test-1874", "spans": [[2, 12, "HARD_SKILL", ["mistral"], "head_skill"], [44, 47, "HARD_SKILL", ["mistral"], "original"], [48, 56, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1875", "spans": [[2, 15, "HARD_SKILL", ["mistral"], "head_skill"], [70, 82, "HARD_SKILL", ["mistral"], "split_conjunction"], [83, 101, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1876", "spans": [[13, 25, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1906", "spans": []}
+{"id": "test-1910", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 10, "HARD_SKILL", ["dictionary", "mistral"], "original"], [11, 30, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1917", "spans": [[0, 9, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1923", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "original"], [6, 10, "HARD_SKILL", ["dictionary", "mistral"], "original"], [11, 30, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1925", "spans": [[127, 171, "SOFT_SKILL", ["mistral"], "split_conjunction"], [176, 197, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1926", "spans": [[22, 51, "SOFT_SKILL", ["mistral"], "split_conjunction"], [56, 65, "SOFT_SKILL", ["mistral"], "split_conjunction"], [130, 137, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1930", "spans": [[2, 4, "HARD_SKILL", ["mistral"], "split_conjunction"], [5, 14, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1931", "spans": [[25, 29, "HARD_SKILL", ["mistral"], "head_skill"], [35, 41, "HARD_SKILL", ["mistral"], "head_skill"], [51, 64, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1932", "spans": [[18, 23, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [45, 48, "HARD_SKILL", ["dictionary", "mistral"], "original"], [53, 63, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-1933", "spans": [[18, 24, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-1935", "spans": [[16, 21, "HARD_SKILL", ["mistral"], "head_skill"], [44, 53, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1936", "spans": [[15, 39, "HARD_SKILL", ["mistral"], "split_conjunction"], [44, 46, "HARD_SKILL", ["mistral"], "split_conjunction"], [47, 60, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1938", "spans": [[22, 38, "HARD_SKILL", ["mistral"], "split_conjunction"], [43, 70, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1939", "spans": [[15, 46, "HARD_SKILL", ["mistral"], "split_conjunction"], [51, 65, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-1940", "spans": [[13, 17, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1941", "spans": [[19, 27, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1943", "spans": [[43, 51, "HARD_SKILL", ["mistral"], "head_skill"], [61, 72, "HARD_SKILL", ["mistral"], "original"], [73, 84, "HARD_SKILL", ["mistral"], "original"], [89, 97, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1972", "spans": [[10, 20, "HARD_SKILL", ["mistral"], "head_skill"], [34, 41, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"], [51, 62, "HARD_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-1976", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 18, "HARD_SKILL", ["dictionary", "mistral"], "original"], [19, 25, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1987", "spans": [[0, 10, "HARD_SKILL", ["mistral"], "head_skill"], [24, 31, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"], [41, 52, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1993", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 18, "HARD_SKILL", ["dictionary", "mistral"], "original"], [19, 25, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-1997", "spans": [[19, 25, "SOFT_SKILL", ["mistral"], "head_skill"], [72, 82, "SOFT_SKILL", ["mistral"], "head_skill"], [155, 162, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-1999", "spans": [[0, 17, "SOFT_SKILL", ["mistral"], "split_conjunction"], [22, 45, "SOFT_SKILL", ["mistral"], "split_conjunction"], [46, 54, "SOFT_SKILL", ["mistral"], "head_skill"], [75, 82, "SOFT_SKILL", ["mistral"], "head_skill"], [104, 111, "SOFT_SKILL", ["mistral"], "split_conjunction"], [116, 144, "SOFT_SKILL", ["mistral"], "split_conjunction"], [145, 179, "HARD_SKILL", ["mistral"], "split_conjunction"], [184, 211, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2000", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [69, 78, "HARD_SKILL", ["mistral"], "head_skill"], [172, 181, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-2001", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "head_skill"], [74, 124, "HARD_SKILL", ["mistral"], "split_conjunction"], [129, 140, "HARD_SKILL", ["mistral"], "split_conjunction"], [84, 95, "SOFT_SKILL", ["gliner"], "original"], [109, 124, "SOFT_SKILL", ["gliner"], "original"], [129, 140, "SOFT_SKILL", ["gliner"], "original"]]}
+{"id": "test-2002", "spans": [[0, 22, "SOFT_SKILL", ["mistral"], "split_conjunction"], [27, 36, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2004", "spans": [[14, 20, "SOFT_SKILL", ["mistral"], "head_skill"], [70, 74, "HARD_SKILL", ["mistral"], "head_skill"], [70, 74, "SOFT_SKILL", ["gliner"], "head_skill"], [87, 100, "SOFT_SKILL", ["gliner"], "head_skill"], [104, 115, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2005", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2008", "spans": [[46, 54, "SOFT_SKILL", ["gliner"], "head_skill"], [70, 80, "HARD_SKILL", ["dictionary", "mistral"], "original"], [83, 93, "HARD_SKILL", ["mistral"], "original"], [96, 103, "HARD_SKILL", ["mistral"], "original"], [106, 112, "HARD_SKILL", ["mistral"], "original"], [120, 127, "SOFT_SKILL", ["mistral"], "head_skill"], [153, 157, "HARD_SKILL", ["mistral"], "head_skill"], [166, 177, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2009", "spans": [[20, 28, "SOFT_SKILL", ["mistral"], "split_conjunction"], [33, 59, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2010", "spans": [[4, 8, "SOFT_SKILL", ["mistral"], "head_skill"], [26, 47, "SOFT_SKILL", ["mistral"], "split_conjunction"], [52, 57, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2011", "spans": [[15, 24, "SOFT_SKILL", ["mistral"], "head_skill"], [55, 70, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2051", "spans": [[0, 6, "HARD_SKILL", ["dictionary", "mistral"], "original"], [7, 13, "HARD_SKILL", ["mistral"], "original"], [14, 20, "HARD_SKILL", ["dictionary", "mistral"], "original"], [21, 24, "HARD_SKILL", ["mistral"], "original"], [25, 35, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2058", "spans": [[0, 6, "HARD_SKILL", ["dictionary", "mistral"], "original"], [7, 13, "HARD_SKILL", ["mistral"], "original"], [14, 20, "HARD_SKILL", ["dictionary", "mistral"], "original"], [21, 24, "HARD_SKILL", ["mistral"], "original"], [25, 35, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2082", "spans": [[0, 4, "SOFT_SKILL", ["mistral"], "head_skill"], [81, 87, "SOFT_SKILL", ["mistral"], "head_skill"], [134, 145, "SOFT_SKILL", ["mistral"], "head_skill"], [173, 177, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2084", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "head_skill"], [73, 80, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2086", "spans": [[73, 77, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2087", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [74, 81, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2088", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2089", "spans": [[0, 20, "SOFT_SKILL", ["mistral"], "split_conjunction"], [25, 54, "SOFT_SKILL", ["mistral"], "split_conjunction"], [58, 101, "SOFT_SKILL", ["mistral"], "split_conjunction"], [106, 114, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2091", "spans": [[0, 6, "HARD_SKILL", ["dictionary", "mistral"], "original"], [73, 99, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"], [79, 87, "HARD_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-2092", "spans": [[24, 32, "HARD_SKILL", ["mistral"], "head_skill"], [44, 50, "HARD_SKILL", ["mistral"], "head_skill"], [61, 67, "HARD_SKILL", ["dictionary", "mistral"], "original"], [72, 76, "HARD_SKILL", ["mistral"], "head_skill"], [79, 85, "HARD_SKILL", ["mistral"], "head_skill"], [90, 100, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2093", "spans": [[23, 80, "SOFT_SKILL", ["mistral"], "split_conjunction"], [85, 89, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2094", "spans": [[18, 24, "HARD_SKILL", ["dictionary", "mistral"], "original"], [18, 24, "SOFT_SKILL", ["gliner"], "original"], [28, 34, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2095", "spans": [[11, 21, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2097", "spans": [[0, 38, "SOFT_SKILL", ["mistral"], "split_conjunction"], [43, 55, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2098", "spans": [[0, 10, "SOFT_SKILL", ["mistral"], "head_skill"], [39, 47, "SOFT_SKILL", ["mistral"], "head_skill"], [68, 77, "SOFT_SKILL", ["mistral"], "head_skill"], [94, 99, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2099", "spans": [[10, 25, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2101", "spans": [[4, 12, "SOFT_SKILL", ["mistral"], "head_skill"], [38, 41, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2102", "spans": [[13, 24, "HARD_SKILL", ["mistral"], "head_skill"], [38, 50, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2103", "spans": [[0, 8, "SOFT_SKILL", ["gliner"], "original"], [12, 16, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2104", "spans": [[37, 44, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2106", "spans": []}
+{"id": "test-2176", "spans": [[10, 21, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"], [33, 39, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2180", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 17, "HARD_SKILL", ["mistral"], "original"], [18, 24, "HARD_SKILL", ["dictionary", "mistral"], "original"], [25, 43, "HARD_SKILL", ["mistral"], "original"], [44, 63, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2189", "spans": [[0, 11, "HARD_SKILL", ["dictionary", "mistral"], "head_skill"], [23, 29, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2195", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 17, "HARD_SKILL", ["mistral"], "original"], [18, 24, "HARD_SKILL", ["dictionary", "mistral"], "original"], [25, 43, "HARD_SKILL", ["mistral"], "original"], [44, 63, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2197", "spans": [[0, 4, "HARD_SKILL", ["dictionary"], "original"], [5, 11, "HARD_SKILL", ["dictionary"], "original"], [12, 18, "HARD_SKILL", ["dictionary", "mistral"], "original"], [23, 26, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-2198", "spans": [[47, 50, "HARD_SKILL", ["dictionary"], "original"]]}
+{"id": "test-2199", "spans": [[16, 22, "SOFT_SKILL", ["gliner"], "head_skill"], [71, 81, "HARD_SKILL", ["mistral"], "head_skill"], [114, 124, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2200", "spans": [[11, 44, "SOFT_SKILL", ["mistral"], "split_conjunction"], [49, 56, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2201", "spans": [[66, 71, "SOFT_SKILL", ["mistral"], "original"], [75, 82, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2202", "spans": [[10, 15, "SOFT_SKILL", ["mistral"], "head_skill"], [48, 54, "SOFT_SKILL", ["mistral"], "head_skill"], [77, 83, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2204", "spans": [[12, 21, "HARD_SKILL", ["mistral"], "head_skill"], [64, 71, "HARD_SKILL", ["dictionary", "gliner", "mistral"], "head_skill"], [85, 90, "HARD_SKILL", ["mistral"], "head_skill"], [103, 114, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2205", "spans": [[50, 60, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2206", "spans": [[11, 19, "SOFT_SKILL", ["mistral"], "split_conjunction"], [24, 45, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2207", "spans": [[19, 30, "SOFT_SKILL", ["mistral"], "head_skill"], [58, 67, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2208", "spans": [[17, 28, "SOFT_SKILL", ["mistral"], "head_skill"], [66, 73, "SOFT_SKILL", ["mistral"], "original"], [86, 90, "SOFT_SKILL", ["mistral"], "head_skill"], [119, 124, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2234", "spans": []}
+{"id": "test-2238", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"], [8, 14, "HARD_SKILL", ["mistral"], "original"], [15, 21, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2243", "spans": [[4, 13, "SOFT_SKILL", ["gliner"], "original"], [4, 19, "SOFT_SKILL", ["mistral"], "split_conjunction"], [24, 55, "SOFT_SKILL", ["mistral"], "split_conjunction"], [44, 51, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2244", "spans": [[12, 18, "SOFT_SKILL", ["mistral"], "head_skill"], [34, 38, "SOFT_SKILL", ["mistral"], "head_skill"], [145, 151, "HARD_SKILL", ["mistral"], "original"], [152, 158, "HARD_SKILL", ["mistral"], "original"], [162, 173, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2246", "spans": [[0, 10, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [25, 29, "SOFT_SKILL", ["mistral"], "head_skill"], [79, 86, "HARD_SKILL", ["mistral"], "original"], [87, 94, "HARD_SKILL", ["mistral"], "original"], [99, 108, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2247", "spans": []}
+{"id": "test-2250", "spans": [[48, 54, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2251", "spans": []}
+{"id": "test-2252", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2253", "spans": [[24, 47, "SOFT_SKILL", ["mistral"], "split_conjunction"], [52, 54, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2255", "spans": [[17, 23, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [41, 47, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2256", "spans": [[26, 33, "HARD_SKILL", ["mistral"], "head_skill"], [42, 59, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"], [53, 59, "SOFT_SKILL", ["mistral"], "original"], [72, 78, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2257", "spans": [[9, 16, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2258", "spans": [[16, 19, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2259", "spans": []}
+{"id": "test-2260", "spans": [[65, 72, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2261", "spans": [[31, 38, "HARD_SKILL", ["mistral"], "original"], [39, 46, "HARD_SKILL", ["mistral"], "original"], [51, 59, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2297", "spans": [[10, 19, "HARD_SKILL", ["mistral"], "original"], [20, 28, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2301", "spans": [[0, 4, "HARD_SKILL", ["dictionary", "mistral"], "original"], [5, 11, "HARD_SKILL", ["mistral"], "original"], [12, 19, "HARD_SKILL", ["mistral"], "original"], [20, 27, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-2313", "spans": [[0, 10, "SOFT_SKILL", ["mistral"], "head_skill"], [35, 47, "SOFT_SKILL", ["mistral"], "original"], [48, 59, "SOFT_SKILL", ["mistral"], "original"], [64, 72, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2314", "spans": [[0, 19, "SOFT_SKILL", ["mistral"], "split_conjunction"], [24, 39, "SOFT_SKILL", ["mistral"], "split_conjunction"], [43, 64, "SOFT_SKILL", ["mistral"], "split_conjunction"], [69, 79, "SOFT_SKILL", ["mistral"], "split_conjunction"], [80, 84, "HARD_SKILL", ["mistral"], "head_skill"], [93, 104, "HARD_SKILL", ["mistral"], "head_skill"], [119, 134, "SOFT_SKILL", ["mistral"], "split_conjunction"], [139, 151, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2315", "spans": [[0, 11, "SOFT_SKILL", ["mistral"], "split_conjunction"], [16, 44, "SOFT_SKILL", ["mistral"], "split_conjunction"], [49, 67, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2316", "spans": [[57, 77, "SOFT_SKILL", ["mistral"], "split_conjunction"], [82, 123, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2318", "spans": [[0, 37, "SOFT_SKILL", ["mistral"], "split_conjunction"], [42, 79, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2321", "spans": [[18, 22, "HARD_SKILL", ["dictionary", "mistral"], "original"], [23, 29, "HARD_SKILL", ["mistral"], "head_skill"], [40, 43, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [61, 90, "HARD_SKILL", ["mistral"], "original"], [100, 107, "HARD_SKILL", ["mistral"], "original"], [108, 113, "HARD_SKILL", ["mistral"], "original"], [142, 148, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2322", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "head_skill"], [33, 43, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2323", "spans": [[8, 13, "SOFT_SKILL", ["mistral"], "head_skill"], [23, 28, "SOFT_SKILL", ["mistral"], "head_skill"], [38, 45, "SOFT_SKILL", ["mistral"], "head_skill"], [51, 56, "SOFT_SKILL", ["mistral"], "head_skill"], [77, 84, "SOFT_SKILL", ["mistral"], "head_skill"], [97, 106, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2324", "spans": [[12, 17, "HARD_SKILL", ["mistral"], "head_skill"], [39, 46, "HARD_SKILL", ["mistral"], "head_skill"], [61, 71, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2325", "spans": [[5, 15, "SOFT_SKILL", ["mistral"], "head_skill"], [58, 68, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2326", "spans": [[15, 22, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-2327", "spans": [[0, 13, "SOFT_SKILL", ["mistral"], "split_conjunction"], [18, 52, "SOFT_SKILL", ["mistral"], "split_conjunction"], [57, 65, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2328", "spans": [[15, 20, "SOFT_SKILL", ["mistral"], "head_skill"], [40, 46, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2329", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2349", "spans": [[51, 56, "SOFT_SKILL", ["mistral"], "original"], [57, 69, "SOFT_SKILL", ["mistral"], "original"], [114, 116, "SOFT_SKILL", ["gliner"], "original"]]}
+{"id": "test-2354", "spans": [[22, 34, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2355", "spans": [[20, 24, "HARD_SKILL", ["mistral"], "original"], [29, 32, "HARD_SKILL", ["mistral"], "original"], [35, 39, "HARD_SKILL", ["mistral"], "original"], [40, 44, "HARD_SKILL", ["mistral"], "original"], [45, 52, "HARD_SKILL", ["mistral"], "original"], [78, 85, "HARD_SKILL", ["mistral"], "original"], [86, 91, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2356", "spans": [[16, 20, "HARD_SKILL", ["dictionary", "mistral"], "original"], [21, 23, "HARD_SKILL", ["mistral"], "original"], [33, 40, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2357", "spans": [[13, 38, "HARD_SKILL", ["mistral"], "split_conjunction"], [43, 69, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2358", "spans": [[11, 16, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2359", "spans": [[0, 3, "HARD_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-2361", "spans": [[5, 11, "SOFT_SKILL", ["mistral"], "trim_leading_filler"], [25, 65, "SOFT_SKILL", ["mistral"], "split_conjunction"], [70, 84, "SOFT_SKILL", ["mistral"], "split_conjunction"], [85, 114, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"], [91, 114, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-2390", "spans": [[59, 66, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2391", "spans": [[13, 19, "SOFT_SKILL", ["mistral"], "head_skill"], [46, 63, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2396", "spans": [[40, 43, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2397", "spans": [[57, 61, "HARD_SKILL", ["mistral"], "head_skill"], [122, 139, "HARD_SKILL", ["mistral"], "original"], [153, 162, "HARD_SKILL", ["mistral"], "head_skill"], [173, 179, "HARD_SKILL", ["mistral"], "head_skill"], [193, 200, "HARD_SKILL", ["mistral"], "head_skill"], [214, 215, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2399", "spans": [[47, 65, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2400", "spans": [[16, 17, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2402", "spans": [[0, 7, "SOFT_SKILL", ["gliner"], "head_skill"], [11, 18, "HARD_SKILL", ["mistral"], "original"], [29, 68, "SOFT_SKILL", ["gliner"], "trim_leading_filler"], [29, 42, "SOFT_SKILL", ["dictionary"], "original"], [29, 42, "SOFT_SKILL", ["mistral"], "head_skill"], [80, 101, "SOFT_SKILL", ["gliner", "mistral"], "split_conjunction"], [106, 121, "SOFT_SKILL", ["gliner", "mistral"], "split_conjunction"]]}
+{"id": "test-2429", "spans": [[25, 34, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2430", "spans": []}
+{"id": "test-2434", "spans": []}
+{"id": "test-2435", "spans": [[57, 64, "SOFT_SKILL", ["mistral"], "head_skill"], [122, 135, "SOFT_SKILL", ["dictionary"], "original"], [166, 197, "SOFT_SKILL", ["mistral"], "split_conjunction"], [256, 261, "SOFT_SKILL", ["mistral"], "head_skill"], [289, 295, "SOFT_SKILL", ["mistral"], "head_skill"], [368, 374, "SOFT_SKILL", ["mistral"], "head_skill"], [420, 428, "SOFT_SKILL", ["mistral"], "head_skill"], [454, 458, "HARD_SKILL", ["mistral"], "head_skill"], [473, 480, "HARD_SKILL", ["mistral"], "head_skill"], [494, 531, "SOFT_SKILL", ["mistral"], "split_conjunction"], [536, 549, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2436", "spans": [[39, 43, "SOFT_SKILL", ["mistral"], "split_conjunction"], [113, 117, "HARD_SKILL", ["mistral"], "head_skill"], [127, 133, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2437", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "head_skill"], [56, 64, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2438", "spans": [[13, 20, "SOFT_SKILL", ["mistral"], "original"], [21, 30, "SOFT_SKILL", ["mistral"], "original"], [31, 33, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2440", "spans": [[31, 41, "HARD_SKILL", ["mistral"], "original"], [31, 41, "HARD_SKILL", ["mistral"], "head_skill"], [66, 78, "HARD_SKILL", ["mistral"], "original"], [79, 90, "HARD_SKILL", ["mistral"], "original"], [100, 108, "SOFT_SKILL", ["mistral"], "head_skill"], [112, 116, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2441", "spans": [[11, 15, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2442", "spans": []}
+{"id": "test-2443", "spans": [[16, 20, "HARD_SKILL", ["mistral"], "original"], [21, 26, "HARD_SKILL", ["mistral"], "head_skill"], [42, 49, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2444", "spans": [[16, 23, "SOFT_SKILL", ["mistral"], "head_skill"], [78, 82, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2445", "spans": [[33, 48, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [57, 62, "HARD_SKILL", ["mistral"], "original"], [63, 70, "HARD_SKILL", ["mistral"], "head_skill"], [103, 116, "SOFT_SKILL", ["dictionary"], "original"], [103, 116, "SOFT_SKILL", ["mistral"], "head_skill"], [144, 151, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2446", "spans": [[19, 64, "SOFT_SKILL", ["mistral"], "split_conjunction"], [69, 84, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2447", "spans": [[11, 20, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [48, 52, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2448", "spans": [[20, 28, "SOFT_SKILL", ["mistral"], "original"], [63, 81, "SOFT_SKILL", ["gliner", "mistral"], "trim_trailing_filler"]]}
+{"id": "test-2464", "spans": [[16, 22, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2465", "spans": [[8, 19, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2466", "spans": [[15, 24, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2475", "spans": [[19, 26, "SOFT_SKILL", ["gliner"], "head_skill"], [114, 122, "SOFT_SKILL", ["mistral"], "head_skill"], [148, 158, "SOFT_SKILL", ["mistral"], "head_skill"], [172, 182, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2478", "spans": [[29, 57, "SOFT_SKILL", ["mistral"], "split_conjunction"], [62, 68, "SOFT_SKILL", ["mistral"], "split_conjunction"], [69, 82, "SOFT_SKILL", ["mistral"], "split_conjunction"], [83, 90, "SOFT_SKILL", ["mistral"], "head_skill"], [129, 151, "SOFT_SKILL", ["mistral"], "split_conjunction"], [156, 166, "SOFT_SKILL", ["mistral"], "split_conjunction"], [170, 177, "SOFT_SKILL", ["mistral"], "head_skill"], [202, 209, "SOFT_SKILL", ["mistral"], "head_skill"], [231, 236, "SOFT_SKILL", ["mistral"], "split_conjunction"], [241, 280, "SOFT_SKILL", ["mistral"], "split_conjunction"], [281, 286, "SOFT_SKILL", ["mistral"], "split_conjunction"], [287, 289, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2483", "spans": [[17, 27, "SOFT_SKILL", ["gliner", "mistral"], "original"], [28, 37, "SOFT_SKILL", ["mistral"], "original"], [42, 52, "SOFT_SKILL", ["mistral"], "original"], [70, 82, "SOFT_SKILL", ["mistral"], "original"], [70, 82, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-2484", "spans": [[12, 18, "SOFT_SKILL", ["gliner"], "head_skill"], [19, 27, "SOFT_SKILL", ["mistral"], "original"], [47, 67, "SOFT_SKILL", ["gliner"], "trim_leading_filler"], [47, 60, "SOFT_SKILL", ["mistral"], "original"], [88, 117, "SOFT_SKILL", ["mistral"], "split_conjunction"], [122, 142, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2485", "spans": [[10, 17, "SOFT_SKILL", ["mistral"], "head_skill"], [64, 69, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2486", "spans": [[20, 30, "SOFT_SKILL", ["gliner", "mistral"], "original"], [35, 52, "SOFT_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-2487", "spans": [[25, 32, "SOFT_SKILL", ["gliner"], "head_skill"], [75, 83, "HARD_SKILL", ["mistral"], "head_skill"], [234, 241, "HARD_SKILL", ["mistral"], "original"], [246, 253, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2488", "spans": [[27, 36, "HARD_SKILL", ["mistral"], "head_skill"], [52, 57, "HARD_SKILL", ["dictionary"], "original"], [60, 66, "HARD_SKILL", ["mistral"], "head_skill"], [77, 82, "HARD_SKILL", ["mistral"], "original"], [124, 129, "HARD_SKILL", ["mistral"], "split_conjunction"], [130, 149, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2489", "spans": [[44, 51, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2490", "spans": [[0, 6, "HARD_SKILL", ["mistral"], "original"], [7, 14, "HARD_SKILL", ["mistral"], "original"], [19, 28, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2504", "spans": [[53, 56, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2506", "spans": [[17, 24, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2513", "spans": [[25, 32, "HARD_SKILL", ["mistral"], "head_skill"], [57, 61, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2518", "spans": [[20, 58, "SOFT_SKILL", ["mistral"], "split_conjunction"], [63, 72, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2519", "spans": [[30, 37, "SOFT_SKILL", ["mistral"], "head_skill"], [58, 64, "SOFT_SKILL", ["mistral"], "head_skill"], [94, 99, "SOFT_SKILL", ["mistral"], "head_skill"], [141, 149, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2520", "spans": [[95, 106, "SOFT_SKILL", ["gliner"], "original"], [122, 132, "SOFT_SKILL", ["mistral"], "head_skill"], [177, 185, "HARD_SKILL", ["mistral"], "split_conjunction"], [190, 204, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2521", "spans": [[89, 99, "SOFT_SKILL", ["mistral"], "split_conjunction"], [104, 142, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2522", "spans": [[16, 27, "SOFT_SKILL", ["mistral"], "head_skill"], [82, 87, "SOFT_SKILL", ["mistral"], "split_conjunction"], [92, 125, "SOFT_SKILL", ["mistral"], "split_conjunction"], [130, 141, "SOFT_SKILL", ["mistral"], "split_conjunction"], [164, 175, "SOFT_SKILL", ["mistral"], "head_skill"], [200, 207, "SOFT_SKILL", ["mistral"], "head_skill"], [425, 435, "SOFT_SKILL", ["mistral"], "split_conjunction"], [440, 464, "SOFT_SKILL", ["mistral"], "split_conjunction"], [469, 488, "SOFT_SKILL", ["mistral"], "split_conjunction"], [544, 552, "SOFT_SKILL", ["mistral"], "split_conjunction"], [557, 583, "SOFT_SKILL", ["mistral"], "split_conjunction"], [588, 591, "SOFT_SKILL", ["mistral"], "split_conjunction"], [573, 583, "HARD_SKILL", ["dictionary", "gliner", "mistral"], "original"], [598, 632, "SOFT_SKILL", ["mistral"], "split_conjunction"], [637, 650, "SOFT_SKILL", ["mistral"], "split_conjunction"], [729, 733, "HARD_SKILL", ["mistral"], "original"], [738, 741, "HARD_SKILL", ["mistral"], "split_conjunction"], [742, 746, "HARD_SKILL", ["mistral"], "split_conjunction"], [764, 771, "HARD_SKILL", ["mistral"], "head_skill"], [793, 796, "HARD_SKILL", ["mistral"], "original"], [813, 820, "HARD_SKILL", ["mistral"], "original"], [821, 826, "HARD_SKILL", ["mistral"], "original"], [827, 837, "HARD_SKILL", ["mistral"], "original"], [854, 861, "HARD_SKILL", ["mistral"], "head_skill"], [883, 893, "HARD_SKILL", ["mistral"], "head_skill"], [901, 906, "HARD_SKILL", ["mistral"], "head_skill"], [932, 938, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [954, 959, "HARD_SKILL", ["mistral"], "head_skill"], [975, 981, "HARD_SKILL", ["mistral"], "original"], [982, 990, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2523", "spans": [[13, 22, "HARD_SKILL", ["mistral"], "split_conjunction"], [23, 26, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2524", "spans": [[27, 32, "HARD_SKILL", ["mistral"], "split_conjunction"], [33, 38, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2543", "spans": [[40, 50, "SOFT_SKILL", ["mistral"], "head_skill"], [88, 94, "HARD_SKILL", ["mistral"], "split_conjunction"], [99, 118, "HARD_SKILL", ["mistral"], "split_conjunction"], [127, 142, "SOFT_SKILL", ["mistral"], "split_conjunction"], [147, 174, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2544", "spans": [[20, 25, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2547", "spans": [[37, 43, "HARD_SKILL", ["mistral"], "head_skill"], [61, 69, "HARD_SKILL", ["mistral"], "split_conjunction"], [70, 93, "HARD_SKILL", ["mistral"], "split_conjunction"], [119, 132, "HARD_SKILL", ["mistral"], "head_skill"], [138, 142, "HARD_SKILL", ["mistral"], "head_skill"], [172, 179, "HARD_SKILL", ["mistral"], "head_skill"], [172, 179, "SOFT_SKILL", ["gliner"], "head_skill"], [180, 190, "SOFT_SKILL", ["dictionary"], "original"], [212, 222, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2548", "spans": [[12, 22, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [34, 44, "HARD_SKILL", ["gliner", "mistral"], "trim_trailing_filler"]]}
+{"id": "test-2549", "spans": [[11, 16, "SOFT_SKILL", ["mistral"], "head_skill"], [44, 52, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2550", "spans": [[11, 15, "SOFT_SKILL", ["mistral"], "split_conjunction"], [20, 35, "SOFT_SKILL", ["mistral"], "split_conjunction"], [50, 63, "SOFT_SKILL", ["dictionary"], "original"], [50, 63, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-2551", "spans": [[21, 27, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2569", "spans": []}
+{"id": "test-2570", "spans": [[13, 25, "HARD_SKILL", ["mistral"], "split_conjunction"], [30, 52, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2571", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "split_conjunction"], [13, 35, "SOFT_SKILL", ["mistral"], "split_conjunction"], [40, 59, "SOFT_SKILL", ["mistral"], "split_conjunction"], [64, 73, "SOFT_SKILL", ["mistral"], "split_conjunction"], [77, 84, "SOFT_SKILL", ["mistral"], "head_skill"], [113, 119, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2574", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2575", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2576", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [25, 27, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2577", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "head_skill"], [51, 63, "SOFT_SKILL", ["mistral"], "original"], [86, 93, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2578", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "split_conjunction"], [11, 25, "SOFT_SKILL", ["mistral"], "split_conjunction"], [30, 66, "SOFT_SKILL", ["mistral"], "split_conjunction"], [71, 88, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2579", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "head_skill"], [38, 82, "SOFT_SKILL", ["mistral"], "split_conjunction"], [87, 97, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2580", "spans": [[16, 23, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2581", "spans": [[25, 32, "SOFT_SKILL", ["gliner"], "head_skill"], [109, 119, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2582", "spans": [[37, 45, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2583", "spans": [[19, 24, "HARD_SKILL", ["dictionary", "mistral"], "original"], [29, 39, "HARD_SKILL", ["mistral"], "original"], [71, 91, "SOFT_SKILL", ["mistral"], "split_conjunction"], [96, 100, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2584", "spans": [[33, 39, "SOFT_SKILL", ["mistral"], "head_skill"], [91, 99, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2585", "spans": [[15, 23, "SOFT_SKILL", ["mistral"], "head_skill"], [100, 123, "SOFT_SKILL", ["mistral"], "split_conjunction"], [128, 139, "SOFT_SKILL", ["mistral"], "split_conjunction"], [143, 150, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2593", "spans": [[23, 33, "HARD_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-2594", "spans": [[22, 37, "SOFT_SKILL", ["mistral"], "original"], [42, 51, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2595", "spans": [[0, 33, "SOFT_SKILL", ["mistral"], "split_conjunction"], [38, 67, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2598", "spans": [[4, 6, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2599", "spans": [[3, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [17, 22, "SOFT_SKILL", ["mistral"], "original"], [23, 32, "SOFT_SKILL", ["mistral"], "original"], [37, 45, "SOFT_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-2693", "spans": [[5, 13, "SOFT_SKILL", ["gliner"], "original"], [36, 42, "SOFT_SKILL", ["mistral"], "head_skill"], [69, 76, "SOFT_SKILL", ["mistral"], "head_skill"], [106, 115, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-2705", "spans": [[9, 20, "SOFT_SKILL", ["gliner", "mistral"], "original"], [25, 34, "SOFT_SKILL", ["gliner", "mistral"], "original"], [49, 56, "SOFT_SKILL", ["mistral"], "head_skill"], [78, 89, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2706", "spans": [[0, 6, "SOFT_SKILL", ["gliner"], "head_skill"], [7, 15, "SOFT_SKILL", ["mistral"], "split_conjunction"], [20, 62, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2707", "spans": [[8, 21, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-2708", "spans": [[13, 23, "SOFT_SKILL", ["mistral"], "head_skill"], [38, 50, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2723", "spans": [[0, 6, "HARD_SKILL", ["gliner"], "trim_trailing_filler"]]}
+{"id": "test-2724", "spans": [[24, 29, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2734", "spans": [[20, 24, "SOFT_SKILL", ["mistral"], "split_conjunction"], [29, 49, "SOFT_SKILL", ["mistral"], "split_conjunction"], [54, 67, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2737", "spans": [[10, 14, "SOFT_SKILL", ["mistral"], "trim_leading_filler"], [19, 30, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2739", "spans": [[8, 12, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2740", "spans": [[8, 12, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2741", "spans": []}
+{"id": "test-2742", "spans": [[17, 22, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2743", "spans": [[8, 17, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2744", "spans": [[35, 41, "SOFT_SKILL", ["mistral"], "head_skill"], [54, 62, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2746", "spans": [[17, 31, "SOFT_SKILL", ["mistral"], "original"], [37, 41, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2747", "spans": [[8, 16, "SOFT_SKILL", ["mistral"], "original"], [17, 28, "SOFT_SKILL", ["mistral"], "original"], [33, 44, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2748", "spans": [[8, 19, "SOFT_SKILL", ["mistral"], "original"], [24, 37, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2749", "spans": [[8, 12, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2750", "spans": [[10, 14, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2762", "spans": [[68, 72, "SOFT_SKILL", ["mistral"], "original"], [77, 86, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2766", "spans": [[60, 65, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2767", "spans": [[65, 75, "SOFT_SKILL", ["mistral"], "split_conjunction"], [80, 124, "SOFT_SKILL", ["mistral"], "split_conjunction"], [125, 132, "SOFT_SKILL", ["mistral"], "head_skill"], [173, 183, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2769", "spans": [[9, 17, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2770", "spans": [[9, 20, "SOFT_SKILL", ["mistral"], "head_skill"], [48, 60, "SOFT_SKILL", ["mistral"], "split_conjunction"], [65, 97, "SOFT_SKILL", ["mistral"], "split_conjunction"], [103, 110, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [117, 122, "HARD_SKILL", ["mistral"], "head_skill"], [117, 122, "SOFT_SKILL", ["gliner"], "head_skill"], [142, 149, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2771", "spans": [[9, 15, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2773", "spans": [[31, 38, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2774", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "original"], [10, 17, "SOFT_SKILL", ["mistral"], "split_conjunction"], [22, 63, "SOFT_SKILL", ["mistral"], "split_conjunction"], [68, 99, "SOFT_SKILL", ["mistral"], "split_conjunction"], [100, 109, "SOFT_SKILL", ["mistral"], "head_skill"], [118, 121, "SOFT_SKILL", ["mistral"], "head_skill"], [139, 143, "SOFT_SKILL", ["mistral"], "head_skill"], [149, 157, "SOFT_SKILL", ["mistral"], "head_skill"], [168, 175, "SOFT_SKILL", ["mistral"], "head_skill"], [184, 193, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2775", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [45, 49, "HARD_SKILL", ["mistral"], "head_skill"], [60, 67, "HARD_SKILL", ["mistral"], "head_skill"], [83, 86, "HARD_SKILL", ["mistral"], "original"], [89, 99, "HARD_SKILL", ["mistral"], "head_skill"], [117, 129, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [139, 149, "HARD_SKILL", ["mistral"], "original"], [159, 164, "HARD_SKILL", ["mistral"], "head_skill"], [177, 190, "SOFT_SKILL", ["gliner"], "trim_leading_filler"], [177, 190, "SOFT_SKILL", ["dictionary", "mistral"], "original"], [191, 203, "SOFT_SKILL", ["mistral"], "original"], [208, 220, "SOFT_SKILL", ["mistral"], "original"], [228, 243, "SOFT_SKILL", ["mistral"], "original"], [248, 259, "SOFT_SKILL", ["mistral"], "original"], [260, 267, "SOFT_SKILL", ["mistral"], "head_skill"], [274, 285, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2782", "spans": [[10, 17, "SOFT_SKILL", ["mistral"], "original"], [24, 32, "SOFT_SKILL", ["mistral"], "original"], [45, 49, "SOFT_SKILL", ["mistral"], "head_skill"], [63, 71, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2783", "spans": [[26, 33, "SOFT_SKILL", ["mistral"], "head_skill"], [50, 56, "SOFT_SKILL", ["mistral"], "head_skill"], [67, 73, "SOFT_SKILL", ["mistral"], "head_skill"], [115, 138, "SOFT_SKILL", ["mistral"], "split_conjunction"], [143, 167, "SOFT_SKILL", ["mistral"], "split_conjunction"], [171, 178, "SOFT_SKILL", ["mistral"], "head_skill"], [195, 205, "SOFT_SKILL", ["mistral"], "head_skill"], [227, 238, "SOFT_SKILL", ["mistral"], "head_skill"], [264, 269, "SOFT_SKILL", ["mistral"], "split_conjunction"], [274, 309, "SOFT_SKILL", ["mistral"], "split_conjunction"], [386, 395, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [410, 420, "SOFT_SKILL", ["mistral"], "head_skill"], [438, 445, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2784", "spans": [[105, 113, "HARD_SKILL", ["mistral"], "head_skill"], [124, 129, "HARD_SKILL", ["mistral"], "original"], [171, 176, "SOFT_SKILL", ["mistral"], "original"], [181, 188, "SOFT_SKILL", ["mistral"], "original"], [193, 202, "SOFT_SKILL", ["mistral"], "original"], [203, 215, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [234, 249, "SOFT_SKILL", ["dictionary", "mistral"], "original"], [270, 276, "SOFT_SKILL", ["gliner", "mistral"], "trim_leading_filler"], [281, 287, "SOFT_SKILL", ["mistral"], "head_skill"], [320, 323, "SOFT_SKILL", ["gliner"], "head_skill"], [331, 343, "SOFT_SKILL", ["mistral"], "original"], [366, 373, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2785", "spans": [[39, 51, "SOFT_SKILL", ["gliner", "mistral"], "original"], [52, 57, "SOFT_SKILL", ["mistral"], "head_skill"], [153, 158, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2798", "spans": [[22, 31, "SOFT_SKILL", ["mistral"], "original"], [57, 63, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [97, 110, "SOFT_SKILL", ["dictionary"], "original"], [97, 110, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2804", "spans": [[17, 34, "SOFT_SKILL", ["mistral"], "split_conjunction"], [39, 49, "SOFT_SKILL", ["mistral"], "split_conjunction"], [52, 61, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-2805", "spans": [[16, 24, "SOFT_SKILL", ["mistral"], "head_skill"], [67, 75, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2806", "spans": [[2, 9, "SOFT_SKILL", ["mistral"], "head_skill"], [41, 50, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2807", "spans": [[2, 10, "SOFT_SKILL", ["mistral"], "split_conjunction"], [15, 46, "SOFT_SKILL", ["mistral"], "split_conjunction"], [49, 59, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2810", "spans": [[33, 42, "HARD_SKILL", ["mistral"], "original"], [33, 42, "SOFT_SKILL", ["gliner"], "original"]]}
+{"id": "test-2811", "spans": [[48, 56, "HARD_SKILL", ["mistral"], "head_skill"], [79, 88, "HARD_SKILL", ["mistral"], "original"], [89, 99, "HARD_SKILL", ["mistral"], "original"], [100, 110, "HARD_SKILL", ["mistral"], "head_skill"], [162, 168, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2812", "spans": [[16, 24, "SOFT_SKILL", ["mistral"], "head_skill"], [34, 56, "SOFT_SKILL", ["mistral"], "split_conjunction"], [61, 69, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2813", "spans": [[8, 17, "SOFT_SKILL", ["mistral"], "original"], [18, 22, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [32, 36, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [52, 63, "SOFT_SKILL", ["mistral"], "head_skill"], [88, 94, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-2814", "spans": [[46, 54, "HARD_SKILL", ["mistral"], "head_skill"], [95, 100, "SOFT_SKILL", ["mistral"], "head_skill"], [115, 125, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2815", "spans": [[18, 26, "SOFT_SKILL", ["mistral"], "head_skill"], [48, 57, "SOFT_SKILL", ["mistral"], "original"], [58, 68, "SOFT_SKILL", ["mistral"], "original"], [73, 86, "SOFT_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-2816", "spans": [[12, 16, "SOFT_SKILL", ["mistral"], "head_skill"], [34, 41, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [54, 58, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2817", "spans": [[30, 35, "SOFT_SKILL", ["gliner"], "head_skill"], [48, 57, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [77, 82, "HARD_SKILL", ["dictionary", "mistral"], "original"], [87, 90, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2818", "spans": [[16, 20, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2819", "spans": [[50, 60, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [96, 100, "SOFT_SKILL", ["mistral"], "head_skill"], [151, 172, "SOFT_SKILL", ["mistral"], "split_conjunction"], [177, 182, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2820", "spans": [[7, 14, "SOFT_SKILL", ["gliner"], "taxonomy_normalized"], [7, 14, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2839", "spans": [[57, 64, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2840", "spans": [[44, 51, "SOFT_SKILL", ["mistral"], "split_conjunction"], [56, 70, "SOFT_SKILL", ["mistral"], "split_conjunction"], [78, 82, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-2843", "spans": [[21, 30, "SOFT_SKILL", ["mistral"], "split_conjunction"], [35, 52, "SOFT_SKILL", ["mistral"], "split_conjunction"], [53, 64, "SOFT_SKILL", ["mistral"], "head_skill"], [80, 91, "SOFT_SKILL", ["mistral"], "original"], [96, 105, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2847", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "original"], [9, 21, "SOFT_SKILL", ["mistral"], "head_skill"], [83, 97, "SOFT_SKILL", ["mistral"], "original"], [108, 114, "SOFT_SKILL", ["mistral"], "head_skill"], [108, 114, "HARD_SKILL", ["gliner"], "head_skill"], [124, 131, "SOFT_SKILL", ["mistral"], "original"], [136, 140, "SOFT_SKILL", ["mistral"], "head_skill"], [159, 166, "SOFT_SKILL", ["mistral"], "trim_leading_filler"], [171, 178, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2848", "spans": [[0, 4, "SOFT_SKILL", ["mistral"], "head_skill"], [20, 24, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2849", "spans": [[15, 24, "HARD_SKILL", ["mistral"], "original"], [29, 38, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2861", "spans": [[25, 31, "SOFT_SKILL", ["gliner"], "head_skill"], [25, 42, "SOFT_SKILL", ["mistral"], "split_conjunction"], [47, 59, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2862", "spans": [[8, 16, "SOFT_SKILL", ["mistral"], "split_conjunction"], [21, 58, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2865", "spans": [[107, 115, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2866", "spans": [[31, 74, "SOFT_SKILL", ["mistral"], "split_conjunction"], [79, 93, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2874", "spans": [[49, 54, "SOFT_SKILL", ["mistral"], "split_conjunction"], [59, 82, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2875", "spans": [[9, 12, "SOFT_SKILL", ["mistral"], "head_skill"], [27, 32, "SOFT_SKILL", ["mistral"], "original"], [37, 44, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2878", "spans": [[23, 29, "SOFT_SKILL", ["mistral"], "head_skill"], [70, 73, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2879", "spans": [[64, 79, "SOFT_SKILL", ["mistral"], "split_conjunction"], [123, 133, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-2883", "spans": [[20, 27, "HARD_SKILL", ["mistral"], "head_skill"], [68, 82, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-2884", "spans": [[31, 39, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-2885", "spans": [[22, 35, "SOFT_SKILL", ["mistral"], "split_conjunction"], [40, 68, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2886", "spans": [[8, 18, "SOFT_SKILL", ["gliner", "mistral"], "original"], [31, 35, "SOFT_SKILL", ["mistral"], "head_skill"], [61, 77, "SOFT_SKILL", ["mistral"], "split_conjunction"], [82, 113, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2887", "spans": [[30, 40, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2888", "spans": [[92, 105, "SOFT_SKILL", ["dictionary", "mistral"], "original"], [110, 123, "SOFT_SKILL", ["dictionary", "mistral"], "original"]]}
+{"id": "test-2889", "spans": [[0, 3, "HARD_SKILL", ["gliner", "mistral"], "original"], [8, 12, "HARD_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-2890", "spans": [[4, 24, "SOFT_SKILL", ["mistral"], "split_conjunction"], [29, 44, "SOFT_SKILL", ["mistral"], "split_conjunction"], [49, 54, "SOFT_SKILL", ["mistral"], "head_skill"], [116, 123, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2891", "spans": [[4, 10, "SOFT_SKILL", ["mistral"], "head_skill"], [86, 97, "SOFT_SKILL", ["mistral"], "split_conjunction"], [102, 129, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2901", "spans": [[60, 69, "SOFT_SKILL", ["mistral"], "original"], [70, 79, "SOFT_SKILL", ["mistral"], "original"], [84, 92, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2908", "spans": [[34, 44, "SOFT_SKILL", ["gliner"], "head_skill"], [56, 63, "SOFT_SKILL", ["gliner"], "head_skill"], [141, 152, "SOFT_SKILL", ["mistral"], "head_skill"], [212, 217, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2909", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [51, 54, "HARD_SKILL", ["mistral"], "head_skill"], [71, 78, "HARD_SKILL", ["mistral"], "head_skill"], [93, 96, "HARD_SKILL", ["mistral"], "split_conjunction"], [97, 100, "HARD_SKILL", ["mistral"], "split_conjunction"], [105, 136, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2910", "spans": [[0, 26, "SOFT_SKILL", ["mistral"], "split_conjunction"], [31, 55, "SOFT_SKILL", ["mistral"], "split_conjunction"], [60, 78, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2912", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "head_skill"], [55, 69, "SOFT_SKILL", ["mistral"], "head_skill"], [142, 152, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2913", "spans": [[4, 14, "SOFT_SKILL", ["gliner"], "head_skill"], [26, 33, "SOFT_SKILL", ["gliner"], "head_skill"], [63, 71, "SOFT_SKILL", ["mistral"], "head_skill"], [137, 145, "SOFT_SKILL", ["mistral"], "split_conjunction"], [150, 193, "SOFT_SKILL", ["mistral"], "split_conjunction"], [198, 218, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2914", "spans": [[161, 167, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [191, 195, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-2915", "spans": [[20, 27, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [46, 55, "SOFT_SKILL", ["gliner", "mistral"], "original"], [63, 77, "SOFT_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-2916", "spans": [[10, 41, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [57, 63, "HARD_SKILL", ["mistral"], "original"], [68, 76, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2917", "spans": [[64, 73, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2918", "spans": [[16, 21, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2938", "spans": [[16, 21, "SOFT_SKILL", ["mistral"], "original"], [25, 33, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2939", "spans": [[8, 16, "SOFT_SKILL", ["mistral"], "split_conjunction"], [21, 53, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2940", "spans": [[17, 24, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2942", "spans": [[9, 16, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2943", "spans": [[6, 8, "SOFT_SKILL", ["gliner"], "head_skill"], [36, 40, "SOFT_SKILL", ["mistral"], "head_skill"], [153, 159, "SOFT_SKILL", ["mistral"], "split_conjunction"], [169, 171, "HARD_SKILL", ["mistral"], "head_skill"], [190, 198, "HARD_SKILL", ["mistral"], "head_skill"], [209, 218, "HARD_SKILL", ["mistral"], "original"], [223, 234, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2945", "spans": [[95, 102, "SOFT_SKILL", ["gliner", "mistral"], "trim_trailing_filler"]]}
+{"id": "test-2948", "spans": [[61, 71, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2951", "spans": [[26, 35, "SOFT_SKILL", ["mistral"], "head_skill"], [93, 111, "SOFT_SKILL", ["mistral"], "split_conjunction"], [116, 131, "SOFT_SKILL", ["mistral"], "split_conjunction"], [132, 141, "SOFT_SKILL", ["mistral"], "head_skill"], [166, 175, "SOFT_SKILL", ["mistral"], "head_skill"], [196, 215, "SOFT_SKILL", ["mistral"], "split_conjunction"], [220, 259, "SOFT_SKILL", ["mistral"], "split_conjunction"], [271, 280, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2959", "spans": []}
+{"id": "test-2960", "spans": [[0, 11, "SOFT_SKILL", ["mistral"], "original"], [12, 19, "HARD_SKILL", ["mistral"], "head_skill"], [42, 54, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-2961", "spans": [[46, 48, "HARD_SKILL", ["mistral"], "head_skill"], [112, 114, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-2962", "spans": [[34, 48, "HARD_SKILL", ["mistral"], "head_skill"], [75, 79, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [90, 101, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2963", "spans": [[64, 68, "SOFT_SKILL", ["mistral"], "head_skill"], [87, 93, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2964", "spans": [[4, 8, "SOFT_SKILL", ["mistral"], "head_skill"], [58, 70, "SOFT_SKILL", ["mistral"], "head_skill"], [86, 97, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2965", "spans": [[17, 25, "SOFT_SKILL", ["mistral"], "original"], [100, 121, "SOFT_SKILL", ["mistral"], "split_conjunction"], [126, 152, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2966", "spans": [[10, 19, "SOFT_SKILL", ["mistral"], "head_skill"], [46, 80, "SOFT_SKILL", ["mistral"], "split_conjunction"], [85, 98, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2967", "spans": [[22, 29, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2968", "spans": [[32, 39, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2969", "spans": [[102, 110, "HARD_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-2988", "spans": [[9, 13, "SOFT_SKILL", ["mistral"], "head_skill"], [78, 83, "SOFT_SKILL", ["mistral"], "head_skill"], [128, 166, "SOFT_SKILL", ["mistral"], "split_conjunction"], [171, 191, "SOFT_SKILL", ["mistral"], "split_conjunction"], [196, 201, "SOFT_SKILL", ["mistral"], "head_skill"], [230, 237, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2989", "spans": [[4, 11, "SOFT_SKILL", ["mistral"], "head_skill"], [70, 74, "HARD_SKILL", ["mistral"], "head_skill"], [142, 164, "SOFT_SKILL", ["gliner", "mistral"], "trim_trailing_filler"], [176, 186, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2990", "spans": [[23, 30, "HARD_SKILL", ["mistral"], "head_skill"], [42, 45, "HARD_SKILL", ["mistral"], "head_skill"], [53, 55, "HARD_SKILL", ["mistral"], "original"], [60, 71, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2993", "spans": [[130, 172, "SOFT_SKILL", ["mistral"], "split_conjunction"], [177, 194, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-2994", "spans": [[25, 38, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2995", "spans": [[44, 53, "SOFT_SKILL", ["mistral"], "head_skill"], [86, 93, "SOFT_SKILL", ["gliner"], "head_skill"], [97, 106, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-2996", "spans": [[43, 50, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2997", "spans": [[13, 18, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-2998", "spans": [[0, 28, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-2999", "spans": [[17, 19, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3000", "spans": [[17, 21, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3002", "spans": [[10, 23, "SOFT_SKILL", ["gliner"], "taxonomy_normalized"], [10, 23, "SOFT_SKILL", ["dictionary"], "original"], [10, 23, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [31, 38, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3003", "spans": [[11, 28, "SOFT_SKILL", ["mistral"], "split_conjunction"], [33, 61, "SOFT_SKILL", ["mistral"], "split_conjunction"], [62, 65, "SOFT_SKILL", ["gliner"], "head_skill"], [77, 82, "SOFT_SKILL", ["mistral"], "head_skill"], [99, 121, "SOFT_SKILL", ["gliner"], "split_conjunction"], [126, 160, "SOFT_SKILL", ["gliner"], "split_conjunction"], [114, 121, "SOFT_SKILL", ["mistral"], "split_conjunction"], [126, 160, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3027", "spans": [[72, 82, "SOFT_SKILL", ["mistral"], "split_conjunction"], [87, 105, "SOFT_SKILL", ["mistral"], "split_conjunction"], [110, 141, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3028", "spans": [[35, 43, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3029", "spans": [[16, 20, "HARD_SKILL", ["mistral"], "head_skill"], [41, 52, "HARD_SKILL", ["mistral"], "head_skill"], [61, 69, "HARD_SKILL", ["mistral"], "head_skill"], [86, 98, "HARD_SKILL", ["mistral"], "original"], [108, 120, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3030", "spans": [[49, 68, "HARD_SKILL", ["mistral"], "split_conjunction"], [73, 101, "HARD_SKILL", ["mistral"], "split_conjunction"], [113, 121, "SOFT_SKILL", ["mistral"], "head_skill"], [160, 168, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3031", "spans": []}
+{"id": "test-3032", "spans": [[14, 19, "SOFT_SKILL", ["mistral"], "head_skill"], [85, 90, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3033", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3034", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "split_conjunction"], [14, 28, "SOFT_SKILL", ["mistral"], "split_conjunction"], [32, 38, "SOFT_SKILL", ["mistral"], "head_skill"], [50, 77, "SOFT_SKILL", ["mistral"], "split_conjunction"], [82, 115, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3035", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"], [23, 29, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3036", "spans": []}
+{"id": "test-3037", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3038", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3039", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "split_conjunction"], [14, 58, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3043", "spans": [[35, 44, "SOFT_SKILL", ["mistral"], "original"], [45, 55, "SOFT_SKILL", ["gliner", "mistral"], "original"], [60, 70, "SOFT_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-3044", "spans": [[16, 21, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [33, 37, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [50, 57, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3045", "spans": [[8, 16, "SOFT_SKILL", ["mistral"], "original"], [17, 26, "SOFT_SKILL", ["gliner", "mistral"], "original"], [39, 43, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3046", "spans": [[8, 18, "SOFT_SKILL", ["mistral"], "original"], [65, 68, "HARD_SKILL", ["mistral"], "original"], [73, 80, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3049", "spans": [[18, 26, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3052", "spans": [[32, 39, "HARD_SKILL", ["mistral"], "original"], [98, 104, "HARD_SKILL", ["mistral"], "original"], [108, 114, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3066", "spans": [[61, 65, "SOFT_SKILL", ["gliner"], "taxonomy_normalized"], [61, 65, "HARD_SKILL", ["dictionary"], "original"], [106, 109, "HARD_SKILL", ["mistral"], "head_skill"], [116, 123, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3067", "spans": [[21, 30, "SOFT_SKILL", ["mistral"], "head_skill"], [49, 59, "SOFT_SKILL", ["mistral"], "head_skill"], [86, 96, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3068", "spans": [[77, 100, "SOFT_SKILL", ["mistral"], "split_conjunction"], [105, 129, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3069", "spans": [[24, 30, "HARD_SKILL", ["mistral"], "head_skill"], [40, 47, "HARD_SKILL", ["mistral"], "head_skill"], [61, 65, "HARD_SKILL", ["mistral"], "head_skill"], [78, 86, "SOFT_SKILL", ["mistral"], "head_skill"], [103, 115, "SOFT_SKILL", ["mistral"], "head_skill"], [130, 136, "HARD_SKILL", ["mistral"], "head_skill"], [152, 160, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3070", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"], [103, 113, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3071", "spans": [[9, 20, "SOFT_SKILL", ["mistral"], "head_skill"], [40, 52, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3072", "spans": [[22, 33, "HARD_SKILL", ["mistral"], "head_skill"], [92, 98, "SOFT_SKILL", ["mistral"], "head_skill"], [177, 201, "SOFT_SKILL", ["mistral"], "split_conjunction"], [206, 223, "SOFT_SKILL", ["mistral"], "split_conjunction"], [242, 249, "SOFT_SKILL", ["mistral"], "head_skill"], [295, 312, "SOFT_SKILL", ["mistral"], "split_conjunction"], [315, 332, "SOFT_SKILL", ["mistral"], "split_conjunction"], [337, 343, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3077", "spans": [[9, 13, "SOFT_SKILL", ["mistral"], "split_conjunction"], [18, 49, "SOFT_SKILL", ["mistral"], "split_conjunction"], [54, 70, "SOFT_SKILL", ["mistral"], "split_conjunction"], [95, 100, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3084", "spans": [[44, 83, "SOFT_SKILL", ["mistral"], "split_conjunction"], [88, 99, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3085", "spans": [[83, 93, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3086", "spans": [[20, 27, "HARD_SKILL", ["mistral"], "head_skill"], [56, 67, "HARD_SKILL", ["mistral"], "original"], [68, 80, "HARD_SKILL", ["mistral"], "original"], [81, 89, "HARD_SKILL", ["mistral"], "original"], [90, 100, "HARD_SKILL", ["mistral"], "original"], [101, 107, "HARD_SKILL", ["mistral"], "original"], [153, 161, "SOFT_SKILL", ["mistral"], "head_skill"], [192, 196, "HARD_SKILL", ["mistral"], "head_skill"], [219, 228, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3087", "spans": [[0, 18, "SOFT_SKILL", ["mistral"], "split_conjunction"], [23, 32, "SOFT_SKILL", ["mistral"], "split_conjunction"], [46, 53, "SOFT_SKILL", ["mistral"], "head_skill"], [63, 67, "SOFT_SKILL", ["mistral"], "head_skill"], [101, 113, "SOFT_SKILL", ["mistral"], "head_skill"], [170, 180, "SOFT_SKILL", ["gliner"], "trim_leading_filler"], [183, 191, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3088", "spans": [[0, 9, "SOFT_SKILL", ["mistral"], "head_skill"], [103, 117, "HARD_SKILL", ["mistral"], "original"], [154, 166, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3089", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [25, 33, "SOFT_SKILL", ["mistral"], "split_conjunction"], [38, 62, "SOFT_SKILL", ["mistral"], "split_conjunction"], [67, 107, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3090", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3091", "spans": [[18, 24, "HARD_SKILL", ["mistral"], "head_skill"], [64, 67, "HARD_SKILL", ["mistral"], "head_skill"], [103, 110, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3094", "spans": [[10, 24, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [42, 46, "HARD_SKILL", ["dictionary", "mistral"], "original"], [47, 57, "HARD_SKILL", ["mistral"], "original"], [73, 77, "HARD_SKILL", ["mistral"], "head_skill"], [111, 122, "HARD_SKILL", ["mistral"], "original"], [111, 122, "SOFT_SKILL", ["mistral"], "head_skill"], [133, 138, "HARD_SKILL", ["mistral"], "original"], [163, 174, "SOFT_SKILL", ["mistral"], "head_skill"], [203, 212, "HARD_SKILL", ["mistral"], "original"], [248, 253, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3095", "spans": [[0, 6, "HARD_SKILL", ["mistral"], "original"], [42, 44, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3096", "spans": [[19, 46, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [55, 62, "HARD_SKILL", ["mistral"], "original"], [63, 70, "HARD_SKILL", ["mistral"], "original"], [79, 104, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"], [84, 90, "SOFT_SKILL", ["mistral"], "head_skill"], [121, 131, "SOFT_SKILL", ["mistral"], "head_skill"], [197, 201, "SOFT_SKILL", ["mistral"], "head_skill"], [229, 240, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3097", "spans": [[8, 12, "SOFT_SKILL", ["mistral"], "head_skill"], [96, 104, "SOFT_SKILL", ["mistral"], "head_skill"], [119, 126, "SOFT_SKILL", ["dictionary", "mistral"], "head_skill"]]}
+{"id": "test-3098", "spans": [[0, 5, "HARD_SKILL", ["mistral"], "head_skill"], [68, 70, "HARD_SKILL", ["mistral"], "original"], [85, 98, "SOFT_SKILL", ["dictionary"], "original"], [117, 120, "HARD_SKILL", ["mistral"], "original"], [125, 128, "HARD_SKILL", ["mistral"], "original"], [153, 157, "HARD_SKILL", ["mistral"], "head_skill"], [193, 203, "HARD_SKILL", ["mistral"], "head_skill"], [223, 232, "HARD_SKILL", ["mistral"], "head_skill"], [270, 277, "SOFT_SKILL", ["mistral"], "head_skill"], [293, 305, "HARD_SKILL", ["mistral"], "head_skill"], [320, 334, "HARD_SKILL", ["mistral"], "head_skill"], [348, 354, "HARD_SKILL", ["mistral"], "head_skill"], [373, 380, "HARD_SKILL", ["mistral"], "head_skill"], [390, 394, "HARD_SKILL", ["mistral"], "head_skill"], [432, 435, "HARD_SKILL", ["mistral"], "head_skill"], [455, 460, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3099", "spans": [[34, 64, "HARD_SKILL", ["mistral"], "split_conjunction"], [69, 76, "HARD_SKILL", ["mistral"], "split_conjunction"], [77, 84, "HARD_SKILL", ["mistral"], "head_skill"], [155, 163, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3100", "spans": [[22, 26, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3103", "spans": [[34, 44, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [65, 78, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"], [96, 106, "HARD_SKILL", ["mistral"], "original"], [111, 118, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3104", "spans": [[16, 23, "SOFT_SKILL", ["mistral"], "original"], [28, 43, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3105", "spans": []}
+{"id": "test-3106", "spans": [[14, 58, "SOFT_SKILL", ["mistral"], "split_conjunction"], [63, 71, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3107", "spans": [[0, 6, "SOFT_SKILL", ["mistral"], "split_conjunction"], [11, 53, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3108", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"], [25, 32, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3109", "spans": [[0, 15, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3110", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "split_conjunction"], [13, 39, "SOFT_SKILL", ["mistral"], "split_conjunction"], [44, 58, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3111", "spans": []}
+{"id": "test-3112", "spans": [[0, 21, "SOFT_SKILL", ["mistral"], "split_conjunction"], [26, 35, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3117", "spans": [[34, 48, "HARD_SKILL", ["mistral"], "head_skill"], [75, 84, "HARD_SKILL", ["mistral"], "original"], [85, 95, "HARD_SKILL", ["mistral"], "head_skill"], [107, 116, "HARD_SKILL", ["mistral"], "original"], [117, 120, "HARD_SKILL", ["mistral"], "original"], [121, 125, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3118", "spans": [[13, 19, "HARD_SKILL", ["mistral"], "head_skill"], [38, 45, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3119", "spans": [[21, 31, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3120", "spans": [[42, 52, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3121", "spans": [[22, 31, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3122", "spans": [[20, 26, "HARD_SKILL", ["mistral"], "original"], [31, 38, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3139", "spans": [[43, 51, "HARD_SKILL", ["gliner"], "head_skill"], [120, 130, "SOFT_SKILL", ["mistral"], "head_skill"], [157, 166, "SOFT_SKILL", ["mistral"], "head_skill"], [248, 255, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3141", "spans": []}
+{"id": "test-3142", "spans": [[26, 32, "SOFT_SKILL", ["mistral"], "head_skill"], [64, 72, "SOFT_SKILL", ["mistral"], "head_skill"], [90, 116, "SOFT_SKILL", ["mistral"], "split_conjunction"], [121, 156, "SOFT_SKILL", ["mistral"], "split_conjunction"], [157, 184, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-3143", "spans": [[61, 73, "HARD_SKILL", ["mistral"], "head_skill"], [109, 120, "SOFT_SKILL", ["mistral"], "original"], [135, 137, "HARD_SKILL", ["mistral"], "original"], [138, 144, "HARD_SKILL", ["dictionary", "mistral"], "original"], [148, 152, "HARD_SKILL", ["dictionary", "mistral"], "original"], [172, 176, "HARD_SKILL", ["mistral"], "head_skill"], [210, 214, "HARD_SKILL", ["mistral"], "original"], [244, 249, "HARD_SKILL", ["mistral"], "head_skill"], [264, 284, "HARD_SKILL", ["mistral"], "trim_trailing_filler"], [312, 321, "HARD_SKILL", ["mistral"], "head_skill"], [335, 340, "HARD_SKILL", ["mistral"], "original"], [344, 354, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3144", "spans": [[88, 92, "HARD_SKILL", ["mistral"], "head_skill"], [113, 118, "HARD_SKILL", ["mistral"], "head_skill"], [129, 136, "HARD_SKILL", ["dictionary"], "head_skill"], [129, 156, "HARD_SKILL", ["mistral"], "split_conjunction"], [161, 171, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3145", "spans": [[25, 30, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3151", "spans": []}
+{"id": "test-3152", "spans": []}
+{"id": "test-3161", "spans": [[44, 55, "SOFT_SKILL", ["mistral"], "split_conjunction"], [60, 77, "SOFT_SKILL", ["mistral"], "split_conjunction"], [78, 85, "SOFT_SKILL", ["mistral"], "head_skill"], [98, 107, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3162", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "split_conjunction"], [12, 29, "SOFT_SKILL", ["mistral"], "split_conjunction"], [30, 39, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3166", "spans": [[68, 76, "HARD_SKILL", ["mistral"], "head_skill"], [85, 103, "SOFT_SKILL", ["mistral"], "split_conjunction"], [108, 119, "SOFT_SKILL", ["mistral"], "split_conjunction"], [120, 123, "SOFT_SKILL", ["mistral"], "head_skill"], [159, 167, "SOFT_SKILL", ["mistral"], "original"], [172, 179, "SOFT_SKILL", ["mistral"], "original"], [190, 195, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3182", "spans": [[90, 100, "SOFT_SKILL", ["mistral"], "split_conjunction"], [105, 147, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3186", "spans": []}
+{"id": "test-3187", "spans": [[40, 52, "SOFT_SKILL", ["mistral"], "head_skill"], [97, 108, "HARD_SKILL", ["mistral"], "head_skill"], [120, 122, "HARD_SKILL", ["mistral"], "head_skill"], [155, 165, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3188", "spans": [[9, 22, "SOFT_SKILL", ["dictionary"], "original"]]}
+{"id": "test-3191", "spans": [[70, 80, "HARD_SKILL", ["mistral"], "head_skill"], [99, 108, "HARD_SKILL", ["mistral"], "head_skill"], [138, 150, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3194", "spans": [[39, 42, "SOFT_SKILL", ["mistral"], "head_skill"], [47, 57, "HARD_SKILL", ["gliner"], "original"]]}
+{"id": "test-3195", "spans": [[94, 124, "SOFT_SKILL", ["mistral"], "split_conjunction"], [129, 137, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3196", "spans": [[29, 34, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3197", "spans": [[34, 50, "SOFT_SKILL", ["mistral"], "split_conjunction"], [55, 82, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3198", "spans": [[61, 88, "SOFT_SKILL", ["mistral"], "split_conjunction"], [93, 123, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3200", "spans": [[34, 42, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3201", "spans": [[45, 49, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [68, 78, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3202", "spans": [[0, 4, "SOFT_SKILL", ["mistral"], "split_conjunction"], [9, 48, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3203", "spans": [[0, 28, "HARD_SKILL", ["mistral"], "split_conjunction"], [33, 41, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3204", "spans": [[0, 4, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3205", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "split_conjunction"], [12, 42, "SOFT_SKILL", ["mistral"], "split_conjunction"], [43, 66, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3206", "spans": [[0, 3, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3207", "spans": [[0, 7, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3208", "spans": [[4, 32, "HARD_SKILL", ["mistral"], "split_conjunction"], [37, 57, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3209", "spans": [[0, 6, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3210", "spans": [[4, 12, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3211", "spans": [[0, 10, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3212", "spans": [[0, 26, "SOFT_SKILL", ["mistral"], "split_conjunction"], [31, 50, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3213", "spans": [[0, 25, "SOFT_SKILL", ["mistral"], "split_conjunction"], [30, 77, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3214", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "head_skill"], [18, 24, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3215", "spans": [[38, 46, "HARD_SKILL", ["gliner", "mistral"], "split_conjunction"], [47, 67, "HARD_SKILL", ["gliner", "mistral"], "split_conjunction"], [89, 100, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3247", "spans": [[0, 17, "SOFT_SKILL", ["mistral"], "split_conjunction"], [22, 25, "SOFT_SKILL", ["mistral"], "split_conjunction"], [26, 37, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3271", "spans": [[106, 114, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3272", "spans": [[24, 58, "SOFT_SKILL", ["mistral"], "split_conjunction"], [63, 86, "SOFT_SKILL", ["mistral"], "split_conjunction"], [91, 119, "SOFT_SKILL", ["mistral"], "split_conjunction"], [124, 131, "SOFT_SKILL", ["mistral"], "split_conjunction"], [139, 147, "SOFT_SKILL", ["mistral"], "split_conjunction"], [152, 183, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3273", "spans": [[38, 51, "SOFT_SKILL", ["mistral"], "head_skill"], [81, 90, "HARD_SKILL", ["mistral"], "head_skill"], [143, 151, "SOFT_SKILL", ["mistral"], "original"], [152, 164, "SOFT_SKILL", ["mistral"], "head_skill"], [323, 332, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3275", "spans": [[51, 59, "HARD_SKILL", ["mistral"], "head_skill"], [51, 59, "SOFT_SKILL", ["gliner"], "head_skill"], [93, 101, "SOFT_SKILL", ["mistral"], "original"], [127, 136, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3276", "spans": [[41, 48, "SOFT_SKILL", ["mistral"], "head_skill"], [75, 107, "SOFT_SKILL", ["mistral"], "split_conjunction"], [112, 134, "SOFT_SKILL", ["mistral"], "split_conjunction"], [149, 170, "SOFT_SKILL", ["mistral"], "split_conjunction"], [175, 182, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3284", "spans": [[90, 103, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3285", "spans": []}
+{"id": "test-3286", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"], [20, 30, "SOFT_SKILL", ["mistral"], "head_skill"], [52, 63, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3287", "spans": [[9, 22, "HARD_SKILL", ["mistral"], "head_skill"], [45, 52, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [71, 80, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3288", "spans": []}
+{"id": "test-3289", "spans": []}
+{"id": "test-3290", "spans": []}
+{"id": "test-3291", "spans": []}
+{"id": "test-3293", "spans": [[0, 16, "SOFT_SKILL", ["mistral"], "split_conjunction"], [88, 101, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3294", "spans": [[20, 34, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3295", "spans": [[0, 13, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3296", "spans": []}
+{"id": "test-3297", "spans": [[34, 42, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3298", "spans": []}
+{"id": "test-3299", "spans": [[53, 66, "SOFT_SKILL", ["mistral"], "head_skill"], [96, 105, "HARD_SKILL", ["mistral"], "head_skill"], [138, 144, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3302", "spans": [[41, 49, "SOFT_SKILL", ["mistral"], "original"], [76, 84, "HARD_SKILL", ["mistral"], "head_skill"], [76, 84, "SOFT_SKILL", ["gliner"], "head_skill"], [108, 112, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3304", "spans": []}
+{"id": "test-3305", "spans": [[41, 48, "SOFT_SKILL", ["mistral"], "head_skill"], [75, 107, "SOFT_SKILL", ["mistral"], "split_conjunction"], [112, 134, "SOFT_SKILL", ["mistral"], "split_conjunction"], [149, 170, "SOFT_SKILL", ["mistral"], "split_conjunction"], [175, 182, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3306", "spans": [[37, 45, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3310", "spans": [[51, 77, "HARD_SKILL", ["mistral"], "split_conjunction"], [82, 93, "HARD_SKILL", ["mistral"], "split_conjunction"], [106, 117, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3311", "spans": [[52, 59, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3328", "spans": []}
+{"id": "test-3357", "spans": [[8, 12, "SOFT_SKILL", ["mistral"], "head_skill"], [81, 87, "SOFT_SKILL", ["mistral"], "head_skill"], [179, 189, "HARD_SKILL", ["mistral"], "original"], [202, 207, "SOFT_SKILL", ["mistral"], "head_skill"], [231, 242, "SOFT_SKILL", ["mistral"], "head_skill"], [505, 511, "HARD_SKILL", ["mistral"], "head_skill"], [562, 587, "SOFT_SKILL", ["mistral"], "split_conjunction"], [592, 606, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3358", "spans": []}
+{"id": "test-3360", "spans": [[11, 14, "SOFT_SKILL", ["mistral"], "head_skill"], [43, 50, "SOFT_SKILL", ["mistral"], "head_skill"], [92, 101, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3361", "spans": [[5, 16, "SOFT_SKILL", ["mistral"], "head_skill"], [35, 46, "SOFT_SKILL", ["mistral"], "head_skill"], [72, 84, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3362", "spans": [[7, 17, "SOFT_SKILL", ["gliner"], "taxonomy_normalized"], [7, 17, "SOFT_SKILL", ["dictionary"], "original"], [7, 17, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"], [127, 135, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3363", "spans": [[4, 11, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3364", "spans": [[3, 13, "SOFT_SKILL", ["mistral"], "original"], [18, 33, "SOFT_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-3365", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "head_skill"], [58, 81, "SOFT_SKILL", ["mistral"], "split_conjunction"], [86, 91, "SOFT_SKILL", ["mistral"], "split_conjunction"], [94, 101, "SOFT_SKILL", ["gliner", "mistral"], "original"], [102, 111, "SOFT_SKILL", ["mistral"], "original"], [117, 124, "SOFT_SKILL", ["mistral"], "head_skill"], [134, 141, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3366", "spans": [[24, 27, "SOFT_SKILL", ["mistral"], "head_skill"], [52, 57, "SOFT_SKILL", ["mistral"], "head_skill"], [75, 86, "SOFT_SKILL", ["mistral"], "head_skill"], [139, 146, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3370", "spans": []}
+{"id": "test-3371", "spans": [[81, 116, "SOFT_SKILL", ["mistral"], "split_conjunction"], [121, 138, "SOFT_SKILL", ["mistral"], "split_conjunction"], [149, 153, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3372", "spans": [[47, 53, "SOFT_SKILL", ["gliner"], "head_skill"], [57, 64, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3373", "spans": [[60, 67, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3374", "spans": [[7, 13, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3375", "spans": [[0, 8, "SOFT_SKILL", ["mistral"], "original"], [16, 22, "SOFT_SKILL", ["mistral"], "original"], [25, 28, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3376", "spans": [[32, 38, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [64, 70, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3378", "spans": []}
+{"id": "test-3379", "spans": [[27, 33, "SOFT_SKILL", ["mistral"], "head_skill"], [74, 84, "SOFT_SKILL", ["dictionary"], "original"], [74, 84, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3381", "spans": [[0, 14, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3382", "spans": [[38, 61, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
+{"id": "test-3383", "spans": []}
+{"id": "test-3385", "spans": [[53, 63, "HARD_SKILL", ["mistral"], "original"], [77, 88, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3386", "spans": [[0, 8, "HARD_SKILL", ["mistral"], "split_conjunction"], [9, 29, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3391", "spans": [[78, 84, "HARD_SKILL", ["mistral"], "original"], [87, 94, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3392", "spans": [[27, 43, "HARD_SKILL", ["mistral"], "original"], [62, 69, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3393", "spans": [[25, 31, "HARD_SKILL", ["mistral"], "head_skill"], [25, 31, "SOFT_SKILL", ["gliner"], "head_skill"]]}
+{"id": "test-3394", "spans": [[9, 14, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3395", "spans": [[28, 35, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3396", "spans": [[9, 18, "SOFT_SKILL", ["gliner", "mistral"], "trim_trailing_filler"]]}
+{"id": "test-3403", "spans": [[136, 143, "SOFT_SKILL", ["mistral"], "head_skill"], [176, 181, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3413", "spans": [[19, 25, "HARD_SKILL", ["mistral"], "head_skill"], [19, 31, "HARD_SKILL", ["gliner"], "trim_trailing_filler"], [51, 64, "HARD_SKILL", ["mistral"], "original"], [115, 132, "SOFT_SKILL", ["mistral"], "split_conjunction"], [137, 152, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3415", "spans": [[130, 138, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"], [146, 154, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3416", "spans": [[35, 41, "HARD_SKILL", ["mistral"], "head_skill"], [52, 55, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3417", "spans": [[17, 23, "SOFT_SKILL", ["mistral"], "head_skill"], [94, 121, "SOFT_SKILL", ["mistral"], "split_conjunction"], [125, 133, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3418", "spans": [[17, 22, "SOFT_SKILL", ["mistral"], "head_skill"], [69, 74, "HARD_SKILL", ["mistral"], "head_skill"], [88, 100, "HARD_SKILL", ["mistral"], "head_skill"], [122, 125, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3420", "spans": [[0, 15, "SOFT_SKILL", ["mistral"], "split_conjunction"], [20, 35, "SOFT_SKILL", ["mistral"], "split_conjunction"], [9, 15, "HARD_SKILL", ["mistral"], "original"], [66, 70, "SOFT_SKILL", ["mistral"], "head_skill"], [107, 115, "HARD_SKILL", ["mistral"], "head_skill"], [142, 151, "HARD_SKILL", ["mistral"], "head_skill"], [183, 190, "SOFT_SKILL", ["mistral"], "head_skill"], [202, 210, "HARD_SKILL", ["mistral"], "original"], [272, 289, "SOFT_SKILL", ["mistral"], "split_conjunction"], [294, 324, "SOFT_SKILL", ["mistral"], "split_conjunction"], [303, 313, "HARD_SKILL", ["mistral"], "head_skill"], [325, 332, "SOFT_SKILL", ["mistral"], "head_skill"], [337, 343, "HARD_SKILL", ["mistral"], "head_skill"], [372, 379, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3421", "spans": [[20, 29, "SOFT_SKILL", ["mistral"], "split_conjunction"], [34, 63, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3422", "spans": [[6, 14, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3423", "spans": [[20, 28, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3424", "spans": [[0, 8, "HARD_SKILL", ["mistral"], "head_skill"], [0, 8, "SOFT_SKILL", ["gliner"], "head_skill"], [24, 30, "SOFT_SKILL", ["gliner"], "head_skill"], [24, 30, "HARD_SKILL", ["mistral"], "head_skill"], [185, 188, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3425", "spans": [[27, 42, "SOFT_SKILL", ["mistral"], "split_conjunction"], [47, 69, "SOFT_SKILL", ["mistral"], "split_conjunction"], [107, 113, "SOFT_SKILL", ["mistral"], "head_skill"], [148, 155, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3426", "spans": [[26, 35, "HARD_SKILL", ["mistral"], "head_skill"], [76, 84, "SOFT_SKILL", ["gliner", "mistral"], "original"], [89, 94, "SOFT_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3427", "spans": [[69, 78, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3428", "spans": [[21, 27, "SOFT_SKILL", ["mistral"], "head_skill"], [68, 72, "SOFT_SKILL", ["mistral"], "head_skill"], [110, 114, "HARD_SKILL", ["mistral"], "original"], [115, 120, "HARD_SKILL", ["mistral"], "original"], [121, 129, "HARD_SKILL", ["mistral"], "original"], [134, 147, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3443", "spans": [[81, 89, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [117, 130, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3445", "spans": [[21, 26, "SOFT_SKILL", ["mistral"], "head_skill"], [49, 58, "HARD_SKILL", ["mistral"], "head_skill"], [90, 93, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3446", "spans": [[92, 128, "SOFT_SKILL", ["mistral"], "split_conjunction"], [115, 118, "HARD_SKILL", ["mistral"], "head_skill"], [154, 156, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3447", "spans": [[88, 95, "HARD_SKILL", ["mistral"], "head_skill"], [126, 134, "HARD_SKILL", ["mistral"], "head_skill"], [147, 156, "HARD_SKILL", ["mistral"], "original"], [160, 167, "SOFT_SKILL", ["mistral"], "head_skill"], [219, 225, "SOFT_SKILL", ["mistral"], "head_skill"], [264, 273, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3448", "spans": [[22, 34, "HARD_SKILL", ["mistral"], "head_skill"], [59, 62, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3449", "spans": [[15, 16, "HARD_SKILL", ["mistral"], "split_conjunction"], [17, 20, "HARD_SKILL", ["mistral"], "split_conjunction"], [25, 29, "HARD_SKILL", ["mistral"], "original"], [34, 51, "HARD_SKILL", ["mistral"], "original"], [56, 58, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3450", "spans": [[0, 7, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3451", "spans": []}
+{"id": "test-3452", "spans": [[8, 17, "SOFT_SKILL", ["mistral"], "original"], [22, 30, "SOFT_SKILL", ["mistral"], "original"], [39, 49, "SOFT_SKILL", ["mistral"], "head_skill"], [95, 99, "SOFT_SKILL", ["mistral"], "head_skill"], [127, 131, "SOFT_SKILL", ["mistral"], "head_skill"], [175, 182, "SOFT_SKILL", ["mistral"], "split_conjunction"], [187, 221, "SOFT_SKILL", ["mistral"], "split_conjunction"], [226, 238, "SOFT_SKILL", ["mistral"], "original"], [245, 252, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3454", "spans": [[19, 23, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3455", "spans": [[3, 10, "HARD_SKILL", ["mistral"], "original"], [11, 20, "HARD_SKILL", ["mistral"], "original"], [144, 149, "HARD_SKILL", ["mistral"], "split_conjunction"], [153, 166, "HARD_SKILL", ["mistral"], "head_skill"], [186, 197, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3467", "spans": [[12, 17, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3468", "spans": [[69, 77, "HARD_SKILL", ["mistral"], "head_skill"], [69, 77, "SOFT_SKILL", ["gliner"], "head_skill"], [85, 94, "HARD_SKILL", ["mistral"], "head_skill"], [108, 115, "SOFT_SKILL", ["gliner"], "head_skill"], [116, 121, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3469", "spans": [[29, 36, "SOFT_SKILL", ["gliner", "mistral"], "original"], [41, 51, "SOFT_SKILL", ["gliner", "mistral"], "original"]]}
+{"id": "test-3470", "spans": [[14, 18, "SOFT_SKILL", ["mistral"], "head_skill"], [82, 96, "HARD_SKILL", ["gliner"], "original"], [82, 96, "HARD_SKILL", ["mistral"], "split_conjunction"], [97, 109, "HARD_SKILL", ["mistral"], "split_conjunction"], [125, 133, "SOFT_SKILL", ["mistral"], "split_conjunction"], [138, 178, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3475", "spans": [[41, 46, "HARD_SKILL", ["gliner", "mistral"], "head_skill"]]}
+{"id": "test-3476", "spans": [[37, 48, "HARD_SKILL", ["mistral"], "head_skill"], [73, 76, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3478", "spans": [[21, 29, "SOFT_SKILL", ["mistral"], "original"], [53, 60, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3479", "spans": [[0, 4, "SOFT_SKILL", ["gliner"], "head_skill"], [20, 28, "SOFT_SKILL", ["mistral"], "head_skill"], [74, 81, "SOFT_SKILL", ["mistral"], "head_skill"], [109, 116, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3480", "spans": [[26, 39, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3481", "spans": [[47, 52, "HARD_SKILL", ["gliner", "mistral"], "head_skill"], [75, 83, "HARD_SKILL", ["mistral"], "original"], [98, 107, "HARD_SKILL", ["mistral"], "head_skill"], [119, 133, "HARD_SKILL", ["mistral"], "original"], [136, 148, "HARD_SKILL", ["mistral"], "original"], [163, 169, "HARD_SKILL", ["mistral"], "original"], [185, 191, "HARD_SKILL", ["dictionary", "mistral"], "original"], [207, 215, "SOFT_SKILL", ["mistral"], "head_skill"], [246, 251, "HARD_SKILL", ["mistral"], "head_skill"], [270, 272, "HARD_SKILL", ["mistral"], "original"], [273, 284, "HARD_SKILL", ["mistral"], "original"], [346, 355, "HARD_SKILL", ["mistral"], "split_conjunction"], [360, 395, "HARD_SKILL", ["mistral"], "split_conjunction"], [396, 407, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3482", "spans": [[52, 101, "SOFT_SKILL", ["mistral"], "split_conjunction"], [106, 126, "SOFT_SKILL", ["mistral"], "split_conjunction"], [137, 142, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3501", "spans": [[62, 70, "SOFT_SKILL", ["mistral"], "head_skill"], [86, 90, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3502", "spans": [[7, 12, "SOFT_SKILL", ["mistral"], "head_skill"], [97, 106, "SOFT_SKILL", ["mistral"], "head_skill"], [169, 174, "HARD_SKILL", ["mistral"], "original"], [200, 209, "SOFT_SKILL", ["mistral"], "head_skill"], [230, 237, "HARD_SKILL", ["mistral"], "original"], [336, 340, "HARD_SKILL", ["mistral"], "head_skill"], [401, 410, "SOFT_SKILL", ["mistral"], "head_skill"], [494, 500, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3516", "spans": [[0, 3, "SOFT_SKILL", ["gliner"], "head_skill"], [22, 58, "SOFT_SKILL", ["mistral"], "split_conjunction"], [63, 83, "SOFT_SKILL", ["mistral"], "split_conjunction"], [94, 107, "SOFT_SKILL", ["dictionary"], "original"], [94, 107, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3517", "spans": [[58, 64, "SOFT_SKILL", ["mistral"], "head_skill"], [166, 176, "SOFT_SKILL", ["dictionary"], "original"], [180, 190, "HARD_SKILL", ["mistral"], "original"], [195, 198, "HARD_SKILL", ["mistral"], "split_conjunction"], [199, 202, "HARD_SKILL", ["mistral"], "split_conjunction"], [203, 216, "HARD_SKILL", ["mistral"], "head_skill"], [231, 238, "HARD_SKILL", ["mistral"], "head_skill"], [257, 261, "HARD_SKILL", ["mistral"], "original"], [268, 279, "SOFT_SKILL", ["mistral"], "head_skill"], [296, 299, "HARD_SKILL", ["mistral"], "original"], [302, 323, "HARD_SKILL", ["mistral"], "split_conjunction"], [328, 355, "HARD_SKILL", ["mistral"], "split_conjunction"], [363, 370, "SOFT_SKILL", ["mistral"], "head_skill"], [417, 430, "SOFT_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3518", "spans": []}
+{"id": "test-3520", "spans": [[42, 50, "SOFT_SKILL", ["mistral"], "head_skill"], [62, 67, "SOFT_SKILL", ["mistral"], "original"], [86, 94, "SOFT_SKILL", ["mistral"], "head_skill"], [140, 149, "SOFT_SKILL", ["mistral"], "head_skill"], [212, 222, "SOFT_SKILL", ["mistral"], "original"], [227, 235, "SOFT_SKILL", ["mistral"], "original"]]}
+{"id": "test-3521", "spans": [[15, 19, "SOFT_SKILL", ["mistral"], "head_skill"], [47, 57, "HARD_SKILL", ["mistral"], "head_skill"], [67, 77, "HARD_SKILL", ["mistral"], "head_skill"], [97, 108, "SOFT_SKILL", ["mistral"], "head_skill"], [155, 169, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3522", "spans": [[30, 38, "HARD_SKILL", ["mistral"], "split_conjunction"], [43, 61, "HARD_SKILL", ["mistral"], "split_conjunction"], [106, 109, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3523", "spans": [[0, 4, "SOFT_SKILL", ["mistral"], "split_conjunction"], [9, 21, "SOFT_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3524", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "split_conjunction"], [10, 52, "SOFT_SKILL", ["mistral"], "split_conjunction"], [57, 66, "SOFT_SKILL", ["mistral"], "split_conjunction"], [29, 32, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3526", "spans": [[0, 5, "SOFT_SKILL", ["mistral"], "head_skill"], [50, 59, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3527", "spans": [[41, 46, "HARD_SKILL", ["mistral"], "head_skill"], [111, 115, "HARD_SKILL", ["mistral"], "head_skill"], [155, 165, "HARD_SKILL", ["mistral"], "original"], [179, 182, "HARD_SKILL", ["mistral"], "original"], [183, 193, "HARD_SKILL", ["mistral"], "head_skill"], [217, 246, "HARD_SKILL", ["mistral"], "split_conjunction"], [251, 282, "HARD_SKILL", ["mistral"], "split_conjunction"]]}
+{"id": "test-3528", "spans": [[58, 61, "HARD_SKILL", ["mistral"], "original"], [66, 69, "HARD_SKILL", ["mistral"], "original"], [119, 128, "SOFT_SKILL", ["mistral"], "head_skill"], [171, 183, "SOFT_SKILL", ["mistral"], "head_skill"], [272, 278, "HARD_SKILL", ["mistral"], "head_skill"], [310, 318, "SOFT_SKILL", ["mistral"], "head_skill"], [403, 412, "HARD_SKILL", ["mistral"], "split_conjunction"], [417, 433, "HARD_SKILL", ["mistral"], "split_conjunction"], [459, 463, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3529", "spans": [[16, 27, "SOFT_SKILL", ["mistral"], "head_skill"], [133, 160, "SOFT_SKILL", ["gliner"], "trim_leading_filler"], [137, 147, "SOFT_SKILL", ["mistral"], "head_skill"], [199, 206, "HARD_SKILL", ["mistral"], "original"]]}
+{"id": "test-3540", "spans": [[38, 46, "SOFT_SKILL", ["mistral"], "original"], [51, 59, "SOFT_SKILL", ["mistral"], "original"], [63, 68, "HARD_SKILL", ["mistral"], "split_conjunction"], [73, 90, "HARD_SKILL", ["mistral"], "split_conjunction"], [94, 103, "HARD_SKILL", ["mistral"], "original"], [126, 131, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3541", "spans": [[22, 27, "HARD_SKILL", ["mistral"], "head_skill"], [39, 43, "HARD_SKILL", ["mistral"], "head_skill"], [54, 64, "HARD_SKILL", ["mistral"], "head_skill"], [85, 89, "HARD_SKILL", ["mistral"], "head_skill"], [100, 105, "HARD_SKILL", ["mistral"], "head_skill"], [139, 145, "HARD_SKILL", ["mistral"], "head_skill"], [169, 175, "HARD_SKILL", ["mistral"], "original"], [187, 202, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3542", "spans": []}
+{"id": "test-3543", "spans": [[73, 81, "SOFT_SKILL", ["mistral"], "original"], [92, 112, "SOFT_SKILL", ["mistral"], "head_skill"], [134, 148, "SOFT_SKILL", ["mistral"], "head_skill"], [174, 185, "SOFT_SKILL", ["mistral"], "original"], [193, 200, "SOFT_SKILL", ["mistral"], "head_skill"], [241, 247, "HARD_SKILL", ["mistral"], "head_skill"]]}
+{"id": "test-3547", "spans": [[26, 29, "HARD_SKILL", ["mistral"], "head_skill"], [101, 109, "SOFT_SKILL", ["mistral"], "original"], [114, 122, "SOFT_SKILL", ["mistral"], "original"], [214, 226, "SOFT_SKILL", ["mistral"], "original"], [214, 226, "HARD_SKILL", ["gliner"], "original"], [242, 260, "SOFT_SKILL", ["gliner"], "trim_trailing_filler"], [247, 260, "SOFT_SKILL", ["mistral"], "trim_trailing_filler"]]}
